@@ -36,8 +36,14 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				driver.quit();
 			}
 			try {
-				outputLines.add("Updated at: " + java.time.LocalDateTime.now());
-				Files.write(Paths.get("schedule.txt"), outputLines, StandardCharsets.UTF_8);
+				java.time.ZonedDateTime nowIST =
+		                java.time.ZonedDateTime.now(java.time.ZoneId.of("Asia/Kolkata"));
+
+		        outputLines.add("-----------------------------------");
+		        outputLines.add("Updated at (IST): " +
+		                nowIST.format(java.time.format.DateTimeFormatter.ofPattern("dd-MMM-yyyy hh:mm:ss a")));
+
+		        Files.write(Paths.get("schedule.txt"), outputLines, StandardCharsets.UTF_8);
 			} catch (IOException ioe) {
 				System.err.println("Failed to write schedule.txt: " + ioe.getMessage());
 			}
