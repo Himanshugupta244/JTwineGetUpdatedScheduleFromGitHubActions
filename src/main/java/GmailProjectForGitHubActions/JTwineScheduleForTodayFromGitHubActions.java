@@ -68,6 +68,12 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		waitForFixTime(1000);
 		driver.findElement(By.xpath(".//button[contains(text(),'Sign In')]"))
 				.click();
+		waitForFixTime(10000);
+		if(driver.findElements(By.xpath(".//div[contains(text(),'Candidates For Interview')]")).size() > 0) {
+			System.out.println("Login successful");
+		} else {
+			throw new RuntimeException("Login failed - 'Candidates For Interview' text not found after login.");
+		}
 	}
 	
 	public static List<String> fetchScheduleForToday(String todayDate) throws Exception {
