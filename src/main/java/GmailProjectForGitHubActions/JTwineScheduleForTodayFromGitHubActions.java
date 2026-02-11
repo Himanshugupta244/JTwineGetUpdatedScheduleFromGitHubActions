@@ -41,6 +41,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				System.err.println("Failed to write schedule.txt: " + ioe.getMessage());
 			}
 		}
+		outputLines.add("Updated at: " + java.time.LocalDateTime.now());
 	}
 	
 	public static void loginToJTwine() {
