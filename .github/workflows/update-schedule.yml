@@ -1,0 +1,45 @@
+# Copy-paste this exactly
+name: Update JTwine Schedule
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update-schedule:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        distribution: temurin
+        java-version: 17
+
+    - name: Set Chrome dependencies
+      run: |
+        sudo apt update
+        sudo apt install -y unzip xvfb libxi6 libgconf-2-4 wget
+        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+        sudo apt install -y ./google-chrome-stable_current_amd64.deb || sudo apt --fix-broken install -y
+
+    - name: Build project
+      run: mvn clean compile
+
+    - name: Run Selenium Java program
+      env:
+        JTWINE_USERNAME: ${{ secrets.JTWINE_USERNAME }}
+        JTWINE_PASSWORD: ${{ secrets.JTWINE_PASSWORD }}
+      run: mvn exec:java -Dexec.mainClass="GmailProjectForGitHubActions.JTwineScheduleForTodayFromGitHubActions"
+
+    - name: Commit and push updated schedule.txt
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add schedule.txt
+        git commit -m "Update schedule.txt [ci skip]" || echo "No changes to commit"
+        git push

@@ -1,0 +1,2 @@
+Today's date: Feb 11
+Exception: JTWINE_USERNAME and/or JTWINE_PASSWORD environment variables are not set or empty.
