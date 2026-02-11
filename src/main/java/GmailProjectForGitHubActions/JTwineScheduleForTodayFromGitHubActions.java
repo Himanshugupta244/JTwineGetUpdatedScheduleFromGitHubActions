@@ -36,12 +36,12 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				driver.quit();
 			}
 			try {
+				outputLines.add("Updated at: " + java.time.LocalDateTime.now());
 				Files.write(Paths.get("schedule.txt"), outputLines, StandardCharsets.UTF_8);
 			} catch (IOException ioe) {
 				System.err.println("Failed to write schedule.txt: " + ioe.getMessage());
 			}
 		}
-		outputLines.add("Updated at: " + java.time.LocalDateTime.now());
 	}
 	
 	public static void loginToJTwine() {
