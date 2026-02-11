@@ -59,6 +59,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		if (username == null || username.isEmpty() || password == null || password.isEmpty()) {
 			throw new IllegalArgumentException("JTWINE_USERNAME and/or JTWINE_PASSWORD environment variables are not set or empty.");
 		}
+		else {
+			System.out.println("Current URL after login: " + driver.getCurrentUrl());
+			System.out.println("Page Title: " + driver.getTitle());
+		}
 		driver.findElement(By.xpath(".//input[@formcontrolname='userName']")).sendKeys(username);
 		waitForFixTime(1000);
 		driver.findElement(By.xpath(".//button[contains(text(),'Next')]"))
