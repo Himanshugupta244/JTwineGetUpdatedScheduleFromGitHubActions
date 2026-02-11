@@ -20,12 +20,9 @@ jobs:
         distribution: temurin
         java-version: 17
 
-    - name: Set Chrome dependencies
+    - name: Setup Chrome
       run: |
-        sudo apt update
-        sudo apt install -y unzip xvfb libxi6 libgconf-2-4 wget
-        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        sudo apt install -y ./google-chrome-stable_current_amd64.deb || sudo apt --fix-broken install -y
+        uses: browser-actions/setup-chrome@v1
 
     - name: Build project
       run: mvn clean compile
