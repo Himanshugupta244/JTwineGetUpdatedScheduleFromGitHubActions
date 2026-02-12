@@ -39,13 +39,16 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 		try {
 			System.out.println("================ SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ================");
+			outputLines.add("================ SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ================");
 			loginToJTwine();
 			List<String> scheduleLines = fetchScheduleForToday();
 			outputLines.addAll(scheduleLines);
 			System.out.println("======================================================================");
+			outputLines.add("======================================================================");
 			username = System.getenv("JTWINE_USERNAME_SUD");
 			password = System.getenv("JTWINE_PASSWORD_SUD");
 			System.out.println("================ SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ================");
+			outputLines.add("================ SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ================");
 			loginToJTwine();
 			scheduleLines = fetchScheduleForToday();
 			outputLines.addAll(scheduleLines);
@@ -118,6 +121,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		List<String> lines = new ArrayList<>();
 		System.out.println("Fetching schedule for today");
 		System.out.println("======================================================================");
+		outputLines.add("======================================================================");
 		lines.add("Fetching schedule for today");
 		waitTillElementVisible(By.xpath(".//span[text()='Start Meeting']"), 30);
 
