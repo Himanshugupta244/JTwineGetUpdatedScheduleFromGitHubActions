@@ -30,6 +30,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	public static void main(String[] args) {
 
 		username = System.getenv("JTWINE_USERNAME_HIM");
+		System.out.println("JTWINE_USERNAME_HIM is :: " + username);
 		password = System.getenv("JTWINE_PASSWORD_HIM");
 		todayDate = getTodayDateFormatted();
 		tomorrowDate = getTomorrowDateFormatted();
