@@ -26,8 +26,10 @@ jobs:
 
     - name: Run Selenium Program
       env:
-        JTWINE_USERNAME: ${{ secrets.JTWINE_USERNAME }}
-        JTWINE_PASSWORD: ${{ secrets.JTWINE_PASSWORD }}
+        JTWINE_USERNAME_HIM: ${{ secrets.JTWINE_USERNAME_HIM }}
+        JTWINE_PASSWORD_HIM: ${{ secrets.JTWINE_PASSWORD_HIM }}
+        JTWINE_USERNAME_SUD: ${{ secrets.JTWINE_USERNAME_SUD }}
+        JTWINE_PASSWORD_SUD: ${{ secrets.JTWINE_PASSWORD_SUD }}
       run: mvn exec:java -Dexec.mainClass="GmailProjectForGitHubActions.JTwineScheduleForTodayFromGitHubActions"
 
     - name: Commit and Push schedule.txt
