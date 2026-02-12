@@ -116,6 +116,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	public static List<String> fetchScheduleForToday() throws Exception {
 		List<String> lines = new ArrayList<>();
 		System.out.println("Fetching schedule for today");
+		System.out.println("======================================================================");
 		lines.add("Fetching schedule for today");
 		waitTillElementVisible(By.xpath(".//span[text()='Start Meeting']"), 30);
 
