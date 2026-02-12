@@ -37,14 +37,14 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		outputLines.add("Today's date: " + todayDate);
 
 		try {
-			System.out.println("SCHEDULE FOR HIMANSHU JTWINE ACCOUNT");
+			System.out.println("================ SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ================");
 			loginToJTwine();
 			List<String> scheduleLines = fetchScheduleForToday();
 			outputLines.addAll(scheduleLines);
 			System.out.println("============================================================");
 			username = System.getenv("JTWINE_USERNAME_SUD");
 			password = System.getenv("JTWINE_PASSWORD_SUD");
-			System.out.println("SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT");
+			System.out.println("================ SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ================");
 			loginToJTwine();
 			scheduleLines = fetchScheduleForToday();
 			outputLines.addAll(scheduleLines);
