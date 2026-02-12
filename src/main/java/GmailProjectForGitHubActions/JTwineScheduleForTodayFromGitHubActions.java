@@ -41,7 +41,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			loginToJTwine();
 			List<String> scheduleLines = fetchScheduleForToday();
 			outputLines.addAll(scheduleLines);
-			System.out.println("============================================================");
+			System.out.println("======================================================================");
 			username = System.getenv("JTWINE_USERNAME_SUD");
 			password = System.getenv("JTWINE_PASSWORD_SUD");
 			System.out.println("================ SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ================");
