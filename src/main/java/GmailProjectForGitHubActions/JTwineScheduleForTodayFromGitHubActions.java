@@ -1,7 +1,9 @@
 package GmailProjectForGitHubActions;
 
 import java.util.List;
+import java.util.Map;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.charset.StandardCharsets;
@@ -12,17 +14,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chromium.HasCdp;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class JTwineScheduleForTodayFromGitHubActions {
 	
 	public static String todayDate;
+	public static String tomorrowDate;
 	public static WebDriver driver;
 
 	public static void main(String[] args) {
 		List<String> outputLines = new ArrayList<>();
 		try {
 			todayDate = getTodayDateFormatted();
+			tomorrowDate = getTomorrowDateFormatted();
 			System.out.println("Today's date: " + todayDate);
 			outputLines.add("Today's date: " + todayDate);
 			loginToJTwine();
@@ -59,6 +65,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--window-size=1920,1080");
 		driver = new ChromeDriver(options);
+		setTimezoneToIST(driver);
 		driver.get("https://www.jobtwine.com/signin");
 		waitForFixTime(2000);
 		String username = System.getenv("JTWINE_USERNAME");
@@ -87,13 +94,19 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		}
 	}
 	
+	private static void setTimezoneToIST(WebDriver driver) {
+		Map<String, Object> timezone = new HashMap<>();
+		timezone.put("timezoneId", "Asia/Kolkata");
+		((ChromeDriver) driver).executeCdpCommand("Emulation.setTimezoneOverride", timezone);
+	}
+
 	public static List<String> fetchScheduleForToday(String todayDate) throws Exception {
 		List<String> lines = new ArrayList<>();
 		System.out.println("Fetching schedule for today");
 		lines.add("Fetching schedule for today");
 		waitTillElementVisible(By.xpath(".//span[text()='Start Meeting']"), 30);
-		List<WebElement> discussionList = driver.findElements(By.xpath(
-				".//div[@class='sub-sub-heading-1'][contains(text(),'" + todayDate + "')]"));
+		
+		List<WebElement> discussionList = driver.findElements(By.xpath(".//div[@class='sub-sub-heading-1'][contains(text(),'" + todayDate + "')]"));
 		System.out.println("Total discussions for today: " + discussionList.size());
 		lines.add("Total discussions for today: " + discussionList.size());
 		for (int index = 0; index < discussionList.size(); index++) {
@@ -101,6 +114,15 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			System.out.println("Discussion " + (index + 1) + ": " + discussion.getText());
 			lines.add("Discussion " + (index + 1) + ": " + discussion.getText());
 		}
+		
+		List<WebElement> discussionListTomorrow = driver.findElements(By.xpath(".//div[@class='sub-sub-heading-1'][contains(text(),'" + tomorrowDate + "')]"));
+		lines.add("Total discussions for tomorrow: " + discussionListTomorrow.size());
+		for (int index = 0; index < discussionListTomorrow.size(); index++) {
+			WebElement discussion = discussionListTomorrow.get(index);
+			System.out.println("Discussion Tomorrow " + (index + 1) + ": " + discussion.getText());
+			lines.add("Discussion Tomorrow " + (index + 1) + ": " + discussion.getText());
+		}
+		
 		return lines;
 	}
 
@@ -116,6 +138,13 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		java.time.LocalDate today = java.time.LocalDate.now();
 		java.time.format.DateTimeFormatter formatter = java.time.format.DateTimeFormatter.ofPattern("MMM dd");
 		return today.format(formatter);
+	}
+	
+	public static String getTomorrowDateFormatted() {
+	    java.time.LocalDate tomorrow = java.time.LocalDate.now().plusDays(1);
+	    java.time.format.DateTimeFormatter formatter =
+	            java.time.format.DateTimeFormatter.ofPattern("MMM dd");
+	    return tomorrow.format(formatter);
 	}
 
 	public static void waitTillElementVisible(By locator, int timeoutInSeconds) {
