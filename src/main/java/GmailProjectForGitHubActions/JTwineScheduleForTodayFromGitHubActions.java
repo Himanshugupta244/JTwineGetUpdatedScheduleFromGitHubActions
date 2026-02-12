@@ -19,21 +19,36 @@ import org.openqa.selenium.chromium.HasCdp;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class JTwineScheduleForTodayFromGitHubActions {
-	
+
 	public static String todayDate;
 	public static String tomorrowDate;
 	public static WebDriver driver;
+	public static String username = null;
+	public static String password = null;
+	public static List<String> outputLines = new ArrayList<>();
 
 	public static void main(String[] args) {
-		List<String> outputLines = new ArrayList<>();
+
+		username = System.getenv("JTWINE_USERNAME_HIM");
+		password = System.getenv("JTWINE_PASSWORD_HIM");
+		todayDate = getTodayDateFormatted();
+		tomorrowDate = getTomorrowDateFormatted();
+		System.out.println("Today's date: " + todayDate);
+		outputLines.add("Today's date: " + todayDate);
+
 		try {
-			todayDate = getTodayDateFormatted();
-			tomorrowDate = getTomorrowDateFormatted();
-			System.out.println("Today's date: " + todayDate);
-			outputLines.add("Today's date: " + todayDate);
+			System.out.println("SCHEDULE FOR HIMANSHU JTWINE ACCOUNT");
 			loginToJTwine();
-			List<String> scheduleLines = fetchScheduleForToday(todayDate);
+			List<String> scheduleLines = fetchScheduleForToday();
 			outputLines.addAll(scheduleLines);
+			System.out.println("============================================================");
+			username = System.getenv("JTWINE_USERNAME_SUD");
+			password = System.getenv("JTWINE_PASSWORD_SUD");
+			System.out.println("SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT");
+			loginToJTwine();
+			scheduleLines = fetchScheduleForToday();
+			outputLines.addAll(scheduleLines);
+			
 		} catch(Exception ex) {
 			ex.printStackTrace();
 			outputLines.add("Exception: " + ex.getMessage());
@@ -43,19 +58,19 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			}
 			try {
 				java.time.ZonedDateTime nowIST =
-		                java.time.ZonedDateTime.now(java.time.ZoneId.of("Asia/Kolkata"));
+						java.time.ZonedDateTime.now(java.time.ZoneId.of("Asia/Kolkata"));
 
-		        outputLines.add("-----------------------------------");
-		        outputLines.add("Updated at (IST): " +
-		                nowIST.format(java.time.format.DateTimeFormatter.ofPattern("dd-MMM-yyyy hh:mm:ss a")));
+				outputLines.add("-----------------------------------");
+				outputLines.add("Updated at (IST): " +
+						nowIST.format(java.time.format.DateTimeFormatter.ofPattern("dd-MMM-yyyy hh:mm:ss a")));
 
-		        Files.write(Paths.get("schedule.txt"), outputLines, StandardCharsets.UTF_8);
+				Files.write(Paths.get("schedule.txt"), outputLines, StandardCharsets.UTF_8);
 			} catch (IOException ioe) {
 				System.err.println("Failed to write schedule.txt: " + ioe.getMessage());
 			}
 		}
 	}
-	
+
 	public static void loginToJTwine() {
 		System.out.println("Logging into JTwine");
 		WebDriverManager.chromedriver().setup();
@@ -68,8 +83,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		setTimezoneToIST(driver);
 		driver.get("https://www.jobtwine.com/signin");
 		waitForFixTime(2000);
-		String username = System.getenv("JTWINE_USERNAME");
-		String password = System.getenv("JTWINE_PASSWORD");
 		if (username == null || username.isEmpty() || password == null || password.isEmpty()) {
 			throw new IllegalArgumentException("JTWINE_USERNAME and/or JTWINE_PASSWORD environment variables are not set or empty.");
 		}
@@ -80,12 +93,12 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		driver.findElement(By.xpath(".//input[@formcontrolname='userName']")).sendKeys(username);
 		waitForFixTime(1000);
 		driver.findElement(By.xpath(".//button[contains(text(),'Next')]"))
-				.click();
+		.click();
 		waitForFixTime(1000);
 		driver.findElement(By.xpath(".//input[@formcontrolname='password']")).sendKeys(password);
 		waitForFixTime(1000);
 		driver.findElement(By.xpath(".//button[contains(text(),'Sign In')]"))
-				.click();
+		.click();
 		waitForFixTime(10000);
 		if(driver.findElements(By.xpath(".//div[contains(text(),'Candidates For Interview')]")).size() > 0) {
 			System.out.println("Login successful");
@@ -93,19 +106,19 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			throw new RuntimeException("Login failed - 'Candidates For Interview' text not found after login.");
 		}
 	}
-	
+
 	private static void setTimezoneToIST(WebDriver driver) {
 		Map<String, Object> timezone = new HashMap<>();
 		timezone.put("timezoneId", "Asia/Kolkata");
 		((ChromeDriver) driver).executeCdpCommand("Emulation.setTimezoneOverride", timezone);
 	}
 
-	public static List<String> fetchScheduleForToday(String todayDate) throws Exception {
+	public static List<String> fetchScheduleForToday() throws Exception {
 		List<String> lines = new ArrayList<>();
 		System.out.println("Fetching schedule for today");
 		lines.add("Fetching schedule for today");
 		waitTillElementVisible(By.xpath(".//span[text()='Start Meeting']"), 30);
-		
+
 		List<WebElement> discussionList = driver.findElements(By.xpath(".//div[@class='sub-sub-heading-1'][contains(text(),'" + todayDate + "')]"));
 		System.out.println("Total discussions for today: " + discussionList.size());
 		lines.add("Total discussions for today: " + discussionList.size());
@@ -114,7 +127,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			System.out.println("Discussion " + (index + 1) + ": " + discussion.getText());
 			lines.add("Discussion " + (index + 1) + ": " + discussion.getText());
 		}
-		
+
 		List<WebElement> discussionListTomorrow = driver.findElements(By.xpath(".//div[@class='sub-sub-heading-1'][contains(text(),'" + tomorrowDate + "')]"));
 		lines.add("Total discussions for tomorrow: " + discussionListTomorrow.size());
 		for (int index = 0; index < discussionListTomorrow.size(); index++) {
@@ -122,7 +135,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			System.out.println("Discussion Tomorrow " + (index + 1) + ": " + discussion.getText());
 			lines.add("Discussion Tomorrow " + (index + 1) + ": " + discussion.getText());
 		}
-		
+
 		return lines;
 	}
 
@@ -139,12 +152,12 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		java.time.format.DateTimeFormatter formatter = java.time.format.DateTimeFormatter.ofPattern("MMM dd");
 		return today.format(formatter);
 	}
-	
+
 	public static String getTomorrowDateFormatted() {
-	    java.time.LocalDate tomorrow = java.time.LocalDate.now().plusDays(1);
-	    java.time.format.DateTimeFormatter formatter =
-	            java.time.format.DateTimeFormatter.ofPattern("MMM dd");
-	    return tomorrow.format(formatter);
+		java.time.LocalDate tomorrow = java.time.LocalDate.now().plusDays(1);
+		java.time.format.DateTimeFormatter formatter =
+				java.time.format.DateTimeFormatter.ofPattern("MMM dd");
+		return tomorrow.format(formatter);
 	}
 
 	public static void waitTillElementVisible(By locator, int timeoutInSeconds) {
