@@ -14,8 +14,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.chromium.HasCdp;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class JTwineScheduleForTodayFromGitHubActions {
@@ -36,13 +34,14 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		tomorrowDate = getTomorrowDateFormatted();
 		System.out.println("Today's date: " + todayDate);
 		outputLines.add("Today's date: " + todayDate);
-
+		
 		try {
 			System.out.println("================ SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ================");
 			outputLines.add("================ SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ================");
 			loginToJTwine();
 			List<String> scheduleLines = fetchScheduleForToday();
 			outputLines.addAll(scheduleLines);
+			driver.quit();
 			System.out.println("======================================================================");
 			outputLines.add("======================================================================");
 			username = System.getenv("JTWINE_USERNAME_SUD");
@@ -84,15 +83,12 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--window-size=1920,1080");
 		driver = new ChromeDriver(options);
+		driver.manage().window().maximize();
 		setTimezoneToIST(driver);
 		driver.get("https://www.jobtwine.com/signin");
 		waitForFixTime(2000);
 		if (username == null || username.isEmpty() || password == null || password.isEmpty()) {
 			throw new IllegalArgumentException("JTWINE_USERNAME and/or JTWINE_PASSWORD environment variables are not set or empty.");
-		}
-		else {
-			System.out.println("Current URL after login: " + driver.getCurrentUrl());
-			System.out.println("Page Title: " + driver.getTitle());
 		}
 		driver.findElement(By.xpath(".//input[@formcontrolname='userName']")).sendKeys(username);
 		waitForFixTime(1000);
@@ -119,28 +115,41 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 	public static List<String> fetchScheduleForToday() throws Exception {
 		List<String> lines = new ArrayList<>();
-		System.out.println("Fetching schedule for today");
+		System.out.println("Fetching schedule.....");
 		System.out.println("======================================================================");
 		outputLines.add("======================================================================");
-		lines.add("Fetching schedule for today");
-		waitTillElementVisible(By.xpath(".//span[text()='Start Meeting']"), 30);
-
-		List<WebElement> discussionList = driver.findElements(By.xpath(".//div[@class='sub-sub-heading-1'][contains(text(),'" + todayDate + "')]"));
-		System.out.println("Total discussions for today: " + discussionList.size());
-		lines.add("Total discussions for today: " + discussionList.size());
-		for (int index = 0; index < discussionList.size(); index++) {
-			WebElement discussion = discussionList.get(index);
-			System.out.println("Discussion " + (index + 1) + ": " + discussion.getText());
-			lines.add("Discussion " + (index + 1) + ": " + discussion.getText());
+		lines.add("Fetching schedule.....");
+		waitTillElementVisible(By.xpath(".//span[text()='Start Meeting']"), 60);
+		
+		String todayLocator = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + todayDate + "')]";
+		String todayStatusLocator = todayLocator+"//ancestor::div[contains(@class,'candidate-details-sec')]//div[contains(@class,'btn-chip')]/div";
+		List<WebElement> discussionListToday = driver.findElements(By.xpath(todayLocator));
+		List<WebElement> discussionStatusListToday = driver.findElements(By.xpath(todayStatusLocator));
+		
+		for (int index = 0; index < discussionListToday.size(); index++) {
+			WebElement discussion = discussionListToday.get(index);
+			WebElement discussionStatus = discussionStatusListToday.get(index);
+			System.out.println("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
+			lines.add("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
 		}
-
-		List<WebElement> discussionListTomorrow = driver.findElements(By.xpath(".//div[@class='sub-sub-heading-1'][contains(text(),'" + tomorrowDate + "')]"));
-		lines.add("Total discussions for tomorrow: " + discussionListTomorrow.size());
+		
+		String tomorrowLocator = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + tomorrowDate + "')]";
+		String tomorrowStatusLocator = tomorrowLocator+"//ancestor::div[contains(@class,'candidate-details-sec')]//div[contains(@class,'btn-chip')]/div";
+		List<WebElement> discussionListTomorrow = driver.findElements(By.xpath(tomorrowLocator));
+		List<WebElement> discussionStatusListTomorrow = driver.findElements(By.xpath(tomorrowStatusLocator));
 		for (int index = 0; index < discussionListTomorrow.size(); index++) {
 			WebElement discussion = discussionListTomorrow.get(index);
-			System.out.println("Discussion Tomorrow " + (index + 1) + ": " + discussion.getText());
-			lines.add("Discussion Tomorrow " + (index + 1) + ": " + discussion.getText());
+			WebElement discussionStatus = discussionStatusListTomorrow.get(index);
+			System.out.println("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
+			lines.add("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
 		}
+		if(discussionListToday.isEmpty() && discussionListTomorrow.isEmpty()) {
+			System.out.println("No discussions scheduled for today and tomorrow.");
+			lines.add("No discussions scheduled for today and tomorrow.");
+			System.out.println("======================================================================");
+			outputLines.add("======================================================================");
+		}
+		
 
 		return lines;
 	}
