@@ -1,17 +1,11 @@
 Today's date: Feb 13
 ================ SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ================
-======================================================================
-Fetching schedule.....
-Discussion 1: Fri, Feb 13, 2026, 11:30 PM IST ==> Scheduled
-Discussion 2: Fri, Feb 13, 2026, 2:00 PM IST ==> Pending Feedback Review
-Discussion 3: Fri, Feb 13, 2026, 12:00 AM IST ==> Is a Good Fit
-Discussion 1: Sat, Feb 14, 2026, 3:00 PM IST ==> Scheduled
-Discussion 2: Sat, Feb 14, 2026, 9:00 AM IST ==> Scheduled
-======================================================================
-================ SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ================
-======================================================================
-======================================================================
-Fetching schedule.....
-No discussions scheduled for today and tomorrow.
+Exception: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 144.0.7559.132 with binary path /usr/bin/google-chrome 
+Host info: host: 'runnervmjduv7', ip: '10.1.0.165'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-1017-azure', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --headless=new, --no-sandbox, --disable-dev-shm-usage, --window-size=1920,1080], extensions: []}}]}]
 -----------------------------------
-Updated at (IST): 13-Feb-2026 06:36:32 PM
+Updated at (IST): 13-Feb-2026 06:42:01 PM
