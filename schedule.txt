@@ -1,17 +1,15 @@
 Today's date: Feb 13
 ================ SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ================
 ======================================================================
-Fetching schedule for today
-Total discussions for today: 3
-Discussion 1: Fri, Feb 13, 2026, 11:30 PM IST
-Discussion 2: Fri, Feb 13, 2026, 2:00 PM IST
-Discussion 3: Fri, Feb 13, 2026, 12:00 AM IST
-Total discussions for tomorrow: 0
+Fetching schedule.....
+Discussion 1: Fri, Feb 13, 2026, 11:30 PM IST ==> Scheduled
+Discussion 2: Fri, Feb 13, 2026, 2:00 PM IST ==> Scheduled
+Discussion 3: Fri, Feb 13, 2026, 12:00 AM IST ==> Is a Good Fit
 ======================================================================
 ================ SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ================
 ======================================================================
-Fetching schedule for today
-Total discussions for today: 0
-Total discussions for tomorrow: 0
+======================================================================
+Fetching schedule.....
+No discussions scheduled for today and tomorrow.
 -----------------------------------
-Updated at (IST): 13-Feb-2026 11:56:36 AM
+Updated at (IST): 13-Feb-2026 12:06:41 PM
