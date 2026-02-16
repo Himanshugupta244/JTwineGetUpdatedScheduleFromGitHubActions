@@ -8,7 +8,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.charset.StandardCharsets;
 import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,21 +22,25 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	public static WebDriver driver;
 	public static String username = null;
 	public static String password = null;
+	public static String usernameVprop = null;
+	public static String passwordVprop = null;
+	public static String todayDateVpropFormat = null;
 	public static List<String> outputLines = new ArrayList<>();
 
 	public static void main(String[] args) {
 
 		username = System.getenv("JTWINE_USERNAME_HIM");
-		System.out.println("JTWINE_USERNAME_HIM is :: " + username);
 		password = System.getenv("JTWINE_PASSWORD_HIM");
+		usernameVprop = System.getenv("VPROP_USERNAME_HIM");
+		usernameVprop = System.getenv("VPROP_PASSWORD_HIM");
 		todayDate = getTodayDateFormatted();
 		tomorrowDate = getTomorrowDateFormatted();
 		System.out.println("Today's date: " + todayDate);
 		outputLines.add("Today's date: " + todayDate);
-		
+
 		try {
-			System.out.println("================ SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ================");
-			outputLines.add("================ SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ================");
+			System.out.println("**************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ****************");
+			outputLines.add("**************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ****************");
 			loginToJTwine();
 			List<String> scheduleLines = fetchScheduleForToday();
 			outputLines.addAll(scheduleLines);
@@ -46,12 +49,12 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			outputLines.add("======================================================================");
 			username = System.getenv("JTWINE_USERNAME_SUD");
 			password = System.getenv("JTWINE_PASSWORD_SUD");
-			System.out.println("================ SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ================");
-			outputLines.add("================ SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ================");
+			System.out.println("**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ****************");
+			outputLines.add("**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ****************");
 			loginToJTwine();
 			scheduleLines = fetchScheduleForToday();
 			outputLines.addAll(scheduleLines);
-			
+
 		} catch(Exception ex) {
 			ex.printStackTrace();
 			outputLines.add("Exception: " + ex.getMessage());
@@ -72,6 +75,15 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				System.err.println("Failed to write schedule.txt: " + ioe.getMessage());
 			}
 		}
+
+		// Separate Call for Vprop
+		System.out.println("**************** SCHEDULE FOR Vprop ACCOUNT ****************");
+		outputLines.add("**************** SCHEDULE FOR Vprop ACCOUNT ****************");
+		outputLines.add("-----------------------------------");
+		usernameVprop = System.getenv("VPROP_USERNAME_HIM");
+		passwordVprop = System.getenv("VPROP_PASSWORD_HIM");
+		todayDateVpropFormat = getTodayDateAsPerVpropFormat();
+		loginAndFetchVPropScheduleForToday();
 	}
 
 	public static void loginToJTwine() {
@@ -90,20 +102,27 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		if (username == null || username.isEmpty() || password == null || password.isEmpty()) {
 			throw new IllegalArgumentException("JTWINE_USERNAME and/or JTWINE_PASSWORD environment variables are not set or empty.");
 		}
+		waitTillElementVisible(By.xpath(".//input[@formcontrolname='userName']"), 30);
+		waitForFixTime(1000);
 		driver.findElement(By.xpath(".//input[@formcontrolname='userName']")).sendKeys(username);
 		waitForFixTime(1000);
-		driver.findElement(By.xpath(".//button[contains(text(),'Next')]"))
-		.click();
+		waitTillElementVisible(By.xpath(".//button[contains(text(),'Next')]"), 30);
+		waitForFixTime(1000);
+		driver.findElement(By.xpath(".//button[contains(text(),'Next')]")).click();
+		waitForFixTime(1000);
+		waitTillElementVisible(By.xpath(".//input[@formcontrolname='password']"), 30);
 		waitForFixTime(1000);
 		driver.findElement(By.xpath(".//input[@formcontrolname='password']")).sendKeys(password);
 		waitForFixTime(1000);
-		driver.findElement(By.xpath(".//button[contains(text(),'Sign In')]"))
-		.click();
-		waitForFixTime(10000);
+		waitTillElementVisible(By.xpath(".//button[contains(text(),'Sign In')]"), 30);
+		waitForFixTime(1000);
+		driver.findElement(By.xpath(".//button[contains(text(),'Sign In')]")).click();
+		waitTillElementVisible(By.xpath(".//div[contains(text(),'Candidates For Interview')]"), 30);
+		waitForFixTime(1000);
 		if(driver.findElements(By.xpath(".//div[contains(text(),'Candidates For Interview')]")).size() > 0) {
-			System.out.println("Login successful");
+			System.out.println("Login to Jtwin is successful");
 		} else {
-			throw new RuntimeException("Login failed - 'Candidates For Interview' text not found after login.");
+			throw new RuntimeException("Login to Jtwin failed - 'Candidates For Interview' text not found after login.");
 		}
 	}
 
@@ -120,19 +139,19 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		outputLines.add("======================================================================");
 		lines.add("Fetching schedule.....");
 		waitTillElementVisible(By.xpath(".//span[text()='Start Meeting']"), 60);
-		
+
 		String todayLocator = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + todayDate + "')]";
 		String todayStatusLocator = todayLocator+"//ancestor::div[contains(@class,'candidate-details-sec')]//div[contains(@class,'btn-chip')]/div";
 		List<WebElement> discussionListToday = driver.findElements(By.xpath(todayLocator));
 		List<WebElement> discussionStatusListToday = driver.findElements(By.xpath(todayStatusLocator));
-		
+
 		for (int index = 0; index < discussionListToday.size(); index++) {
 			WebElement discussion = discussionListToday.get(index);
 			WebElement discussionStatus = discussionStatusListToday.get(index);
 			System.out.println("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
 			lines.add("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
 		}
-		
+
 		String tomorrowLocator = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + tomorrowDate + "')]";
 		String tomorrowStatusLocator = tomorrowLocator+"//ancestor::div[contains(@class,'candidate-details-sec')]//div[contains(@class,'btn-chip')]/div";
 		List<WebElement> discussionListTomorrow = driver.findElements(By.xpath(tomorrowLocator));
@@ -149,7 +168,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			System.out.println("======================================================================");
 			outputLines.add("======================================================================");
 		}
-		
+
 
 		return lines;
 	}
@@ -179,6 +198,80 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		org.openqa.selenium.support.ui.WebDriverWait wait = new org.openqa.selenium.support.ui.WebDriverWait(driver,
 				java.time.Duration.ofSeconds(timeoutInSeconds));
 		wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(locator));
+	}
+
+	// Separate Code for VProp
+	public static void loginAndFetchVPropScheduleForToday() {
+		try {
+			System.out.println("Logging into Vprop");
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless=new");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--window-size=1920,1080");
+			driver = new ChromeDriver(options);
+			driver.manage().window().maximize();
+			setTimezoneToIST(driver);
+			driver.get("https://expert.vprople.com/expert-login");
+			waitForFixTime(2000);
+			if (usernameVprop == null || usernameVprop.isEmpty() || passwordVprop == null || passwordVprop.isEmpty()) {
+				throw new IllegalArgumentException("usernameVprop and/or passwordVprop environment variables are not set or empty.");
+			}
+			waitTillElementVisible(By.id("yourUsername"), 30);
+			driver.findElement(By.id("yourUsername")).sendKeys(usernameVprop);
+			waitForFixTime(1000);
+			waitTillElementVisible(By.id("yourPassword"), 30);
+			driver.findElement(By.id("yourPassword")).sendKeys(passwordVprop);
+			waitForFixTime(1000);
+			waitTillElementVisible(By.xpath(".//button[text()='Login']"), 30);
+			driver.findElement(By.xpath(".//button[text()='Login']")).click();
+			waitForFixTime(10000);
+			if(driver.findElements(By.xpath(".//h5[text()='Complete your profile']")).size() > 0) {
+				if(driver.findElements(By.xpath(".//h5[text()='Complete your profile']/parent::div/following-sibling::div//button[text()='Close']")).size() > 0) {
+					driver.findElement(By.xpath(".//h5[text()='Complete your profile']/parent::div/following-sibling::div//button[text()='Close']")).click();
+				}
+			}
+			driver.navigate().refresh();
+			waitTillElementVisible(By.xpath(".//a[span[contains(text(),'Dashboard')]]"), 30);
+			if(driver.findElements(By.xpath(".//a[span[contains(text(),'Dashboard')]]")).size() > 0) {
+				System.out.println("Login to Vprop is successful");
+			} else {
+				throw new RuntimeException("Login to Vprop is failed - 'Dashboard' text not found after login.");
+			}
+			driver.findElement(By.xpath(".//span[contains(text(),' Interview(s)')]")).click();
+			waitTillElementVisible(By.xpath(".//label[contains(text(),' entries per page')]"), 30);
+			waitForFixTime(1000);
+			List<WebElement> discussionListToday = driver.findElements(By.xpath(".//p[contains(text(),'"+todayDateVpropFormat+"')]"));
+			waitForFixTime(500);
+			System.out.println("Getting Vprop schedule for today....");
+			outputLines.add("Getting Vprop schedule for today....");
+			if(discussionListToday.isEmpty()) {
+				System.out.println("No discussions scheduled for today.");
+			} else {
+
+				for (int index = 0; index < discussionListToday.size(); index++) {
+					WebElement discussion = discussionListToday.get(index);
+					System.out.println("Discussion " + (index + 1) + ": " + discussion.getText());
+					outputLines.add("Discussion " + (index + 1) + ": " + discussion.getText());
+				}
+			}
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			outputLines.add("Exception while fetching Vprop schedule: " + e.getMessage());
+		} finally {
+			if (driver != null) {
+				driver.quit();
+			}
+		}
+	}
+
+	public static String getTodayDateAsPerVpropFormat() { 
+		System.out.println("Getting today's date in Vprop format....");
+		String[] dateSplitted = todayDate.split(" ");
+		System.out.println("Today's date in Vprop format is : " + dateSplitted[1] + "-" + dateSplitted[0]);
+		return dateSplitted[1] + "-" + dateSplitted[0]; 
 	}
 
 }
