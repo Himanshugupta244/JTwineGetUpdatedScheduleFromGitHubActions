@@ -160,8 +160,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			System.out.println("======================================================================");
 			outputLines.add("======================================================================");
 		}
-
-
 		return lines;
 	}
 
