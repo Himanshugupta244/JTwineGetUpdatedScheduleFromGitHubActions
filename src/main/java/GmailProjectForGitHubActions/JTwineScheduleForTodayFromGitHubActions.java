@@ -84,6 +84,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		passwordVprop = System.getenv("VPROP_PASSWORD_HIM");
 		todayDateVpropFormat = getTodayDateAsPerVpropFormat();
 		loginAndFetchVPropScheduleForToday();
+		System.out.println("====================== FINAL OUTPUT FOR DEBUGGING IS ================");
+		System.out.println(outputLines);
 	}
 
 	public static void loginToJTwine() {
