@@ -241,7 +241,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			} else {
 				throw new RuntimeException("Login to Vprop is failed - 'Dashboard' text not found after login.");
 			}
-			driver.findElement(By.xpath(".//span[contains(text(),' Interview(s)')]")).click();
+			driver.get("https://expert.vprople.com/interviews");
 			waitTillElementVisible(By.xpath(".//label[contains(text(),' entries per page')]"), 30);
 			waitForFixTime(1000);
 			List<WebElement> discussionListToday = driver.findElements(By.xpath(".//p[contains(text(),'"+todayDateVpropFormat+"')]"));
