@@ -226,6 +226,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			waitForFixTime(1000);
 			waitTillElementVisible(By.xpath(".//button[text()='Login']"), 30);
 			driver.findElement(By.xpath(".//button[text()='Login']")).click();
+			System.out.println("Waiting for 10 seconds......");
 			waitForFixTime(10000);
 			if(driver.findElements(By.xpath(".//h5[text()='Complete your profile']")).size() > 0) {
 				if(driver.findElements(By.xpath(".//h5[text()='Complete your profile']/parent::div/following-sibling::div//button[text()='Close']")).size() > 0) {
@@ -233,7 +234,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				}
 			}
 			driver.navigate().refresh();
-			waitTillElementVisible(By.xpath(".//a[span[contains(text(),'Dashboard')]]"), 30);
+			System.out.println("Waiting for 10 seconds more......");
+			waitForFixTime(10000);
 			if(driver.findElements(By.xpath(".//a[span[contains(text(),'Dashboard')]]")).size() > 0) {
 				System.out.println("Login to Vprop is successful");
 			} else {
@@ -265,6 +267,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				driver.quit();
 			}
 		}
+		System.out.println("======================================================================");
+		outputLines.add("======================================================================");
 	}
 
 	public static String getTodayDateAsPerVpropFormat() { 
