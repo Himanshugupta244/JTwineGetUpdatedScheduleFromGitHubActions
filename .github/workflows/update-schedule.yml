@@ -30,6 +30,8 @@ jobs:
         JTWINE_PASSWORD_HIM: ${{ secrets.JTWINE_PASSWORD_HIM }}
         JTWINE_USERNAME_SUD: ${{ secrets.JTWINE_USERNAME_SUD }}
         JTWINE_PASSWORD_SUD: ${{ secrets.JTWINE_PASSWORD_SUD }}
+        VPROP_USERNAME_HIM: ${{ secrets.VPROP_USERNAME_HIM }}
+        VPROP_PASSWORD_HIM: ${{ secrets.VPROP_PASSWORD_HIM }}
       run: mvn exec:java -Dexec.mainClass="GmailProjectForGitHubActions.JTwineScheduleForTodayFromGitHubActions"
 
     - name: Commit and Push schedule.txt
