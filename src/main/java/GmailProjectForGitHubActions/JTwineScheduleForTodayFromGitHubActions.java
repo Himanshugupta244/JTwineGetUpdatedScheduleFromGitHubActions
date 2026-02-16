@@ -233,7 +233,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 					driver.findElement(By.xpath(".//h5[text()='Complete your profile']/parent::div/following-sibling::div//button[text()='Close']")).click();
 				}
 			}
-			driver.navigate().refresh();
+			driver.get("https://expert.vprople.com/expert-dashboard");
 			System.out.println("Waiting for 10 seconds more......");
 			waitForFixTime(10000);
 			if(driver.findElements(By.xpath(".//a[span[contains(text(),'Dashboard')]]")).size() > 0) {
