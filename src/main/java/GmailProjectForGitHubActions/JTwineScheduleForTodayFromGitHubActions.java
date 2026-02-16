@@ -62,18 +62,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			if (driver != null) {
 				driver.quit();
 			}
-			try {
-				java.time.ZonedDateTime nowIST =
-						java.time.ZonedDateTime.now(java.time.ZoneId.of("Asia/Kolkata"));
-
-				outputLines.add("-----------------------------------");
-				outputLines.add("Updated at (IST): " +
-						nowIST.format(java.time.format.DateTimeFormatter.ofPattern("dd-MMM-yyyy hh:mm:ss a")));
-
-				Files.write(Paths.get("schedule.txt"), outputLines, StandardCharsets.UTF_8);
-			} catch (IOException ioe) {
-				System.err.println("Failed to write schedule.txt: " + ioe.getMessage());
-			}
 		}
 
 		// Separate Call for Vprop
@@ -86,6 +74,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		loginAndFetchVPropScheduleForToday();
 		System.out.println("====================== FINAL OUTPUT FOR DEBUGGING IS ================");
 		System.out.println(outputLines);
+		
+		writeCodeToScheduleTxtFileForGitHub();
 	}
 
 	public static void loginToJTwine() {
@@ -200,6 +190,21 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		org.openqa.selenium.support.ui.WebDriverWait wait = new org.openqa.selenium.support.ui.WebDriverWait(driver,
 				java.time.Duration.ofSeconds(timeoutInSeconds));
 		wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(locator));
+	}
+	
+	public static void writeCodeToScheduleTxtFileForGitHub() {
+		try {
+			java.time.ZonedDateTime nowIST =
+					java.time.ZonedDateTime.now(java.time.ZoneId.of("Asia/Kolkata"));
+
+			outputLines.add("-----------------------------------");
+			outputLines.add("Updated at (IST): " +
+					nowIST.format(java.time.format.DateTimeFormatter.ofPattern("dd-MMM-yyyy hh:mm:ss a")));
+
+			Files.write(Paths.get("schedule.txt"), outputLines, StandardCharsets.UTF_8);
+		} catch (IOException ioe) {
+			System.err.println("Failed to write schedule.txt: " + ioe.getMessage());
+		}
 	}
 
 	// Separate Code for VProp
