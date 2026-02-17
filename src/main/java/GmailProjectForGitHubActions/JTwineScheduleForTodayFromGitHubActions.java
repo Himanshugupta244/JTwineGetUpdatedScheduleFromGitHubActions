@@ -256,7 +256,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			System.out.println("Getting Vprop schedule for today....");
 			outputLines.add("Getting Vprop schedule for today....");
 			if(discussionListToday.isEmpty()) {
-				System.out.println("No discussions scheduled for today.");
+				System.out.println("No discussions scheduled for today in Vprop.");
+				outputLines.add("No discussions scheduled for today in Vprop.");
+				
 			} else {
 
 				for (int index = 0; index < discussionListToday.size(); index++) {
