@@ -2,7 +2,7 @@ Today's date: Feb 17
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ****************
 ======================================================================
 Fetching schedule.....
-Discussion 1: Tue, Feb 17, 2026, 2:30 PM IST ==> Candidate No Show
+Discussion 1: Tue, Feb 17, 2026, 2:30 PM IST ==> Dropped
 ======================================================================
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ****************
 ======================================================================
@@ -16,4 +16,4 @@ Getting Vprop schedule for today....
 No discussions scheduled for today in Vprop.
 ======================================================================
 -----------------------------------
-Updated at (IST): 17-Feb-2026 02:47:05 PM
+Updated at (IST): 17-Feb-2026 02:51:58 PM
