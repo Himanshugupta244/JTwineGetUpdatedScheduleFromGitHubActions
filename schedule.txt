@@ -2,13 +2,13 @@ Today's date: Feb 21
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ****************
 ======================================================================
 Fetching schedule.....
-Discussion 1: Sat, Feb 21, 2026, 5:00 PM IST ==> Scheduled
+Discussion 1: Sat, Feb 21, 2026, 5:00 PM IST ==> Candidate No Show
 Discussion 2: Sat, Feb 21, 2026, 1:00 PM IST ==> Candidate No Show
 ======================================================================
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ****************
 ======================================================================
 Fetching schedule.....
-Discussion 1: Sat, Feb 21, 2026, 5:00 PM IST ==> Generating Feedback
+Discussion 1: Sat, Feb 21, 2026, 5:00 PM IST ==> Pending Feedback Review
 ======================================================================
 **************** SCHEDULE FOR Vprop ACCOUNT ****************
 -----------------------------------
@@ -17,4 +17,4 @@ Discussion 1: 21-Feb-2026 04:15 PM
 Discussion 2: 21-Feb-2026 10:30 AM
 ======================================================================
 -----------------------------------
-Updated at (IST): 21-Feb-2026 05:46:55 PM
+Updated at (IST): 21-Feb-2026 05:51:57 PM
