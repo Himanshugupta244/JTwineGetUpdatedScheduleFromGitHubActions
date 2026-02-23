@@ -8,10 +8,12 @@ Discussion 3: Mon, Feb 23, 2026, 12:00 PM IST ==> Is a Good Fit
 Discussion 1: Tue, Feb 24, 2026, 11:00 AM IST ==> Scheduled
 ======================================================================
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ****************
-======================================================================
-======================================================================
-Fetching schedule.....
-No discussions scheduled for today and tomorrow.
+Exception: Expected condition failed: waiting for visibility of element located by By.xpath: .//input[@formcontrolname='password'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45257}, goog:processID: 2662, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45257/devtoo..., se:cdpVersion: 144.0.7559.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f957ebc15e0ca87471308af2df2b862
 ======================================================================
 **************** SCHEDULE FOR Vprop ACCOUNT ****************
 -----------------------------------
@@ -19,4 +21,4 @@ Getting Vprop schedule for today....
 No discussions scheduled for today in Vprop.
 ======================================================================
 -----------------------------------
-Updated at (IST): 23-Feb-2026 03:12:04 PM
+Updated at (IST): 23-Feb-2026 03:17:42 PM
