@@ -2,8 +2,8 @@ Today's date: Feb 23
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ****************
 ======================================================================
 Fetching schedule.....
-Discussion 1: Mon, Feb 23, 2026, 5:00 PM IST ==> Scheduled
-Discussion 2: Mon, Feb 23, 2026, 4:00 PM IST ==> Pending Feedback Review
+Discussion 1: Mon, Feb 23, 2026, 5:00 PM IST ==> Candidate No Show
+Discussion 2: Mon, Feb 23, 2026, 4:00 PM IST ==> Not Recommended
 Discussion 3: Mon, Feb 23, 2026, 12:00 PM IST ==> Is a Good Fit
 Discussion 1: Tue, Feb 24, 2026, 11:00 AM IST ==> Scheduled
 ======================================================================
@@ -19,4 +19,4 @@ Getting Vprop schedule for today....
 No discussions scheduled for today in Vprop.
 ======================================================================
 -----------------------------------
-Updated at (IST): 23-Feb-2026 05:27:05 PM
+Updated at (IST): 23-Feb-2026 05:32:20 PM
