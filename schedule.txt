@@ -1,18 +1,11 @@
 Today's date: Feb 24
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ****************
-======================================================================
-Fetching schedule.....
-Discussion 1: Tue, Feb 24, 2026, 11:00 AM IST ==> Not Recommended
-Discussion 1: Wed, Feb 25, 2026, 7:00 PM IST ==> Scheduled
-Discussion 2: Wed, Feb 25, 2026, 5:00 PM IST ==> Scheduled
-Discussion 3: Wed, Feb 25, 2026, 4:00 PM IST ==> Scheduled
-Discussion 4: Wed, Feb 25, 2026, 1:00 PM IST ==> Scheduled
-Discussion 5: Wed, Feb 25, 2026, 12:00 PM IST ==> Scheduled
-======================================================================
-**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ****************
-======================================================================
-Fetching schedule.....
-Discussion 1: Wed, Feb 25, 2026, 3:00 PM IST ==> Scheduled
+Exception: Expected condition failed: waiting for visibility of element located by By.xpath: .//div[contains(text(),'Candidates For Interview')] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.109, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42907}, goog:processID: 2479, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42907/devtoo..., se:cdpVersion: 144.0.7559.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fcb68f25aeb7003c0700a217683d6e9e
 ======================================================================
 **************** SCHEDULE FOR Vprop ACCOUNT ****************
 -----------------------------------
@@ -20,4 +13,4 @@ Getting Vprop schedule for today....
 Discussion 1: 24-Feb-2026 06:00 PM
 ======================================================================
 -----------------------------------
-Updated at (IST): 24-Feb-2026 10:22:07 PM
+Updated at (IST): 24-Feb-2026 10:27:18 PM
