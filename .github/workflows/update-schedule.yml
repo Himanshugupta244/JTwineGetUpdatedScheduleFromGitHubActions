@@ -10,24 +10,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    # 1️⃣ Checkout the repository
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
+    # 2️⃣ Setup Java JDK 17
     - name: Setup JDK 17
       uses: actions/setup-java@v3
       with:
         distribution: temurin
         java-version: 17
 
-    # ✅ Official Chrome setup (NO manual install needed)
+    # 3️⃣ Setup Chrome for Selenium
     - name: Setup Chrome
       uses: browser-actions/setup-chrome@v1
 
+    # 4️⃣ Build Project with Maven
     - name: Build Project
       run: mvn clean compile
 
+    # 5️⃣ Run Selenium Program
     - name: Run Selenium Program
       env:
         JTWINE_USERNAME_HIM: ${{ secrets.JTWINE_USERNAME_HIM }}
@@ -38,20 +42,33 @@ jobs:
         VPROP_PASSWORD_HIM: ${{ secrets.VPROP_PASSWORD_HIM }}
       run: mvn exec:java -Dexec.mainClass="GmailProjectForGitHubActions.JTwineScheduleForTodayFromGitHubActions"
 
-    - name: Commit and Push schedule.txt
+    # 6️⃣ Move schedule.txt to deploy folder and commit
+    - name: Move and Commit schedule.txt
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
-        git add schedule.txt
+        
+        # create deploy folder if it doesn't exist
+        mkdir -p deploy
+        
+        # move schedule.txt only if it exists in root
+        if [ -f schedule.txt ]; then
+            mv schedule.txt deploy/schedule.txt
+        fi
+
+        # add changes to git
+        git add deploy/schedule.txt
+
+        # commit and push
         git commit -m "Update schedule.txt [ci skip]" || echo "No changes"
         git push --force-with-lease
 
-    - name: Upload HTML via FTP to Hostinger
+    # 7️⃣ Upload to Hostinger via FTP
+    - name: Upload schedule.txt via FTP to Hostinger
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: ./public_html/cloud
-        local-dir: ./   # adjust if your HTML is generated in a subfolder
-        include: schedule.txt  # replace with your generated HTML filename if different
+        local-dir: ./deploy/
+        server-dir: ./public_html/cloud/
