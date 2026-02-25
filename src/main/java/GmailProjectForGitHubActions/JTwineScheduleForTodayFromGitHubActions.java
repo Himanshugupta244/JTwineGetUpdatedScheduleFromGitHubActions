@@ -131,8 +131,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		List<String> lines = new ArrayList<>();
 		System.out.println("Fetching schedule.....");
 		System.out.println("======================================================================");
-		outputLines.add("======================================================================");
-		lines.add("Fetching schedule.....");
 		waitTillElementVisible(By.xpath(".//span[text()='Start Meeting']"), 60);
 
 		String todayLocator = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + todayDate + "')]";
@@ -161,7 +159,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			System.out.println("No discussions scheduled for today and tomorrow.");
 			lines.add("No discussions scheduled for today and tomorrow.");
 			System.out.println("======================================================================");
-			outputLines.add("======================================================================");
 		}
 		return lines;
 	}
@@ -210,10 +207,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	
 	public static void writeCodeToIndexHtmlFileForGitHub() {
 	    try {
-	        java.time.ZonedDateTime nowIST = java.time.ZonedDateTime.now(java.time.ZoneId.of("Asia/Kolkata"));
-	        outputLines.add("-----------------------------------");
-	        outputLines.add("Updated at (IST): " + nowIST.format(java.time.format.DateTimeFormatter.ofPattern("dd-MMM-yyyy hh:mm:ss a")));
-
 	        StringBuilder html = new StringBuilder();
 	        html.append("<!DOCTYPE html>\n");
 	        html.append("<html lang=\"en\">\n");
@@ -222,29 +215,84 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	        html.append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
 	        html.append("<title>JTwine & VProp Schedule</title>\n");
 	        html.append("<style>\n");
-	        html.append("body { font-family: Arial, sans-serif; line-height: 1.5; padding: 20px; }\n");
-	        html.append("h2 { color: #2c3e50; }\n");
+	        html.append("body { font-family: Arial, sans-serif; line-height: 1.5; padding: 20px; background: #f9f9f9; }\n");
+	        html.append("h2 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 5px; }\n");
+	        html.append("h3 { color: #34495e; margin-top: 20px; }\n");
 	        html.append("p { margin: 5px 0; }\n");
 	        html.append(".separator { border-top: 1px solid #ccc; margin: 10px 0; }\n");
+	        html.append("table { border-collapse: collapse; width: 100%; margin: 10px 0; }\n");
+	        html.append("th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }\n");
+	        html.append("th { background-color: #ecf0f1; }\n");
+	        html.append(".scheduled { color: green; font-weight: bold; }\n");
+	        html.append(".not-recommended { color: red; font-weight: bold; }\n");
+	        html.append(".good-fit { color: orange; font-weight: bold; }\n");
+	        html.append(".unknown-status { color: gray; }\n");
 	        html.append("</style>\n");
 	        html.append("</head>\n");
 	        html.append("<body>\n");
 
 	        html.append("<h2>Schedule for Today</h2>\n");
+
+	        String currentAccount = "";
+	        boolean tableOpen = false;
+
 	        for (String line : outputLines) {
 	            if (line.equals("-----------------------------------")) {
+	                if (tableOpen) {
+	                    html.append("</table>\n");
+	                    tableOpen = false;
+	                }
 	                html.append("<div class=\"separator\"></div>\n");
+	            } else if (line.startsWith("**************** SCHEDULE FOR")) {
+	                if (tableOpen) {
+	                    html.append("</table>\n");
+	                    tableOpen = false;
+	                }
+	                currentAccount = line.replace("*", "").trim();
+	                html.append("<h3>").append(currentAccount).append("</h3>\n");
+	                html.append("<table>\n");
+	                html.append("<tr><th>Discussion</th><th>Status</th></tr>\n");
+	                tableOpen = true;
+	            } else if (line.startsWith("Discussion")) {
+	                String[] parts = line.split("==>");
+	                if (parts.length == 2) {
+	                    String discussion = parts[0].trim();
+	                    String status = parts[1].trim();
+
+	                    String statusClass;
+	                    switch (status) {
+	                        case "Scheduled" : statusClass = "scheduled";
+	                        case "Not Recommended" : statusClass = "not-recommended";
+	                        case "Is a Good Fit" : statusClass = "good-fit";
+	                        case "Candidate No Show" : statusClass = "unknown-status";
+	                        case "Strongly Recommended" : statusClass = "good-fit";
+	                        default : statusClass = "unknown-status";
+	                    }
+
+	                    html.append("<tr><td>").append(discussion).append("</td>")
+	                        .append("<td class=\"").append(statusClass).append("\">")
+	                        .append(status).append("</td></tr>\n");
+	                } else {
+	                    html.append("<tr><td colspan=\"2\">").append(line).append("</td></tr>\n");
+	                }
 	            } else {
+	                // Other messages like "Fetching schedule..."
 	                html.append("<p>").append(line).append("</p>\n");
 	            }
 	        }
 
+	        if (tableOpen) {
+	            html.append("</table>\n");
+	        }
+
 	        html.append("</body>\n</html>");
 
-	        // write HTML file
-	        Files.write(Paths.get("deploy/index.html"), html.toString().getBytes(StandardCharsets.UTF_8));
+	        // Write HTML file
+	        java.nio.file.Files.write(java.nio.file.Paths.get("deploy/index.html"),
+	                html.toString().getBytes(java.nio.charset.StandardCharsets.UTF_8));
 	        System.out.println("schedule.html generated successfully in deploy/index.html");
-	    } catch (IOException ioe) {
+
+	    } catch (java.io.IOException ioe) {
 	        System.err.println("Failed to write schedule.html: " + ioe.getMessage());
 	    }
 	}
@@ -296,7 +344,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			List<WebElement> discussionListToday = driver.findElements(By.xpath(".//p[contains(text(),'"+todayDateVpropFormat+"')]"));
 			waitForFixTime(500);
 			System.out.println("Getting Vprop schedule for today....");
-			outputLines.add("Getting Vprop schedule for today....");
 			if(discussionListToday.isEmpty()) {
 				System.out.println("No discussions scheduled for today in Vprop.");
 				outputLines.add("No discussions scheduled for today in Vprop.");
@@ -318,7 +365,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			}
 		}
 		System.out.println("======================================================================");
-		outputLines.add("======================================================================");
 	}
 
 	public static String getTodayDateAsPerVpropFormat() { 
