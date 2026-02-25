@@ -40,17 +40,16 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 		try {
 			System.out.println("**************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ****************");
-			outputLines.add("**************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ****************");
+			outputLines.add("**************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************");
 			loginToJTwine();
 			List<String> scheduleLines = fetchScheduleForToday();
 			outputLines.addAll(scheduleLines);
 			driver.quit();
 			System.out.println("======================================================================");
-			outputLines.add("======================================================================");
 			username = System.getenv("JTWINE_USERNAME_SUD");
 			password = System.getenv("JTWINE_PASSWORD_SUD");
 			System.out.println("**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ****************");
-			outputLines.add("**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT ****************");
+			outputLines.add("**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************");
 			loginToJTwine();
 			scheduleLines = fetchScheduleForToday();
 			outputLines.addAll(scheduleLines);
@@ -66,7 +65,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 		// Separate Call for Vprop
 		System.out.println("======================================================================");
-		outputLines.add("======================================================================");
 		System.out.println("**************** SCHEDULE FOR Vprop ACCOUNT ****************");
 		outputLines.add("**************** SCHEDULE FOR Vprop ACCOUNT ****************");
 		outputLines.add("-----------------------------------");
@@ -215,17 +213,18 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	        html.append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
 	        html.append("<title>JTwine & VProp Schedule</title>\n");
 	        html.append("<style>\n");
-	        html.append("body { font-family: Arial, sans-serif; line-height: 1.5; padding: 20px; background: #f9f9f9; }\n");
+	        html.append("body { font-family: Arial, sans-serif; line-height: 1.5; padding: 20px; background: #f0fcff; }\n");
 	        html.append("h2 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 5px; }\n");
 	        html.append("h3 { color: #34495e; margin-top: 20px; }\n");
 	        html.append("p { margin: 5px 0; }\n");
 	        html.append(".separator { border-top: 1px solid #ccc; margin: 10px 0; }\n");
 	        html.append("table { border-collapse: collapse; width: 100%; margin: 10px 0; }\n");
 	        html.append("th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }\n");
-	        html.append("th { background-color: #ecf0f1; }\n");
-	        html.append(".scheduled { color: green; font-weight: bold; }\n");
+	        html.append("th { background-color: #b2e4f3; }\n");
+	        html.append(".scheduled { color: blue; font-weight: bold; }\n");
 	        html.append(".not-recommended { color: red; font-weight: bold; }\n");
-	        html.append(".good-fit { color: orange; font-weight: bold; }\n");
+	        html.append(".pending { color: orange; font-weight: bold; }\n");
+	        html.append(".good-fit { color: green; font-weight: bold; }\n");
 	        html.append(".unknown-status { color: gray; }\n");
 	        html.append("</style>\n");
 	        html.append("</head>\n");
@@ -261,11 +260,18 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 	                    String statusClass;
 	                    switch (status) {
-	                        case "Scheduled" : statusClass = "scheduled";
+	                        case "Scheduled" : statusClass = "scheduled"; 
+	                        break;
 	                        case "Not Recommended" : statusClass = "not-recommended";
+	                        break;
 	                        case "Is a Good Fit" : statusClass = "good-fit";
-	                        case "Candidate No Show" : statusClass = "unknown-status";
+	                        break;
+	                        case "Candidate No Show" : statusClass = "not-recommended";
+	                        break;
 	                        case "Strongly Recommended" : statusClass = "good-fit";
+	                        break;
+	                        case "Pending Feedback Review" : statusClass = "pending";
+	                        break;
 	                        default : statusClass = "unknown-status";
 	                    }
 
