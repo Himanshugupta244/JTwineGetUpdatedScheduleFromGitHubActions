@@ -58,7 +58,6 @@ jobs:
 
         # add changes to git
         git add deploy/schedule.txt
-        git add schedule.txt
 
         # commit and push
         git commit -m "Update schedule.txt [ci skip]" || echo "No changes"
