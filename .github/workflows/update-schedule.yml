@@ -2,6 +2,8 @@ name: Update JTwine Schedule
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"  # every 5 minutes
 
 jobs:
   update-schedule:
@@ -12,7 +14,6 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
-
 
     - name: Setup JDK 17
       uses: actions/setup-java@v3
@@ -44,3 +45,13 @@ jobs:
         git add schedule.txt
         git commit -m "Update schedule.txt [ci skip]" || echo "No changes"
         git push --force-with-lease
+
+    - name: Upload HTML via FTP to Hostinger
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: ./public_html/cloud
+        local-dir: ./   # adjust if your HTML is generated in a subfolder
+        include: schedule.txt  # replace with your generated HTML filename if different
