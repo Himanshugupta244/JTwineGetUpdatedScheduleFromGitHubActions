@@ -78,6 +78,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		System.out.println(outputLines);
 		
 		writeCodeToScheduleTxtFileForGitHub();
+		writeCodeToIndexHtmlFileForGitHub();
 	}
 
 	public static void loginToJTwine() {
@@ -205,6 +206,47 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		} catch (IOException ioe) {
 			System.err.println("Failed to write schedule.txt: " + ioe.getMessage());
 		}
+	}
+	
+	public static void writeCodeToIndexHtmlFileForGitHub() {
+	    try {
+	        java.time.ZonedDateTime nowIST = java.time.ZonedDateTime.now(java.time.ZoneId.of("Asia/Kolkata"));
+	        outputLines.add("-----------------------------------");
+	        outputLines.add("Updated at (IST): " + nowIST.format(java.time.format.DateTimeFormatter.ofPattern("dd-MMM-yyyy hh:mm:ss a")));
+
+	        StringBuilder html = new StringBuilder();
+	        html.append("<!DOCTYPE html>\n");
+	        html.append("<html lang=\"en\">\n");
+	        html.append("<head>\n");
+	        html.append("<meta charset=\"UTF-8\">\n");
+	        html.append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
+	        html.append("<title>JTwine & VProp Schedule</title>\n");
+	        html.append("<style>\n");
+	        html.append("body { font-family: Arial, sans-serif; line-height: 1.5; padding: 20px; }\n");
+	        html.append("h2 { color: #2c3e50; }\n");
+	        html.append("p { margin: 5px 0; }\n");
+	        html.append(".separator { border-top: 1px solid #ccc; margin: 10px 0; }\n");
+	        html.append("</style>\n");
+	        html.append("</head>\n");
+	        html.append("<body>\n");
+
+	        html.append("<h2>Schedule for Today</h2>\n");
+	        for (String line : outputLines) {
+	            if (line.equals("-----------------------------------")) {
+	                html.append("<div class=\"separator\"></div>\n");
+	            } else {
+	                html.append("<p>").append(line).append("</p>\n");
+	            }
+	        }
+
+	        html.append("</body>\n</html>");
+
+	        // write HTML file
+	        Files.write(Paths.get("deploy/index.html"), html.toString().getBytes(StandardCharsets.UTF_8));
+	        System.out.println("schedule.html generated successfully in deploy/index.html");
+	    } catch (IOException ioe) {
+	        System.err.println("Failed to write schedule.html: " + ioe.getMessage());
+	    }
 	}
 
 	// Separate Code for VProp
