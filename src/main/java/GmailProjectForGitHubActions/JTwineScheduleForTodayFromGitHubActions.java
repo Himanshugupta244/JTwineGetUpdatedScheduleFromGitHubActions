@@ -147,6 +147,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		String tomorrowStatusLocator = tomorrowLocator+"//ancestor::div[contains(@class,'candidate-details-sec')]//div[contains(@class,'btn-chip')]/div";
 		List<WebElement> discussionListTomorrow = driver.findElements(By.xpath(tomorrowLocator));
 		List<WebElement> discussionStatusListTomorrow = driver.findElements(By.xpath(tomorrowStatusLocator));
+		
 		for (int index = 0; index < discussionListTomorrow.size(); index++) {
 			WebElement discussion = discussionListTomorrow.get(index);
 			WebElement discussionStatus = discussionStatusListTomorrow.get(index);
@@ -222,8 +223,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	        html.append("th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }\n");
 	        html.append("th { background-color: #b2e4f3; }\n");
 	        html.append(".scheduled { color: blue; font-weight: bold; }\n");
-	        html.append(".not-recommended { color: red; font-weight: bold; }\n");
-	        html.append(".pending { color: orange; font-weight: bold; }\n");
+	        html.append(".not-recommended { color: green; font-weight: bold; }\n");
+	        html.append(".pending { color: red; font-weight: bold; }\n");
 	        html.append(".good-fit { color: green; font-weight: bold; }\n");
 	        html.append(".unknown-status { color: gray; }\n");
 	        html.append("</style>\n");
