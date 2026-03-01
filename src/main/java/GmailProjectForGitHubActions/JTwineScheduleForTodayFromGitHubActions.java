@@ -65,8 +65,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 		// Separate Call for Vprop
 		System.out.println("======================================================================");
-		System.out.println("**************** SCHEDULE FOR Vprop ACCOUNT ****************");
-		outputLines.add("**************** SCHEDULE FOR Vprop ACCOUNT ****************");
+		System.out.println("**************** SCHEDULE FOR Vprop ACCOUNT :- ****************");
+		outputLines.add("**************** SCHEDULE FOR Vprop ACCOUNT :- ****************");
 		outputLines.add("-----------------------------------");
 		usernameVprop = System.getenv("VPROP_USERNAME_HIM");
 		passwordVprop = System.getenv("VPROP_PASSWORD_HIM");
