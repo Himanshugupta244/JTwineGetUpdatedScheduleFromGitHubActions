@@ -25,6 +25,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	public static String usernameVprop = null;
 	public static String passwordVprop = null;
 	public static String todayDateVpropFormat = null;
+	public static String tomorrowDateVpropFormat = null;
 	public static List<String> outputLines = new ArrayList<>();
 
 	public static void main(String[] args) {
@@ -71,6 +72,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		usernameVprop = System.getenv("VPROP_USERNAME_HIM");
 		passwordVprop = System.getenv("VPROP_PASSWORD_HIM");
 		todayDateVpropFormat = getTodayDateAsPerVpropFormat();
+		tomorrowDateVpropFormat = getTomorrowDateAsPerVpropFormat();
 		loginAndFetchVPropScheduleForToday();
 		System.out.println("====================== FINAL OUTPUT FOR DEBUGGING IS ================");
 		System.out.println(outputLines);
@@ -362,6 +364,27 @@ public class JTwineScheduleForTodayFromGitHubActions {
 					outputLines.add("Discussion " + (index + 1) + ": " + discussion.getText());
 				}
 			}
+
+			// Fetch tomorrow's schedule for Vprop
+			List<WebElement> discussionListTomorrow = driver.findElements(By.xpath(".//p[contains(text(),'"+tomorrowDateVpropFormat+"')]"));
+			waitForFixTime(500);
+			System.out.println("Getting Vprop schedule for tomorrow....");
+			if(discussionListTomorrow.isEmpty()) {
+				System.out.println("No discussions scheduled for tomorrow in Vprop.");
+				outputLines.add("No discussions scheduled for tomorrow in Vprop.");
+			} else {
+
+				for (int index = 0; index < discussionListTomorrow.size(); index++) {
+					WebElement discussion = discussionListTomorrow.get(index);
+					System.out.println("Discussion " + (index + 1) + ": " + discussion.getText());
+					outputLines.add("Discussion " + (index + 1) + ": " + discussion.getText());
+				}
+			}
+
+			if(discussionListToday.isEmpty() && discussionListTomorrow.isEmpty()) {
+				System.out.println("No discussions scheduled for today and tomorrow in Vprop.");
+				outputLines.add("No discussions scheduled for today and tomorrow in Vprop.");
+			}
 		}
 		catch (Exception e) {
 			e.printStackTrace();
@@ -378,6 +401,13 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		System.out.println("Getting today's date in Vprop format....");
 		String[] dateSplitted = todayDate.split(" ");
 		System.out.println("Today's date in Vprop format is : " + dateSplitted[1] + "-" + dateSplitted[0]);
+		return dateSplitted[1] + "-" + dateSplitted[0]; 
+	}
+
+	public static String getTomorrowDateAsPerVpropFormat() { 
+		System.out.println("Getting tomorrow's date in Vprop format....");
+		String[] dateSplitted = tomorrowDate.split(" ");
+		System.out.println("Tomorrow's date in Vprop format is : " + dateSplitted[1] + "-" + dateSplitted[0]);
 		return dateSplitted[1] + "-" + dateSplitted[0]; 
 	}
 
