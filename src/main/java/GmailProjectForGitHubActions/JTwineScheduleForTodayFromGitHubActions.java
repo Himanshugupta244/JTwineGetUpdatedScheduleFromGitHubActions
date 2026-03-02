@@ -172,14 +172,14 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 	public static String getTodayDateFormatted() {
 		java.time.LocalDate today = java.time.LocalDate.now();
-		java.time.format.DateTimeFormatter formatter = java.time.format.DateTimeFormatter.ofPattern("MMM dd");
+		java.time.format.DateTimeFormatter formatter = java.time.format.DateTimeFormatter.ofPattern("MMM d");
 		return today.format(formatter);
 	}
 
 	public static String getTomorrowDateFormatted() {
 		java.time.LocalDate tomorrow = java.time.LocalDate.now().plusDays(1);
 		java.time.format.DateTimeFormatter formatter =
-				java.time.format.DateTimeFormatter.ofPattern("MMM dd");
+				java.time.format.DateTimeFormatter.ofPattern("MMM d");
 		return tomorrow.format(formatter);
 	}
 
