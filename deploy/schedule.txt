@@ -1,6 +1,6 @@
 Today's date: Mar 7
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
-Discussion 1: Sat, Mar 7, 2026, 6:00 PM IST ==> Scheduled
+Discussion 1: Sat, Mar 7, 2026, 6:00 PM IST ==> Candidate No Show
 Discussion 2: Sat, Mar 7, 2026, 3:00 PM IST ==> Candidate No Show
 Discussion 3: Sat, Mar 7, 2026, 12:00 PM IST ==> Is a Good Fit
 Discussion 4: Sat, Mar 7, 2026, 10:30 AM IST ==> Not Recommended
@@ -14,7 +14,7 @@ Exception while fetching Vprop schedule: Expected condition failed: waiting for 
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-1017-azure', java.version: '17.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.116, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35731}, goog:processID: 2821, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35731/devtoo..., se:cdpVersion: 145.0.7632.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 83a2f272ad79b5f236348d93bcc91328
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.116, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33981}, goog:processID: 2861, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33981/devtoo..., se:cdpVersion: 145.0.7632.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b5573d0808549af0788f369a284c4739
 -----------------------------------
-Updated at (IST): 07-Mar-2026 06:12:06 PM
+Updated at (IST): 07-Mar-2026 06:17:11 PM
