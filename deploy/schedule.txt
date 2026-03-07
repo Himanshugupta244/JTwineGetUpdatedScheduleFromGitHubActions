@@ -14,7 +14,7 @@ Exception while fetching Vprop schedule: Expected condition failed: waiting for 
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-1017-azure', java.version: '17.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.116, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43481}, goog:processID: 2923, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43481/devtoo..., se:cdpVersion: 145.0.7632.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5560b81af6b45cd3429cff30434939d8
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.116, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43165}, goog:processID: 2836, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43165/devtoo..., se:cdpVersion: 145.0.7632.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff9fe3beb9d5c21d98c3fedcc436d544
 -----------------------------------
-Updated at (IST): 07-Mar-2026 03:26:55 PM
+Updated at (IST): 07-Mar-2026 03:32:12 PM
