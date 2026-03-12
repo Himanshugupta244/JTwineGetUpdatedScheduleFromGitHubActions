@@ -395,14 +395,14 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		System.out.println("Getting today's date in Vprop format....");
 		String[] dateSplitted = todayDate.split(" ");
 		System.out.println("Today's date in Vprop format is : " + dateSplitted[1] + "-" + dateSplitted[0]);
-		return dateSplitted[1] + "-" + dateSplitted[0]; 
+		return dateSplitted[1] + " " + dateSplitted[0]; 
 	}
 
 	public static String getTomorrowDateAsPerVpropFormat() { 
 		System.out.println("Getting tomorrow's date in Vprop format....");
 		String[] dateSplitted = tomorrowDate.split(" ");
 		System.out.println("Tomorrow's date in Vprop format is : " + dateSplitted[1] + "-" + dateSplitted[0]);
-		return dateSplitted[1] + "-" + dateSplitted[0]; 
+		return dateSplitted[1] + " " + dateSplitted[0]; 
 	}
 
 }
