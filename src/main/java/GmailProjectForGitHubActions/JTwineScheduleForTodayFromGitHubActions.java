@@ -319,27 +319,21 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			driver = new ChromeDriver(options);
 			driver.manage().window().maximize();
 			setTimezoneToIST(driver);
-			driver.get("https://expert.vprople.com/expert-login");
+			driver.get("https://expert.vprople.com/login");
 			waitForFixTime(2000);
 			if (usernameVprop == null || usernameVprop.isEmpty() || passwordVprop == null || passwordVprop.isEmpty()) {
 				throw new IllegalArgumentException("usernameVprop and/or passwordVprop environment variables are not set or empty.");
 			}
-			waitTillElementVisible(By.id("yourUsername"), 30);
-			driver.findElement(By.id("yourUsername")).sendKeys(usernameVprop);
+			waitTillElementVisible(By.xpath(".//input[@name='email']"), 30);
+			driver.findElement(By.xpath(".//input[@name='email']")).sendKeys(usernameVprop);
 			waitForFixTime(1000);
-			waitTillElementVisible(By.id("yourPassword"), 30);
-			driver.findElement(By.id("yourPassword")).sendKeys(passwordVprop);
+			waitTillElementVisible(By.xpath(".//input[@name='password']"), 30);
+			driver.findElement(By.xpath(".//input[@name='password']")).sendKeys(passwordVprop);
 			waitForFixTime(1000);
-			waitTillElementVisible(By.xpath(".//button[text()='Login']"), 30);
-			driver.findElement(By.xpath(".//button[text()='Login']")).click();
-			System.out.println("Waiting for 10 seconds......");
-			waitForFixTime(10000);
-			if(driver.findElements(By.xpath(".//h5[text()='Complete your profile']")).size() > 0) {
-				if(driver.findElements(By.xpath(".//h5[text()='Complete your profile']/parent::div/following-sibling::div//button[text()='Close']")).size() > 0) {
-					driver.findElement(By.xpath(".//h5[text()='Complete your profile']/parent::div/following-sibling::div//button[text()='Close']")).click();
-				}
-			}
-			driver.get("https://expert.vprople.com/expert-dashboard");
+			waitTillElementVisible(By.xpath(".//button[@type='submit']"), 30);
+			driver.findElement(By.xpath(".//button[@type='submit']")).click();
+			waitTillElementVisible(By.xpath(".//header//span[text()='Himanshu']"), 30);
+			driver.get("https://expert.vprople.com/");
 			System.out.println("Waiting for 10 seconds more......");
 			waitForFixTime(10000);
 			if(driver.findElements(By.xpath(".//a[span[contains(text(),'Dashboard')]]")).size() > 0) {
@@ -348,7 +342,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				throw new RuntimeException("Login to Vprop is failed - 'Dashboard' text not found after login.");
 			}
 			driver.get("https://expert.vprople.com/interviews");
-			waitTillElementVisible(By.xpath(".//label[contains(text(),' entries per page')]"), 30);
+			waitTillElementVisible(By.xpath(".//input[contains(@placeholder,'enter candidate name')]"), 30);
 			waitForFixTime(1000);
 			List<WebElement> discussionListToday = driver.findElements(By.xpath(".//p[contains(text(),'"+todayDateVpropFormat+"')]"));
 			waitForFixTime(500);
