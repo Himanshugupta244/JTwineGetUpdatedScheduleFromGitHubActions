@@ -4,7 +4,7 @@ Discussion 1: Thu, Mar 12, 2026, 11:00 PM IST ==> Scheduled
 Discussion 2: Thu, Mar 12, 2026, 8:30 PM IST ==> Scheduled
 Discussion 3: Thu, Mar 12, 2026, 7:30 PM IST ==> Scheduled
 Discussion 4: Thu, Mar 12, 2026, 6:30 PM IST ==> Scheduled
-Discussion 5: Thu, Mar 12, 2026, 3:00 PM IST ==> Scheduled
+Discussion 5: Thu, Mar 12, 2026, 3:00 PM IST ==> Candidate No Show
 Discussion 1: Fri, Mar 13, 2026, 9:30 PM IST ==> Scheduled
 Discussion 2: Fri, Mar 13, 2026, 8:30 PM IST ==> Scheduled
 Discussion 3: Fri, Mar 13, 2026, 3:00 PM IST ==> Scheduled
@@ -24,4 +24,4 @@ Discussion 1: 12 Mar 2026 11:45 AM
 
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 12-Mar-2026 03:41:50 PM
+Updated at (IST): 12-Mar-2026 03:46:54 PM
