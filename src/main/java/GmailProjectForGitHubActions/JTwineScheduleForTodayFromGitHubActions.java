@@ -141,8 +141,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		for (int index = 0; index < discussionListToday.size(); index++) {
 			WebElement discussion = discussionListToday.get(index);
 			WebElement discussionStatus = discussionStatusListToday.get(index);
-			System.out.println("Today's Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
-			lines.add("Today's Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
+			System.out.println("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
+			lines.add("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
 		}
 
 		String tomorrowLocator = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + tomorrowDate + "')]";
@@ -153,8 +153,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		for (int index = 0; index < discussionListTomorrow.size(); index++) {
 			WebElement discussion = discussionListTomorrow.get(index);
 			WebElement discussionStatus = discussionStatusListTomorrow.get(index);
-			System.out.println("Tomorrow's Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
-			lines.add("Tomorrow's Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
+			System.out.println("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
+			lines.add("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
 		}
 		if(discussionListToday.isEmpty() && discussionListTomorrow.isEmpty()) {
 			System.out.println("No discussions scheduled for today and tomorrow.");
@@ -354,8 +354,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 				for (int index = 0; index < discussionListToday.size(); index++) {
 					WebElement discussion = discussionListToday.get(index);
-					System.out.println("Today's Discussion " + (index + 1) + ": " + discussion.getText());
-					outputLines.add("Today's Discussion " + (index + 1) + ": " + discussion.getText());
+					System.out.println("Discussion " + (index + 1) + ": " + discussion.getText());
+					outputLines.add("Discussion " + (index + 1) + ": " + discussion.getText());
 				}
 			}
 
@@ -371,8 +371,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 				for (int index = 0; index < discussionListTomorrow.size(); index++) {
 					WebElement discussion = discussionListTomorrow.get(index);
-					System.out.println("Tomorrow's Discussion " + (index + 1) + ": " + discussion.getText());
-					outputLines.add("Tomorrow's Discussion " + (index + 1) + ": " + discussion.getText());
+					System.out.println("Discussion " + (index + 1) + ": " + discussion.getText());
+					outputLines.add("Discussion " + (index + 1) + ": " + discussion.getText());
 				}
 			}
 		}
