@@ -344,7 +344,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			driver.get("https://expert.vprople.com/interviews");
 			waitTillElementVisible(By.xpath(".//input[contains(@placeholder,'enter candidate name')]"), 30);
 			waitForFixTime(1000);
-			List<WebElement> discussionListToday = driver.findElements(By.xpath(".//p[contains(text(),'"+todayDateVpropFormat+"')]"));
+			List<WebElement> discussionListToday = driver.findElements(By.xpath(".//span[contains(text(),'"+todayDateVpropFormat+"')]"));
 			waitForFixTime(500);
 			System.out.println("Getting Vprop schedule for today....");
 			if(discussionListToday.isEmpty()) {
@@ -360,7 +360,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			}
 
 			// Fetch tomorrow's schedule for Vprop
-			List<WebElement> discussionListTomorrow = driver.findElements(By.xpath(".//p[contains(text(),'"+tomorrowDateVpropFormat+"')]"));
+			List<WebElement> discussionListTomorrow = driver.findElements(By.xpath(".//span[contains(text(),'"+tomorrowDateVpropFormat+"')]"));
 			waitForFixTime(500);
 			System.out.println("Getting Vprop schedule for tomorrow....");
 			if(discussionListTomorrow.isEmpty()) {
