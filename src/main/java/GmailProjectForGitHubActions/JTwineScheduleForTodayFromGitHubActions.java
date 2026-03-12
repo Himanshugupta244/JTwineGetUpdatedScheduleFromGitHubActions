@@ -364,7 +364,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			waitForFixTime(500);
 			System.out.println("Getting Vprop schedule for tomorrow....");
 			if(discussionListTomorrow.isEmpty()) {
-				outputLines.add("");
+				outputLines.add("\n");
 				System.out.println("No discussions scheduled for tomorrow in Vprop.");
 				outputLines.add("No discussions scheduled for tomorrow in Vprop.");
 			} else {
@@ -374,11 +374,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 					System.out.println("Discussion " + (index + 1) + ": " + discussion.getText());
 					outputLines.add("Discussion " + (index + 1) + ": " + discussion.getText());
 				}
-			}
-
-			if(discussionListToday.isEmpty() && discussionListTomorrow.isEmpty()) {
-				System.out.println("No discussions scheduled for today and tomorrow in Vprop.");
-				outputLines.add("No discussions scheduled for today and tomorrow in Vprop.");
 			}
 		}
 		catch (Exception e) {
