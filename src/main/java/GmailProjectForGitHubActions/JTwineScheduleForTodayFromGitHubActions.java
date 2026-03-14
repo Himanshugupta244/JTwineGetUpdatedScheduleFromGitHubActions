@@ -76,7 +76,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		loginAndFetchVPropScheduleForToday();
 		System.out.println("====================== FINAL OUTPUT FOR DEBUGGING IS ================");
 		System.out.println(outputLines);
-		
+
 		writeCodeToScheduleTxtFileForGitHub();
 		writeCodeToIndexHtmlFileForGitHub();
 	}
@@ -133,6 +133,38 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		System.out.println("======================================================================");
 		waitTillElementVisible(By.xpath(".//span[text()='Start Meeting']"), 60);
 
+		// Fetch from Page 1 first
+		System.out.println("Fetching schedule from Page 1.....");
+		List<String> page1Lines = fetchScheduleFromCurrentPage();
+		lines.addAll(page1Lines);
+
+		// Check if page 2 exists and click on it
+		List<WebElement> page2Button = driver.findElements(By.xpath("(.//span[contains(text(),'page ')]/following-sibling::span)[2]"));
+		if (!page2Button.isEmpty()) {
+			System.out.println("Page 2 found, clicking on it.....");
+			page2Button.get(0).click();
+			System.out.println("Waiting 10 seconds for page 2 to load.....");
+			waitForFixTime(10000);
+
+			// Fetch from Page 2
+			System.out.println("Fetching schedule from Page 2.....");
+			List<String> page2Lines = fetchScheduleFromCurrentPage();
+			lines.addAll(page2Lines);
+		} else {
+			System.out.println("Page 2 not found, only Page 1 results available.");
+		}
+
+		if(lines.isEmpty()) {
+			System.out.println("No discussions scheduled for today and tomorrow.");
+			lines.add("No discussions scheduled for today and tomorrow.");
+			System.out.println("======================================================================");
+		}
+		return lines;
+	}
+
+	public static List<String> fetchScheduleFromCurrentPage() throws Exception {
+		List<String> lines = new ArrayList<>();
+
 		String todayLocator = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + todayDate + "')]";
 		String todayStatusLocator = todayLocator+"//ancestor::div[contains(@class,'candidate-details-sec')]//div[contains(@class,'btn-chip')]/div";
 		List<WebElement> discussionListToday = driver.findElements(By.xpath(todayLocator));
@@ -149,18 +181,14 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		String tomorrowStatusLocator = tomorrowLocator+"//ancestor::div[contains(@class,'candidate-details-sec')]//div[contains(@class,'btn-chip')]/div";
 		List<WebElement> discussionListTomorrow = driver.findElements(By.xpath(tomorrowLocator));
 		List<WebElement> discussionStatusListTomorrow = driver.findElements(By.xpath(tomorrowStatusLocator));
-		
+
 		for (int index = 0; index < discussionListTomorrow.size(); index++) {
 			WebElement discussion = discussionListTomorrow.get(index);
 			WebElement discussionStatus = discussionStatusListTomorrow.get(index);
 			System.out.println("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
 			lines.add("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
 		}
-		if(discussionListToday.isEmpty() && discussionListTomorrow.isEmpty()) {
-			System.out.println("No discussions scheduled for today and tomorrow.");
-			lines.add("No discussions scheduled for today and tomorrow.");
-			System.out.println("======================================================================");
-		}
+
 		return lines;
 	}
 
@@ -190,7 +218,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				java.time.Duration.ofSeconds(timeoutInSeconds));
 		wait.until(org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(locator));
 	}
-	
+
 	public static void writeCodeToScheduleTxtFileForGitHub() {
 		try {
 			java.time.ZonedDateTime nowIST =
@@ -205,105 +233,105 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			System.err.println("Failed to write schedule.txt: " + ioe.getMessage());
 		}
 	}
-	
+
 	public static void writeCodeToIndexHtmlFileForGitHub() {
-	    try {
-	        StringBuilder html = new StringBuilder();
-	        html.append("<!DOCTYPE html>\n");
-	        html.append("<html lang=\"en\">\n");
-	        html.append("<head>\n");
-	        html.append("<meta charset=\"UTF-8\">\n");
-	        html.append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
-	        html.append("<title>JTwine & VProp Schedule</title>\n");
-	        html.append("<style>\n");
-	        html.append("body { font-family: Arial, sans-serif; line-height: 1.5; padding: 20px; background: #f0fcff; }\n");
-	        html.append("h2 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 5px; }\n");
-	        html.append("h3 { color: #34495e; margin-top: 20px; }\n");
-	        html.append("p { margin: 5px 0; }\n");
-	        html.append(".separator { border-top: 1px solid #ccc; margin: 10px 0; }\n");
-	        html.append("table { border-collapse: collapse; width: 100%; margin: 10px 0; }\n");
-	        html.append("th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }\n");
-	        html.append("th { background-color: #b2e4f3; }\n");
-	        html.append(".scheduled { color: blue; font-weight: bold; }\n");
-	        html.append(".not-recommended { color: green; font-weight: bold; }\n");
-	        html.append(".pending { color: red; font-weight: bold; }\n");
-	        html.append(".good-fit { color: green; font-weight: bold; }\n");
-	        html.append(".unknown-status { color: gray; }\n");
-	        html.append("</style>\n");
-	        html.append("</head>\n");
-	        html.append("<body>\n");
+		try {
+			StringBuilder html = new StringBuilder();
+			html.append("<!DOCTYPE html>\n");
+			html.append("<html lang=\"en\">\n");
+			html.append("<head>\n");
+			html.append("<meta charset=\"UTF-8\">\n");
+			html.append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
+			html.append("<title>JTwine & VProp Schedule</title>\n");
+			html.append("<style>\n");
+			html.append("body { font-family: Arial, sans-serif; line-height: 1.5; padding: 20px; background: #f0fcff; }\n");
+			html.append("h2 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 5px; }\n");
+			html.append("h3 { color: #34495e; margin-top: 20px; }\n");
+			html.append("p { margin: 5px 0; }\n");
+			html.append(".separator { border-top: 1px solid #ccc; margin: 10px 0; }\n");
+			html.append("table { border-collapse: collapse; width: 100%; margin: 10px 0; }\n");
+			html.append("th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }\n");
+			html.append("th { background-color: #b2e4f3; }\n");
+			html.append(".scheduled { color: blue; font-weight: bold; }\n");
+			html.append(".not-recommended { color: green; font-weight: bold; }\n");
+			html.append(".pending { color: red; font-weight: bold; }\n");
+			html.append(".good-fit { color: green; font-weight: bold; }\n");
+			html.append(".unknown-status { color: gray; }\n");
+			html.append("</style>\n");
+			html.append("</head>\n");
+			html.append("<body>\n");
 
-	        html.append("<h2>Schedule for Today</h2>\n");
+			html.append("<h2>Schedule for Today</h2>\n");
 
-	        String currentAccount = "";
-	        boolean tableOpen = false;
+			String currentAccount = "";
+			boolean tableOpen = false;
 
-	        for (String line : outputLines) {
-	            if (line.equals("-----------------------------------")) {
-	                if (tableOpen) {
-	                    html.append("</table>\n");
-	                    tableOpen = false;
-	                }
-	                html.append("<div class=\"separator\"></div>\n");
-	            } else if (line.startsWith("**************** SCHEDULE FOR")) {
-	                if (tableOpen) {
-	                    html.append("</table>\n");
-	                    tableOpen = false;
-	                }
-	                currentAccount = line.replace("*", "").trim();
-	                html.append("<h3>").append(currentAccount).append("</h3>\n");
-	                html.append("<table>\n");
-	                html.append("<tr><th>Discussion</th><th>Status</th></tr>\n");
-	                tableOpen = true;
-	            } else if (line.startsWith("Discussion")) {
-	                String[] parts = line.split("==>");
-	                if (parts.length == 2) {
-	                    String discussion = parts[0].trim();
-	                    String status = parts[1].trim();
+			for (String line : outputLines) {
+				if (line.equals("-----------------------------------")) {
+					if (tableOpen) {
+						html.append("</table>\n");
+						tableOpen = false;
+					}
+					html.append("<div class=\"separator\"></div>\n");
+				} else if (line.startsWith("**************** SCHEDULE FOR")) {
+					if (tableOpen) {
+						html.append("</table>\n");
+						tableOpen = false;
+					}
+					currentAccount = line.replace("*", "").trim();
+					html.append("<h3>").append(currentAccount).append("</h3>\n");
+					html.append("<table>\n");
+					html.append("<tr><th>Discussion</th><th>Status</th></tr>\n");
+					tableOpen = true;
+				} else if (line.startsWith("Discussion")) {
+					String[] parts = line.split("==>");
+					if (parts.length == 2) {
+						String discussion = parts[0].trim();
+						String status = parts[1].trim();
 
-	                    String statusClass;
-	                    switch (status) {
-	                        case "Scheduled" : statusClass = "scheduled"; 
-	                        break;
-	                        case "Not Recommended" : statusClass = "not-recommended";
-	                        break;
-	                        case "Is a Good Fit" : statusClass = "good-fit";
-	                        break;
-	                        case "Candidate No Show" : statusClass = "not-recommended";
-	                        break;
-	                        case "Strongly Recommended" : statusClass = "good-fit";
-	                        break;
-	                        case "Pending Feedback Review" : statusClass = "pending";
-	                        break;
-	                        default : statusClass = "unknown-status";
-	                    }
+						String statusClass;
+						switch (status) {
+						case "Scheduled" : statusClass = "scheduled"; 
+						break;
+						case "Not Recommended" : statusClass = "not-recommended";
+						break;
+						case "Is a Good Fit" : statusClass = "good-fit";
+						break;
+						case "Candidate No Show" : statusClass = "not-recommended";
+						break;
+						case "Strongly Recommended" : statusClass = "good-fit";
+						break;
+						case "Pending Feedback Review" : statusClass = "pending";
+						break;
+						default : statusClass = "unknown-status";
+						}
 
-	                    html.append("<tr><td>").append(discussion).append("</td>")
-	                        .append("<td class=\"").append(statusClass).append("\">")
-	                        .append(status).append("</td></tr>\n");
-	                } else {
-	                    html.append("<tr><td colspan=\"2\">").append(line).append("</td></tr>\n");
-	                }
-	            } else {
-	                // Other messages like "Fetching schedule..."
-	                html.append("<p>").append(line).append("</p>\n");
-	            }
-	        }
+						html.append("<tr><td>").append(discussion).append("</td>")
+						.append("<td class=\"").append(statusClass).append("\">")
+						.append(status).append("</td></tr>\n");
+					} else {
+						html.append("<tr><td colspan=\"2\">").append(line).append("</td></tr>\n");
+					}
+				} else {
+					// Other messages like "Fetching schedule..."
+					html.append("<p>").append(line).append("</p>\n");
+				}
+			}
 
-	        if (tableOpen) {
-	            html.append("</table>\n");
-	        }
+			if (tableOpen) {
+				html.append("</table>\n");
+			}
 
-	        html.append("</body>\n</html>");
+			html.append("</body>\n</html>");
 
-	        // Write HTML file
-	        java.nio.file.Files.write(java.nio.file.Paths.get("deploy/index.html"),
-	                html.toString().getBytes(java.nio.charset.StandardCharsets.UTF_8));
-	        System.out.println("schedule.html generated successfully in deploy/index.html");
+			// Write HTML file
+			java.nio.file.Files.write(java.nio.file.Paths.get("deploy/index.html"),
+					html.toString().getBytes(java.nio.charset.StandardCharsets.UTF_8));
+			System.out.println("schedule.html generated successfully in deploy/index.html");
 
-	    } catch (java.io.IOException ioe) {
-	        System.err.println("Failed to write schedule.html: " + ioe.getMessage());
-	    }
+		} catch (java.io.IOException ioe) {
+			System.err.println("Failed to write schedule.html: " + ioe.getMessage());
+		}
 	}
 
 	// Separate Code for VProp
