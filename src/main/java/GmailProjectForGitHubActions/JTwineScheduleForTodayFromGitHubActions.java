@@ -33,7 +33,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		username = System.getenv("JTWINE_USERNAME_HIM");
 		password = System.getenv("JTWINE_PASSWORD_HIM");
 		usernameVprop = System.getenv("VPROP_USERNAME_HIM");
-		usernameVprop = System.getenv("VPROP_PASSWORD_HIM");
+		passwordVprop = System.getenv("VPROP_PASSWORD_HIM");
 		todayDate = getTodayDateFormatted();
 		tomorrowDate = getTomorrowDateFormatted();
 		System.out.println("Today's date: " + todayDate);
@@ -249,8 +249,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("h3 { color: #34495e; margin-top: 20px; }\n");
 			html.append("p { margin: 5px 0; }\n");
 			html.append(".separator { border-top: 1px solid #ccc; margin: 10px 0; }\n");
-			html.append("table { border-collapse: collapse; width: 100%; margin: 10px 0; }\n");
-			html.append("th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }\n");
+			html.append("table { border-collapse: collapse; width: 100%; margin: 10px 0; table-layout: fixed; }\n");
+			html.append("th, td { border: 1px solid #ccc; padding: 8px; text-align: left; word-wrap: break-word; overflow-wrap: break-word; }\n");
 			html.append("th { background-color: #b2e4f3; }\n");
 			html.append(".scheduled { color: blue; font-weight: bold; }\n");
 			html.append(".not-recommended { color: green; font-weight: bold; }\n");
@@ -281,7 +281,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 					currentAccount = line.replace("*", "").trim();
 					html.append("<h3>").append(currentAccount).append("</h3>\n");
 					html.append("<table>\n");
-					html.append("<tr><th>Discussion</th><th>Status</th></tr>\n");
+					html.append("<tr><th style=\"width:60%\">Discussion</th><th style=\"width:40%\">Status</th></tr>\n");
 					tableOpen = true;
 				} else if (line.startsWith("Discussion")) {
 					String[] parts = line.split("==>");
