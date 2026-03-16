@@ -1,11 +1,17 @@
 Today's date: Mar 16
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
-Exception: Expected condition failed: waiting for visibility of element located by By.xpath: .//input[@formcontrolname='userName'] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-1017-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.159, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33783}, goog:processID: 2539, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33783/devtoo..., se:cdpVersion: 145.0.7632.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 46475995678cbf8af86fad494c0c791f
+Discussion 1: Mon, Mar 16, 2026, 10:30 PM IST ==> Scheduled
+Discussion 2: Mon, Mar 16, 2026, 8:30 PM IST ==> Generating Feedback
+Discussion 3: Mon, Mar 16, 2026, 6:00 PM IST ==> Pending Feedback Review
+Discussion 1: Tue, Mar 17, 2026, 6:00 PM IST ==> Scheduled
+Discussion 2: Tue, Mar 17, 2026, 5:00 PM IST ==> Scheduled
+Discussion 3: Tue, Mar 17, 2026, 10:30 AM IST ==> Scheduled
+**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
+Discussion 1: Mon, Mar 16, 2026, 11:30 PM IST ==> Scheduled
+Discussion 2: Mon, Mar 16, 2026, 9:30 PM IST ==> Cancelled by candidate
+Discussion 3: Mon, Mar 16, 2026, 6:00 PM IST ==> Pending Feedback Review
+Discussion 4: Mon, Mar 16, 2026, 11:00 AM IST ==> Not Recommended
+Discussion 1: Tue, Mar 17, 2026, 11:00 AM IST ==> Scheduled
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 -----------------------------------
 No discussions scheduled for today in Vprop.
@@ -13,4 +19,4 @@ No discussions scheduled for today in Vprop.
 
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 16-Mar-2026 08:26:55 PM
+Updated at (IST): 16-Mar-2026 09:36:15 PM
