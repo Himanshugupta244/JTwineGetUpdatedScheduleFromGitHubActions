@@ -68,7 +68,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		System.out.println("======================================================================");
 		System.out.println("**************** SCHEDULE FOR Vprop ACCOUNT :- ****************");
 		outputLines.add("**************** SCHEDULE FOR Vprop ACCOUNT :- ****************");
-		outputLines.add("-----------------------------------");
 		usernameVprop = System.getenv("VPROP_USERNAME_HIM");
 		passwordVprop = System.getenv("VPROP_PASSWORD_HIM");
 		todayDateVpropFormat = getTodayDateAsPerVpropFormat();
@@ -372,35 +371,41 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			driver.get("https://expert.vprople.com/interviews");
 			waitTillElementVisible(By.xpath(".//input[contains(@placeholder,'enter candidate name')]"), 30);
 			waitForFixTime(1000);
-			List<WebElement> discussionListToday = driver.findElements(By.xpath(".//span[contains(text(),'"+todayDateVpropFormat+"')]"));
+			List<WebElement> todayCards = driver.findElements(By.xpath(".//span[contains(text(),'"+todayDateVpropFormat+"')]/ancestor::div[.//h4 and .//span[@data-slot='badge']][1]"));
 			waitForFixTime(500);
 			System.out.println("Getting Vprop schedule for today....");
-			if(discussionListToday.isEmpty()) {
+			if(todayCards.isEmpty()) {
 				System.out.println("No discussions scheduled for today in Vprop.");
 				outputLines.add("No discussions scheduled for today in Vprop.");
 			} else {
 
-				for (int index = 0; index < discussionListToday.size(); index++) {
-					WebElement discussion = discussionListToday.get(index);
-					System.out.println("Discussion " + (index + 1) + ": " + discussion.getText());
-					outputLines.add("Discussion " + (index + 1) + ": " + discussion.getText());
+				for (int index = 0; index < todayCards.size(); index++) {
+					WebElement card = todayCards.get(index);
+					WebElement dateSpan = card.findElement(By.xpath(".//span[contains(text(),'"+todayDateVpropFormat+"')]"));
+					List<WebElement> badgeElements = card.findElements(By.xpath(".//h4/parent::div/parent::div/following-sibling::div//span[@data-slot='badge']"));
+					String status = badgeElements.isEmpty() ? "Unknown" : badgeElements.get(0).getText();
+					System.out.println("Discussion " + (index + 1) + ": " + dateSpan.getText() + " ==> " + status);
+					outputLines.add("Discussion " + (index + 1) + ": " + dateSpan.getText() + " ==> " + status);
 				}
 			}
 
 			// Fetch tomorrow's schedule for Vprop
-			List<WebElement> discussionListTomorrow = driver.findElements(By.xpath(".//span[contains(text(),'"+tomorrowDateVpropFormat+"')]"));
+			List<WebElement> tomorrowCards = driver.findElements(By.xpath(".//span[contains(text(),'"+tomorrowDateVpropFormat+"')]/ancestor::div[.//h4 and .//span[@data-slot='badge']][1]"));
 			waitForFixTime(500);
 			System.out.println("Getting Vprop schedule for tomorrow....");
-			if(discussionListTomorrow.isEmpty()) {
+			if(tomorrowCards.isEmpty()) {
 				outputLines.add("\n");
 				System.out.println("No discussions scheduled for tomorrow in Vprop.");
 				outputLines.add("No discussions scheduled for tomorrow in Vprop.");
 			} else {
 
-				for (int index = 0; index < discussionListTomorrow.size(); index++) {
-					WebElement discussion = discussionListTomorrow.get(index);
-					System.out.println("Discussion " + (index + 1) + ": " + discussion.getText());
-					outputLines.add("Discussion " + (index + 1) + ": " + discussion.getText());
+				for (int index = 0; index < tomorrowCards.size(); index++) {
+					WebElement card = tomorrowCards.get(index);
+					WebElement dateSpan = card.findElement(By.xpath(".//span[contains(text(),'"+tomorrowDateVpropFormat+"')]"));
+					List<WebElement> badgeElements = card.findElements(By.xpath(".//h4/parent::div/parent::div/following-sibling::div//span[@data-slot='badge']"));
+					String status = badgeElements.isEmpty() ? "Unknown" : badgeElements.get(0).getText();
+					System.out.println("Discussion " + (index + 1) + ": " + dateSpan.getText() + " ==> " + status);
+					outputLines.add("Discussion " + (index + 1) + ": " + dateSpan.getText() + " ==> " + status);
 				}
 			}
 		}
