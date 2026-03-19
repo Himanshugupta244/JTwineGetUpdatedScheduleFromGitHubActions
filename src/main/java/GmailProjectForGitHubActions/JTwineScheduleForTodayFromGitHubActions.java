@@ -173,7 +173,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			WebElement discussion = discussionListToday.get(index);
 			WebElement discussionStatus = discussionStatusListToday.get(index);
 			System.out.println(discussion.getText() + " ==> " + discussionStatus.getText());
-			lines.add(">" + discussion.getText() + " ==> " + discussionStatus.getText());
+			lines.add("✪ " + discussion.getText() + " ==> " + discussionStatus.getText());
 		}
 
 		String tomorrowLocator = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + tomorrowDate + "')]";
@@ -185,7 +185,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			WebElement discussion = discussionListTomorrow.get(index);
 			WebElement discussionStatus = discussionStatusListTomorrow.get(index);
 			System.out.println(discussion.getText() + " ==> " + discussionStatus.getText());
-			lines.add(">" + discussion.getText() + " ==> " + discussionStatus.getText());
+			lines.add("✪ " + discussion.getText() + " ==> " + discussionStatus.getText());
 		}
 
 		return lines;
@@ -282,7 +282,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 					html.append("<table>\n");
 					html.append("<tr><th style=\"width:60%\">Discussion</th><th style=\"width:40%\">Status</th></tr>\n");
 					tableOpen = true;
-				} else if (line.startsWith(">")) {
+				} else if (line.startsWith("✪ ")) {
 					String[] parts = line.split("==>");
 					if (parts.length == 2) {
 						String discussion = parts[0].trim();
