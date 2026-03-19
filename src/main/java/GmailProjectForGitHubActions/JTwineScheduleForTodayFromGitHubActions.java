@@ -172,8 +172,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		for (int index = 0; index < discussionListToday.size(); index++) {
 			WebElement discussion = discussionListToday.get(index);
 			WebElement discussionStatus = discussionStatusListToday.get(index);
-			System.out.println("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
-			lines.add("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
+			System.out.println(discussion.getText() + " ==> " + discussionStatus.getText());
+			lines.add(discussion.getText() + " ==> " + discussionStatus.getText());
 		}
 
 		String tomorrowLocator = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + tomorrowDate + "')]";
@@ -184,8 +184,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		for (int index = 0; index < discussionListTomorrow.size(); index++) {
 			WebElement discussion = discussionListTomorrow.get(index);
 			WebElement discussionStatus = discussionStatusListTomorrow.get(index);
-			System.out.println("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
-			lines.add("Discussion " + (index + 1) + ": " + discussion.getText() + " ==> " + discussionStatus.getText());
+			System.out.println(discussion.getText() + " ==> " + discussionStatus.getText());
+			lines.add(discussion.getText() + " ==> " + discussionStatus.getText());
 		}
 
 		return lines;
@@ -384,8 +384,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 					WebElement dateSpan = card.findElement(By.xpath(".//span[contains(text(),'"+todayDateVpropFormat+"')]"));
 					List<WebElement> badgeElements = card.findElements(By.xpath(".//h4/parent::div/parent::div/following-sibling::div//span[@data-slot='badge']"));
 					String status = badgeElements.isEmpty() ? "Unknown" : badgeElements.get(0).getText();
-					System.out.println("Discussion " + (index + 1) + ": " + dateSpan.getText() + " ==> " + status);
-					outputLines.add("Discussion " + (index + 1) + ": " + dateSpan.getText() + " ==> " + status);
+					System.out.println(dateSpan.getText() + " ==> " + status);
+					outputLines.add(dateSpan.getText() + " ==> " + status);
 				}
 			}
 
@@ -404,8 +404,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 					WebElement dateSpan = card.findElement(By.xpath(".//span[contains(text(),'"+tomorrowDateVpropFormat+"')]"));
 					List<WebElement> badgeElements = card.findElements(By.xpath(".//h4/parent::div/parent::div/following-sibling::div//span[@data-slot='badge']"));
 					String status = badgeElements.isEmpty() ? "Unknown" : badgeElements.get(0).getText();
-					System.out.println("Discussion " + (index + 1) + ": " + dateSpan.getText() + " ==> " + status);
-					outputLines.add("Discussion " + (index + 1) + ": " + dateSpan.getText() + " ==> " + status);
+					System.out.println(dateSpan.getText() + " ==> " + status);
+					outputLines.add(dateSpan.getText() + " ==> " + status);
 				}
 			}
 		}
