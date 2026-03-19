@@ -285,14 +285,14 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("tr.dr:hover td{background:rgba(99,102,241,0.04)}\n");
 			html.append("td{padding:8px 16px;font-size:14px;border-bottom:1px solid rgba(0,0,0,0.06);color:#1e293b;vertical-align:middle}\n");
 			html.append("tr:last-child td{border-bottom:none}\n");
-			html.append(".dt{width:63%}.st{width:37%;text-align:right;padding-right:14px}\n");
+			html.append(".dc{width:30%}.tc{width:20%;text-align:center;color:#475569}.st{width:50%;text-align:right;padding-right:14px}\n");
 			html.append(".b{display:inline-block;padding:2px 10px;border-radius:12px;font-size:12.5px;font-weight:600;white-space:nowrap}\n");
 			html.append(".sc{background:rgba(59,130,246,0.1);color:#1d4ed8;border:1px solid rgba(59,130,246,0.3)}\n");
 			html.append(".pd{background:rgba(220,38,38,0.1);color:#b91c1c;border:1px solid rgba(220,38,38,0.25)}\n");
 			html.append(".gf{background:rgba(5,150,105,0.1);color:#065f46;border:1px solid rgba(5,150,105,0.25)}\n");
 			html.append(".nr{background:rgba(107,114,128,0.1);color:#374151;border:1px solid rgba(107,114,128,0.25)}\n");
 			html.append(".unk{background:rgba(107,114,128,0.07);color:#4b5563;border:1px solid rgba(107,114,128,0.18)}\n");
-			html.append(".sep td{padding:4px 16px;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;border-bottom:1px solid rgba(0,0,0,0.06)}\n");
+			html.append(".sep td{padding:7px 16px;font-size:13px;font-weight:700;letter-spacing:0.6px;text-transform:uppercase;border-bottom:1px solid rgba(0,0,0,0.06)}\n");
 			html.append(".sep.tod td{background:rgba(99,102,241,0.07);color:#4338ca}\n");
 			html.append(".sep.tom td{background:rgba(5,150,105,0.06);color:#065f46}\n");
 			html.append(".emr td{padding:11px 16px;font-size:13px;color:#94a3b8;font-style:italic;text-align:center;border-bottom:none}\n");
@@ -319,9 +319,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 					html.append("<div class=\"card\"><div class=\"ch ").append(cls).append("\">").append(ico).append("&nbsp;").append(lbl).append("</div><table>\n");
 					tableOpen = true;
 				} else if (line.equals("\u00a7TODAY\u00a7")) {
-					html.append("<tr class=\"sep tod\"><td colspan=\"2\">&#9719; Today &mdash; ").append(dateDisplay).append("</td></tr>\n");
+					html.append("<tr class=\"sep tod\"><td colspan=\"3\">&#9719; Today &mdash; ").append(dateDisplay).append("</td></tr>\n");
 				} else if (line.equals("\u00a7TOMORROW\u00a7")) {
-					html.append("<tr class=\"sep tom\"><td colspan=\"2\">&#9719; Tomorrow</td></tr>\n");
+					html.append("<tr class=\"sep tom\"><td colspan=\"3\">&#9719; Tomorrow</td></tr>\n");
 				} else if (line.startsWith("\u272a ")) {
 					String content = line.substring(2).trim();
 					String[] parts = content.split("==>");
@@ -338,15 +338,19 @@ public class JTwineScheduleForTodayFromGitHubActions {
 							case "Pending Feedback Review": bc = "pd"; break;
 							default: bc = "unk";
 						}
-						html.append("<tr class=\"dr\"><td class=\"dt\">").append(disc).append("</td>")
+						String[] dtParts = disc.split(", ");
+						String date = dtParts.length >= 4 ? dtParts[0] + ", " + dtParts[1] + ", " + dtParts[2] : disc;
+						String time = dtParts.length >= 4 ? dtParts[3] : "";
+						html.append("<tr class=\"dr\"><td class=\"dc\">").append(date).append("</td>")
+							.append("<td class=\"tc\">").append(time).append("</td>")
 							.append("<td class=\"st\"><span class=\"b ").append(bc).append("\">")
 							.append(stat).append("</span></td></tr>\n");
 					} else {
-						html.append("<tr class=\"dr\"><td class=\"dt\" colspan=\"2\">").append(content).append("</td></tr>\n");
+						html.append("<tr class=\"dr\"><td class=\"dc\" colspan=\"3\">").append(content).append("</td></tr>\n");
 					}
 				} else if (!line.trim().isEmpty()) {
 					if (tableOpen) {
-						html.append("<tr class=\"emr\"><td colspan=\"2\">").append(line.trim()).append("</td></tr>\n");
+						html.append("<tr class=\"emr\"><td colspan=\"3\">").append(line.trim()).append("</td></tr>\n");
 					}
 				}
 			}
