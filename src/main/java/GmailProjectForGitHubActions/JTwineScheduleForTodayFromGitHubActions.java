@@ -297,6 +297,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".sep.tom td{background:rgba(5,150,105,0.06);color:#065f46}\n");
 			html.append(".emr td{padding:11px 16px;font-size:13px;color:#94a3b8;font-style:italic;text-align:center;border-bottom:none}\n");
 			html.append(".footer{text-align:center;margin-top:16px;font-size:12px;color:#64748b}\n");
+			html.append("@media(max-width:600px){body{padding:14px 8px}.hdr{padding:14px 10px;margin-bottom:12px}.hdr h1{font-size:18px}.dbadge{font-size:12px;padding:3px 10px}.ch{font-size:11px;padding:8px 12px}.card{margin-bottom:12px;border-radius:10px}td{padding:8px 10px;font-size:13px}.dc{display:none}.tc{width:42%;text-align:left;font-weight:600;color:#1e293b;padding-left:12px}.st{width:58%;padding-right:8px}.b{font-size:12px;padding:2px 9px}.sep td{padding:7px 12px;font-size:12px}.emr td{font-size:12px;padding:10px 12px}.footer{font-size:11px;margin-top:12px}}\n");
 			html.append("</style>\n</head>\n<body>\n<div class=\"wrap\">\n");
 			html.append("<div class=\"hdr\"><h1>&#128197; Interview Schedule</h1>");
 			html.append("<span class=\"dbadge\">Today &nbsp;&#8212;&nbsp; ").append(dateDisplay).append("</span></div>\n");
