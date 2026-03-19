@@ -262,68 +262,72 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				}
 			}
 
+			String dateUpper = dateDisplay.toUpperCase();
+			String tomorrowUpper = tomorrowDate != null ? tomorrowDate.toUpperCase() : "";
+
 			StringBuilder html = new StringBuilder();
 			html.append("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n");
 			html.append("<meta charset=\"UTF-8\">\n");
 			html.append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
 			html.append("<title>Interview Schedule</title>\n");
-			html.append("<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n");
-			html.append("<link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap\" rel=\"stylesheet\">\n");
 			html.append("<style>\n");
-			html.append("*{box-sizing:border-box;margin:0;padding:0}\n");
-			html.append("body{font-family:'Inter',Arial,sans-serif;background:linear-gradient(135deg,#e8eaf6 0%,#f0f4ff 55%,#e8f5e9 100%);min-height:100vh;padding:26px 16px}\n");
-			html.append(".wrap{max-width:780px;margin:0 auto}\n");
-			html.append(".hdr{text-align:center;padding:20px;margin-bottom:20px;background:rgba(255,255,255,0.75);border-radius:14px;border:1px solid rgba(99,102,241,0.18);box-shadow:0 2px 12px rgba(99,102,241,0.08)}\n");
-			html.append(".hdr h1{font-size:22px;font-weight:700;background:linear-gradient(90deg,#4f46e5,#0ea5e9,#059669);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}\n");
-			html.append(".dbadge{display:inline-block;background:rgba(79,70,229,0.1);border:1px solid rgba(79,70,229,0.3);color:#4338ca;padding:3px 14px;border-radius:20px;font-size:13px;font-weight:500}\n");
-			html.append(".card{background:#ffffff;border-radius:12px;border:1px solid rgba(0,0,0,0.08);margin-bottom:16px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.06)}.card-him{border:2.5px solid #1a1a2e}.card-sud{border:2.5px solid #1a1a2e}\n");
-			html.append(".ch{padding:10px 16px;font-size:17px;font-weight:600;letter-spacing:0.7px;text-transform:uppercase}\n");
-			html.append(".ch.him{background:linear-gradient(90deg,rgba(99,102,241,0.18),rgba(99,102,241,0.02));border-bottom:1px solid rgba(99,102,241,0.15);color:#3730a3}\n");
-			html.append(".ch.sud{background:linear-gradient(90deg,rgba(5,150,105,0.15),rgba(5,150,105,0.02));border-bottom:1px solid rgba(5,150,105,0.15);color:#065f46}\n");
-			html.append(".ch.vp{background:linear-gradient(90deg,rgba(217,119,6,0.15),rgba(217,119,6,0.02));border-bottom:1px solid rgba(217,119,6,0.15);color:#92400e}\n");
-			html.append("table{width:100%;border-collapse:collapse}\n");
-			html.append("tr.dr:hover td{background:rgba(99,102,241,0.04)}\n");
-			html.append("td{padding:8px 16px;font-size:14px;border-bottom:1px solid rgba(0,0,0,0.06);color:#1e293b;vertical-align:middle}\n");
-			html.append("tr:last-child td{border-bottom:none}\n");
-			html.append(".dc{display:none}.tc{width:42%;text-align:left;font-weight:600;color:#1e293b;padding-left:12px}.st{width:58%;text-align:right;padding-right:14px}\n");
-			html.append(".b{display:inline-block;padding:2px 10px;border-radius:12px;font-size:12.5px;font-weight:600;white-space:nowrap}\n");
-			html.append(".sc{background:rgba(59,130,246,0.1);color:#1d4ed8;border:1px solid rgba(59,130,246,0.3)}\n");
-			html.append(".pd{background:rgba(220,38,38,0.1);color:#b91c1c;border:1px solid rgba(220,38,38,0.25)}\n");
-			html.append(".gf{background:rgba(5,150,105,0.1);color:#065f46;border:1px solid rgba(5,150,105,0.25)}\n");
-			html.append(".nr{background:rgba(107,114,128,0.1);color:#374151;border:1px solid rgba(107,114,128,0.25)}\n");
-			html.append(".unk{background:rgba(107,114,128,0.07);color:#4b5563;border:1px solid rgba(107,114,128,0.18)}\n");
-			html.append(".sep td{padding:7px 16px;font-size:16px;font-weight:700;letter-spacing:0.6px;text-transform:uppercase;border-bottom:1px solid rgba(0,0,0,0.06)}\n");
-			html.append(".sep.tod td{background:rgba(99,102,241,0.07);color:#4338ca}\n");
-			html.append(".sep.tom td{background:rgba(5,150,105,0.06);color:#065f46}\n");
-			html.append(".emr td{padding:11px 16px;font-size:13px;color:#94a3b8;font-style:italic;text-align:center;border-bottom:none}\n");
-			html.append(".footer{text-align:center;margin-top:16px;font-size:12px;color:#64748b}\n");
-			html.append("@media(max-width:600px){body{padding:14px 8px}.hdr{padding:14px 10px;margin-bottom:12px}.hdr h1{font-size:18px}.dbadge{font-size:12px;padding:3px 10px}.ch{font-size:15px;padding:8px 12px}.card{margin-bottom:12px;border-radius:10px}td{padding:8px 10px;font-size:13px}.st{width:58%;padding-right:8px}.b{font-size:12px;padding:2px 9px}.sep td{padding:7px 12px;font-size:14px}.emr td{font-size:12px;padding:10px 12px}.footer{font-size:11px;margin-top:12px}}\n");
-			html.append("</style>\n</head>\n<body>\n<div class=\"wrap\">\n");
-			html.append("<div class=\"hdr\"><h1>&#128197; Interview Schedule</h1>");
-			html.append("<span class=\"dbadge\">Today &nbsp;&#8212;&nbsp; ").append(dateDisplay).append("</span></div>\n");
+			html.append("* { box-sizing: border-box; font-family: Arial, sans-serif; }\n");
+			html.append("body { background: #f2f2f2; margin: 0; padding: 10px; color: #000; }\n");
+			html.append(".container { max-width: 500px; margin: auto; }\n");
+			html.append(".header { border: 3px solid #000; background: #fff; text-align: center; padding: 14px 8px; margin-bottom: 12px; }\n");
+			html.append(".header h1 { font-size: 20px; font-weight: 900; margin: 0; }\n");
+			html.append(".header .date { margin-top: 6px; font-size: 15px; font-weight: 900; }\n");
+			html.append(".card { border: 3px solid #000; margin-bottom: 14px; background: #fff; }\n");
+			html.append(".card-title { padding: 10px; font-weight: 900; font-size: 14px; border-bottom: 3px solid #000; }\n");
+			html.append(".him { background: linear-gradient(to right, #5aa0d6, #39c38a); }\n");
+			html.append(".sud { background: linear-gradient(to right, #6fb1fc, #4ade80); }\n");
+			html.append(".vp { background: #eee; }\n");
+			html.append(".section { border-top: 3px solid #000; }\n");
+			html.append(".section-title { padding: 7px 10px; font-weight: 900; font-size: 13px; }\n");
+			html.append(".today { background: #000; color: #fff; }\n");
+			html.append(".tomorrow { background: #ddd; }\n");
+			html.append(".row { display: flex; justify-content: space-between; padding: 8px 10px; border-top: 2px solid #000; font-size: 13px; font-weight: 800; }\n");
+			html.append(".status { font-weight: 900; }\n");
+			html.append(".sc { color: #007bff; }\n");
+			html.append(".gf { color: #1e8e3e; }\n");
+			html.append(".nr { color: #777; }\n");
+			html.append(".ns { color: #d93025; }\n");
+			html.append(".pd { color: #e67e00; }\n");
+			html.append(".empty { padding: 10px; border-top: 2px solid #000; font-weight: 700; font-size: 13px; }\n");
+			html.append(".footer { border: 3px solid #000; padding: 10px; font-size: 12px; font-weight: 800; background: #fff; text-align: center; }\n");
+			html.append("@media (max-width: 400px) { .header h1 { font-size: 18px; } .header .date { font-size: 14px; } .row { font-size: 12px; } }\n");
+			html.append("</style>\n</head>\n<body>\n");
+			html.append("<div class=\"container\">\n");
+			html.append("<div class=\"header\"><h1>INTERVIEW SCHEDULE</h1><div class=\"date\">TODAY - ").append(dateUpper).append("</div></div>\n");
 
-			boolean tableOpen = false;
+			boolean cardOpen = false;
+			boolean sectionOpen = false;
 
 			for (String line : outputLines) {
-				if (line.startsWith("Today's date:") || line.equals("-----------------------------------")) {
+				if (line.startsWith("Today's date:") || line.equals("-----------------------------------") || line.trim().isEmpty()) {
 					continue;
 				} else if (line.startsWith("Updated at (IST):")) {
-					if (tableOpen) { html.append("</table></div>\n"); tableOpen = false; }
-					html.append("<div class=\"footer\">&#128337;&nbsp; Updated at (IST): ")
+					if (sectionOpen) { html.append("</div>\n"); sectionOpen = false; }
+					if (cardOpen) { html.append("</div>\n"); cardOpen = false; }
+					html.append("<div class=\"footer\">&#9201; Updated at (IST): ")
 						.append(line.replace("Updated at (IST):", "").trim()).append("</div>\n");
 				} else if (line.startsWith("**************** SCHEDULE FOR")) {
-					if (tableOpen) { html.append("</table></div>\n"); tableOpen = false; }
+					if (sectionOpen) { html.append("</div>\n"); sectionOpen = false; }
+					if (cardOpen) { html.append("</div>\n"); cardOpen = false; }
 					String acc = line.replace("*", "").trim();
 					String cls = acc.contains("HIMANSHU") ? "him" : acc.contains("SUDHANSHU") ? "sud" : "vp";
-					String ico = acc.contains("HIMANSHU") ? "&#128100;" : acc.contains("SUDHANSHU") ? "&#128101;" : "&#127775;";
+					String ico = acc.contains("HIMANSHU") ? "&#128100;" : acc.contains("SUDHANSHU") ? "&#128101;" : "&#11088;";
 					String lbl = acc.contains("HIMANSHU") ? "Himanshu &mdash; JTwine" : acc.contains("SUDHANSHU") ? "Sudhanshu &mdash; JTwine" : "VProp";
-				String cardExtra = acc.contains("HIMANSHU") ? " card-him" : acc.contains("SUDHANSHU") ? " card-sud" : "";
-				html.append("<div class=\"card").append(cardExtra).append("\"><div class=\"ch ").append(cls).append("\">").append(ico).append("&nbsp;").append(lbl).append("</div><table>\n");
-					tableOpen = true;
+					html.append("<div class=\"card\"><div class=\"card-title ").append(cls).append("\">").append(ico).append(" ").append(lbl).append("</div>\n");
+					cardOpen = true;
 				} else if (line.equals("\u00a7TODAY\u00a7")) {
-					html.append("<tr class=\"sep tod\"><td colspan=\"3\">&#9719; Today &mdash; ").append(dateDisplay).append("</td></tr>\n");
+					if (sectionOpen) { html.append("</div>\n"); sectionOpen = false; }
+					html.append("<div class=\"section\"><div class=\"section-title today\">TODAY &mdash; ").append(dateUpper).append("</div>\n");
+					sectionOpen = true;
 				} else if (line.equals("\u00a7TOMORROW\u00a7")) {
-					html.append("<tr class=\"sep tom\"><td colspan=\"3\">&#9719; Tomorrow &mdash; ").append(tomorrowDate).append("</td></tr>\n");
+					if (sectionOpen) { html.append("</div>\n"); sectionOpen = false; }
+					html.append("<div class=\"section\"><div class=\"section-title tomorrow\">TOMORROW &mdash; ").append(tomorrowUpper).append("</div>\n");
+					sectionOpen = true;
 				} else if (line.startsWith("\u272a ")) {
 					String content = line.substring(2).trim();
 					String[] parts = content.split("==>");
@@ -335,31 +339,27 @@ public class JTwineScheduleForTodayFromGitHubActions {
 							case "Scheduled": bc = "sc"; break;
 							case "Not Recommended": bc = "nr"; break;
 							case "Is a Good Fit": bc = "gf"; break;
-							case "Candidate No Show": bc = "nr"; break;
+							case "Candidate No Show": bc = "ns"; break;
 							case "Strongly Recommended": bc = "gf"; break;
 							case "Pending Feedback Review": bc = "pd"; break;
-							default: bc = "unk";
+							default: bc = "nr";
 						}
 						String[] dtParts = disc.split(", ");
-						String date = dtParts.length >= 4 ? dtParts[0] + ", " + dtParts[1] + ", " + dtParts[2] : disc;
-						String time = dtParts.length >= 4 ? dtParts[3] : "";
-						html.append("<tr class=\"dr\"><td class=\"dc\">").append(date).append("</td>")
-							.append("<td class=\"tc\">").append(time).append("</td>")
-							.append("<td class=\"st\"><span class=\"b ").append(bc).append("\">")
-							.append(stat).append("</span></td></tr>\n");
+						String time = dtParts.length >= 4 ? dtParts[3] : disc;
+						html.append("<div class=\"row\"><div>").append(time).append("</div>")
+							.append("<div class=\"status ").append(bc).append("\">").append(stat).append("</div></div>\n");
 					} else {
-						html.append("<tr class=\"dr\"><td class=\"dc\" colspan=\"3\">").append(content).append("</td></tr>\n");
+						html.append("<div class=\"row\"><div>").append(content).append("</div></div>\n");
 					}
 				} else if (!line.trim().isEmpty()) {
-					if (tableOpen) {
-						html.append("<tr class=\"emr\"><td colspan=\"3\">").append(line.trim()).append("</td></tr>\n");
+					if (cardOpen) {
+						html.append("<div class=\"empty\">").append(line.trim()).append("</div>\n");
 					}
 				}
 			}
 
-			if (tableOpen) {
-				html.append("</table></div>\n");
-			}
+			if (sectionOpen) { html.append("</div>\n"); }
+			if (cardOpen) { html.append("</div>\n"); }
 
 			html.append("</div>\n</body>\n</html>");
 
