@@ -279,8 +279,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".header .date { margin-top: 6px; font-size: 15px; font-weight: 900; }\n");
 			html.append(".card { border: 3px solid #000; margin-bottom: 14px; background: #fff; }\n");
 			html.append(".card-title { padding: 10px; font-weight: 900; font-size: 14px; border-bottom: 3px solid #000; }\n");
-			html.append(".him { background: linear-gradient(to right, #5aa0d6, #39c38a); }\n");
-			html.append(".sud { background: linear-gradient(to right, #6fb1fc, #4ade80); }\n");
+			html.append(".him { background: linear-gradient(to right, #3b82f6, #6366f1); }\n");
+			html.append(".sud { background: linear-gradient(to right, #10b981, #34d399); }\n");
 			html.append(".vp { background: #eee; }\n");
 			html.append(".section { border-top: 3px solid #000; }\n");
 			html.append(".section-title { padding: 7px 10px; font-weight: 900; font-size: 13px; }\n");
@@ -288,11 +288,11 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".tomorrow { background: #ddd; }\n");
 			html.append(".row { display: flex; justify-content: space-between; padding: 8px 10px; border-top: 2px solid #000; font-size: 13px; font-weight: 800; }\n");
 			html.append(".status { font-weight: 900; }\n");
-			html.append(".sc { color: #007bff; }\n");
-			html.append(".gf { color: #1e8e3e; }\n");
+			html.append(".sc { color: #b8860b; }\n");
+			html.append(".gf { color: #777; }\n");
 			html.append(".nr { color: #777; }\n");
-			html.append(".ns { color: #d93025; }\n");
-			html.append(".pd { color: #e67e00; }\n");
+			html.append(".ns { color: #777; }\n");
+			html.append(".pd { color: #8b0000; }\n");
 			html.append(".empty { padding: 10px; border-top: 2px solid #000; font-weight: 700; font-size: 13px; }\n");
 			html.append(".footer { border: 3px solid #000; padding: 10px; font-size: 12px; font-weight: 800; background: #fff; text-align: center; }\n");
 			html.append("@media (max-width: 400px) { .header h1 { font-size: 18px; } .header .date { font-size: 14px; } .row { font-size: 12px; } }\n");
