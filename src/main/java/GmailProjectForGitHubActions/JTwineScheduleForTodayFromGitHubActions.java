@@ -127,15 +127,17 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	}
 
 	public static List<String> fetchScheduleForToday() throws Exception {
-		List<String> lines = new ArrayList<>();
+		List<String> todayLines = new ArrayList<>();
+		List<String> tomorrowLines = new ArrayList<>();
 		System.out.println("Fetching schedule.....");
 		System.out.println("======================================================================");
 		waitTillElementVisible(By.xpath(".//span[text()='Start Meeting']"), 60);
 
 		// Fetch from Page 1 first
 		System.out.println("Fetching schedule from Page 1.....");
-		List<String> page1Lines = fetchScheduleFromCurrentPage();
-		lines.addAll(page1Lines);
+		Map<String, List<String>> page1Data = fetchScheduleFromCurrentPage();
+		todayLines.addAll(page1Data.get("today"));
+		tomorrowLines.addAll(page1Data.get("tomorrow"));
 
 		// Check if page 2 exists and click on it
 		List<WebElement> page2Button = driver.findElements(By.xpath("(.//span[contains(text(),'page ')]/following-sibling::span)[2]"));
@@ -147,10 +149,22 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 			// Fetch from Page 2
 			System.out.println("Fetching schedule from Page 2.....");
-			List<String> page2Lines = fetchScheduleFromCurrentPage();
-			lines.addAll(page2Lines);
+			Map<String, List<String>> page2Data = fetchScheduleFromCurrentPage();
+			todayLines.addAll(page2Data.get("today"));
+			tomorrowLines.addAll(page2Data.get("tomorrow"));
 		} else {
 			System.out.println("Page 2 not found, only Page 1 results available.");
+		}
+
+		// Today's data first, then tomorrow's data
+		List<String> lines = new ArrayList<>();
+		if (!todayLines.isEmpty()) {
+			lines.add("§TODAY§");
+			lines.addAll(todayLines);
+		}
+		if (!tomorrowLines.isEmpty()) {
+			lines.add("§TOMORROW§");
+			lines.addAll(tomorrowLines);
 		}
 
 		if(lines.isEmpty()) {
@@ -161,8 +175,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		return lines;
 	}
 
-	public static List<String> fetchScheduleFromCurrentPage() throws Exception {
-		List<String> lines = new ArrayList<>();
+	public static Map<String, List<String>> fetchScheduleFromCurrentPage() throws Exception {
+		List<String> todayLines = new ArrayList<>();
+		List<String> tomorrowLines = new ArrayList<>();
 
 		String todayLocator = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + todayDate + "')]";
 		String todayStatusLocator = todayLocator+"//ancestor::div[contains(@class,'candidate-details-sec')]//div[contains(@class,'btn-chip')]/div";
@@ -173,7 +188,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			WebElement discussion = discussionListToday.get(index);
 			WebElement discussionStatus = discussionStatusListToday.get(index);
 			System.out.println(discussion.getText() + " ==> " + discussionStatus.getText());
-			lines.add("✪ " + discussion.getText() + " ==> " + discussionStatus.getText());
+			todayLines.add("✪ " + discussion.getText() + " ==> " + discussionStatus.getText());
 		}
 
 		String tomorrowLocator = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + tomorrowDate + "')]";
@@ -185,10 +200,13 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			WebElement discussion = discussionListTomorrow.get(index);
 			WebElement discussionStatus = discussionStatusListTomorrow.get(index);
 			System.out.println(discussion.getText() + " ==> " + discussionStatus.getText());
-			lines.add("✪ " + discussion.getText() + " ==> " + discussionStatus.getText());
+			tomorrowLines.add("✪ " + discussion.getText() + " ==> " + discussionStatus.getText());
 		}
 
-		return lines;
+		Map<String, List<String>> result = new HashMap<>();
+		result.put("today", todayLines);
+		result.put("tomorrow", tomorrowLines);
+		return result;
 	}
 
 	public static void waitForFixTime(int time) {
@@ -235,101 +253,116 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 	public static void writeCodeToIndexHtmlFileForGitHub() {
 		try {
+			// Extract today's date for the header
+			String dateDisplay = "";
+			for (String line : outputLines) {
+				if (line.startsWith("Today's date:")) {
+					dateDisplay = line.replace("Today's date:", "").trim();
+					break;
+				}
+			}
+
 			StringBuilder html = new StringBuilder();
-			html.append("<!DOCTYPE html>\n");
-			html.append("<html lang=\"en\">\n");
-			html.append("<head>\n");
+			html.append("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n");
 			html.append("<meta charset=\"UTF-8\">\n");
 			html.append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
-			html.append("<title>JTwine & VProp Schedule</title>\n");
+			html.append("<title>Interview Schedule</title>\n");
+			html.append("<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n");
+			html.append("<link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap\" rel=\"stylesheet\">\n");
 			html.append("<style>\n");
-			html.append("body { font-family: Arial, sans-serif; line-height: 1.5; padding: 20px; background: #f0fcff; }\n");
-			html.append("h2 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 5px; }\n");
-			html.append("h3 { color: #34495e; margin-top: 20px; }\n");
-			html.append("p { margin: 5px 0; }\n");
-			html.append(".separator { border-top: 1px solid #ccc; margin: 10px 0; }\n");
-			html.append("table { border-collapse: collapse; width: 100%; margin: 10px 0; table-layout: fixed; }\n");
-			html.append("th, td { border: 1px solid #ccc; padding: 8px; text-align: left; word-wrap: break-word; overflow-wrap: break-word; }\n");
-			html.append("th { background-color: #b2e4f3; }\n");
-			html.append(".scheduled { color: blue; font-weight: bold; }\n");
-			html.append(".not-recommended { color: green; font-weight: bold; }\n");
-			html.append(".pending { color: red; font-weight: bold; }\n");
-			html.append(".good-fit { color: green; font-weight: bold; }\n");
-			html.append(".unknown-status { color: gray; }\n");
-			html.append("</style>\n");
-			html.append("</head>\n");
-			html.append("<body>\n");
+			html.append("*{box-sizing:border-box;margin:0;padding:0}\n");
+			html.append("body{font-family:'Inter',Arial,sans-serif;background:linear-gradient(135deg,#0f0c29 0%,#302b63 55%,#24243e 100%);min-height:100vh;padding:26px 16px}\n");
+			html.append(".wrap{max-width:780px;margin:0 auto}\n");
+			html.append(".hdr{text-align:center;padding:20px;margin-bottom:20px;background:rgba(255,255,255,0.05);border-radius:14px;border:1px solid rgba(255,255,255,0.1)}\n");
+			html.append(".hdr h1{font-size:21px;font-weight:700;background:linear-gradient(90deg,#a78bfa,#60a5fa,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}\n");
+			html.append(".dbadge{display:inline-block;background:rgba(167,139,250,0.15);border:1px solid rgba(167,139,250,0.35);color:#a78bfa;padding:3px 14px;border-radius:20px;font-size:12px;font-weight:500}\n");
+			html.append(".card{background:rgba(255,255,255,0.05);border-radius:12px;border:1px solid rgba(255,255,255,0.09);margin-bottom:16px;overflow:hidden}\n");
+			html.append(".ch{padding:10px 16px;font-size:11.5px;font-weight:600;letter-spacing:0.7px;text-transform:uppercase}\n");
+			html.append(".ch.him{background:linear-gradient(90deg,rgba(99,102,241,0.4),rgba(99,102,241,0.03));border-bottom:1px solid rgba(99,102,241,0.2);color:#a5b4fc}\n");
+			html.append(".ch.sud{background:linear-gradient(90deg,rgba(16,185,129,0.35),rgba(16,185,129,0.03));border-bottom:1px solid rgba(16,185,129,0.2);color:#6ee7b7}\n");
+			html.append(".ch.vp{background:linear-gradient(90deg,rgba(245,158,11,0.35),rgba(245,158,11,0.03));border-bottom:1px solid rgba(245,158,11,0.2);color:#fcd34d}\n");
+			html.append("table{width:100%;border-collapse:collapse}\n");
+			html.append("tr.dr:hover td{background:rgba(255,255,255,0.04)}\n");
+			html.append("td{padding:8px 16px;font-size:13px;border-bottom:1px solid rgba(255,255,255,0.05);color:#cbd5e1;vertical-align:middle}\n");
+			html.append("tr:last-child td{border-bottom:none}\n");
+			html.append(".dt{width:63%}.st{width:37%;text-align:right;padding-right:14px}\n");
+			html.append(".b{display:inline-block;padding:2px 10px;border-radius:12px;font-size:11.5px;font-weight:600;white-space:nowrap}\n");
+			html.append(".sc{background:rgba(59,130,246,0.15);color:#60a5fa;border:1px solid rgba(59,130,246,0.3)}\n");
+			html.append(".pd{background:rgba(239,68,68,0.15);color:#f87171;border:1px solid rgba(239,68,68,0.3)}\n");
+			html.append(".gf{background:rgba(16,185,129,0.15);color:#34d399;border:1px solid rgba(16,185,129,0.3)}\n");
+			html.append(".nr{background:rgba(107,114,128,0.15);color:#9ca3af;border:1px solid rgba(107,114,128,0.3)}\n");
+			html.append(".unk{background:rgba(107,114,128,0.1);color:#9ca3af;border:1px solid rgba(107,114,128,0.2)}\n");
+			html.append(".sep td{padding:4px 16px;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.07)}\n");
+			html.append(".sep.tod td{background:rgba(99,102,241,0.1);color:rgba(165,180,252,0.7)}\n");
+			html.append(".sep.tom td{background:rgba(16,185,129,0.08);color:rgba(110,231,183,0.7)}\n");
+			html.append(".emr td{padding:11px 16px;font-size:12px;color:rgba(255,255,255,0.3);font-style:italic;text-align:center;border-bottom:none}\n");
+			html.append(".footer{text-align:center;margin-top:16px;font-size:11px;color:rgba(255,255,255,0.25)}\n");
+			html.append("</style>\n</head>\n<body>\n<div class=\"wrap\">\n");
+			html.append("<div class=\"hdr\"><h1>&#128197; Interview Schedule</h1>");
+			html.append("<span class=\"dbadge\">Today &nbsp;&#8212;&nbsp; ").append(dateDisplay).append("</span></div>\n");
 
-			html.append("<h2>Schedule for Today</h2>\n");
-
-			String currentAccount = "";
 			boolean tableOpen = false;
 
 			for (String line : outputLines) {
-				if (line.equals("-----------------------------------")) {
-					if (tableOpen) {
-						html.append("</table>\n");
-						tableOpen = false;
-					}
-					html.append("<div class=\"separator\"></div>\n");
+				if (line.startsWith("Today's date:") || line.equals("-----------------------------------")) {
+					continue;
+				} else if (line.startsWith("Updated at (IST):")) {
+					if (tableOpen) { html.append("</table></div>\n"); tableOpen = false; }
+					html.append("<div class=\"footer\">&#128337;&nbsp; Updated at (IST): ")
+						.append(line.replace("Updated at (IST):", "").trim()).append("</div>\n");
 				} else if (line.startsWith("**************** SCHEDULE FOR")) {
-					if (tableOpen) {
-						html.append("</table>\n");
-						tableOpen = false;
-					}
-					currentAccount = line.replace("*", "").trim();
-					html.append("<h3>").append(currentAccount).append("</h3>\n");
-					html.append("<table>\n");
-					html.append("<tr><th style=\"width:60%\">Discussion</th><th style=\"width:40%\">Status</th></tr>\n");
+					if (tableOpen) { html.append("</table></div>\n"); tableOpen = false; }
+					String acc = line.replace("*", "").trim();
+					String cls = acc.contains("HIMANSHU") ? "him" : acc.contains("SUDHANSHU") ? "sud" : "vp";
+					String ico = acc.contains("HIMANSHU") ? "&#128100;" : acc.contains("SUDHANSHU") ? "&#128101;" : "&#127775;";
+					String lbl = acc.contains("HIMANSHU") ? "Himanshu &mdash; JTwine" : acc.contains("SUDHANSHU") ? "Sudhanshu &mdash; JTwine" : "VProp";
+					html.append("<div class=\"card\"><div class=\"ch ").append(cls).append("\">").append(ico).append("&nbsp;").append(lbl).append("</div><table>\n");
 					tableOpen = true;
-				} else if (line.startsWith("✪ ")) {
-					String[] parts = line.split("==>");
+				} else if (line.equals("\u00a7TODAY\u00a7")) {
+					html.append("<tr class=\"sep tod\"><td colspan=\"2\">&#9719; Today &mdash; ").append(dateDisplay).append("</td></tr>\n");
+				} else if (line.equals("\u00a7TOMORROW\u00a7")) {
+					html.append("<tr class=\"sep tom\"><td colspan=\"2\">&#9719; Tomorrow</td></tr>\n");
+				} else if (line.startsWith("\u272a ")) {
+					String content = line.substring(2).trim();
+					String[] parts = content.split("==>");
 					if (parts.length == 2) {
-						String discussion = parts[0].trim();
-						String status = parts[1].trim();
-
-						String statusClass;
-						switch (status) {
-						case "Scheduled" : statusClass = "scheduled"; 
-						break;
-						case "Not Recommended" : statusClass = "not-recommended";
-						break;
-						case "Is a Good Fit" : statusClass = "good-fit";
-						break;
-						case "Candidate No Show" : statusClass = "not-recommended";
-						break;
-						case "Strongly Recommended" : statusClass = "good-fit";
-						break;
-						case "Pending Feedback Review" : statusClass = "pending";
-						break;
-						default : statusClass = "unknown-status";
+						String disc = parts[0].trim();
+						String stat = parts[1].trim();
+						String bc;
+						switch (stat) {
+							case "Scheduled": bc = "sc"; break;
+							case "Not Recommended": bc = "nr"; break;
+							case "Is a Good Fit": bc = "gf"; break;
+							case "Candidate No Show": bc = "nr"; break;
+							case "Strongly Recommended": bc = "gf"; break;
+							case "Pending Feedback Review": bc = "pd"; break;
+							default: bc = "unk";
 						}
-
-						html.append("<tr><td>").append(discussion).append("</td>")
-						.append("<td class=\"").append(statusClass).append("\">")
-						.append(status).append("</td></tr>\n");
+						html.append("<tr class=\"dr\"><td class=\"dt\">").append(disc).append("</td>")
+							.append("<td class=\"st\"><span class=\"b ").append(bc).append("\">")
+							.append(stat).append("</span></td></tr>\n");
 					} else {
-						html.append("<tr><td colspan=\"2\">").append(line).append("</td></tr>\n");
+						html.append("<tr class=\"dr\"><td class=\"dt\" colspan=\"2\">").append(content).append("</td></tr>\n");
 					}
-				} else {
-					// Other messages like "Fetching schedule..."
-					html.append("<p>").append(line).append("</p>\n");
+				} else if (!line.trim().isEmpty()) {
+					if (tableOpen) {
+						html.append("<tr class=\"emr\"><td colspan=\"2\">").append(line.trim()).append("</td></tr>\n");
+					}
 				}
 			}
 
 			if (tableOpen) {
-				html.append("</table>\n");
+				html.append("</table></div>\n");
 			}
 
-			html.append("</body>\n</html>");
+			html.append("</div>\n</body>\n</html>");
 
-			// Write HTML file
 			java.nio.file.Files.write(java.nio.file.Paths.get("deploy/index.html"),
 					html.toString().getBytes(java.nio.charset.StandardCharsets.UTF_8));
-			System.out.println("schedule.html generated successfully in deploy/index.html");
+			System.out.println("index.html generated successfully.");
 
 		} catch (java.io.IOException ioe) {
-			System.err.println("Failed to write schedule.html: " + ioe.getMessage());
+			System.err.println("Failed to write index.html: " + ioe.getMessage());
 		}
 	}
 
