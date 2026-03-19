@@ -276,8 +276,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".hdr{text-align:center;padding:20px;margin-bottom:20px;background:rgba(255,255,255,0.75);border-radius:14px;border:1px solid rgba(99,102,241,0.18);box-shadow:0 2px 12px rgba(99,102,241,0.08)}\n");
 			html.append(".hdr h1{font-size:22px;font-weight:700;background:linear-gradient(90deg,#4f46e5,#0ea5e9,#059669);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}\n");
 			html.append(".dbadge{display:inline-block;background:rgba(79,70,229,0.1);border:1px solid rgba(79,70,229,0.3);color:#4338ca;padding:3px 14px;border-radius:20px;font-size:13px;font-weight:500}\n");
-			html.append(".card{background:#ffffff;border-radius:12px;border:1px solid rgba(0,0,0,0.08);margin-bottom:16px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.06)}\n");
-			html.append(".ch{padding:10px 16px;font-size:12.5px;font-weight:600;letter-spacing:0.7px;text-transform:uppercase}\n");
+			html.append(".card{background:#ffffff;border-radius:12px;border:1px solid rgba(0,0,0,0.08);margin-bottom:16px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.06)}.card-him{border:2.5px solid rgba(99,102,241,0.5)}.card-sud{border:2.5px solid rgba(5,150,105,0.45)}\n");
+			html.append(".ch{padding:10px 16px;font-size:15px;font-weight:600;letter-spacing:0.7px;text-transform:uppercase}\n");
 			html.append(".ch.him{background:linear-gradient(90deg,rgba(99,102,241,0.18),rgba(99,102,241,0.02));border-bottom:1px solid rgba(99,102,241,0.15);color:#3730a3}\n");
 			html.append(".ch.sud{background:linear-gradient(90deg,rgba(5,150,105,0.15),rgba(5,150,105,0.02));border-bottom:1px solid rgba(5,150,105,0.15);color:#065f46}\n");
 			html.append(".ch.vp{background:linear-gradient(90deg,rgba(217,119,6,0.15),rgba(217,119,6,0.02));border-bottom:1px solid rgba(217,119,6,0.15);color:#92400e}\n");
@@ -285,19 +285,19 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("tr.dr:hover td{background:rgba(99,102,241,0.04)}\n");
 			html.append("td{padding:8px 16px;font-size:14px;border-bottom:1px solid rgba(0,0,0,0.06);color:#1e293b;vertical-align:middle}\n");
 			html.append("tr:last-child td{border-bottom:none}\n");
-			html.append(".dc{width:30%}.tc{width:20%;text-align:center;color:#475569}.st{width:50%;text-align:right;padding-right:14px}\n");
+			html.append(".dc{display:none}.tc{width:42%;text-align:left;font-weight:600;color:#1e293b;padding-left:12px}.st{width:58%;text-align:right;padding-right:14px}\n");
 			html.append(".b{display:inline-block;padding:2px 10px;border-radius:12px;font-size:12.5px;font-weight:600;white-space:nowrap}\n");
 			html.append(".sc{background:rgba(59,130,246,0.1);color:#1d4ed8;border:1px solid rgba(59,130,246,0.3)}\n");
 			html.append(".pd{background:rgba(220,38,38,0.1);color:#b91c1c;border:1px solid rgba(220,38,38,0.25)}\n");
 			html.append(".gf{background:rgba(5,150,105,0.1);color:#065f46;border:1px solid rgba(5,150,105,0.25)}\n");
 			html.append(".nr{background:rgba(107,114,128,0.1);color:#374151;border:1px solid rgba(107,114,128,0.25)}\n");
 			html.append(".unk{background:rgba(107,114,128,0.07);color:#4b5563;border:1px solid rgba(107,114,128,0.18)}\n");
-			html.append(".sep td{padding:7px 16px;font-size:13px;font-weight:700;letter-spacing:0.6px;text-transform:uppercase;border-bottom:1px solid rgba(0,0,0,0.06)}\n");
+			html.append(".sep td{padding:7px 16px;font-size:16px;font-weight:700;letter-spacing:0.6px;text-transform:uppercase;border-bottom:1px solid rgba(0,0,0,0.06)}\n");
 			html.append(".sep.tod td{background:rgba(99,102,241,0.07);color:#4338ca}\n");
 			html.append(".sep.tom td{background:rgba(5,150,105,0.06);color:#065f46}\n");
 			html.append(".emr td{padding:11px 16px;font-size:13px;color:#94a3b8;font-style:italic;text-align:center;border-bottom:none}\n");
 			html.append(".footer{text-align:center;margin-top:16px;font-size:12px;color:#64748b}\n");
-			html.append("@media(max-width:600px){body{padding:14px 8px}.hdr{padding:14px 10px;margin-bottom:12px}.hdr h1{font-size:18px}.dbadge{font-size:12px;padding:3px 10px}.ch{font-size:11px;padding:8px 12px}.card{margin-bottom:12px;border-radius:10px}td{padding:8px 10px;font-size:13px}.dc{display:none}.tc{width:42%;text-align:left;font-weight:600;color:#1e293b;padding-left:12px}.st{width:58%;padding-right:8px}.b{font-size:12px;padding:2px 9px}.sep td{padding:7px 12px;font-size:12px}.emr td{font-size:12px;padding:10px 12px}.footer{font-size:11px;margin-top:12px}}\n");
+			html.append("@media(max-width:600px){body{padding:14px 8px}.hdr{padding:14px 10px;margin-bottom:12px}.hdr h1{font-size:18px}.dbadge{font-size:12px;padding:3px 10px}.ch{font-size:13px;padding:8px 12px}.card{margin-bottom:12px;border-radius:10px}td{padding:8px 10px;font-size:13px}.st{width:58%;padding-right:8px}.b{font-size:12px;padding:2px 9px}.sep td{padding:7px 12px;font-size:14px}.emr td{font-size:12px;padding:10px 12px}.footer{font-size:11px;margin-top:12px}}\n");
 			html.append("</style>\n</head>\n<body>\n<div class=\"wrap\">\n");
 			html.append("<div class=\"hdr\"><h1>&#128197; Interview Schedule</h1>");
 			html.append("<span class=\"dbadge\">Today &nbsp;&#8212;&nbsp; ").append(dateDisplay).append("</span></div>\n");
@@ -317,7 +317,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 					String cls = acc.contains("HIMANSHU") ? "him" : acc.contains("SUDHANSHU") ? "sud" : "vp";
 					String ico = acc.contains("HIMANSHU") ? "&#128100;" : acc.contains("SUDHANSHU") ? "&#128101;" : "&#127775;";
 					String lbl = acc.contains("HIMANSHU") ? "Himanshu &mdash; JTwine" : acc.contains("SUDHANSHU") ? "Sudhanshu &mdash; JTwine" : "VProp";
-					html.append("<div class=\"card\"><div class=\"ch ").append(cls).append("\">").append(ico).append("&nbsp;").append(lbl).append("</div><table>\n");
+				String cardExtra = acc.contains("HIMANSHU") ? " card-him" : acc.contains("SUDHANSHU") ? " card-sud" : "";
+				html.append("<div class=\"card").append(cardExtra).append("\"><div class=\"ch ").append(cls).append("\">").append(ico).append("&nbsp;").append(lbl).append("</div><table>\n");
 					tableOpen = true;
 				} else if (line.equals("\u00a7TODAY\u00a7")) {
 					html.append("<tr class=\"sep tod\"><td colspan=\"3\">&#9719; Today &mdash; ").append(dateDisplay).append("</td></tr>\n");
