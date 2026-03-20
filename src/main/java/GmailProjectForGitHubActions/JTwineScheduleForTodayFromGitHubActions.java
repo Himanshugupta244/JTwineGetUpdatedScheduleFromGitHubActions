@@ -279,7 +279,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".header .date { margin-top: 6px; font-size: 15px; font-weight: 900; }\n");
 			html.append(".card { border: 3px solid #000; margin-bottom: 14px; background: #fff; }\n");
 			html.append(".card-title { padding: 10px; font-weight: 900; font-size: 14px; border-bottom: 3px solid #000; }\n");
-			html.append(".him { background: linear-gradient(to right, #0ea5e9, #8b5cf6); }\n");
+			html.append(".him { background: linear-gradient(to right, #e0c3fc, #c7ecee); }\n");
 			html.append(".sud { background: linear-gradient(to right, #10b981, #34d399); }\n");
 			html.append(".vp { background: #eee; }\n");
 			html.append(".section { border-top: 3px solid #000; }\n");
