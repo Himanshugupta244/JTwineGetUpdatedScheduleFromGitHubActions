@@ -293,6 +293,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".nr { color: #777; }\n");
 			html.append(".ns { color: #777; }\n");
 			html.append(".pd { color: #8b0000; }\n");
+			html.append(".card-him .row { background: #eef4ff; }\n");
 			html.append(".empty { padding: 10px; border-top: 2px solid #000; font-weight: 700; font-size: 13px; }\n");
 			html.append(".footer { border: 3px solid #000; padding: 10px; font-size: 12px; font-weight: 800; background: #fff; text-align: center; }\n");
 			html.append("@media (max-width: 400px) { .header h1 { font-size: 18px; } .header .date { font-size: 14px; } .row { font-size: 12px; } }\n");
@@ -318,7 +319,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 					String cls = acc.contains("HIMANSHU") ? "him" : acc.contains("SUDHANSHU") ? "sud" : "vp";
 					String ico = acc.contains("HIMANSHU") ? "&#128100;" : acc.contains("SUDHANSHU") ? "&#128101;" : "&#11088;";
 					String lbl = acc.contains("HIMANSHU") ? "Himanshu &mdash; JTwine" : acc.contains("SUDHANSHU") ? "Sudhanshu &mdash; JTwine" : "VProp";
-					html.append("<div class=\"card\"><div class=\"card-title ").append(cls).append("\">").append(ico).append(" ").append(lbl).append("</div>\n");
+					String cardCls = acc.contains("HIMANSHU") ? "card card-him" : "card";
+					html.append("<div class=\"").append(cardCls).append("\"><div class=\"card-title ").append(cls).append("\">").append(ico).append(" ").append(lbl).append("</div>\n");
 					cardOpen = true;
 				} else if (line.equals("\u00a7TODAY\u00a7")) {
 					if (sectionOpen) { html.append("</div>\n"); sectionOpen = false; }
