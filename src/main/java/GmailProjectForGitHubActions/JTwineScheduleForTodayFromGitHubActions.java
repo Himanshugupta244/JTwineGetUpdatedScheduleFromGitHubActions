@@ -325,13 +325,13 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".row { display: flex; align-items: stretch; border-bottom: 1px solid #e5e7eb; }\n");
 			html.append(".row:last-child { border-bottom: none; }\n");
 			html.append(".col-time { flex: 1; padding: 12px 14px; font-weight: 800; font-size: 15px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.5px; line-height: 1.4; }\n");
-			html.append(".col-status { width: 150px; padding: 12px 14px; font-weight: 900; font-size: 13px; text-align: right; letter-spacing: 0.3px; line-height: 1.4; }\n");
-			// Status colors
-			html.append(".sc { color: #15803d; }\n");
-			html.append(".gf { color: #6b7280; }\n");
-			html.append(".nr { color: #6b7280; }\n");
-			html.append(".ns { color: #6b7280; }\n");
-			html.append(".pd { color: #dc2626; }\n");
+			html.append(".col-status { width: 185px; flex-shrink: 0; padding: 12px 14px; font-weight: 900; font-size: 13px; text-align: right; letter-spacing: 0.3px; line-height: 1.4; white-space: nowrap; }\n");
+			// Status colors (dark)
+			html.append(".sc { color: #14532d; }\n");
+			html.append(".gf { color: #374151; }\n");
+			html.append(".nr { color: #374151; }\n");
+			html.append(".ns { color: #374151; }\n");
+			html.append(".pd { color: #991b1b; }\n");
 			html.append(".empty { padding: 12px 14px; font-size: 14px; font-weight: 700; color: #9ca3af; font-style: italic; letter-spacing: 0.5px; }\n");
 			// Footer
 			html.append(".footer { border: 3px solid #1a1a1a; padding: 12px; font-size: 13px; font-weight: 800; letter-spacing: 1px; background: #fff; text-align: center; margin-top: 4px; }\n");
@@ -341,7 +341,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  .tab-label { font-size: 14px; padding: 8px 16px; letter-spacing: 1.5px; }\n");
 			html.append("  .acc-label { font-size: 13px; padding: 9px 12px; }\n");
 			html.append("  .col-time { font-size: 14px; padding: 11px 12px; }\n");
-			html.append("  .col-status { font-size: 12px; padding: 11px 10px; width: 130px; }\n");
+			html.append("  .col-status { font-size: 12px; padding: 11px 10px; width: 160px; }\n");
 			html.append("  .footer { font-size: 12px; }\n");
 			html.append("}\n");
 			html.append("</style>\n</head>\n<body>\n");
@@ -350,7 +350,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 			// --- TODAY block (Blue) ---
 			html.append("<div class=\"section\">\n");
-			html.append("<div class=\"tab-label tab-today\">TODAY &mdash; ").append(dateUpper).append("</div>\n");
+			html.append("<div class=\"tab-label tab-today\">&#9728;&#65039; TODAY &mdash; ").append(dateUpper).append("</div>\n");
 			html.append("<div class=\"section-box-today\">\n");
 			html.append("<div class=\"acc-label acc-him\">&#128100; HIMANSHU &mdash; JTwine</div>\n");
 			if (himToday.isEmpty()) {
@@ -369,7 +369,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 			// --- TOMORROW block (Amber) ---
 			html.append("<div class=\"section\">\n");
-			html.append("<div class=\"tab-label tab-tomorrow\">TOMORROW &mdash; ").append(tomorrowUpper).append("</div>\n");
+			html.append("<div class=\"tab-label tab-tomorrow\">&#127769; TOMORROW &mdash; ").append(tomorrowUpper).append("</div>\n");
 			html.append("<div class=\"section-box-tomorrow\">\n");
 			html.append("<div class=\"acc-label acc-him\">&#128100; HIMANSHU &mdash; JTwine</div>\n");
 			if (himTomorrow.isEmpty()) {
@@ -424,6 +424,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				case "Not Recommended":         bc = "nr"; break;
 				case "Is a Good Fit":           bc = "gf"; break;
 				case "Candidate No Show":       bc = "ns"; break;
+				case "Cancelled by Candidate":  bc = "ns"; break;
 				case "Strongly Recommended":    bc = "gf"; break;
 				case "Pending Feedback Review": bc = "pd"; break;
 				default: bc = "ns";
