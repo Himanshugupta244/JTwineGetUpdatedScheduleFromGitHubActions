@@ -4,7 +4,7 @@ Today's date: Mar 21
 ✪ Sat, Mar 21, 2026, 3:00 PM IST ==> Scheduled
 ✪ Sat, Mar 21, 2026, 12:00 PM IST ==> Scheduled
 ✪ Sat, Mar 21, 2026, 11:00 AM IST ==> Scheduled
-✪ Sat, Mar 21, 2026, 10:00 AM IST ==> Scheduled
+✪ Sat, Mar 21, 2026, 10:00 AM IST ==> Candidate No Show
 §TOMORROW§
 ✪ Sun, Mar 22, 2026, 2:00 PM IST ==> Scheduled
 ✪ Sun, Mar 22, 2026, 11:00 AM IST ==> Scheduled
@@ -22,4 +22,4 @@ No discussions scheduled for today in Vprop.
 
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 21-Mar-2026 10:22:16 AM
+Updated at (IST): 21-Mar-2026 10:27:02 AM
