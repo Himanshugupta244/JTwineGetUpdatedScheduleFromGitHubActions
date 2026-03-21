@@ -340,8 +340,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			// Rows - two columns with vertical divider
 			html.append(".row { display: flex; align-items: stretch; border-bottom: 1px solid #e5e7eb; }\n");
 			html.append(".row:last-child { border-bottom: none; }\n");
-			html.append(".col-time { flex: 1; padding: 12px 14px; font-weight: 800; font-size: 15px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.5px; line-height: 1.4; }\n");
-			html.append(".col-status { width: 185px; flex-shrink: 0; padding: 12px 14px; font-weight: 900; font-size: 13px; text-align: right; letter-spacing: 0.3px; line-height: 1.4; white-space: nowrap; }\n");
+			html.append(".col-time { flex: 0 0 auto; white-space: nowrap; padding: 12px 14px; font-weight: 800; font-size: 15px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.5px; line-height: 1.4; }\n");
+			html.append(".col-status { flex: 1; padding: 12px 14px; font-weight: 900; font-size: 15px; text-align: right; letter-spacing: 0.3px; line-height: 1.4; white-space: nowrap; }\n");
 			// Status colors (dark)
 			html.append(".sc { color: #14532d; }\n");
 			html.append(".gf { color: #374151; }\n");
@@ -357,7 +357,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  .tab-label { font-size: 14px; padding: 8px 16px; letter-spacing: 1.5px; }\n");
 			html.append("  .acc-label { font-size: 13px; padding: 9px 12px; }\n");
 			html.append("  .col-time { font-size: 14px; padding: 11px 12px; }\n");
-			html.append("  .col-status { font-size: 12px; padding: 11px 10px; width: 160px; }\n");
+			html.append("  .col-status { font-size: 14px; padding: 11px 10px; }\n");
 			html.append("  .footer { font-size: 12px; }\n");
 			html.append("}\n");
 			html.append("</style>\n</head>\n<body>\n");
