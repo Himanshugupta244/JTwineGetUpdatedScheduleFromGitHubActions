@@ -253,16 +253,45 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 	public static void writeCodeToIndexHtmlFileForGitHub() {
 		try {
-			// Extract today's date for the header
+			// --- Parse outputLines into per-account, per-day buckets ---
 			String dateDisplay = "";
+			String updatedAt = "";
+			java.util.List<String> himToday     = new java.util.ArrayList<>();
+			java.util.List<String> himTomorrow  = new java.util.ArrayList<>();
+			java.util.List<String> sudToday     = new java.util.ArrayList<>();
+			java.util.List<String> sudTomorrow  = new java.util.ArrayList<>();
+			java.util.List<String> vpropLines   = new java.util.ArrayList<>();
+
+			String currentAcc = "";
+			String currentSec = "";
+
 			for (String line : outputLines) {
 				if (line.startsWith("Today's date:")) {
 					dateDisplay = line.replace("Today's date:", "").trim();
-					break;
+				} else if (line.startsWith("Updated at (IST):")) {
+					updatedAt = line.replace("Updated at (IST):", "").trim();
+				} else if (line.startsWith("**************** SCHEDULE FOR HIMANSHU")) {
+					currentAcc = "HIM"; currentSec = "";
+				} else if (line.startsWith("**************** SCHEDULE FOR SUDHANSHU")) {
+					currentAcc = "SUD"; currentSec = "";
+				} else if (line.startsWith("**************** SCHEDULE FOR")) {
+					currentAcc = "VPROP"; currentSec = "";
+				} else if (line.equals("\u00a7TODAY\u00a7")) {
+					currentSec = "TODAY";
+				} else if (line.equals("\u00a7TOMORROW\u00a7")) {
+					currentSec = "TOMORROW";
+				} else if (line.startsWith("\u272a ")
+						|| (currentAcc.equals("VPROP") && !line.trim().isEmpty()
+							&& !line.equals("-----------------------------------"))) {
+					if      (currentAcc.equals("HIM")   && currentSec.equals("TODAY"))    himToday.add(line);
+					else if (currentAcc.equals("HIM")   && currentSec.equals("TOMORROW")) himTomorrow.add(line);
+					else if (currentAcc.equals("SUD")   && currentSec.equals("TODAY"))    sudToday.add(line);
+					else if (currentAcc.equals("SUD")   && currentSec.equals("TOMORROW")) sudTomorrow.add(line);
+					else if (currentAcc.equals("VPROP"))                                  vpropLines.add(line);
 				}
 			}
 
-			String dateUpper = dateDisplay.toUpperCase();
+			String dateUpper     = dateDisplay.toUpperCase();
 			String tomorrowUpper = tomorrowDate != null ? tomorrowDate.toUpperCase() : "";
 
 			StringBuilder html = new StringBuilder();
@@ -271,97 +300,105 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
 			html.append("<title>Interview Schedule</title>\n");
 			html.append("<style>\n");
-			html.append("* { box-sizing: border-box; font-family: Arial, sans-serif; }\n");
-			html.append("body { background: #f2f2f2; margin: 0; padding: 10px; color: #000; }\n");
-			html.append(".container { max-width: 500px; margin: auto; }\n");
-			html.append(".header { border: 3px solid #000; background: #fff; text-align: center; padding: 14px 8px; margin-bottom: 12px; }\n");
-			html.append(".header h1 { font-size: 20px; font-weight: 900; margin: 0; }\n");
-			html.append(".header .date { margin-top: 6px; font-size: 15px; font-weight: 900; }\n");
-			html.append(".card { border: 3px solid #000; margin-bottom: 14px; background: #fff; }\n");
-			html.append(".card-title { padding: 10px; font-weight: 900; font-size: 14px; border-bottom: 3px solid #000; }\n");
-			html.append(".him { background: linear-gradient(to right, #e0c3fc, #c7ecee); }\n");
-			html.append(".sud { background: linear-gradient(to right, #10b981, #34d399); }\n");
-			html.append(".vp { background: #eee; }\n");
-			html.append(".section { border-top: 3px solid #000; }\n");
-			html.append(".section-title { padding: 7px 10px; font-weight: 900; font-size: 13px; }\n");
-			html.append(".today { background: #000; color: #fff; }\n");
-			html.append(".tomorrow { background: #ddd; }\n");
-			html.append(".row { display: flex; justify-content: space-between; padding: 8px 10px; border-top: 2px solid #000; font-size: 13px; font-weight: 800; }\n");
-			html.append(".status { font-weight: 900; }\n");
-			html.append(".sc { color: #b8860b; }\n");
-			html.append(".gf { color: #777; }\n");
-			html.append(".nr { color: #777; }\n");
-			html.append(".ns { color: #777; }\n");
-			html.append(".pd { color: #8b0000; }\n");
-			html.append(".card-him .row { background: #eef4ff; }\n");
-			html.append(".empty { padding: 10px; border-top: 2px solid #000; font-weight: 700; font-size: 13px; }\n");
-			html.append(".footer { border: 3px solid #000; padding: 10px; font-size: 12px; font-weight: 800; background: #fff; text-align: center; }\n");
-			html.append("@media (max-width: 400px) { .header h1 { font-size: 18px; } .header .date { font-size: 14px; } .row { font-size: 12px; } }\n");
+			html.append("* { box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }\n");
+			html.append("body { background: #f0f4f8; margin: 0; padding: 14px; color: #1a1a2e; }\n");
+			html.append(".container { max-width: 480px; margin: auto; }\n");
+			// Header
+			html.append(".header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: #fff; text-align: center; padding: 18px 10px; margin-bottom: 22px; border-radius: 14px; box-shadow: 0 4px 18px rgba(0,0,0,0.22); }\n");
+			html.append(".header h1 { font-size: 20px; font-weight: 800; margin: 0; letter-spacing: 2px; }\n");
+			html.append(".header p { margin: 5px 0 0; font-size: 12px; color: #93c5fd; }\n");
+			// Section
+			html.append(".section { margin-bottom: 22px; }\n");
+			html.append(".tab-label { display: inline-block; padding: 8px 22px; font-size: 14px; font-weight: 800; border-radius: 10px 10px 0 0; letter-spacing: 1px; }\n");
+			html.append(".tab-today { background: #2563eb; color: #fff; }\n");
+			html.append(".tab-tomorrow { background: #d97706; color: #fff; }\n");
+			html.append(".section-box-today { background: #eff6ff; border: 2px solid #2563eb; border-top: none; border-radius: 0 12px 12px 12px; padding: 12px; }\n");
+			html.append(".section-box-tomorrow { background: #fffbeb; border: 2px solid #d97706; border-top: none; border-radius: 0 12px 12px 12px; padding: 12px; }\n");
+			// Cards
+			html.append(".card { background: #fff; border-radius: 10px; margin-bottom: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }\n");
+			html.append(".card:last-child { margin-bottom: 0; }\n");
+			html.append(".card-title { padding: 10px 14px; font-weight: 800; font-size: 13px; color: #fff; display: flex; align-items: center; gap: 6px; }\n");
+			html.append(".him { background: linear-gradient(135deg, #667eea, #764ba2); }\n");
+			html.append(".sud { background: linear-gradient(135deg, #11998e, #38ef7d); color: #065f46; }\n");
+			html.append(".vp { background: linear-gradient(135deg, #f7971e, #ffd200); color: #78350f; }\n");
+			// Rows
+			html.append(".row { display: flex; justify-content: space-between; align-items: center; padding: 9px 14px; border-top: 1px solid #f1f5f9; font-size: 13px; }\n");
+			html.append(".time-text { font-weight: 600; color: #374151; }\n");
+			html.append(".badge { padding: 3px 11px; border-radius: 20px; font-size: 11px; font-weight: 800; white-space: nowrap; }\n");
+			// Status badge colors
+			html.append(".sc  { background: #dbeafe; color: #1e40af; }\n");
+			html.append(".gf  { background: #dcfce7; color: #166534; }\n");
+			html.append(".nr  { background: #fee2e2; color: #991b1b; }\n");
+			html.append(".ns  { background: #f3f4f6; color: #6b7280; }\n");
+			html.append(".pd  { background: #fef3c7; color: #92400e; }\n");
+			html.append(".empty { padding: 12px 14px; border-top: 1px solid #f1f5f9; font-size: 13px; color: #9ca3af; font-style: italic; }\n");
+			// Footer
+			html.append(".footer { background: #1a1a2e; color: #94a3b8; padding: 12px; font-size: 12px; font-weight: 600; text-align: center; border-radius: 10px; margin-top: 6px; }\n");
+			html.append("@media (max-width: 400px) { .header h1 { font-size: 17px; } .row { font-size: 12px; } }\n");
 			html.append("</style>\n</head>\n<body>\n");
 			html.append("<div class=\"container\">\n");
-			html.append("<div class=\"header\"><h1>INTERVIEW SCHEDULE</h1><div class=\"date\">TODAY - ").append(dateUpper).append("</div></div>\n");
+			html.append("<div class=\"header\"><h1>&#128197; INTERVIEW SCHEDULE</h1><p>" + (dateDisplay.isEmpty() ? "" : dateDisplay) + "</p></div>\n");
 
-			boolean cardOpen = false;
-			boolean sectionOpen = false;
+			// --- TODAY block (Blue) ---
+			html.append("<div class=\"section\">\n");
+			html.append("<div class=\"tab-label tab-today\">&#9728;&#65039; TODAY &mdash; ").append(dateUpper).append("</div>\n");
+			html.append("<div class=\"section-box-today\">\n");
 
-			for (String line : outputLines) {
-				if (line.startsWith("Today's date:") || line.equals("-----------------------------------") || line.trim().isEmpty()) {
-					continue;
-				} else if (line.startsWith("Updated at (IST):")) {
-					if (sectionOpen) { html.append("</div>\n"); sectionOpen = false; }
-					if (cardOpen) { html.append("</div>\n"); cardOpen = false; }
-					html.append("<div class=\"footer\">&#9201; Updated at (IST): ")
-						.append(line.replace("Updated at (IST):", "").trim()).append("</div>\n");
-				} else if (line.startsWith("**************** SCHEDULE FOR")) {
-					if (sectionOpen) { html.append("</div>\n"); sectionOpen = false; }
-					if (cardOpen) { html.append("</div>\n"); cardOpen = false; }
-					String acc = line.replace("*", "").trim();
-					String cls = acc.contains("HIMANSHU") ? "him" : acc.contains("SUDHANSHU") ? "sud" : "vp";
-					String ico = acc.contains("HIMANSHU") ? "&#128100;" : acc.contains("SUDHANSHU") ? "&#128101;" : "&#11088;";
-					String lbl = acc.contains("HIMANSHU") ? "Himanshu &mdash; JTwine" : acc.contains("SUDHANSHU") ? "Sudhanshu &mdash; JTwine" : "VProp";
-					String cardCls = acc.contains("HIMANSHU") ? "card card-him" : "card";
-					html.append("<div class=\"").append(cardCls).append("\"><div class=\"card-title ").append(cls).append("\">").append(ico).append(" ").append(lbl).append("</div>\n");
-					cardOpen = true;
-				} else if (line.equals("\u00a7TODAY\u00a7")) {
-					if (sectionOpen) { html.append("</div>\n"); sectionOpen = false; }
-					html.append("<div class=\"section\"><div class=\"section-title today\">TODAY &mdash; ").append(dateUpper).append("</div>\n");
-					sectionOpen = true;
-				} else if (line.equals("\u00a7TOMORROW\u00a7")) {
-					if (sectionOpen) { html.append("</div>\n"); sectionOpen = false; }
-					html.append("<div class=\"section\"><div class=\"section-title tomorrow\">TOMORROW &mdash; ").append(tomorrowUpper).append("</div>\n");
-					sectionOpen = true;
-				} else if (line.startsWith("\u272a ")) {
-					String content = line.substring(2).trim();
-					String[] parts = content.split("==>");
-					if (parts.length == 2) {
-						String disc = parts[0].trim();
-						String stat = parts[1].trim();
-						String bc;
-						switch (stat) {
-							case "Scheduled": bc = "sc"; break;
-							case "Not Recommended": bc = "nr"; break;
-							case "Is a Good Fit": bc = "gf"; break;
-							case "Candidate No Show": bc = "ns"; break;
-							case "Strongly Recommended": bc = "gf"; break;
-							case "Pending Feedback Review": bc = "pd"; break;
-							default: bc = "nr";
-						}
-						String[] dtParts = disc.split(", ");
-						String time = dtParts.length >= 4 ? dtParts[3] : disc;
-						html.append("<div class=\"row\"><div>").append(time).append("</div>")
-							.append("<div class=\"status ").append(bc).append("\">").append(stat).append("</div></div>\n");
-					} else {
-						html.append("<div class=\"row\"><div>").append(content).append("</div></div>\n");
-					}
-				} else if (!line.trim().isEmpty()) {
-					if (cardOpen) {
-						html.append("<div class=\"empty\">").append(line.trim()).append("</div>\n");
-					}
-				}
+			html.append("<div class=\"card\"><div class=\"card-title him\">&#128100; Himanshu &mdash; JTwine</div>\n");
+			if (himToday.isEmpty()) {
+				html.append("<div class=\"empty\">No interviews today</div>\n");
+			} else {
+				for (String l : himToday) html.append(buildInterviewRow(l));
+			}
+			html.append("</div>\n");
+
+			html.append("<div class=\"card\"><div class=\"card-title sud\">&#128101; Sudhanshu &mdash; JTwine</div>\n");
+			if (sudToday.isEmpty()) {
+				html.append("<div class=\"empty\">No interviews today</div>\n");
+			} else {
+				for (String l : sudToday) html.append(buildInterviewRow(l));
+			}
+			html.append("</div>\n");
+
+			html.append("</div>\n"); // end section-box-today
+			html.append("</div>\n"); // end TODAY section
+
+			// --- TOMORROW block (Amber) ---
+			html.append("<div class=\"section\">\n");
+			html.append("<div class=\"tab-label tab-tomorrow\">&#127769; TOMORROW &mdash; ").append(tomorrowUpper).append("</div>\n");
+			html.append("<div class=\"section-box-tomorrow\">\n");
+
+			html.append("<div class=\"card\"><div class=\"card-title him\">&#128100; Himanshu &mdash; JTwine</div>\n");
+			if (himTomorrow.isEmpty()) {
+				html.append("<div class=\"empty\">No interviews tomorrow</div>\n");
+			} else {
+				for (String l : himTomorrow) html.append(buildInterviewRow(l));
+			}
+			html.append("</div>\n");
+
+			html.append("<div class=\"card\"><div class=\"card-title sud\">&#128101; Sudhanshu &mdash; JTwine</div>\n");
+			if (sudTomorrow.isEmpty()) {
+				html.append("<div class=\"empty\">No interviews tomorrow</div>\n");
+			} else {
+				for (String l : sudTomorrow) html.append(buildInterviewRow(l));
+			}
+			html.append("</div>\n");
+
+			html.append("</div>\n"); // end section-box-tomorrow
+			html.append("</div>\n"); // end TOMORROW section
+
+			// --- VProp block (only if data exists) ---
+			if (!vpropLines.isEmpty()) {
+				html.append("<div class=\"section\">\n");
+				html.append("<div class=\"card\"><div class=\"card-title vp\">&#11088; VProp</div>\n");
+				for (String l : vpropLines) html.append(buildInterviewRow(l));
+				html.append("</div>\n</div>\n");
 			}
 
-			if (sectionOpen) { html.append("</div>\n"); }
-			if (cardOpen) { html.append("</div>\n"); }
+			// --- Footer ---
+			if (!updatedAt.isEmpty()) {
+				html.append("<div class=\"footer\">&#9201; Updated at (IST): ").append(updatedAt).append("</div>\n");
+			}
 
 			html.append("</div>\n</body>\n</html>");
 
@@ -372,6 +409,29 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		} catch (java.io.IOException ioe) {
 			System.err.println("Failed to write index.html: " + ioe.getMessage());
 		}
+	}
+
+	private static String buildInterviewRow(String line) {
+		String content = line.startsWith("\u272a ") ? line.substring(2).trim() : line.trim();
+		String[] parts = content.split("==>");
+		if (parts.length == 2) {
+			String disc = parts[0].trim();
+			String stat = parts[1].trim();
+			String bc;
+			switch (stat) {
+				case "Scheduled":               bc = "sc"; break;
+				case "Not Recommended":         bc = "nr"; break;
+				case "Is a Good Fit":           bc = "gf"; break;
+				case "Candidate No Show":       bc = "ns"; break;
+				case "Strongly Recommended":    bc = "gf"; break;
+				case "Pending Feedback Review": bc = "pd"; break;
+				default: bc = "ns";
+			}
+			String[] dtParts = disc.split(", ");
+			String time = dtParts.length >= 4 ? dtParts[3] : disc;
+			return "<div class=\"row\"><span class=\"time-text\">" + time + "</span><span class=\"badge " + bc + "\">" + stat + "</span></div>\n";
+		}
+		return "<div class=\"row\"><span class=\"time-text\">" + content + "</span></div>\n";
 	}
 
 	// Separate Code for VProp
