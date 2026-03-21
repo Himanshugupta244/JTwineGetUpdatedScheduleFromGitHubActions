@@ -300,97 +300,89 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
 			html.append("<title>Interview Schedule</title>\n");
 			html.append("<style>\n");
-			html.append("* { box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }\n");
-			html.append("body { background: #f0f4f8; margin: 0; padding: 14px; color: #1a1a2e; }\n");
-			html.append(".container { max-width: 480px; margin: auto; }\n");
+			html.append("* { box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }\n");
+			html.append("body { background: #f5f5f5; padding: 14px; color: #1a1a1a; }\n");
+			html.append(".container { max-width: 420px; margin: auto; }\n");
 			// Header
-			html.append(".header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: #fff; text-align: center; padding: 18px 10px; margin-bottom: 22px; border-radius: 14px; box-shadow: 0 4px 18px rgba(0,0,0,0.22); }\n");
-			html.append(".header h1 { font-size: 20px; font-weight: 800; margin: 0; letter-spacing: 2px; }\n");
-			html.append(".header p { margin: 5px 0 0; font-size: 12px; color: #93c5fd; }\n");
+			html.append(".header { border: 2.5px solid #1a1a1a; background: #fff; text-align: center; padding: 14px 10px; margin-bottom: 20px; }\n");
+			html.append(".header h1 { font-size: 22px; font-weight: 900; letter-spacing: 3px; }\n");
 			// Section
-			html.append(".section { margin-bottom: 22px; }\n");
-			html.append(".tab-label { display: inline-block; padding: 8px 22px; font-size: 14px; font-weight: 800; border-radius: 10px 10px 0 0; letter-spacing: 1px; }\n");
-			html.append(".tab-today { background: #2563eb; color: #fff; }\n");
-			html.append(".tab-tomorrow { background: #d97706; color: #fff; }\n");
-			html.append(".section-box-today { background: #eff6ff; border: 2px solid #2563eb; border-top: none; border-radius: 0 12px 12px 12px; padding: 12px; }\n");
-			html.append(".section-box-tomorrow { background: #fffbeb; border: 2px solid #d97706; border-top: none; border-radius: 0 12px 12px 12px; padding: 12px; }\n");
-			// Cards
-			html.append(".card { background: #fff; border-radius: 10px; margin-bottom: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }\n");
-			html.append(".card:last-child { margin-bottom: 0; }\n");
-			html.append(".card-title { padding: 10px 14px; font-weight: 800; font-size: 13px; color: #fff; display: flex; align-items: center; gap: 6px; }\n");
-			html.append(".him { background: linear-gradient(135deg, #667eea, #764ba2); }\n");
-			html.append(".sud { background: linear-gradient(135deg, #11998e, #38ef7d); color: #065f46; }\n");
-			html.append(".vp { background: linear-gradient(135deg, #f7971e, #ffd200); color: #78350f; }\n");
-			// Rows
-			html.append(".row { display: flex; justify-content: space-between; align-items: center; padding: 9px 14px; border-top: 1px solid #f1f5f9; font-size: 13px; }\n");
-			html.append(".time-text { font-weight: 600; color: #374151; }\n");
-			html.append(".badge { padding: 3px 11px; border-radius: 20px; font-size: 11px; font-weight: 800; white-space: nowrap; }\n");
-			// Status badge colors
-			html.append(".sc  { background: #dbeafe; color: #1e40af; }\n");
-			html.append(".gf  { background: #dcfce7; color: #166534; }\n");
-			html.append(".nr  { background: #fee2e2; color: #991b1b; }\n");
-			html.append(".ns  { background: #f3f4f6; color: #6b7280; }\n");
-			html.append(".pd  { background: #fef3c7; color: #92400e; }\n");
-			html.append(".empty { padding: 12px 14px; border-top: 1px solid #f1f5f9; font-size: 13px; color: #9ca3af; font-style: italic; }\n");
+			html.append(".section { margin-bottom: 20px; }\n");
+			html.append(".tab-label { display: inline-block; padding: 6px 18px; font-size: 13px; font-weight: 800; border: 2.5px solid #1a1a1a; border-bottom: none; margin-left: 0; letter-spacing: 0.5px; }\n");
+			html.append(".tab-today { background: #1d4ed8; color: #fff; border-color: #1d4ed8; }\n");
+			html.append(".tab-tomorrow { background: #b45309; color: #fff; border-color: #b45309; }\n");
+			html.append(".tab-vprop { background: #6d28d9; color: #fff; border-color: #6d28d9; }\n");
+			html.append(".section-box-today { border: 2.5px solid #1d4ed8; background: #fff; }\n");
+			html.append(".section-box-tomorrow { border: 2.5px solid #b45309; background: #fff; }\n");
+			html.append(".section-box-vprop { border: 2.5px solid #6d28d9; background: #fff; }\n");
+			// Account label row
+			html.append(".acc-label { padding: 7px 12px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; border-bottom: 1px solid #e5e7eb; display: flex; align-items: center; gap: 6px; }\n");
+			html.append(".acc-him { background: #ede9fe; color: #4c1d95; }\n");
+			html.append(".acc-sud { background: #d1fae5; color: #064e3b; }\n");
+			html.append(".acc-vp  { background: #fef3c7; color: #78350f; }\n");
+			// Rows - two columns with vertical divider
+			html.append(".row { display: flex; align-items: stretch; border-bottom: 1px solid #e5e7eb; font-size: 13px; }\n");
+			html.append(".row:last-child { border-bottom: none; }\n");
+			html.append(".col-time { flex: 1; padding: 9px 12px; font-weight: 700; color: #111827; border-right: 1px solid #e5e7eb; }\n");
+			html.append(".col-status { width: 140px; padding: 9px 12px; font-weight: 800; font-size: 12px; text-align: right; }\n");
+			// Status colors
+			html.append(".sc { color: #15803d; }\n");
+			html.append(".gf { color: #6b7280; }\n");
+			html.append(".nr { color: #6b7280; }\n");
+			html.append(".ns { color: #6b7280; }\n");
+			html.append(".pd { color: #dc2626; }\n");
+			html.append(".empty { padding: 10px 12px; font-size: 12px; color: #9ca3af; font-style: italic; }\n");
 			// Footer
-			html.append(".footer { background: #1a1a2e; color: #94a3b8; padding: 12px; font-size: 12px; font-weight: 600; text-align: center; border-radius: 10px; margin-top: 6px; }\n");
-			html.append("@media (max-width: 400px) { .header h1 { font-size: 17px; } .row { font-size: 12px; } }\n");
+			html.append(".footer { border: 2.5px solid #1a1a1a; padding: 10px; font-size: 12px; font-weight: 700; background: #fff; text-align: center; margin-top: 4px; }\n");
+			html.append("@media (max-width: 400px) { .header h1 { font-size: 18px; } .col-time, .col-status { font-size: 12px; } }\n");
 			html.append("</style>\n</head>\n<body>\n");
 			html.append("<div class=\"container\">\n");
-			html.append("<div class=\"header\"><h1>&#128197; INTERVIEW SCHEDULE</h1><p>" + (dateDisplay.isEmpty() ? "" : dateDisplay) + "</p></div>\n");
+			html.append("<div class=\"header\"><h1>&#128197; SCHEDULE</h1></div>\n");
 
 			// --- TODAY block (Blue) ---
 			html.append("<div class=\"section\">\n");
-			html.append("<div class=\"tab-label tab-today\">&#9728;&#65039; TODAY &mdash; ").append(dateUpper).append("</div>\n");
+			html.append("<div class=\"tab-label tab-today\">TODAY &mdash; ").append(dateUpper).append("</div>\n");
 			html.append("<div class=\"section-box-today\">\n");
-
-			html.append("<div class=\"card\"><div class=\"card-title him\">&#128100; Himanshu &mdash; JTwine</div>\n");
+			html.append("<div class=\"acc-label acc-him\">&#128100; HIMANSHU &mdash; JTwine</div>\n");
 			if (himToday.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews today</div>\n");
 			} else {
 				for (String l : himToday) html.append(buildInterviewRow(l));
 			}
-			html.append("</div>\n");
-
-			html.append("<div class=\"card\"><div class=\"card-title sud\">&#128101; Sudhanshu &mdash; JTwine</div>\n");
+			html.append("<div class=\"acc-label acc-sud\">&#128101; SUDHANSHU &mdash; JTwine</div>\n");
 			if (sudToday.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews today</div>\n");
 			} else {
 				for (String l : sudToday) html.append(buildInterviewRow(l));
 			}
-			html.append("</div>\n");
-
 			html.append("</div>\n"); // end section-box-today
 			html.append("</div>\n"); // end TODAY section
 
 			// --- TOMORROW block (Amber) ---
 			html.append("<div class=\"section\">\n");
-			html.append("<div class=\"tab-label tab-tomorrow\">&#127769; TOMORROW &mdash; ").append(tomorrowUpper).append("</div>\n");
+			html.append("<div class=\"tab-label tab-tomorrow\">TOMORROW &mdash; ").append(tomorrowUpper).append("</div>\n");
 			html.append("<div class=\"section-box-tomorrow\">\n");
-
-			html.append("<div class=\"card\"><div class=\"card-title him\">&#128100; Himanshu &mdash; JTwine</div>\n");
+			html.append("<div class=\"acc-label acc-him\">&#128100; HIMANSHU &mdash; JTwine</div>\n");
 			if (himTomorrow.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews tomorrow</div>\n");
 			} else {
 				for (String l : himTomorrow) html.append(buildInterviewRow(l));
 			}
-			html.append("</div>\n");
-
-			html.append("<div class=\"card\"><div class=\"card-title sud\">&#128101; Sudhanshu &mdash; JTwine</div>\n");
+			html.append("<div class=\"acc-label acc-sud\">&#128101; SUDHANSHU &mdash; JTwine</div>\n");
 			if (sudTomorrow.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews tomorrow</div>\n");
 			} else {
 				for (String l : sudTomorrow) html.append(buildInterviewRow(l));
 			}
-			html.append("</div>\n");
-
 			html.append("</div>\n"); // end section-box-tomorrow
 			html.append("</div>\n"); // end TOMORROW section
 
 			// --- VProp block (only if data exists) ---
 			if (!vpropLines.isEmpty()) {
 				html.append("<div class=\"section\">\n");
-				html.append("<div class=\"card\"><div class=\"card-title vp\">&#11088; VProp</div>\n");
+				html.append("<div class=\"tab-label tab-vprop\">&#11088; VPROP</div>\n");
+				html.append("<div class=\"section-box-vprop\">\n");
+				html.append("<div class=\"acc-label acc-vp\">&#128100; Himanshu &mdash; VProp</div>\n");
 				for (String l : vpropLines) html.append(buildInterviewRow(l));
 				html.append("</div>\n</div>\n");
 			}
@@ -429,9 +421,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			}
 			String[] dtParts = disc.split(", ");
 			String time = dtParts.length >= 4 ? dtParts[3] : disc;
-			return "<div class=\"row\"><span class=\"time-text\">" + time + "</span><span class=\"badge " + bc + "\">" + stat + "</span></div>\n";
+			return "<div class=\"row\"><div class=\"col-time\">" + time + "</div><div class=\"col-status " + bc + "\">" + stat + "</div></div>\n";
 		}
-		return "<div class=\"row\"><span class=\"time-text\">" + content + "</span></div>\n";
+		return "<div class=\"row\"><div class=\"col-time\">" + content + "</div><div class=\"col-status\"></div></div>\n";
 	}
 
 	// Separate Code for VProp
