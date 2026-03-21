@@ -19,6 +19,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 	public static String todayDate;
 	public static String tomorrowDate;
+	public static String todayDateDisplay;
+	public static String tomorrowDateDisplay;
 	public static WebDriver driver;
 	public static String username = null;
 	public static String password = null;
@@ -36,6 +38,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		passwordVprop = System.getenv("VPROP_PASSWORD_HIM");
 		todayDate = getTodayDateFormatted();
 		tomorrowDate = getTomorrowDateFormatted();
+		todayDateDisplay = getTodayDateFormattedForDisplay();
+		tomorrowDateDisplay = getTomorrowDateFormattedForDisplay();
 		System.out.println("Today's date: " + todayDate);
 		outputLines.add("Today's date: " + todayDate);
 
@@ -230,6 +234,18 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		return tomorrow.format(formatter);
 	}
 
+	public static String getTodayDateFormattedForDisplay() {
+		java.time.LocalDate today = java.time.LocalDate.now();
+		java.time.format.DateTimeFormatter formatter = java.time.format.DateTimeFormatter.ofPattern("d MMM '['EEEE']'");
+		return today.format(formatter);
+	}
+
+	public static String getTomorrowDateFormattedForDisplay() {
+		java.time.LocalDate tomorrow = java.time.LocalDate.now().plusDays(1);
+		java.time.format.DateTimeFormatter formatter = java.time.format.DateTimeFormatter.ofPattern("d MMM '['EEEE']'");
+		return tomorrow.format(formatter);
+	}
+
 	public static void waitTillElementVisible(By locator, int timeoutInSeconds) {
 		org.openqa.selenium.support.ui.WebDriverWait wait = new org.openqa.selenium.support.ui.WebDriverWait(driver,
 				java.time.Duration.ofSeconds(timeoutInSeconds));
@@ -291,8 +307,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				}
 			}
 
-			String dateUpper     = dateDisplay.toUpperCase();
-			String tomorrowUpper = tomorrowDate != null ? tomorrowDate.toUpperCase() : "";
+			String dateUpper     = todayDateDisplay != null ? todayDateDisplay.toUpperCase() : dateDisplay.toUpperCase();
+			String tomorrowUpper = tomorrowDateDisplay != null ? tomorrowDateDisplay.toUpperCase() : (tomorrowDate != null ? tomorrowDate.toUpperCase() : "");
 
 			StringBuilder html = new StringBuilder();
 			html.append("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n");
