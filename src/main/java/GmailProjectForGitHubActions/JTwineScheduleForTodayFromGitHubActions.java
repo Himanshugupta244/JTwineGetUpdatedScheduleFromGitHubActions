@@ -300,41 +300,50 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
 			html.append("<title>Interview Schedule</title>\n");
 			html.append("<style>\n");
-			html.append("* { box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }\n");
-			html.append("body { background: #f5f5f5; padding: 14px; color: #1a1a1a; }\n");
-			html.append(".container { max-width: 420px; margin: auto; }\n");
+			html.append("@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;800;900&display=swap');\n");
+			html.append("* { box-sizing: border-box; font-family: 'Barlow', 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }\n");
+			html.append("body { background: #f0f0f0; padding: 12px; color: #1a1a1a; }\n");
+			html.append(".container { max-width: 480px; margin: auto; width: 100%; }\n");
 			// Header
-			html.append(".header { border: 2.5px solid #1a1a1a; background: #fff; text-align: center; padding: 14px 10px; margin-bottom: 20px; }\n");
-			html.append(".header h1 { font-size: 22px; font-weight: 900; letter-spacing: 3px; }\n");
+			html.append(".header { border: 3px solid #1a1a1a; background: #fff; text-align: center; padding: 16px 10px; margin-bottom: 18px; }\n");
+			html.append(".header h1 { font-size: 26px; font-weight: 900; letter-spacing: 5px; text-transform: uppercase; }\n");
 			// Section
-			html.append(".section { margin-bottom: 20px; }\n");
-			html.append(".tab-label { display: inline-block; padding: 6px 18px; font-size: 13px; font-weight: 800; border: 2.5px solid #1a1a1a; border-bottom: none; margin-left: 0; letter-spacing: 0.5px; }\n");
-			html.append(".tab-today { background: #1d4ed8; color: #fff; border-color: #1d4ed8; }\n");
-			html.append(".tab-tomorrow { background: #b45309; color: #fff; border-color: #b45309; }\n");
-			html.append(".tab-vprop { background: #6d28d9; color: #fff; border-color: #6d28d9; }\n");
-			html.append(".section-box-today { border: 2.5px solid #1d4ed8; background: #fff; }\n");
-			html.append(".section-box-tomorrow { border: 2.5px solid #b45309; background: #fff; }\n");
-			html.append(".section-box-vprop { border: 2.5px solid #6d28d9; background: #fff; }\n");
+			html.append(".section { margin-bottom: 18px; }\n");
+			html.append(".tab-label { display: inline-block; padding: 8px 20px; font-size: 15px; font-weight: 900; border-bottom: none; margin-left: 0; letter-spacing: 2px; text-transform: uppercase; }\n");
+			html.append(".tab-today { background: #1d4ed8; color: #fff; }\n");
+			html.append(".tab-tomorrow { background: #b45309; color: #fff; }\n");
+			html.append(".tab-vprop { background: #6d28d9; color: #fff; }\n");
+			html.append(".section-box-today { border: 3px solid #1d4ed8; background: #fff; }\n");
+			html.append(".section-box-tomorrow { border: 3px solid #b45309; background: #fff; }\n");
+			html.append(".section-box-vprop { border: 3px solid #6d28d9; background: #fff; }\n");
 			// Account label row
-			html.append(".acc-label { padding: 7px 12px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; border-bottom: 1px solid #e5e7eb; display: flex; align-items: center; gap: 6px; }\n");
+			html.append(".acc-label { padding: 10px 14px; font-size: 14px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 2px solid #e5e7eb; display: flex; align-items: center; gap: 7px; }\n");
 			html.append(".acc-him { background: #ede9fe; color: #4c1d95; }\n");
 			html.append(".acc-sud { background: #d1fae5; color: #064e3b; }\n");
 			html.append(".acc-vp  { background: #fef3c7; color: #78350f; }\n");
 			// Rows - two columns with vertical divider
-			html.append(".row { display: flex; align-items: stretch; border-bottom: 1px solid #e5e7eb; font-size: 13px; }\n");
+			html.append(".row { display: flex; align-items: stretch; border-bottom: 1px solid #e5e7eb; }\n");
 			html.append(".row:last-child { border-bottom: none; }\n");
-			html.append(".col-time { flex: 1; padding: 9px 12px; font-weight: 700; color: #111827; border-right: 1px solid #e5e7eb; }\n");
-			html.append(".col-status { width: 140px; padding: 9px 12px; font-weight: 800; font-size: 12px; text-align: right; }\n");
+			html.append(".col-time { flex: 1; padding: 12px 14px; font-weight: 800; font-size: 15px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.5px; line-height: 1.4; }\n");
+			html.append(".col-status { width: 150px; padding: 12px 14px; font-weight: 900; font-size: 13px; text-align: right; letter-spacing: 0.3px; line-height: 1.4; }\n");
 			// Status colors
 			html.append(".sc { color: #15803d; }\n");
 			html.append(".gf { color: #6b7280; }\n");
 			html.append(".nr { color: #6b7280; }\n");
 			html.append(".ns { color: #6b7280; }\n");
 			html.append(".pd { color: #dc2626; }\n");
-			html.append(".empty { padding: 10px 12px; font-size: 12px; color: #9ca3af; font-style: italic; }\n");
+			html.append(".empty { padding: 12px 14px; font-size: 14px; font-weight: 700; color: #9ca3af; font-style: italic; letter-spacing: 0.5px; }\n");
 			// Footer
-			html.append(".footer { border: 2.5px solid #1a1a1a; padding: 10px; font-size: 12px; font-weight: 700; background: #fff; text-align: center; margin-top: 4px; }\n");
-			html.append("@media (max-width: 400px) { .header h1 { font-size: 18px; } .col-time, .col-status { font-size: 12px; } }\n");
+			html.append(".footer { border: 3px solid #1a1a1a; padding: 12px; font-size: 13px; font-weight: 800; letter-spacing: 1px; background: #fff; text-align: center; margin-top: 4px; }\n");
+			html.append("@media (max-width: 480px) {\n");
+			html.append("  body { padding: 10px; }\n");
+			html.append("  .header h1 { font-size: 22px; letter-spacing: 4px; }\n");
+			html.append("  .tab-label { font-size: 14px; padding: 8px 16px; letter-spacing: 1.5px; }\n");
+			html.append("  .acc-label { font-size: 13px; padding: 9px 12px; }\n");
+			html.append("  .col-time { font-size: 14px; padding: 11px 12px; }\n");
+			html.append("  .col-status { font-size: 12px; padding: 11px 10px; width: 130px; }\n");
+			html.append("  .footer { font-size: 12px; }\n");
+			html.append("}\n");
 			html.append("</style>\n</head>\n<body>\n");
 			html.append("<div class=\"container\">\n");
 			html.append("<div class=\"header\"><h1>&#128197; SCHEDULE</h1></div>\n");
