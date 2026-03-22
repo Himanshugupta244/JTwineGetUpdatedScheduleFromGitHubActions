@@ -1,4 +1,4 @@
-name: Update JTwine Schedule
+name: Get Count of Discussions
 
 on:
   workflow_dispatch: #Manual Trigger
