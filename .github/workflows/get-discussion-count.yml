@@ -1,1 +1,58 @@
-new file
+name: Update JTwine Schedule
+
+on:
+  workflow_dispatch: #Manual Trigger
+
+jobs:
+  update-schedule:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Setup JDK 17
+      uses: actions/setup-java@v3
+      with:
+        distribution: temurin
+        java-version: 17
+
+    - name: Setup Chrome
+      uses: browser-actions/setup-chrome@v1
+
+    - name: Build Project
+      run: mvn clean compile
+
+    - name: Run Selenium Program
+      env:
+        JTWINE_USERNAME_HIM: ${{ secrets.JTWINE_USERNAME_HIM }}
+        JTWINE_PASSWORD_HIM: ${{ secrets.JTWINE_PASSWORD_HIM }}
+        JTWINE_USERNAME_SUD: ${{ secrets.JTWINE_USERNAME_SUD }}
+        JTWINE_PASSWORD_SUD: ${{ secrets.JTWINE_PASSWORD_SUD }}
+      run: mvn exec:java -Dexec.mainClass="GmailProjectForGitHubActions.DiscussionStatusCountReport"
+
+    - name: Move and Commit schedule.txt
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        
+        mkdir -p discussionCountDir
+        
+        if [ -f schedule.txt ]; then
+            mv schedule.txt deploy/schedule.txt
+        fi
+
+        git add deploy/schedule.txt
+        git commit -m "Update discussionCount.txt [ci skip]" || echo "No changes"
+        git push --force-with-lease
+
+    - name: Upload discussionCount.txt via FTP to Hostinger
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./discussionCountDir/
+        server-dir: ./
