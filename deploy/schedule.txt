@@ -5,7 +5,7 @@ Today's date: Mar 24
 ✪ Tue, Mar 24, 2026, 8:30 PM IN ==> Scheduled
 ✪ Tue, Mar 24, 2026, 3:00 PM IN ==> Scheduled
 ✪ Tue, Mar 24, 2026, 2:00 PM IN ==> Scheduled
-✪ Tue, Mar 24, 2026, 11:00 AM IN ==> Scheduled
+✪ Tue, Mar 24, 2026, 11:00 AM IN ==> Cancelled by candidate
 §TOMORROW§
 ✪ Wed, Mar 25, 2026, 8:30 PM IN ==> Scheduled
 ✪ Wed, Mar 25, 2026, 6:00 PM IN ==> Scheduled
@@ -25,4 +25,4 @@ Today's date: Mar 24
 25 Mar 2026 03:00 PM ==> Scheduled
 25 Mar 2026 12:00 PM ==> Scheduled
 -----------------------------------
-Updated at (IST): 24-Mar-2026 10:42:10 AM
+Updated at (IST): 24-Mar-2026 10:47:06 AM
