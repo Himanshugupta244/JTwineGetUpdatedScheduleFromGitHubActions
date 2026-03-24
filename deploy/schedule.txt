@@ -1,15 +1,30 @@
 Today's date: Mar 24
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
-Exception: Could not start a new session. Response code 500. Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause. 
-Host info: host: 'runnervm46oaq', ip: '10.1.0.186'
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-1017-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --no-sandbox, --disable-dev-shm-usage, --window-size=1920,1080], extensions: []}}]}]
+§TODAY§
+✪ Tue, Mar 24, 2026, 9:30 PM IN ==> Scheduled
+✪ Tue, Mar 24, 2026, 8:30 PM IN ==> Scheduled
+✪ Tue, Mar 24, 2026, 3:00 PM IN ==> Scheduled
+✪ Tue, Mar 24, 2026, 2:00 PM IN ==> Scheduled
+✪ Tue, Mar 24, 2026, 11:00 AM IN ==> Cancelled by candidate
+§TOMORROW§
+✪ Wed, Mar 25, 2026, 8:30 PM IN ==> Scheduled
+✪ Wed, Mar 25, 2026, 6:00 PM IN ==> Scheduled
+✪ Wed, Mar 25, 2026, 1:00 PM IN ==> Scheduled
+✪ Wed, Mar 25, 2026, 9:00 AM IN ==> Scheduled
+**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
+§TODAY§
+✪ Tue, Mar 24, 2026, 10:30 PM IN ==> Scheduled
+✪ Tue, Mar 24, 2026, 9:30 PM IN ==> Scheduled
+✪ Tue, Mar 24, 2026, 8:30 PM IN ==> Scheduled
+✪ Tue, Mar 24, 2026, 11:00 AM IN ==> NA
+§TOMORROW§
+✪ Wed, Mar 25, 2026, 11:30 PM IN ==> Scheduled
+✪ Wed, Mar 25, 2026, 5:00 PM IN ==> Scheduled
+✪ Wed, Mar 25, 2026, 10:00 AM IN ==> Scheduled
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 24 Mar 2026 02:00 PM ==> Scheduled
 24 Mar 2026 11:15 AM ==> Completed
 25 Mar 2026 03:00 PM ==> Scheduled
 25 Mar 2026 12:00 PM ==> Scheduled
 -----------------------------------
-Updated at (IST): 24-Mar-2026 01:26:18 PM
+Updated at (IST): 24-Mar-2026 01:32:42 PM
