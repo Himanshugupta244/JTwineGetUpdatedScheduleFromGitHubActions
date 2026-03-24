@@ -88,7 +88,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		System.out.println("Logging into JTwine");
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless=new");
+//		options.addArguments("--headless=new");
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--window-size=1920,1080");
@@ -187,12 +187,15 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		String todayStatusLocator = todayLocator+"//ancestor::div[contains(@class,'candidate-details-sec')]//div[contains(@class,'btn-chip')]/div";
 		List<WebElement> discussionListToday = driver.findElements(By.xpath(todayLocator));
 		List<WebElement> discussionStatusListToday = driver.findElements(By.xpath(todayStatusLocator));
+		
+		System.out.println("Discussions found for today: " + discussionListToday.size());
+		System.out.println("Discussions Status found for today: " + discussionStatusListToday.size());
 
 		for (int index = 0; index < discussionListToday.size(); index++) {
 			WebElement discussion = discussionListToday.get(index);
-			WebElement discussionStatus = discussionStatusListToday.get(index);
-			System.out.println(discussion.getText() + " ==> " + discussionStatus.getText());
-			todayLines.add("✪ " + discussion.getText() + " ==> " + discussionStatus.getText());
+			String statusText = (index < discussionStatusListToday.size()) ? discussionStatusListToday.get(index).getText() : "NA";
+			System.out.println(discussion.getText() + " ==> " + statusText);
+			todayLines.add("✪ " + discussion.getText() + " ==> " + statusText);
 		}
 
 		String tomorrowLocator = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + tomorrowDate + "')]";
@@ -202,9 +205,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 		for (int index = 0; index < discussionListTomorrow.size(); index++) {
 			WebElement discussion = discussionListTomorrow.get(index);
-			WebElement discussionStatus = discussionStatusListTomorrow.get(index);
-			System.out.println(discussion.getText() + " ==> " + discussionStatus.getText());
-			tomorrowLines.add("✪ " + discussion.getText() + " ==> " + discussionStatus.getText());
+			String statusText = (index < discussionStatusListTomorrow.size()) ? discussionStatusListTomorrow.get(index).getText() : "NA";
+			System.out.println(discussion.getText() + " ==> " + statusText);
+			tomorrowLines.add("✪ " + discussion.getText() + " ==> " + statusText);
 		}
 
 		Map<String, List<String>> result = new HashMap<>();
