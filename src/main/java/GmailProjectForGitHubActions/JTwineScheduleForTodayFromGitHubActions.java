@@ -443,10 +443,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  var icon = document.getElementById(id + '-icon');\n");
 			html.append("  if (body.classList.contains('open')) {\n");
 			html.append("    body.classList.remove('open');\n");
-			html.append("    icon.innerHTML = '<span class=\\"arrow\\">&#9660;</span> TAP TO EXPAND';\n");
+			html.append("    icon.innerHTML = \"<span class='arrow'>&#9660;</span> TAP TO EXPAND\";\n");
 			html.append("  } else {\n");
 			html.append("    body.classList.add('open');\n");
-			html.append("    icon.innerHTML = '<span class=\\"arrow\\">&#9650;</span> TAP TO COLLAPSE';\n");
+			html.append("    icon.innerHTML = \"<span class='arrow'>&#9650;</span> TAP TO COLLAPSE\";\n");
 			html.append("  }\n");
 			html.append("}\n");
 			html.append("</script>\n");
