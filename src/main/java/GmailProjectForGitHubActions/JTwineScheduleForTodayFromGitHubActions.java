@@ -343,13 +343,16 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			// Rows - two columns with vertical divider
 			html.append(".row { display: flex; align-items: stretch; border-bottom: 1px solid #e5e7eb; }\n");
 			html.append(".row:last-child { border-bottom: none; }\n");
-			html.append(".col-time { flex: 0 0 auto; white-space: nowrap; padding: 12px 14px; font-weight: 800; font-size: 15px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.5px; line-height: 1.4; }\n");
+			html.append(".col-time { flex: 0 0 140px; white-space: nowrap; padding: 12px 14px; font-weight: 800; font-size: 15px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.5px; line-height: 1.4; }\n");
 			html.append(".col-status { flex: 1; padding: 12px 14px; font-weight: 900; font-size: 15px; text-align: right; letter-spacing: 0.3px; line-height: 1.4; white-space: nowrap; }\n");
-			html.append(".night-badge { display: inline-flex; align-items: center; gap: 3px; background: linear-gradient(135deg, #1e1b4b, #312e81, #4c1d95); color: #fbbf24; font-size: 11px; font-weight: 900; padding: 2px 8px; border-radius: 20px; margin-right: 6px; vertical-align: middle; letter-spacing: 0.5px; box-shadow: 0 0 8px rgba(139,92,246,0.5), 0 0 2px rgba(251,191,36,0.3); animation: nightGlow 2s ease-in-out infinite alternate; white-space: nowrap; }\n");
-			html.append(".night-badge .moon { font-size: 13px; filter: drop-shadow(0 0 3px #fbbf24); }\n");
-			html.append(".night-badge .stars { font-size: 9px; animation: twinkle 1.5s ease-in-out infinite alternate; }\n");
-			html.append("@keyframes nightGlow { 0% { box-shadow: 0 0 6px rgba(139,92,246,0.4), 0 0 2px rgba(251,191,36,0.2); } 100% { box-shadow: 0 0 12px rgba(139,92,246,0.7), 0 0 4px rgba(251,191,36,0.5); } }\n");
-			html.append("@keyframes twinkle { 0% { opacity: 0.5; } 100% { opacity: 1; } }\n");
+			html.append(".night-row { background: linear-gradient(90deg, #0f0a2e 0%, #1a1145 40%, #1e1b4b 100%); border-bottom: 1px solid #312e81; }\n");
+			html.append(".night-row .col-time { color: #fbbf24; border-right: 1px solid #312e81; }\n");
+			html.append(".night-row .col-status { color: #a5b4fc; }\n");
+			html.append(".night-badge { display: inline-flex; align-items: center; gap: 3px; background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #1e1b4b; font-size: 9px; font-weight: 900; padding: 1px 7px; border-radius: 10px; margin-bottom: 3px; letter-spacing: 0.8px; box-shadow: 0 0 8px rgba(251,191,36,0.4), 0 0 3px rgba(251,191,36,0.2); animation: nightGlow 2s ease-in-out infinite alternate; white-space: nowrap; }\n");
+			html.append(".night-badge .moon { font-size: 11px; }\n");
+			html.append(".night-badge .stars { font-size: 8px; animation: twinkle 1.5s ease-in-out infinite alternate; }\n");
+			html.append("@keyframes nightGlow { 0% { box-shadow: 0 0 6px rgba(251,191,36,0.3); } 100% { box-shadow: 0 0 14px rgba(251,191,36,0.6), 0 0 4px rgba(139,92,246,0.4); } }\n");
+			html.append("@keyframes twinkle { 0% { opacity: 0.4; } 100% { opacity: 1; } }\n");
 			// Status colors (dark)
 			html.append(".sc { color: #14532d; }\n");
 			html.append(".gf { color: #374151; }\n");
@@ -485,8 +488,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			}
 			String[] dtParts = disc.split(", ");
 			String time = dtParts.length >= 4 ? dtParts[3] : disc;
-			String nightPrefix = isNightInterview(time) ? "<span class=\"night-badge\"><span class=\"stars\">&#10024;</span><span class=\"moon\">&#127769;</span><span class=\"stars\">&#10024;</span> NIGHT</span>" : "";
-			return "<div class=\"row\"><div class=\"col-time\">" + nightPrefix + escapeHtml(time) + "</div><div class=\"col-status " + bc + "\">" + escapeHtml(stat) + "</div></div>\n";
+			boolean isNight = isNightInterview(time);
+			String nightBadge = isNight ? "<div><span class=\"night-badge\"><span class=\"stars\">&#10024;</span><span class=\"moon\">&#127769;</span><span class=\"stars\">&#10024;</span> NIGHT</span></div>" : "";
+			String rowClass = isNight ? "row night-row" : "row";
+			return "<div class=\"" + rowClass + "\"><div class=\"col-time\">" + nightBadge + escapeHtml(time) + "</div><div class=\"col-status " + bc + "\">" + escapeHtml(stat) + "</div></div>\n";
 		}
 		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-status\"></div></div>\n";
 	}
