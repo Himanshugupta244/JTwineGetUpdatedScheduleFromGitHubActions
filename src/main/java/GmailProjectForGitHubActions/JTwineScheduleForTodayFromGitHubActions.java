@@ -402,9 +402,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".row:last-child { border-bottom: none; }\n");
 			html.append(".col-time { flex: 0 0 auto; min-width: 140px; white-space: nowrap; padding: 12px 14px; font-weight: 800; font-size: 15px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.5px; line-height: 1.4; }\n");
 			html.append(".col-status { flex: 1; padding: 12px 14px; font-weight: 900; font-size: 15px; text-align: right; letter-spacing: 0.3px; line-height: 1.4; white-space: nowrap; }\n");
-			html.append(".night-badge { display: inline-flex; align-items: center; gap: 3px; background: linear-gradient(135deg, #1e1b4b, #312e81, #4c1d95); color: #fbbf24; font-size: 11px; font-weight: 900; padding: 2px 8px; border-radius: 20px; margin-right: 6px; vertical-align: middle; letter-spacing: 0.5px; box-shadow: 0 0 8px rgba(139,92,246,0.5), 0 0 2px rgba(251,191,36,0.3); animation: nightGlow 2s ease-in-out infinite alternate; white-space: nowrap; }\n");
-			html.append(".night-badge .moon { font-size: 13px; filter: drop-shadow(0 0 3px #fbbf24); }\n");
-			html.append(".night-badge .stars { font-size: 9px; animation: twinkle 1.5s ease-in-out infinite alternate; }\n");
+			html.append(".night-badge { display: inline-flex; align-items: center; gap: 2px; background: linear-gradient(135deg, #1e1b4b, #312e81, #4c1d95); color: #fbbf24; font-size: 8px; font-weight: 900; padding: 1px 5px; border-radius: 12px; margin-right: 4px; vertical-align: middle; letter-spacing: 0.3px; box-shadow: 0 0 5px rgba(139,92,246,0.4), 0 0 1px rgba(251,191,36,0.2); animation: nightGlow 2s ease-in-out infinite alternate; white-space: nowrap; }\n");
+			html.append(".night-badge .moon { font-size: 9px; filter: drop-shadow(0 0 2px #fbbf24); }\n");
+			html.append(".night-badge .stars { font-size: 7px; animation: twinkle 1.5s ease-in-out infinite alternate; }\n");
 			html.append("@keyframes nightGlow { 0% { box-shadow: 0 0 6px rgba(139,92,246,0.4), 0 0 2px rgba(251,191,36,0.2); } 100% { box-shadow: 0 0 12px rgba(139,92,246,0.7), 0 0 4px rgba(251,191,36,0.5); } }\n");
 			html.append("@keyframes twinkle { 0% { opacity: 0.5; } 100% { opacity: 1; } }\n");
 			// Status colors (dark)
@@ -417,12 +417,11 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			// Past interview styling
 			html.append(".past-interview { opacity: 0.5; background: #f3f4f6; }\n");
 			html.append(".past-interview .col-time, .past-interview .col-status { text-decoration: line-through; }\n");
-			html.append(".done-tag { display: inline-block; font-size: 9px; font-weight: 900; color: #fff; background: #16a34a; padding: 1px 7px; border-radius: 3px; margin-left: 8px; letter-spacing: 1px; vertical-align: middle; }\n");
 			// Meeting JOIN link button
-			html.append(".col-link { flex: 0 0 auto; padding: 6px 8px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; }\n");
-			html.append(".join-btn { display: inline-block; font-size: 10px; font-weight: 900; color: #fff; background: #059669; padding: 5px 10px; border-radius: 4px; text-decoration: none; letter-spacing: 1px; white-space: nowrap; transition: background 0.2s, transform 0.15s; }\n");
-			html.append(".join-btn:hover { background: #047857; transform: scale(1.08); }\n");
-			html.append(".join-na { font-size: 10px; font-weight: 700; color: #d1d5db; }\n");
+			html.append(".col-link { flex: 0 0 auto; padding: 4px 5px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; }\n");
+			html.append(".join-btn { display: inline-block; font-size: 8px; font-weight: 900; color: #fff; background: #059669; padding: 3px 6px; border-radius: 3px; text-decoration: none; letter-spacing: 0.5px; white-space: nowrap; transition: background 0.2s, transform 0.15s; }\n");
+			html.append(".join-btn:hover { background: #047857; transform: scale(1.06); }\n");
+			html.append(".join-na { font-size: 8px; font-weight: 700; color: #d1d5db; }\n");
 			// Footer
 			html.append(".footer { border: 3px solid #1a1a1a; padding: 12px; font-size: 13px; font-weight: 800; letter-spacing: 1px; background: #fff; text-align: center; margin-top: 4px; }\n");
 			html.append("@media (max-width: 480px) {\n");
@@ -540,10 +539,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("    var interviewMin = h * 60 + m;\n");
 			html.append("    if (istMinutes > interviewMin) {\n");
 			html.append("      row.classList.add('past-interview');\n");
-			html.append("      var statusEl = row.querySelector('.col-status');\n");
-			html.append("      if (statusEl && !statusEl.querySelector('.done-tag')) {\n");
-			html.append("        statusEl.insertAdjacentHTML('beforeend', ' <span class=\"done-tag\">DONE &#10003;</span>');\n");
-			html.append("      }\n");
 			html.append("    }\n");
 			html.append("  });\n");
 			html.append("}\n");
