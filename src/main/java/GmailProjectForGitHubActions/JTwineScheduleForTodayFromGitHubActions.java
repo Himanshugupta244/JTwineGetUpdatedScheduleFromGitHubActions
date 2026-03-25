@@ -357,6 +357,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".ns { color: #374151; }\n");
 			html.append(".pd { color: #991b1b; }\n");
 			html.append(".empty { padding: 12px 14px; font-size: 14px; font-weight: 700; color: #9ca3af; font-style: italic; letter-spacing: 0.5px; }\n");
+			// Past interview styling
+			html.append(".past-interview { opacity: 0.5; background: #f3f4f6; }\n");
+			html.append(".past-interview .col-time, .past-interview .col-status { text-decoration: line-through; }\n");
+			html.append(".done-tag { display: inline-block; font-size: 9px; font-weight: 900; color: #fff; background: #16a34a; padding: 1px 7px; border-radius: 3px; margin-left: 8px; letter-spacing: 1px; vertical-align: middle; }\n");
 			// Footer
 			html.append(".footer { border: 3px solid #1a1a1a; padding: 12px; font-size: 13px; font-weight: 800; letter-spacing: 1px; background: #fff; text-align: center; margin-top: 4px; }\n");
 			html.append("@media (max-width: 480px) {\n");
@@ -454,6 +458,34 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("    icon.innerHTML = \"<span class='arrow'>&#9650;</span> TAP TO COLLAPSE\";\n");
 			html.append("  }\n");
 			html.append("}\n");
+			html.append("function markPastInterviews() {\n");
+			html.append("  var now = new Date();\n");
+			html.append("  var utcMs = now.getTime() + (now.getTimezoneOffset() * 60000);\n");
+			html.append("  var istMs = utcMs + (5.5 * 3600000);\n");
+			html.append("  var ist = new Date(istMs);\n");
+			html.append("  var istMinutes = ist.getHours() * 60 + ist.getMinutes();\n");
+			html.append("  var rows = document.querySelectorAll('.section-box-today .row, .section-box-vprop .row');\n");
+			html.append("  rows.forEach(function(row) {\n");
+			html.append("    var timeEl = row.querySelector('.col-time');\n");
+			html.append("    if (!timeEl) return;\n");
+			html.append("    var text = timeEl.textContent.trim();\n");
+			html.append("    var match = text.match(/(\\d{1,2}):(\\d{2})\\s*(AM|PM)/i);\n");
+			html.append("    if (!match) return;\n");
+			html.append("    var h = parseInt(match[1]); var m = parseInt(match[2]);\n");
+			html.append("    var ampm = match[3].toUpperCase();\n");
+			html.append("    if (ampm === 'AM' && h === 12) h = 0;\n");
+			html.append("    else if (ampm === 'PM' && h !== 12) h += 12;\n");
+			html.append("    var interviewMin = h * 60 + m;\n");
+			html.append("    if (istMinutes > interviewMin) {\n");
+			html.append("      row.classList.add('past-interview');\n");
+			html.append("      var statusEl = row.querySelector('.col-status');\n");
+			html.append("      if (statusEl && !statusEl.querySelector('.done-tag')) {\n");
+			html.append("        statusEl.insertAdjacentHTML('beforeend', ' <span class=\"done-tag\">DONE &#10003;</span>');\n");
+			html.append("      }\n");
+			html.append("    }\n");
+			html.append("  });\n");
+			html.append("}\n");
+			html.append("markPastInterviews();\n");
 			html.append("</script>\n");
 			html.append("</div>\n</body>\n</html>");
 
