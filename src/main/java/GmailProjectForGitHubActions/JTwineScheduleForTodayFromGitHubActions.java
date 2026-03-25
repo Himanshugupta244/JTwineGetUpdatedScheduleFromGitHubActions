@@ -363,6 +363,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  .col-status { font-size: 14px; padding: 11px 10px; }\n");
 			html.append("  .footer { font-size: 12px; }\n");
 			html.append("}\n");
+			html.append(".collapsible-body { display: none; }\n");
+			html.append(".collapsible-body.open { display: block; }\n");
+			html.append(".tab-label.clickable { cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }\n");
+			html.append(".toggle-icon { font-size: 11px; font-weight: 900; opacity: 0.75; white-space: nowrap; }\n");
 			html.append("</style>\n</head>\n<body>\n");
 			html.append("<div class=\"container\">\n");
 			html.append("<div class=\"header\"><h1>&#128197; SCHEDULE</h1></div>\n");
@@ -386,9 +390,23 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("</div>\n"); // end section-box-today
 			html.append("</div>\n"); // end TODAY section
 
-			// --- TOMORROW block (Amber) ---
+			// --- VProp block (between Today and Tomorrow) ---
+			if (!vpropLines.isEmpty()) {
+				html.append("<div class=\"section\">\n");
+				html.append("<div class=\"tab-label tab-vprop\">&#11088; VPROP</div>\n");
+				html.append("<div class=\"section-box-vprop\">\n");
+				html.append("<div class=\"acc-label acc-vp\">&#128100; Himanshu &mdash; VProp</div>\n");
+				for (String l : vpropLines) html.append(buildInterviewRow(l));
+				html.append("</div>\n</div>\n");
+			}
+
+			// --- TOMORROW block (Amber) — collapsible ---
 			html.append("<div class=\"section\">\n");
-			html.append("<div class=\"tab-label tab-tomorrow\">&#127769; TOMORROW &mdash; ").append(tomorrowUpper).append("</div>\n");
+			html.append("<div class=\"tab-label tab-tomorrow clickable\" onclick=\"toggleSection('tomorrow-body')\">\n");
+			html.append("  <span>&#127769; TOMORROW &mdash; ").append(tomorrowUpper).append("</span>\n");
+			html.append("  <span class=\"toggle-icon\" id=\"tomorrow-body-icon\">&#9660; SHOW</span>\n");
+			html.append("</div>\n");
+			html.append("<div id=\"tomorrow-body\" class=\"collapsible-body\">\n");
 			html.append("<div class=\"section-box-tomorrow\">\n");
 			html.append("<div class=\"acc-label acc-him\">&#128100; HIMANSHU &mdash; JTwine</div>\n");
 			if (himTomorrow.isEmpty()) {
@@ -403,23 +421,27 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				for (String l : sudTomorrow) html.append(buildInterviewRow(l));
 			}
 			html.append("</div>\n"); // end section-box-tomorrow
+			html.append("</div>\n"); // end collapsible-body
 			html.append("</div>\n"); // end TOMORROW section
-
-			// --- VProp block (only if data exists) ---
-			if (!vpropLines.isEmpty()) {
-				html.append("<div class=\"section\">\n");
-				html.append("<div class=\"tab-label tab-vprop\">&#11088; VPROP</div>\n");
-				html.append("<div class=\"section-box-vprop\">\n");
-				html.append("<div class=\"acc-label acc-vp\">&#128100; Himanshu &mdash; VProp</div>\n");
-				for (String l : vpropLines) html.append(buildInterviewRow(l));
-				html.append("</div>\n</div>\n");
-			}
 
 			// --- Footer ---
 			if (!updatedAt.isEmpty()) {
 				html.append("<div class=\"footer\">&#9201; Updated at (IST): ").append(updatedAt).append("</div>\n");
 			}
 
+			html.append("<script>\n");
+			html.append("function toggleSection(id) {\n");
+			html.append("  var body = document.getElementById(id);\n");
+			html.append("  var icon = document.getElementById(id + '-icon');\n");
+			html.append("  if (body.classList.contains('open')) {\n");
+			html.append("    body.classList.remove('open');\n");
+			html.append("    icon.innerHTML = '&#9660; SHOW';\n");
+			html.append("  } else {\n");
+			html.append("    body.classList.add('open');\n");
+			html.append("    icon.innerHTML = '&#9650; HIDE';\n");
+			html.append("  }\n");
+			html.append("}\n");
+			html.append("</script>\n");
 			html.append("</div>\n</body>\n</html>");
 
 			java.nio.file.Files.write(java.nio.file.Paths.get("deploy/index.html"),
