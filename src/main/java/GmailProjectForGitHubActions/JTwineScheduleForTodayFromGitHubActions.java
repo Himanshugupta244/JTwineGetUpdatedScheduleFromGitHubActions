@@ -183,31 +183,88 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		List<String> todayLines = new ArrayList<>();
 		List<String> tomorrowLines = new ArrayList<>();
 
-		String todayLocator = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + todayDate + "')]";
-		String todayStatusLocator = todayLocator+"//ancestor::div[contains(@class,'candidate-details-sec')]//div[contains(@class,'btn-chip')]/div";
-		List<WebElement> discussionListToday = driver.findElements(By.xpath(todayLocator));
-		List<WebElement> discussionStatusListToday = driver.findElements(By.xpath(todayStatusLocator));
-		
-		System.out.println("Discussions found for today: " + discussionListToday.size());
-		System.out.println("Discussions Status found for today: " + discussionStatusListToday.size());
+		// Per-card approach: find each card container, then extract text+status WITHIN that card (tight coupling)
+		String todayCardXpath = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + todayDate + "')]//ancestor::div[contains(@class,'candidate-details-sec')]";
+		List<WebElement> todayCards = driver.findElements(By.xpath(todayCardXpath));
+		System.out.println("Today cards found: " + todayCards.size());
 
-		for (int index = 0; index < discussionListToday.size(); index++) {
-			WebElement discussion = discussionListToday.get(index);
-			String statusText = (index < discussionStatusListToday.size()) ? discussionStatusListToday.get(index).getText() : "NA";
-			System.out.println(discussion.getText() + " ==> " + statusText);
-			todayLines.add("✪ " + discussion.getText() + " ==> " + statusText);
+		// First pass: extract text + status from WITHIN each card (guaranteed same card)
+		List<String[]> todayData = new ArrayList<>();
+		for (WebElement card : todayCards) {
+			String discText = "";
+			String statusText = "NA";
+			List<WebElement> dateDivs = card.findElements(By.xpath(".//div[@class='sub-sub-heading-1']"));
+			if (!dateDivs.isEmpty()) discText = dateDivs.get(0).getText();
+			List<WebElement> statusDivs = card.findElements(By.xpath(".//div[contains(@class,'btn-chip')]/div"));
+			if (!statusDivs.isEmpty()) statusText = statusDivs.get(0).getText();
+			System.out.println("  Today Card " + todayData.size() + ": " + discText + " | Status: " + statusText);
+			todayData.add(new String[]{discText, statusText});
+		}
+		// Second pass: re-find each card by index to capture meeting link (avoids stale element refs)
+		for (int index = 0; index < todayData.size(); index++) {
+			String discText = todayData.get(index)[0];
+			String statusText = todayData.get(index)[1];
+			String meetingLink = "";
+			if ("Scheduled".equals(statusText)) {
+				try {
+					String cardBtnXpath = "(" + todayCardXpath + ")[" + (index + 1) + "]//button[.//*[text()='Start Meeting']]";
+					List<WebElement> startBtns = driver.findElements(By.xpath(cardBtnXpath));
+					if (!startBtns.isEmpty() && startBtns.get(0).isEnabled()) {
+						meetingLink = captureMeetingLink(startBtns.get(0));
+					} else {
+						meetingLink = "NA";
+						System.out.println("Start Meeting button not found/disabled for today card " + index);
+					}
+				} catch (Exception e) {
+					meetingLink = "NA";
+					System.out.println("Failed to capture meeting link for today card " + index + ": " + e.getMessage());
+				}
+			}
+			String linkPart = !meetingLink.isEmpty() ? " ===LINK=== " + meetingLink : "";
+			System.out.println(discText + " ==> " + statusText + linkPart);
+			todayLines.add("✪ " + discText + " ==> " + statusText + linkPart);
 		}
 
-		String tomorrowLocator = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + tomorrowDate + "')]";
-		String tomorrowStatusLocator = tomorrowLocator+"//ancestor::div[contains(@class,'candidate-details-sec')]//div[contains(@class,'btn-chip')]/div";
-		List<WebElement> discussionListTomorrow = driver.findElements(By.xpath(tomorrowLocator));
-		List<WebElement> discussionStatusListTomorrow = driver.findElements(By.xpath(tomorrowStatusLocator));
+		// Per-card approach for tomorrow
+		String tomorrowCardXpath = ".//div[@class='sub-sub-heading-1'][contains(text(),'" + tomorrowDate + "')]//ancestor::div[contains(@class,'candidate-details-sec')]";
+		List<WebElement> tomorrowCards = driver.findElements(By.xpath(tomorrowCardXpath));
+		System.out.println("Tomorrow cards found: " + tomorrowCards.size());
 
-		for (int index = 0; index < discussionListTomorrow.size(); index++) {
-			WebElement discussion = discussionListTomorrow.get(index);
-			String statusText = (index < discussionStatusListTomorrow.size()) ? discussionStatusListTomorrow.get(index).getText() : "NA";
-			System.out.println(discussion.getText() + " ==> " + statusText);
-			tomorrowLines.add("✪ " + discussion.getText() + " ==> " + statusText);
+		// First pass: extract text + status from WITHIN each card
+		List<String[]> tomorrowData = new ArrayList<>();
+		for (WebElement card : tomorrowCards) {
+			String discText = "";
+			String statusText = "NA";
+			List<WebElement> dateDivs = card.findElements(By.xpath(".//div[@class='sub-sub-heading-1']"));
+			if (!dateDivs.isEmpty()) discText = dateDivs.get(0).getText();
+			List<WebElement> statusDivs = card.findElements(By.xpath(".//div[contains(@class,'btn-chip')]/div"));
+			if (!statusDivs.isEmpty()) statusText = statusDivs.get(0).getText();
+			System.out.println("  Tomorrow Card " + tomorrowData.size() + ": " + discText + " | Status: " + statusText);
+			tomorrowData.add(new String[]{discText, statusText});
+		}
+		// Second pass: re-find each card by index to capture meeting link
+		for (int index = 0; index < tomorrowData.size(); index++) {
+			String discText = tomorrowData.get(index)[0];
+			String statusText = tomorrowData.get(index)[1];
+			String meetingLink = "";
+			if ("Scheduled".equals(statusText)) {
+				try {
+					String cardBtnXpath = "(" + tomorrowCardXpath + ")[" + (index + 1) + "]//button[.//*[text()='Start Meeting']]";
+					List<WebElement> startBtns = driver.findElements(By.xpath(cardBtnXpath));
+					if (!startBtns.isEmpty() && startBtns.get(0).isEnabled()) {
+						meetingLink = captureMeetingLink(startBtns.get(0));
+					} else {
+						meetingLink = "NA";
+						System.out.println("Start Meeting button not found/disabled for tomorrow card " + index);
+					}
+				} catch (Exception e) {
+					meetingLink = "NA";
+					System.out.println("Failed to capture meeting link for tomorrow card " + index + ": " + e.getMessage());
+				}
+			}
+			String linkPart = !meetingLink.isEmpty() ? " ===LINK=== " + meetingLink : "";
+			System.out.println(discText + " ==> " + statusText + linkPart);
+			tomorrowLines.add("✪ " + discText + " ==> " + statusText + linkPart);
 		}
 
 		Map<String, List<String>> result = new HashMap<>();
@@ -361,6 +418,11 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".past-interview { opacity: 0.5; background: #f3f4f6; }\n");
 			html.append(".past-interview .col-time, .past-interview .col-status { text-decoration: line-through; }\n");
 			html.append(".done-tag { display: inline-block; font-size: 9px; font-weight: 900; color: #fff; background: #16a34a; padding: 1px 7px; border-radius: 3px; margin-left: 8px; letter-spacing: 1px; vertical-align: middle; }\n");
+			// Meeting JOIN link button
+			html.append(".col-link { flex: 0 0 auto; padding: 6px 8px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; }\n");
+			html.append(".join-btn { display: inline-block; font-size: 10px; font-weight: 900; color: #fff; background: #059669; padding: 5px 10px; border-radius: 4px; text-decoration: none; letter-spacing: 1px; white-space: nowrap; transition: background 0.2s, transform 0.15s; }\n");
+			html.append(".join-btn:hover { background: #047857; transform: scale(1.08); }\n");
+			html.append(".join-na { font-size: 10px; font-weight: 700; color: #d1d5db; }\n");
 			// Footer
 			html.append(".footer { border: 3px solid #1a1a1a; padding: 12px; font-size: 13px; font-weight: 800; letter-spacing: 1px; background: #fff; text-align: center; margin-top: 4px; }\n");
 			html.append("@media (max-width: 480px) {\n");
@@ -500,6 +562,15 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 	private static String buildInterviewRow(String line) {
 		String content = line.startsWith("\u272a ") ? line.substring(2).trim() : line.trim();
+
+		// Extract meeting link if present
+		String meetingLink = "";
+		if (content.contains("===LINK===")) {
+			String[] linkParts = content.split("===LINK===", 2);
+			content = linkParts[0].trim();
+			meetingLink = linkParts[1].trim();
+		}
+
 		String[] parts = content.split("==>");
 		if (parts.length == 2) {
 			String disc = parts[0].trim();
@@ -518,9 +589,20 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			String[] dtParts = disc.split(", ");
 			String time = dtParts.length >= 4 ? dtParts[3] : disc;
 			String nightPrefix = isNightInterview(time) ? "<span class=\"night-badge\"><span class=\"stars\">&#10024;</span><span class=\"moon\">&#127769;</span><span class=\"stars\">&#10024;</span> NIGHT</span>" : "";
-			return "<div class=\"row\"><div class=\"col-time\">" + nightPrefix + escapeHtml(time) + "</div><div class=\"col-status " + bc + "\">" + escapeHtml(stat) + "</div></div>\n";
+
+			// Build link column
+			String linkHtml;
+			if (!meetingLink.isEmpty() && !"NA".equals(meetingLink)) {
+				linkHtml = "<div class=\"col-link\"><a href=\"" + escapeHtml(meetingLink) + "\" target=\"_blank\" rel=\"noopener\" class=\"join-btn\">JOIN &#9654;</a></div>";
+			} else if ("NA".equals(meetingLink)) {
+				linkHtml = "<div class=\"col-link\"><span class=\"join-na\">NA</span></div>";
+			} else {
+				linkHtml = "<div class=\"col-link\"><span class=\"join-na\">&mdash;</span></div>";
+			}
+
+			return "<div class=\"row\"><div class=\"col-time\">" + nightPrefix + escapeHtml(time) + "</div>" + linkHtml + "<div class=\"col-status " + bc + "\">" + escapeHtml(stat) + "</div></div>\n";
 		}
-		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-status\"></div></div>\n";
+		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-link\"></div><div class=\"col-status\"></div></div>\n";
 	}
 
 	private static boolean isNightInterview(String time) {
@@ -549,6 +631,146 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	private static String escapeHtml(String text) {
 		if (text == null) return "";
 		return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\"", "&quot;");
+	}
+
+	/**
+	 * Clicks "Start Meeting" on a JTwine interview card, handles the guidelines dialog,
+	 * captures the meeting URL from the new tab, then closes the tab and returns the URL.
+	 */
+	private static String captureMeetingLink(WebElement startMeetingBtn) {
+		String originalWindow = null;
+		try {
+			originalWindow = driver.getWindowHandle();
+			java.util.Set<String> existingWindows = driver.getWindowHandles();
+			System.out.println("Clicking Start Meeting button to capture link...");
+
+			// Step 1: Click the card's Start Meeting button (opens guidelines dialog)
+			startMeetingBtn.click();
+			waitForFixTime(3000);
+
+			// Step 2: Find and click 'Start Meeting' inside the guidelines dialog
+			// Try multiple strategies to find the dialog button
+			List<WebElement> dialogBtns = driver.findElements(By.xpath(
+				".//button[.//*[contains(text(),'Start Meeting')]][not(ancestor::*[contains(@class,'candidate-details')])]"
+			));
+			System.out.println("  Dialog btn strategy 1 (not in candidate-details): " + dialogBtns.size());
+			if (dialogBtns.isEmpty()) {
+				dialogBtns = driver.findElements(By.xpath(
+					".//*[@role='dialog']//button[contains(.,'Start Meeting')]"
+				));
+				System.out.println("  Dialog btn strategy 2 (role=dialog): " + dialogBtns.size());
+			}
+			if (dialogBtns.isEmpty()) {
+				// Angular Material uses cdk-overlay-container outside the app root
+				dialogBtns = driver.findElements(By.xpath(
+					".//*[contains(@class,'cdk-overlay')]//button[contains(.,'Start Meeting')]"
+				));
+				System.out.println("  Dialog btn strategy 3 (cdk-overlay): " + dialogBtns.size());
+			}
+			if (dialogBtns.isEmpty()) {
+				// Last fallback: get the last Start Meeting button on page (dialog one appears last in DOM)
+				List<WebElement> allBtns = driver.findElements(By.xpath(".//button[.//*[contains(text(),'Start Meeting')]]"));
+				System.out.println("  Dialog btn strategy 4 (last of all): " + allBtns.size() + " total Start Meeting buttons");
+				if (allBtns.size() > 1) {
+					dialogBtns = new ArrayList<>();
+					dialogBtns.add(allBtns.get(allBtns.size() - 1));
+				}
+			}
+
+			if (dialogBtns.isEmpty()) {
+				System.out.println("WARNING: Dialog Start Meeting button not found — trying Escape to dismiss");
+				dismissDialogAndStabilize();
+				return "NA";
+			}
+
+			System.out.println("Clicking dialog Start Meeting button...");
+			dialogBtns.get(0).click();
+			waitForFixTime(4000);
+
+			// Step 3: Capture the meeting URL from the new tab
+			java.util.Set<String> allWindows = driver.getWindowHandles();
+			String meetingUrl = "";
+
+			for (String handle : allWindows) {
+				if (!existingWindows.contains(handle)) {
+					driver.switchTo().window(handle);
+					waitForFixTime(2000);
+					meetingUrl = driver.getCurrentUrl();
+					if ("about:blank".equals(meetingUrl)) {
+						waitForFixTime(3000);
+						meetingUrl = driver.getCurrentUrl();
+					}
+					System.out.println("Captured meeting URL from new tab: " + meetingUrl);
+					driver.close();
+					driver.switchTo().window(originalWindow);
+					break;
+				}
+			}
+
+			// If no new tab opened, check if current URL changed (same-page redirect)
+			if (meetingUrl.isEmpty()) {
+				String currentUrl = driver.getCurrentUrl();
+				System.out.println("No new tab — current URL: " + currentUrl);
+				if (!currentUrl.contains("/interviewer/candidates")) {
+					meetingUrl = currentUrl;
+					System.out.println("Captured meeting URL from redirect: " + meetingUrl);
+					driver.navigate().back();
+					waitForFixTime(3000);
+					try { waitTillElementVisible(By.xpath(".//span[text()='Start Meeting']"), 15); } catch (Exception ignored) {}
+				}
+			}
+
+			// Step 4: Dismiss any remaining dialog/overlay and stabilize DOM for next card
+			dismissDialogAndStabilize();
+
+			if (meetingUrl.isEmpty() || "about:blank".equals(meetingUrl)) {
+				return "NA";
+			}
+			return meetingUrl;
+		} catch (Exception e) {
+			System.out.println("Exception in captureMeetingLink: " + e.getMessage());
+			e.printStackTrace();
+			// Recovery: close extra tabs, dismiss dialogs, get back to candidates page
+			try {
+				java.util.Set<String> handles = driver.getWindowHandles();
+				if (originalWindow == null) originalWindow = handles.iterator().next();
+				for (String h : handles) {
+					if (!h.equals(originalWindow)) {
+						driver.switchTo().window(h);
+						driver.close();
+					}
+				}
+				driver.switchTo().window(originalWindow);
+				dismissDialogAndStabilize();
+			} catch (Exception ex) {
+				System.out.println("Recovery also failed: " + ex.getMessage());
+			}
+			return "NA";
+		}
+	}
+
+	/**
+	 * Dismiss any open dialog/overlay and wait for the candidates page to stabilize.
+	 * Uses Escape key (works for Angular Material dialogs), then tries X button as fallback.
+	 */
+	private static void dismissDialogAndStabilize() {
+		try {
+			// Try pressing Escape to close any Angular Material dialog/overlay
+			driver.findElement(By.tagName("body")).sendKeys(org.openqa.selenium.Keys.ESCAPE);
+			waitForFixTime(1000);
+		} catch (Exception ignored) {}
+		try {
+			// Fallback: click any visible close/X button
+			List<WebElement> closeBtns = driver.findElements(By.xpath(
+				".//*[contains(@class,'cdk-overlay')]//button[contains(text(),'\u00d7')] | .//button[contains(@class,'close')]"
+			));
+			if (!closeBtns.isEmpty()) {
+				closeBtns.get(0).click();
+				waitForFixTime(500);
+			}
+		} catch (Exception ignored) {}
+		// Wait briefly for DOM to settle before interacting with next card
+		waitForFixTime(1500);
 	}
 
 	// Separate Code for VProp
