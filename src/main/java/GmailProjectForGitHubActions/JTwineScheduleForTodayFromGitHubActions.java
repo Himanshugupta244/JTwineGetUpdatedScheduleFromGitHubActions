@@ -402,9 +402,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".row:last-child { border-bottom: none; }\n");
 			html.append(".col-time { flex: 0 0 auto; min-width: 140px; white-space: nowrap; padding: 12px 14px; font-weight: 800; font-size: 15px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.5px; line-height: 1.4; }\n");
 			html.append(".col-status { flex: 1; padding: 12px 14px; font-weight: 900; font-size: 15px; text-align: right; letter-spacing: 0.3px; line-height: 1.4; white-space: nowrap; }\n");
-			html.append(".night-badge { display: inline-flex; align-items: center; gap: 2px; background: linear-gradient(135deg, #1e1b4b, #312e81, #4c1d95); color: #fbbf24; font-size: 8px; font-weight: 900; padding: 1px 5px; border-radius: 12px; margin-right: 4px; vertical-align: middle; letter-spacing: 0.3px; box-shadow: 0 0 5px rgba(139,92,246,0.4), 0 0 1px rgba(251,191,36,0.2); animation: nightGlow 2s ease-in-out infinite alternate; white-space: nowrap; }\n");
-			html.append(".night-badge .moon { font-size: 9px; filter: drop-shadow(0 0 2px #fbbf24); }\n");
-			html.append(".night-badge .stars { font-size: 7px; animation: twinkle 1.5s ease-in-out infinite alternate; }\n");
+			html.append(".night-badge { display: inline-flex; align-items: center; gap: 1px; background: linear-gradient(135deg, #1e1b4b, #312e81, #4c1d95); color: #fbbf24; font-size: 7px; font-weight: 900; padding: 1px 4px; border-radius: 8px; margin-right: 3px; vertical-align: middle; letter-spacing: 0.2px; box-shadow: 0 0 4px rgba(139,92,246,0.4); animation: nightGlow 2s ease-in-out infinite alternate; white-space: nowrap; }\n");
+			html.append(".night-badge .star { font-size: 7px; }\n");
 			html.append("@keyframes nightGlow { 0% { box-shadow: 0 0 6px rgba(139,92,246,0.4), 0 0 2px rgba(251,191,36,0.2); } 100% { box-shadow: 0 0 12px rgba(139,92,246,0.7), 0 0 4px rgba(251,191,36,0.5); } }\n");
 			html.append("@keyframes twinkle { 0% { opacity: 0.5; } 100% { opacity: 1; } }\n");
 			// Status colors (dark)
@@ -418,7 +417,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".past-interview { opacity: 0.5; background: #f3f4f6; }\n");
 			html.append(".past-interview .col-time, .past-interview .col-status { text-decoration: line-through; }\n");
 			// Meeting JOIN link button
-			html.append(".col-link { flex: 0 0 auto; padding: 4px 5px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; }\n");
+			html.append(".col-link { flex: 0 0 44px; min-width: 44px; max-width: 44px; padding: 4px 0; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; text-align: center; }\n");
 			html.append(".join-btn { display: inline-block; font-size: 8px; font-weight: 900; color: #fff; background: #059669; padding: 3px 6px; border-radius: 3px; text-decoration: none; letter-spacing: 0.5px; white-space: nowrap; transition: background 0.2s, transform 0.15s; }\n");
 			html.append(".join-btn:hover { background: #047857; transform: scale(1.06); }\n");
 			html.append(".join-na { font-size: 8px; font-weight: 700; color: #d1d5db; }\n");
@@ -583,7 +582,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			}
 			String[] dtParts = disc.split(", ");
 			String time = dtParts.length >= 4 ? dtParts[3] : disc;
-			String nightPrefix = isNightInterview(time) ? "<span class=\"night-badge\"><span class=\"stars\">&#10024;</span><span class=\"moon\">&#127769;</span><span class=\"stars\">&#10024;</span> NIGHT</span>" : "";
+			String nightPrefix = isNightInterview(time) ? "<span class=\"night-badge\"><span class=\"star\">&#11088;</span>NIGHT</span>" : "";
 
 			// Build link column
 			String linkHtml;
@@ -597,7 +596,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 			return "<div class=\"row\"><div class=\"col-time\">" + nightPrefix + escapeHtml(time) + "</div>" + linkHtml + "<div class=\"col-status " + bc + "\">" + escapeHtml(stat) + "</div></div>\n";
 		}
-		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-link\"></div><div class=\"col-status\"></div></div>\n";
+		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-link\"><span class=\"join-na\">&mdash;</span></div><div class=\"col-status\"></div></div>\n";
 	}
 
 	private static boolean isNightInterview(String time) {
