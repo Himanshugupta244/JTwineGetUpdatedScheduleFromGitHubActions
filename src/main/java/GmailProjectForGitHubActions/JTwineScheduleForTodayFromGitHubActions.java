@@ -366,7 +366,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".collapsible-body { display: none; }\n");
 			html.append(".collapsible-body.open { display: block; }\n");
 			html.append(".tab-label.clickable { cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }\n");
-			html.append(".toggle-icon { font-size: 11px; font-weight: 900; opacity: 0.75; white-space: nowrap; }\n");
+			html.append(".toggle-btn { display: inline-flex; align-items: center; gap: 5px; padding: 4px 14px; font-size: 11px; font-weight: 900; letter-spacing: 1px; color: #b45309; background: #fff; border: 2px solid #fff; border-radius: 20px; white-space: nowrap; transition: background 0.2s, transform 0.15s; box-shadow: 0 1px 3px rgba(0,0,0,0.15); }\n");
+			html.append(".toggle-btn:hover { background: #fef3c7; transform: scale(1.05); }\n");
+			html.append(".toggle-btn .arrow { font-size: 13px; line-height: 1; }\n");
 			html.append("</style>\n</head>\n<body>\n");
 			html.append("<div class=\"container\">\n");
 			html.append("<div class=\"header\"><h1>&#128197; SCHEDULE</h1></div>\n");
@@ -404,7 +406,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("<div class=\"section\">\n");
 			html.append("<div class=\"tab-label tab-tomorrow clickable\" onclick=\"toggleSection('tomorrow-body')\">\n");
 			html.append("  <span>&#127769; TOMORROW &mdash; ").append(tomorrowUpper).append("</span>\n");
-			html.append("  <span class=\"toggle-icon\" id=\"tomorrow-body-icon\">&#9660; SHOW</span>\n");
+			html.append("  <span class=\"toggle-btn\" id=\"tomorrow-body-icon\"><span class=\"arrow\">&#9660;</span> TAP TO EXPAND</span>\n");
 			html.append("</div>\n");
 			html.append("<div id=\"tomorrow-body\" class=\"collapsible-body\">\n");
 			html.append("<div class=\"section-box-tomorrow\">\n");
@@ -435,10 +437,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  var icon = document.getElementById(id + '-icon');\n");
 			html.append("  if (body.classList.contains('open')) {\n");
 			html.append("    body.classList.remove('open');\n");
-			html.append("    icon.innerHTML = '&#9660; SHOW';\n");
+			html.append("    icon.innerHTML = '<span class=\\"arrow\\">&#9660;</span> TAP TO EXPAND';\n");
 			html.append("  } else {\n");
 			html.append("    body.classList.add('open');\n");
-			html.append("    icon.innerHTML = '&#9650; HIDE';\n");
+			html.append("    icon.innerHTML = '<span class=\\"arrow\\">&#9650;</span> TAP TO COLLAPSE';\n");
 			html.append("  }\n");
 			html.append("}\n");
 			html.append("</script>\n");
