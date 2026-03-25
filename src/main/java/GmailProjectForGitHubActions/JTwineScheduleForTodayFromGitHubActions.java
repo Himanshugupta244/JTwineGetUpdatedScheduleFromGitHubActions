@@ -398,7 +398,13 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				html.append("<div class=\"tab-label tab-vprop\">&#11088; VPROP</div>\n");
 				html.append("<div class=\"section-box-vprop\">\n");
 				html.append("<div class=\"acc-label acc-vp\">&#128100; Himanshu &mdash; VProp</div>\n");
-				for (String l : vpropLines) html.append(buildInterviewRow(l));
+				for (String l : vpropLines) {
+					if (l.startsWith("No discussions")) {
+						html.append("<div class=\"empty\">" + escapeHtml(l) + "</div>\n");
+					} else {
+						html.append(buildInterviewRow(l));
+					}
+				}
 				html.append("</div>\n</div>\n");
 			}
 
@@ -474,9 +480,14 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			}
 			String[] dtParts = disc.split(", ");
 			String time = dtParts.length >= 4 ? dtParts[3] : disc;
-			return "<div class=\"row\"><div class=\"col-time\">" + time + "</div><div class=\"col-status " + bc + "\">" + stat + "</div></div>\n";
+			return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(time) + "</div><div class=\"col-status " + bc + "\">" + escapeHtml(stat) + "</div></div>\n";
 		}
-		return "<div class=\"row\"><div class=\"col-time\">" + content + "</div><div class=\"col-status\"></div></div>\n";
+		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-status\"></div></div>\n";
+	}
+
+	private static String escapeHtml(String text) {
+		if (text == null) return "";
+		return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\"", "&quot;");
 	}
 
 	// Separate Code for VProp
@@ -540,7 +551,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			waitForFixTime(500);
 			System.out.println("Getting Vprop schedule for tomorrow....");
 			if(tomorrowCards.isEmpty()) {
-				outputLines.add("\n");
 				System.out.println("No discussions scheduled for tomorrow in Vprop.");
 				outputLines.add("No discussions scheduled for tomorrow in Vprop.");
 			} else {
