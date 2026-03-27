@@ -3,7 +3,7 @@ Today's date: Mar 27
 §TODAY§
 ✪ Fri, Mar 27, 2026, 10:30 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=aGEq%2Be%2FHf%2F3uQkuxP4WOl7XwVP66eSIGHeXBdryIiFxisD0FtdyfPA84hj1nnBIa&type=H
 ✪ Fri, Mar 27, 2026, 7:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Rm4deX6TqnADWy%2BUCADPh2nBZ22%2F8x%2F%2BYrI%2F1r4eMZR4KI1Lk%2BsVVfxMYXebGrvr&type=H
-✪ Fri, Mar 27, 2026, 6:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=pfMTYdrKQk7wzkiE40sIzO2KvkgIath%2FI8sOOxuQ6F9hgPBK32kcwDDD3NQ7AtpM&type=H
+✪ Fri, Mar 27, 2026, 6:00 PM IST ==> Cancelled by candidate
 ✪ Fri, Mar 27, 2026, 4:00 PM IST ==> Not Recommended
 ✪ Fri, Mar 27, 2026, 2:30 PM IST ==> Not Recommended
 ✪ Fri, Mar 27, 2026, 1:00 PM IST ==> Candidate No Show
@@ -31,4 +31,4 @@ Today's date: Mar 27
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 27-Mar-2026 05:35:04 PM
+Updated at (IST): 27-Mar-2026 05:44:29 PM
