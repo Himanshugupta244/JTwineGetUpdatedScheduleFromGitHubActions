@@ -20,7 +20,7 @@ Today's date: Mar 27
 ✪ Fri, Mar 27, 2026, 5:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=C3LwgBHU1gDfZqczKhVAgaqhNj%2F%2FBf9%2BVnUQN2Tpp5Aaq0BEwpf2ZtdtlqxtRkBF&type=H
 ✪ Fri, Mar 27, 2026, 3:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=SYl37pZHpTNgXquE5vUu22In%2F65WaeuYYkfMbWf0Bus9Q%2FTkU0EcZz19Y1rKDGoD&type=H
 ✪ Fri, Mar 27, 2026, 2:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=7UiIGQY4YjkZzFZmvjRkpKK6iNbnVAxUC67rmFCkpWyxD5p%2FLAX1pN8rEle657A2&type=H
-✪ Fri, Mar 27, 2026, 11:00 AM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=gcmu3a%2FHXWEFsaQ2dx72T52X5p0d6B72ix6WV%2Fv35XHWoXTbv4rMtkqgxnO%2FQcpe&type=H
+✪ Fri, Mar 27, 2026, 11:00 AM IST ==> Pending Feedback Review
 ✪ Fri, Mar 27, 2026, 9:30 AM IST ==> Candidate No Show
 §TOMORROW§
 ✪ Sat, Mar 28, 2026, 6:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=PwXTXzOmpB9ciuwyp%2BxDck7c85C7VtlyhMLeRCAGDXGGehYWUdMgPNsqNqbUv2Wh&type=H
@@ -31,4 +31,4 @@ Today's date: Mar 27
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 27-Mar-2026 11:46:07 AM
+Updated at (IST): 27-Mar-2026 11:55:48 AM
