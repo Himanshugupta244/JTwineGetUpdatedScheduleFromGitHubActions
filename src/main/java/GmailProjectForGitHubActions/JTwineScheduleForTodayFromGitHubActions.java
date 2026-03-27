@@ -461,7 +461,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("<div class=\"header\"><h1>&#128197; SCHEDULE</h1></div>\n");
 
 			// --- Session Bar (Bookmarklet + Copy for both accounts) ---
-			String bookmarklet = "javascript:void((function(){var d=prompt('Paste session data:');if(!d)return;try{var obj=JSON.parse(atob(d));obj.cookies.forEach(function(c){document.cookie=c.n+'='+c.v+';domain='+c.d+';path='+c.p+(c.s?';secure':'');});var ls=obj.ls;for(var k in ls){localStorage.setItem(k,ls[k]);}var ss=obj.ss;for(var k in ss){sessionStorage.setItem(k,ss[k]);}location.reload();}catch(e){alert('Error: '+e.message);}})())";
+			String bookmarklet = "javascript:void((function(){navigator.clipboard.readText().then(function(d){if(!d){alert('Clipboard empty!');return;}try{var obj=JSON.parse(atob(d));obj.cookies.forEach(function(c){document.cookie=c.n+'='+c.v+';domain='+c.d+';path='+c.p+(c.s?';secure':'');});var ls=obj.ls;for(var k in ls){localStorage.setItem(k,ls[k]);}var ss=obj.ss;for(var k in ss){sessionStorage.setItem(k,ss[k]);}location.reload();}catch(e){alert('Error: '+e.message);}}).catch(function(e){alert('Clipboard access denied: '+e.message);});})())";
 			boolean hasHim = sessionBase64Him != null && !sessionBase64Him.isEmpty();
 			boolean hasSud = sessionBase64Sud != null && !sessionBase64Sud.isEmpty();
 			if (hasHim || hasSud) {
