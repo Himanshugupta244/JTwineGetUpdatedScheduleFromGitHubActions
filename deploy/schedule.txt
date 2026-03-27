@@ -5,7 +5,7 @@ Today's date: Mar 27
 ✪ Fri, Mar 27, 2026, 7:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Rm4deX6TqnADWy%2BUCADPh2nBZ22%2F8x%2F%2BYrI%2F1r4eMZR4KI1Lk%2BsVVfxMYXebGrvr&type=H
 ✪ Fri, Mar 27, 2026, 6:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=pfMTYdrKQk7wzkiE40sIzO2KvkgIath%2FI8sOOxuQ6F9hgPBK32kcwDDD3NQ7AtpM&type=H
 ✪ Fri, Mar 27, 2026, 4:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=68xEyRdFUw6xsvsBn1Ot4gY5pfpnaU7mBlkpMZ17Wjao2selDQnjulU%2FK6yPDee8&type=H
-✪ Fri, Mar 27, 2026, 2:30 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Hm%2F10g0PLa%2BpDc70gDz8yhAPF1txh4vMcII1j0B6LrBBte656aiwzcvutclUMBZQ&type=H
+✪ Fri, Mar 27, 2026, 2:30 PM IST ==> Pending Feedback Review
 ✪ Fri, Mar 27, 2026, 1:00 PM IST ==> Candidate No Show
 ✪ Fri, Mar 27, 2026, 12:00 PM IST ==> Is a Good Fit
 ✪ Fri, Mar 27, 2026, 11:00 AM IST ==> Is a Good Fit
@@ -16,17 +16,19 @@ Today's date: Mar 27
 ✪ Sat, Mar 28, 2026, 12:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=YoYRoT%2FoZJhqYv%2Fxhn4CfHjrtDehtxU9EkRJyGYOhfILP%2FBkfsW0tuK%2FunORUHFv&type=H
 ✪ Sat, Mar 28, 2026, 11:00 AM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=GOfusETZL9EdG6Qn1cJ4osK9nPDXO3Usg9MRD9qyZ25HxZqG%2Fz%2FCSiFPjYHV1U0C&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
-Exception: element click intercepted: Element <span>...</span> is not clickable at point (513, 137). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
-  (Session info: chrome=145.0.7632.159)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-1017-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2b279d1d9a7cd9018618401e0fc3bfd0, clickElement {id=f.987EE0464F74AF91E242DC269420775D.d.B506DD223E86F8AA221A413B0832CD7D.e.178}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.159, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44825}, goog:processID: 3177, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44825/devtoo..., se:cdpVersion: 145.0.7632.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (2b279d1d9a7cd9018618401e0fc3bfd0)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[2]]
-Session ID: 2b279d1d9a7cd9018618401e0fc3bfd0
+§TODAY§
+✪ Fri, Mar 27, 2026, 5:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=C3LwgBHU1gDfZqczKhVAgaqhNj%2F%2FBf9%2BVnUQN2Tpp5Aaq0BEwpf2ZtdtlqxtRkBF&type=H
+✪ Fri, Mar 27, 2026, 3:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=SYl37pZHpTNgXquE5vUu22In%2F65WaeuYYkfMbWf0Bus9Q%2FTkU0EcZz19Y1rKDGoD&type=H
+✪ Fri, Mar 27, 2026, 2:00 PM IST ==> Pending Feedback Review
+✪ Fri, Mar 27, 2026, 11:00 AM IST ==> Is a Good Fit
+✪ Fri, Mar 27, 2026, 9:30 AM IST ==> Candidate No Show
+§TOMORROW§
+✪ Sat, Mar 28, 2026, 6:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=PwXTXzOmpB9ciuwyp%2BxDck7c85C7VtlyhMLeRCAGDXGGehYWUdMgPNsqNqbUv2Wh&type=H
+✪ Sat, Mar 28, 2026, 3:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=d43LFrY6Eo3fEAZobJpvND2kIPlItInMTHo%2BWhztOQ54B7QyY46xBz6Iqxa29wsK&type=H
+✪ Sat, Mar 28, 2026, 1:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=V4mFIVX38VUr4Fs1WJgHvRoRANs074vqueaK%2FJrkfq610yVGG4fzW%2FI6lrh7NCHN&type=H
+✪ Sat, Mar 28, 2026, 11:30 AM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ac3vRo5BJ4siyjt7g0D8wL86msSaEaq27AYfxyBikGTUC0T%2BzD0SDyD82NKqqBEV&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 27-Mar-2026 02:54:37 PM
+Updated at (IST): 27-Mar-2026 03:05:04 PM
