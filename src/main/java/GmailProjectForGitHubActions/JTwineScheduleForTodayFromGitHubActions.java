@@ -2,13 +2,16 @@ package GmailProjectForGitHubActions;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.HashMap;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.charset.StandardCharsets;
 import java.io.IOException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -29,6 +32,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	public static String todayDateVpropFormat = null;
 	public static String tomorrowDateVpropFormat = null;
 	public static List<String> outputLines = new ArrayList<>();
+	public static String sessionBase64Him = "";
+	public static String sessionBase64Sud = "";
 
 	public static void main(String[] args) {
 
@@ -49,6 +54,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			loginToJTwine();
 			List<String> scheduleLines = fetchScheduleForToday();
 			outputLines.addAll(scheduleLines);
+
+			// Capture Himanshu's session for auto-login feature
+			sessionBase64Him = captureSessionData("Himanshu");
+
 			driver.quit();
 			System.out.println("======================================================================");
 			username = System.getenv("JTWINE_USERNAME_SUD");
@@ -58,6 +67,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			loginToJTwine();
 			scheduleLines = fetchScheduleForToday();
 			outputLines.addAll(scheduleLines);
+
+			// Capture Sudhanshu's session for auto-login feature
+			sessionBase64Sud = captureSessionData("Sudhanshu");
 
 		} catch(Exception ex) {
 			ex.printStackTrace();
@@ -418,7 +430,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".past-interview .col-time, .past-interview .col-status { text-decoration: line-through; }\n");
 			// Meeting JOIN link button
 			html.append(".col-link { flex: 0 0 44px; min-width: 44px; max-width: 44px; padding: 4px 0; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; text-align: center; }\n");
-			html.append(".join-btn { display: inline-block; font-size: 8px; font-weight: 900; color: #fff; background: #059669; padding: 3px 6px; border-radius: 3px; text-decoration: none; letter-spacing: 0.5px; white-space: nowrap; transition: background 0.2s, transform 0.15s; }\n");
+			html.append(".join-btn { display: inline-block; font-size: 8px; font-weight: 900; color: #fff; background: #059669; padding: 3px 6px; border-radius: 3px; text-decoration: none; letter-spacing: 0.5px; white-space: nowrap; transition: background 0.2s, transform 0.15s; border: none; cursor: pointer; }\n");
 			html.append(".join-btn:hover { background: #047857; transform: scale(1.06); }\n");
 			html.append(".join-na { font-size: 8px; font-weight: 700; color: #d1d5db; }\n");
 			// Footer
@@ -438,9 +450,32 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".toggle-btn { display: inline-flex; align-items: center; gap: 5px; padding: 4px 14px; font-size: 11px; font-weight: 900; letter-spacing: 1px; color: #b45309; background: #fff; border: 2px solid #fff; border-radius: 20px; white-space: nowrap; transition: background 0.2s, transform 0.15s; box-shadow: 0 1px 3px rgba(0,0,0,0.15); }\n");
 			html.append(".toggle-btn:hover { background: #fef3c7; transform: scale(1.05); }\n");
 			html.append(".toggle-btn .arrow { font-size: 13px; line-height: 1; }\n");
+			// Session bar styles
+			html.append(".session-bar { display:flex; gap:8px; margin-bottom:18px; align-items:stretch; }\n");
+			html.append(".session-bar .bm-drag { flex:0 0 auto; display:flex; align-items:center; padding:8px 14px; font-size:11px; font-weight:900; color:#fff; background:linear-gradient(135deg,#7c3aed,#6d28d9); border-radius:8px; text-decoration:none; cursor:grab; letter-spacing:0.5px; white-space:nowrap; box-shadow:0 2px 8px rgba(124,58,237,0.3); transition:transform 0.15s; }\n");
+			html.append(".session-bar .bm-drag:hover { transform:scale(1.04); }\n");
+			html.append(".session-bar .bm-drag:active { cursor:grabbing; }\n");
+			html.append(".session-bar .session-hint { flex:1; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:900; color:#6b7280; letter-spacing:0.5px; text-align:center; }\n");
 			html.append("</style>\n</head>\n<body>\n");
 			html.append("<div class=\"container\">\n");
 			html.append("<div class=\"header\"><h1>&#128197; SCHEDULE</h1></div>\n");
+
+			// --- Session Bar (Bookmarklet + Copy for both accounts) ---
+			String bookmarklet = "javascript:void((function(){var d=prompt('Paste session data:');if(!d)return;try{var obj=JSON.parse(atob(d));obj.cookies.forEach(function(c){document.cookie=c.n+'='+c.v+';domain='+c.d+';path='+c.p+(c.s?';secure':'');});var ls=obj.ls;for(var k in ls){localStorage.setItem(k,ls[k]);}var ss=obj.ss;for(var k in ss){sessionStorage.setItem(k,ss[k]);}location.reload();}catch(e){alert('Error: '+e.message);}})())";
+			boolean hasHim = sessionBase64Him != null && !sessionBase64Him.isEmpty();
+			boolean hasSud = sessionBase64Sud != null && !sessionBase64Sud.isEmpty();
+			if (hasHim || hasSud) {
+				html.append("<div class=\"session-bar\">\n");
+				html.append("<a class=\"bm-drag\" href=\"").append(bookmarklet.replace("&", "&amp;").replace("\"", "&quot;")).append("\">&#128275; JTwine Login<br><span style='font-size:8px;opacity:0.7'>DRAG TO BOOKMARKS</span></a>\n");
+				html.append("<span class=\"session-hint\">JOIN auto-copies correct session</span>\n");
+				if (hasHim) {
+					html.append("<textarea id=\"sessionBlobHim\" style=\"display:none\">").append(sessionBase64Him).append("</textarea>\n");
+				}
+				if (hasSud) {
+					html.append("<textarea id=\"sessionBlobSud\" style=\"display:none\">").append(sessionBase64Sud).append("</textarea>\n");
+				}
+				html.append("</div>\n");
+			}
 
 			// --- TODAY block (Blue) ---
 			html.append("<div class=\"section\">\n");
@@ -450,13 +485,13 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			if (himToday.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews today</div>\n");
 			} else {
-				for (String l : himToday) html.append(buildInterviewRow(l));
+				for (String l : himToday) html.append(buildInterviewRow(l, "him"));
 			}
 			html.append("<div class=\"acc-label acc-sud\">&#128101; SUDHANSHU &mdash; JTwine</div>\n");
 			if (sudToday.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews today</div>\n");
 			} else {
-				for (String l : sudToday) html.append(buildInterviewRow(l));
+				for (String l : sudToday) html.append(buildInterviewRow(l, "sud"));
 			}
 			html.append("</div>\n"); // end section-box-today
 			html.append("</div>\n"); // end TODAY section
@@ -471,7 +506,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 					if (l.startsWith("No discussions")) {
 						html.append("<div class=\"empty\">" + escapeHtml(l) + "</div>\n");
 					} else {
-						html.append(buildInterviewRow(l));
+						html.append(buildInterviewRow(l, ""));
 					}
 				}
 				html.append("</div>\n</div>\n");
@@ -489,13 +524,13 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			if (himTomorrow.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews tomorrow</div>\n");
 			} else {
-				for (String l : himTomorrow) html.append(buildInterviewRow(l));
+				for (String l : himTomorrow) html.append(buildInterviewRow(l, "him"));
 			}
 			html.append("<div class=\"acc-label acc-sud\">&#128101; SUDHANSHU &mdash; JTwine</div>\n");
 			if (sudTomorrow.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews tomorrow</div>\n");
 			} else {
-				for (String l : sudTomorrow) html.append(buildInterviewRow(l));
+				for (String l : sudTomorrow) html.append(buildInterviewRow(l, "sud"));
 			}
 			html.append("</div>\n"); // end section-box-tomorrow
 			html.append("</div>\n"); // end collapsible-body
@@ -518,6 +553,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("    icon.innerHTML = \"<span class='arrow'>&#9650;</span> TAP TO COLLAPSE\";\n");
 			html.append("  }\n");
 			html.append("}\n");
+
 			html.append("function markPastInterviews() {\n");
 			html.append("  var now = new Date();\n");
 			html.append("  var utcMs = now.getTime() + (now.getTimezoneOffset() * 60000);\n");
@@ -542,6 +578,14 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  });\n");
 			html.append("}\n");
 			html.append("markPastInterviews();\n");
+			html.append("function copyAndJoin(who,url){\n");
+			html.append("  var id=who==='him'?'sessionBlobHim':'sessionBlobSud';\n");
+			html.append("  var el=document.getElementById(id);\n");
+			html.append("  if(!el||!el.value){window.open(url,'_blank');return;}\n");
+			html.append("  navigator.clipboard.writeText(el.value).then(function(){\n");
+			html.append("    window.open(url,'_blank');\n");
+			html.append("  }).catch(function(){window.open(url,'_blank');});\n");
+			html.append("}\n");
 			html.append("</script>\n");
 			html.append("</div>\n</body>\n</html>");
 
@@ -554,7 +598,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		}
 	}
 
-	private static String buildInterviewRow(String line) {
+	private static String buildInterviewRow(String line, String account) {
 		String content = line.startsWith("\u272a ") ? line.substring(2).trim() : line.trim();
 
 		// Extract meeting link if present
@@ -584,10 +628,11 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			String time = dtParts.length >= 4 ? dtParts[3] : disc;
 			String nightPrefix = isNightInterview(time) ? "<span class=\"night-badge\"><span class=\"star\">&#11088;</span>NIGHT</span>" : "";
 
-			// Build link column
+			// Build link column — JOIN auto-copies correct session
 			String linkHtml;
 			if (!meetingLink.isEmpty() && !"NA".equals(meetingLink)) {
-				linkHtml = "<div class=\"col-link\"><a href=\"" + escapeHtml(meetingLink) + "\" target=\"_blank\" rel=\"noopener\" class=\"join-btn\">JOIN &#9654;</a></div>";
+				String safeUrl = escapeHtml(meetingLink).replace("'", "\\'");
+				linkHtml = "<div class=\"col-link\"><button onclick=\"copyAndJoin('" + account + "','" + safeUrl + "')\" class=\"join-btn\">JOIN &#9654;</button></div>";
 			} else if ("NA".equals(meetingLink)) {
 				linkHtml = "<div class=\"col-link\"><span class=\"join-na\">NA</span></div>";
 			} else {
@@ -625,6 +670,43 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	private static String escapeHtml(String text) {
 		if (text == null) return "";
 		return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\"", "&quot;");
+	}
+
+	private static String captureSessionData(String accountName) {
+		try {
+			System.out.println("Capturing session data for " + accountName + "...");
+			Set<Cookie> cookies = driver.manage().getCookies();
+			String ls = (String) ((ChromeDriver) driver).executeScript(
+				"var items={}; for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);items[k]=localStorage.getItem(k);} return JSON.stringify(items);"
+			);
+			String ss = (String) ((ChromeDriver) driver).executeScript(
+				"var items={}; for(var i=0;i<sessionStorage.length;i++){var k=sessionStorage.key(i);items[k]=sessionStorage.getItem(k);} return JSON.stringify(items);"
+			);
+			StringBuilder allData = new StringBuilder();
+			allData.append("{\"cookies\":[");
+			boolean first = true;
+			for (Cookie c : cookies) {
+				if (!first) allData.append(",");
+				first = false;
+				allData.append("{\"n\":\"").append(jsonEsc(c.getName()))
+					.append("\",\"v\":\"").append(jsonEsc(c.getValue()))
+					.append("\",\"d\":\"").append(jsonEsc(c.getDomain() != null ? c.getDomain() : ""))
+					.append("\",\"p\":\"").append(jsonEsc(c.getPath() != null ? c.getPath() : "/"))
+					.append("\",\"s\":").append(c.isSecure()).append("}");
+			}
+			allData.append("],\"ls\":").append(ls).append(",\"ss\":").append(ss).append("}");
+			String base64 = Base64.getEncoder().encodeToString(allData.toString().getBytes(StandardCharsets.UTF_8));
+			System.out.println(accountName + " session data captured (" + base64.length() + " chars base64)");
+			return base64;
+		} catch (Exception se) {
+			System.out.println("Warning: Could not capture " + accountName + " session data: " + se.getMessage());
+			return "";
+		}
+	}
+
+	private static String jsonEsc(String s) {
+		if (s == null) return "";
+		return s.replace("\\", "\\\\").replace("\"", "\\\"").replace("\n", "\\n").replace("\r", "");
 	}
 
 	/**
