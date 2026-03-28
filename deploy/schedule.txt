@@ -1,13 +1,30 @@
 Today's date: Mar 28
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
-Exception: Expected condition failed: waiting for visibility of element located by By.xpath: .//div[contains(text(),'Candidates For Interview')] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1008-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37265}, goog:processID: 2523, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37265/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: edc5cee6d95a84395a2369d8a503b9d0
+§TODAY§
+✪ Sat, Mar 28, 2026, 7:00 PM IST ==> Is a Good Fit
+✪ Sat, Mar 28, 2026, 5:00 PM IST ==> Is a Good Fit
+✪ Sat, Mar 28, 2026, 1:00 PM IST ==> Not Recommended
+✪ Sat, Mar 28, 2026, 12:00 PM IST ==> Is a Good Fit
+✪ Sat, Mar 28, 2026, 11:00 AM IST ==> Candidate No Show
+§TOMORROW§
+✪ Sun, Mar 29, 2026, 5:30 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=%2FGyLanH8mQZy1z%2BzH56L4T8pK9OUTA4ll3k2L4E%2BIf7wbgLDt3u1r7JMq0AkZ2YA&type=H
+✪ Sun, Mar 29, 2026, 12:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ucyb5Vo0vN15Y5LnnElkMzoawaCEN4uefLQrOsC7bs66hv6i3AXdqQNAWbPhkC1e&type=H
+✪ Sun, Mar 29, 2026, 11:00 AM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=a8jQ47oxXFFoJOaG3t8lsJAOrt3ZGmRqlSyod9RIjDUEmG2y4FJkE6MDNKAXE2vB&type=H
+✪ Sun, Mar 29, 2026, 10:00 AM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=XFUra%2FzOGVrKRQje97q%2FsjyplxodqieEQII4ezO4IQEZH7eERbsAD9Y5JzPeVym1&type=H
+**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
+§TODAY§
+✪ Sat, Mar 28, 2026, 6:00 PM IST ==> Not Recommended
+✪ Sat, Mar 28, 2026, 5:00 PM IST ==> Candidate No Show
+✪ Sat, Mar 28, 2026, 3:00 PM IST ==> Is a Good Fit
+✪ Sat, Mar 28, 2026, 1:00 PM IST ==> Candidate No Show
+✪ Sat, Mar 28, 2026, 11:30 AM IST ==> Candidate No Show
+§TOMORROW§
+✪ Sun, Mar 29, 2026, 4:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=6cilPw785VBenscfs7V6ENyWp4h12o%2BJ5XYY8JeGmMrCArFW29BqHwwJSoSKpPP1&type=H
+✪ Sun, Mar 29, 2026, 3:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Vbw8bF2vAS%2FDIuGV5DolBN1u2Sx4NWfctSYoc21fQD1CU6DF9e5Qmw%2F%2BpZs48ooP&type=H
+✪ Sun, Mar 29, 2026, 12:00 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=XEkuwuWhBrhpJzf2896mE0F1wnl6Kvcz2Zzclk2p8g7wkejjS7MQcW%2BJs6Pi2iNG&type=H
+✪ Sun, Mar 29, 2026, 11:00 AM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=8VX%2BKAMItYow1uMVwGRxraUI87K8Spqc9MB7NdMd9XvQpyiHJpD3ShsQ%2FDZcePSO&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 28-Mar-2026 10:42:03 PM
+Updated at (IST): 28-Mar-2026 10:53:43 PM
