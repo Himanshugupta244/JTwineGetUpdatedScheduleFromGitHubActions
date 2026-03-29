@@ -22,7 +22,13 @@ Today's date: Mar 29
 ✪ Mon, Mar 30, 2026, 8:30 PM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=%2FancmlWI4nblueO%2BruM%2FNANVRzFwJDueKKDpAYn0mtCPoswDcNjkRj7hhZBzv0HA&type=H
 ✪ Mon, Mar 30, 2026, 11:00 AM IST ==> Scheduled ===LINK=== https://www.jobtwine.com/meeting/copilot?id=K%2BMkk%2BGE9fDVofjtiGHzLilV0neBCcxap12PUxK9AhX3PFLiivb8rd%2Bo34%2FCEFHY&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
-No discussions scheduled for today in Vprop.
-No discussions scheduled for tomorrow in Vprop.
+Exception while fetching Vprop schedule: unknown error: net::ERR_CONNECTION_RESET
+  (Session info: chrome=146.0.7680.164)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1008-azure', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c8ec6ec4a729b082cdd848acf9e9b349, get {url=https://expert.vprople.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40965}, goog:processID: 3265, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40965/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c8ec6ec4a729b082cdd848acf9e9b349
 -----------------------------------
-Updated at (IST): 29-Mar-2026 07:43:35 PM
+Updated at (IST): 29-Mar-2026 07:53:25 PM
