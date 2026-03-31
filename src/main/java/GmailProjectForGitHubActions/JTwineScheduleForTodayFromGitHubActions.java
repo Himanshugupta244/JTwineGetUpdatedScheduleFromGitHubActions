@@ -200,22 +200,26 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		List<WebElement> todayCards = driver.findElements(By.xpath(todayCardXpath));
 		System.out.println("Today cards found: " + todayCards.size());
 
-		// First pass: extract text + status from WITHIN each card (guaranteed same card)
+		// First pass: extract text + status + profile name from WITHIN each card (guaranteed same card)
 		List<String[]> todayData = new ArrayList<>();
 		for (WebElement card : todayCards) {
 			String discText = "";
 			String statusText = "NA";
+			String profileName = "";
 			List<WebElement> dateDivs = card.findElements(By.xpath(".//div[@class='sub-sub-heading-1']"));
 			if (!dateDivs.isEmpty()) discText = dateDivs.get(0).getText();
 			List<WebElement> statusDivs = card.findElements(By.xpath(".//div[contains(@class,'btn-chip')]/div"));
 			if (!statusDivs.isEmpty()) statusText = statusDivs.get(0).getText();
-			System.out.println("  Today Card " + todayData.size() + ": " + discText + " | Status: " + statusText);
-			todayData.add(new String[]{discText, statusText});
+			List<WebElement> profileDivs = card.findElements(By.xpath(".//div[@class='sub-heading-1']"));
+			if (!profileDivs.isEmpty()) profileName = profileDivs.get(0).getText().trim();
+			System.out.println("  Today Card " + todayData.size() + ": " + discText + " | Status: " + statusText + " | Profile: " + profileName);
+			todayData.add(new String[]{discText, statusText, profileName});
 		}
 		// Second pass: re-find each card by index to capture meeting link (avoids stale element refs)
 		for (int index = 0; index < todayData.size(); index++) {
 			String discText = todayData.get(index)[0];
 			String statusText = todayData.get(index)[1];
+			String profileName = todayData.get(index)[2];
 			String meetingLink = "";
 			if ("Scheduled".equals(statusText)) {
 				try {
@@ -233,8 +237,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				}
 			}
 			String linkPart = !meetingLink.isEmpty() ? " ===LINK=== " + meetingLink : "";
-			System.out.println(discText + " ==> " + statusText + linkPart);
-			todayLines.add("✪ " + discText + " ==> " + statusText + linkPart);
+			String profilePart = !profileName.isEmpty() ? " ===PROFILE=== " + profileName : "";
+			System.out.println(discText + " ==> " + statusText + profilePart + linkPart);
+			todayLines.add("✪ " + discText + " ==> " + statusText + profilePart + linkPart);
 		}
 
 		// Per-card approach for tomorrow
@@ -242,22 +247,26 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		List<WebElement> tomorrowCards = driver.findElements(By.xpath(tomorrowCardXpath));
 		System.out.println("Tomorrow cards found: " + tomorrowCards.size());
 
-		// First pass: extract text + status from WITHIN each card
+		// First pass: extract text + status + profile name from WITHIN each card
 		List<String[]> tomorrowData = new ArrayList<>();
 		for (WebElement card : tomorrowCards) {
 			String discText = "";
 			String statusText = "NA";
+			String profileName = "";
 			List<WebElement> dateDivs = card.findElements(By.xpath(".//div[@class='sub-sub-heading-1']"));
 			if (!dateDivs.isEmpty()) discText = dateDivs.get(0).getText();
 			List<WebElement> statusDivs = card.findElements(By.xpath(".//div[contains(@class,'btn-chip')]/div"));
 			if (!statusDivs.isEmpty()) statusText = statusDivs.get(0).getText();
-			System.out.println("  Tomorrow Card " + tomorrowData.size() + ": " + discText + " | Status: " + statusText);
-			tomorrowData.add(new String[]{discText, statusText});
+			List<WebElement> profileDivs = card.findElements(By.xpath(".//div[@class='sub-heading-1']"));
+			if (!profileDivs.isEmpty()) profileName = profileDivs.get(0).getText().trim();
+			System.out.println("  Tomorrow Card " + tomorrowData.size() + ": " + discText + " | Status: " + statusText + " | Profile: " + profileName);
+			tomorrowData.add(new String[]{discText, statusText, profileName});
 		}
 		// Second pass: re-find each card by index to capture meeting link
 		for (int index = 0; index < tomorrowData.size(); index++) {
 			String discText = tomorrowData.get(index)[0];
 			String statusText = tomorrowData.get(index)[1];
+			String profileName = tomorrowData.get(index)[2];
 			String meetingLink = "";
 			if ("Scheduled".equals(statusText)) {
 				try {
@@ -275,8 +284,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				}
 			}
 			String linkPart = !meetingLink.isEmpty() ? " ===LINK=== " + meetingLink : "";
-			System.out.println(discText + " ==> " + statusText + linkPart);
-			tomorrowLines.add("✪ " + discText + " ==> " + statusText + linkPart);
+			String profilePart = !profileName.isEmpty() ? " ===PROFILE=== " + profileName : "";
+			System.out.println(discText + " ==> " + statusText + profilePart + linkPart);
+			tomorrowLines.add("✪ " + discText + " ==> " + statusText + profilePart + linkPart);
 		}
 
 		Map<String, List<String>> result = new HashMap<>();
@@ -609,6 +619,14 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			meetingLink = linkParts[1].trim();
 		}
 
+		// Extract profile name if present
+		String profileName = "";
+		if (content.contains("===PROFILE===")) {
+			String[] profileParts = content.split("===PROFILE===", 2);
+			content = profileParts[0].trim();
+			profileName = profileParts[1].trim();
+		}
+
 		String[] parts = content.split("==>");
 		if (parts.length == 2) {
 			String disc = parts[0].trim();
@@ -626,7 +644,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			}
 			String[] dtParts = disc.split(", ");
 			String time = dtParts.length >= 4 ? dtParts[3] : disc;
-			String nightPrefix = isNightInterview(time) ? "<span class=\"night-badge\"><span class=\"star\">&#11088;</span>NIGHT</span>" : "";
+			String nightPrefix = isNightInterview(profileName) ? "<span class=\"night-badge\"><span class=\"star\">&#11088;</span>NIGHT</span>" : "";
 
 			// Build link column — JOIN auto-copies correct session
 			String linkHtml;
@@ -644,27 +662,12 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-link\"><span class=\"join-na\">&mdash;</span></div><div class=\"col-status\"></div></div>\n";
 	}
 
-	private static boolean isNightInterview(String time) {
-		try {
-			String t = time.trim().toUpperCase();
-			boolean isPM = t.contains("PM");
-			if (!isPM) return false;
-			// Strip AM/PM and timezone suffixes like IST, then keep only digits and colon
-			t = t.replaceAll("[^0-9:]", " ").trim();
-			// Extract the last HH:MM or H:MM pattern (the time portion)
-			String[] tokens = t.split("\\s+");
-			String timePart = tokens[tokens.length - 1]; // last token is the time
-			String[] hm = timePart.split(":");
-			int hour = Integer.parseInt(hm[0].trim());
-			int minute = hm.length > 1 ? Integer.parseInt(hm[1].trim()) : 0;
-			// Convert 12-hour to 24-hour
-			if (hour == 12) hour = 12;
-			else hour = hour + 12;
-			int totalMinutes = hour * 60 + minute;
-			return totalMinutes > 18 * 60 + 30; // after 6:30 PM (18:30)
-		} catch (Exception e) {
-			return false;
-		}
+	private static boolean isNightInterview(String profileName) {
+		if (profileName == null || profileName.isEmpty()) return false;
+		// NIGHT badge if profile name is "SDET" optionally followed by non-letter characters only
+		// Matches: SDET, SDET(1331), SDET (121), SDET 123, SDET !@#456
+		// Does NOT match: SDET A, SDET (131D), QA, Senior QA, QA (8804)
+		return profileName.trim().matches("(?i)^SDET[^a-zA-Z]*$");
 	}
 
 	private static String escapeHtml(String text) {
