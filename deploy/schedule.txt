@@ -3,7 +3,7 @@ Today's date: Mar 31
 §TODAY§
 ✪ Tue, Mar 31, 2026, 11:00 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=vXiYCBny0aF3Pjkf4fllek9NV0O%2BBsKbaYR9gsg0PKDca9z9q8Jj8ONRJ7%2BPMXuI&type=H
 ✪ Tue, Mar 31, 2026, 9:30 PM IST ==> Pending Feedback Review ===PROFILE=== Senior Software Development Engineer in Test (17861)
-✪ Tue, Mar 31, 2026, 8:30 PM IST ==> Pending Feedback Review ===PROFILE=== SDET (13303)
+✪ Tue, Mar 31, 2026, 8:30 PM IST ==> Not Recommended ===PROFILE=== SDET (13303)
 ✪ Tue, Mar 31, 2026, 7:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479)
 ✪ Tue, Mar 31, 2026, 9:00 AM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479)
 §TOMORROW§
@@ -31,4 +31,4 @@ Today's date: Mar 31
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 31-Mar-2026 10:14:25 PM
+Updated at (IST): 31-Mar-2026 10:24:28 PM
