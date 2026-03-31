@@ -391,6 +391,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 			String dateUpper     = todayDateDisplay != null ? todayDateDisplay.toUpperCase() : dateDisplay.toUpperCase();
 			String tomorrowUpper = tomorrowDateDisplay != null ? tomorrowDateDisplay.toUpperCase() : (tomorrowDate != null ? tomorrowDate.toUpperCase() : "");
+			String todayISO = java.time.LocalDate.now(java.time.ZoneId.of("Asia/Kolkata")).toString();
+			String tomorrowISO = java.time.LocalDate.now(java.time.ZoneId.of("Asia/Kolkata")).plusDays(1).toString();
 
 			StringBuilder html = new StringBuilder();
 			html.append("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n");
@@ -490,7 +492,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			// --- TODAY block (Blue) ---
 			html.append("<div class=\"section\">\n");
 			html.append("<div class=\"tab-label tab-today\">&#9728;&#65039; TODAY &mdash; ").append(dateUpper).append("</div>\n");
-			html.append("<div class=\"section-box-today\">\n");
+			html.append("<div class=\"section-box-today\" data-date=\"").append(todayISO).append("\">\n");
 			html.append("<div class=\"acc-label acc-him\">&#128100; HIMANSHU &mdash; JTwine</div>\n");
 			if (himToday.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews today</div>\n");
@@ -510,7 +512,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			if (!vpropLines.isEmpty()) {
 				html.append("<div class=\"section\">\n");
 				html.append("<div class=\"tab-label tab-vprop\">&#11088; VPROP</div>\n");
-				html.append("<div class=\"section-box-vprop\">\n");
+				html.append("<div class=\"section-box-vprop\" data-date=\"").append(todayISO).append("\">\n");
 				html.append("<div class=\"acc-label acc-vp\">&#128100; Himanshu &mdash; VProp</div>\n");
 				for (String l : vpropLines) {
 					if (l.startsWith("No discussions")) {
@@ -529,7 +531,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  <span class=\"toggle-btn\" id=\"tomorrow-body-icon\"><span class=\"arrow\">&#9660;</span> TAP TO EXPAND</span>\n");
 			html.append("</div>\n");
 			html.append("<div id=\"tomorrow-body\" class=\"collapsible-body\">\n");
-			html.append("<div class=\"section-box-tomorrow\">\n");
+			html.append("<div class=\"section-box-tomorrow\" data-date=\"").append(tomorrowISO).append("\">\n");
 			html.append("<div class=\"acc-label acc-him\">&#128100; HIMANSHU &mdash; JTwine</div>\n");
 			if (himTomorrow.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews tomorrow</div>\n");
@@ -569,22 +571,27 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  var utcMs = now.getTime() + (now.getTimezoneOffset() * 60000);\n");
 			html.append("  var istMs = utcMs + (5.5 * 3600000);\n");
 			html.append("  var ist = new Date(istMs);\n");
+			html.append("  var istDate = ist.getFullYear() + '-' + String(ist.getMonth()+1).padStart(2,'0') + '-' + String(ist.getDate()).padStart(2,'0');\n");
 			html.append("  var istMinutes = ist.getHours() * 60 + ist.getMinutes();\n");
-			html.append("  var rows = document.querySelectorAll('.section-box-today .row, .section-box-vprop .row');\n");
-			html.append("  rows.forEach(function(row) {\n");
-			html.append("    var timeEl = row.querySelector('.col-time');\n");
-			html.append("    if (!timeEl) return;\n");
-			html.append("    var text = timeEl.textContent.trim();\n");
-			html.append("    var match = text.match(/(\\d{1,2}):(\\d{2})\\s*(AM|PM)/i);\n");
-			html.append("    if (!match) return;\n");
-			html.append("    var h = parseInt(match[1]); var m = parseInt(match[2]);\n");
-			html.append("    var ampm = match[3].toUpperCase();\n");
-			html.append("    if (ampm === 'AM' && h === 12) h = 0;\n");
-			html.append("    else if (ampm === 'PM' && h !== 12) h += 12;\n");
-			html.append("    var interviewMin = h * 60 + m;\n");
-			html.append("    if (istMinutes > interviewMin) {\n");
-			html.append("      row.classList.add('past-interview');\n");
-			html.append("    }\n");
+			html.append("  var sections = document.querySelectorAll('[data-date]');\n");
+			html.append("  sections.forEach(function(sec) {\n");
+			html.append("    var secDate = sec.getAttribute('data-date');\n");
+			html.append("    var rows = sec.querySelectorAll('.row');\n");
+			html.append("    rows.forEach(function(row) {\n");
+			html.append("      var timeEl = row.querySelector('.col-time');\n");
+			html.append("      if (!timeEl) return;\n");
+			html.append("      if (secDate < istDate) { row.classList.add('past-interview'); return; }\n");
+			html.append("      if (secDate > istDate) return;\n");
+			html.append("      var text = timeEl.textContent.trim();\n");
+			html.append("      var match = text.match(/(\\d{1,2}):(\\d{2})\\s*(AM|PM)/i);\n");
+			html.append("      if (!match) return;\n");
+			html.append("      var h = parseInt(match[1]); var m = parseInt(match[2]);\n");
+			html.append("      var ampm = match[3].toUpperCase();\n");
+			html.append("      if (ampm === 'AM' && h === 12) h = 0;\n");
+			html.append("      else if (ampm === 'PM' && h !== 12) h += 12;\n");
+			html.append("      var interviewMin = h * 60 + m;\n");
+			html.append("      if (istMinutes > interviewMin) { row.classList.add('past-interview'); }\n");
+			html.append("    });\n");
 			html.append("  });\n");
 			html.append("}\n");
 			html.append("markPastInterviews();\n");
