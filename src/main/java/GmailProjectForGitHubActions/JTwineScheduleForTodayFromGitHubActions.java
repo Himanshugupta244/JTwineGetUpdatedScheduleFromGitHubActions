@@ -678,8 +678,15 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	private static boolean isGoodNightInterview(String profileName) {
 		if (profileName == null || profileName.isEmpty()) return false;
 		String lower = profileName.toLowerCase();
-		return lower.contains("software development engineer in test")
-			|| lower.matches("(?i)^sr\\.?\\s*sdet[^a-zA-Z]*$");
+		if (lower.contains("software development engineer in test")) return true;
+		// If profile contains "SDET" word but also has other English letters → GOOD NIGHT
+		// e.g. SDET A1, SDET (11231) BDS, A SDET (11231), Sr SDET, Sr. SDET (123)
+		if (profileName.trim().matches("(?i).*\\bSDET\\b.*")) {
+			// Check if there are English letters OTHER than SDET
+			String withoutSdet = profileName.trim().replaceAll("(?i)\\bSDET\\b", "");
+			return withoutSdet.matches(".*[a-zA-Z].*");
+		}
+		return false;
 	}
 
 	private static String escapeHtml(String text) {
