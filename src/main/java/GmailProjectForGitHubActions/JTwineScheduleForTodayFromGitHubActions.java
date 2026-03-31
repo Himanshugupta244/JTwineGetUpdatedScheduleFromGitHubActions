@@ -644,7 +644,12 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			}
 			String[] dtParts = disc.split(", ");
 			String time = dtParts.length >= 4 ? dtParts[3] : disc;
-			String nightPrefix = isNightInterview(profileName) ? "<span class=\"night-badge\"><span class=\"star\">&#11088;</span>NIGHT</span>" : "";
+			String nightPrefix = "";
+			if (isNightInterview(profileName)) {
+				nightPrefix = "<span class=\"night-badge\"><span class=\"star\">&#11088;</span>NIGHT</span>";
+			} else if (isGoodNightInterview(profileName)) {
+				nightPrefix = "<span class=\"night-badge\"><span class=\"star\">&#11088;</span>GOOD NIGHT</span>";
+			}
 
 			// Build link column — JOIN auto-copies correct session
 			String linkHtml;
@@ -668,6 +673,13 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		// Matches: SDET, SDET(1331), SDET (121), SDET 123, SDET !@#456
 		// Does NOT match: SDET A, SDET (131D), QA, Senior QA, QA (8804)
 		return profileName.trim().matches("(?i)^SDET[^a-zA-Z]*$");
+	}
+
+	private static boolean isGoodNightInterview(String profileName) {
+		if (profileName == null || profileName.isEmpty()) return false;
+		String lower = profileName.toLowerCase();
+		return lower.contains("software development engineer in test")
+			|| lower.matches("(?i)^sr\\.?\\s*sdet[^a-zA-Z]*$");
 	}
 
 	private static String escapeHtml(String text) {
