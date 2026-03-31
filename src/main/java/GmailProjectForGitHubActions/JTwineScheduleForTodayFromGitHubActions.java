@@ -652,10 +652,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			String[] dtParts = disc.split(", ");
 			String time = dtParts.length >= 4 ? dtParts[3] : disc;
 			String nightPrefix = "";
-			if (isNightInterview(profileName)) {
-				nightPrefix = "<span class=\"night-badge\"><span class=\"star\">&#11088;</span>NIGHT</span>";
-			} else if (isGoodNightInterview(profileName)) {
-				nightPrefix = "<span class=\"night-badge\"><span class=\"star\">&#11088;</span>GOOD NIGHT</span>";
+			if (isNightInterview(time)) {
+				nightPrefix = "<span class=\"night-badge\"><span class=\"star\">&#11088;</span>NIGHTT</span>";
 			}
 
 			// Build link column — JOIN auto-copies correct session
@@ -674,26 +672,16 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-link\"><span class=\"join-na\">&mdash;</span></div><div class=\"col-status\"></div></div>\n";
 	}
 
-	private static boolean isNightInterview(String profileName) {
-		if (profileName == null || profileName.isEmpty()) return false;
-		// NIGHT badge if profile name is "SDET" optionally followed by non-letter characters only
-		// Matches: SDET, SDET(1331), SDET (121), SDET 123, SDET !@#456
-		// Does NOT match: SDET A, SDET (131D), QA, Senior QA, QA (8804)
-		return profileName.trim().matches("(?i)^SDET[^a-zA-Z]*$");
-	}
-
-	private static boolean isGoodNightInterview(String profileName) {
-		if (profileName == null || profileName.isEmpty()) return false;
-		String lower = profileName.toLowerCase();
-		if (lower.contains("software development engineer in test")) return true;
-		// If profile contains "SDET" word but also has other English letters → GOOD NIGHT
-		// e.g. SDET A1, SDET (11231) BDS, A SDET (11231), Sr SDET, Sr. SDET (123)
-		if (profileName.trim().matches("(?i).*\\bSDET\\b.*")) {
-			// Check if there are English letters OTHER than SDET
-			String withoutSdet = profileName.trim().replaceAll("(?i)\\bSDET\\b", "");
-			return withoutSdet.matches(".*[a-zA-Z].*");
-		}
-		return false;
+	private static boolean isNightInterview(String time) {
+		if (time == null || time.isEmpty()) return false;
+		String upper = time.toUpperCase().trim();
+		if (!upper.contains("PM")) return false;
+		java.util.regex.Matcher m = java.util.regex.Pattern.compile("(\\d{1,2}):(\\d{2})\\s*PM").matcher(upper);
+		if (!m.find()) return false;
+		int h = Integer.parseInt(m.group(1));
+		int min = Integer.parseInt(m.group(2));
+		if (h == 12) h = 12; else h += 12;
+		return (h > 18 || (h == 18 && min >= 30));
 	}
 
 	private static String escapeHtml(String text) {
