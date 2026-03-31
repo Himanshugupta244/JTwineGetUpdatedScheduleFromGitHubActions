@@ -210,7 +210,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			if (!dateDivs.isEmpty()) discText = dateDivs.get(0).getText();
 			List<WebElement> statusDivs = card.findElements(By.xpath(".//div[contains(@class,'btn-chip')]/div"));
 			if (!statusDivs.isEmpty()) statusText = statusDivs.get(0).getText();
-			List<WebElement> profileDivs = card.findElements(By.xpath(".//div[@class='sub-heading-1']"));
+			List<WebElement> profileDivs = card.findElements(By.xpath(".//div[contains(text(),'Job Description')]/following-sibling::div[1]"));
 			if (!profileDivs.isEmpty()) profileName = profileDivs.get(0).getText().trim();
 			System.out.println("  Today Card " + todayData.size() + ": " + discText + " | Status: " + statusText + " | Profile: " + profileName);
 			todayData.add(new String[]{discText, statusText, profileName});
@@ -257,7 +257,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			if (!dateDivs.isEmpty()) discText = dateDivs.get(0).getText();
 			List<WebElement> statusDivs = card.findElements(By.xpath(".//div[contains(@class,'btn-chip')]/div"));
 			if (!statusDivs.isEmpty()) statusText = statusDivs.get(0).getText();
-			List<WebElement> profileDivs = card.findElements(By.xpath(".//div[@class='sub-heading-1']"));
+			List<WebElement> profileDivs = card.findElements(By.xpath(".//div[contains(text(),'Job Description')]/following-sibling::div[1]"));
 			if (!profileDivs.isEmpty()) profileName = profileDivs.get(0).getText().trim();
 			System.out.println("  Tomorrow Card " + tomorrowData.size() + ": " + discText + " | Status: " + statusText + " | Profile: " + profileName);
 			tomorrowData.add(new String[]{discText, statusText, profileName});
