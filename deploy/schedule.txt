@@ -12,22 +12,17 @@ Today's date: Mar 31
 ✪ Wed, Apr 1, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=HsXo27SXrmbvDoiHbNuzwv288fdYmbpzW1LNMIcS6PfNsTAwLW3K%2BFr98kIa389k&type=H
 ✪ Wed, Apr 1, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=VxlvfWk%2BjNZ8tNitNeHpdt5F%2BqWB%2FvKKAyhCe9zlQD7EvvTumTMbKAnctb7n1ulG&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
-§TODAY§
-✪ Tue, Mar 31, 2026, 10:00 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=GKrPcOpPSNLbcLeQL1YEicNL7D2BaijnTSPKz6WrXpUkWIYiH%2FDrAyFv3pI3LfKS&type=H
-✪ Tue, Mar 31, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=P%2Bp%2BVClLYQQIjBBLIWe%2BlgvvlB4mCVtbVDsIuaGXF1UiAKVwi15oZ3oDk%2FGbRELE&type=H
-✪ Tue, Mar 31, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK005 Quality Engineering Coordinator (17699) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=AxjtWojS5PPiCb6G4sZEtDNBoikaNx2c%2FsrXRLCX5zkF1al0qaGyLNCw5fcfWMxf&type=H
-✪ Tue, Mar 31, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCKB008 (17527) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=CgIl89bJVCYMhlsckva3GtWjNDNUXKA3g%2FEAaCJxdC04t%2BsG0SKbJ5jFkB0oEKF9&type=H
-✪ Tue, Mar 31, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=IwlronbjfJhF9AN2Wf1j%2Fv%2FZtLarHyvjKAiuvVo3eDKN%2FNoO8ZVJeLKuJdrFJ1Vs&type=H
-✪ Tue, Mar 31, 2026, 3:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479)
-✪ Tue, Mar 31, 2026, 11:30 AM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479)
-✪ Tue, Mar 31, 2026, 9:00 AM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer CIBCKB008 (17527)
-§TOMORROW§
-✪ Wed, Apr 1, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=meZkIs1XuGqivsGfBecg9gkF0R3tNkf2PYf%2FNrLOd66zjaNRidt5SwpGtd2CFVsj&type=H
-✪ Wed, Apr 1, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK005 Quality Engineering Coordinator (17699) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=RKKyVGYRKnK5WeOzN7%2BBDZQ6fdHI8ubwRF3QbPd3vaK74%2BLdXQ8tnwPfKO4FkGm3&type=H
-✪ Wed, Apr 1, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK005 Quality Engineering Coordinator (17699) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=5sgSfm2SPimYnHKtO0Fh6SW%2BI%2Bc89LTmqBPBrJDbbeS22qv2mBvx6oPq9mPmFqAx&type=H
-✪ Wed, Apr 1, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=DiCwA4iIyNh1ioldK%2BJwFsFyXWyhFAsh%2FX1%2FVF2GZCQ4RYW93WWiVR6hvJn7eUly&type=H
+Exception: element click intercepted: Element <span>...</span> is not clickable at point (513, 137). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
+  (Session info: chrome=146.0.7680.164)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1008-azure', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7434c1212adb948eaf54ad710850dae0, clickElement {id=f.2709600BA512618C8E96917EB99ED84F.d.89CAF816FB57EB33E461B3C09B2157EB.e.297}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43473}, goog:processID: 3148, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43473/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (7434c1212adb948eaf54ad710850dae0)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[2]]
+Session ID: 7434c1212adb948eaf54ad710850dae0
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 31-Mar-2026 04:36:00 PM
+Updated at (IST): 31-Mar-2026 04:44:40 PM
