@@ -5,7 +5,7 @@ Today's date: Apr 1
 ✪ Wed, Apr 1, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=MqKf%2B1pY4WSvxQV4l77riL1b%2FJe23siwzQBFjitLivclm3PmR41a5uqPrxpAkUvh&type=H
 ✪ Wed, Apr 1, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCBC002 Quality Engineer (17557) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=XJQ6q%2FyjH4%2B1fpu8uCZH0LKRAgTdl5VV26oUpr0ftVAHP789m6HWu7pH1P1bItKh&type=H
 ✪ Wed, Apr 1, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCKB008 (17527) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=oXSmhKessphjdsSmOYVEBpapuYbYlftSapRIJaWHhK2MRDori3EqIlkhXE2GjHe4&type=H
-✪ Wed, Apr 1, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=HsXo27SXrmbvDoiHbNuzwv288fdYmbpzW1LNMIcS6PfNsTAwLW3K%2BFr98kIa389k&type=H
+✪ Wed, Apr 1, 2026, 11:00 AM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479)
 ✪ Wed, Apr 1, 2026, 10:00 AM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineer CIBCKB007 (17524)
 §TOMORROW§
 ✪ Thu, Apr 2, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=WLTn0f1QGpRKlJavFrU%2F%2BnHU6OuZB8fxRgKvSQ5zuqnxshEnLuLqNeDk7Yp9RBGk&type=H
@@ -17,7 +17,7 @@ Today's date: Apr 1
 ✪ Wed, Apr 1, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=meZkIs1XuGqivsGfBecg9gkF0R3tNkf2PYf%2FNrLOd66zjaNRidt5SwpGtd2CFVsj&type=H
 ✪ Wed, Apr 1, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK005 Quality Engineering Coordinator (17699) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=RKKyVGYRKnK5WeOzN7%2BBDZQ6fdHI8ubwRF3QbPd3vaK74%2BLdXQ8tnwPfKO4FkGm3&type=H
 ✪ Wed, Apr 1, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK005 Quality Engineering Coordinator (17699) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=5sgSfm2SPimYnHKtO0Fh6SW%2BI%2Bc89LTmqBPBrJDbbeS22qv2mBvx6oPq9mPmFqAx&type=H
-✪ Wed, Apr 1, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=DiCwA4iIyNh1ioldK%2BJwFsFyXWyhFAsh%2FX1%2FVF2GZCQ4RYW93WWiVR6hvJn7eUly&type=H
+✪ Wed, Apr 1, 2026, 11:00 AM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120)
 §TOMORROW§
 ✪ Thu, Apr 2, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Senior Quality Engineering Coordinator (17598) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=PlNZy1DnNasRofsPpn9%2B%2Fu19VjSiOOlo%2FM0FMxHo9Jf2X8VCDX86x9tnmyXJRfJf&type=H
 ✪ Thu, Apr 2, 2026, 9:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ZU8POtPhIXgizskDrW6oon%2FYyQzNw3qcdSpf6trj%2FPkLuRBKswIHxIEfI3O48gtA&type=H
@@ -25,4 +25,4 @@ Today's date: Apr 1
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 01-Apr-2026 11:25:04 AM
+Updated at (IST): 01-Apr-2026 11:34:57 AM
