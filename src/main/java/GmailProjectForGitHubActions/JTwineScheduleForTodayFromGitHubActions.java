@@ -203,18 +203,26 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		// First pass: extract text + status + profile name from WITHIN each card (guaranteed same card)
 		List<String[]> todayData = new ArrayList<>();
 		for (WebElement card : todayCards) {
-			String discText = "";
+			String discText = "NA";
 			String statusText = "NA";
-			String profileName = "";
-			String candidateName = "";
-			List<WebElement> dateDivs = card.findElements(By.xpath(".//div[@class='sub-sub-heading-1']"));
-			if (!dateDivs.isEmpty()) discText = dateDivs.get(0).getText();
-			List<WebElement> statusDivs = card.findElements(By.xpath(".//div[contains(@class,'btn-chip')]/div"));
-			if (!statusDivs.isEmpty()) statusText = statusDivs.get(0).getText();
-			List<WebElement> profileDivs = card.findElements(By.xpath(".//div[contains(text(),'Job Description')]/following-sibling::div[1]"));
-			if (!profileDivs.isEmpty()) profileName = profileDivs.get(0).getText().trim();
-			List<WebElement> candidateDivs = card.findElements(By.xpath(".//div[contains(@class,'f-18')]"));
-			if (!candidateDivs.isEmpty()) candidateName = candidateDivs.get(0).getText().trim();
+			String profileName = "NA";
+			String candidateName = "NA";
+			try {
+				List<WebElement> dateDivs = card.findElements(By.xpath(".//div[@class='sub-sub-heading-1']"));
+				if (!dateDivs.isEmpty()) { String v = dateDivs.get(0).getText().trim(); if (!v.isEmpty()) discText = v; }
+			} catch (Exception e) { System.out.println("  Could not fetch discText (today): " + e.getMessage()); }
+			try {
+				List<WebElement> statusDivs = card.findElements(By.xpath(".//div[contains(@class,'btn-chip')]/div"));
+				if (!statusDivs.isEmpty()) { String v = statusDivs.get(0).getText().trim(); if (!v.isEmpty()) statusText = v; }
+			} catch (Exception e) { System.out.println("  Could not fetch statusText (today): " + e.getMessage()); }
+			try {
+				List<WebElement> profileDivs = card.findElements(By.xpath(".//div[contains(text(),'Job Description')]/following-sibling::div[1]"));
+				if (!profileDivs.isEmpty()) { String v = profileDivs.get(0).getText().trim(); if (!v.isEmpty()) profileName = v; }
+			} catch (Exception e) { System.out.println("  Could not fetch profileName (today): " + e.getMessage()); }
+			try {
+				List<WebElement> candidateDivs = card.findElements(By.xpath(".//div[contains(@class,'f-18')]"));
+				if (!candidateDivs.isEmpty()) { String v = candidateDivs.get(0).getText().trim(); if (!v.isEmpty()) candidateName = v; }
+			} catch (Exception e) { System.out.println("  Could not fetch candidateName (today): " + e.getMessage()); }
 			System.out.println("  Today Card " + todayData.size() + ": " + discText + " | Status: " + statusText + " | Profile: " + profileName + " | Candidate: " + candidateName);
 			todayData.add(new String[]{discText, statusText, profileName, candidateName});
 		}
@@ -240,9 +248,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 					System.out.println("Failed to capture meeting link for today card " + index + ": " + e.getMessage());
 				}
 			}
-			String linkPart = !meetingLink.isEmpty() ? " ===LINK=== " + meetingLink : "";
-			String profilePart = !profileName.isEmpty() ? " ===PROFILE=== " + profileName : "";
-			String candidatePart = !candidateName.isEmpty() ? " ===CANDIDATE=== " + candidateName : "";
+			if (meetingLink.isEmpty()) meetingLink = "NA";
+			String linkPart = " ===LINK=== " + meetingLink;
+			String profilePart = " ===PROFILE=== " + profileName;
+			String candidatePart = " ===CANDIDATE=== " + candidateName;
 			System.out.println(discText + " ==> " + statusText + profilePart + candidatePart + linkPart);
 			todayLines.add("✪ " + discText + " ==> " + statusText + profilePart + candidatePart + linkPart);
 		}
@@ -255,18 +264,26 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		// First pass: extract text + status + profile name from WITHIN each card
 		List<String[]> tomorrowData = new ArrayList<>();
 		for (WebElement card : tomorrowCards) {
-			String discText = "";
+			String discText = "NA";
 			String statusText = "NA";
-			String profileName = "";
-			String candidateName = "";
-			List<WebElement> dateDivs = card.findElements(By.xpath(".//div[@class='sub-sub-heading-1']"));
-			if (!dateDivs.isEmpty()) discText = dateDivs.get(0).getText();
-			List<WebElement> statusDivs = card.findElements(By.xpath(".//div[contains(@class,'btn-chip')]/div"));
-			if (!statusDivs.isEmpty()) statusText = statusDivs.get(0).getText();
-			List<WebElement> profileDivs = card.findElements(By.xpath(".//div[contains(text(),'Job Description')]/following-sibling::div[1]"));
-			if (!profileDivs.isEmpty()) profileName = profileDivs.get(0).getText().trim();
-			List<WebElement> candidateDivs = card.findElements(By.xpath(".//div[contains(@class,'f-18')]"));
-			if (!candidateDivs.isEmpty()) candidateName = candidateDivs.get(0).getText().trim();
+			String profileName = "NA";
+			String candidateName = "NA";
+			try {
+				List<WebElement> dateDivs = card.findElements(By.xpath(".//div[@class='sub-sub-heading-1']"));
+				if (!dateDivs.isEmpty()) { String v = dateDivs.get(0).getText().trim(); if (!v.isEmpty()) discText = v; }
+			} catch (Exception e) { System.out.println("  Could not fetch discText (tomorrow): " + e.getMessage()); }
+			try {
+				List<WebElement> statusDivs = card.findElements(By.xpath(".//div[contains(@class,'btn-chip')]/div"));
+				if (!statusDivs.isEmpty()) { String v = statusDivs.get(0).getText().trim(); if (!v.isEmpty()) statusText = v; }
+			} catch (Exception e) { System.out.println("  Could not fetch statusText (tomorrow): " + e.getMessage()); }
+			try {
+				List<WebElement> profileDivs = card.findElements(By.xpath(".//div[contains(text(),'Job Description')]/following-sibling::div[1]"));
+				if (!profileDivs.isEmpty()) { String v = profileDivs.get(0).getText().trim(); if (!v.isEmpty()) profileName = v; }
+			} catch (Exception e) { System.out.println("  Could not fetch profileName (tomorrow): " + e.getMessage()); }
+			try {
+				List<WebElement> candidateDivs = card.findElements(By.xpath(".//div[contains(@class,'f-18')]"));
+				if (!candidateDivs.isEmpty()) { String v = candidateDivs.get(0).getText().trim(); if (!v.isEmpty()) candidateName = v; }
+			} catch (Exception e) { System.out.println("  Could not fetch candidateName (tomorrow): " + e.getMessage()); }
 			System.out.println("  Tomorrow Card " + tomorrowData.size() + ": " + discText + " | Status: " + statusText + " | Profile: " + profileName + " | Candidate: " + candidateName);
 			tomorrowData.add(new String[]{discText, statusText, profileName, candidateName});
 		}
@@ -292,9 +309,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 					System.out.println("Failed to capture meeting link for tomorrow card " + index + ": " + e.getMessage());
 				}
 			}
-			String linkPart = !meetingLink.isEmpty() ? " ===LINK=== " + meetingLink : "";
-			String profilePart = !profileName.isEmpty() ? " ===PROFILE=== " + profileName : "";
-			String candidatePart = !candidateName.isEmpty() ? " ===CANDIDATE=== " + candidateName : "";
+			if (meetingLink.isEmpty()) meetingLink = "NA";
+			String linkPart = " ===LINK=== " + meetingLink;
+			String profilePart = " ===PROFILE=== " + profileName;
+			String candidatePart = " ===CANDIDATE=== " + candidateName;
 			System.out.println(discText + " ==> " + statusText + profilePart + candidatePart + linkPart);
 			tomorrowLines.add("✪ " + discText + " ==> " + statusText + profilePart + candidatePart + linkPart);
 		}
@@ -702,9 +720,11 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 			// Build candidate name column
 			String candHtml;
-			if (!candidateName.isEmpty()) {
+			if (!candidateName.isEmpty() && !"NA".equals(candidateName)) {
 				String safeName = escapeHtml(candidateName).replace("'", "\\'");
 				candHtml = "<div class=\"col-cand\"><button class=\"cand-btn\" onclick=\"showCandidatePopup('" + safeName + "')\">+</button></div>";
+			} else if ("NA".equals(candidateName)) {
+				candHtml = "<div class=\"col-cand\"><span class=\"join-na\">NA</span></div>";
 			} else {
 				candHtml = "<div class=\"col-cand\"><span style='font-size:8px;color:#e5e7eb'>&#8212;</span></div>";
 			}
