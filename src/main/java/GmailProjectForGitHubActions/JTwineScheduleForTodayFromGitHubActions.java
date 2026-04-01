@@ -648,6 +648,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  });\n");
 			html.append("}\n");
 			html.append("markPastInterviews();\n");
+			html.append("setInterval(markPastInterviews, 60000);\n");
 			html.append("function copyAndJoin(who,url){\n");
 			html.append("  var id=who==='him'?'sessionBlobHim':'sessionBlobSud';\n");
 			html.append("  var el=document.getElementById(id);\n");
