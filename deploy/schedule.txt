@@ -13,17 +13,19 @@ Today's date: Apr 1
 ✪ Thu, Apr 2, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Nikitha Vaddepally ===LINK=== https://www.jobtwine.com/meeting/copilot?id=FMeI6bU8U7geagviFitYIOiEaHlKI6O5GF9ZPIOfB6k8%2FhiKIUEUKV7YpIvu7emE&type=H
 ✪ Thu, Apr 2, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Sneha Mandaram ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ymsJoZSY05CYYWgfodaFHP49IHuooUeTcrtT4XHDSn8wlwj7n3SY%2F7JuPvaZ1XTC&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
-Exception: element click intercepted: Element <span>...</span> is not clickable at point (514, 137). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
-  (Session info: chrome=146.0.7680.164)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1008-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6041ce5de7b2b8b567ae477ae0f31877, clickElement {id=f.85C289279947E255B79C1CC289B34D62.d.A20614AFB001E81A3D6E3BB6A4D8B964.e.258}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37583}, goog:processID: 3093, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37583/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (6041ce5de7b2b8b567ae477ae0f31877)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[2]]
-Session ID: 6041ce5de7b2b8b567ae477ae0f31877
+§TODAY§
+✪ Wed, Apr 1, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== SDET (13303) ===CANDIDATE=== Sai Boppana ===LINK=== https://www.jobtwine.com/meeting/copilot?id=bx8v4NLJsM9asKgBFDjVTx%2BQqhg5JB%2Bh7wITTJcGTojB7GsMabLAS5psyjFnGCjd&type=H
+✪ Wed, Apr 1, 2026, 8:30 PM IST ==> Pending Feedback Review ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Preethi Patrapati ===LINK=== NA
+✪ Wed, Apr 1, 2026, 7:00 PM IST ==> Not Recommended ===PROFILE=== CIBCLK005 Quality Engineering Coordinator (17699) ===CANDIDATE=== Jayanthi M H ===LINK=== NA
+✪ Wed, Apr 1, 2026, 6:00 PM IST ==> Not Recommended ===PROFILE=== CIBCLK005 Quality Engineering Coordinator (17699) ===CANDIDATE=== Sirisha Beela ===LINK=== NA
+✪ Wed, Apr 1, 2026, 11:00 AM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Anusha Yedla ===LINK=== NA
+§TOMORROW§
+✪ Thu, Apr 2, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Mahammad Shaik ===LINK=== https://www.jobtwine.com/meeting/copilot?id=kdHLrDhKmFB%2Fx9XHVuBrpWTtuEBlaT09y7w%2FenTDSM5vAKcoSAypg49cWvGGHN2d&type=H
+✪ Thu, Apr 2, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Senior Quality Engineering Coordinator (17598) ===CANDIDATE=== Chilukuri Venkata Naga SeshKumar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=PlNZy1DnNasRofsPpn9%2B%2Fu19VjSiOOlo%2FM0FMxHo9Jf2X8VCDX86x9tnmyXJRfJf&type=H
+✪ Thu, Apr 2, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== SREENU BIMPAVU ===LINK=== https://www.jobtwine.com/meeting/copilot?id=pJOlU%2BZMrv%2BufqjE1T%2BgH3eeBC2ee9PpKO5BMIms8WBb1XnQ0Tm4ilUh%2BG6vHBGJ&type=H
+✪ Thu, Apr 2, 2026, 9:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== RAJESH PRATHI ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ZU8POtPhIXgizskDrW6oon%2FYyQzNw3qcdSpf6trj%2FPkLuRBKswIHxIEfI3O48gtA&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 01-Apr-2026 09:13:48 PM
+Updated at (IST): 01-Apr-2026 09:24:36 PM
