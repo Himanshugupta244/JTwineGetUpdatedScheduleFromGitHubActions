@@ -206,20 +206,24 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			String discText = "";
 			String statusText = "NA";
 			String profileName = "";
+			String candidateName = "";
 			List<WebElement> dateDivs = card.findElements(By.xpath(".//div[@class='sub-sub-heading-1']"));
 			if (!dateDivs.isEmpty()) discText = dateDivs.get(0).getText();
 			List<WebElement> statusDivs = card.findElements(By.xpath(".//div[contains(@class,'btn-chip')]/div"));
 			if (!statusDivs.isEmpty()) statusText = statusDivs.get(0).getText();
 			List<WebElement> profileDivs = card.findElements(By.xpath(".//div[contains(text(),'Job Description')]/following-sibling::div[1]"));
 			if (!profileDivs.isEmpty()) profileName = profileDivs.get(0).getText().trim();
-			System.out.println("  Today Card " + todayData.size() + ": " + discText + " | Status: " + statusText + " | Profile: " + profileName);
-			todayData.add(new String[]{discText, statusText, profileName});
+			List<WebElement> candidateDivs = card.findElements(By.xpath(".//div[contains(@class,'f-18')]"));
+			if (!candidateDivs.isEmpty()) candidateName = candidateDivs.get(0).getText().trim();
+			System.out.println("  Today Card " + todayData.size() + ": " + discText + " | Status: " + statusText + " | Profile: " + profileName + " | Candidate: " + candidateName);
+			todayData.add(new String[]{discText, statusText, profileName, candidateName});
 		}
 		// Second pass: re-find each card by index to capture meeting link (avoids stale element refs)
 		for (int index = 0; index < todayData.size(); index++) {
 			String discText = todayData.get(index)[0];
 			String statusText = todayData.get(index)[1];
 			String profileName = todayData.get(index)[2];
+			String candidateName = todayData.get(index).length > 3 ? todayData.get(index)[3] : "";
 			String meetingLink = "";
 			if ("Scheduled".equals(statusText)) {
 				try {
@@ -238,8 +242,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			}
 			String linkPart = !meetingLink.isEmpty() ? " ===LINK=== " + meetingLink : "";
 			String profilePart = !profileName.isEmpty() ? " ===PROFILE=== " + profileName : "";
-			System.out.println(discText + " ==> " + statusText + profilePart + linkPart);
-			todayLines.add("✪ " + discText + " ==> " + statusText + profilePart + linkPart);
+			String candidatePart = !candidateName.isEmpty() ? " ===CANDIDATE=== " + candidateName : "";
+			System.out.println(discText + " ==> " + statusText + profilePart + candidatePart + linkPart);
+			todayLines.add("✪ " + discText + " ==> " + statusText + profilePart + candidatePart + linkPart);
 		}
 
 		// Per-card approach for tomorrow
@@ -253,20 +258,24 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			String discText = "";
 			String statusText = "NA";
 			String profileName = "";
+			String candidateName = "";
 			List<WebElement> dateDivs = card.findElements(By.xpath(".//div[@class='sub-sub-heading-1']"));
 			if (!dateDivs.isEmpty()) discText = dateDivs.get(0).getText();
 			List<WebElement> statusDivs = card.findElements(By.xpath(".//div[contains(@class,'btn-chip')]/div"));
 			if (!statusDivs.isEmpty()) statusText = statusDivs.get(0).getText();
 			List<WebElement> profileDivs = card.findElements(By.xpath(".//div[contains(text(),'Job Description')]/following-sibling::div[1]"));
 			if (!profileDivs.isEmpty()) profileName = profileDivs.get(0).getText().trim();
-			System.out.println("  Tomorrow Card " + tomorrowData.size() + ": " + discText + " | Status: " + statusText + " | Profile: " + profileName);
-			tomorrowData.add(new String[]{discText, statusText, profileName});
+			List<WebElement> candidateDivs = card.findElements(By.xpath(".//div[contains(@class,'f-18')]"));
+			if (!candidateDivs.isEmpty()) candidateName = candidateDivs.get(0).getText().trim();
+			System.out.println("  Tomorrow Card " + tomorrowData.size() + ": " + discText + " | Status: " + statusText + " | Profile: " + profileName + " | Candidate: " + candidateName);
+			tomorrowData.add(new String[]{discText, statusText, profileName, candidateName});
 		}
 		// Second pass: re-find each card by index to capture meeting link
 		for (int index = 0; index < tomorrowData.size(); index++) {
 			String discText = tomorrowData.get(index)[0];
 			String statusText = tomorrowData.get(index)[1];
 			String profileName = tomorrowData.get(index)[2];
+			String candidateName = tomorrowData.get(index).length > 3 ? tomorrowData.get(index)[3] : "";
 			String meetingLink = "";
 			if ("Scheduled".equals(statusText)) {
 				try {
@@ -285,8 +294,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			}
 			String linkPart = !meetingLink.isEmpty() ? " ===LINK=== " + meetingLink : "";
 			String profilePart = !profileName.isEmpty() ? " ===PROFILE=== " + profileName : "";
-			System.out.println(discText + " ==> " + statusText + profilePart + linkPart);
-			tomorrowLines.add("✪ " + discText + " ==> " + statusText + profilePart + linkPart);
+			String candidatePart = !candidateName.isEmpty() ? " ===CANDIDATE=== " + candidateName : "";
+			System.out.println(discText + " ==> " + statusText + profilePart + candidatePart + linkPart);
+			tomorrowLines.add("✪ " + discText + " ==> " + statusText + profilePart + candidatePart + linkPart);
 		}
 
 		Map<String, List<String>> result = new HashMap<>();
@@ -426,10 +436,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".row:last-child { border-bottom: none; }\n");
 			html.append(".col-time { flex: 0 0 auto; min-width: 140px; white-space: nowrap; padding: 12px 14px; font-weight: 800; font-size: 15px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.5px; line-height: 1.4; }\n");
 			html.append(".col-status { flex: 1; padding: 12px 14px; font-weight: 900; font-size: 15px; text-align: right; letter-spacing: 0.3px; line-height: 1.4; white-space: nowrap; }\n");
-			html.append(".night-badge { display: inline-flex; align-items: center; gap: 1px; background: linear-gradient(135deg, #1e1b4b, #312e81, #4c1d95); color: #fbbf24; font-size: 7px; font-weight: 900; padding: 1px 4px; border-radius: 8px; margin-right: 3px; vertical-align: middle; letter-spacing: 0.2px; box-shadow: 0 0 4px rgba(139,92,246,0.4); animation: nightGlow 2s ease-in-out infinite alternate; white-space: nowrap; }\n");
-			html.append(".night-badge .star { font-size: 7px; }\n");
-			html.append("@keyframes nightGlow { 0% { box-shadow: 0 0 6px rgba(139,92,246,0.4), 0 0 2px rgba(251,191,36,0.2); } 100% { box-shadow: 0 0 12px rgba(139,92,246,0.7), 0 0 4px rgba(251,191,36,0.5); } }\n");
-			html.append("@keyframes twinkle { 0% { opacity: 0.5; } 100% { opacity: 1; } }\n");
+			html.append(".sdet-badge { display: inline-flex; align-items: center; background: #0369a1; color: #fff; font-size: 7px; font-weight: 900; padding: 1px 5px; border-radius: 4px; margin-right: 4px; vertical-align: middle; letter-spacing: 0.5px; white-space: nowrap; }\n");
 			// Status colors (dark)
 			html.append(".sc { color: #14532d; }\n");
 			html.append(".gf { color: #374151; }\n");
@@ -445,7 +452,17 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".join-btn { display: inline-block; font-size: 8px; font-weight: 900; color: #fff; background: #059669; padding: 3px 6px; border-radius: 3px; text-decoration: none; letter-spacing: 0.5px; white-space: nowrap; transition: background 0.2s, transform 0.15s; border: none; cursor: pointer; }\n");
 			html.append(".join-btn:hover { background: #047857; transform: scale(1.06); }\n");
 			html.append(".join-na { font-size: 8px; font-weight: 700; color: #d1d5db; }\n");
-			// Footer
+			// Candidate name popup
+			html.append(".col-cand { flex: 0 0 28px; min-width: 28px; max-width: 28px; padding: 4px 0; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; }\n");
+			html.append(".cand-btn { width: 20px; height: 20px; border-radius: 50%; border: 2px solid #6366f1; background: #fff; color: #6366f1; font-size: 13px; font-weight: 900; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0; transition: background 0.15s, color 0.15s; }\n");
+			html.append(".cand-btn:hover { background: #6366f1; color: #fff; }\n");
+			html.append(".cand-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 9999; align-items: center; justify-content: center; }\n");
+			html.append(".cand-overlay.active { display: flex; }\n");
+			html.append(".cand-popup { background: #fff; border-radius: 10px; padding: 20px 22px 16px; max-width: 320px; width: 90vw; box-shadow: 0 8px 32px rgba(0,0,0,0.22); position: relative; }\n");
+			html.append(".cand-popup-title { font-size: 10px; font-weight: 900; color: #6366f1; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }\n");
+			html.append(".cand-popup-name { font-size: 18px; font-weight: 900; color: #111827; letter-spacing: 0.3px; word-break: break-word; }\n");
+			html.append(".cand-close { position: absolute; top: 10px; right: 12px; background: none; border: none; font-size: 20px; color: #6b7280; cursor: pointer; font-weight: 700; line-height: 1; padding: 0 4px; }\n");
+			html.append(".cand-close:hover { color: #111; }\n");
 			html.append(".footer { border: 3px solid #1a1a1a; padding: 12px; font-size: 13px; font-weight: 800; letter-spacing: 1px; background: #fff; text-align: center; margin-top: 4px; }\n");
 			html.append("@media (max-width: 480px) {\n");
 			html.append("  body { padding: 10px; }\n");
@@ -603,7 +620,17 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("    window.open(url,'_blank');\n");
 			html.append("  }).catch(function(){window.open(url,'_blank');});\n");
 			html.append("}\n");
+			html.append("function showCandidatePopup(name){\n");
+			html.append("  document.getElementById('candPopupName').textContent=name;\n");
+			html.append("  document.getElementById('candOverlay').classList.add('active');\n");
+			html.append("}\n");
+			html.append("function closeCandidatePopup(){\n");
+			html.append("  document.getElementById('candOverlay').classList.remove('active');\n");
+			html.append("}\n");
+			html.append("document.getElementById('candOverlay').addEventListener('click',function(e){if(e.target===this)closeCandidatePopup();});\n");
 			html.append("</script>\n");
+			// Candidate popup overlay (single shared instance)
+			html.append("<div class='cand-overlay' id='candOverlay'><div class='cand-popup'><button class='cand-close' onclick='closeCandidatePopup()'>&#10005;</button><div class='cand-popup-title'>&#128100; Candidate</div><div class='cand-popup-name' id='candPopupName'></div></div></div>\n");
 			html.append("</div>\n</body>\n</html>");
 
 			java.nio.file.Files.write(java.nio.file.Paths.get("deploy/index.html"),
@@ -625,7 +652,13 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			content = linkParts[0].trim();
 			meetingLink = linkParts[1].trim();
 		}
-
+		// Extract candidate name if present
+		String candidateName = "";
+		if (content.contains("===CANDIDATE===")) {
+			String[] candParts = content.split("===CANDIDATE===", 2);
+			content = candParts[0].trim();
+			candidateName = candParts[1].trim();
+		}
 		// Extract profile name if present
 		String profileName = "";
 		if (content.contains("===PROFILE===")) {
@@ -651,9 +684,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			}
 			String[] dtParts = disc.split(", ");
 			String time = dtParts.length >= 4 ? dtParts[3] : disc;
-			String nightPrefix = "";
-			if (isNightInterview(time)) {
-				nightPrefix = "<span class=\"night-badge\"><span class=\"star\">&#11088;</span>NIGHTT</span>";
+			String sdetPrefix = "";
+			if (isSdetProfile(profileName)) {
+				sdetPrefix = "<span class=\"sdet-badge\">SDET</span>";
 			}
 
 			// Build link column — JOIN auto-copies correct session
@@ -667,21 +700,29 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				linkHtml = "<div class=\"col-link\"><span class=\"join-na\">&mdash;</span></div>";
 			}
 
-			return "<div class=\"row\"><div class=\"col-time\">" + nightPrefix + escapeHtml(time) + "</div>" + linkHtml + "<div class=\"col-status " + bc + "\">" + escapeHtml(stat) + "</div></div>\n";
+			// Build candidate name column
+			String candHtml;
+			if (!candidateName.isEmpty()) {
+				String safeName = escapeHtml(candidateName).replace("'", "\\'");
+				candHtml = "<div class=\"col-cand\"><button class=\"cand-btn\" onclick=\"showCandidatePopup('" + safeName + "')\">+</button></div>";
+			} else {
+				candHtml = "<div class=\"col-cand\"><span style='font-size:8px;color:#e5e7eb'>&#8212;</span></div>";
+			}
+
+			return "<div class=\"row\"><div class=\"col-time\">" + sdetPrefix + escapeHtml(time) + "</div>" + candHtml + linkHtml + "<div class=\"col-status " + bc + "\">" + escapeHtml(stat) + "</div></div>\n";
 		}
-		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-link\"><span class=\"join-na\">&mdash;</span></div><div class=\"col-status\"></div></div>\n";
+		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-cand\"><span style='font-size:8px;color:#e5e7eb'>&#8212;</span></div><div class=\"col-link\"><span class=\"join-na\">&mdash;</span></div><div class=\"col-status\"></div></div>\n";
 	}
 
-	private static boolean isNightInterview(String time) {
-		if (time == null || time.isEmpty()) return false;
-		String upper = time.toUpperCase().trim();
-		if (!upper.contains("PM")) return false;
-		java.util.regex.Matcher m = java.util.regex.Pattern.compile("(\\d{1,2}):(\\d{2})\\s*PM").matcher(upper);
-		if (!m.find()) return false;
-		int h = Integer.parseInt(m.group(1));
-		int min = Integer.parseInt(m.group(2));
-		if (h == 12) h = 12; else h += 12;
-		return (h > 18 || (h == 18 && min >= 30));
+	private static boolean isSdetProfile(String profileName) {
+		if (profileName == null || profileName.isEmpty()) return false;
+		String upper = profileName.toUpperCase();
+		if (upper.contains("SDET")) return true;
+		String lower = profileName.toLowerCase();
+		if (lower.contains("software development engineer in test")) return true;
+		if (lower.contains("software development engineering in test")) return true;
+		if (lower.contains("software develop engineer in test")) return true;
+		return false;
 	}
 
 	private static String escapeHtml(String text) {
