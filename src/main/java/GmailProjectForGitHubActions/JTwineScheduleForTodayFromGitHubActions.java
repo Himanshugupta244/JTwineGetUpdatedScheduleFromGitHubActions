@@ -220,8 +220,17 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				if (!profileDivs.isEmpty()) { String v = profileDivs.get(0).getText().trim(); if (!v.isEmpty()) profileName = v; }
 			} catch (Exception e) { System.out.println("  Could not fetch profileName (today): " + e.getMessage()); }
 			try {
-				List<WebElement> candidateDivs = card.findElements(By.xpath(".//div[contains(@class,'f-18')]"));
-				if (!candidateDivs.isEmpty()) { String v = candidateDivs.get(0).getText().trim(); if (!v.isEmpty()) candidateName = v; }
+				// Try within card scope first; fallback to parent scope (element may sit outside candidate-details-sec)
+				List<WebElement> candidateDivs = card.findElements(By.xpath(".//*[contains(@class,'f-18')]"));
+				if (candidateDivs.isEmpty()) {
+					candidateDivs = card.findElements(By.xpath("./..//*[contains(@class,'f-18')]"));
+				}
+				if (!candidateDivs.isEmpty()) {
+					// Use JS textContent — works regardless of CSS visibility (getText() fails on hidden elements in headless)
+					String v = (String) ((ChromeDriver) driver).executeScript("return arguments[0].textContent", candidateDivs.get(0));
+					if (v != null) v = v.trim();
+					if (v != null && !v.isEmpty()) candidateName = v;
+				}
 			} catch (Exception e) { System.out.println("  Could not fetch candidateName (today): " + e.getMessage()); }
 			System.out.println("  Today Card " + todayData.size() + ": " + discText + " | Status: " + statusText + " | Profile: " + profileName + " | Candidate: " + candidateName);
 			todayData.add(new String[]{discText, statusText, profileName, candidateName});
@@ -281,8 +290,17 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				if (!profileDivs.isEmpty()) { String v = profileDivs.get(0).getText().trim(); if (!v.isEmpty()) profileName = v; }
 			} catch (Exception e) { System.out.println("  Could not fetch profileName (tomorrow): " + e.getMessage()); }
 			try {
-				List<WebElement> candidateDivs = card.findElements(By.xpath(".//div[contains(@class,'f-18')]"));
-				if (!candidateDivs.isEmpty()) { String v = candidateDivs.get(0).getText().trim(); if (!v.isEmpty()) candidateName = v; }
+				// Try within card scope first; fallback to parent scope
+				List<WebElement> candidateDivs = card.findElements(By.xpath(".//*[contains(@class,'f-18')]"));
+				if (candidateDivs.isEmpty()) {
+					candidateDivs = card.findElements(By.xpath("./..//*[contains(@class,'f-18')]"));
+				}
+				if (!candidateDivs.isEmpty()) {
+					// Use JS textContent — works regardless of CSS visibility (getText() fails on hidden elements in headless)
+					String v = (String) ((ChromeDriver) driver).executeScript("return arguments[0].textContent", candidateDivs.get(0));
+					if (v != null) v = v.trim();
+					if (v != null && !v.isEmpty()) candidateName = v;
+				}
 			} catch (Exception e) { System.out.println("  Could not fetch candidateName (tomorrow): " + e.getMessage()); }
 			System.out.println("  Tomorrow Card " + tomorrowData.size() + ": " + discText + " | Status: " + statusText + " | Profile: " + profileName + " | Candidate: " + candidateName);
 			tomorrowData.add(new String[]{discText, statusText, profileName, candidateName});
