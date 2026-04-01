@@ -4,7 +4,7 @@ Today's date: Apr 1
 ✪ Wed, Apr 1, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=iNSJn9EpmRdUpyI6RAwblB2w3DwR9tkqAQ8CvuQL3%2FKoQ5H9boJIkOsLu%2Fb6eag7&type=H
 ✪ Wed, Apr 1, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=MqKf%2B1pY4WSvxQV4l77riL1b%2FJe23siwzQBFjitLivclm3PmR41a5uqPrxpAkUvh&type=H
 ✪ Wed, Apr 1, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCBC002 Quality Engineer (17557) ===LINK=== https://www.jobtwine.com/meeting/copilot?id=XJQ6q%2FyjH4%2B1fpu8uCZH0LKRAgTdl5VV26oUpr0ftVAHP789m6HWu7pH1P1bItKh&type=H
-✪ Wed, Apr 1, 2026, 12:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer CIBCKB008 (17527)
+✪ Wed, Apr 1, 2026, 12:00 PM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer CIBCKB008 (17527)
 ✪ Wed, Apr 1, 2026, 11:00 AM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479)
 ✪ Wed, Apr 1, 2026, 10:00 AM IST ==> Not Recommended ===PROFILE=== Quality Engineer CIBCKB007 (17524)
 §TOMORROW§
@@ -25,4 +25,4 @@ Today's date: Apr 1
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 01-Apr-2026 01:24:27 PM
+Updated at (IST): 01-Apr-2026 01:34:47 PM
