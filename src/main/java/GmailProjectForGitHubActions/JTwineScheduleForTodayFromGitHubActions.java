@@ -721,7 +721,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			String[] dtParts = disc.split(", ");
 			String time = dtParts.length >= 4 ? dtParts[3] : disc;
 			String sdetPrefix = "";
-			if (isSdetProfile(profileName)) {
+			if (isSdetProfile(profileName) && time.toUpperCase().contains("PM")) {
 				sdetPrefix = "<span class=\"sdet-badge\">SDET</span>";
 			}
 
