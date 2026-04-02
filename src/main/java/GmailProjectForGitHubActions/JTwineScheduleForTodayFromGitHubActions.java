@@ -514,6 +514,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  .col-cand { flex: 0 0 32px; width: 32px; max-width: 32px; }\n");
 			html.append("  .sdet-badge { font-size: 8px; padding: 2px 4px; }\n");
 			html.append("  .col-status.pd { font-size: 11px; white-space: normal; word-break: break-word; }\n");
+			html.append("  .col-status.ns { font-size: 11px; white-space: normal; word-break: break-word; }\n");
 			html.append("  .footer { font-size: 12px; }\n");
 			html.append("}\n");
 			html.append(".collapsible-body { display: none; }\n");
