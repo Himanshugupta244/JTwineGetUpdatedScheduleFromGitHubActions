@@ -13,7 +13,7 @@ Today's date: Apr 2
 ✪ Fri, Apr 3, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Omkar Yadav ===LINK=== https://www.jobtwine.com/meeting/copilot?id=MbitxCMbowH6IWz0faitogvkHCGGnY34G8EBpHAJeqhq6xV5KsHrPVA55NN9OB1N&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
-✪ Thu, Apr 2, 2026, 10:00 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Madhuri Lonikar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=nl%2BpDC8cOkbqmGYEDB5YpbA6E%2Fw0EBCRsADH72xJkMM32J0LRh5X9Pq0IBNnPNR6&type=H
+✪ Thu, Apr 2, 2026, 10:00 PM IST ==> Pending Feedback Review ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Madhuri Lonikar ===LINK=== NA
 ✪ Thu, Apr 2, 2026, 8:00 PM IST ==> Not Recommended ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Mahammad Shaik ===LINK=== NA
 ✪ Thu, Apr 2, 2026, 6:30 PM IST ==> Not Recommended ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Shanmukha Matta ===LINK=== NA
 ✪ Thu, Apr 2, 2026, 2:00 PM IST ==> Not Recommended ===PROFILE=== Senior Quality Engineering Coordinator (17598) ===CANDIDATE=== Chilukuri Venkata Naga SeshKumar ===LINK=== NA
@@ -29,7 +29,7 @@ Exception while fetching Vprop schedule: Expected condition failed: waiting for 
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1008-azure', java.version: '17.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46223}, goog:processID: 3551, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46223/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572448c5e76349351ff81848e42ed621
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35389}, goog:processID: 3357, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35389/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b31b3ab7425b463c5aeb3119252084b
 -----------------------------------
-Updated at (IST): 02-Apr-2026 10:43:57 PM
+Updated at (IST): 02-Apr-2026 10:54:00 PM
