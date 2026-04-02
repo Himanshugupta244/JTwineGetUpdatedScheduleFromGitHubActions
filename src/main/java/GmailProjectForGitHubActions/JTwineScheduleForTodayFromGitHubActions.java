@@ -470,9 +470,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			// Rows - two columns with vertical divider
 			html.append(".row { display: flex; align-items: stretch; border-bottom: 1px solid #e5e7eb; }\n");
 			html.append(".row:last-child { border-bottom: none; }\n");
-			html.append(".col-time { flex: 0 0 auto; min-width: 140px; white-space: nowrap; padding: 12px 14px; font-weight: 800; font-size: 15px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.5px; line-height: 1.4; }\n");
-			html.append(".col-status { flex: 1; padding: 12px 14px; font-weight: 900; font-size: 15px; text-align: right; letter-spacing: 0.3px; line-height: 1.4; white-space: nowrap; }\n");
-			html.append(".sdet-badge { display: inline-flex; align-items: center; background: #0369a1; color: #fff; font-size: 7px; font-weight: 900; padding: 1px 5px; border-radius: 4px; margin-right: 4px; vertical-align: middle; letter-spacing: 0.5px; white-space: nowrap; }\n");
+			html.append(".col-time { flex: 0 0 155px; width: 155px; max-width: 155px; overflow: hidden; white-space: nowrap; padding: 12px 10px; font-weight: 800; font-size: 15px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.5px; line-height: 1.4; }\n");
+			html.append(".col-status { flex: 1; min-width: 0; padding: 12px 10px; font-weight: 900; font-size: 14px; text-align: right; letter-spacing: 0.3px; line-height: 1.4; white-space: normal; word-break: break-word; }\n");
+			html.append(".sdet-badge { display: inline-flex; align-items: center; background: #0369a1; color: #fff; font-size: 9px; font-weight: 900; padding: 2px 6px; border-radius: 4px; margin-right: 4px; vertical-align: middle; letter-spacing: 0.5px; white-space: nowrap; }\n");
 			// Status colors (dark)
 			html.append(".sc { color: #14532d; }\n");
 			html.append(".gf { color: #374151; }\n");
@@ -484,19 +484,21 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".past-interview { opacity: 0.5; background: #f3f4f6; }\n");
 			html.append(".past-interview .col-time, .past-interview .col-status { text-decoration: line-through; }\n");
 			// Meeting JOIN link button
-			html.append(".col-link { flex: 0 0 44px; min-width: 44px; max-width: 44px; padding: 4px 0; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; text-align: center; }\n");
-			html.append(".join-btn { display: inline-block; font-size: 8px; font-weight: 900; color: #fff; background: #059669; padding: 3px 6px; border-radius: 3px; text-decoration: none; letter-spacing: 0.5px; white-space: nowrap; transition: background 0.2s, transform 0.15s; border: none; cursor: pointer; }\n");
+			html.append(".col-link { flex: 0 0 46px; width: 46px; max-width: 46px; padding: 4px 2px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; text-align: center; }\n");
+			html.append(".join-btn { display: inline-flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 900; color: #fff; background: #059669; padding: 4px 6px; border-radius: 4px; text-decoration: none; letter-spacing: 0.3px; white-space: nowrap; transition: background 0.2s, transform 0.15s; border: none; cursor: pointer; width: 42px; box-sizing: border-box; }\n");
 			html.append(".join-btn:hover { background: #047857; transform: scale(1.06); }\n");
-			html.append(".join-na { font-size: 8px; font-weight: 700; color: #d1d5db; }\n");
+			html.append(".join-na { font-size: 9px; font-weight: 700; color: #d1d5db; }\n");
 			// Candidate name popup
-			html.append(".col-cand { flex: 0 0 28px; min-width: 28px; max-width: 28px; padding: 4px 0; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; }\n");
-			html.append(".cand-btn { width: 20px; height: 20px; border-radius: 50%; border: 2px solid #6366f1; background: #fff; color: #6366f1; font-size: 13px; font-weight: 900; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0; transition: background 0.15s, color 0.15s; }\n");
+			html.append(".col-cand { flex: 0 0 38px; width: 38px; max-width: 38px; padding: 4px 0; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; }\n");
+			html.append(".cand-btn { width: 24px; height: 24px; border-radius: 50%; border: 2px solid #6366f1; background: #fff; color: #6366f1; font-size: 14px; font-weight: 900; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0; transition: background 0.15s, color 0.15s; }\n");
 			html.append(".cand-btn:hover { background: #6366f1; color: #fff; }\n");
 			html.append(".cand-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 9999; align-items: center; justify-content: center; }\n");
 			html.append(".cand-overlay.active { display: flex; }\n");
 			html.append(".cand-popup { background: #fff; border-radius: 10px; padding: 20px 22px 16px; max-width: 320px; width: 90vw; box-shadow: 0 8px 32px rgba(0,0,0,0.22); position: relative; }\n");
-			html.append(".cand-popup-title { font-size: 10px; font-weight: 900; color: #6366f1; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }\n");
-			html.append(".cand-popup-name { font-size: 18px; font-weight: 900; color: #111827; letter-spacing: 0.3px; word-break: break-word; }\n");
+			html.append(".cand-popup-title { font-size: 10px; font-weight: 900; color: #6366f1; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px; }\n");
+			html.append(".cand-popup-name { font-size: 18px; font-weight: 900; color: #111827; letter-spacing: 0.3px; word-break: break-word; margin-bottom: 12px; }\n");
+			html.append(".cand-popup-profile-label { font-size: 10px; font-weight: 900; color: #059669; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px; }\n");
+			html.append(".cand-popup-profile { font-size: 14px; font-weight: 700; color: #374151; word-break: break-word; }\n");
 			html.append(".cand-close { position: absolute; top: 10px; right: 12px; background: none; border: none; font-size: 20px; color: #6b7280; cursor: pointer; font-weight: 700; line-height: 1; padding: 0 4px; }\n");
 			html.append(".cand-close:hover { color: #111; }\n");
 			html.append(".footer { border: 3px solid #1a1a1a; padding: 12px; font-size: 13px; font-weight: 800; letter-spacing: 1px; background: #fff; text-align: center; margin-top: 4px; }\n");
@@ -505,8 +507,13 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  .header h1 { font-size: 22px; letter-spacing: 4px; }\n");
 			html.append("  .tab-label { font-size: 14px; padding: 8px 16px; letter-spacing: 1.5px; }\n");
 			html.append("  .acc-label { font-size: 13px; padding: 9px 12px; }\n");
-			html.append("  .col-time { font-size: 14px; padding: 11px 12px; }\n");
-			html.append("  .col-status { font-size: 14px; padding: 11px 10px; }\n");
+			html.append("  .col-time { font-size: 13px; padding: 10px 8px; flex: 0 0 140px; width: 140px; max-width: 140px; }\n");
+			html.append("  .col-status { font-size: 13px; padding: 10px 8px; }\n");
+			html.append("  .col-link { flex: 0 0 42px; width: 42px; max-width: 42px; }\n");
+			html.append("  .join-btn { font-size: 8px; padding: 3px 4px; width: 38px; }\n");
+			html.append("  .col-cand { flex: 0 0 32px; width: 32px; max-width: 32px; }\n");
+			html.append("  .sdet-badge { font-size: 8px; padding: 2px 4px; }\n");
+			html.append("  .col-status.pd { font-size: 11px; white-space: normal; word-break: break-word; }\n");
 			html.append("  .footer { font-size: 12px; }\n");
 			html.append("}\n");
 			html.append(".collapsible-body { display: none; }\n");
@@ -520,7 +527,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".session-bar .bm-drag { flex:0 0 auto; display:flex; align-items:center; padding:8px 14px; font-size:11px; font-weight:900; color:#fff; background:linear-gradient(135deg,#7c3aed,#6d28d9); border-radius:8px; text-decoration:none; cursor:grab; letter-spacing:0.5px; white-space:nowrap; box-shadow:0 2px 8px rgba(124,58,237,0.3); transition:transform 0.15s; }\n");
 			html.append(".session-bar .bm-drag:hover { transform:scale(1.04); }\n");
 			html.append(".session-bar .bm-drag:active { cursor:grabbing; }\n");
-			html.append(".session-bar .session-hint { flex:1; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:900; color:#6b7280; letter-spacing:0.5px; text-align:center; }\n");
+			html.append(".session-bar .session-hint { display:none; }\n");
 			html.append("</style>\n</head>\n<body>\n");
 			html.append("<div class=\"container\">\n");
 			html.append("<div class=\"header\"><h1>&#128197; SCHEDULE</h1></div>\n");
@@ -532,7 +539,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			if (hasHim || hasSud) {
 				html.append("<div class=\"session-bar\">\n");
 				html.append("<a class=\"bm-drag\" href=\"").append(bookmarklet.replace("&", "&amp;").replace("\"", "&quot;")).append("\">&#128275; JTwine Login<br><span style='font-size:8px;opacity:0.7'>DRAG TO BOOKMARKS</span></a>\n");
-				html.append("<span class=\"session-hint\">JOIN auto-copies correct session</span>\n");
 				if (hasHim) {
 					html.append("<textarea id=\"sessionBlobHim\" style=\"display:none\">").append(sessionBase64Him).append("</textarea>\n");
 				}
@@ -657,8 +663,12 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("    window.open(url,'_blank');\n");
 			html.append("  }).catch(function(){window.open(url,'_blank');});\n");
 			html.append("}\n");
-			html.append("function showCandidatePopup(name){\n");
+			html.append("function showCandidatePopup(name,profile){\n");
 			html.append("  document.getElementById('candPopupName').textContent=name;\n");
+			html.append("  var profEl=document.getElementById('candPopupProfile');\n");
+			html.append("  var profLbl=document.getElementById('candPopupProfileLabel');\n");
+			html.append("  if(profile&&profile!=='NA'&&profile!==''){profEl.textContent=profile;profLbl.style.display='';profEl.style.display='';}\n");
+			html.append("  else{profLbl.style.display='none';profEl.style.display='none';}\n");
 			html.append("  document.getElementById('candOverlay').classList.add('active');\n");
 			html.append("}\n");
 			html.append("function closeCandidatePopup(){\n");
@@ -667,7 +677,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("document.getElementById('candOverlay').addEventListener('click',function(e){if(e.target===this)closeCandidatePopup();});\n");
 			html.append("</script>\n");
 			// Candidate popup overlay (single shared instance)
-			html.append("<div class='cand-overlay' id='candOverlay'><div class='cand-popup'><button class='cand-close' onclick='closeCandidatePopup()'>&#10005;</button><div class='cand-popup-title'>&#128100; Candidate</div><div class='cand-popup-name' id='candPopupName'></div></div></div>\n");
+			html.append("<div class='cand-overlay' id='candOverlay'><div class='cand-popup'><button class='cand-close' onclick='closeCandidatePopup()'>&#10005;</button><div class='cand-popup-title'>&#128100; Candidate</div><div class='cand-popup-name' id='candPopupName'></div><div class='cand-popup-profile-label' id='candPopupProfileLabel'>&#128188; Profile</div><div class='cand-popup-profile' id='candPopupProfile'></div></div></div>\n");
 			html.append("</div>\n</body>\n</html>");
 
 			java.nio.file.Files.write(java.nio.file.Paths.get("deploy/index.html"),
@@ -741,7 +751,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			String candHtml;
 			if (!candidateName.isEmpty() && !"NA".equals(candidateName)) {
 				String safeName = escapeHtml(candidateName).replace("'", "\\'");
-				candHtml = "<div class=\"col-cand\"><button class=\"cand-btn\" onclick=\"showCandidatePopup('" + safeName + "')\">+</button></div>";
+				String safeProfile = escapeHtml(profileName).replace("'", "\\'");
+				candHtml = "<div class=\"col-cand\"><button class=\"cand-btn\" onclick=\"showCandidatePopup('" + safeName + "','" + safeProfile + "')\">+</button></div>";
 			} else if ("NA".equals(candidateName)) {
 				candHtml = "<div class=\"col-cand\"><span class=\"join-na\">NA</span></div>";
 			} else {
