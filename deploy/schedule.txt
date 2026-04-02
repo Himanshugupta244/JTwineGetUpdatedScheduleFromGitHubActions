@@ -5,7 +5,7 @@ Today's date: Apr 2
 ✪ Thu, Apr 2, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Dauli Sengar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=WLTn0f1QGpRKlJavFrU%2F%2BnHU6OuZB8fxRgKvSQ5zuqnxshEnLuLqNeDk7Yp9RBGk&type=H
 ✪ Thu, Apr 2, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Pravalika Madipadaga ===LINK=== https://www.jobtwine.com/meeting/copilot?id=EMwSMN7UFmeI7r2%2B4cajZyt919eo7MqIbXCuMfgv0aXgApy6EKuaaqjVgZTFTgpM&type=H
 ✪ Thu, Apr 2, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Nikitha Vaddepally ===LINK=== https://www.jobtwine.com/meeting/copilot?id=FMeI6bU8U7geagviFitYIOiEaHlKI6O5GF9ZPIOfB6k8%2FhiKIUEUKV7YpIvu7emE&type=H
-✪ Thu, Apr 2, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Sneha Mandaram ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ymsJoZSY05CYYWgfodaFHP49IHuooUeTcrtT4XHDSn8wlwj7n3SY%2F7JuPvaZ1XTC&type=H
+✪ Thu, Apr 2, 2026, 10:00 AM IST ==> Candidate No Show ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Sneha Mandaram ===LINK=== NA
 §TOMORROW§
 ✪ Fri, Apr 3, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== POOJA GUJJA ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Ai12JrQvy0Z8eS9Ph8Q25j0xl4MP1ceUHxKD99YjCQwgz74rZ3YEgi1xoNIh%2BobV&type=H
 ✪ Fri, Apr 3, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Kavya Aravapalli ===LINK=== https://www.jobtwine.com/meeting/copilot?id=LkdaxysUHrPHys2sIbL70eaPdYcCl1mujFdFKq27j07hTOY36jt5OzIaOQGR2oaf&type=H
@@ -27,4 +27,4 @@ Today's date: Apr 2
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 02-Apr-2026 10:15:12 AM
+Updated at (IST): 02-Apr-2026 10:25:10 AM
