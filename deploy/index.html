@@ -3,59 +3,193 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JTwine & VProp Schedule</title>
+<title>Interview Schedule</title>
 <style>
-body { font-family: Arial, sans-serif; line-height: 1.5; padding: 20px; background: #f9f9f9; }
-h2 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 5px; }
-h3 { color: #34495e; margin-top: 20px; }
-p { margin: 5px 0; }
-.separator { border-top: 1px solid #ccc; margin: 10px 0; }
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-th { background-color: #ecf0f1; }
-.scheduled { color: green; font-weight: bold; }
-.not-recommended { color: red; font-weight: bold; }
-.good-fit { color: orange; font-weight: bold; }
-.unknown-status { color: gray; }
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;800;900&display=swap');
+* { box-sizing: border-box; font-family: 'Barlow', 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }
+body { background: #f0f0f0; padding: 12px; color: #1a1a1a; }
+.container { max-width: 480px; margin: auto; width: 100%; }
+.header { border: 3px solid #1a1a1a; background: #fff; text-align: center; padding: 16px 10px; margin-bottom: 18px; }
+.header h1 { font-size: 26px; font-weight: 900; letter-spacing: 5px; text-transform: uppercase; }
+.section { margin-bottom: 18px; }
+.tab-label { display: inline-block; padding: 8px 20px; font-size: 15px; font-weight: 900; border-bottom: none; margin-left: 0; letter-spacing: 2px; text-transform: uppercase; }
+.tab-today { background: #1d4ed8; color: #fff; }
+.tab-tomorrow { background: #b45309; color: #fff; }
+.tab-vprop { background: #6d28d9; color: #fff; }
+.section-box-today { border: 3px solid #1d4ed8; background: #fff; }
+.section-box-tomorrow { border: 3px solid #b45309; background: #fff; }
+.section-box-vprop { border: 3px solid #6d28d9; background: #fff; }
+.acc-label { padding: 10px 14px; font-size: 14px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 2px solid #e5e7eb; display: flex; align-items: center; gap: 7px; }
+.acc-him { background: #ede9fe; color: #4c1d95; }
+.acc-sud { background: #d1fae5; color: #064e3b; }
+.acc-vp  { background: #fef3c7; color: #78350f; }
+.row { display: flex; align-items: stretch; border-bottom: 1px solid #e5e7eb; }
+.row:last-child { border-bottom: none; }
+.col-time { flex: 0 0 auto; min-width: 140px; white-space: nowrap; padding: 12px 14px; font-weight: 800; font-size: 15px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.5px; line-height: 1.4; }
+.col-status { flex: 1; padding: 12px 14px; font-weight: 900; font-size: 15px; text-align: right; letter-spacing: 0.3px; line-height: 1.4; white-space: nowrap; }
+.sdet-badge { display: inline-flex; align-items: center; background: #0369a1; color: #fff; font-size: 7px; font-weight: 900; padding: 1px 5px; border-radius: 4px; margin-right: 4px; vertical-align: middle; letter-spacing: 0.5px; white-space: nowrap; }
+.sc { color: #14532d; }
+.gf { color: #374151; }
+.nr { color: #374151; }
+.ns { color: #374151; }
+.pd { color: #991b1b; }
+.empty { padding: 12px 14px; font-size: 14px; font-weight: 700; color: #9ca3af; font-style: italic; letter-spacing: 0.5px; }
+.past-interview { opacity: 0.5; background: #f3f4f6; }
+.past-interview .col-time, .past-interview .col-status { text-decoration: line-through; }
+.col-link { flex: 0 0 44px; min-width: 44px; max-width: 44px; padding: 4px 0; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; text-align: center; }
+.join-btn { display: inline-block; font-size: 8px; font-weight: 900; color: #fff; background: #059669; padding: 3px 6px; border-radius: 3px; text-decoration: none; letter-spacing: 0.5px; white-space: nowrap; transition: background 0.2s, transform 0.15s; border: none; cursor: pointer; }
+.join-btn:hover { background: #047857; transform: scale(1.06); }
+.join-na { font-size: 8px; font-weight: 700; color: #d1d5db; }
+.col-cand { flex: 0 0 28px; min-width: 28px; max-width: 28px; padding: 4px 0; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; }
+.cand-btn { width: 20px; height: 20px; border-radius: 50%; border: 2px solid #6366f1; background: #fff; color: #6366f1; font-size: 13px; font-weight: 900; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0; transition: background 0.15s, color 0.15s; }
+.cand-btn:hover { background: #6366f1; color: #fff; }
+.cand-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 9999; align-items: center; justify-content: center; }
+.cand-overlay.active { display: flex; }
+.cand-popup { background: #fff; border-radius: 10px; padding: 20px 22px 16px; max-width: 320px; width: 90vw; box-shadow: 0 8px 32px rgba(0,0,0,0.22); position: relative; }
+.cand-popup-title { font-size: 10px; font-weight: 900; color: #6366f1; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+.cand-popup-name { font-size: 18px; font-weight: 900; color: #111827; letter-spacing: 0.3px; word-break: break-word; }
+.cand-close { position: absolute; top: 10px; right: 12px; background: none; border: none; font-size: 20px; color: #6b7280; cursor: pointer; font-weight: 700; line-height: 1; padding: 0 4px; }
+.cand-close:hover { color: #111; }
+.footer { border: 3px solid #1a1a1a; padding: 12px; font-size: 13px; font-weight: 800; letter-spacing: 1px; background: #fff; text-align: center; margin-top: 4px; }
+@media (max-width: 480px) {
+  body { padding: 10px; }
+  .header h1 { font-size: 22px; letter-spacing: 4px; }
+  .tab-label { font-size: 14px; padding: 8px 16px; letter-spacing: 1.5px; }
+  .acc-label { font-size: 13px; padding: 9px 12px; }
+  .col-time { font-size: 14px; padding: 11px 12px; }
+  .col-status { font-size: 14px; padding: 11px 10px; }
+  .footer { font-size: 12px; }
+}
+.collapsible-body { display: none; }
+.collapsible-body.open { display: block; }
+.tab-label.clickable { cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+.toggle-btn { display: inline-flex; align-items: center; gap: 5px; padding: 4px 14px; font-size: 11px; font-weight: 900; letter-spacing: 1px; color: #b45309; background: #fff; border: 2px solid #fff; border-radius: 20px; white-space: nowrap; transition: background 0.2s, transform 0.15s; box-shadow: 0 1px 3px rgba(0,0,0,0.15); }
+.toggle-btn:hover { background: #fef3c7; transform: scale(1.05); }
+.toggle-btn .arrow { font-size: 13px; line-height: 1; }
+.session-bar { display:flex; gap:8px; margin-bottom:18px; align-items:stretch; }
+.session-bar .bm-drag { flex:0 0 auto; display:flex; align-items:center; padding:8px 14px; font-size:11px; font-weight:900; color:#fff; background:linear-gradient(135deg,#7c3aed,#6d28d9); border-radius:8px; text-decoration:none; cursor:grab; letter-spacing:0.5px; white-space:nowrap; box-shadow:0 2px 8px rgba(124,58,237,0.3); transition:transform 0.15s; }
+.session-bar .bm-drag:hover { transform:scale(1.04); }
+.session-bar .bm-drag:active { cursor:grabbing; }
+.session-bar .session-hint { flex:1; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:900; color:#6b7280; letter-spacing:0.5px; text-align:center; }
 </style>
 </head>
 <body>
-<h2>Schedule for Today</h2>
-<p>Today's date: Feb 25</p>
-<h3>SCHEDULE FOR HIMANSHU JTWINE ACCOUNT</h3>
-<table>
-<tr><th>Discussion</th><th>Status</th></tr>
-<p>======================================================================</p>
-<p>Fetching schedule.....</p>
-<tr><td>Discussion 1: Wed, Feb 25, 2026, 7:00 PM IST</td><td class="unknown-status">Scheduled</td></tr>
-<tr><td>Discussion 2: Wed, Feb 25, 2026, 5:00 PM IST</td><td class="unknown-status">Scheduled</td></tr>
-<tr><td>Discussion 3: Wed, Feb 25, 2026, 4:00 PM IST</td><td class="unknown-status">Scheduled</td></tr>
-<tr><td>Discussion 4: Wed, Feb 25, 2026, 1:00 PM IST</td><td class="unknown-status">Not Recommended</td></tr>
-<tr><td>Discussion 5: Wed, Feb 25, 2026, 12:00 PM IST</td><td class="unknown-status">Is a Good Fit</td></tr>
-<tr><td>Discussion 1: Thu, Feb 26, 2026, 4:30 PM IST</td><td class="unknown-status">Scheduled</td></tr>
-<tr><td>Discussion 2: Thu, Feb 26, 2026, 12:00 PM IST</td><td class="unknown-status">Scheduled</td></tr>
-<p>======================================================================</p>
-</table>
-<h3>SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT</h3>
-<table>
-<tr><th>Discussion</th><th>Status</th></tr>
-<p>======================================================================</p>
-<p>Fetching schedule.....</p>
-<tr><td>Discussion 1: Wed, Feb 25, 2026, 3:00 PM IST</td><td class="unknown-status">Scheduled</td></tr>
-<tr><td>Discussion 1: Thu, Feb 26, 2026, 12:00 PM IST</td><td class="unknown-status">Scheduled</td></tr>
-<p>======================================================================</p>
-</table>
-<h3>SCHEDULE FOR Vprop ACCOUNT</h3>
-<table>
-<tr><th>Discussion</th><th>Status</th></tr>
-</table>
-<div class="separator"></div>
-<p>Getting Vprop schedule for today....</p>
-<p>No discussions scheduled for today in Vprop.</p>
-<p>======================================================================</p>
-<div class="separator"></div>
-<p>Updated at (IST): 25-Feb-2026 03:25:28 PM</p>
-<div class="separator"></div>
-<p>Updated at (IST): 25-Feb-2026 03:25:28 PM</p>
+<div class="container">
+<div class="header"><h1>&#128197; SCHEDULE</h1></div>
+<div class="session-bar">
+<a class="bm-drag" href="javascript:void((function(){navigator.clipboard.readText().then(function(d){if(!d){alert('Clipboard empty!');return;}try{var obj=JSON.parse(atob(d));obj.cookies.forEach(function(c){document.cookie=c.n+'='+c.v+';domain='+c.d+';path='+c.p+(c.s?';secure':'');});var ls=obj.ls;for(var k in ls){localStorage.setItem(k,ls[k]);}var ss=obj.ss;for(var k in ss){sessionStorage.setItem(k,ss[k]);}location.reload();}catch(e){alert('Error: '+e.message);}}).catch(function(e){alert('Clipboard access denied: '+e.message);});})())">&#128275; JTwine Login<br><span style='font-size:8px;opacity:0.7'>DRAG TO BOOKMARKS</span></a>
+<span class="session-hint">JOIN auto-copies correct session</span>
+<textarea id="sessionBlobHim" style="display:none">eyJjb29raWVzIjpbeyJuIjoiX2dhX1BGS0pOMTlSNzgiLCJ2IjoiR1MyLjEuczE3NzUwMzUwNjEkbzEkZzEkdDE3NzUwMzUxNTUkajMxJGwwJGgwIiwiZCI6Ii5qb2J0d2luZS5jb20iLCJwIjoiLyIsInMiOmZhbHNlfSx7Im4iOiJfZnVpZCIsInYiOiJPVEZpTlRGbU9XTXRaREV4WXkwME9HUmtMVGxsTTJVdE9EVm1ZMlE0WXpNek1tUTUiLCJkIjoiLmpvYnR3aW5lLmNvbSIsInAiOiIvIiwicyI6ZmFsc2V9LHsibiI6InBoX3BoY19VUkJ1Z2dKQTd6Q0h3NjJyM3NJU3VBdVc5UUdyM090a0RxOUl3R3dORG83X3Bvc3Rob2ciLCJ2IjoiJTdCJTIyZGlzdGluY3RfaWQlMjIlM0ElMjIwMTlkNDg1NS05OTQ0LTc5MmItODhlMC1mZDVlNDliOTkzMjMlMjIlMkMlMjIlMjRzZXNpZCUyMiUzQSU1QjE3NzUwMzUxNTU1MzUlMkMlMjIwMTlkNDg1NS05OTQ1LTdlYzAtODVjYS02YWYzNDBjNDJjMTQlMjIlMkMxNzc1MDM1MDYyNTk3JTVEJTdEIiwiZCI6Ii5qb2J0d2luZS5jb20iLCJwIjoiLyIsInMiOnRydWV9LHsibiI6Il9nYV85RjZRVDVNMkpLIiwidiI6IkdTMi4xLnMxNzc1MDM1MDYxJG8xJGcxJHQxNzc1MDM1MTU1JGozMSRsMCRoMCIsImQiOiIuam9idHdpbmUuY29tIiwicCI6Ii8iLCJzIjpmYWxzZX0seyJuIjoiX2dhIiwidiI6IkdBMS4xLjE2MzYyMTQyMTIuMTc3NTAzNTA2MiIsImQiOiIuam9idHdpbmUuY29tIiwicCI6Ii8iLCJzIjpmYWxzZX0seyJuIjoiX2NsY2siLCJ2IjoiMXNza2J5dSU1RTIlNUVnNHUlNUUwJTVFMjI4MiIsImQiOiIuam9idHdpbmUuY29tIiwicCI6Ii8iLCJzIjpmYWxzZX0seyJuIjoiX2Nsc2siLCJ2IjoiMWloNnFseSU1RTE3NzUwMzUxNTE0NjAlNUU4JTVFMSU1RWkuY2xhcml0eS5tcyUyRmNvbGxlY3QiLCJkIjoiLmpvYnR3aW5lLmNvbSIsInAiOiIvIiwicyI6ZmFsc2V9LHsibiI6Il9nYV8zVFhIU0ZKVEw3IiwidiI6IkdTMi4xLnMxNzc1MDM1MDYxJG8xJGcxJHQxNzc1MDM1MTU1JGozMSRsMCRoMCIsImQiOiIuam9idHdpbmUuY29tIiwicCI6Ii8iLCJzIjpmYWxzZX1dLCJscyI6eyJfZmFpX0dBIjoiR0ExLjEuMTYzNjIxNDIxMi4xNzc1MDM1MDYyIiwiX2ZhaV9fZ2FfOUY2UVQ1TTJKSyI6IkdTMi4xLnMxNzc1MDM1MDYxJG8xJGcxJHQxNzc1MDM1MTUxJGozNSRsMCRoMCIsInBoX3BoY19VUkJ1Z2dKQTd6Q0h3NjJyM3NJU3VBdVc5UUdyM090a0RxOUl3R3dORG83X3Bvc3Rob2ciOiJ7XCJkaXN0aW5jdF9pZFwiOlwiMDE5ZDQ4NTUtOTk0NC03OTJiLTg4ZTAtZmQ1ZTQ5Yjk5MzIzXCIsXCIkc2VzaWRcIjpbMTc3NTAzNTE1NTUzNSxcIjAxOWQ0ODU1LTk5NDUtN2VjMC04NWNhLTZhZjM0MGM0MmMxNFwiLDE3NzUwMzUwNjI1OTddLFwiJGRldmljZV9pZFwiOlwiMDE5ZDQ4NTUtOTk0NC03OTJiLTg4ZTAtZmQ1ZTQ5Yjk5MzIzXCIsXCIkdXNlcl9zdGF0ZVwiOlwiYW5vbnltb3VzXCIsXCIkY2xpZW50X3Nlc3Npb25fcHJvcHNcIjp7XCJzZXNzaW9uSWRcIjpcIjAxOWQ0ODU1LTk5NDUtN2VjMC04NWNhLTZhZjM0MGM0MmMxNFwiLFwicHJvcHNcIjp7XCJpbml0aWFsUGF0aE5hbWVcIjpcIi9zaWduaW5cIixcInJlZmVycmluZ0RvbWFpblwiOlwiJGRpcmVjdFwifX0sXCIkc2Vzc2lvbl9yZWNvcmRpbmdfZW5hYmxlZF9zZXJ2ZXJfc2lkZVwiOmZhbHNlLFwiJHNlc3Npb25fcmVjb3JkaW5nX25ldHdvcmtfcGF5bG9hZF9jYXB0dXJlXCI6e1wiY2FwdHVyZVBlcmZvcm1hbmNlXCI6e1wibmV0d29ya190aW1pbmdcIjp0cnVlLFwid2ViX3ZpdGFsc1wiOmZhbHNlLFwid2ViX3ZpdGFsc19hbGxvd2VkX21ldHJpY3NcIjpudWxsfX0sXCIkYXV0b2NhcHR1cmVfZGlzYWJsZWRfc2VydmVyX3NpZGVcIjpmYWxzZSxcIiRhY3RpdmVfZmVhdHVyZV9mbGFnc1wiOltdLFwiJGVuYWJsZWRfZmVhdHVyZV9mbGFnc1wiOnt9LFwiJGZlYXR1cmVfZmxhZ19wYXlsb2Fkc1wiOnt9fSIsIl9mYWlfX2dhX1BGS0pOMTlSNzgiOiJHUzIuMS5zMTc3NTAzNTA2MSRvMSRnMSR0MTc3NTAzNTE1MSRqMzUkbDAkaDAiLCJfZmFpX19nYV8zVFhIU0ZKVEw3IjoiR1MyLjEuczE3NzUwMzUwNjEkbzEkZzEkdDE3NzUwMzUxNTAkajM2JGwwJGgwIn0sInNzIjp7InVzZXJEYXRhIjoie1wiaWRcIjozMDAxMixcImZpcnN0TmFtZVwiOlwiSGltYW5zaHVcIixcImxhc3ROYW1lXCI6XCIuXCIsXCJlbWFpbFwiOlwiaGltYW5zaHV0ZXN0ZXIwMUBnbWFpbC5jb21cIixcInR5cGVcIjpcIkludGVydmlld2VyXCIsXCJ0eXBlSWRcIjoxODM0LFwiZW5oYW5jZWRQb3J0YWxcIjp0cnVlLFwidXNlcnR5cGVMaXN0XCI6W1wiSW50ZXJ2aWV3ZXJcIl0sXCJ0b2tlblwiOlwiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKemRXSWlPaUpvYVcxaGJuTm9kWFJsYzNSbGNqQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGMzTlRBek5UQTNPQ3dpWlhod0lqb3hOemMxTVRJeE5EYzRmUS54SEduZ01DVm5WY2xUNmFnQkMwQmt1cVdWbEF2SUg4V3FIRmNxX3lyUGY0XCIsXCJtaWdyYXRlVG9EYXNoYm9hcmRQYWdlXCI6ZmFsc2V9IiwidXNlclJvbGVzIjoiW1wiSW50ZXJ2aWV3ZXJcIl0iLCJpbnRlcnZpZXdlcklkIjoiMTgzNCIsImFjY2Vzc1Rva2VuIjoiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKemRXSWlPaUpvYVcxaGJuTm9kWFJsYzNSbGNqQXhRR2R0WVdsc0xtTnZiU0lzSW1saGRDSTZNVGMzTlRBek5UQTNPQ3dpWlhod0lqb3hOemMxTVRJeE5EYzRmUS54SEduZ01DVm5WY2xUNmFnQkMwQmt1cVdWbEF2SUg4V3FIRmNxX3lyUGY0IiwicGhfcGhjX1VSQnVnZ0pBN3pDSHc2MnIzc0lTdUF1VzlRR3IzT3RrRHE5SXdHd05EbzdfcG9zdGhvZyI6IntcIiRyZWZlcnJlclwiOlwiJGRpcmVjdFwiLFwiJHJlZmVycmluZ19kb21haW5cIjpcIiRkaXJlY3RcIn0iLCJpc0ZpcnN0VGltZVVzZXIiOiIwIiwidXNlclJvbGUiOiJJbnRlcnZpZXdlciIsIm5vdFJlZnJlc2hlZCI6InRydWUiLCJub25KVEF2YWlsYWJpbGl0eVRhYlNob3ciOiJudWxsIiwiY2FuZGlkYXRlU2NoZWR1bGVzSW50ZXJ2aWV3IjoibnVsbCIsIm9wZW5BdmFpbEludGVyIjoiZmFsc2UiLCJwaF9waGNfVVJCdWdnSkE3ekNIdzYycjNzSVN1QXVXOVFHcjNPdGtEcTlJd0d3TkRvN19wcmltYXJ5X3dpbmRvd19leGlzdHMiOiJ0cnVlIiwiZW5oYW5jZWRQb3J0YWwiOiJ0cnVlIiwidGltZVpvbmVzIjoiW3tcInRpbWVab25lXCI6XCJHTVRcIixcImxhYmVsXCI6XCJCcml0aXNoIFN1bW1lciBUaW1lXCIsXCJzdGF0ZVwiOlwiRXVyb3BlL0xvbmRvblwiLFwib2Zmc2V0XCI6XCIrMDEwMFwifSx7XCJ0aW1lWm9uZVwiOlwiQ0VTVFwiLFwibGFiZWxcIjpcIkNlbnRyYWwgRXVyb3BlYW4gU3VtbWVyIFRpbWVcIixcInN0YXRlXCI6XCJFdXJvcGUvUGFyaXNcIixcIm9mZnNldFwiOlwiKzAyMDBcIn0se1widGltZVpvbmVcIjpcIkNFVFwiLFwibGFiZWxcIjpcIkNlbnRyYWwgRXVyb3BlYW4gU3VtbWVyIFRpbWVcIixcInN0YXRlXCI6XCJFdXJvcGUvUGFyaXNcIixcIm9mZnNldFwiOlwiKzAyMDBcIn0se1widGltZVpvbmVcIjpcIldJVEFcIixcImxhYmVsXCI6XCJDZW50cmFsIEluZG9uZXNpYW4gVGltZVwiLFwic3RhdGVcIjpcIkFzaWEvTWFrYXNzYXJcIixcIm9mZnNldFwiOlwiKzA4MDBcIn0se1widGltZVpvbmVcIjpcIkNTVFwiLFwibGFiZWxcIjpcIkNlbnRyYWwgU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFtZXJpY2EvQ2hpY2Fnb1wiLFwib2Zmc2V0XCI6XCItMDUwMFwifSx7XCJ0aW1lWm9uZVwiOlwiQ09UXCIsXCJsYWJlbFwiOlwiQ29sb21iaWEgVGltZVwiLFwic3RhdGVcIjpcIkFtZXJpY2EvQm9nb3RhXCIsXCJvZmZzZXRcIjpcIi0wNTAwXCJ9LHtcInRpbWVab25lXCI6XCJFU1RcIixcImxhYmVsXCI6XCJFYXN0ZXJuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJBbWVyaWNhL05ld19Zb3JrXCIsXCJvZmZzZXRcIjpcIi0wNDAwXCJ9LHtcInRpbWVab25lXCI6XCJHU1RcIixcImxhYmVsXCI6XCJHdWxmIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJBc2lhL0R1YmFpXCIsXCJvZmZzZXRcIjpcIiswNDAwXCJ9LHtcInRpbWVab25lXCI6XCJDVFRcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFzaWEvU2hhbmdoYWlcIixcIm9mZnNldFwiOlwiKzA4MDBcIn0se1widGltZVpvbmVcIjpcIkFSVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQWZyaWNhL0NhaXJvXCIsXCJvZmZzZXRcIjpcIiswMjAwXCJ9LHtcInRpbWVab25lXCI6XCJDTlRcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFtZXJpY2EvU3RfSm9obnNcIixcIm9mZnNldFwiOlwiLTAyMzBcIn0se1widGltZVpvbmVcIjpcIlBSVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQW1lcmljYS9QdWVydG9fUmljb1wiLFwib2Zmc2V0XCI6XCItMDQwMFwifSx7XCJ0aW1lWm9uZVwiOlwiUE5UXCIsXCJsYWJlbFwiOlwiSW5kaWFuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJBbWVyaWNhL1Bob2VuaXhcIixcIm9mZnNldFwiOlwiLTA3MDBcIn0se1widGltZVpvbmVcIjpcIlBMVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQXNpYS9LYXJhY2hpXCIsXCJvZmZzZXRcIjpcIiswNTAwXCJ9LHtcInRpbWVab25lXCI6XCJBU1RcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFtZXJpY2EvQW5jaG9yYWdlXCIsXCJvZmZzZXRcIjpcIi0wODAwXCJ9LHtcInRpbWVab25lXCI6XCJCU1RcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFzaWEvRGhha2FcIixcIm9mZnNldFwiOlwiKzA2MDBcIn0se1widGltZVpvbmVcIjpcIkhTVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiUGFjaWZpYy9Ib25vbHVsdVwiLFwib2Zmc2V0XCI6XCItMTAwMFwifSx7XCJ0aW1lWm9uZVwiOlwiSlNUXCIsXCJsYWJlbFwiOlwiSW5kaWFuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJBc2lhL1Rva3lvXCIsXCJvZmZzZXRcIjpcIiswOTAwXCJ9LHtcInRpbWVab25lXCI6XCJJU1RcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFzaWEvS29sa2F0YVwiLFwib2Zmc2V0XCI6XCIrMDUzMFwifSx7XCJ0aW1lWm9uZVwiOlwiQUdUXCIsXCJsYWJlbFwiOlwiSW5kaWFuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJBbWVyaWNhL0FyZ2VudGluYS9CdWVub3NfQWlyZXNcIixcIm9mZnNldFwiOlwiLTAzMDBcIn0se1widGltZVpvbmVcIjpcIk5TVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiUGFjaWZpYy9BdWNrbGFuZFwiLFwib2Zmc2V0XCI6XCIrMTMwMFwifSx7XCJ0aW1lWm9uZVwiOlwiQUVUXCIsXCJsYWJlbFwiOlwiSW5kaWFuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJBdXN0cmFsaWEvU3lkbmV5XCIsXCJvZmZzZXRcIjpcIisxMTAwXCJ9LHtcInRpbWVab25lXCI6XCJCRVRcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFtZXJpY2EvU2FvX1BhdWxvXCIsXCJvZmZzZXRcIjpcIi0wMzAwXCJ9LHtcInRpbWVab25lXCI6XCJBQ1RcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkF1c3RyYWxpYS9EYXJ3aW5cIixcIm9mZnNldFwiOlwiKzA5MzBcIn0se1widGltZVpvbmVcIjpcIlNTVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiUGFjaWZpYy9HdWFkYWxjYW5hbFwiLFwib2Zmc2V0XCI6XCIrMTEwMFwifSx7XCJ0aW1lWm9uZVwiOlwiVlNUXCIsXCJsYWJlbFwiOlwiSW5kaWFuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJBc2lhL0hvX0NoaV9NaW5oXCIsXCJvZmZzZXRcIjpcIiswNzAwXCJ9LHtcInRpbWVab25lXCI6XCJDQVRcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFmcmljYS9IYXJhcmVcIixcIm9mZnNldFwiOlwiKzAyMDBcIn0se1widGltZVpvbmVcIjpcIkVDVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiRXVyb3BlL1BhcmlzXCIsXCJvZmZzZXRcIjpcIiswMjAwXCJ9LHtcInRpbWVab25lXCI6XCJFQVRcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFmcmljYS9BZGRpc19BYmFiYVwiLFwib2Zmc2V0XCI6XCIrMDMwMFwifSx7XCJ0aW1lWm9uZVwiOlwiSUVUXCIsXCJsYWJlbFwiOlwiSW5kaWFuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJBbWVyaWNhL0luZGlhbmEvSW5kaWFuYXBvbGlzXCIsXCJvZmZzZXRcIjpcIi0wNDAwXCJ9LHtcInRpbWVab25lXCI6XCJNSVRcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIlBhY2lmaWMvQXBpYVwiLFwib2Zmc2V0XCI6XCIrMTMwMFwifSx7XCJ0aW1lWm9uZVwiOlwiTkVUXCIsXCJsYWJlbFwiOlwiSW5kaWFuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJBc2lhL1llcmV2YW5cIixcIm9mZnNldFwiOlwiKzA0MDBcIn0se1widGltZVpvbmVcIjpcIklDVFwiLFwibGFiZWxcIjpcIkluZG9jaGluYSBUaW1lXCIsXCJzdGF0ZVwiOlwiQXNpYS9Ib19DaGlfTWluaFwiLFwib2Zmc2V0XCI6XCIrMDcwMFwifSx7XCJ0aW1lWm9uZVwiOlwiTVlUXCIsXCJsYWJlbFwiOlwiTWFsYXlzaWEgVGltZVwiLFwic3RhdGVcIjpcIkFzaWEvS3VhbGFfTHVtcHVyXCIsXCJvZmZzZXRcIjpcIiswODAwXCJ9LHtcInRpbWVab25lXCI6XCJNU1RcIixcImxhYmVsXCI6XCJNb3VudGFpbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQW1lcmljYS9EZW52ZXJcIixcIm9mZnNldFwiOlwiLTA2MDBcIn0se1widGltZVpvbmVcIjpcIlBTVFwiLFwibGFiZWxcIjpcIlBhY2lmaWMgU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFtZXJpY2EvTG9zX0FuZ2VsZXNcIixcIm9mZnNldFwiOlwiLTA3MDBcIn0se1widGltZVpvbmVcIjpcIlBIVFwiLFwibGFiZWxcIjpcIlBoaWxpcHBpbmVzIFRpbWVcIixcInN0YXRlXCI6XCJBc2lhL01hbmlsYVwiLFwib2Zmc2V0XCI6XCIrMDgwMFwifSx7XCJ0aW1lWm9uZVwiOlwiU0dUXCIsXCJsYWJlbFwiOlwiU2luZ2Fwb3JlIFRpbWVcIixcInN0YXRlXCI6XCJBc2lhL1NpbmdhcG9yZVwiLFwib2Zmc2V0XCI6XCIrMDgwMFwifSx7XCJ0aW1lWm9uZVwiOlwiU0xTVFwiLFwibGFiZWxcIjpcIlNyaSBMYW5rYSBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQXNpYS9Db2xvbWJvXCIsXCJvZmZzZXRcIjpcIiswNTMwXCJ9LHtcInRpbWVab25lXCI6XCJXSUJcIixcImxhYmVsXCI6XCJXZXN0ZXJuIEluZG9uZXNpYW4gVGltZVwiLFwic3RhdGVcIjpcIkFzaWEvSmFrYXJ0YVwiLFwib2Zmc2V0XCI6XCIrMDcwMFwifV0iLCJwaF9waGNfVVJCdWdnSkE3ekNIdzYycjNzSVN1QXVXOVFHcjNPdGtEcTlJd0d3TkRvN193aW5kb3dfaWQiOiJcIjAxOWQ0ODU1LTk5NDUtN2VjMC04NWNhLTZhZjQwMTdmNzhjYlwiIiwiX2NsdGsiOiJrY2xocHkifX0=</textarea>
+<textarea id="sessionBlobSud" style="display:none">eyJjb29raWVzIjpbeyJuIjoiX2dhX1BGS0pOMTlSNzgiLCJ2IjoiR1MyLjEuczE3NzUwMzUxNzEkbzEkZzEkdDE3NzUwMzUyNjYkajMyJGwwJGgwIiwiZCI6Ii5qb2J0d2luZS5jb20iLCJwIjoiLyIsInMiOmZhbHNlfSx7Im4iOiJfZnVpZCIsInYiOiJaakEyWm1Gak1Ea3ROemMxWXkwMFpqQXpMVGsyWmpJdE1UQmlNekZtTUdNeU5URTAiLCJkIjoiLmpvYnR3aW5lLmNvbSIsInAiOiIvIiwicyI6ZmFsc2V9LHsibiI6InBoX3BoY19VUkJ1Z2dKQTd6Q0h3NjJyM3NJU3VBdVc5UUdyM090a0RxOUl3R3dORG83X3Bvc3Rob2ciLCJ2IjoiJTdCJTIyZGlzdGluY3RfaWQlMjIlM0ElMjIwMTlkNDg1Ny00NmRlLTcxYjktOGU4Mi00NjE0YzA5YTBhYTAlMjIlMkMlMjIlMjRzZXNpZCUyMiUzQSU1QjE3NzUwMzUyNjY1NjMlMkMlMjIwMTlkNDg1Ny00NmRmLTc1YjUtYjI1My1iOTYzMWRjNGRmYjclMjIlMkMxNzc1MDM1MTcyNTc1JTVEJTdEIiwiZCI6Ii5qb2J0d2luZS5jb20iLCJwIjoiLyIsInMiOnRydWV9LHsibiI6Il9nYV85RjZRVDVNMkpLIiwidiI6IkdTMi4xLnMxNzc1MDM1MTcxJG8xJGcxJHQxNzc1MDM1MjY2JGozMiRsMCRoMCIsImQiOiIuam9idHdpbmUuY29tIiwicCI6Ii8iLCJzIjpmYWxzZX0seyJuIjoiX2dhIiwidiI6IkdBMS4xLjE1NzQ1NDkxMTQuMTc3NTAzNTE3MSIsImQiOiIuam9idHdpbmUuY29tIiwicCI6Ii8iLCJzIjpmYWxzZX0seyJuIjoiX2Nsc2siLCJ2IjoiMXJjd3I1cCU1RTE3NzUwMzUyNjI4MDAlNUU4JTVFMSU1RWkuY2xhcml0eS5tcyUyRmNvbGxlY3QiLCJkIjoiLmpvYnR3aW5lLmNvbSIsInAiOiIvIiwicyI6ZmFsc2V9LHsibiI6Il9jbGNrIiwidiI6IjFyZjcwb2glNUUyJTVFZzR1JTVFMCU1RTIyODIiLCJkIjoiLmpvYnR3aW5lLmNvbSIsInAiOiIvIiwicyI6ZmFsc2V9LHsibiI6Il9nYV8zVFhIU0ZKVEw3IiwidiI6IkdTMi4xLnMxNzc1MDM1MTcxJG8xJGcxJHQxNzc1MDM1MjY2JGozMiRsMCRoMCIsImQiOiIuam9idHdpbmUuY29tIiwicCI6Ii8iLCJzIjpmYWxzZX1dLCJscyI6eyJfZmFpX0dBIjoiR0ExLjEuMTU3NDU0OTExNC4xNzc1MDM1MTcxIiwiX2ZhaV9fZ2FfOUY2UVQ1TTJKSyI6IkdTMi4xLnMxNzc1MDM1MTcxJG8xJGcxJHQxNzc1MDM1MjYyJGozNiRsMCRoMCIsInBoX3BoY19VUkJ1Z2dKQTd6Q0h3NjJyM3NJU3VBdVc5UUdyM090a0RxOUl3R3dORG83X3Bvc3Rob2ciOiJ7XCJkaXN0aW5jdF9pZFwiOlwiMDE5ZDQ4NTctNDZkZS03MWI5LThlODItNDYxNGMwOWEwYWEwXCIsXCIkc2VzaWRcIjpbMTc3NTAzNTI2NjU2MyxcIjAxOWQ0ODU3LTQ2ZGYtNzViNS1iMjUzLWI5NjMxZGM0ZGZiN1wiLDE3NzUwMzUxNzI1NzVdLFwiJGRldmljZV9pZFwiOlwiMDE5ZDQ4NTctNDZkZS03MWI5LThlODItNDYxNGMwOWEwYWEwXCIsXCIkdXNlcl9zdGF0ZVwiOlwiYW5vbnltb3VzXCIsXCIkY2xpZW50X3Nlc3Npb25fcHJvcHNcIjp7XCJzZXNzaW9uSWRcIjpcIjAxOWQ0ODU3LTQ2ZGYtNzViNS1iMjUzLWI5NjMxZGM0ZGZiN1wiLFwicHJvcHNcIjp7XCJpbml0aWFsUGF0aE5hbWVcIjpcIi9zaWduaW5cIixcInJlZmVycmluZ0RvbWFpblwiOlwiJGRpcmVjdFwifX0sXCIkc2Vzc2lvbl9yZWNvcmRpbmdfZW5hYmxlZF9zZXJ2ZXJfc2lkZVwiOmZhbHNlLFwiJHNlc3Npb25fcmVjb3JkaW5nX25ldHdvcmtfcGF5bG9hZF9jYXB0dXJlXCI6e1wiY2FwdHVyZVBlcmZvcm1hbmNlXCI6e1wibmV0d29ya190aW1pbmdcIjp0cnVlLFwid2ViX3ZpdGFsc1wiOmZhbHNlLFwid2ViX3ZpdGFsc19hbGxvd2VkX21ldHJpY3NcIjpudWxsfX0sXCIkYXV0b2NhcHR1cmVfZGlzYWJsZWRfc2VydmVyX3NpZGVcIjpmYWxzZSxcIiRhY3RpdmVfZmVhdHVyZV9mbGFnc1wiOltdLFwiJGVuYWJsZWRfZmVhdHVyZV9mbGFnc1wiOnt9LFwiJGZlYXR1cmVfZmxhZ19wYXlsb2Fkc1wiOnt9fSIsIl9mYWlfX2dhX1BGS0pOMTlSNzgiOiJHUzIuMS5zMTc3NTAzNTE3MSRvMSRnMSR0MTc3NTAzNTI2MiRqMzYkbDAkaDAiLCJfZmFpX19nYV8zVFhIU0ZKVEw3IjoiR1MyLjEuczE3NzUwMzUxNzEkbzEkZzEkdDE3NzUwMzUyNjIkajM2JGwwJGgwIn0sInNzIjp7InVzZXJEYXRhIjoie1wiaWRcIjozMDA2NyxcImZpcnN0TmFtZVwiOlwic3VkaGFuc2h1XCIsXCJsYXN0TmFtZVwiOlwiZ3VwdGFcIixcImVtYWlsXCI6XCJzdWRoYW5zaHVndXB0YTc3QGdtYWlsLmNvbVwiLFwidHlwZVwiOlwiSW50ZXJ2aWV3ZXJcIixcInR5cGVJZFwiOjE4NDAsXCJlbmhhbmNlZFBvcnRhbFwiOnRydWUsXCJ1c2VydHlwZUxpc3RcIjpbXCJJbnRlcnZpZXdlclwiXSxcInRva2VuXCI6XCJleUpoYkdjaU9pSklVekkxTmlKOS5leUp6ZFdJaU9pSnpkV1JvWVc1emFIVm5kWEIwWVRjM1FHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UYzNOVEF6TlRFNE55d2laWGh3SWpveE56YzFNVEl4TlRnM2ZRLjU2MWtkZUwyUmMxeXRGV0M1cXgybG5hQVZUWlE5cmVZYUxoSWlzTXFuSDRcIixcIm1pZ3JhdGVUb0Rhc2hib2FyZFBhZ2VcIjpmYWxzZX0iLCJ1c2VyUm9sZXMiOiJbXCJJbnRlcnZpZXdlclwiXSIsImludGVydmlld2VySWQiOiIxODQwIiwiYWNjZXNzVG9rZW4iOiJleUpoYkdjaU9pSklVekkxTmlKOS5leUp6ZFdJaU9pSnpkV1JvWVc1emFIVm5kWEIwWVRjM1FHZHRZV2xzTG1OdmJTSXNJbWxoZENJNk1UYzNOVEF6TlRFNE55d2laWGh3SWpveE56YzFNVEl4TlRnM2ZRLjU2MWtkZUwyUmMxeXRGV0M1cXgybG5hQVZUWlE5cmVZYUxoSWlzTXFuSDQiLCJwaF9waGNfVVJCdWdnSkE3ekNIdzYycjNzSVN1QXVXOVFHcjNPdGtEcTlJd0d3TkRvN19wb3N0aG9nIjoie1wiJHJlZmVycmVyXCI6XCIkZGlyZWN0XCIsXCIkcmVmZXJyaW5nX2RvbWFpblwiOlwiJGRpcmVjdFwifSIsImlzRmlyc3RUaW1lVXNlciI6IjAiLCJ1c2VyUm9sZSI6IkludGVydmlld2VyIiwibm90UmVmcmVzaGVkIjoidHJ1ZSIsIm5vbkpUQXZhaWxhYmlsaXR5VGFiU2hvdyI6Im51bGwiLCJjYW5kaWRhdGVTY2hlZHVsZXNJbnRlcnZpZXciOiJudWxsIiwib3BlbkF2YWlsSW50ZXIiOiJmYWxzZSIsInBoX3BoY19VUkJ1Z2dKQTd6Q0h3NjJyM3NJU3VBdVc5UUdyM090a0RxOUl3R3dORG83X3ByaW1hcnlfd2luZG93X2V4aXN0cyI6InRydWUiLCJlbmhhbmNlZFBvcnRhbCI6InRydWUiLCJ0aW1lWm9uZXMiOiJbe1widGltZVpvbmVcIjpcIkdNVFwiLFwibGFiZWxcIjpcIkJyaXRpc2ggU3VtbWVyIFRpbWVcIixcInN0YXRlXCI6XCJFdXJvcGUvTG9uZG9uXCIsXCJvZmZzZXRcIjpcIiswMTAwXCJ9LHtcInRpbWVab25lXCI6XCJDRVNUXCIsXCJsYWJlbFwiOlwiQ2VudHJhbCBFdXJvcGVhbiBTdW1tZXIgVGltZVwiLFwic3RhdGVcIjpcIkV1cm9wZS9QYXJpc1wiLFwib2Zmc2V0XCI6XCIrMDIwMFwifSx7XCJ0aW1lWm9uZVwiOlwiQ0VUXCIsXCJsYWJlbFwiOlwiQ2VudHJhbCBFdXJvcGVhbiBTdW1tZXIgVGltZVwiLFwic3RhdGVcIjpcIkV1cm9wZS9QYXJpc1wiLFwib2Zmc2V0XCI6XCIrMDIwMFwifSx7XCJ0aW1lWm9uZVwiOlwiV0lUQVwiLFwibGFiZWxcIjpcIkNlbnRyYWwgSW5kb25lc2lhbiBUaW1lXCIsXCJzdGF0ZVwiOlwiQXNpYS9NYWthc3NhclwiLFwib2Zmc2V0XCI6XCIrMDgwMFwifSx7XCJ0aW1lWm9uZVwiOlwiQ1NUXCIsXCJsYWJlbFwiOlwiQ2VudHJhbCBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQW1lcmljYS9DaGljYWdvXCIsXCJvZmZzZXRcIjpcIi0wNTAwXCJ9LHtcInRpbWVab25lXCI6XCJDT1RcIixcImxhYmVsXCI6XCJDb2xvbWJpYSBUaW1lXCIsXCJzdGF0ZVwiOlwiQW1lcmljYS9Cb2dvdGFcIixcIm9mZnNldFwiOlwiLTA1MDBcIn0se1widGltZVpvbmVcIjpcIkVTVFwiLFwibGFiZWxcIjpcIkVhc3Rlcm4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFtZXJpY2EvTmV3X1lvcmtcIixcIm9mZnNldFwiOlwiLTA0MDBcIn0se1widGltZVpvbmVcIjpcIkdTVFwiLFwibGFiZWxcIjpcIkd1bGYgU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFzaWEvRHViYWlcIixcIm9mZnNldFwiOlwiKzA0MDBcIn0se1widGltZVpvbmVcIjpcIkNUVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQXNpYS9TaGFuZ2hhaVwiLFwib2Zmc2V0XCI6XCIrMDgwMFwifSx7XCJ0aW1lWm9uZVwiOlwiQVJUXCIsXCJsYWJlbFwiOlwiSW5kaWFuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJBZnJpY2EvQ2Fpcm9cIixcIm9mZnNldFwiOlwiKzAyMDBcIn0se1widGltZVpvbmVcIjpcIkNOVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQW1lcmljYS9TdF9Kb2huc1wiLFwib2Zmc2V0XCI6XCItMDIzMFwifSx7XCJ0aW1lWm9uZVwiOlwiUFJUXCIsXCJsYWJlbFwiOlwiSW5kaWFuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJBbWVyaWNhL1B1ZXJ0b19SaWNvXCIsXCJvZmZzZXRcIjpcIi0wNDAwXCJ9LHtcInRpbWVab25lXCI6XCJQTlRcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFtZXJpY2EvUGhvZW5peFwiLFwib2Zmc2V0XCI6XCItMDcwMFwifSx7XCJ0aW1lWm9uZVwiOlwiUExUXCIsXCJsYWJlbFwiOlwiSW5kaWFuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJBc2lhL0thcmFjaGlcIixcIm9mZnNldFwiOlwiKzA1MDBcIn0se1widGltZVpvbmVcIjpcIkFTVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQW1lcmljYS9BbmNob3JhZ2VcIixcIm9mZnNldFwiOlwiLTA4MDBcIn0se1widGltZVpvbmVcIjpcIkJTVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQXNpYS9EaGFrYVwiLFwib2Zmc2V0XCI6XCIrMDYwMFwifSx7XCJ0aW1lWm9uZVwiOlwiSFNUXCIsXCJsYWJlbFwiOlwiSW5kaWFuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJQYWNpZmljL0hvbm9sdWx1XCIsXCJvZmZzZXRcIjpcIi0xMDAwXCJ9LHtcInRpbWVab25lXCI6XCJKU1RcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFzaWEvVG9reW9cIixcIm9mZnNldFwiOlwiKzA5MDBcIn0se1widGltZVpvbmVcIjpcIklTVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQXNpYS9Lb2xrYXRhXCIsXCJvZmZzZXRcIjpcIiswNTMwXCJ9LHtcInRpbWVab25lXCI6XCJBR1RcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFtZXJpY2EvQXJnZW50aW5hL0J1ZW5vc19BaXJlc1wiLFwib2Zmc2V0XCI6XCItMDMwMFwifSx7XCJ0aW1lWm9uZVwiOlwiTlNUXCIsXCJsYWJlbFwiOlwiSW5kaWFuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJQYWNpZmljL0F1Y2tsYW5kXCIsXCJvZmZzZXRcIjpcIisxMzAwXCJ9LHtcInRpbWVab25lXCI6XCJBRVRcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkF1c3RyYWxpYS9TeWRuZXlcIixcIm9mZnNldFwiOlwiKzExMDBcIn0se1widGltZVpvbmVcIjpcIkJFVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQW1lcmljYS9TYW9fUGF1bG9cIixcIm9mZnNldFwiOlwiLTAzMDBcIn0se1widGltZVpvbmVcIjpcIkFDVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQXVzdHJhbGlhL0RhcndpblwiLFwib2Zmc2V0XCI6XCIrMDkzMFwifSx7XCJ0aW1lWm9uZVwiOlwiU1NUXCIsXCJsYWJlbFwiOlwiSW5kaWFuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJQYWNpZmljL0d1YWRhbGNhbmFsXCIsXCJvZmZzZXRcIjpcIisxMTAwXCJ9LHtcInRpbWVab25lXCI6XCJWU1RcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFzaWEvSG9fQ2hpX01pbmhcIixcIm9mZnNldFwiOlwiKzA3MDBcIn0se1widGltZVpvbmVcIjpcIkNBVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQWZyaWNhL0hhcmFyZVwiLFwib2Zmc2V0XCI6XCIrMDIwMFwifSx7XCJ0aW1lWm9uZVwiOlwiRUNUXCIsXCJsYWJlbFwiOlwiSW5kaWFuIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJFdXJvcGUvUGFyaXNcIixcIm9mZnNldFwiOlwiKzAyMDBcIn0se1widGltZVpvbmVcIjpcIkVBVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQWZyaWNhL0FkZGlzX0FiYWJhXCIsXCJvZmZzZXRcIjpcIiswMzAwXCJ9LHtcInRpbWVab25lXCI6XCJJRVRcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFtZXJpY2EvSW5kaWFuYS9JbmRpYW5hcG9saXNcIixcIm9mZnNldFwiOlwiLTA0MDBcIn0se1widGltZVpvbmVcIjpcIk1JVFwiLFwibGFiZWxcIjpcIkluZGlhbiBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiUGFjaWZpYy9BcGlhXCIsXCJvZmZzZXRcIjpcIisxMzAwXCJ9LHtcInRpbWVab25lXCI6XCJORVRcIixcImxhYmVsXCI6XCJJbmRpYW4gU3RhbmRhcmQgVGltZVwiLFwic3RhdGVcIjpcIkFzaWEvWWVyZXZhblwiLFwib2Zmc2V0XCI6XCIrMDQwMFwifSx7XCJ0aW1lWm9uZVwiOlwiSUNUXCIsXCJsYWJlbFwiOlwiSW5kb2NoaW5hIFRpbWVcIixcInN0YXRlXCI6XCJBc2lhL0hvX0NoaV9NaW5oXCIsXCJvZmZzZXRcIjpcIiswNzAwXCJ9LHtcInRpbWVab25lXCI6XCJNWVRcIixcImxhYmVsXCI6XCJNYWxheXNpYSBUaW1lXCIsXCJzdGF0ZVwiOlwiQXNpYS9LdWFsYV9MdW1wdXJcIixcIm9mZnNldFwiOlwiKzA4MDBcIn0se1widGltZVpvbmVcIjpcIk1TVFwiLFwibGFiZWxcIjpcIk1vdW50YWluIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJBbWVyaWNhL0RlbnZlclwiLFwib2Zmc2V0XCI6XCItMDYwMFwifSx7XCJ0aW1lWm9uZVwiOlwiUFNUXCIsXCJsYWJlbFwiOlwiUGFjaWZpYyBTdGFuZGFyZCBUaW1lXCIsXCJzdGF0ZVwiOlwiQW1lcmljYS9Mb3NfQW5nZWxlc1wiLFwib2Zmc2V0XCI6XCItMDcwMFwifSx7XCJ0aW1lWm9uZVwiOlwiUEhUXCIsXCJsYWJlbFwiOlwiUGhpbGlwcGluZXMgVGltZVwiLFwic3RhdGVcIjpcIkFzaWEvTWFuaWxhXCIsXCJvZmZzZXRcIjpcIiswODAwXCJ9LHtcInRpbWVab25lXCI6XCJTR1RcIixcImxhYmVsXCI6XCJTaW5nYXBvcmUgVGltZVwiLFwic3RhdGVcIjpcIkFzaWEvU2luZ2Fwb3JlXCIsXCJvZmZzZXRcIjpcIiswODAwXCJ9LHtcInRpbWVab25lXCI6XCJTTFNUXCIsXCJsYWJlbFwiOlwiU3JpIExhbmthIFN0YW5kYXJkIFRpbWVcIixcInN0YXRlXCI6XCJBc2lhL0NvbG9tYm9cIixcIm9mZnNldFwiOlwiKzA1MzBcIn0se1widGltZVpvbmVcIjpcIldJQlwiLFwibGFiZWxcIjpcIldlc3Rlcm4gSW5kb25lc2lhbiBUaW1lXCIsXCJzdGF0ZVwiOlwiQXNpYS9KYWthcnRhXCIsXCJvZmZzZXRcIjpcIiswNzAwXCJ9XSIsInBoX3BoY19VUkJ1Z2dKQTd6Q0h3NjJyM3NJU3VBdVc5UUdyM090a0RxOUl3R3dORG83X3dpbmRvd19pZCI6IlwiMDE5ZDQ4NTctNDZkZi03NWI1LWIyNTMtYjk2NDc3Y2ZkMzYyXCIiLCJfY2x0ayI6IjFtN2ppaGgifX0=</textarea>
+</div>
+<div class="section">
+<div class="tab-label tab-today">&#9728;&#65039; TODAY &mdash; 1 APR [WEDNESDAY]</div>
+<div class="section-box-today" data-date="2026-04-01">
+<div class="acc-label acc-him">&#128100; HIMANSHU &mdash; JTwine</div>
+<div class="row"><div class="col-time"><span class="sdet-badge">SDET</span>10:30 PM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('JYOTHI RAMAKRISHNAIAH')">+</button></div><div class="col-link"><button onclick="copyAndJoin('him','https://www.jobtwine.com/meeting/copilot?id=iNSJn9EpmRdUpyI6RAwblB2w3DwR9tkqAQ8CvuQL3%2FKoQ5H9boJIkOsLu%2Fb6eag7&amp;type=H')" class="join-btn">JOIN &#9654;</button></div><div class="col-status sc">Scheduled</div></div>
+<div class="row"><div class="col-time"><span class="sdet-badge">SDET</span>9:30 PM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('Sai Emmady')">+</button></div><div class="col-link"><button onclick="copyAndJoin('him','https://www.jobtwine.com/meeting/copilot?id=MqKf%2B1pY4WSvxQV4l77riL1b%2FJe23siwzQBFjitLivclm3PmR41a5uqPrxpAkUvh&amp;type=H')" class="join-btn">JOIN &#9654;</button></div><div class="col-status sc">Scheduled</div></div>
+<div class="row"><div class="col-time">8:00 PM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('Yeswanth Alti')">+</button></div><div class="col-link"><button onclick="copyAndJoin('him','https://www.jobtwine.com/meeting/copilot?id=XJQ6q%2FyjH4%2B1fpu8uCZH0LKRAgTdl5VV26oUpr0ftVAHP789m6HWu7pH1P1bItKh&amp;type=H')" class="join-btn">JOIN &#9654;</button></div><div class="col-status sc">Scheduled</div></div>
+<div class="row"><div class="col-time">12:00 PM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('Lavanya Nollu')">+</button></div><div class="col-link"><span class="join-na">NA</span></div><div class="col-status nr">Not Recommended</div></div>
+<div class="row"><div class="col-time">11:00 AM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('Govinda Rao Kimidi')">+</button></div><div class="col-link"><span class="join-na">NA</span></div><div class="col-status ns">Candidate No Show</div></div>
+<div class="row"><div class="col-time">10:00 AM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('Seshadri Kolla')">+</button></div><div class="col-link"><span class="join-na">NA</span></div><div class="col-status nr">Not Recommended</div></div>
+<div class="acc-label acc-sud">&#128101; SUDHANSHU &mdash; JTwine</div>
+<div class="row"><div class="col-time"><span class="sdet-badge">SDET</span>9:30 PM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('Sai Boppana')">+</button></div><div class="col-link"><button onclick="copyAndJoin('sud','https://www.jobtwine.com/meeting/copilot?id=bx8v4NLJsM9asKgBFDjVTx%2BQqhg5JB%2Bh7wITTJcGTojB7GsMabLAS5psyjFnGCjd&amp;type=H')" class="join-btn">JOIN &#9654;</button></div><div class="col-status sc">Scheduled</div></div>
+<div class="row"><div class="col-time"><span class="sdet-badge">SDET</span>8:30 PM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('Preethi Patrapati')">+</button></div><div class="col-link"><button onclick="copyAndJoin('sud','https://www.jobtwine.com/meeting/copilot?id=meZkIs1XuGqivsGfBecg9gkF0R3tNkf2PYf%2FNrLOd66zjaNRidt5SwpGtd2CFVsj&amp;type=H')" class="join-btn">JOIN &#9654;</button></div><div class="col-status sc">Scheduled</div></div>
+<div class="row"><div class="col-time">7:00 PM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('Jayanthi M H')">+</button></div><div class="col-link"><button onclick="copyAndJoin('sud','https://www.jobtwine.com/meeting/copilot?id=RKKyVGYRKnK5WeOzN7%2BBDZQ6fdHI8ubwRF3QbPd3vaK74%2BLdXQ8tnwPfKO4FkGm3&amp;type=H')" class="join-btn">JOIN &#9654;</button></div><div class="col-status sc">Scheduled</div></div>
+<div class="row"><div class="col-time">6:00 PM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('Sirisha Beela')">+</button></div><div class="col-link"><button onclick="copyAndJoin('sud','https://www.jobtwine.com/meeting/copilot?id=5sgSfm2SPimYnHKtO0Fh6SW%2BI%2Bc89LTmqBPBrJDbbeS22qv2mBvx6oPq9mPmFqAx&amp;type=H')" class="join-btn">JOIN &#9654;</button></div><div class="col-status sc">Scheduled</div></div>
+<div class="row"><div class="col-time"><span class="sdet-badge">SDET</span>11:00 AM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('Anusha Yedla')">+</button></div><div class="col-link"><span class="join-na">NA</span></div><div class="col-status ns">Candidate No Show</div></div>
+</div>
+</div>
+<div class="section">
+<div class="tab-label tab-vprop">&#11088; VPROP</div>
+<div class="section-box-vprop" data-date="2026-04-01">
+<div class="acc-label acc-vp">&#128100; Himanshu &mdash; VProp</div>
+<div class="row"><div class="col-time">Exception while fetching Vprop schedule: Expected condition failed: waiting for visibility of element located by By.xpath: .//input[@name='email'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\HIMANS~1.KUM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60796}, goog:processID: 33220, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60796/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26691b5bb26fbd9fd0293ec13b22b269</div><div class="col-cand"><span style='font-size:8px;color:#e5e7eb'>&#8212;</span></div><div class="col-link"><span class="join-na">&mdash;</span></div><div class="col-status"></div></div>
+</div>
+</div>
+<div class="section">
+<div class="tab-label tab-tomorrow clickable" onclick="toggleSection('tomorrow-body')">
+  <span>&#127769; TOMORROW &mdash; 2 APR [THURSDAY]</span>
+  <span class="toggle-btn" id="tomorrow-body-icon"><span class="arrow">&#9660;</span> TAP TO EXPAND</span>
+</div>
+<div id="tomorrow-body" class="collapsible-body">
+<div class="section-box-tomorrow" data-date="2026-04-02">
+<div class="acc-label acc-him">&#128100; HIMANSHU &mdash; JTwine</div>
+<div class="row"><div class="col-time">5:00 PM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('Dauli Sengar')">+</button></div><div class="col-link"><button onclick="copyAndJoin('him','https://www.jobtwine.com/meeting/copilot?id=WLTn0f1QGpRKlJavFrU%2F%2BnHU6OuZB8fxRgKvSQ5zuqnxshEnLuLqNeDk7Yp9RBGk&amp;type=H')" class="join-btn">JOIN &#9654;</button></div><div class="col-status sc">Scheduled</div></div>
+<div class="row"><div class="col-time">3:00 PM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('Pravalika Madipadaga')">+</button></div><div class="col-link"><button onclick="copyAndJoin('him','https://www.jobtwine.com/meeting/copilot?id=EMwSMN7UFmeI7r2%2B4cajZyt919eo7MqIbXCuMfgv0aXgApy6EKuaaqjVgZTFTgpM&amp;type=H')" class="join-btn">JOIN &#9654;</button></div><div class="col-status sc">Scheduled</div></div>
+<div class="row"><div class="col-time">11:00 AM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('Nikitha Vaddepally')">+</button></div><div class="col-link"><button onclick="copyAndJoin('him','https://www.jobtwine.com/meeting/copilot?id=FMeI6bU8U7geagviFitYIOiEaHlKI6O5GF9ZPIOfB6k8%2FhiKIUEUKV7YpIvu7emE&amp;type=H')" class="join-btn">JOIN &#9654;</button></div><div class="col-status sc">Scheduled</div></div>
+<div class="acc-label acc-sud">&#128101; SUDHANSHU &mdash; JTwine</div>
+<div class="row"><div class="col-time">2:00 PM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('Chilukuri Venkata Naga SeshKumar')">+</button></div><div class="col-link"><button onclick="copyAndJoin('sud','https://www.jobtwine.com/meeting/copilot?id=PlNZy1DnNasRofsPpn9%2B%2Fu19VjSiOOlo%2FM0FMxHo9Jf2X8VCDX86x9tnmyXJRfJf&amp;type=H')" class="join-btn">JOIN &#9654;</button></div><div class="col-status sc">Scheduled</div></div>
+<div class="row"><div class="col-time">9:00 AM IST</div><div class="col-cand"><button class="cand-btn" onclick="showCandidatePopup('RAJESH PRATHI')">+</button></div><div class="col-link"><button onclick="copyAndJoin('sud','https://www.jobtwine.com/meeting/copilot?id=ZU8POtPhIXgizskDrW6oon%2FYyQzNw3qcdSpf6trj%2FPkLuRBKswIHxIEfI3O48gtA&amp;type=H')" class="join-btn">JOIN &#9654;</button></div><div class="col-status sc">Scheduled</div></div>
+</div>
+</div>
+</div>
+<div class="footer">&#9201; Updated at (IST): 01-Apr-2026 02:51:55 PM</div>
+<script>
+function toggleSection(id) {
+  var body = document.getElementById(id);
+  var icon = document.getElementById(id + '-icon');
+  if (body.classList.contains('open')) {
+    body.classList.remove('open');
+    icon.innerHTML = "<span class='arrow'>&#9660;</span> TAP TO EXPAND";
+  } else {
+    body.classList.add('open');
+    icon.innerHTML = "<span class='arrow'>&#9650;</span> TAP TO COLLAPSE";
+  }
+}
+function markPastInterviews() {
+  var now = new Date();
+  var utcMs = now.getTime() + (now.getTimezoneOffset() * 60000);
+  var istMs = utcMs + (5.5 * 3600000);
+  var ist = new Date(istMs);
+  var istDate = ist.getFullYear() + '-' + String(ist.getMonth()+1).padStart(2,'0') + '-' + String(ist.getDate()).padStart(2,'0');
+  var istMinutes = ist.getHours() * 60 + ist.getMinutes();
+  var sections = document.querySelectorAll('[data-date]');
+  sections.forEach(function(sec) {
+    var secDate = sec.getAttribute('data-date');
+    var rows = sec.querySelectorAll('.row');
+    rows.forEach(function(row) {
+      var timeEl = row.querySelector('.col-time');
+      if (!timeEl) return;
+      if (secDate < istDate) { row.classList.add('past-interview'); return; }
+      if (secDate > istDate) return;
+      var text = timeEl.textContent.trim();
+      var match = text.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+      if (!match) return;
+      var h = parseInt(match[1]); var m = parseInt(match[2]);
+      var ampm = match[3].toUpperCase();
+      if (ampm === 'AM' && h === 12) h = 0;
+      else if (ampm === 'PM' && h !== 12) h += 12;
+      var interviewMin = h * 60 + m;
+      if (istMinutes > interviewMin) { row.classList.add('past-interview'); }
+    });
+  });
+}
+markPastInterviews();
+function copyAndJoin(who,url){
+  var taggedUrl=url+'#jt='+who;  // TamperMonkey detects this hash and auto-logs in
+  var id=who==='him'?'sessionBlobHim':'sessionBlobSud';
+  var el=document.getElementById(id);
+  if(!el||!el.value){window.open(taggedUrl,'_blank');return;}
+  navigator.clipboard.writeText(el.value).then(function(){
+    window.open(taggedUrl,'_blank');
+  }).catch(function(){window.open(taggedUrl,'_blank');});
+}
+function showCandidatePopup(name){
+  document.getElementById('candPopupName').textContent=name;
+  document.getElementById('candOverlay').classList.add('active');
+}
+function closeCandidatePopup(){
+  document.getElementById('candOverlay').classList.remove('active');
+}
+document.getElementById('candOverlay').addEventListener('click',function(e){if(e.target===this)closeCandidatePopup();});
+</script>
+<div class='cand-overlay' id='candOverlay'><div class='cand-popup'><button class='cand-close' onclick='closeCandidatePopup()'>&#10005;</button><div class='cand-popup-title'>&#128100; Candidate</div><div class='cand-popup-name' id='candPopupName'></div></div></div>
+</div>
 </body>
 </html>
