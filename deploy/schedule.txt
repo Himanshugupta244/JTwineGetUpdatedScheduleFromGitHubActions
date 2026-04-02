@@ -2,7 +2,7 @@ Today's date: Apr 2
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
 ✪ Thu, Apr 2, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Aravind Gujjula ===LINK=== https://www.jobtwine.com/meeting/copilot?id=MnDBqBxMRxDfZMaK93Ad%2BmKR1oFD6D2PPdgvZ20Lmd0yBOIz%2FyqRFaozQ7zq80hX&type=H
-✪ Thu, Apr 2, 2026, 5:00 PM IST ==> Pending Feedback Review ===PROFILE=== QA (8804) ===CANDIDATE=== Dauli Sengar ===LINK=== NA
+✪ Thu, Apr 2, 2026, 5:00 PM IST ==> Not Recommended ===PROFILE=== QA (8804) ===CANDIDATE=== Dauli Sengar ===LINK=== NA
 ✪ Thu, Apr 2, 2026, 3:00 PM IST ==> Candidate No Show ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Pravalika Madipadaga ===LINK=== NA
 ✪ Thu, Apr 2, 2026, 11:00 AM IST ==> Candidate No Show ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Nikitha Vaddepally ===LINK=== NA
 ✪ Thu, Apr 2, 2026, 10:00 AM IST ==> Candidate No Show ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Sneha Mandaram ===LINK=== NA
@@ -15,7 +15,7 @@ Today's date: Apr 2
 §TODAY§
 ✪ Thu, Apr 2, 2026, 10:00 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Madhuri Lonikar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=nl%2BpDC8cOkbqmGYEDB5YpbA6E%2Fw0EBCRsADH72xJkMM32J0LRh5X9Pq0IBNnPNR6&type=H
 ✪ Thu, Apr 2, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Mahammad Shaik ===LINK=== https://www.jobtwine.com/meeting/copilot?id=kdHLrDhKmFB%2Fx9XHVuBrpWTtuEBlaT09y7w%2FenTDSM5vAKcoSAypg49cWvGGHN2d&type=H
-✪ Thu, Apr 2, 2026, 6:30 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Shanmukha Matta ===LINK=== https://www.jobtwine.com/meeting/copilot?id=c0LeNk1WqoFFHvs7MroO7heONaQseToyx%2FE%2ByXT%2FSbv%2Fr8h7KnGcv1WTnl%2FJESx4&type=H
+✪ Thu, Apr 2, 2026, 6:30 PM IST ==> Generating Feedback ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Shanmukha Matta ===LINK=== NA
 ✪ Thu, Apr 2, 2026, 2:00 PM IST ==> Not Recommended ===PROFILE=== Senior Quality Engineering Coordinator (17598) ===CANDIDATE=== Chilukuri Venkata Naga SeshKumar ===LINK=== NA
 ✪ Thu, Apr 2, 2026, 11:00 AM IST ==> Candidate No Show ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== SREENU BIMPAVU ===LINK=== NA
 ✪ Thu, Apr 2, 2026, 9:00 AM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== RAJESH PRATHI ===LINK=== NA
@@ -28,4 +28,4 @@ Today's date: Apr 2
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 02-Apr-2026 07:14:31 PM
+Updated at (IST): 02-Apr-2026 07:24:10 PM
