@@ -15,11 +15,11 @@ Today's date: Apr 3
 ✪ Fri, Apr 3, 2026, 5:30 PM IST ==> Cancelled by candidate ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Thaneesha Anumula ===LINK=== NA
 ✪ Fri, Apr 3, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Krishnaveni Punugupati ===LINK=== https://www.jobtwine.com/meeting/copilot?id=n%2FO0NbMAcMyyS3J2fI4r4sMyKd97wcZpwJjx34zO7fcVorM6neeY5ElOv%2F%2BSYHVx&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
-Exception while fetching Vprop schedule: Expected condition failed: waiting for visibility of element located by By.xpath: .//header//span[text()='Himanshu'] (tried for 30 second(s) with 500 milliseconds interval)
+Exception while fetching Vprop schedule: Expected condition failed: waiting for visibility of element located by By.xpath: .//input[@name='email'] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1008-azure', java.version: '17.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38657}, goog:processID: 3374, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38657/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8cc7287ae26d34d95a1ae1bc4137579e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44729}, goog:processID: 3391, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44729/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ac62adefbe84f2823e0e0eed4a77409
 -----------------------------------
-Updated at (IST): 03-Apr-2026 09:24:08 AM
+Updated at (IST): 03-Apr-2026 09:34:28 AM
