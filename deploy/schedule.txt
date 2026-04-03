@@ -4,7 +4,7 @@ Today's date: Apr 3
 ✪ Fri, Apr 3, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== POOJA GUJJA ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Ai12JrQvy0Z8eS9Ph8Q25j0xl4MP1ceUHxKD99YjCQwgz74rZ3YEgi1xoNIh%2BobV&type=H
 ✪ Fri, Apr 3, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Kavya Aravapalli ===LINK=== https://www.jobtwine.com/meeting/copilot?id=LkdaxysUHrPHys2sIbL70eaPdYcCl1mujFdFKq27j07hTOY36jt5OzIaOQGR2oaf&type=H
 ✪ Fri, Apr 3, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Sanjay Kantamani ===LINK=== https://www.jobtwine.com/meeting/copilot?id=DBwoFZ4WytDwVWsuFDy4582p7Z10QrFHilZkid%2FcvnNzO%2Btbwt%2BZ81JbjfbT2m8Z&type=H
-✪ Fri, Apr 3, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Omkar Yadav ===LINK=== https://www.jobtwine.com/meeting/copilot?id=MbitxCMbowH6IWz0faitogvkHCGGnY34G8EBpHAJeqhq6xV5KsHrPVA55NN9OB1N&type=H
+✪ Fri, Apr 3, 2026, 10:00 AM IST ==> Candidate No Show ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Omkar Yadav ===LINK=== NA
 §TOMORROW§
 ✪ Sat, Apr 4, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Sandhyarani Basavaraju ===LINK=== https://www.jobtwine.com/meeting/copilot?id=xDm0soGm82l3TFHCjMFfDH3xgmxy9EP9X5zs%2FMMF4cElF9lCYPAv%2FRxVU4NfgQ37&type=H
 ✪ Sat, Apr 4, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK005 Quality Engineering Coordinator (17699) ===CANDIDATE=== Gowrilaksh Reddi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=AxZvnTfaA4WTG6%2FtggcGt0qjSPkCzuDaAmU7sIDjihioWhwFOgdj1gbfFwhCkE%2FA&type=H
@@ -21,7 +21,7 @@ Exception while fetching Vprop schedule: Expected condition failed: waiting for 
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1008-azure', java.version: '17.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35555}, goog:processID: 3554, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35555/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cc9e79da681dc6fe5de1688c3a677143
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44011}, goog:processID: 3498, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44011/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bc72332c15137ff8d9fe03c73339711
 -----------------------------------
-Updated at (IST): 03-Apr-2026 10:34:33 AM
+Updated at (IST): 03-Apr-2026 10:44:06 AM
