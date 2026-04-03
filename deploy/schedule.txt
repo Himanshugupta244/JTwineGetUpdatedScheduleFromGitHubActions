@@ -1,13 +1,26 @@
 Today's date: Apr 3
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
-Exception: Expected condition failed: waiting for visibility of element located by By.xpath: .//button[contains(text(),'Sign In')] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1008-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46441}, goog:processID: 2532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46441/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1052d0950ef1703319faeed38fb55cc8
+§TODAY§
+✪ Fri, Apr 3, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== POOJA GUJJA ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Ai12JrQvy0Z8eS9Ph8Q25j0xl4MP1ceUHxKD99YjCQwgz74rZ3YEgi1xoNIh%2BobV&type=H
+✪ Fri, Apr 3, 2026, 7:00 PM IST ==> Pending Feedback Review ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Kavya Aravapalli ===LINK=== NA
+✪ Fri, Apr 3, 2026, 6:00 PM IST ==> Candidate No Show ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Sanjay Kantamani ===LINK=== NA
+✪ Fri, Apr 3, 2026, 10:00 AM IST ==> Candidate No Show ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Omkar Yadav ===LINK=== NA
+§TOMORROW§
+✪ Sat, Apr 4, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Sandhyarani Basavaraju ===LINK=== https://www.jobtwine.com/meeting/copilot?id=xDm0soGm82l3TFHCjMFfDH3xgmxy9EP9X5zs%2FMMF4cElF9lCYPAv%2FRxVU4NfgQ37&type=H
+✪ Sat, Apr 4, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Pravalika Madipadaga ===LINK=== https://www.jobtwine.com/meeting/copilot?id=NlO4AhCSmf0FTft9um9ZT53O3pps6CNcl%2BTJUqipI9CUIDWECknjjEjQTI4SImOO&type=H
+✪ Sat, Apr 4, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK005 Quality Engineering Coordinator (17699) ===CANDIDATE=== Gowrilaksh Reddi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=AxZvnTfaA4WTG6%2FtggcGt0qjSPkCzuDaAmU7sIDjihioWhwFOgdj1gbfFwhCkE%2FA&type=H
+✪ Sat, Apr 4, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Jyothi Thummalapenta ===LINK=== https://www.jobtwine.com/meeting/copilot?id=vjIYSyR7m19fNv9w9ertYFeUuHB0ZdOrlUfqcWQ0wBAeusqjmzPR2L1pwf1F%2Ba6u&type=H
+**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
+§TODAY§
+✪ Fri, Apr 3, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Pavani Thota ===LINK=== https://www.jobtwine.com/meeting/copilot?id=oHkza1sWOhRuqKIOJ0Zgph7j9QyeNKvkFvTROooBaguMapPZV34KpmoZjNpA5S%2B9&type=H
+✪ Fri, Apr 3, 2026, 8:30 PM IST ==> Cancelled by candidate ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Veena Ainala ===LINK=== NA
+✪ Fri, Apr 3, 2026, 5:30 PM IST ==> Cancelled by candidate ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Thaneesha Anumula ===LINK=== NA
+✪ Fri, Apr 3, 2026, 12:00 PM IST ==> Is a Good Fit ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Krishnaveni Punugupati ===LINK=== NA
+§TOMORROW§
+✪ Sat, Apr 4, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== HEMA DURGA PRASAD KOPPISETTI ===LINK=== https://www.jobtwine.com/meeting/copilot?id=r2X4zhyz3NowjGhv1T0JPZKBTMlrxqSFDPdNtR833hPmwjsf47%2FAuBpPZ3JPJ45M&type=H
+✪ Sat, Apr 4, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== SREENU BIMPAVU ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Cc%2BXQluLwp8PTKn%2BRGhhtVGP4%2FPwZzbLbQGzghefdLqeDIC9PyWBdkRucefQrR9%2F&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 03-Apr-2026 11:02:52 PM
+Updated at (IST): 03-Apr-2026 11:13:36 PM
