@@ -38,23 +38,23 @@ public class DiscussionCount {
             currentPrefixes.add(today.minusDays(i).format(fmtMMM_d));
         }
 
-        // Last month prefixes
-        java.time.LocalDate lastMonthEnd = today.withDayOfMonth(1).minusDays(1);
-        int lastMonthDays = lastMonthEnd.getDayOfMonth();
-        String lastMonthLabel = lastMonthEnd.format(java.time.format.DateTimeFormatter.ofPattern("MMMM yyyy")).toUpperCase();
-        List<String> lastPrefixes = new ArrayList<>();
-        for (int i = 0; i < lastMonthDays; i++) {
-            lastPrefixes.add(lastMonthEnd.minusDays(i).format(fmtMMM_d));
-        }
+        // Last month prefixes (commented out)
+        // java.time.LocalDate lastMonthEnd = today.withDayOfMonth(1).minusDays(1);
+        // int lastMonthDays = lastMonthEnd.getDayOfMonth();
+        // String lastMonthLabel = lastMonthEnd.format(java.time.format.DateTimeFormatter.ofPattern("MMMM yyyy")).toUpperCase();
+        // List<String> lastPrefixes = new ArrayList<>();
+        // for (int i = 0; i < lastMonthDays; i++) {
+        //     lastPrefixes.add(lastMonthEnd.minusDays(i).format(fmtMMM_d));
+        // }
 
         System.out.println("Current month: " + currentMonthLabel + " (" + currentMonthDays + " days)");
-        System.out.println("Last month: " + lastMonthLabel + " (" + lastMonthDays + " days)");
+        // System.out.println("Last month: " + lastMonthLabel + " (" + lastMonthDays + " days)");
 
         // Status counts: status -> count
         Map<String, Integer> himCurrentStatus = new LinkedHashMap<>();
         Map<String, Integer> sudCurrentStatus = new LinkedHashMap<>();
-        Map<String, Integer> himLastStatus = new LinkedHashMap<>();
-        Map<String, Integer> sudLastStatus = new LinkedHashMap<>();
+        // Map<String, Integer> himLastStatus = new LinkedHashMap<>();
+        // Map<String, Integer> sudLastStatus = new LinkedHashMap<>();
 
         // ---------- Himanshu ----------
         System.out.println("======== Scraping HIM account ========");
@@ -62,8 +62,7 @@ public class DiscussionCount {
         try {
             himDriver = loginToJTwine(himUser, himPass);
             waitTillElementVisible(himDriver, By.xpath(".//span[text()='Start Meeting']"), 60);
-            scrapeAllPages(himDriver, currentPrefixes, himCurrentStatus,
-                           lastPrefixes, himLastStatus);
+            scrapeAllPages(himDriver, currentPrefixes, himCurrentStatus);
         } catch (Exception e) {
             System.err.println("Error scraping HIM: " + e.getMessage());
             e.printStackTrace();
@@ -77,8 +76,7 @@ public class DiscussionCount {
         try {
             sudDriver = loginToJTwine(sudUser, sudPass);
             waitTillElementVisible(sudDriver, By.xpath(".//span[text()='Start Meeting']"), 60);
-            scrapeAllPages(sudDriver, currentPrefixes, sudCurrentStatus,
-                           lastPrefixes, sudLastStatus);
+            scrapeAllPages(sudDriver, currentPrefixes, sudCurrentStatus);
         } catch (Exception e) {
             System.err.println("Error scraping SUD: " + e.getMessage());
             e.printStackTrace();
@@ -89,12 +87,11 @@ public class DiscussionCount {
         // Print summary
         printSummary("HIMANSHU - " + currentMonthLabel, himCurrentStatus);
         printSummary("SUDHANSHU - " + currentMonthLabel, sudCurrentStatus);
-        printSummary("HIMANSHU - " + lastMonthLabel, himLastStatus);
-        printSummary("SUDHANSHU - " + lastMonthLabel, sudLastStatus);
+        // printSummary("HIMANSHU - " + lastMonthLabel, himLastStatus);
+        // printSummary("SUDHANSHU - " + lastMonthLabel, sudLastStatus);
 
         writeHtmlReport(
-            himCurrentStatus, sudCurrentStatus, currentMonthLabel,
-            himLastStatus, sudLastStatus, lastMonthLabel
+            himCurrentStatus, sudCurrentStatus, currentMonthLabel
         );
     }
 
@@ -184,12 +181,9 @@ public class DiscussionCount {
 
     private static void scrapeAllPages(WebDriver driver,
                                        List<String> currentPrefixes,
-                                       Map<String, Integer> currentStatus,
-                                       List<String> lastPrefixes,
-                                       Map<String, Integer> lastStatus) throws Exception {
+                                       Map<String, Integer> currentStatus) throws Exception {
         System.out.println("Scraping page 1...");
-        boolean hasRelevantData = scrapePageCounts(driver, currentPrefixes, currentStatus,
-                                                   lastPrefixes, lastStatus);
+        boolean hasRelevantData = scrapePageCounts(driver, currentPrefixes, currentStatus);
 
         for (int page = 2; page <= 20; page++) {
             List<WebElement> nextBtn = driver.findElements(
@@ -203,8 +197,7 @@ public class DiscussionCount {
             waitForFixTime(10000);
 
             System.out.println("Scraping page " + page + "...");
-            hasRelevantData = scrapePageCounts(driver, currentPrefixes, currentStatus,
-                                               lastPrefixes, lastStatus);
+            hasRelevantData = scrapePageCounts(driver, currentPrefixes, currentStatus);
 
             if (!hasRelevantData) {
                 System.out.println("Page " + page + " has no data for target dates. Stopping early.");
@@ -215,12 +208,10 @@ public class DiscussionCount {
 
     private static boolean scrapePageCounts(WebDriver driver,
                                              List<String> currentPrefixes,
-                                             Map<String, Integer> currentStatus,
-                                             List<String> lastPrefixes,
-                                             Map<String, Integer> lastStatus) {
+                                             Map<String, Integer> currentStatus) {
         boolean foundAny = false;
         foundAny |= scrapeForPrefixes(driver, currentPrefixes, currentStatus);
-        foundAny |= scrapeForPrefixes(driver, lastPrefixes, lastStatus);
+        // foundAny |= scrapeForPrefixes(driver, lastPrefixes, lastStatus);
         return foundAny;
     }
 
@@ -261,8 +252,7 @@ public class DiscussionCount {
     // -------------------------------------------------------------------------
 
     private static void writeHtmlReport(
-            Map<String, Integer> himCurrentStatus, Map<String, Integer> sudCurrentStatus, String currentMonthLabel,
-            Map<String, Integer> himLastStatus, Map<String, Integer> sudLastStatus, String lastMonthLabel) {
+            Map<String, Integer> himCurrentStatus, Map<String, Integer> sudCurrentStatus, String currentMonthLabel) {
 
         java.time.ZonedDateTime nowIST =
             java.time.ZonedDateTime.now(java.time.ZoneId.of("Asia/Kolkata"));
@@ -337,25 +327,25 @@ public class DiscussionCount {
         html.append("</div>\n");
         html.append("</div>\n</div>\n");
 
-        // --- LAST MONTH (blue, collapsible) ---
-        html.append("<div class=\"section\">\n");
-        html.append("<div class=\"tab-label tab-last clickable\" onclick=\"toggleSection('last-month-body')\">\n");
-        html.append("  <span>&#127769; ").append(lastMonthLabel).append("</span>\n");
-        html.append("  <span class=\"toggle-btn\" id=\"last-month-body-icon\"><span class=\"arrow\">&#9660;</span> TAP TO EXPAND</span>\n");
-        html.append("</div>\n");
-        html.append("<div id=\"last-month-body\" class=\"collapsible-body\">\n");
-        html.append("<div class=\"section-box-last\">\n");
-        html.append("<div class=\"acc-label acc-him\"><span>&#128100; HIMANSHU</span></div>\n");
-        html.append("<div class=\"box-him\">\n");
-        appendStatusRows(html, himLastStatus);
-        html.append("</div>\n");
-        html.append("<div class=\"acc-label acc-sud\"><span>&#128101; SUDHANSHU</span></div>\n");
-        html.append("<div class=\"box-sud\">\n");
-        appendStatusRows(html, sudLastStatus);
-        html.append("</div>\n");
-        html.append("</div>\n"); // section-box-last
-        html.append("</div>\n"); // collapsible-body
-        html.append("</div>\n"); // section
+        // --- LAST MONTH (blue, collapsible) --- COMMENTED OUT
+        // html.append("<div class=\"section\">\n");
+        // html.append("<div class=\"tab-label tab-last clickable\" onclick=\"toggleSection('last-month-body')\">\n");
+        // html.append("  <span>&#127769; ").append(lastMonthLabel).append("</span>\n");
+        // html.append("  <span class=\"toggle-btn\" id=\"last-month-body-icon\"><span class=\"arrow\">&#9660;</span> TAP TO EXPAND</span>\n");
+        // html.append("</div>\n");
+        // html.append("<div id=\"last-month-body\" class=\"collapsible-body\">\n");
+        // html.append("<div class=\"section-box-last\">\n");
+        // html.append("<div class=\"acc-label acc-him\"><span>&#128100; HIMANSHU</span></div>\n");
+        // html.append("<div class=\"box-him\">\n");
+        // appendStatusRows(html, himLastStatus);
+        // html.append("</div>\n");
+        // html.append("<div class=\"acc-label acc-sud\"><span>&#128101; SUDHANSHU</span></div>\n");
+        // html.append("<div class=\"box-sud\">\n");
+        // appendStatusRows(html, sudLastStatus);
+        // html.append("</div>\n");
+        // html.append("</div>\n"); // section-box-last
+        // html.append("</div>\n"); // collapsible-body
+        // html.append("</div>\n"); // section
 
         // --- Footer ---
         html.append("<div class=\"footer\">&#9201; Updated at (IST): ").append(updatedAt).append("</div>\n");
@@ -375,11 +365,11 @@ public class DiscussionCount {
         html.append("</div>\n</body>\n</html>");
 
         try {
-            Files.write(Paths.get("deploy/discussion-count.html"),
+            Files.write(Paths.get("deploy/discussionCount/index.html"),
                 html.toString().getBytes(StandardCharsets.UTF_8));
-            System.out.println("discussion-count.html generated successfully.");
+            System.out.println("index.html generated successfully.");
         } catch (java.io.IOException ioe) {
-            System.err.println("Failed to write discussion-count.html: " + ioe.getMessage());
+            System.err.println("Failed to write index.html: " + ioe.getMessage());
         }
     }
 

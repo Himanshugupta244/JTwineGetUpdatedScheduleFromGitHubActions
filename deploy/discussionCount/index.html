@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interview Count</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;800;900&display=swap');
+* { box-sizing: border-box; font-family: 'Barlow', 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }
+body { background: #f0f0f0; padding: 12px; color: #1a1a1a; }
+.container { max-width: 480px; margin: auto; width: 100%; }
+.header { border: 3px solid #1a1a1a; background: #fff; text-align: center; padding: 16px 10px; margin-bottom: 18px; }
+.header h1 { font-size: 22px; font-weight: 900; letter-spacing: 4px; text-transform: uppercase; }
+.header p { font-size: 13px; font-weight: 700; color: #6b7280; margin-top: 4px; letter-spacing: 1px; }
+.section { margin-bottom: 18px; }
+.acc-label { padding: 10px 14px; font-size: 14px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 2px solid #e5e7eb; display: flex; align-items: center; justify-content: space-between; gap: 7px; }
+.acc-him { background: #ede9fe; color: #4c1d95; border: 3px solid #7c3aed; border-bottom: 2px solid #e5e7eb; }
+.acc-sud { background: #d1fae5; color: #064e3b; border: 3px solid #059669; border-bottom: 2px solid #e5e7eb; }
+.box-him { border: 3px solid #7c3aed; border-top: none; background: #fff; }
+.box-sud { border: 3px solid #059669; border-top: none; background: #fff; }
+.row { display: flex; align-items: stretch; border-bottom: 1px solid #e5e7eb; }
+.row:last-child { border-bottom: none; }
+.col-date { flex: 1; padding: 10px 14px; font-weight: 800; font-size: 14px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.3px; line-height: 1.4; }
+.col-count { flex: 0 0 60px; padding: 10px 14px; font-weight: 900; font-size: 20px; text-align: center; line-height: 1.4; }
+.cnt-zero { color: #d1d5db; }
+.cnt-pos { color: #15803d; }
+.row-total { border-top: 3px solid #1a1a1a; background: #f9fafb; }
+.row-total .col-date { font-weight: 900; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color: #1a1a1a; }
+.row-total .col-count { font-weight: 900; font-size: 22px; color: #1a1a1a; }
+.row-success { background: #ecfdf5; }
+.row-success .col-date { font-weight: 900; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color: #15803d; }
+.row-success .col-count { font-weight: 900; font-size: 22px; color: #15803d; }
+.tab-label { display: inline-block; padding: 8px 20px; font-size: 15px; font-weight: 900; border-bottom: none; margin-left: 0; letter-spacing: 2px; text-transform: uppercase; }
+.tab-current { background: #15803d; color: #fff; }
+.tab-last { background: #1d4ed8; color: #fff; }
+.section-box-current { border: 3px solid #15803d; background: #fff; }
+.section-box-last { border: 3px solid #1d4ed8; background: #fff; }
+.collapsible-body { display: none; }
+.collapsible-body.open { display: block; }
+.tab-label.clickable { cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+.toggle-btn { display: inline-flex; align-items: center; gap: 5px; padding: 4px 14px; font-size: 11px; font-weight: 900; letter-spacing: 1px; color: #1d4ed8; background: #fff; border: 2px solid #fff; border-radius: 20px; white-space: nowrap; transition: background 0.2s, transform 0.15s; box-shadow: 0 1px 3px rgba(0,0,0,0.15); }
+.toggle-btn:hover { background: #dbeafe; transform: scale(1.05); }
+.toggle-btn .arrow { font-size: 13px; line-height: 1; }
+.footer { border: 3px solid #1a1a1a; padding: 12px; font-size: 13px; font-weight: 800; letter-spacing: 1px; background: #fff; text-align: center; margin-top: 4px; }
+@media (max-width: 480px) {
+  body { padding: 10px; }
+  .header h1 { font-size: 18px; letter-spacing: 3px; }
+  .acc-label { font-size: 13px; padding: 9px 12px; }
+  .col-date { font-size: 13px; padding: 9px 12px; }
+  .col-count { font-size: 18px; padding: 9px 10px; }
+  .footer { font-size: 12px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header"><h1>&#128202; INTERVIEW COUNT</h1></div>
+<div class="section">
+<div class="tab-label tab-current">&#9728;&#65039; APRIL 2026</div>
+<div class="section-box-current">
+<div class="acc-label acc-him"><span>&#128100; HIMANSHU</span></div>
+<div class="box-him">
+<div class="row"><div class="col-date">Scheduled</div><div class="col-count cnt-pos">1</div></div>
+<div class="row"><div class="col-date">Candidate No Show</div><div class="col-count cnt-pos">10</div></div>
+<div class="row"><div class="col-date">Is a Good Fit</div><div class="col-count cnt-pos">4</div></div>
+<div class="row"><div class="col-date">Strongly Recommended</div><div class="col-count cnt-pos">1</div></div>
+<div class="row"><div class="col-date">Not Recommended</div><div class="col-count cnt-pos">5</div></div>
+<div class="row"><div class="col-date">Cancelled</div><div class="col-count cnt-pos">1</div></div>
+<div class="row row-total"><div class="col-date">&#128202; Total</div><div class="col-count">22</div></div>
+<div class="row row-success"><div class="col-date">&#9989; Successful</div><div class="col-count">10</div></div>
+</div>
+<div class="acc-label acc-sud"><span>&#128101; SUDHANSHU</span></div>
+<div class="box-sud">
+<div class="row"><div class="col-date">Scheduled</div><div class="col-count cnt-pos">1</div></div>
+<div class="row"><div class="col-date">Candidate No Show</div><div class="col-count cnt-pos">3</div></div>
+<div class="row"><div class="col-date">Is a Good Fit</div><div class="col-count cnt-pos">4</div></div>
+<div class="row"><div class="col-date">Cancelled</div><div class="col-count cnt-pos">1</div></div>
+<div class="row"><div class="col-date">Cancelled by candidate</div><div class="col-count cnt-pos">2</div></div>
+<div class="row"><div class="col-date">Not Recommended</div><div class="col-count cnt-pos">8</div></div>
+<div class="row row-total"><div class="col-date">&#128202; Total</div><div class="col-count">19</div></div>
+<div class="row row-success"><div class="col-date">&#9989; Successful</div><div class="col-count">12</div></div>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="tab-label tab-last clickable" onclick="toggleSection('last-month-body')">
+  <span>&#127769; MARCH 2026</span>
+  <span class="toggle-btn" id="last-month-body-icon"><span class="arrow">&#9660;</span> TAP TO EXPAND</span>
+</div>
+<div id="last-month-body" class="collapsible-body">
+<div class="section-box-last">
+<div class="acc-label acc-him"><span>&#128100; HIMANSHU</span></div>
+<div class="box-him">
+<div class="row"><div class="col-date">Not Recommended</div><div class="col-count cnt-pos">35</div></div>
+<div class="row"><div class="col-date">Is a Good Fit</div><div class="col-count cnt-pos">52</div></div>
+<div class="row"><div class="col-date">Strongly Recommended</div><div class="col-count cnt-pos">3</div></div>
+<div class="row"><div class="col-date">Candidate No Show</div><div class="col-count cnt-pos">12</div></div>
+<div class="row"><div class="col-date">Cancelled by candidate</div><div class="col-count cnt-pos">3</div></div>
+<div class="row"><div class="col-date">Dropped</div><div class="col-count cnt-pos">4</div></div>
+<div class="row row-total"><div class="col-date">&#128202; Total</div><div class="col-count">109</div></div>
+<div class="row row-success"><div class="col-date">&#9989; Successful</div><div class="col-count">90</div></div>
+</div>
+<div class="acc-label acc-sud"><span>&#128101; SUDHANSHU</span></div>
+<div class="box-sud">
+<div class="row"><div class="col-date">Is a Good Fit</div><div class="col-count cnt-pos">49</div></div>
+<div class="row"><div class="col-date">Not Recommended</div><div class="col-count cnt-pos">21</div></div>
+<div class="row"><div class="col-date">Candidate No Show</div><div class="col-count cnt-pos">7</div></div>
+<div class="row"><div class="col-date">Strongly Recommended</div><div class="col-count cnt-pos">1</div></div>
+<div class="row"><div class="col-date">Cancelled</div><div class="col-count cnt-pos">1</div></div>
+<div class="row"><div class="col-date">Dropped</div><div class="col-count cnt-pos">1</div></div>
+<div class="row"><div class="col-date">Cancelled by candidate</div><div class="col-count cnt-pos">1</div></div>
+<div class="row row-total"><div class="col-date">&#128202; Total</div><div class="col-count">81</div></div>
+<div class="row row-success"><div class="col-date">&#9989; Successful</div><div class="col-count">71</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">&#9201; Updated at (IST): 05-Apr-2026 05:40:57 PM</div>
+<script>
+function toggleSection(id) {
+  var body = document.getElementById(id);
+  var icon = document.getElementById(id + '-icon');
+  if (body.classList.contains('open')) {
+    body.classList.remove('open');
+    icon.innerHTML = "<span class='arrow'>&#9660;</span> TAP TO EXPAND";
+  } else {
+    body.classList.add('open');
+    icon.innerHTML = "<span class='arrow'>&#9650;</span> TAP TO COLLAPSE";
+  }
+}
+</script>
+</div>
+</body>
+</html>
