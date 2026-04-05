@@ -17,6 +17,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DiscussionCount {
 
+    private static final String[] SUCCESSFUL_STATUSES = {
+        "Not Recommended", "Is a Good Fit", "Strongly Recommended"
+    };
+
     public static void main(String[] args) {
         String himUser = System.getenv("JTWINE_USERNAME_HIM");
         String himPass = System.getenv("JTWINE_PASSWORD_HIM");
@@ -25,49 +29,32 @@ public class DiscussionCount {
 
         java.time.LocalDate today = java.time.LocalDate.now(java.time.ZoneId.of("Asia/Kolkata"));
         java.time.format.DateTimeFormatter fmtMMM_d = java.time.format.DateTimeFormatter.ofPattern("MMM d','");
-        java.time.format.DateTimeFormatter fmtDisplay = java.time.format.DateTimeFormatter.ofPattern("d MMM '['EEE']'");
 
-        // Current month: 1st to today (most recent first)
+        // Current month prefixes
         int currentMonthDays = today.getDayOfMonth();
         String currentMonthLabel = today.format(java.time.format.DateTimeFormatter.ofPattern("MMMM yyyy")).toUpperCase();
         List<String> currentPrefixes = new ArrayList<>();
-        List<String> currentDisplayLabels = new ArrayList<>();
         for (int i = 0; i < currentMonthDays; i++) {
-            java.time.LocalDate d = today.minusDays(i);
-            currentPrefixes.add(d.format(fmtMMM_d));
-            currentDisplayLabels.add(d.format(fmtDisplay));
+            currentPrefixes.add(today.minusDays(i).format(fmtMMM_d));
         }
 
-        // Last month: 1st to last day (most recent first)
+        // Last month prefixes
         java.time.LocalDate lastMonthEnd = today.withDayOfMonth(1).minusDays(1);
-        java.time.LocalDate lastMonthStart = lastMonthEnd.withDayOfMonth(1);
         int lastMonthDays = lastMonthEnd.getDayOfMonth();
         String lastMonthLabel = lastMonthEnd.format(java.time.format.DateTimeFormatter.ofPattern("MMMM yyyy")).toUpperCase();
         List<String> lastPrefixes = new ArrayList<>();
-        List<String> lastDisplayLabels = new ArrayList<>();
         for (int i = 0; i < lastMonthDays; i++) {
-            java.time.LocalDate d = lastMonthEnd.minusDays(i);
-            lastPrefixes.add(d.format(fmtMMM_d));
-            lastDisplayLabels.add(d.format(fmtDisplay));
+            lastPrefixes.add(lastMonthEnd.minusDays(i).format(fmtMMM_d));
         }
 
         System.out.println("Current month: " + currentMonthLabel + " (" + currentMonthDays + " days)");
         System.out.println("Last month: " + lastMonthLabel + " (" + lastMonthDays + " days)");
 
-        // Counts per month per user: dateIndex -> count
-        Map<Integer, Integer> himCurrentCounts = initCounts(currentMonthDays);
-        Map<Integer, Integer> himCurrentSuccess = initCounts(currentMonthDays);
-        Map<Integer, Integer> sudCurrentCounts = initCounts(currentMonthDays);
-        Map<Integer, Integer> sudCurrentSuccess = initCounts(currentMonthDays);
-        Map<Integer, Integer> himLastCounts = initCounts(lastMonthDays);
-        Map<Integer, Integer> himLastSuccess = initCounts(lastMonthDays);
-        Map<Integer, Integer> sudLastCounts = initCounts(lastMonthDays);
-        Map<Integer, Integer> sudLastSuccess = initCounts(lastMonthDays);
-
-        // Combine all prefixes for scraping (current + last month)
-        List<String> allPrefixes = new ArrayList<>();
-        allPrefixes.addAll(currentPrefixes);
-        allPrefixes.addAll(lastPrefixes);
+        // Status counts: status -> count
+        Map<String, Integer> himCurrentStatus = new LinkedHashMap<>();
+        Map<String, Integer> sudCurrentStatus = new LinkedHashMap<>();
+        Map<String, Integer> himLastStatus = new LinkedHashMap<>();
+        Map<String, Integer> sudLastStatus = new LinkedHashMap<>();
 
         // ---------- Himanshu ----------
         System.out.println("======== Scraping HIM account ========");
@@ -75,8 +62,8 @@ public class DiscussionCount {
         try {
             himDriver = loginToJTwine(himUser, himPass);
             waitTillElementVisible(himDriver, By.xpath(".//span[text()='Start Meeting']"), 60);
-            scrapeAllPages(himDriver, currentPrefixes, himCurrentCounts, himCurrentSuccess,
-                           lastPrefixes, himLastCounts, himLastSuccess);
+            scrapeAllPages(himDriver, currentPrefixes, himCurrentStatus,
+                           lastPrefixes, himLastStatus);
         } catch (Exception e) {
             System.err.println("Error scraping HIM: " + e.getMessage());
             e.printStackTrace();
@@ -90,8 +77,8 @@ public class DiscussionCount {
         try {
             sudDriver = loginToJTwine(sudUser, sudPass);
             waitTillElementVisible(sudDriver, By.xpath(".//span[text()='Start Meeting']"), 60);
-            scrapeAllPages(sudDriver, currentPrefixes, sudCurrentCounts, sudCurrentSuccess,
-                           lastPrefixes, sudLastCounts, sudLastSuccess);
+            scrapeAllPages(sudDriver, currentPrefixes, sudCurrentStatus,
+                           lastPrefixes, sudLastStatus);
         } catch (Exception e) {
             System.err.println("Error scraping SUD: " + e.getMessage());
             e.printStackTrace();
@@ -100,46 +87,44 @@ public class DiscussionCount {
         }
 
         // Print summary
-        int[] himCurrentTotals = sumCounts(himCurrentCounts, himCurrentSuccess, currentMonthDays);
-        int[] sudCurrentTotals = sumCounts(sudCurrentCounts, sudCurrentSuccess, currentMonthDays);
-        int[] himLastTotals = sumCounts(himLastCounts, himLastSuccess, lastMonthDays);
-        int[] sudLastTotals = sumCounts(sudLastCounts, sudLastSuccess, lastMonthDays);
-
-        printSummary("HIMANSHU - " + currentMonthLabel, currentDisplayLabels, himCurrentCounts, himCurrentSuccess, himCurrentTotals);
-        printSummary("SUDHANSHU - " + currentMonthLabel, currentDisplayLabels, sudCurrentCounts, sudCurrentSuccess, sudCurrentTotals);
-        printSummary("HIMANSHU - " + lastMonthLabel, lastDisplayLabels, himLastCounts, himLastSuccess, himLastTotals);
-        printSummary("SUDHANSHU - " + lastMonthLabel, lastDisplayLabels, sudLastCounts, sudLastSuccess, sudLastTotals);
+        printSummary("HIMANSHU - " + currentMonthLabel, himCurrentStatus);
+        printSummary("SUDHANSHU - " + currentMonthLabel, sudCurrentStatus);
+        printSummary("HIMANSHU - " + lastMonthLabel, himLastStatus);
+        printSummary("SUDHANSHU - " + lastMonthLabel, sudLastStatus);
 
         writeHtmlReport(
-            himCurrentCounts, himCurrentSuccess, sudCurrentCounts, sudCurrentSuccess, currentDisplayLabels,
-            himCurrentTotals, sudCurrentTotals, currentMonthLabel,
-            himLastCounts, himLastSuccess, sudLastCounts, sudLastSuccess, lastDisplayLabels,
-            himLastTotals, sudLastTotals, lastMonthLabel
+            himCurrentStatus, sudCurrentStatus, currentMonthLabel,
+            himLastStatus, sudLastStatus, lastMonthLabel
         );
     }
 
-    private static Map<Integer, Integer> initCounts(int days) {
-        Map<Integer, Integer> map = new LinkedHashMap<>();
-        for (int i = 0; i < days; i++) map.put(i, 0);
-        return map;
-    }
-
-    private static int[] sumCounts(Map<Integer, Integer> counts, Map<Integer, Integer> success, int days) {
-        int total = 0, successTotal = 0;
-        for (int i = 0; i < days; i++) {
-            total += counts.getOrDefault(i, 0);
-            successTotal += success.getOrDefault(i, 0);
+    private static boolean isSuccessfulStatus(String status) {
+        for (String s : SUCCESSFUL_STATUSES) {
+            if (s.equals(status)) return true;
         }
-        return new int[]{total, successTotal};
+        return false;
     }
 
-    private static void printSummary(String label, List<String> displayLabels,
-                                      Map<Integer, Integer> counts, Map<Integer, Integer> success, int[] totals) {
+    private static int getTotal(Map<String, Integer> statusCounts) {
+        int total = 0;
+        for (int v : statusCounts.values()) total += v;
+        return total;
+    }
+
+    private static int getSuccessful(Map<String, Integer> statusCounts) {
+        int success = 0;
+        for (Map.Entry<String, Integer> e : statusCounts.entrySet()) {
+            if (isSuccessfulStatus(e.getKey())) success += e.getValue();
+        }
+        return success;
+    }
+
+    private static void printSummary(String label, Map<String, Integer> statusCounts) {
         System.out.println("\n---- " + label + " ----");
-        for (int i = 0; i < displayLabels.size(); i++) {
-            System.out.println("  " + displayLabels.get(i) + " : " + counts.get(i) + " (successful: " + success.get(i) + ")");
+        for (Map.Entry<String, Integer> e : statusCounts.entrySet()) {
+            System.out.println("  " + e.getKey() + ": " + e.getValue());
         }
-        System.out.println("  TOTAL: " + totals[0] + " | SUCCESSFUL: " + totals[1]);
+        System.out.println("  TOTAL: " + getTotal(statusCounts) + " | SUCCESSFUL: " + getSuccessful(statusCounts));
     }
 
     // -------------------------------------------------------------------------
@@ -197,22 +182,14 @@ public class DiscussionCount {
     // Pagination scraping
     // -------------------------------------------------------------------------
 
-    private static boolean isSuccessfulStatus(String status) {
-        return "Not Recommended".equals(status)
-            || "Is a Good Fit".equals(status)
-            || "Strongly Recommended".equals(status);
-    }
-
     private static void scrapeAllPages(WebDriver driver,
                                        List<String> currentPrefixes,
-                                       Map<Integer, Integer> currentCounts,
-                                       Map<Integer, Integer> currentSuccess,
+                                       Map<String, Integer> currentStatus,
                                        List<String> lastPrefixes,
-                                       Map<Integer, Integer> lastCounts,
-                                       Map<Integer, Integer> lastSuccess) throws Exception {
+                                       Map<String, Integer> lastStatus) throws Exception {
         System.out.println("Scraping page 1...");
-        boolean hasRelevantData = scrapePageCounts(driver, currentPrefixes, currentCounts, currentSuccess,
-                                                   lastPrefixes, lastCounts, lastSuccess);
+        boolean hasRelevantData = scrapePageCounts(driver, currentPrefixes, currentStatus,
+                                                   lastPrefixes, lastStatus);
 
         for (int page = 2; page <= 20; page++) {
             List<WebElement> nextBtn = driver.findElements(
@@ -226,8 +203,8 @@ public class DiscussionCount {
             waitForFixTime(10000);
 
             System.out.println("Scraping page " + page + "...");
-            hasRelevantData = scrapePageCounts(driver, currentPrefixes, currentCounts, currentSuccess,
-                                               lastPrefixes, lastCounts, lastSuccess);
+            hasRelevantData = scrapePageCounts(driver, currentPrefixes, currentStatus,
+                                               lastPrefixes, lastStatus);
 
             if (!hasRelevantData) {
                 System.out.println("Page " + page + " has no data for target dates. Stopping early.");
@@ -238,21 +215,18 @@ public class DiscussionCount {
 
     private static boolean scrapePageCounts(WebDriver driver,
                                              List<String> currentPrefixes,
-                                             Map<Integer, Integer> currentCounts,
-                                             Map<Integer, Integer> currentSuccess,
+                                             Map<String, Integer> currentStatus,
                                              List<String> lastPrefixes,
-                                             Map<Integer, Integer> lastCounts,
-                                             Map<Integer, Integer> lastSuccess) {
+                                             Map<String, Integer> lastStatus) {
         boolean foundAny = false;
-        foundAny |= scrapeForPrefixes(driver, currentPrefixes, currentCounts, currentSuccess);
-        foundAny |= scrapeForPrefixes(driver, lastPrefixes, lastCounts, lastSuccess);
+        foundAny |= scrapeForPrefixes(driver, currentPrefixes, currentStatus);
+        foundAny |= scrapeForPrefixes(driver, lastPrefixes, lastStatus);
         return foundAny;
     }
 
     private static boolean scrapeForPrefixes(WebDriver driver,
                                               List<String> datePrefixes,
-                                              Map<Integer, Integer> counts,
-                                              Map<Integer, Integer> successfulCounts) {
+                                              Map<String, Integer> statusCounts) {
         boolean foundAny = false;
 
         for (int i = 0; i < datePrefixes.size(); i++) {
@@ -261,24 +235,21 @@ public class DiscussionCount {
                 "//ancestor::div[contains(@class,'candidate-details-sec')]";
             List<WebElement> cards = driver.findElements(By.xpath(cardXpath));
             if (!cards.isEmpty()) {
-                counts.put(i, counts.get(i) + cards.size());
                 foundAny = true;
-                int successOnPage = 0;
                 for (WebElement card : cards) {
+                    String status = "Cancelled";
                     try {
                         List<WebElement> statusDivs = card.findElements(By.xpath(".//div[contains(@class,'btn-chip')]/div"));
                         if (!statusDivs.isEmpty()) {
-                            String status = statusDivs.get(0).getText().trim();
-                            if (isSuccessfulStatus(status)) {
-                                successOnPage++;
-                            }
+                            String s = statusDivs.get(0).getText().trim();
+                            if (!s.isEmpty()) status = s;
                         }
                     } catch (Exception e) {
                         System.out.println("  Could not read status for a card: " + e.getMessage());
                     }
+                    statusCounts.merge(status, 1, Integer::sum);
                 }
-                successfulCounts.put(i, successfulCounts.get(i) + successOnPage);
-                System.out.println("  " + prefix + " => " + cards.size() + " interviews (" + successOnPage + " successful) on this page");
+                System.out.println("  " + prefix + " => " + cards.size() + " interviews on this page");
             }
         }
 
@@ -290,14 +261,8 @@ public class DiscussionCount {
     // -------------------------------------------------------------------------
 
     private static void writeHtmlReport(
-            Map<Integer, Integer> himCurrentCounts, Map<Integer, Integer> himCurrentSuccess,
-            Map<Integer, Integer> sudCurrentCounts, Map<Integer, Integer> sudCurrentSuccess,
-            List<String> currentDisplayLabels,
-            int[] himCurrentTotals, int[] sudCurrentTotals, String currentMonthLabel,
-            Map<Integer, Integer> himLastCounts, Map<Integer, Integer> himLastSuccess,
-            Map<Integer, Integer> sudLastCounts, Map<Integer, Integer> sudLastSuccess,
-            List<String> lastDisplayLabels,
-            int[] himLastTotals, int[] sudLastTotals, String lastMonthLabel) {
+            Map<String, Integer> himCurrentStatus, Map<String, Integer> sudCurrentStatus, String currentMonthLabel,
+            Map<String, Integer> himLastStatus, Map<String, Integer> sudLastStatus, String lastMonthLabel) {
 
         java.time.ZonedDateTime nowIST =
             java.time.ZonedDateTime.now(java.time.ZoneId.of("Asia/Kolkata"));
@@ -327,12 +292,11 @@ public class DiscussionCount {
         html.append(".col-date { flex: 1; padding: 10px 14px; font-weight: 800; font-size: 14px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.3px; line-height: 1.4; }\n");
         html.append(".col-count { flex: 0 0 60px; padding: 10px 14px; font-weight: 900; font-size: 20px; text-align: center; line-height: 1.4; }\n");
         html.append(".cnt-zero { color: #d1d5db; }\n");
-        html.append(".cnt-pos { color: #15803d; }\n");
-        html.append(".row-today { background: #fef9c3; }\n");
+        html.append(".cnt-pos { color: #1a1a1a; }\n");
         html.append(".row-total { border-top: 3px solid #1a1a1a; background: #f9fafb; }\n");
         html.append(".row-total .col-date { font-weight: 900; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color: #1a1a1a; }\n");
         html.append(".row-total .col-count { font-weight: 900; font-size: 22px; color: #1a1a1a; }\n");
-        html.append(".row-success { background: #ecfdf5; border-top: 2px solid #059669; }\n");
+        html.append(".row-success { background: #ecfdf5; }\n");
         html.append(".row-success .col-date { font-weight: 900; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color: #15803d; }\n");
         html.append(".row-success .col-count { font-weight: 900; font-size: 22px; color: #15803d; }\n");
         html.append(".tab-label { display: inline-block; padding: 8px 20px; font-size: 15px; font-weight: 900; border-bottom: none; margin-left: 0; letter-spacing: 2px; text-transform: uppercase; }\n");
@@ -365,13 +329,11 @@ public class DiscussionCount {
         html.append("<div class=\"section-box-current\">\n");
         html.append("<div class=\"acc-label acc-him\"><span>&#128100; HIMANSHU</span></div>\n");
         html.append("<div class=\"box-him\">\n");
-        appendDateRows(html, himCurrentCounts, currentDisplayLabels, true);
-        appendSummaryRows(html, himCurrentTotals[1], himCurrentTotals[0]);
+        appendStatusRows(html, himCurrentStatus);
         html.append("</div>\n");
         html.append("<div class=\"acc-label acc-sud\"><span>&#128101; SUDHANSHU</span></div>\n");
         html.append("<div class=\"box-sud\">\n");
-        appendDateRows(html, sudCurrentCounts, currentDisplayLabels, true);
-        appendSummaryRows(html, sudCurrentTotals[1], sudCurrentTotals[0]);
+        appendStatusRows(html, sudCurrentStatus);
         html.append("</div>\n");
         html.append("</div>\n</div>\n");
 
@@ -385,13 +347,11 @@ public class DiscussionCount {
         html.append("<div class=\"section-box-last\">\n");
         html.append("<div class=\"acc-label acc-him\"><span>&#128100; HIMANSHU</span></div>\n");
         html.append("<div class=\"box-him\">\n");
-        appendDateRows(html, himLastCounts, lastDisplayLabels, false);
-        appendSummaryRows(html, himLastTotals[1], himLastTotals[0]);
+        appendStatusRows(html, himLastStatus);
         html.append("</div>\n");
         html.append("<div class=\"acc-label acc-sud\"><span>&#128101; SUDHANSHU</span></div>\n");
         html.append("<div class=\"box-sud\">\n");
-        appendDateRows(html, sudLastCounts, lastDisplayLabels, false);
-        appendSummaryRows(html, sudLastTotals[1], sudLastTotals[0]);
+        appendStatusRows(html, sudLastStatus);
         html.append("</div>\n");
         html.append("</div>\n"); // section-box-last
         html.append("</div>\n"); // collapsible-body
@@ -423,31 +383,27 @@ public class DiscussionCount {
         }
     }
 
-    private static void appendDateRows(StringBuilder html,
-                                        Map<Integer, Integer> counts,
-                                        List<String> dateDisplayLabels,
-                                        boolean highlightFirst) {
-        for (int i = 0; i < dateDisplayLabels.size(); i++) {
-            int count = counts.getOrDefault(i, 0);
-            String rowClass = (highlightFirst && i == 0) ? "row row-today" : "row";
+    private static void appendStatusRows(StringBuilder html, Map<String, Integer> statusCounts) {
+        // Individual status rows
+        for (Map.Entry<String, Integer> e : statusCounts.entrySet()) {
+            int count = e.getValue();
             String countClass = (count == 0) ? "cnt-zero" : "cnt-pos";
-            html.append("<div class=\"").append(rowClass).append("\">");
-            html.append("<div class=\"col-date\">").append(escapeHtml(dateDisplayLabels.get(i)));
-            if (highlightFirst && i == 0) html.append(" &#128994;");
-            html.append("</div>");
-            html.append("<div class=\"col-count ").append(countClass).append("\">").append(count).append("</div>");
-            html.append("</div>\n");
+            html.append("<div class=\"row\">")
+                .append("<div class=\"col-date\">").append(escapeHtml(e.getKey())).append("</div>")
+                .append("<div class=\"col-count ").append(countClass).append("\">").append(count).append("</div>")
+                .append("</div>\n");
         }
-    }
-
-    private static void appendSummaryRows(StringBuilder html, int successTotal, int total) {
-        html.append("<div class=\"row row-success\">")
-            .append("<div class=\"col-date\">&#9989; Successful</div>")
-            .append("<div class=\"col-count\">").append(successTotal).append("</div>")
-            .append("</div>\n");
+        // Total row (above Successful)
+        int total = getTotal(statusCounts);
         html.append("<div class=\"row row-total\">")
             .append("<div class=\"col-date\">&#128202; Total</div>")
             .append("<div class=\"col-count\">").append(total).append("</div>")
+            .append("</div>\n");
+        // Successful row
+        int successful = getSuccessful(statusCounts);
+        html.append("<div class=\"row row-success\">")
+            .append("<div class=\"col-date\">&#9989; Successful</div>")
+            .append("<div class=\"col-count\">").append(successful).append("</div>")
             .append("</div>\n");
     }
 
