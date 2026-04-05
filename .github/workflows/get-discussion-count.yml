@@ -3,7 +3,7 @@ name: Get Count of Discussions
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 23 * * *'
+    - cron: '00 00 * * *'
 
 jobs:
   get-count:
