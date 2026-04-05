@@ -4,7 +4,7 @@ Today's date: Apr 5
 ✪ Sun, Apr 5, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Manjula Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=m6HsLLRAza6qbUdzMntbTpjanSMYX4e0jbogT6MPXDiw06uXTQ3hc4hN5UPA6bm8&type=H
 ✪ Sun, Apr 5, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Srikanth Ippili ===LINK=== https://www.jobtwine.com/meeting/copilot?id=py9Rt5POnQa553bKfLR6av1nNxwYNEmFTQfyIQmKJS9PdfdYaJECb6N6QraHA3JU&type=H
 ✪ Sun, Apr 5, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Yeswanth Kundam ===LINK=== https://www.jobtwine.com/meeting/copilot?id=py4GzQpWGEdcANqn0VrfMvZyBnGOYwIh3W0eCnkOVQ1DEEW23umpd1G8Kp8fTklD&type=H
-✪ Sun, Apr 5, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Rajesh Jangala ===LINK=== https://www.jobtwine.com/meeting/copilot?id=v0DZzyvMhry0W0Y2M%2Bqq9akTLhDWmYh5B6XgQLOFbaEF4QLuPk75FyJkbU546JZe&type=H
+✪ Sun, Apr 5, 2026, 11:00 AM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Rajesh Jangala ===LINK=== NA
 §TOMORROW§
 ✪ Mon, Apr 6, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK005 Quality Engineering Coordinator (17699) ===CANDIDATE=== SUREKHA S ===LINK=== https://www.jobtwine.com/meeting/copilot?id=HX72l7INSB2f0YPB%2BYhCshar0U5%2F55gsuQ88glLAVxgJs2QfkYvom258bg%2BaOND5&type=H
 ✪ Mon, Apr 6, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCVS003 (17664) ===CANDIDATE=== Ram Silla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ZrjBp44RFckneeCIcC%2BCplPxOfP8YYf4Y9OFrDlTT9%2FIJdXhaxpYS43A4klxKcvt&type=H
@@ -30,4 +30,4 @@ Today's date: Apr 5
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 05-Apr-2026 11:36:32 AM
+Updated at (IST): 05-Apr-2026 11:45:53 AM
