@@ -31,7 +31,7 @@ jobs:
         JTWINE_PASSWORD_HIM: ${{ secrets.JTWINE_PASSWORD_HIM }}
         JTWINE_USERNAME_SUD: ${{ secrets.JTWINE_USERNAME_SUD }}
         JTWINE_PASSWORD_SUD: ${{ secrets.JTWINE_PASSWORD_SUD }}
-      run: mvn exec:java -Dexec.mainClass="GmailProjectForGitHubActions.DiscussionStatusCountReport"
+      run: mvn exec:java -Dexec.mainClass="GmailProjectForGitHubActions.DiscussionCount"
 
     - name: Move and Commit schedule.txt
       run: |
@@ -54,5 +54,5 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./discussionCountDir/
+        local-dir: ./deploy/discussionCount/
         server-dir: ./
