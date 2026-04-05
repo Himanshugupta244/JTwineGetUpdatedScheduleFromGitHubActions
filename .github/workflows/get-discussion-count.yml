@@ -46,8 +46,8 @@ jobs:
     - name: Upload discussionCount/index.html via FTP to Hostinger
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        server: ${{ secrets.FTP_SERVER_FORDISCUSSIONCOUNT }}
+        username: ${{ secrets.FTP_USERNAME_FORDISCUSSIONCOUNT }}
+        password: ${{ secrets.FTP_PASSWORD_FORDISCUSSIONCOUNT }}
         local-dir: ./deploy/discussionCount/
         server-dir: ./
