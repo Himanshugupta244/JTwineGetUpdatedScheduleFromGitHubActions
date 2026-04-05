@@ -50,4 +50,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./deploy/discussionCount/
-        server-dir: ./home/u742248722/domains/confidential.codifixsolutions.com/public_html/
+        server-dir: ./
