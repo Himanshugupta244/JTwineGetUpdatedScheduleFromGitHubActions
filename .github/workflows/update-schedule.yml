@@ -48,6 +48,7 @@ jobs:
 
         git add deploy/schedule.txt
         git commit -m "Update schedule.txt [ci skip]" || echo "No changes"
+        git pull --rebase origin main
         git push --force-with-lease
 
     - name: Upload schedule.txt via FTP to Hostinger
