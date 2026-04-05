@@ -27,11 +27,7 @@ Today's date: Apr 5
 ✪ Mon, Apr 6, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Prudhviraj Chillamcharla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=kLJx1BITUFU5FU4fhheesBeH6%2B1l2qn85z65BBleH454qUu8vGQ%2BRAdJVJx8G%2B%2By&type=H
 ✪ Mon, Apr 6, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Arun Kumar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=nw46Ovo3VSDEYsCWgSCj1b4BdwaI26noh3Uq%2BgfDiKxOy0X1qunKLgj0YpeMQiqz&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
-Exception while fetching Vprop schedule: Expected condition failed: waiting for visibility of element located by By.xpath: .//header//span[text()='Himanshu'] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1008-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37629}, goog:processID: 3706, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37629/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cc03280d71879bd7201533a55d0f2038
+No discussions scheduled for today in Vprop.
+No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 05-Apr-2026 08:26:26 AM
+Updated at (IST): 05-Apr-2026 08:36:36 AM
