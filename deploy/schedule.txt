@@ -4,7 +4,7 @@ Today's date: Apr 6
 ✪ Mon, Apr 6, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK005 Quality Engineering Coordinator (17699) ===CANDIDATE=== SUREKHA S ===LINK=== https://www.jobtwine.com/meeting/copilot?id=HX72l7INSB2f0YPB%2BYhCshar0U5%2F55gsuQ88glLAVxgJs2QfkYvom258bg%2BaOND5&type=H
 ✪ Mon, Apr 6, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCVS003 (17664) ===CANDIDATE=== Ram Silla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ZrjBp44RFckneeCIcC%2BCplPxOfP8YYf4Y9OFrDlTT9%2FIJdXhaxpYS43A4klxKcvt&type=H
 ✪ Mon, Apr 6, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Sivananda Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Yg%2B0O62RzbX3TojMYLJL63f4Stsa6zTannWEy156R5VBLVOJlP6SOlTxhEIUg82A&type=H
-✪ Mon, Apr 6, 2026, 2:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Ganesh Challa ===LINK=== https://www.jobtwine.com/meeting/copilot?id=mJTUPaveIFDvAUOo1gNdbiBJgaXT6kgWVXR%2B41Qdhd18pzyxR7T8sAc5ndk1EgkT&type=H
+✪ Mon, Apr 6, 2026, 2:30 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Ganesh Challa ===LINK=== NA
 ✪ Mon, Apr 6, 2026, 1:00 PM IST ==> Not Recommended ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Himaja Varam ===LINK=== NA
 ✪ Mon, Apr 6, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Rahul Gandla ===LINK=== NA
 ✪ Mon, Apr 6, 2026, 11:00 AM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Kranthi K ===LINK=== NA
@@ -12,6 +12,7 @@ Today's date: Apr 6
 ✪ Tue, Apr 7, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== SDET (13303) ===CANDIDATE=== Sai Vanama ===LINK=== https://www.jobtwine.com/meeting/copilot?id=TCVTTxC4LhSmbSR5e5yLm3emumlU17xbmce27KUuYmpgWnXL0uvfu80JHAqT3ivg&type=H
 ✪ Tue, Apr 7, 2026, 1:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Anvesh Yenaganti ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Xr1Wa6DAIEbyPp%2F%2BBbILO6R%2FWw%2F%2FQ6dh4TVA%2FHXnTcYjLlS0y%2B6n%2F9D0pyppgHLl&type=H
 ✪ Tue, Apr 7, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Naveen Adabala ===LINK=== https://www.jobtwine.com/meeting/copilot?id=mrUdXhZ3XSSFgoXZZcdxW8v3K4H9mlkQqAXgdRKej22g0DjFCtwxNdP5sXXWfCsV&type=H
+✪ Tue, Apr 7, 2026, 9:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Charitha Guntla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ykFyPduCeVJJ7cx%2FBDSOm3OFerj36nrW85PyMhekulT0UiEO6KKbnQL7oBIRiOZP&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
 ✪ Mon, Apr 6, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Sagar Pinnamwar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=mk1OmnesNEb91Ob%2F5ygdAS4HoqUzIVyFfhiigqgEanzNNKZMpbf4Hq%2BCdvG2P0Zy&type=H
@@ -24,4 +25,4 @@ Today's date: Apr 6
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 06-Apr-2026 03:24:06 PM
+Updated at (IST): 06-Apr-2026 03:34:44 PM
