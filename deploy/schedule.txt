@@ -17,7 +17,7 @@ Today's date: Apr 6
 §TODAY§
 ✪ Mon, Apr 6, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Sagar Pinnamwar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=mk1OmnesNEb91Ob%2F5ygdAS4HoqUzIVyFfhiigqgEanzNNKZMpbf4Hq%2BCdvG2P0Zy&type=H
 ✪ Mon, Apr 6, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Tulasi Kanikaram ===LINK=== https://www.jobtwine.com/meeting/copilot?id=%2FtlcqjUDwuD7U5HAc65NejmJkQZMY%2Fab8WcOYqhG0KJ%2FMaSgsjpjdm%2BR2ZKXeFnl&type=H
-✪ Mon, Apr 6, 2026, 4:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineer CIBCVS003 (17664) ===CANDIDATE=== Hari Daggumati ===LINK=== NA
+✪ Mon, Apr 6, 2026, 4:00 PM IST ==> Not Recommended ===PROFILE=== Quality Engineer CIBCVS003 (17664) ===CANDIDATE=== Hari Daggumati ===LINK=== NA
 ✪ Mon, Apr 6, 2026, 3:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Geethanjali Pasala ===LINK=== NA
 ✪ Mon, Apr 6, 2026, 12:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Prudhviraj Chillamcharla ===LINK=== NA
 ✪ Mon, Apr 6, 2026, 11:00 AM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Arun Kumar ===LINK=== NA
@@ -28,4 +28,4 @@ Today's date: Apr 6
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 06-Apr-2026 04:54:01 PM
+Updated at (IST): 06-Apr-2026 05:14:14 PM
