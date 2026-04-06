@@ -3,7 +3,7 @@ Today's date: Apr 6
 §TODAY§
 ✪ Mon, Apr 6, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK005 Quality Engineering Coordinator (17699) ===CANDIDATE=== SUREKHA S ===LINK=== https://www.jobtwine.com/meeting/copilot?id=HX72l7INSB2f0YPB%2BYhCshar0U5%2F55gsuQ88glLAVxgJs2QfkYvom258bg%2BaOND5&type=H
 ✪ Mon, Apr 6, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCVS003 (17664) ===CANDIDATE=== Ram Silla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ZrjBp44RFckneeCIcC%2BCplPxOfP8YYf4Y9OFrDlTT9%2FIJdXhaxpYS43A4klxKcvt&type=H
-✪ Mon, Apr 6, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Sivananda Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Yg%2B0O62RzbX3TojMYLJL63f4Stsa6zTannWEy156R5VBLVOJlP6SOlTxhEIUg82A&type=H
+✪ Mon, Apr 6, 2026, 4:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Sivananda Reddy ===LINK=== NA
 ✪ Mon, Apr 6, 2026, 2:30 PM IST ==> Not Recommended ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Ganesh Challa ===LINK=== NA
 ✪ Mon, Apr 6, 2026, 1:00 PM IST ==> Not Recommended ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Himaja Varam ===LINK=== NA
 ✪ Mon, Apr 6, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Rahul Gandla ===LINK=== NA
@@ -28,4 +28,4 @@ Today's date: Apr 6
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 06-Apr-2026 04:14:26 PM
+Updated at (IST): 06-Apr-2026 04:24:17 PM
