@@ -12,17 +12,17 @@ Today's date: Apr 8
 ✪ Thu, Apr 9, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Sathwika Sheela ===LINK=== https://www.jobtwine.com/meeting/copilot?id=MWeqkG%2BUCFbmsEAB4JtHc91%2BUFRwp2U%2Bq83yx3l%2Buo%2BotJZvX6xl%2Fsb2O2MAjQ7P&type=H
 ✪ Thu, Apr 9, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== V Kumar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=%2BwfRQcNyaosV97tTlMFvOTv7nQX683QZ4mnjZLIieufWs2bffCrQxsGHIj5ChtGZ&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
-§TODAY§
-✪ Wed, Apr 8, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Sindhu Gali ===LINK=== https://www.jobtwine.com/meeting/copilot?id=M%2FZXKCBkOyzW7iG1rad4jIsTqIQsVEk2varF4ap4wuUG4R81ZEgwQEZk7mFp7JMh&type=H
-✪ Wed, Apr 8, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Senior Quality Engineering Coordinator (17598) ===CANDIDATE=== Sandeep Challa ===LINK=== https://www.jobtwine.com/meeting/copilot?id=YvGaunwJlSmdVRui7JoCiM4rxdP0LqeukD6ZC8wBELCcwRLY6ucNiHusYZSP5Fup&type=H
-✪ Wed, Apr 8, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Boda Madhavarao ===LINK=== https://www.jobtwine.com/meeting/copilot?id=kWsFiWcsncWdB6MafPeVu9uHJoWOxn0fE5%2FlfD2I3SCmew3e2tmoRb074AtZ5%2FDB&type=H
-✪ Wed, Apr 8, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Vamshika Vishwanatham ===LINK=== https://www.jobtwine.com/meeting/copilot?id=XZHH1IzPI%2FGvj31SaXG65wEH%2Fd40GZcfkRSVu4AkAWNmqObMJgTMrbCCPrPtKs3t&type=H
-✪ Wed, Apr 8, 2026, 10:00 AM IST ==> Candidate No Show ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Vamsi Reddy ===LINK=== NA
-§TOMORROW§
-✪ Thu, Apr 9, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Suneel Sehtapathi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=9aVAtl4TY3lTGFmwPogvF%2B%2FowfP3XctFxA2mWc8RJlakBMGZtlBrhk2k696%2FqSaT&type=H
-✪ Thu, Apr 9, 2026, 3:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Jayakumar Selvaraj ===LINK=== https://www.jobtwine.com/meeting/copilot?id=8ipPYgzN2ouKvjh%2FjhH%2BxdqXhL28FHteui1PYEsJAtT6qZZGdv9Dngja%2FurVVQ%2Ba&type=H
+Exception: element click intercepted: Element <span>...</span> is not clickable at point (515, 137). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
+  (Session info: chrome=146.0.7680.164)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1008-azure', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f625fbb0941e50c2d3df57e6ff8de7b2, clickElement {id=f.EDC9143F1D789888F9F90CB24916F56F.d.51ABA0159ACF069E45803D28E62C5C49.e.269}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.164, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41773}, goog:processID: 3064, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41773/devtoo..., se:cdpVersion: 146.0.7680.164, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f625fbb0941e50c2d3df57e6ff8de7b2)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[2]]
+Session ID: f625fbb0941e50c2d3df57e6ff8de7b2
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 08-Apr-2026 11:24:54 AM
+Updated at (IST): 08-Apr-2026 11:34:44 AM
