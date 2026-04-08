@@ -15,7 +15,7 @@ Today's date: Apr 8
 ✪ Thu, Apr 9, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Vakkalagadda Sri Satya Sai Prasanth ===LINK=== https://www.jobtwine.com/meeting/copilot?id=GYlGXadCdJMbfIlXDux5qxv3Y3zAyXu2yfYRbNt6U0XJe4um2z%2Bv%2FhcdHBlKaPn5&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
-✪ Wed, Apr 8, 2026, 9:30 PM IST ==> Pending Feedback Review ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Sindhu Gali ===LINK=== NA
+✪ Wed, Apr 8, 2026, 9:30 PM IST ==> Not Recommended ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Sindhu Gali ===LINK=== NA
 ✪ Wed, Apr 8, 2026, 4:00 PM IST ==> Candidate No Show ===PROFILE=== Senior Quality Engineering Coordinator (17598) ===CANDIDATE=== Sandeep Challa ===LINK=== NA
 ✪ Wed, Apr 8, 2026, 3:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Boda Madhavarao ===LINK=== NA
 ✪ Wed, Apr 8, 2026, 11:00 AM IST ==> Not Recommended ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Vamshika Vishwanatham ===LINK=== NA
@@ -31,4 +31,4 @@ Today's date: Apr 8
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 08-Apr-2026 10:54:11 PM
+Updated at (IST): 08-Apr-2026 11:04:32 PM
