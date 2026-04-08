@@ -3,8 +3,8 @@ Today's date: Apr 8
 §TODAY§
 ✪ Wed, Apr 8, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== SDET (13303) ===CANDIDATE=== Seshasayanam Lammata ===LINK=== https://www.jobtwine.com/meeting/copilot?id=nphJa3aQPaqeFdAj07vxXp3%2B6TuGMr%2FR%2F0OJNOE4G3mpxvlPo3V7XaoxMx0zaRnk&type=H
 ✪ Wed, Apr 8, 2026, 3:00 PM IST ==> Not Recommended ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Pratik Deb ===LINK=== NA
+✪ Wed, Apr 8, 2026, 3:00 PM IST ==> Not Recommended ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Pratik Deb ===LINK=== NA
 ✪ Wed, Apr 8, 2026, 2:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Sivananda Reddy ===LINK=== NA
-✪ Wed, Apr 8, 2026, 1:00 PM IST ==> Not Recommended ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Durgesh Prince ===LINK=== NA
 ✪ Wed, Apr 8, 2026, 1:00 PM IST ==> Not Recommended ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Durgesh Prince ===LINK=== NA
 ✪ Wed, Apr 8, 2026, 11:00 AM IST ==> Not Recommended ===PROFILE=== Senior QE Manager(CIBCMP002) (18247) ===CANDIDATE=== Visweswar Giddalur ===LINK=== NA
 ✪ Wed, Apr 8, 2026, 10:00 AM IST ==> Candidate No Show ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== NAGELLA CHANDRADEEP ===LINK=== NA
@@ -25,10 +25,11 @@ Today's date: Apr 8
 ✪ Thu, Apr 9, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Suneel Sehtapathi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=9aVAtl4TY3lTGFmwPogvF%2B%2FowfP3XctFxA2mWc8RJlakBMGZtlBrhk2k696%2FqSaT&type=H
 ✪ Thu, Apr 9, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== CIBCBC002 Quality Engineer (17557) ===CANDIDATE=== Karthik Juthuga ===LINK=== https://www.jobtwine.com/meeting/copilot?id=tMO1ohzVbOVo%2FI4dX7xV9FdS1CcsU0CcAyXuMBiuhiiM8XvOvq5YFUtTThtUFVms&type=H
 ✪ Thu, Apr 9, 2026, 3:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Jayakumar Selvaraj ===LINK=== https://www.jobtwine.com/meeting/copilot?id=8ipPYgzN2ouKvjh%2FjhH%2BxdqXhL28FHteui1PYEsJAtT6qZZGdv9Dngja%2FurVVQ%2Ba&type=H
+✪ Thu, Apr 9, 2026, 2:00 PM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Rashmitha Pulugu ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Veena Kumari ===LINK=== https://www.jobtwine.com/meeting/copilot?id=axxEgPPO60eT1JUd6V2fkY9AxvrxmVsqas1Yxr0V7EAaYlguBi3ujC3PPIOVDs2%2B&type=H
 ✪ Thu, Apr 9, 2026, 10:30 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Tejas Pathala ===LINK=== https://www.jobtwine.com/meeting/copilot?id=tlN861ecsYhXPRptZCigARalDSaiPhRxayaqOpW7IoX2gc0H6Xo4x877TN%2F9u4K6&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 08-Apr-2026 08:14:37 PM
+Updated at (IST): 08-Apr-2026 08:24:29 PM
