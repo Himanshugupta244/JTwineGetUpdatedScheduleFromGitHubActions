@@ -6,7 +6,7 @@ Today's date: Apr 8
 ✪ Wed, Apr 8, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Sivananda Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=lN6Gn2LXpOUanS%2FzAER5QjV%2FC57yvM81k7spWR6JLdKSkOvs8ZBOr5lTINm2c3tf&type=H
 ✪ Wed, Apr 8, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Durgesh Prince ===LINK=== https://www.jobtwine.com/meeting/copilot?id=d2v3UfbY3shUbIfaOafJwG%2FjcqDEeZrfu9NKiYngL6lu9KT9nPf0hlLVvyE815Gh&type=H
 ✪ Wed, Apr 8, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Senior QE Manager(CIBCMP002) (18247) ===CANDIDATE=== Visweswar Giddalur ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Vovhsust%2B7Kw%2BYdQAWIuLzla2bGq9ElaSZM2P24fCa3QU3Q8BvdgmRcbCJCyT%2Blu&type=H
-✪ Wed, Apr 8, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== NAGELLA CHANDRADEEP ===LINK=== https://www.jobtwine.com/meeting/copilot?id=15Hh8AHL7nV5cR2a2VLP54rC9s8ADqNQmebwGsJy9x0t%2FUB59lyZz%2BkBJQMGptMS&type=H
+✪ Wed, Apr 8, 2026, 10:00 AM IST ==> Candidate No Show ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== NAGELLA CHANDRADEEP ===LINK=== NA
 §TOMORROW§
 ✪ Thu, Apr 9, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Mohit Deshpande ===LINK=== https://www.jobtwine.com/meeting/copilot?id=D0Ncvmmyo%2FNq5DVmG%2BYpW6Qi40vU1ZVdcWXASeYGrE1Z41KOJZ29OaZ1FgUg2bGu&type=H
 ✪ Thu, Apr 9, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Sathwika Sheela ===LINK=== https://www.jobtwine.com/meeting/copilot?id=MWeqkG%2BUCFbmsEAB4JtHc91%2BUFRwp2U%2Bq83yx3l%2Buo%2BotJZvX6xl%2Fsb2O2MAjQ7P&type=H
@@ -17,7 +17,7 @@ Today's date: Apr 8
 ✪ Wed, Apr 8, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Senior Quality Engineering Coordinator (17598) ===CANDIDATE=== Sandeep Challa ===LINK=== https://www.jobtwine.com/meeting/copilot?id=YvGaunwJlSmdVRui7JoCiM4rxdP0LqeukD6ZC8wBELCcwRLY6ucNiHusYZSP5Fup&type=H
 ✪ Wed, Apr 8, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Boda Madhavarao ===LINK=== https://www.jobtwine.com/meeting/copilot?id=kWsFiWcsncWdB6MafPeVu9uHJoWOxn0fE5%2FlfD2I3SCmew3e2tmoRb074AtZ5%2FDB&type=H
 ✪ Wed, Apr 8, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Vamshika Vishwanatham ===LINK=== https://www.jobtwine.com/meeting/copilot?id=XZHH1IzPI%2FGvj31SaXG65wEH%2Fd40GZcfkRSVu4AkAWNmqObMJgTMrbCCPrPtKs3t&type=H
-✪ Wed, Apr 8, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Vamsi Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=BRcg9rE9apBkewtux%2BPC7DVgkvA3sq8AIZ%2B3ZoYLfP%2Fp55RPjFoaGbE%2FIQAHWeAR&type=H
+✪ Wed, Apr 8, 2026, 10:00 AM IST ==> Candidate No Show ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Vamsi Reddy ===LINK=== NA
 §TOMORROW§
 ✪ Thu, Apr 9, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Suneel Sehtapathi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=9aVAtl4TY3lTGFmwPogvF%2B%2FowfP3XctFxA2mWc8RJlakBMGZtlBrhk2k696%2FqSaT&type=H
 ✪ Thu, Apr 9, 2026, 3:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Jayakumar Selvaraj ===LINK=== https://www.jobtwine.com/meeting/copilot?id=8ipPYgzN2ouKvjh%2FjhH%2BxdqXhL28FHteui1PYEsJAtT6qZZGdv9Dngja%2FurVVQ%2Ba&type=H
@@ -25,4 +25,4 @@ Today's date: Apr 8
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 08-Apr-2026 10:15:17 AM
+Updated at (IST): 08-Apr-2026 10:24:48 AM
