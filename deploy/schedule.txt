@@ -7,9 +7,9 @@ Today's date: Apr 9
 ✪ Thu, Apr 9, 2026, 5:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Alekhya Asirvatham ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 4:00 PM IST ==> Is a Good Fit ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Amit Pradhan ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 3:00 PM IST ==> Is a Good Fit ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Sathwika Sheela ===LINK=== NA
-✪ Thu, Apr 9, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== V Kumar ===LINK=== NA
 §TOMORROW§
 ✪ Fri, Apr 10, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCRA001 (17934) ===CANDIDATE=== SURAJ GUNTAMUKKALA ===LINK=== https://www.jobtwine.com/meeting/copilot?id=7ymd92JAH8d2k5eObZQ%2FR%2Bl9KqKaTKQvNQxoTVSJmUAAMUuHLj2Yex9DWFya1nss&type=H
+✪ Fri, Apr 10, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Sai Majeti ===LINK=== https://www.jobtwine.com/meeting/copilot?id=FL7HFCoOiw5JdmlKe5IMwdnlY7Q%2BRzJELITvSNyPTPY35lb2t2Esc02UiC8NfWkT&type=H
 ✪ Fri, Apr 10, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Tejaswi Paidipelly ===LINK=== https://www.jobtwine.com/meeting/copilot?id=gGfJciwG0xIXnrBJU11EQTKbTLEfSkNDQSV6TA2kA%2BjDN8n%2BjsXf5F0EjCgB1Cq1&type=H
 ✪ Fri, Apr 10, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Ajaykumar Kavuru ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Yh8iPTPoLK53tNniHrr0LBIKvEbanZ%2BN2jSuIJuCB6jm6zUWESMbmsV1RRqJr8Mu&type=H
 ✪ Fri, Apr 10, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Abhilash Joshi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=cK60AAnpfj2jlFDXnfsrGaOX%2F0neHdJgpzGS6cgyHsWmdZde4YTmbBx6osw9UxTx&type=H
@@ -34,4 +34,4 @@ Today's date: Apr 9
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 09-Apr-2026 07:15:18 PM
+Updated at (IST): 09-Apr-2026 07:25:26 PM
