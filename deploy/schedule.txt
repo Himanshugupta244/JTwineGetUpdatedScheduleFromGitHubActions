@@ -9,14 +9,11 @@ Today's date: Apr 9
 ✪ Fri, Apr 10, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Ajaykumar Kavuru ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Yh8iPTPoLK53tNniHrr0LBIKvEbanZ%2BN2jSuIJuCB6jm6zUWESMbmsV1RRqJr8Mu&type=H
 ✪ Fri, Apr 10, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Abhilash Joshi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=cK60AAnpfj2jlFDXnfsrGaOX%2F0neHdJgpzGS6cgyHsWmdZde4YTmbBx6osw9UxTx&type=H
 ✪ Fri, Apr 10, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Tulasi Kanikaram ===LINK=== https://www.jobtwine.com/meeting/copilot?id=6%2FbHhNXoFFaV790hLwyR1NPtyJDUUUZthplO8itsDhwIV1dVv9lTK3n9DozZIYn7&type=H
-✪ Fri, Apr 10, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Peddireddygari Revanth Kumar Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=QJRxt3Dz3j66nvnfhfKvOAD%2F2RZ6b%2FfKR01tPndtdpYydFYij5udArD93wj7m7Jl&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
 ✪ Thu, Apr 9, 2026, 9:30 PM IST ==> Not Recommended ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Suneel Sehtapathi ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 7:00 PM IST ==> Not Recommended ===PROFILE=== CIBCBC002 Quality Engineer (17557) ===CANDIDATE=== Karthik Juthuga ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 3:30 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Jayakumar Selvaraj ===LINK=== NA
-✪ Thu, Apr 9, 2026, 2:00 PM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Rashmitha Pulugu ===LINK=== NA
-✪ Thu, Apr 9, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Veena Kumari ===LINK=== NA
 §TOMORROW§
 ✪ Fri, Apr 10, 2026, 9:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Desireddy Raj Kumar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=i2bOkv4utLAfvAv05k5cMEi4UFCVee7FQ1HN5hpSuVU0HyCRhP5g8TRA7zUIwxPy&type=H
 ✪ Fri, Apr 10, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Sai Talluri ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Bsu5kn81D6vNLdHKqwxLYV4gRrPzX%2FyI2fS8mVK7wzI8lzFdyGcowkN%2FF5HwL4T7&type=H
@@ -30,4 +27,4 @@ Today's date: Apr 9
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 10-Apr-2026 03:35:41 AM
+Updated at (IST): 10-Apr-2026 03:45:15 AM
