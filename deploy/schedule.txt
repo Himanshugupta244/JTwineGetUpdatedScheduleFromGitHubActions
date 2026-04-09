@@ -4,7 +4,7 @@ Today's date: Apr 9
 ✪ Thu, Apr 9, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Mohit Deshpande ===LINK=== https://www.jobtwine.com/meeting/copilot?id=D0Ncvmmyo%2FNq5DVmG%2BYpW6Qi40vU1ZVdcWXASeYGrE1Z41KOJZ29OaZ1FgUg2bGu&type=H
 ✪ Thu, Apr 9, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== SDET (13303) ===CANDIDATE=== Damodhar Nalluri ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ksdIWhDIbY1H109dAoYNpUmljipALUIRUNTdYxstgE%2BKsKv6fC3ZMMP2nBGGEuaV&type=H
 ✪ Thu, Apr 9, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== SDET (13303) ===CANDIDATE=== Kalyani Jadhav ===LINK=== https://www.jobtwine.com/meeting/copilot?id=TTIG%2BIHCLAJdo6gBtfUsSntnJcUV%2ByPC9G4XSSixiLmk8E39FoiDXxZI5ZXX7lJY&type=H
-✪ Thu, Apr 9, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Alekhya Asirvatham ===LINK=== https://www.jobtwine.com/meeting/copilot?id=29sZomasWP%2FN0VRC0ZrVgQRvHRAnnFEt%2FxhNXPkdeDmggnH2zdPWo3b717oVG3vw&type=H
+✪ Thu, Apr 9, 2026, 5:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Alekhya Asirvatham ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 4:00 PM IST ==> Pending Feedback Review ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Amit Pradhan ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 3:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Sathwika Sheela ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== V Kumar ===LINK=== NA
@@ -32,4 +32,4 @@ Today's date: Apr 9
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 09-Apr-2026 05:35:23 PM
+Updated at (IST): 09-Apr-2026 06:04:55 PM
