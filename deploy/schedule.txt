@@ -17,7 +17,7 @@ Today's date: Apr 9
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
 ✪ Thu, Apr 9, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Suneel Sehtapathi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=9aVAtl4TY3lTGFmwPogvF%2B%2FowfP3XctFxA2mWc8RJlakBMGZtlBrhk2k696%2FqSaT&type=H
-✪ Thu, Apr 9, 2026, 7:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCBC002 Quality Engineer (17557) ===CANDIDATE=== Karthik Juthuga ===LINK=== NA
+✪ Thu, Apr 9, 2026, 7:00 PM IST ==> Not Recommended ===PROFILE=== CIBCBC002 Quality Engineer (17557) ===CANDIDATE=== Karthik Juthuga ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 3:30 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Jayakumar Selvaraj ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 2:00 PM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Rashmitha Pulugu ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Veena Kumari ===LINK=== NA
@@ -33,4 +33,4 @@ Today's date: Apr 9
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 09-Apr-2026 08:05:36 PM
+Updated at (IST): 09-Apr-2026 08:15:22 PM
