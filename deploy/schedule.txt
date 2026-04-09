@@ -6,7 +6,6 @@ Today's date: Apr 9
 ✪ Thu, Apr 9, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== SDET (13303) ===CANDIDATE=== Kalyani Jadhav ===LINK=== https://www.jobtwine.com/meeting/copilot?id=TTIG%2BIHCLAJdo6gBtfUsSntnJcUV%2ByPC9G4XSSixiLmk8E39FoiDXxZI5ZXX7lJY&type=H
 ✪ Thu, Apr 9, 2026, 5:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Alekhya Asirvatham ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 4:00 PM IST ==> Is a Good Fit ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Amit Pradhan ===LINK=== NA
-✪ Thu, Apr 9, 2026, 3:00 PM IST ==> Is a Good Fit ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Sathwika Sheela ===LINK=== NA
 §TOMORROW§
 ✪ Fri, Apr 10, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCRA001 (17934) ===CANDIDATE=== SURAJ GUNTAMUKKALA ===LINK=== https://www.jobtwine.com/meeting/copilot?id=7ymd92JAH8d2k5eObZQ%2FR%2Bl9KqKaTKQvNQxoTVSJmUAAMUuHLj2Yex9DWFya1nss&type=H
 ✪ Fri, Apr 10, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Sai Majeti ===LINK=== https://www.jobtwine.com/meeting/copilot?id=FL7HFCoOiw5JdmlKe5IMwdnlY7Q%2BRzJELITvSNyPTPY35lb2t2Esc02UiC8NfWkT&type=H
@@ -34,4 +33,4 @@ Today's date: Apr 9
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 09-Apr-2026 07:25:26 PM
+Updated at (IST): 09-Apr-2026 07:35:55 PM
