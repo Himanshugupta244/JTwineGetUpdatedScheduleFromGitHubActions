@@ -5,7 +5,7 @@ Today's date: Apr 9
 ✪ Thu, Apr 9, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== SDET (13303) ===CANDIDATE=== Damodhar Nalluri ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ksdIWhDIbY1H109dAoYNpUmljipALUIRUNTdYxstgE%2BKsKv6fC3ZMMP2nBGGEuaV&type=H
 ✪ Thu, Apr 9, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== SDET (13303) ===CANDIDATE=== Kalyani Jadhav ===LINK=== https://www.jobtwine.com/meeting/copilot?id=TTIG%2BIHCLAJdo6gBtfUsSntnJcUV%2ByPC9G4XSSixiLmk8E39FoiDXxZI5ZXX7lJY&type=H
 ✪ Thu, Apr 9, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Alekhya Asirvatham ===LINK=== https://www.jobtwine.com/meeting/copilot?id=29sZomasWP%2FN0VRC0ZrVgQRvHRAnnFEt%2FxhNXPkdeDmggnH2zdPWo3b717oVG3vw&type=H
-✪ Thu, Apr 9, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Amit Pradhan ===LINK=== https://www.jobtwine.com/meeting/copilot?id=uszkmthel288nGeL7WO4j076CjnCkhqAg5D3ljkFq3OHtW%2BER2SHM4F1IqqXZRVW&type=H
+✪ Thu, Apr 9, 2026, 4:00 PM IST ==> Pending Feedback Review ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Amit Pradhan ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 3:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Sathwika Sheela ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== V Kumar ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 11:00 AM IST ==> Is a Good Fit ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Vakkalagadda Sri Satya Sai Prasanth ===LINK=== NA
@@ -32,4 +32,4 @@ Today's date: Apr 9
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 09-Apr-2026 04:55:05 PM
+Updated at (IST): 09-Apr-2026 05:05:13 PM
