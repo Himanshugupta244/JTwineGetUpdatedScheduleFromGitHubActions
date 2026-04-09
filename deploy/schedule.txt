@@ -18,11 +18,11 @@ Today's date: Apr 9
 ✪ Thu, Apr 9, 2026, 3:30 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Jayakumar Selvaraj ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 2:00 PM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Rashmitha Pulugu ===LINK=== NA
 ✪ Thu, Apr 9, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Veena Kumari ===LINK=== NA
-✪ Thu, Apr 9, 2026, 10:30 AM IST ==> Not Recommended ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Tejas Pathala ===LINK=== NA
 §TOMORROW§
 ✪ Fri, Apr 10, 2026, 9:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Desireddy Raj Kumar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=i2bOkv4utLAfvAv05k5cMEi4UFCVee7FQ1HN5hpSuVU0HyCRhP5g8TRA7zUIwxPy&type=H
 ✪ Fri, Apr 10, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Sai Talluri ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Bsu5kn81D6vNLdHKqwxLYV4gRrPzX%2FyI2fS8mVK7wzI8lzFdyGcowkN%2FF5HwL4T7&type=H
 ✪ Fri, Apr 10, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Rajani Chalamulasetty ===LINK=== https://www.jobtwine.com/meeting/copilot?id=U3j2f2J6YfnsisrlJwTxQ%2BaHIFJ8lj%2FmLAUYM7w43l0tBaB%2FJov7k03195n95fWu&type=H
+✪ Fri, Apr 10, 2026, 4:00 PM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Tejaswi Paidipelly ===LINK=== NA
 ✪ Fri, Apr 10, 2026, 4:00 PM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Tejaswi Paidipelly ===LINK=== NA
 ✪ Fri, Apr 10, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== GanaDeep Siribattina ===LINK=== https://www.jobtwine.com/meeting/copilot?id=5LS%2BxXlPfVY%2FBaVHQzezyIkJSBZjaL4dzNjO5czQTtBPgQ2NQsmLb%2FbEMGpesq91&type=H
 ✪ Fri, Apr 10, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Gudla Ashok ===LINK=== https://www.jobtwine.com/meeting/copilot?id=X2TJC3ait3gK0IMIc1ATqEVXuzuA71BY%2F3XduFa7diQ4VfioJrl4WQo%2BZeyFItD3&type=H
@@ -32,4 +32,4 @@ Today's date: Apr 9
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 10-Apr-2026 03:15:29 AM
+Updated at (IST): 10-Apr-2026 03:25:22 AM
