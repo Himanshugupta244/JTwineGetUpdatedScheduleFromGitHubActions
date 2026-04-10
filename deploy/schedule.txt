@@ -19,13 +19,13 @@ Today's date: Apr 10
 ✪ Sat, Apr 11, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCVS01) (18251) ===CANDIDATE=== V Gayathri ===LINK=== https://www.jobtwine.com/meeting/copilot?id=0Dn83CUnt3Iqyj%2BiTXsABV%2BpbhJ6Qp5AObW0qNbyTlVZOhOPR9dc8l1slfQlQqfT&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
-✪ Fri, Apr 10, 2026, 9:00 PM IST ==> NA ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Desireddy Raj Kumar ===LINK=== NA
 ✪ Fri, Apr 10, 2026, 7:30 PM IST ==> Pending Feedback Review ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Sai Talluri ===LINK=== NA
 ✪ Fri, Apr 10, 2026, 4:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Rajani Chalamulasetty ===LINK=== NA
 ✪ Fri, Apr 10, 2026, 4:00 PM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Tejaswi Paidipelly ===LINK=== NA
-✪ Fri, Apr 10, 2026, 3:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== GanaDeep Siribattina ===LINK=== NA
+✪ Fri, Apr 10, 2026, 3:00 PM IST ==> Not Recommended ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== GanaDeep Siribattina ===LINK=== NA
 ✪ Fri, Apr 10, 2026, 2:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Gudla Ashok ===LINK=== NA
 ✪ Fri, Apr 10, 2026, 11:00 AM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Manager(CIBCPP006) (18339) ===CANDIDATE=== Vineel Manchikatla ===LINK=== NA
+✪ Fri, Apr 10, 2026, 9:30 AM IST ==> Not Recommended ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Pathan Salimkhan ===LINK=== NA
 §TOMORROW§
 ✪ Sat, Apr 11, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCVS003 (17664) ===CANDIDATE=== Tejeswararao Gangu ===LINK=== https://www.jobtwine.com/meeting/copilot?id=W9fj6qMofcYFX2e5hN8RgGTJ%2FSQTGXMcvkveJUcmohVEhrd%2FuCgf2Zb7dRMq0oO5&type=H
 ✪ Sat, Apr 11, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCVS002 (17530) ===CANDIDATE=== Siva Busa ===LINK=== https://www.jobtwine.com/meeting/copilot?id=57AUEnnkPpiUTbGiB6ALwgsH0shZ0E06tpPBqw5eQ16OYFcL4ivI4HDwmgk7345J&type=H
@@ -36,4 +36,4 @@ Today's date: Apr 10
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 10-Apr-2026 09:15:01 PM
+Updated at (IST): 10-Apr-2026 09:24:51 PM
