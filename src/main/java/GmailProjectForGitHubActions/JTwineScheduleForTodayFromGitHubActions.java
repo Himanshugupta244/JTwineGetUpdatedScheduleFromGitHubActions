@@ -155,21 +155,23 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		todayLines.addAll(page1Data.get("today"));
 		tomorrowLines.addAll(page1Data.get("tomorrow"));
 
-		// Check if page 2 exists and click on it
-		List<WebElement> page2Button = driver.findElements(By.xpath("(.//span[contains(text(),'page ')]/following-sibling::span)[2]"));
-		if (!page2Button.isEmpty()) {
-			System.out.println("Page 2 found, clicking on it.....");
-			page2Button.get(0).click();
-			System.out.println("Waiting 10 seconds for page 2 to load.....");
-			waitForFixTime(10000);
+		// Check pages 2 through 4
+		for (int pageNum = 2; pageNum <= 4; pageNum++) {
+			List<WebElement> pageButton = driver.findElements(By.xpath("(.//span[contains(text(),'page ')]/following-sibling::span)[" + pageNum + "]"));
+			if (!pageButton.isEmpty()) {
+				System.out.println("Page " + pageNum + " found, clicking on it.....");
+				pageButton.get(0).click();
+				System.out.println("Waiting 10 seconds for page " + pageNum + " to load.....");
+				waitForFixTime(10000);
 
-			// Fetch from Page 2
-			System.out.println("Fetching schedule from Page 2.....");
-			Map<String, List<String>> page2Data = fetchScheduleFromCurrentPage();
-			todayLines.addAll(page2Data.get("today"));
-			tomorrowLines.addAll(page2Data.get("tomorrow"));
-		} else {
-			System.out.println("Page 2 not found, only Page 1 results available.");
+				System.out.println("Fetching schedule from Page " + pageNum + ".....");
+				Map<String, List<String>> pageData = fetchScheduleFromCurrentPage();
+				todayLines.addAll(pageData.get("today"));
+				tomorrowLines.addAll(pageData.get("tomorrow"));
+			} else {
+				System.out.println("Page " + pageNum + " not found, stopping pagination.");
+				break;
+			}
 		}
 
 		// Today's data first, then tomorrow's data
