@@ -11,7 +11,7 @@ Today's date: Apr 10
 ✪ Fri, Apr 10, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Abhilash Joshi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=cK60AAnpfj2jlFDXnfsrGaOX%2F0neHdJgpzGS6cgyHsWmdZde4YTmbBx6osw9UxTx&type=H
 ✪ Fri, Apr 10, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Tulasi Kanikaram ===LINK=== https://www.jobtwine.com/meeting/copilot?id=6%2FbHhNXoFFaV790hLwyR1NPtyJDUUUZthplO8itsDhwIV1dVv9lTK3n9DozZIYn7&type=H
 ✪ Fri, Apr 10, 2026, 11:00 AM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Peddireddygari Revanth Kumar Reddy ===LINK=== NA
-✪ Fri, Apr 10, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCPP006) (18339) ===CANDIDATE=== Priyanka Toodi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Y%2BESZHAiuP3XExh6xCguJVQ4wT5A4bXUs7CE7uSGgO5rlz%2BcclYHdE8TO2b1eh5p&type=H
+✪ Fri, Apr 10, 2026, 10:00 AM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Manager(CIBCPP006) (18339) ===CANDIDATE=== Priyanka Toodi ===LINK=== NA
 §TOMORROW§
 ✪ Sat, Apr 11, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Swathi JNV ===LINK=== https://www.jobtwine.com/meeting/copilot?id=17P%2BbNSiPSaYEGp4moaz3GTEAP4za%2FBw9F3lSewnenf5Tr1Q%2B8F9FrbuE%2FcyTDJi&type=H
 ✪ Sat, Apr 11, 2026, 2:00 PM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Swathi JNV ===LINK=== NA
@@ -27,7 +27,7 @@ Today's date: Apr 10
 ✪ Fri, Apr 10, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== GanaDeep Siribattina ===LINK=== https://www.jobtwine.com/meeting/copilot?id=5LS%2BxXlPfVY%2FBaVHQzezyIkJSBZjaL4dzNjO5czQTtBPgQ2NQsmLb%2FbEMGpesq91&type=H
 ✪ Fri, Apr 10, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Gudla Ashok ===LINK=== https://www.jobtwine.com/meeting/copilot?id=X2TJC3ait3gK0IMIc1ATqEVXuzuA71BY%2F3XduFa7diQ4VfioJrl4WQo%2BZeyFItD3&type=H
 ✪ Fri, Apr 10, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCPP006) (18339) ===CANDIDATE=== Vineel Manchikatla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=OXJrdeLFR79%2Bqb9f9ctbrQpqrUL3BnUnrCg2TcsYYqGk7Nw%2BIJ9pIEu4YTb4cahL&type=H
-✪ Fri, Apr 10, 2026, 9:30 AM IST ==> Pending Feedback Review ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Pathan Salimkhan ===LINK=== NA
+✪ Fri, Apr 10, 2026, 9:30 AM IST ==> Not Recommended ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Pathan Salimkhan ===LINK=== NA
 §TOMORROW§
 ✪ Sat, Apr 11, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCVS002 (17530) ===CANDIDATE=== Siva Busa ===LINK=== https://www.jobtwine.com/meeting/copilot?id=57AUEnnkPpiUTbGiB6ALwgsH0shZ0E06tpPBqw5eQ16OYFcL4ivI4HDwmgk7345J&type=H
 ✪ Sat, Apr 11, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== N Gunja ===LINK=== https://www.jobtwine.com/meeting/copilot?id=sGwWxZOqy1i91OWlzoTDz1HELPOzmVxzixr9iot7j023%2B83J7tW5vzUTsARwTSCA&type=H
@@ -37,4 +37,4 @@ Today's date: Apr 10
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 10-Apr-2026 10:17:34 AM
+Updated at (IST): 10-Apr-2026 10:27:35 AM
