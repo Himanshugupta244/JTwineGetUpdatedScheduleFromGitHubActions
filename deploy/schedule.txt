@@ -13,7 +13,7 @@ Today's date: Apr 11
 ✪ Sun, Apr 12, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Venkata Sai K ===LINK=== https://www.jobtwine.com/meeting/copilot?id=SyNsKDjwaBNaSigR3%2FB4wMZDy7npKIzC7T7HpH09M0NKef7ed8UAKVOapFdbT%2FEP&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
-✪ Sat, Apr 11, 2026, 4:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineer CIBCVS003 (17664) ===CANDIDATE=== Tejeswararao Gangu ===LINK=== NA
+✪ Sat, Apr 11, 2026, 4:00 PM IST ==> Not Recommended ===PROFILE=== Quality Engineer CIBCVS003 (17664) ===CANDIDATE=== Tejeswararao Gangu ===LINK=== NA
 ✪ Sat, Apr 11, 2026, 2:00 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer CIBCVS002 (17530) ===CANDIDATE=== Siva Busa ===LINK=== NA
 ✪ Sat, Apr 11, 2026, 11:00 AM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== N Gunja ===LINK=== NA
 ✪ Sat, Apr 11, 2026, 10:00 AM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Abidunnisa Shaik ===LINK=== NA
@@ -27,4 +27,4 @@ Today's date: Apr 11
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 11-Apr-2026 08:34:46 PM
+Updated at (IST): 11-Apr-2026 08:44:34 PM
