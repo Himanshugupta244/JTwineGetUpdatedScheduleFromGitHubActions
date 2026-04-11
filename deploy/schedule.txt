@@ -4,7 +4,7 @@ Today's date: Apr 11
 ✪ Sat, Apr 11, 2026, 2:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Swathi JNV ===LINK=== NA
 ✪ Sat, Apr 11, 2026, 2:00 PM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Swathi JNV ===LINK=== NA
 ✪ Sat, Apr 11, 2026, 1:00 PM IST ==> Pending Feedback Review ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Prakash Khandare ===LINK=== NA
-✪ Sat, Apr 11, 2026, 11:00 AM IST ==> Pending Feedback Review ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Pavani Kunchala ===LINK=== NA
+✪ Sat, Apr 11, 2026, 11:00 AM IST ==> Not Recommended ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Pavani Kunchala ===LINK=== NA
 ✪ Sat, Apr 11, 2026, 10:00 AM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer(CIBCVS01) (18251) ===CANDIDATE=== V Gayathri ===LINK=== NA
 §TOMORROW§
 ✪ Sun, Apr 12, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== CIBCLK005 Quality Engineering Coordinator (17699) ===CANDIDATE=== Aravind Indrapuram ===LINK=== https://www.jobtwine.com/meeting/copilot?id=LHqXcRjzd3Ug7G6m6JS2dEfozUku8LIkSPrPGwhKkBZFITLhCZsGkvWkGVVfttfW&type=H
@@ -27,4 +27,4 @@ Today's date: Apr 11
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 11-Apr-2026 07:14:26 PM
+Updated at (IST): 11-Apr-2026 07:24:22 PM
