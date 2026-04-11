@@ -3,7 +3,7 @@ Today's date: Apr 11
 §TODAY§
 ✪ Sat, Apr 11, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Swathi JNV ===LINK=== https://www.jobtwine.com/meeting/copilot?id=17P%2BbNSiPSaYEGp4moaz3GTEAP4za%2FBw9F3lSewnenf5Tr1Q%2B8F9FrbuE%2FcyTDJi&type=H
 ✪ Sat, Apr 11, 2026, 2:00 PM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Swathi JNV ===LINK=== NA
-✪ Sat, Apr 11, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Prakash Khandare ===LINK=== https://www.jobtwine.com/meeting/copilot?id=O539pQQFOMjnd2DavNKXlStKzXRyKqzVbeO4yYjZoKqwR3rEk1JVPELWeANA6YGN&type=H
+✪ Sat, Apr 11, 2026, 1:00 PM IST ==> Pending Feedback Review ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Prakash Khandare ===LINK=== NA
 ✪ Sat, Apr 11, 2026, 11:00 AM IST ==> Pending Feedback Review ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Pavani Kunchala ===LINK=== NA
 ✪ Sat, Apr 11, 2026, 10:00 AM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer(CIBCVS01) (18251) ===CANDIDATE=== V Gayathri ===LINK=== NA
 §TOMORROW§
@@ -21,9 +21,10 @@ Today's date: Apr 11
 §TOMORROW§
 ✪ Sun, Apr 12, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCRA001 (17934) ===CANDIDATE=== L. Sreenidhi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=tAc5IKdz2C%2FM%2BeaQcSXJcPOIypiXcCgk2npAlV2aRFhqOWgQIiXRUwZMnZ7cUp%2BL&type=H
 ✪ Sun, Apr 12, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Dugana Santoshini ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Y%2B%2FiZo7miJTIuzK2rm6udMqtyjMlJV5B6SwMrr6Pp0gQlOwNDosqdXeYHgej%2FJDV&type=H
+✪ Sun, Apr 12, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Bharath Pallikonda ===LINK=== https://www.jobtwine.com/meeting/copilot?id=rf2Sr7JJMqpVfa3a3PBVdIH5JiwGsQowV8gze5n9K7I3usk%2Fmhc0YGBqMNLWDymy&type=H
 ✪ Sun, Apr 12, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== CIBCMC001 Quality Engineering Consultant (17786) ===CANDIDATE=== Vishnu Samhitha ===LINK=== https://www.jobtwine.com/meeting/copilot?id=a0cg1wqirVXXWXER6LWvWcbDvueExy6qab7mS3fj7AR%2F5p%2Fy7kpkrKlfxKuZk48O&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 11-Apr-2026 01:45:08 PM
+Updated at (IST): 11-Apr-2026 01:54:57 PM
