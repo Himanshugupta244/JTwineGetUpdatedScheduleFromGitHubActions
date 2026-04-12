@@ -43,7 +43,7 @@ jobs:
         git clean -fd
         git pull --rebase --autostash origin main
         git add deploy/discussionCount/index.html
-        git commit -m "Update discussionCount/index.html [ci skip]" || echo "No changes"
+        git commit -m "Update discussionCount/index.html" || echo "No changes"
         git push
 
     - name: Upload discussionCount/index.html via FTP to Hostinger
