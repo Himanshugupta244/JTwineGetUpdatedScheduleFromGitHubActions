@@ -39,13 +39,19 @@ jobs:
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
 
-        # Pull latest changes first
+        # Stash any changes (including generated files)
+        git stash --include-untracked
+
+        # Pull latest changes safely
         git pull origin main --rebase
 
-        # Add file
+        # Restore changes
+        git stash pop || true
+
+        # Add the updated file
         git add deploy/discussionCount/index.html
 
-        # Commit only if changed
+        # Commit only if there are changes
         if git diff --cached --quiet; then
           echo "No changes to commit"
         else
