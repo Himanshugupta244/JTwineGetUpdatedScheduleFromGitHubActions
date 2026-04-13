@@ -16,7 +16,7 @@ Today's date: Apr 13
 ✪ Mon, Apr 13, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Patali Chigurupati ===LINK=== https://www.jobtwine.com/meeting/copilot?id=v5wRKQk4dMKXdwnHrXAwlh86h1TO8jQD%2BgdHdS5wJC61kQjGQuwzjufNzLAFfENV&type=H
 ✪ Mon, Apr 13, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Santhosh Ramagopal ===LINK=== https://www.jobtwine.com/meeting/copilot?id=IXhJM1rVQKUaqmgnaMyEjlczzxCMHdewbXt27ft6J8Jd7tgSVPylbiQO0%2BtU0CpV&type=H
 ✪ Mon, Apr 13, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Anusha Yedla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=2sowLZ1XLbg6AWzdXu%2FA1AIZQ4F5Y6UUQ1td3HqNe7VYdRqKydn5vSpN9d5Dp3Un&type=H
-✪ Mon, Apr 13, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Sandeep Usakoyala ===LINK=== https://www.jobtwine.com/meeting/copilot?id=DnVlbCTtVHE0Ui55fw7gX632vryZGIrhMZVtorg1cmxiEUFnruyGBtPYdVaazbdv&type=H
+✪ Mon, Apr 13, 2026, 3:00 PM IST ==> Cancelled by candidate ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Sandeep Usakoyala ===LINK=== NA
 §TOMORROW§
 ✪ Tue, Apr 14, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Ranjeeth Gopireddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=7U52x0itLXHtycP61Pok%2B4Ffq%2B3mZNzS%2FbV5kiZDDK2x9WtW37wJbMtQpRIduW17&type=H
 ✪ Tue, Apr 14, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Vineesha Durgampudi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=44HxFq5Udt5lK3Bw0MA8R65I2moloi8EPcflp1bYVhocf2AXhG9%2FvjWxb1dZFtOC&type=H
@@ -25,4 +25,4 @@ Today's date: Apr 13
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 13-Apr-2026 01:25:47 PM
+Updated at (IST): 13-Apr-2026 01:36:29 PM
