@@ -1,13 +1,26 @@
 Today's date: Apr 14
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
-Exception: Expected condition failed: waiting for visibility of element located by By.xpath: .//div[contains(text(),'Candidates For Interview')] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.177, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46551}, goog:processID: 2495, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46551/devtoo..., se:cdpVersion: 146.0.7680.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 61e1f66631d0bea171628ef0e1977658
+§TODAY§
+✪ Tue, Apr 14, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Ravi Kalagara ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ENtOOqyFNjEHgYu5BS0dnIpyl5OPMAFehGvb6BwUYFs4GoKObCeALj8ylv2ZVSuw&type=H
+✪ Tue, Apr 14, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Sumanth Kumar Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=S0Qu9rDDqF9fdJgeae7C0uktSqy3iYCEtwkYJnvaxpYV9ssZWUPnX8tQpRIduW17&type=H
+✪ Tue, Apr 14, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate quality engineer CIBCAT001 (18455) ===CANDIDATE=== Naga Sadanala ===LINK=== https://www.jobtwine.com/meeting/copilot?id=plVWJeJqENJ5wZUZD0pxqgkWIRriHnZ%2FMWmcSZD1S3CKhKEBXGHq9Vs2vwLIfIBf&type=H
+✪ Tue, Apr 14, 2026, 11:00 AM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== SAI CHARAN PATNE ===LINK=== NA
+§TOMORROW§
+✪ Wed, Apr 15, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== CIBCPP008 Intermediate Quality Engineer (17961) ===CANDIDATE=== Manoj Kumar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ThdSn1xsJ8LRqGn9wYlba77IMLkvFNpLIHRflsEgoNHpT1MsFdqJ0OLQXfP4bR19&type=H
+✪ Wed, Apr 15, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Dinesh Vilayatkar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=6N4%2BJvtz13LDS6CTEqfEkRbxiiTUnSCFAkh%2BsZOXtZsxnEQTnexPxWStbgUFLzwD&type=H
+✪ Wed, Apr 15, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Vamsi Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=0iuDfqclS4%2FBazOX%2FMTi2%2F0ExxzLv6hP5d3MGQaF1n%2FPBoO7266nfYFK5qkUBBVn&type=H
+**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
+§TODAY§
+✪ Tue, Apr 14, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Ranjeeth Gopireddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=7U52x0itLXHtycP61Pok%2B4Ffq%2B3mZNzS%2FbV5kiZDDK2x9WtW37wJbMtQpRIduW17&type=H
+✪ Tue, Apr 14, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Vineesha Durgampudi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=44HxFq5Udt5lK3Bw0MA8R65I2moloi8EPcflp1bYVhocf2AXhG9%2FvjWxb1dZFtOC&type=H
+✪ Tue, Apr 14, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Sangeetha Baskaran ===LINK=== https://www.jobtwine.com/meeting/copilot?id=lb%2FHCwZSJFhNa%2BVdpwchnI7s9xzGeFachTn5G9jwAf086RdXl5BlVpHbx5wuR%2BOG&type=H
+✪ Tue, Apr 14, 2026, 4:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Jayakumar Selvaraj ===LINK=== https://www.jobtwine.com/meeting/copilot?id=NO5YYBRb%2BcMxxZy5NbEugmvxSzc9UDGwjEAmsw%2BwYd3Wd4OJAPJVfLWxfyIpEmUc&type=H
+✪ Tue, Apr 14, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer(CIBCVS01) (18251) ===CANDIDATE=== V Gayathri ===LINK=== NA
+§TOMORROW§
+✪ Wed, Apr 15, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== ANKIT SAHOO ===LINK=== https://www.jobtwine.com/meeting/copilot?id=dKpb7yLoGPbHV%2FvY%2BVw15L8uirCNemrCDyxMHIgdtTVNN%2BCp%2FQSO943S6wo%2BUkdV&type=H
+✪ Wed, Apr 15, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Krishna Kankipati ===LINK=== https://www.jobtwine.com/meeting/copilot?id=r1qD2Pimpc5nMcWO%2BjTQXpN1e9o4cKQ9VTSyR4pDanJDU9IJLy%2B20VGMNNU%2BNso%2B&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 14-Apr-2026 02:22:03 PM
+Updated at (IST): 14-Apr-2026 02:35:32 PM
