@@ -4,7 +4,7 @@ Today's date: Apr 14
 ✪ Tue, Apr 14, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Ravi Kalagara ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ENtOOqyFNjEHgYu5BS0dnIpyl5OPMAFehGvb6BwUYFs4GoKObCeALj8ylv2ZVSuw&type=H
 ✪ Tue, Apr 14, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Sumanth Kumar Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=S0Qu9rDDqF9fdJgeae7C0uktSqy3iYCEtwkYJnvaxpYV9ssZWUPnX8tQpRIduW17&type=H
 ✪ Tue, Apr 14, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate quality engineer CIBCAT001 (18455) ===CANDIDATE=== Naga Sadanala ===LINK=== https://www.jobtwine.com/meeting/copilot?id=plVWJeJqENJ5wZUZD0pxqgkWIRriHnZ%2FMWmcSZD1S3CKhKEBXGHq9Vs2vwLIfIBf&type=H
-✪ Tue, Apr 14, 2026, 11:00 AM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== SAI CHARAN PATNE ===LINK=== NA
+✪ Tue, Apr 14, 2026, 11:00 AM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== SAI CHARAN PATNE ===LINK=== NA
 §TOMORROW§
 ✪ Wed, Apr 15, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== CIBCPP008 Intermediate Quality Engineer (17961) ===CANDIDATE=== Manoj Kumar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ThdSn1xsJ8LRqGn9wYlba77IMLkvFNpLIHRflsEgoNHpT1MsFdqJ0OLQXfP4bR19&type=H
 ✪ Wed, Apr 15, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Dinesh Vilayatkar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=6N4%2BJvtz13LDS6CTEqfEkRbxiiTUnSCFAkh%2BsZOXtZsxnEQTnexPxWStbgUFLzwD&type=H
@@ -23,4 +23,4 @@ Today's date: Apr 14
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 14-Apr-2026 11:55:34 AM
+Updated at (IST): 14-Apr-2026 12:05:31 PM
