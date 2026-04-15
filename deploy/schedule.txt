@@ -16,7 +16,7 @@ Today's date: Apr 15
 ✪ Wed, Apr 15, 2026, 6:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCTA002 (17933) ===CANDIDATE=== Mounika Kandula ===LINK=== https://www.jobtwine.com/meeting/copilot?id=vIVCKFto6C85%2B8C3dNfu6eBaH%2Bpb4AFid08F9C9DqrDaT3mT7Cc%2BYZmtp4qdL1P8&type=H
 ✪ Wed, Apr 15, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Binay Choudhury ===LINK=== https://www.jobtwine.com/meeting/copilot?id=HAN66ILpEaM479T1A1ETRmf3iF7Ql8xOpr6Ieuw%2BFEYHfY87vdAT%2FFJiftrQxNyo&type=H
 ✪ Wed, Apr 15, 2026, 3:00 PM IST ==> Cancelled by candidate ===PROFILE=== Intermediate quality engineer CIBCAT001 (18455) ===CANDIDATE=== Uday Kumar ===LINK=== NA
-✪ Wed, Apr 15, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== ANKIT SAHOO ===LINK=== https://www.jobtwine.com/meeting/copilot?id=dKpb7yLoGPbHV%2FvY%2BVw15L8uirCNemrCDyxMHIgdtTVNN%2BCp%2FQSO943S6wo%2BUkdV&type=H
+✪ Wed, Apr 15, 2026, 1:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== ANKIT SAHOO ===LINK=== NA
 ✪ Wed, Apr 15, 2026, 11:00 AM IST ==> Not Recommended ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Krishna Kankipati ===LINK=== NA
 ✪ Wed, Apr 15, 2026, 9:00 AM IST ==> Not Recommended ===PROFILE=== QE Manager CIBCRA002 (17935) ===CANDIDATE=== Gudi Shiva Kishore ===LINK=== NA
 §TOMORROW§
@@ -28,4 +28,4 @@ Today's date: Apr 15
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 15-Apr-2026 01:15:30 PM
+Updated at (IST): 15-Apr-2026 01:25:27 PM
