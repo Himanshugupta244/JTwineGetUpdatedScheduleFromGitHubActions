@@ -17,7 +17,7 @@ Today's date: Apr 16
 §TODAY§
 ✪ Thu, Apr 16, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== Narasimha Kanderi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=s5n7jL%2FVmrIQYk1%2BhuZhsYJMSrxo39mrsJyVzAEbK%2BWbMdXrj7Yo3h3qRkQ64NN%2F&type=H
 ✪ Thu, Apr 16, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Sandeep Usakoyala ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Q5hYojfBJNYiS82HYnUKpD2N0FGm0dUKFPn4klkiqsKniBJ%2Bl2g%2BEauDdRbrf3KT&type=H
-✪ Thu, Apr 16, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP008 Intermediate Quality Engineer (17961) ===CANDIDATE=== S P ARATH ASUPULETI ===LINK=== https://www.jobtwine.com/meeting/copilot?id=gcb%2F7cEZDe6DMSBIDgL9GiIW93KF16PLjjHCQPkSXfIiWheXSh1bdAxoSByiIC2P&type=H
+✪ Thu, Apr 16, 2026, 3:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCPP008 Intermediate Quality Engineer (17961) ===CANDIDATE=== S P ARATH ASUPULETI ===LINK=== NA
 ✪ Thu, Apr 16, 2026, 10:00 AM IST ==> Candidate No Show ===PROFILE=== QE Manager CIBCRA002 (17935) ===CANDIDATE=== Vaishnavi Bharath ===LINK=== NA
 §TOMORROW§
 ✪ Fri, Apr 17, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Sravanthi N ===LINK=== https://www.jobtwine.com/meeting/copilot?id=et4Dhgo7cdOStJq6xlUUXKr174k3OGk%2FhLEyXo%2BNhsXj%2F2Y1eQ3Ob%2BNsAPZTKbJz&type=H
@@ -29,4 +29,4 @@ Today's date: Apr 16
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 16-Apr-2026 03:36:11 PM
+Updated at (IST): 16-Apr-2026 03:45:30 PM
