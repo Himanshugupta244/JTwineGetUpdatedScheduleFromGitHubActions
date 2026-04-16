@@ -4,7 +4,7 @@ Today's date: Apr 16
 ✪ Thu, Apr 16, 2026, 4:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Shashank Gautam ===LINK=== https://www.jobtwine.com/meeting/copilot?id=MmRkRb1F7UAYSJjkNzI2%2BZdwzxXZJU%2B8qgGoMOFspgpG6YVMO%2BO1F17qL9sr%2Bjev&type=H
 ✪ Thu, Apr 16, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Sumanth Kumar Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=3FL6MX2UgMgHELrKz1%2FA9S0aACYN7iDWaB%2Foc6pethQ9KoLOzRDTodkhYbbRXyFg&type=H
 ✪ Thu, Apr 16, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Ganesh Challa ===LINK=== https://www.jobtwine.com/meeting/copilot?id=yJVsYvenjnzoAlzaD4fZJktWeFsygjpuSoo4bVCPRzCmS1zB5Ct6uSVsrGgnYLlP&type=H
-✪ Thu, Apr 16, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Sreeja Genti ===LINK=== https://www.jobtwine.com/meeting/copilot?id=d6xWD60JrkiaQcp%2B0VJeytAE75PDJ8wNbfAXBoo%2F%2FtgJ0uJEgJ3eog87qOTjUGKX&type=H
+✪ Thu, Apr 16, 2026, 12:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Sreeja Genti ===LINK=== NA
 ✪ Thu, Apr 16, 2026, 11:00 AM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer(CIBCVS01) (18251) ===CANDIDATE=== V Gayathri ===LINK=== NA
 ✪ Thu, Apr 16, 2026, 9:30 AM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer CIBCTA002 (17933) ===CANDIDATE=== Srijani Dey ===LINK=== NA
 §TOMORROW§
@@ -29,4 +29,4 @@ Today's date: Apr 16
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 16-Apr-2026 12:56:12 PM
+Updated at (IST): 16-Apr-2026 01:16:06 PM
