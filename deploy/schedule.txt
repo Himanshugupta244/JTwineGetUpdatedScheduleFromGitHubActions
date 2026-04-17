@@ -17,7 +17,7 @@ Today's date: Apr 17
 ✪ Fri, Apr 17, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Alekhya Kari ===LINK=== https://www.jobtwine.com/meeting/copilot?id=jY6iEi%2FA0RMZgdqPssaK1NJ5KMDMo3iE%2B9nsxwo5Hy%2BmbgNMKlnTAXbK9IMTJlBp&type=H
 ✪ Fri, Apr 17, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Sravanthi N ===LINK=== https://www.jobtwine.com/meeting/copilot?id=et4Dhgo7cdOStJq6xlUUXKr174k3OGk%2FhLEyXo%2BNhsXj%2F2Y1eQ3Ob%2BNsAPZTKbJz&type=H
 ✪ Fri, Apr 17, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== Lead Quality Engineering Manager(CIBCKB003) (18495) ===CANDIDATE=== Naveena Kadaveru ===LINK=== https://www.jobtwine.com/meeting/copilot?id=BD890eLcludH8oYal%2BPF8jgeloQfMq%2FBwqmjdxNYpbqZ6u2eomZ%2FmlCmgQi21%2BI4&type=H
-✪ Fri, Apr 17, 2026, 5:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Sardar Singh ===LINK=== NA
+✪ Fri, Apr 17, 2026, 5:00 PM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Sardar Singh ===LINK=== NA
 ✪ Fri, Apr 17, 2026, 4:00 PM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Praveen Nimmakayala ===LINK=== NA
 ✪ Fri, Apr 17, 2026, 3:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== POORNACHANDER DAREPELLI ===LINK=== NA
 ✪ Fri, Apr 17, 2026, 12:00 PM IST ==> Not Recommended ===PROFILE=== Quality Engineer CIBCCL003 (18491) ===CANDIDATE=== Indu Chennuri ===LINK=== NA
@@ -31,4 +31,4 @@ Today's date: Apr 17
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 17-Apr-2026 06:36:09 PM
+Updated at (IST): 17-Apr-2026 06:45:40 PM
