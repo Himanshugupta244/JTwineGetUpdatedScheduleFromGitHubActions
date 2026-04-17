@@ -7,11 +7,6 @@ Today's date: Apr 17
 ✪ Fri, Apr 17, 2026, 5:00 PM IST ==> Candidate No Show ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Sivakumar Majji ===LINK=== NA
 ✪ Fri, Apr 17, 2026, 3:00 PM IST ==> Not Recommended ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Mahender Kumar ===LINK=== NA
 ✪ Fri, Apr 17, 2026, 10:00 AM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Suchismita Bhuyan ===LINK=== NA
-✪ Fri, Apr 17, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCAP004) (18454) ===CANDIDATE=== M.V.Sri Shyamal ===LINK=== NA
-✪ Fri, Apr 17, 2026, 7:00 PM IST ==> Candidate No Show ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== ANJANI UPPULURI ===LINK=== NA
-✪ Fri, Apr 17, 2026, 5:00 PM IST ==> Candidate No Show ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Sivakumar Majji ===LINK=== NA
-✪ Fri, Apr 17, 2026, 3:00 PM IST ==> Not Recommended ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Mahender Kumar ===LINK=== NA
-✪ Fri, Apr 17, 2026, 10:00 AM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Suchismita Bhuyan ===LINK=== NA
 §TOMORROW§
 ✪ Sat, Apr 18, 2026, 4:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCTA002 (17933) ===CANDIDATE=== MANJU NAMMI ===LINK=== https://www.jobtwine.com/meeting/copilot?id=cBfph41PNDI4Gn%2BPQT9YXmL5Yp65oiIyPMIti%2FuyWTP416wBNKtOAEBqKzFqA1%2Fw&type=H
 ✪ Sat, Apr 18, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCVS01) (18251) ===CANDIDATE=== Jayaprakash Sahoo ===LINK=== https://www.jobtwine.com/meeting/copilot?id=3Vu09pKwGueypNiN3LuD0vlqYZ73%2FAXE0Opwh3w3%2B%2F7oY%2BwXhV5yV22vi%2FFfsJT5&type=H
@@ -36,4 +31,4 @@ Today's date: Apr 17
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 17-Apr-2026 07:55:17 PM
+Updated at (IST): 17-Apr-2026 08:05:13 PM
