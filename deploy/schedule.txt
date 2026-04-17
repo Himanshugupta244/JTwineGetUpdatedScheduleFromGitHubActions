@@ -3,7 +3,7 @@ Today's date: Apr 17
 §TODAY§
 ✪ Fri, Apr 17, 2026, 11:00 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Omer Ahmed ===LINK=== https://www.jobtwine.com/meeting/copilot?id=zMxYLF66N5dHzhDV5Fu9fOAfaSYx4v2YkEWQEc0Sx3qd8SNdBR%2F70LxWyT9GfBkv&type=H
 ✪ Fri, Apr 17, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCAP004) (18454) ===CANDIDATE=== M.V.Sri Shyamal ===LINK=== https://www.jobtwine.com/meeting/copilot?id=qYET8LIu1DlycL%2FNgNE%2Ba%2BgdBKzJUrTnGpjKoa7AIajAga%2Fkrl%2BtD0mwFj4AS1uA&type=H
-✪ Fri, Apr 17, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== ANJANI UPPULURI ===LINK=== https://www.jobtwine.com/meeting/copilot?id=361mQUF5Ir0ocDJVO6feCCJnl7a%2F%2FR8qjZ6kowBjhEmhe1DgIQRVVvs0HF4JJ3Ey&type=H
+✪ Fri, Apr 17, 2026, 7:00 PM IST ==> Candidate No Show ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== ANJANI UPPULURI ===LINK=== NA
 ✪ Fri, Apr 17, 2026, 5:00 PM IST ==> Candidate No Show ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Sivakumar Majji ===LINK=== NA
 ✪ Fri, Apr 17, 2026, 3:00 PM IST ==> Not Recommended ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Mahender Kumar ===LINK=== NA
 ✪ Fri, Apr 17, 2026, 10:00 AM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Suchismita Bhuyan ===LINK=== NA
@@ -31,4 +31,4 @@ Today's date: Apr 17
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 17-Apr-2026 07:15:36 PM
+Updated at (IST): 17-Apr-2026 07:25:35 PM
