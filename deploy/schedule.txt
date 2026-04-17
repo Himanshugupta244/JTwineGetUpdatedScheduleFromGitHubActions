@@ -15,7 +15,7 @@ Today's date: Apr 17
 ✪ Sat, Apr 18, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== Intermediate quality engineer CIBCAT001 (18455) ===CANDIDATE=== Daniyakula Venkat Shiva ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ZmaC90twclT3eXQyMivHA3CEFadcE2nULKjyeAIHRtU%2FzdijHJ%2B5v5giTZjJCsxE&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
-✪ Fri, Apr 17, 2026, 9:30 PM IST ==> Pending Feedback Review ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Alekhya Kari ===LINK=== NA
+✪ Fri, Apr 17, 2026, 9:30 PM IST ==> Not Recommended ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Alekhya Kari ===LINK=== NA
 ✪ Fri, Apr 17, 2026, 8:00 PM IST ==> Cancelled by candidate ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Sravanthi N ===LINK=== NA
 ✪ Fri, Apr 17, 2026, 7:00 PM IST ==> Is a Good Fit ===PROFILE=== Lead Quality Engineering Manager(CIBCKB003) (18495) ===CANDIDATE=== Naveena Kadaveru ===LINK=== NA
 ✪ Fri, Apr 17, 2026, 5:00 PM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Sardar Singh ===LINK=== NA
@@ -32,4 +32,4 @@ Today's date: Apr 17
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 17-Apr-2026 11:44:47 PM
+Updated at (IST): 17-Apr-2026 11:54:41 PM
