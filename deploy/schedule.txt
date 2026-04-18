@@ -10,7 +10,7 @@ Today's date: Apr 18
 ✪ Sun, Apr 19, 2026, 5:00 PM IST ==> Cancelled by candidate ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Rajasri Ramamoorthy ===LINK=== NA
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
-✪ Sat, Apr 18, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCAP004) (18454) ===CANDIDATE=== Laxman Lyagala ===LINK=== https://www.jobtwine.com/meeting/copilot?id=d6qiroefhTsKTEKgKvciYExnBvLniwBaC8bGXO54W7krw0Mou%2BRRPUD0Oso5IU%2BA&type=H
+✪ Sat, Apr 18, 2026, 6:00 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer(CIBCAP004) (18454) ===CANDIDATE=== Laxman Lyagala ===LINK=== NA
 ✪ Sat, Apr 18, 2026, 3:00 PM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer CIBCSA001 (17785) ===CANDIDATE=== Sandeep Usakoyala ===LINK=== NA
 ✪ Sat, Apr 18, 2026, 2:00 PM IST ==> Is a Good Fit ===PROFILE=== CIBCNG004 - Quality Engineer (17972) ===CANDIDATE=== R V S S I V A K U M A R S Siva kumar ===LINK=== NA
 ✪ Sat, Apr 18, 2026, 12:00 PM IST ==> Not Recommended ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Bijay Sahoo ===LINK=== NA
@@ -19,4 +19,4 @@ Today's date: Apr 18
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 18-Apr-2026 11:13:03 PM
+Updated at (IST): 18-Apr-2026 11:22:56 PM
