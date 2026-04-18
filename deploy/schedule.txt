@@ -1,16 +1,26 @@
 Today's date: Apr 18
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
-Exception: element click intercepted: Element <span>...</span> is not clickable at point (540, 137). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
+§TODAY§
+✪ Sat, Apr 18, 2026, 4:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCTA002 (17933) ===CANDIDATE=== MANJU NAMMI ===LINK=== https://www.jobtwine.com/meeting/copilot?id=cBfph41PNDI4Gn%2BPQT9YXmL5Yp65oiIyPMIti%2FuyWTP416wBNKtOAEBqKzFqA1%2Fw&type=H
+✪ Sat, Apr 18, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCVS01) (18251) ===CANDIDATE=== Jayaprakash Sahoo ===LINK=== https://www.jobtwine.com/meeting/copilot?id=3Vu09pKwGueypNiN3LuD0vlqYZ73%2FAXE0Opwh3w3%2B%2F7oY%2BwXhV5yV22vi%2FFfsJT5&type=H
+✪ Sat, Apr 18, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Mopati Srinivas Sasank ===LINK=== https://www.jobtwine.com/meeting/copilot?id=m%2FzQKj3%2FoFzW05P9FxsLNmA5fRWLQ4pWEAM312RRSpNwQMBWYPu7RCX506YRiW1K&type=H
+✪ Sat, Apr 18, 2026, 11:00 AM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Amarnath Kannamreddy ===LINK=== NA
+✪ Sat, Apr 18, 2026, 10:00 AM IST ==> Pending Feedback Review ===PROFILE=== Intermediate quality engineer CIBCAT001 (18455) ===CANDIDATE=== Daniyakula Venkat Shiva ===LINK=== NA
+§TOMORROW§
+✪ Sun, Apr 19, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Rajasri Ramamoorthy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=uDiMcWrGPA8p7vlNHcayr%2FMdGOMeRuhu0k9esyHUeh8qg7kwkbRMIBytwi0v2ae1&type=H
+✪ Sun, Apr 19, 2026, 1:00 PM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Shyam Sai Sunder Kanchipati ===LINK=== NA
+**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
+Exception: element click intercepted: Element <span>...</span> is not clickable at point (544, 137). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
   (Session info: chrome=147.0.7727.55)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fd07cfb19168dadbe0914b7f285ae442, clickElement {id=f.FD19A5EAAA696ECE98E29B4A182B50CA.d.B25814A518E6232220B901378B55AEE1.e.311}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38785}, goog:processID: 2428, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38785/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (fd07cfb19168dadbe0914b7f285ae442)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[3]]
-Session ID: fd07cfb19168dadbe0914b7f285ae442
+Command: [cbe3309b8b328595d2025265806a9ecb, clickElement {id=f.4297B8F5472F5DE7965229974AFD12F2.d.03805DD45783532C500AF7A8D073FD0C.e.291}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41375}, goog:processID: 3085, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41375/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (cbe3309b8b328595d2025265806a9ecb)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[3]]
+Session ID: cbe3309b8b328595d2025265806a9ecb
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 18-Apr-2026 11:02:55 AM
+Updated at (IST): 18-Apr-2026 11:14:23 AM
