@@ -7,7 +7,7 @@ Today's date: Apr 18
 ✪ Sat, Apr 18, 2026, 11:00 AM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Amarnath Kannamreddy ===LINK=== NA
 ✪ Sat, Apr 18, 2026, 10:00 AM IST ==> Not Recommended ===PROFILE=== Intermediate quality engineer CIBCAT001 (18455) ===CANDIDATE=== Daniyakula Venkat Shiva ===LINK=== NA
 §TOMORROW§
-✪ Sun, Apr 19, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Rajasri Ramamoorthy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=uDiMcWrGPA8p7vlNHcayr%2FMdGOMeRuhu0k9esyHUeh8qg7kwkbRMIBytwi0v2ae1&type=H
+✪ Sun, Apr 19, 2026, 5:00 PM IST ==> Cancelled by candidate ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Rajasri Ramamoorthy ===LINK=== NA
 ✪ Sun, Apr 19, 2026, 1:00 PM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Shyam Sai Sunder Kanchipati ===LINK=== NA
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
@@ -20,4 +20,4 @@ Today's date: Apr 18
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 18-Apr-2026 01:54:07 PM
+Updated at (IST): 18-Apr-2026 02:04:14 PM
