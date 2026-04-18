@@ -3,12 +3,11 @@ Today's date: Apr 18
 §TODAY§
 ✪ Sat, Apr 18, 2026, 4:30 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer CIBCTA002 (17933) ===CANDIDATE=== MANJU NAMMI ===LINK=== NA
 ✪ Sat, Apr 18, 2026, 3:00 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer(CIBCVS01) (18251) ===CANDIDATE=== Jayaprakash Sahoo ===LINK=== NA
-✪ Sat, Apr 18, 2026, 2:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Mopati Srinivas Sasank ===LINK=== NA
+✪ Sat, Apr 18, 2026, 2:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Mopati Srinivas Sasank ===LINK=== NA
 ✪ Sat, Apr 18, 2026, 11:00 AM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineer CIBCBS001 (18315) ===CANDIDATE=== Amarnath Kannamreddy ===LINK=== NA
 ✪ Sat, Apr 18, 2026, 10:00 AM IST ==> Not Recommended ===PROFILE=== Intermediate quality engineer CIBCAT001 (18455) ===CANDIDATE=== Daniyakula Venkat Shiva ===LINK=== NA
 §TOMORROW§
 ✪ Sun, Apr 19, 2026, 5:00 PM IST ==> Cancelled by candidate ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Rajasri Ramamoorthy ===LINK=== NA
-✪ Sun, Apr 19, 2026, 1:00 PM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Shyam Sai Sunder Kanchipati ===LINK=== NA
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
 ✪ Sat, Apr 18, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCAP004) (18454) ===CANDIDATE=== Laxman Lyagala ===LINK=== https://www.jobtwine.com/meeting/copilot?id=d6qiroefhTsKTEKgKvciYExnBvLniwBaC8bGXO54W7krw0Mou%2BRRPUD0Oso5IU%2BA&type=H
@@ -20,4 +19,4 @@ Today's date: Apr 18
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 18-Apr-2026 05:53:12 PM
+Updated at (IST): 18-Apr-2026 06:03:15 PM
