@@ -14,17 +14,13 @@ Today's date: Apr 19
 ✪ Mon, Apr 20, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Bilal Khan ===LINK=== https://www.jobtwine.com/meeting/copilot?id=OaW2%2FqK4lxhdmgKces6%2FT8Wb3KbqLNmtQRM9d27O9%2B2F3EP%2B3fW55rdX0KA1IJan&type=H
 ✪ Mon, Apr 20, 2026, 9:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Sivateja Palempalli ===LINK=== https://www.jobtwine.com/meeting/copilot?id=6HB7UK5IFsnpEmw9XC0Z08jws%2Ba%2FPyhtTt40KCLG19KXW%2FJ6ErHBBiNywjYQjavQ&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
-Exception: element click intercepted: Element <span>...</span> is not clickable at point (544, 157). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
-  (Session info: chrome=147.0.7727.55)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [147617c28dd7b8a9f0b867903dd0b613, clickElement {id=f.CF4392013F6A99CF52809D191642463E.d.AA48C90B99E49A1B30DAB9A734AB0B56.e.282}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43167}, goog:processID: 3214, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43167/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (147617c28dd7b8a9f0b867903dd0b613)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[3]]
-Session ID: 147617c28dd7b8a9f0b867903dd0b613
+§TOMORROW§
+✪ Mon, Apr 20, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Anirudh Patil ===LINK=== https://www.jobtwine.com/meeting/copilot?id=BDEpOBbFH0qAPo%2FdcIH7BtEMsg3IukbfrGaF%2FIitPltqu8KGIOG7kW0JK0SpbQJl&type=H
+✪ Mon, Apr 20, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== Anuja Ravula ===LINK=== https://www.jobtwine.com/meeting/copilot?id=XdAt3wWMj4Za5z4KLGLrx9wT3F52IWgOx3DYZ%2Fo0cFpAqo98zOjDEdZbJXKhrbD%2F&type=H
+✪ Mon, Apr 20, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Jyoti Kandoliya ===LINK=== https://www.jobtwine.com/meeting/copilot?id=DQDFhC5Z5BKCIZobZ%2FOU3Gsxn4qkpK1QKgvz9uI05KffSyByNwEtDz0lsTm%2BLDlm&type=H
+✪ Mon, Apr 20, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Anand Kumar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=sDdCeVrn1FNgfazFIgkhDP4TvhwIfKowe0na6EA7jakT3KfseCYtjRO%2BIeySM2YX&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 19-Apr-2026 01:35:53 PM
+Updated at (IST): 19-Apr-2026 01:45:31 PM
