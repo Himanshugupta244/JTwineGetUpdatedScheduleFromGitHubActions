@@ -4,13 +4,20 @@ Today's date: Apr 20
 ✪ Mon, Apr 20, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Rajasri Ramamoorthy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=xuUmpaxKFHGQ9Mlr8cTlrpiTroEKp39zuSk%2FpRYDowCLSoJwJbskv93fswV3WJ%2B%2F&type=H
 ✪ Mon, Apr 20, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Omer Ahmed ===LINK=== https://www.jobtwine.com/meeting/copilot?id=iqXAeQTddXn5CTnD1WuziMzLEZj2s6DOdypuQkP24iQHsaXBk4NdbAca3tIptBts&type=H
 ✪ Mon, Apr 20, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Siva Padakandla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=kTAWPHBFAnTqfiEdPDaH7f4rN5QpirJkx2OAg0xnSVFnaapydUCnwXaosIZq8%2Ftq&type=H
+✪ Mon, Apr 20, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== Senior QA Analyst - CIBCPB001 (16898) ===CANDIDATE=== Srinath Veeramalla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=zSzF7fHL2T5TXYurXeDtDCZH4ZFHTg3HiIi%2FgqJerZaik3zzcFgave3GdlbGB3zX&type=H
+✪ Mon, Apr 20, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCSA002 (18325) ===CANDIDATE=== Avulamanda Srinivas ===LINK=== https://www.jobtwine.com/meeting/copilot?id=L9g0bvnQgPJRgL1Unw8jVKwyuFI9ZR%2F6fjVyyeyyzoFxNiWVNqvUrNVpgmCIVY2M&type=H
+✪ Mon, Apr 20, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Shyam Sai Sunder Kanchipati ===LINK=== https://www.jobtwine.com/meeting/copilot?id=I5c1VcjH0ZXwfR7t5%2F3J6QmNo%2F3IwLnq%2FJa77%2BxaxhcfrZIUGzV04m26s01lCaxF&type=H
+✪ Mon, Apr 20, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Anand Kumar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=OuMwYwZH5UBLQ9pzHysS423Yl8dl01TmSOJ2fEtTREqnIhyEhfo6KTb2m5ehjv%2Fb&type=H
+✪ Mon, Apr 20, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== RAJBEER HORA ===LINK=== https://www.jobtwine.com/meeting/copilot?id=HLBY44RnO981TdxEa%2BRqjlAHsMCrLFXVpVxnm2b4h4vQonzn%2BxfNA2yyxzwePzQK&type=H
+✪ Mon, Apr 20, 2026, 10:00 AM IST ==> Not Recommended ===PROFILE=== QA (8804) ===CANDIDATE=== Bilal Khan ===LINK=== NA
+✪ Mon, Apr 20, 2026, 9:00 AM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Sivateja Palempalli ===LINK=== NA
 §TOMORROW§
-✪ Tue, Apr 21, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Sushma Rajeev ===LINK=== NA
-✪ Tue, Apr 21, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Rohini Nelapati ===LINK=== NA
-✪ Tue, Apr 21, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Puchala Ravali ===LINK=== NA
-✪ Tue, Apr 21, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== CIBCMAB002 Quality Engineering Consultant (17853) ===CANDIDATE=== Phanindhar Reddy ===LINK=== https://www.jobtwine.com/signin
-✪ Tue, Apr 21, 2026, 4:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Ashokkumar Kadari ===LINK=== NA
-✪ Tue, Apr 21, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Rachana Naregudam ===LINK=== NA
+✪ Tue, Apr 21, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Sushma Rajeev ===LINK=== https://www.jobtwine.com/meeting/copilot?id=CHV%2BMrpXFtYNf1hLkyqdQggVaIjYQZi70GjbZ1VaW4KAwhN5tFvXRO7U2cdSfquT&type=H
+✪ Tue, Apr 21, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Rohini Nelapati ===LINK=== https://www.jobtwine.com/meeting/copilot?id=6wVqwN10m5PPSa45NFTRv9JiKYv%2BWlzPIUgy%2FNbvrj5gJtvW5HKyugaiPY05IMI2&type=H
+✪ Tue, Apr 21, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Puchala Ravali ===LINK=== https://www.jobtwine.com/meeting/copilot?id=d4YzPvcvB2ylhHEgyF3Wcc%2FfIvXeZEXV6WwmeB4C%2FGyDN6HbiDpFDu35%2F%2BHlX6ic&type=H
+✪ Tue, Apr 21, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== CIBCMAB002 Quality Engineering Consultant (17853) ===CANDIDATE=== Phanindhar Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=azw%2B%2F%2FKfzFahBNChm5looC8aJA75bFjydSKqzvOdZ%2FkBs4MLAzLX018666Q5m8Tu&type=H
+✪ Tue, Apr 21, 2026, 4:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Ashokkumar Kadari ===LINK=== https://www.jobtwine.com/meeting/copilot?id=poSjAOngAFEx5%2FJXp2DaztDuTo9yIiLW4ugHTATqS9Jd%2B3g7gtIB9H87ZYm%2F8Jg3&type=H
+✪ Tue, Apr 21, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Rachana Naregudam ===LINK=== https://www.jobtwine.com/meeting/copilot?id=SKbe7Wa1UwXnIPHtkxb1BeHwhSkZOJFnPFbv32lymBgDpD86Ha9irMCukdRhRXn0&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
 ✪ Mon, Apr 20, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Anirudh Patil ===LINK=== https://www.jobtwine.com/meeting/copilot?id=BDEpOBbFH0qAPo%2FdcIH7BtEMsg3IukbfrGaF%2FIitPltqu8KGIOG7kW0JK0SpbQJl&type=H
@@ -29,4 +36,4 @@ Today's date: Apr 20
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 20-Apr-2026 11:36:28 AM
+Updated at (IST): 20-Apr-2026 11:47:43 AM
