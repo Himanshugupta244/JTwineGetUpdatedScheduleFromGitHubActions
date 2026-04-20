@@ -4,7 +4,7 @@ Today's date: Apr 20
 ✪ Mon, Apr 20, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Rajasri Ramamoorthy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=xuUmpaxKFHGQ9Mlr8cTlrpiTroEKp39zuSk%2FpRYDowCLSoJwJbskv93fswV3WJ%2B%2F&type=H
 ✪ Mon, Apr 20, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Omer Ahmed ===LINK=== https://www.jobtwine.com/meeting/copilot?id=iqXAeQTddXn5CTnD1WuziMzLEZj2s6DOdypuQkP24iQHsaXBk4NdbAca3tIptBts&type=H
 ✪ Mon, Apr 20, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Siva Padakandla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=kTAWPHBFAnTqfiEdPDaH7f4rN5QpirJkx2OAg0xnSVFnaapydUCnwXaosIZq8%2Ftq&type=H
-✪ Mon, Apr 20, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== Senior QA Analyst - CIBCPB001 (16898) ===CANDIDATE=== Srinath Veeramalla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=zSzF7fHL2T5TXYurXeDtDCZH4ZFHTg3HiIi%2FgqJerZaik3zzcFgave3GdlbGB3zX&type=H
+✪ Mon, Apr 20, 2026, 7:00 PM IST ==> Pending Feedback Review ===PROFILE=== Senior QA Analyst - CIBCPB001 (16898) ===CANDIDATE=== Srinath Veeramalla ===LINK=== NA
 ✪ Mon, Apr 20, 2026, 6:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer CIBCSA002 (18325) ===CANDIDATE=== Avulamanda Srinivas ===LINK=== NA
 ✪ Mon, Apr 20, 2026, 4:00 PM IST ==> Candidate No Show ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Anand Kumar ===LINK=== NA
 ✪ Mon, Apr 20, 2026, 3:00 PM IST ==> Strongly Recommended ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== RAJBEER HORA ===LINK=== NA
@@ -37,4 +37,4 @@ Today's date: Apr 20
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 20-Apr-2026 07:37:25 PM
+Updated at (IST): 20-Apr-2026 07:46:45 PM
