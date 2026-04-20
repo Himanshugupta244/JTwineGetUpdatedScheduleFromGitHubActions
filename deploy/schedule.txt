@@ -24,7 +24,7 @@ Today's date: Apr 20
 ✪ Mon, Apr 20, 2026, 10:30 PM IST ==> Strongly Recommended ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Anirudh Patil ===LINK=== NA
 ✪ Mon, Apr 20, 2026, 9:30 PM IST ==> Not Recommended ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== Anuja Ravula ===LINK=== NA
 ✪ Mon, Apr 20, 2026, 8:30 PM IST ==> Not Recommended ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Jyoti Kandoliya ===LINK=== NA
-✪ Mon, Apr 20, 2026, 5:00 PM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer(CIBCVS01) (18251) ===CANDIDATE=== Jayaprakash Sahoo ===LINK=== NA
+✪ Mon, Apr 20, 2026, 5:00 PM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer(CIBCVS01) (18251) ===CANDIDATE=== Jayaprakash Sahoo ===LINK=== NA
 ✪ Mon, Apr 20, 2026, 4:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Anand Kumar ===LINK=== NA
 ✪ Mon, Apr 20, 2026, 12:00 PM IST ==> Strongly Recommended ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Pavan Diguvapalem ===LINK=== NA
 §TOMORROW§
@@ -37,4 +37,4 @@ Today's date: Apr 20
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 21-Apr-2026 01:45:30 AM
+Updated at (IST): 21-Apr-2026 01:55:31 AM
