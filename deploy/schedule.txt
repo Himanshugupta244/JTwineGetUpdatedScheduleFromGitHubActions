@@ -6,7 +6,6 @@ Today's date: Apr 20
 ✪ Mon, Apr 20, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Siva Padakandla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=kTAWPHBFAnTqfiEdPDaH7f4rN5QpirJkx2OAg0xnSVFnaapydUCnwXaosIZq8%2Ftq&type=H
 ✪ Mon, Apr 20, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== Senior QA Analyst - CIBCPB001 (16898) ===CANDIDATE=== Srinath Veeramalla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=zSzF7fHL2T5TXYurXeDtDCZH4ZFHTg3HiIi%2FgqJerZaik3zzcFgave3GdlbGB3zX&type=H
 ✪ Mon, Apr 20, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCSA002 (18325) ===CANDIDATE=== Avulamanda Srinivas ===LINK=== https://www.jobtwine.com/meeting/copilot?id=L9g0bvnQgPJRgL1Unw8jVKwyuFI9ZR%2F6fjVyyeyyzoFxNiWVNqvUrNVpgmCIVY2M&type=H
-✪ Mon, Apr 20, 2026, 5:00 PM IST ==> Cancelled by candidate ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Shyam Sai Sunder Kanchipati ===LINK=== NA
 ✪ Mon, Apr 20, 2026, 4:00 PM IST ==> Candidate No Show ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Anand Kumar ===LINK=== NA
 ✪ Mon, Apr 20, 2026, 3:00 PM IST ==> Strongly Recommended ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== RAJBEER HORA ===LINK=== NA
 ✪ Mon, Apr 20, 2026, 10:00 AM IST ==> Not Recommended ===PROFILE=== QA (8804) ===CANDIDATE=== Bilal Khan ===LINK=== NA
@@ -17,6 +16,7 @@ Today's date: Apr 20
 ✪ Tue, Apr 21, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Puchala Ravali ===LINK=== https://www.jobtwine.com/meeting/copilot?id=d4YzPvcvB2ylhHEgyF3Wcc%2FfIvXeZEXV6WwmeB4C%2FGyDN6HbiDpFDu35%2F%2BHlX6ic&type=H
 ✪ Tue, Apr 21, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== CIBCMAB002 Quality Engineering Consultant (17853) ===CANDIDATE=== Phanindhar Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=azw%2B%2F%2FKfzFahBNChm5looC8aJA75bFjydSKqzvOdZ%2FkBs4MLAzLX018666Q5m8Tu&type=H
 ✪ Tue, Apr 21, 2026, 4:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Ashokkumar Kadari ===LINK=== https://www.jobtwine.com/meeting/copilot?id=poSjAOngAFEx5%2FJXp2DaztDuTo9yIiLW4ugHTATqS9Jd%2B3g7gtIB9H87ZYm%2F8Jg3&type=H
+✪ Tue, Apr 21, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Shyam Sai Sunder Kanchipati ===LINK=== https://www.jobtwine.com/meeting/copilot?id=LE2irCj9pHTbcqVL3t5S0arufRgPH2o15ogUo6ZBQkZgnddjUv1T7ZyoXqL2Kinv&type=H
 ✪ Tue, Apr 21, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Rachana Naregudam ===LINK=== https://www.jobtwine.com/meeting/copilot?id=SKbe7Wa1UwXnIPHtkxb1BeHwhSkZOJFnPFbv32lymBgDpD86Ha9irMCukdRhRXn0&type=H
 ✪ Tue, Apr 21, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Galla Yadav ===LINK=== https://www.jobtwine.com/meeting/copilot?id=fpB1%2BkQOij4zZmZilb7VoLyoZt4crfdBabS9WOm6nkhedUxbaknk6%2FClcGBQVCcB&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
@@ -24,7 +24,7 @@ Today's date: Apr 20
 ✪ Mon, Apr 20, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Anirudh Patil ===LINK=== https://www.jobtwine.com/meeting/copilot?id=BDEpOBbFH0qAPo%2FdcIH7BtEMsg3IukbfrGaF%2FIitPltqu8KGIOG7kW0JK0SpbQJl&type=H
 ✪ Mon, Apr 20, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== Anuja Ravula ===LINK=== https://www.jobtwine.com/meeting/copilot?id=XdAt3wWMj4Za5z4KLGLrx9wT3F52IWgOx3DYZ%2Fo0cFpAqo98zOjDEdZbJXKhrbD%2F&type=H
 ✪ Mon, Apr 20, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Jyoti Kandoliya ===LINK=== https://www.jobtwine.com/meeting/copilot?id=DQDFhC5Z5BKCIZobZ%2FOU3Gsxn4qkpK1QKgvz9uI05KffSyByNwEtDz0lsTm%2BLDlm&type=H
-✪ Mon, Apr 20, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCVS01) (18251) ===CANDIDATE=== Jayaprakash Sahoo ===LINK=== https://www.jobtwine.com/meeting/copilot?id=BCkglSCekkCCqckSCersn4B7fWp1iouKGJe%2F1lNCB1MrpiZm2K0U9dXz2FxcSLXV&type=H
+✪ Mon, Apr 20, 2026, 5:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer(CIBCVS01) (18251) ===CANDIDATE=== Jayaprakash Sahoo ===LINK=== NA
 ✪ Mon, Apr 20, 2026, 4:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Anand Kumar ===LINK=== NA
 ✪ Mon, Apr 20, 2026, 12:00 PM IST ==> Strongly Recommended ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Pavan Diguvapalem ===LINK=== NA
 §TOMORROW§
@@ -37,4 +37,4 @@ Today's date: Apr 20
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 20-Apr-2026 05:37:33 PM
+Updated at (IST): 20-Apr-2026 05:46:58 PM
