@@ -25,7 +25,7 @@ Today's date: Apr 20
 ✪ Mon, Apr 20, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Jyoti Kandoliya ===LINK=== https://www.jobtwine.com/meeting/copilot?id=DQDFhC5Z5BKCIZobZ%2FOU3Gsxn4qkpK1QKgvz9uI05KffSyByNwEtDz0lsTm%2BLDlm&type=H
 ✪ Mon, Apr 20, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCVS01) (18251) ===CANDIDATE=== Jayaprakash Sahoo ===LINK=== https://www.jobtwine.com/meeting/copilot?id=BCkglSCekkCCqckSCersn4B7fWp1iouKGJe%2F1lNCB1MrpiZm2K0U9dXz2FxcSLXV&type=H
 ✪ Mon, Apr 20, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Anand Kumar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=sDdCeVrn1FNgfazFIgkhDP4TvhwIfKowe0na6EA7jakT3KfseCYtjRO%2BIeySM2YX&type=H
-✪ Mon, Apr 20, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Pavan Diguvapalem ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ULW7yQuCaSZKut4PF4g8G3yXfHHx%2BTR2urSq4YwW1S%2FkWKztv4cuGldXlzyaiRFQ&type=H
+✪ Mon, Apr 20, 2026, 12:00 PM IST ==> Pending Feedback Review ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Pavan Diguvapalem ===LINK=== NA
 §TOMORROW§
 ✪ Tue, Apr 21, 2026, 11:30 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Kushal Karki ===LINK=== https://www.jobtwine.com/meeting/copilot?id=8cW%2BueocWQV6Q3xP8v7dzBXPgEKwAnVd6KvQfrWLG4Hux365%2BpAAFosCsUdlG9jE&type=H
 ✪ Tue, Apr 21, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Samaanvitha Bitla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=IWQ9EuLk1xR8bSMCbcwWESM1gX9rSCqLFzPPKSPlnhz9QzvHCPCKNkqwOHd4wRcW&type=H
@@ -36,4 +36,4 @@ Today's date: Apr 20
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 20-Apr-2026 12:38:13 PM
+Updated at (IST): 20-Apr-2026 12:47:42 PM
