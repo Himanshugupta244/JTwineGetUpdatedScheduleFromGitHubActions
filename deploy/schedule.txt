@@ -19,7 +19,7 @@ Today's date: Apr 21
 §TODAY§
 ✪ Tue, Apr 21, 2026, 11:30 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Kushal Karki ===LINK=== https://www.jobtwine.com/meeting/copilot?id=8cW%2BueocWQV6Q3xP8v7dzBXPgEKwAnVd6KvQfrWLG4Hux365%2BpAAFosCsUdlG9jE&type=H
 ✪ Tue, Apr 21, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Samaanvitha Bitla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=IWQ9EuLk1xR8bSMCbcwWESM1gX9rSCqLFzPPKSPlnhz9QzvHCPCKNkqwOHd4wRcW&type=H
-✪ Tue, Apr 21, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Mohamad Alhomsi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ruAL5DdVHWBf4SYlQMlc9WAL%2B19E2dV1%2F6qbIYJWd7kig4tHFdzVUklXw%2FNMUObx&type=H
+✪ Tue, Apr 21, 2026, 9:30 PM IST ==> Generating Feedback ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Mohamad Alhomsi ===LINK=== NA
 ✪ Tue, Apr 21, 2026, 8:00 PM IST ==> Candidate No Show ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Naveen Maddula ===LINK=== NA
 ✪ Tue, Apr 21, 2026, 4:00 PM IST ==> Candidate No Show ===PROFILE=== Quality engineer(CIBCAS004) (18645) ===CANDIDATE=== P. Varma ===LINK=== NA
 §TOMORROW§
@@ -31,4 +31,4 @@ Today's date: Apr 21
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 21-Apr-2026 10:15:46 PM
+Updated at (IST): 21-Apr-2026 10:25:29 PM
