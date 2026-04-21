@@ -6,7 +6,7 @@ Today's date: Apr 21
 ✪ Tue, Apr 21, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Rohini Nelapati ===LINK=== https://www.jobtwine.com/meeting/copilot?id=6wVqwN10m5PPSa45NFTRv9JiKYv%2BWlzPIUgy%2FNbvrj5gJtvW5HKyugaiPY05IMI2&type=H
 ✪ Tue, Apr 21, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Puchala Ravali ===LINK=== https://www.jobtwine.com/meeting/copilot?id=d4YzPvcvB2ylhHEgyF3Wcc%2FfIvXeZEXV6WwmeB4C%2FGyDN6HbiDpFDu35%2F%2BHlX6ic&type=H
 ✪ Tue, Apr 21, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== CIBCMAB002 Quality Engineering Consultant (17853) ===CANDIDATE=== Phanindhar Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=azw%2B%2F%2FKfzFahBNChm5looC8aJA75bFjydSKqzvOdZ%2FkBs4MLAzLX018666Q5m8Tu&type=H
-✪ Tue, Apr 21, 2026, 4:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Ashokkumar Kadari ===LINK=== https://www.jobtwine.com/meeting/copilot?id=poSjAOngAFEx5%2FJXp2DaztDuTo9yIiLW4ugHTATqS9Jd%2B3g7gtIB9H87ZYm%2F8Jg3&type=H
+✪ Tue, Apr 21, 2026, 4:30 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Ashokkumar Kadari ===LINK=== NA
 ✪ Tue, Apr 21, 2026, 1:00 PM IST ==> Not Recommended ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Shyam Sai Sunder Kanchipati ===LINK=== NA
 ✪ Tue, Apr 21, 2026, 12:00 PM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Rachana Naregudam ===LINK=== NA
 ✪ Tue, Apr 21, 2026, 11:00 AM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Galla Yadav ===LINK=== NA
@@ -31,4 +31,4 @@ Today's date: Apr 21
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 21-Apr-2026 04:46:19 PM
+Updated at (IST): 21-Apr-2026 04:56:02 PM
