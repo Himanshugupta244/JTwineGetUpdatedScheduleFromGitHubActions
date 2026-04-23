@@ -13,7 +13,7 @@ Today's date: Apr 23
 ✪ Thu, Apr 23, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Sai Kalidindi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=nwk4KlxgT%2FS4y%2FjYFC2dzSig9VRoM6e%2FLHZdwLZcyKs3zyC3QjzFO0awDsXFUub2&type=H
 ✪ Thu, Apr 23, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== QA Automation Specialist (BDD / Playwright) (18748) ===CANDIDATE=== Shradha Sinha ===LINK=== https://www.jobtwine.com/meeting/copilot?id=HUQnrL5wsW3i9MGhI6azQHTsEd5pOAIT2TZpn%2F%2FfR2bAsCr08AscPgkqVmJ72cVa&type=H
 ✪ Thu, Apr 23, 2026, 5:30 PM IST ==> Scheduled ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Manasvi Nallamothu ===LINK=== https://www.jobtwine.com/meeting/copilot?id=T95i5%2B5vsNnmb%2B4nY1e9d5%2BHfITDYjAH3k4PKgzFmvuAg7QHGzD0AYbCfiKehInx&type=H
-✪ Thu, Apr 23, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Pavan Poguru ===LINK=== https://www.jobtwine.com/meeting/copilot?id=STY2ng8Nn03RevLFC%2FO2BNKM5nw6miSUxMUi23YcJ%2BztAjIvRvCeDoAtcgIy%2B7KN&type=H
+✪ Thu, Apr 23, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCVS002 (17530) ===CANDIDATE=== Anugu Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Ljmn%2F3RCSLS27jTT6uiTc44B1c%2FED1M%2F9sui1CE%2BSsqQ9fFHfydBOp5Exzt9ixHO&type=H
 ✪ Thu, Apr 23, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Pavan Poguru ===LINK=== https://www.jobtwine.com/meeting/copilot?id=STY2ng8Nn03RevLFC%2FO2BNKM5nw6miSUxMUi23YcJ%2BztAjIvRvCeDoAtcgIy%2B7KN&type=H
 ✪ Thu, Apr 23, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Gazala Perween ===LINK=== https://www.jobtwine.com/meeting/copilot?id=HqUoG2f%2BxfLOPv95qsS4UAmVYr1yRO%2BxzbSZnOV%2BtS9JwpD1ec%2Bc16laphMiYo64&type=H
 §TOMORROW§
@@ -24,4 +24,4 @@ Today's date: Apr 23
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 23-Apr-2026 10:55:39 AM
+Updated at (IST): 23-Apr-2026 11:06:01 AM
