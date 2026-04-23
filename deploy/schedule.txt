@@ -15,7 +15,7 @@ Today's date: Apr 23
 ✪ Fri, Apr 24, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Ravi Teja ===LINK=== https://jobtwine.com/meeting/copilot?id=xHYAggERK%2BMgLE8i0mu5cKPKD3JgyL%2BGgQWpVBd30MeQ6GxqE2sVa9%2B1WkzJfnOr&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
-✪ Thu, Apr 23, 2026, 8:30 PM IST ==> Pending Feedback Review ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Sai Kalidindi ===LINK=== NA
+✪ Thu, Apr 23, 2026, 8:30 PM IST ==> Is a Good Fit ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Sai Kalidindi ===LINK=== NA
 ✪ Thu, Apr 23, 2026, 7:00 PM IST ==> Is a Good Fit ===PROFILE=== QA Automation Specialist (BDD / Playwright) (18748) ===CANDIDATE=== Shradha Sinha ===LINK=== NA
 ✪ Thu, Apr 23, 2026, 5:30 PM IST ==> Is a Good Fit ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Manasvi Nallamothu ===LINK=== NA
 ✪ Thu, Apr 23, 2026, 2:00 PM IST ==> Cancelled by candidate ===PROFILE=== Intermediate Quality Engineer CIBCVS002 (17530) ===CANDIDATE=== Anugu Reddy ===LINK=== NA
@@ -30,4 +30,4 @@ Today's date: Apr 23
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 23-Apr-2026 10:24:51 PM
+Updated at (IST): 23-Apr-2026 10:35:29 PM
