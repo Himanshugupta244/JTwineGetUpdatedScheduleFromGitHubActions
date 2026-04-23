@@ -4,13 +4,13 @@ Today's date: Apr 23
 ✪ Thu, Apr 23, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Rupesh Mupparaju ===LINK=== https://jobtwine.com/meeting/copilot?id=%2FDBAnHkhArCfB9CUnxBX%2FLtdZu%2BAFKallQDXMs2bU84hnZYm%2FJf2xV7h6qeRyoIJ&type=H
 ✪ Thu, Apr 23, 2026, 9:00 PM IST ==> Scheduled ===PROFILE=== QA Automation Specialist (BDD / Playwright) (18748) ===CANDIDATE=== Sakrappa ===LINK=== https://jobtwine.com/meeting/copilot?id=cYb%2B8l83hy75GUtAVTV7xdv7my%2BWo0Iiiz1J65vdq69eWVpuabhWEMf9X996Be%2Be&type=H
 ✪ Thu, Apr 23, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Aurbinda Satpathy ===LINK=== https://jobtwine.com/meeting/copilot?id=wNUea3ZugVHkzC4dGsUK1v5DsH8FZp5FslugygnIxK5yau%2By8pfpg3FVgEaJtgY8&type=H
-✪ Thu, Apr 23, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCBC003) (18761) ===CANDIDATE=== Charan Thanugonda ===LINK=== https://jobtwine.com/meeting/copilot?id=dWvUzN%2F6d69wY64xjwf8QW%2Bw7gf4LdGF9rix%2F7D51URCLXpVAPv0i3g8HZUlx8ev&type=H
+✪ Thu, Apr 23, 2026, 6:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer(CIBCBC003) (18761) ===CANDIDATE=== Charan Thanugonda ===LINK=== NA
 ✪ Thu, Apr 23, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Spandana Kuthadi ===LINK=== NA
-✪ Thu, Apr 23, 2026, 11:00 AM IST ==> Not Recommended ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Ojaswi Velagapudi ===LINK=== NA
 ✪ Thu, Apr 23, 2026, 11:00 AM IST ==> Not Recommended ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Ojaswi Velagapudi ===LINK=== NA
 ✪ Thu, Apr 23, 2026, 10:00 AM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Pavan Nagarapu ===LINK=== NA
 §TOMORROW§
 ✪ Fri, Apr 24, 2026, 6:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Usha Sri Vaishnavi Tunuguntla ===LINK=== https://jobtwine.com/meeting/copilot?id=%2BMlh604Vg1w3etez%2BjQT%2BqO1Lnq8WcqHv55NWq3n4fPZ9mFbJ0r0GkWyzVHFdX54&type=H
+✪ Fri, Apr 24, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Shravya Dandu ===LINK=== https://jobtwine.com/meeting/copilot?id=bbC2V9MW1cuEjVDxqtOZP1p0987Mgq55VXpUOKgu0IhJtdCtMdPfp8x%2Bx0v28ifL&type=H
 ✪ Fri, Apr 24, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCVS003 (17664) ===CANDIDATE=== Khushal Trivedi ===LINK=== https://jobtwine.com/meeting/copilot?id=%2B5preFeWSxMwSLCYJQ5Exm2480wz4uWT4YVmwwJm%2ByOLC36CZyABX2RQXVDU9YO3&type=H
 ✪ Fri, Apr 24, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Ravi Teja ===LINK=== https://jobtwine.com/meeting/copilot?id=xHYAggERK%2BMgLE8i0mu5cKPKD3JgyL%2BGgQWpVBd30MeQ6GxqE2sVa9%2B1WkzJfnOr&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
@@ -29,4 +29,4 @@ Today's date: Apr 23
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 23-Apr-2026 06:55:22 PM
+Updated at (IST): 23-Apr-2026 07:05:34 PM
