@@ -1,13 +1,31 @@
 Today's date: Apr 23
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
-Exception: Expected condition failed: waiting for visibility of element located by By.xpath: .//span[text()='Start Meeting'] (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37443}, goog:processID: 2519, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37443/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 535ef3871d03b371feafb22730480489
+§TODAY§
+✪ Thu, Apr 23, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Rupesh Mupparaju ===LINK=== https://www.jobtwine.com/meeting/copilot?id=%2FDBAnHkhArCfB9CUnxBX%2FLtdZu%2BAFKallQDXMs2bU84hnZYm%2FJf2xV7h6qeRyoIJ&type=H
+✪ Thu, Apr 23, 2026, 9:00 PM IST ==> Scheduled ===PROFILE=== QA Automation Specialist (BDD / Playwright) (18748) ===CANDIDATE=== Sakrappa ===LINK=== https://www.jobtwine.com/meeting/copilot?id=cYb%2B8l83hy75GUtAVTV7xdv7my%2BWo0Iiiz1J65vdq69eWVpuabhWEMf9X996Be%2Be&type=H
+✪ Thu, Apr 23, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Aurbinda Satpathy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=wNUea3ZugVHkzC4dGsUK1v5DsH8FZp5FslugygnIxK5yau%2By8pfpg3FVgEaJtgY8&type=H
+✪ Thu, Apr 23, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCBC003) (18761) ===CANDIDATE=== Charan Thanugonda ===LINK=== https://www.jobtwine.com/meeting/copilot?id=dWvUzN%2F6d69wY64xjwf8QW%2Bw7gf4LdGF9rix%2F7D51URCLXpVAPv0i3g8HZUlx8ev&type=H
+✪ Thu, Apr 23, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Spandana Kuthadi ===LINK=== NA
+✪ Thu, Apr 23, 2026, 11:00 AM IST ==> Not Recommended ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Ojaswi Velagapudi ===LINK=== NA
+✪ Thu, Apr 23, 2026, 10:00 AM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Pavan Nagarapu ===LINK=== NA
+§TOMORROW§
+✪ Fri, Apr 24, 2026, 6:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Usha Sri Vaishnavi Tunuguntla ===LINK=== https://www.jobtwine.com/meeting/copilot?id=%2BMlh604Vg1w3etez%2BjQT%2BqO1Lnq8WcqHv55NWq3n4fPZ9mFbJ0r0GkWyzVHFdX54&type=H
+✪ Fri, Apr 24, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCVS003 (17664) ===CANDIDATE=== Khushal Trivedi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=%2B5preFeWSxMwSLCYJQ5Exm2480wz4uWT4YVmwwJm%2ByOLC36CZyABX2RQXVDU9YO3&type=H
+✪ Fri, Apr 24, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Ravi Teja ===LINK=== https://www.jobtwine.com/meeting/copilot?id=xHYAggERK%2BMgLE8i0mu5cKPKD3JgyL%2BGgQWpVBd30MeQ6GxqE2sVa9%2B1WkzJfnOr&type=H
+**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
+§TODAY§
+✪ Thu, Apr 23, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Sai Kalidindi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=nwk4KlxgT%2FS4y%2FjYFC2dzSig9VRoM6e%2FLHZdwLZcyKs3zyC3QjzFO0awDsXFUub2&type=H
+✪ Thu, Apr 23, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== QA Automation Specialist (BDD / Playwright) (18748) ===CANDIDATE=== Shradha Sinha ===LINK=== https://www.jobtwine.com/meeting/copilot?id=HUQnrL5wsW3i9MGhI6azQHTsEd5pOAIT2TZpn%2F%2FfR2bAsCr08AscPgkqVmJ72cVa&type=H
+✪ Thu, Apr 23, 2026, 5:30 PM IST ==> Scheduled ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Manasvi Nallamothu ===LINK=== https://www.jobtwine.com/meeting/copilot?id=T95i5%2B5vsNnmb%2B4nY1e9d5%2BHfITDYjAH3k4PKgzFmvuAg7QHGzD0AYbCfiKehInx&type=H
+✪ Thu, Apr 23, 2026, 2:00 PM IST ==> Cancelled by candidate ===PROFILE=== Intermediate Quality Engineer CIBCVS002 (17530) ===CANDIDATE=== Anugu Reddy ===LINK=== NA
+✪ Thu, Apr 23, 2026, 12:00 PM IST ==> Strongly Recommended ===PROFILE=== CIBCLK004 Senior Quality Engineering Coordinator (17710) ===CANDIDATE=== Pavan Poguru ===LINK=== NA
+✪ Thu, Apr 23, 2026, 11:00 AM IST ==> Not Recommended ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Gazala Perween ===LINK=== NA
+§TOMORROW§
+✪ Fri, Apr 24, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Nehalini Patta Gaja ===LINK=== https://www.jobtwine.com/meeting/copilot?id=a2XNCc%2B3C5l1LWNAERx0nrdI9ImXPMxiSAiyiFDNW8hUkpr0mPCWR6MN545EoWkH&type=H
+✪ Fri, Apr 24, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Intermediate quality engineer CIBCAT001 (18455) ===CANDIDATE=== Kavuluri Siddhardha ===LINK=== https://www.jobtwine.com/meeting/copilot?id=u96ACdAErYM1KUqAjoFye%2B1b5EULQ2uBjTBZ3QXF8BxhbHWJm4b%2FXHjbbVSIOKV2&type=H
+✪ Fri, Apr 24, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Athram Tosca Automation Tester ===LINK=== https://www.jobtwine.com/meeting/copilot?id=5R5yPGHo63JNgtGPwRMnTO3C5fU6sooRyrxwb4GHAlsUm13MStWZ%2B%2FR3ox%2BW%2BU7r&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 23-Apr-2026 03:52:42 PM
+Updated at (IST): 23-Apr-2026 04:05:38 PM
