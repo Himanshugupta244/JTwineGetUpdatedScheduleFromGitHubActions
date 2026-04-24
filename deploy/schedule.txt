@@ -13,7 +13,7 @@ Today's date: Apr 24
 ✪ Fri, Apr 24, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Software Development Engineer in Test (SDET) (17860) ===CANDIDATE=== Nehalini Patta Gaja ===LINK=== https://www.jobtwine.com/meeting/copilot?id=a2XNCc%2B3C5l1LWNAERx0nrdI9ImXPMxiSAiyiFDNW8hUkpr0mPCWR6MN545EoWkH&type=H
 ✪ Fri, Apr 24, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== CIBCBC002 Quality Engineer (17557) ===CANDIDATE=== B Suresh ===LINK=== https://www.jobtwine.com/meeting/copilot?id=zVMNhdaan1e%2FMzIV6Cr2nxkZeTTIiVDI2SnHlG5B19ulZopzG94v2m6ZRf7VyPsM&type=H
 ✪ Fri, Apr 24, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Intermediate quality engineer CIBCAT001 (18455) ===CANDIDATE=== Kavuluri Siddhardha ===LINK=== https://www.jobtwine.com/meeting/copilot?id=u96ACdAErYM1KUqAjoFye%2B1b5EULQ2uBjTBZ3QXF8BxhbHWJm4b%2FXHjbbVSIOKV2&type=H
-✪ Fri, Apr 24, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Navya Vakkanthula ===LINK=== https://www.jobtwine.com/meeting/copilot?id=BGgRaf8TYDSivdgAv4jbnJlOND%2B04BoVlOgMgco%2B%2BAbpR0V1Oy4%2Fet%2FlcKJP2T6L&type=H
+✪ Fri, Apr 24, 2026, 5:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Navya Vakkanthula ===LINK=== NA
 ✪ Fri, Apr 24, 2026, 3:00 PM IST ==> Candidate No Show ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Athram Tosca Automation Tester ===LINK=== NA
 §TOMORROW§
 ✪ Sat, Apr 25, 2026, 1:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCCL003 (18491) ===CANDIDATE=== Uday Kiran Byreddi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=4ZqeaivbAUkRw%2Bsoaq%2FGpOwurpiPyJdxk8k%2FtN6QX5DYR148No2P%2FRqDx3xiGEWg&type=H
@@ -22,4 +22,4 @@ Today's date: Apr 24
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 24-Apr-2026 05:14:40 PM
+Updated at (IST): 24-Apr-2026 05:24:18 PM
