@@ -12,7 +12,7 @@ Today's date: Apr 27
 ✪ Tue, Apr 28, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Mohana Sai Pavana Kumari ===LINK=== https://www.jobtwine.com/meeting/copilot?id=MCrldREhi3aA%2FZowOnffN5h9Jv9AHzqrRunFcnhwWOUWLtBf5kLwYc4s4i13whzL&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
-✪ Mon, Apr 27, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Chetan Manne ===LINK=== https://www.jobtwine.com/meeting/copilot?id=BBu0Y53K2ldBvum51xuSYIy6X6mp%2F5IWiB894CM6Ejafmsb0xdbEqKzNHzJLQu%2FK&type=H
+✪ Mon, Apr 27, 2026, 10:30 PM IST ==> Generating Feedback ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Chetan Manne ===LINK=== NA
 ✪ Mon, Apr 27, 2026, 9:30 PM IST ==> Pending Feedback Review ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Kavya Doddapaneni ===LINK=== NA
 ✪ Mon, Apr 27, 2026, 8:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCAP001 Quality Engineering Manager (17774) ===CANDIDATE=== Dandala Reddy ===LINK=== NA
 ✪ Mon, Apr 27, 2026, 4:00 PM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer(CIBCBC003) (18761) ===CANDIDATE=== Manish Dhoble ===LINK=== NA
@@ -28,4 +28,4 @@ Today's date: Apr 27
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 27-Apr-2026 11:05:15 PM
+Updated at (IST): 27-Apr-2026 11:14:59 PM
