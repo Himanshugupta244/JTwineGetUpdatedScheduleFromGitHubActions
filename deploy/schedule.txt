@@ -15,7 +15,7 @@ Today's date: Apr 27
 ✪ Mon, Apr 27, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Senior Software Development Engineer in Test (17861) ===CANDIDATE=== Chetan Manne ===LINK=== https://www.jobtwine.com/meeting/copilot?id=BBu0Y53K2ldBvum51xuSYIy6X6mp%2F5IWiB894CM6Ejafmsb0xdbEqKzNHzJLQu%2FK&type=H
 ✪ Mon, Apr 27, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Kavya Doddapaneni ===LINK=== https://www.jobtwine.com/meeting/copilot?id=%2FAztritAYH%2B%2BxVh%2FwHUAPXKzKiDuwLrKe8Agrq1LX%2FBS8qXNLjkcf7CZ4YG6YeWc&type=H
 ✪ Mon, Apr 27, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCAP001 Quality Engineering Manager (17774) ===CANDIDATE=== Dandala Reddy ===LINK=== https://www.jobtwine.com/meeting/copilot?id=boWwLB83cnNtrJwc6QcHezDvO7iOeDy1Pg5BxC2be2aceu7nOTwQV7NiOPvjmUBM&type=H
-✪ Mon, Apr 27, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCBC003) (18761) ===CANDIDATE=== Manish Dhoble ===LINK=== https://www.jobtwine.com/meeting/copilot?id=mVVvYuiQE7VeG0UQXRCboMVEchWLN7Z8%2F2jbvI0CoG7V8GBsa7mmJK0tbnIvg2q2&type=H
+✪ Mon, Apr 27, 2026, 4:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer(CIBCBC003) (18761) ===CANDIDATE=== Manish Dhoble ===LINK=== NA
 ✪ Mon, Apr 27, 2026, 1:00 PM IST ==> Is a Good Fit ===PROFILE=== Senior QA Analyst - CIBCPB001 (16898) ===CANDIDATE=== Neelanjali Jain ===LINK=== NA
 ✪ Mon, Apr 27, 2026, 11:00 AM IST ==> Candidate No Show ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Shaik Manzoor ===LINK=== NA
 §TOMORROW§
@@ -27,4 +27,4 @@ Today's date: Apr 27
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 27-Apr-2026 04:55:34 PM
+Updated at (IST): 27-Apr-2026 05:05:28 PM
