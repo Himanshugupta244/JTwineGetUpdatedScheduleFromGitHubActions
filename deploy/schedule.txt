@@ -3,7 +3,7 @@ Today's date: Apr 28
 §TODAY§
 ✪ Tue, Apr 28, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Shwitan Guda ===LINK=== https://www.jobtwine.com/meeting/copilot?id=zyY5PUKlwolMSgYima7LF6eDSZBiVOcx0jMd7tfXO%2Bm3tFjSNiP2aeLVFLW3rdjn&type=H
 ✪ Tue, Apr 28, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== M.Rafi Baig ===LINK=== https://www.jobtwine.com/meeting/copilot?id=9BthRrtMGqH%2FPnA%2B6UE2J8zY1BqUXDbJ3TDyY1iwyLKZfC%2BkhHCtX10kfANFxTCG&type=H
-✪ Tue, Apr 28, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Kancharana Ganesh ===LINK=== https://www.jobtwine.com/meeting/copilot?id=G3DLrRuWqWDR7J4%2FZ1QWzJmKbib6HAaI3eAGfByD88GlpOvVq20CtzkxnM%2FaZJm9&type=H
+✪ Tue, Apr 28, 2026, 6:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Kancharana Ganesh ===LINK=== NA
 ✪ Tue, Apr 28, 2026, 5:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Hemalatha Gudivaka ===LINK=== NA
 ✪ Tue, Apr 28, 2026, 1:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Mohana Sai Pavana Kumari ===LINK=== NA
 ✪ Tue, Apr 28, 2026, 12:00 PM IST ==> Is a Good Fit ===PROFILE=== QA Lead Manager - CIBCPB002 (16893) ===CANDIDATE=== Gowtham Ambati ===LINK=== NA
@@ -28,4 +28,4 @@ Today's date: Apr 28
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 28-Apr-2026 06:36:14 PM
+Updated at (IST): 28-Apr-2026 06:45:23 PM
