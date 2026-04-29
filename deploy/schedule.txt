@@ -8,7 +8,7 @@ Today's date: Apr 29
 ✪ Wed, Apr 29, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Prabhakar Vade ===LINK=== https://www.jobtwine.com/meeting/copilot?id=GVlyF4dx%2BYFUuUmUKerA9eadAzCxsDOnTDVx1egufA09t7yK8Vzu6ik9Te81PS6k&type=H
 ✪ Wed, Apr 29, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCRA001 (17934) ===CANDIDATE=== Sandeep Kumar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=lbiQMNw3FXNhPxNsLOeQMpS5mVC3b2M2blyS5g2UW1XmqmKRbxyIpShT2T9u7Fpi&type=H
 ✪ Wed, Apr 29, 2026, 11:00 AM IST ==> Cancelled by candidate ===PROFILE=== Senior QE CIBCJK002 (18370) ===CANDIDATE=== Mutta Bhargavi ===LINK=== NA
-✪ Wed, Apr 29, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Srikant Banda ===LINK=== https://www.jobtwine.com/meeting/copilot?id=4Y%2FTNBAYwyPbojYkQng4lQx0ibmmo3ECExY%2B47uTwyLHpHzEKAS68%2BJ2YV6lFghb&type=H
+✪ Wed, Apr 29, 2026, 10:00 AM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Srikant Banda ===LINK=== NA
 §TOMORROW§
 ✪ Thu, Apr 30, 2026, 11:30 PM IST ==> Scheduled ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== Dean Frost ===LINK=== https://www.jobtwine.com/meeting/copilot?id=meSWUWwvuEVE3fkxbXn4lA%2BGUBZI%2F5d6786aWxvOgFBy9j8cQGGVWCHJjsecxntu&type=H
 ✪ Thu, Apr 30, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCKG004 (18587) ===CANDIDATE=== HARSHA DASARI ===LINK=== https://www.jobtwine.com/meeting/copilot?id=5yKWF2qjKeWTKNELqFy4cOCSxiTjt4ip0xHfrp6wYPYZwbGtyj2YcCXtll%2FX7n7N&type=H
@@ -29,4 +29,4 @@ Today's date: Apr 29
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 29-Apr-2026 10:46:45 AM
+Updated at (IST): 29-Apr-2026 10:56:27 AM
