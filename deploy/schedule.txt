@@ -22,7 +22,7 @@ Today's date: Apr 29
 ✪ Wed, Apr 29, 2026, 4:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer CIBCRA001 (17934) ===CANDIDATE=== Tanya Singh ===LINK=== NA
 ✪ Wed, Apr 29, 2026, 3:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Manager - CIBCAL001 (16818) ===CANDIDATE=== Hamzah Ansari ===LINK=== NA
 ✪ Wed, Apr 29, 2026, 2:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Nageena Shaik ===LINK=== NA
-✪ Wed, Apr 29, 2026, 1:00 PM IST ==> Pending Feedback Review ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Shaik Manzoor ===LINK=== NA
+✪ Wed, Apr 29, 2026, 1:00 PM IST ==> Not Recommended ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Shaik Manzoor ===LINK=== NA
 §TOMORROW§
 ✪ Thu, Apr 30, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCAM003 (18447) ===CANDIDATE=== Kavya Ponugupati ===LINK=== https://www.jobtwine.com/meeting/copilot?id=7bqOjKF0I8c1G4DfpiQw5YtcHH4WCbfScCqcYpKUnLHKlWbQmjbjB9ge5yVkF8Ev&type=H
 ✪ Thu, Apr 30, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== CIBCMC001 Quality Engineering Consultant (17786) ===CANDIDATE=== Ashish Kowlekari ===LINK=== https://www.jobtwine.com/meeting/copilot?id=GPEDNVun2UhSUC8xJL82iUA8baxICK4Q0cvAQ6F8GEfCpf6nfP3rbnV1PG0SR9Su&type=H
@@ -31,4 +31,4 @@ Today's date: Apr 29
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 29-Apr-2026 06:55:59 PM
+Updated at (IST): 29-Apr-2026 07:06:12 PM
