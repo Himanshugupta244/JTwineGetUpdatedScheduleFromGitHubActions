@@ -4,7 +4,7 @@ Today's date: Apr 29
 ✪ Wed, Apr 29, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Nagarjuna Duggempudi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=4uPYFb21ShS8SsCBdtn3Fp3r%2Fvl4aYA%2Fn5rUF0%2Bmx7MAdKOSDTdnpnwGSKyTaZZJ&type=H
 ✪ Wed, Apr 29, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Tejas Hasabnis ===LINK=== https://www.jobtwine.com/meeting/copilot?id=Q4WmvmWD2b6kEYPy0Vr0%2FfMG7tjX99SLVP3NDx6TK7ysRwGpx6PH0CUZ6ELYfZK7&type=H
 ✪ Wed, Apr 29, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== Shrutika Agarwal ===LINK=== https://www.jobtwine.com/meeting/copilot?id=je4bWWA9JQZhWXekrBsqI34HCFMnIQOPTNRQ21ZpswsHzkXJXU98f6lfu6ke%2Bd%2F%2B&type=H
-✪ Wed, Apr 29, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Vrunda Vagadiya ===LINK=== https://www.jobtwine.com/meeting/copilot?id=MMmP2my%2FQACq37sdJSSBe4BG8RRaeMN931I3vTGanoKcTFB9wSYTbVQBvH0Kxlio&type=H
+✪ Wed, Apr 29, 2026, 7:30 PM IST ==> Candidate No Show ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Vrunda Vagadiya ===LINK=== NA
 ✪ Wed, Apr 29, 2026, 5:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Prabhakar Vade ===LINK=== NA
 ✪ Wed, Apr 29, 2026, 3:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer CIBCRA001 (17934) ===CANDIDATE=== Sandeep Kumar ===LINK=== NA
 ✪ Wed, Apr 29, 2026, 10:00 AM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Srikant Banda ===LINK=== NA
@@ -26,10 +26,11 @@ Today's date: Apr 29
 ✪ Wed, Apr 29, 2026, 1:00 PM IST ==> Not Recommended ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Shaik Manzoor ===LINK=== NA
 §TOMORROW§
 ✪ Thu, Apr 30, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCAM003 (18447) ===CANDIDATE=== Kavya Ponugupati ===LINK=== https://www.jobtwine.com/meeting/copilot?id=7bqOjKF0I8c1G4DfpiQw5YtcHH4WCbfScCqcYpKUnLHKlWbQmjbjB9ge5yVkF8Ev&type=H
+✪ Thu, Apr 30, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCAP002 (17756) ===CANDIDATE=== Kappiri Jagadeesh ===LINK=== https://www.jobtwine.com/meeting/copilot?id=wtcIozBSWpD403HOQQw%2BWsc%2F1i5pSGWoOUPvqpHq8yCBFhZvJWEYU47UEKaQToWY&type=H
 ✪ Thu, Apr 30, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== CIBCMC001 Quality Engineering Consultant (17786) ===CANDIDATE=== Ashish Kowlekari ===LINK=== https://www.jobtwine.com/meeting/copilot?id=GPEDNVun2UhSUC8xJL82iUA8baxICK4Q0cvAQ6F8GEfCpf6nfP3rbnV1PG0SR9Su&type=H
 ✪ Thu, Apr 30, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== CIBCMC001 Quality Engineering Consultant (17786) ===CANDIDATE=== Murali Yadavalli ===LINK=== https://www.jobtwine.com/meeting/copilot?id=CEUg9sLT%2BkbKemzreA3MJ8IgIVDr5OjR1JPidcElWkTMMF6IMP7yo5VrdBI59Lh8&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 29-Apr-2026 07:45:59 PM
+Updated at (IST): 29-Apr-2026 07:56:11 PM
