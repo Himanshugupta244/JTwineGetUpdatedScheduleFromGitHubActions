@@ -16,7 +16,7 @@ Today's date: Apr 29
 ✪ Thu, Apr 30, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCKG004 (18587) ===CANDIDATE=== HARSHA DASARI ===LINK=== https://www.jobtwine.com/meeting/copilot?id=5yKWF2qjKeWTKNELqFy4cOCSxiTjt4ip0xHfrp6wYPYZwbGtyj2YcCXtll%2FX7n7N&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
-✪ Wed, Apr 29, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Sanjay Sigiri ===LINK=== https://www.jobtwine.com/meeting/copilot?id=tTyJv1jnRjyY%2B0lbxf3xZXvf4YYRMp35ufGp8fp7l4UTRsIThYj2nZuMJVFeckl4&type=H
+✪ Wed, Apr 29, 2026, 10:30 PM IST ==> Pending Feedback Review ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Sanjay Sigiri ===LINK=== NA
 ✪ Wed, Apr 29, 2026, 9:30 PM IST ==> Pending Feedback Review ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Keerthana Mekala ===LINK=== NA
 ✪ Wed, Apr 29, 2026, 8:00 PM IST ==> Pending Feedback Review ===PROFILE=== Senior QE Coordinator CIBCKG003 (18445) ===CANDIDATE=== Ananya Marupaka ===LINK=== NA
 ✪ Wed, Apr 29, 2026, 7:00 PM IST ==> Not Recommended ===PROFILE=== Quality Engineer(CIBCAP003) (18451) ===CANDIDATE=== Salma Shaik ===LINK=== NA
@@ -33,4 +33,4 @@ Today's date: Apr 29
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 29-Apr-2026 11:05:11 PM
+Updated at (IST): 29-Apr-2026 11:14:56 PM
