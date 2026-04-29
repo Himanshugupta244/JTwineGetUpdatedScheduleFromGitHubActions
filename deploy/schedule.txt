@@ -20,7 +20,7 @@ Today's date: Apr 29
 ✪ Wed, Apr 29, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Senior QE Coordinator CIBCKG003 (18445) ===CANDIDATE=== Ananya Marupaka ===LINK=== https://www.jobtwine.com/meeting/copilot?id=r52Hvb9SGtCLBsbzCVukygtgST3xMbhU5CEkT7tCDA2txV%2BvqSplal2cbCjOY3BG&type=H
 ✪ Wed, Apr 29, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer(CIBCAP003) (18451) ===CANDIDATE=== Salma Shaik ===LINK=== https://www.jobtwine.com/meeting/copilot?id=m5zAhNVULHnt%2FgOhqa9LB%2FT6croHTq7kWC6UjtGrlb9%2B5fcgw63wQUJetcwm%2FjQb&type=H
 ✪ Wed, Apr 29, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCRA001 (17934) ===CANDIDATE=== Tanya Singh ===LINK=== https://www.jobtwine.com/meeting/copilot?id=wMyssol6NFXnN3g1Hc9zl4Y%2B%2BVGjZU8gKO0yJZC5VVApoIAzH0gw0o5Qnz8IMeiW&type=H
-✪ Wed, Apr 29, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager - CIBCAL001 (16818) ===CANDIDATE=== Hamzah Ansari ===LINK=== https://www.jobtwine.com/meeting/copilot?id=08c8ANY4PflMrkzb%2BBIr4LcJYWbdl%2B2mn9x6jIpG3I4wL9TFHnCm2Cylu%2FrSH0NW&type=H
+✪ Wed, Apr 29, 2026, 3:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Manager - CIBCAL001 (16818) ===CANDIDATE=== Hamzah Ansari ===LINK=== NA
 ✪ Wed, Apr 29, 2026, 2:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Nageena Shaik ===LINK=== NA
 ✪ Wed, Apr 29, 2026, 1:00 PM IST ==> Pending Feedback Review ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Shaik Manzoor ===LINK=== NA
 §TOMORROW§
@@ -31,4 +31,4 @@ Today's date: Apr 29
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 29-Apr-2026 03:16:38 PM
+Updated at (IST): 29-Apr-2026 03:26:33 PM
