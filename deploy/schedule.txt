@@ -19,7 +19,7 @@ Today's date: Apr 29
 ✪ Wed, Apr 29, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Sanjay Sigiri ===LINK=== https://www.jobtwine.com/meeting/copilot?id=tTyJv1jnRjyY%2B0lbxf3xZXvf4YYRMp35ufGp8fp7l4UTRsIThYj2nZuMJVFeckl4&type=H
 ✪ Wed, Apr 29, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Keerthana Mekala ===LINK=== https://www.jobtwine.com/meeting/copilot?id=pMO9cnswVp1IfW0kMTko8wTPLZL14F6W2pXmLvlw%2BJ6q2fO8p%2Fha4iM1kPX%2FyOiR&type=H
 ✪ Wed, Apr 29, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Senior QE Coordinator CIBCKG003 (18445) ===CANDIDATE=== Ananya Marupaka ===LINK=== https://www.jobtwine.com/meeting/copilot?id=r52Hvb9SGtCLBsbzCVukygtgST3xMbhU5CEkT7tCDA2txV%2BvqSplal2cbCjOY3BG&type=H
-✪ Wed, Apr 29, 2026, 7:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineer(CIBCAP003) (18451) ===CANDIDATE=== Salma Shaik ===LINK=== NA
+✪ Wed, Apr 29, 2026, 7:00 PM IST ==> Not Recommended ===PROFILE=== Quality Engineer(CIBCAP003) (18451) ===CANDIDATE=== Salma Shaik ===LINK=== NA
 ✪ Wed, Apr 29, 2026, 4:00 PM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer CIBCRA001 (17934) ===CANDIDATE=== Tanya Singh ===LINK=== NA
 ✪ Wed, Apr 29, 2026, 3:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Manager - CIBCAL001 (16818) ===CANDIDATE=== Hamzah Ansari ===LINK=== NA
 ✪ Wed, Apr 29, 2026, 2:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Coordinator CIBCSS003 (17479) ===CANDIDATE=== Nageena Shaik ===LINK=== NA
@@ -33,4 +33,4 @@ Today's date: Apr 29
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 29-Apr-2026 08:16:02 PM
+Updated at (IST): 29-Apr-2026 08:26:01 PM
