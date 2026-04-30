@@ -3,8 +3,7 @@ Today's date: Apr 30
 §TODAY§
 ✪ Thu, Apr 30, 2026, 11:30 PM IST ==> Scheduled ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== Dean Frost ===LINK=== https://www.jobtwine.com/meeting/copilot?id=meSWUWwvuEVE3fkxbXn4lA%2BGUBZI%2F5d6786aWxvOgFBy9j8cQGGVWCHJjsecxntu&type=H
 ✪ Thu, Apr 30, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Shukria Mahzooz ===LINK=== https://www.jobtwine.com/meeting/copilot?id=2fAY2462eWyxuRWZR4Xwi5WcKoh5Q1fzUyukp7ocLMrJ%2BNvXiZfLzz8np%2Byf%2F3Hr&type=H
-✪ Thu, Apr 30, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Suhail Shaik ===LINK=== https://www.jobtwine.com/meeting/copilot?id=%2BXhz8itHhhd5XZ9YmjMQ%2FxTkM8Kr8%2Fl0T0Y%2Fv9iBxGqoj9S1iaTLFzJQBMR%2FVD2G&type=H
-✪ Thu, Apr 30, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Triveni Linga ===LINK=== https://www.jobtwine.com/meeting/copilot?id=QEB37S4xpN5IQHltKdKARYNYOMej6ppxnbPZ6RvO8%2BlgBunW5uL3%2BKzJYMHq01MR&type=H
+✪ Thu, Apr 30, 2026, 7:30 PM IST ==> NA ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Triveni Linga ===LINK=== NA
 ✪ Thu, Apr 30, 2026, 5:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Consultant CIBCVS001 (14071) ===CANDIDATE=== Kriti Savant ===LINK=== NA
 ✪ Thu, Apr 30, 2026, 2:00 PM IST ==> Not Recommended ===PROFILE=== QA Lead Manager - CIBCPB002 (16893) ===CANDIDATE=== Neha Injeti ===LINK=== NA
 ✪ Thu, Apr 30, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== Senior QE Coordinator CIBCKG003 (18445) ===CANDIDATE=== Bhavesh Ingale ===LINK=== NA
@@ -19,7 +18,7 @@ Today's date: Apr 30
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
 ✪ Thu, Apr 30, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Harshitha Vislavath ===LINK=== https://www.jobtwine.com/meeting/copilot?id=S6bAgY6dpafyH46uwPHfyJUAr%2BJduOy%2BXHfQmIv3qTiLVTZAtcjsK2Y7K7l6I9X8&type=H
-✪ Thu, Apr 30, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCVS003 (17664) ===CANDIDATE=== Uma Attada ===LINK=== https://www.jobtwine.com/meeting/copilot?id=9PanPKU85xUviFQnM%2BBp4Rw5puc%2BSN2GSPytscqO8GiFSiEbqhsh%2FfkzykVTK1Zi&type=H
+✪ Thu, Apr 30, 2026, 7:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineer CIBCVS003 (17664) ===CANDIDATE=== Uma Attada ===LINK=== NA
 ✪ Thu, Apr 30, 2026, 2:00 PM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer CIBCAM003 (18447) ===CANDIDATE=== Kavya Ponugupati ===LINK=== NA
 ✪ Thu, Apr 30, 2026, 1:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Coordinator CIBCAP002 (17756) ===CANDIDATE=== Kappiri Jagadeesh ===LINK=== NA
 ✪ Thu, Apr 30, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCMC001 Quality Engineering Consultant (17786) ===CANDIDATE=== Ashish Kowlekari ===LINK=== NA
@@ -35,4 +34,4 @@ Today's date: Apr 30
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 30-Apr-2026 07:56:28 PM
+Updated at (IST): 30-Apr-2026 08:06:03 PM
