@@ -4,7 +4,7 @@ Today's date: Apr 30
 ✪ Thu, Apr 30, 2026, 11:30 PM IST ==> Scheduled ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== Dean Frost ===LINK=== https://www.jobtwine.com/meeting/copilot?id=meSWUWwvuEVE3fkxbXn4lA%2BGUBZI%2F5d6786aWxvOgFBy9j8cQGGVWCHJjsecxntu&type=H
 ✪ Thu, Apr 30, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant CIBCVS001 (14071) ===CANDIDATE=== Kriti Savant ===LINK=== https://www.jobtwine.com/meeting/copilot?id=4ZAltkJuTmOl1RHaIDLBDjqJQMkvDCkSQqEh37QE26lx3X7O8KSDDvQXZnrOgUE8&type=H
 ✪ Thu, Apr 30, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== QA Lead Manager - CIBCPB002 (16893) ===CANDIDATE=== Neha Injeti ===LINK=== https://www.jobtwine.com/meeting/copilot?id=MZEvCbNs9AgTZO%2B%2FZeYKIjasARha9PGGMsqlewQ0tvSPKZFA%2FJY5LN%2FX94g46mVP&type=H
-✪ Thu, Apr 30, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Senior QE Coordinator CIBCKG003 (18445) ===CANDIDATE=== Bhavesh Ingale ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ZwCTdK10Yv%2BSViQZnT3fxMV0ZDC6gv8LZrBBFMlQjp9%2BT%2FeiQPFVRQs6apa0X3S4&type=H
+✪ Thu, Apr 30, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== Senior QE Coordinator CIBCKG003 (18445) ===CANDIDATE=== Bhavesh Ingale ===LINK=== NA
 ✪ Thu, Apr 30, 2026, 11:00 AM IST ==> Candidate No Show ===PROFILE=== QE Consultant CIBCKG004 (18587) ===CANDIDATE=== HARSHA DASARI ===LINK=== NA
 §TOMORROW§
 ✪ Fri, May 1, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Bhavani Gadi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=u5TQUubXn1xfSVUixG9tT%2FINYpP8aeYfIYS%2FLEDdARhfPKmAT86bTq0tbnIvg2q2&type=H
@@ -14,11 +14,12 @@ Today's date: Apr 30
 §TODAY§
 ✪ Thu, Apr 30, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCAM003 (18447) ===CANDIDATE=== Kavya Ponugupati ===LINK=== https://www.jobtwine.com/meeting/copilot?id=7bqOjKF0I8c1G4DfpiQw5YtcHH4WCbfScCqcYpKUnLHKlWbQmjbjB9ge5yVkF8Ev&type=H
 ✪ Thu, Apr 30, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCAP002 (17756) ===CANDIDATE=== Kappiri Jagadeesh ===LINK=== https://www.jobtwine.com/meeting/copilot?id=wtcIozBSWpD403HOQQw%2BWsc%2F1i5pSGWoOUPvqpHq8yCBFhZvJWEYU47UEKaQToWY&type=H
-✪ Thu, Apr 30, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== CIBCMC001 Quality Engineering Consultant (17786) ===CANDIDATE=== Ashish Kowlekari ===LINK=== https://www.jobtwine.com/meeting/copilot?id=GPEDNVun2UhSUC8xJL82iUA8baxICK4Q0cvAQ6F8GEfCpf6nfP3rbnV1PG0SR9Su&type=H
+✪ Thu, Apr 30, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCMC001 Quality Engineering Consultant (17786) ===CANDIDATE=== Ashish Kowlekari ===LINK=== NA
 ✪ Thu, Apr 30, 2026, 11:00 AM IST ==> Candidate No Show ===PROFILE=== CIBCMC001 Quality Engineering Consultant (17786) ===CANDIDATE=== Murali Yadavalli ===LINK=== NA
 §TOMORROW§
 ✪ Fri, May 1, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Ravina Shigwan ===LINK=== https://www.jobtwine.com/meeting/copilot?id=9JPCG8XtHlIqEBAwQ%2BFNUyKQy2KI2Y8XbmzlitGqQCxm%2BfgXPaMzXMII7ttqqwVg&type=H
 ✪ Fri, May 1, 2026, 7:30 PM IST ==> Cancelled by candidate ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== Ravina Shigwan ===LINK=== NA
+✪ Fri, May 1, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Srinivas Srinivas ===LINK=== https://www.jobtwine.com/meeting/copilot?id=c0MxRa4X2ki0K6wiUvk7tC%2BFxAJngM%2FnKMdNR2LEx0JgfJ9pGI7ZWRfYe522WAxs&type=H
 ✪ Fri, May 1, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant CIBCVS001 (14071) ===CANDIDATE=== Rahul Kumar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=cqKGUGYl5ci9YL5tVpsEzs%2FUww%2ByHJrltxHoQx7D8QMjQFC%2FloQXIQhsJItDZKxF&type=H
 ✪ Fri, May 1, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Ayushi Pathak ===LINK=== https://www.jobtwine.com/meeting/copilot?id=kJcJfPZ69pehM0kpVT%2BwOoXy7qVlP2Zjmy2PxQEWzFEiWymfS8FH4YdjdAi1mH6V&type=H
 ✪ Fri, May 1, 2026, 12:30 AM IST ==> Scheduled ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== ANNAPURNA BURAGAPU ===LINK=== https://www.jobtwine.com/meeting/copilot?id=e1ifK4okCTJUzzaZAddJg2COyT%2BBkauX1zwWfCkKJa%2By9Bl4VtUj4OaWUjNCG1Q%2F&type=H
@@ -26,4 +27,4 @@ Today's date: Apr 30
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 30-Apr-2026 12:15:43 PM
+Updated at (IST): 30-Apr-2026 12:25:29 PM
