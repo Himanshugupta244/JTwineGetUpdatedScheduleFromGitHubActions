@@ -1,16 +1,36 @@
 Today's date: May 1
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
-Exception: element click intercepted: Element <span>...</span> is not clickable at point (540, 137). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
-  (Session info: chrome=147.0.7727.55)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5302f2153d10024dce0552fb415fec5d, clickElement {id=f.E0369092742BBBFE3B4C3F8E36A663C6.d.10C85BF0B29734F15F60186C0132DD86.e.483}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40309}, goog:processID: 2510, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40309/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (5302f2153d10024dce0552fb415fec5d)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[3]]
-Session ID: 5302f2153d10024dce0552fb415fec5d
+§TODAY§
+✪ Fri, May 1, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Vrunda Vagadiya ===LINK=== https://www.jobtwine.com/meeting/copilot?id=wQNUyBN6vxJxJ2MuS7nKYMHT%2Ba53fDAM%2F5cZ5kxEwZbWmZ8MSNb5baGMm%2BobZz7T&type=H
+✪ Fri, May 1, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Gayathri Rajagopalan ===LINK=== https://www.jobtwine.com/meeting/copilot?id=jotXlo6T1wqr2HRhtZH7oBxWFa79uvSbFNVpbuuUZ50jbcwx1R8ox5f0GuvYy954&type=H
+✪ Fri, May 1, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Triveni Linga ===LINK=== https://www.jobtwine.com/meeting/copilot?id=PylA4qX9RMXrhTYtTv%2Frpb6M%2BOBURW%2FE6q9Dun04pf6kyeTCyoF3c%2FsF%2BQ4UvAFt&type=H
+✪ Fri, May 1, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== CIBCAP001 Quality Engineering Manager (17774) ===CANDIDATE=== Harishwar Seri ===LINK=== https://www.jobtwine.com/meeting/copilot?id=QIH3sfelCSVHTD6Aoo0Iozax5L6yxSgeSEjcp6PMWYUMwdzT1r4d6h9g85s89%2F%2BP&type=H
+✪ Fri, May 1, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Dilleswari Budda ===LINK=== https://www.jobtwine.com/meeting/copilot?id=qPVASk3wpWda7jIbNFUXrKXp5KkI8OVvY0MUJRb6iiFqziK6%2FXcOG%2Fxnt7Jr45Ba&type=H
+✪ Fri, May 1, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Bhavani Gadi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=u5TQUubXn1xfSVUixG9tT%2FINYpP8aeYfIYS%2FLEDdARhfPKmAT86bTq0tbnIvg2q2&type=H
+✪ Fri, May 1, 2026, 12:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Dibyanshu Bhardwaj ===LINK=== NA
+✪ Fri, May 1, 2026, 11:00 AM IST ==> Pending Feedback Review ===PROFILE=== CIBCMC001 Quality Engineering Consultant (17786) ===CANDIDATE=== MANINDRA PRADHAN ===LINK=== NA
+§TOMORROW§
+✪ Sat, May 2, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Yogesh Hedau ===LINK=== https://www.jobtwine.com/meeting/copilot?id=a2SL9nUk%2F5N7pDSgt0VRXzfzdRBWB2nWIULMQy8%2FfYrdmLBeO71nG%2BYxRrBBpmp8&type=H
+✪ Sat, May 2, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Senior QE Manager(CIBCMP002) (18395) ===CANDIDATE=== Srinivas Pentam ===LINK=== https://www.jobtwine.com/meeting/copilot?id=X%2BzsZN2KzwHYJYEoDwN5hbVVUh9HYx9GGMXFKR6jdZbjbOhRJpfjoxKJWXLnH5%2Bb&type=H
+✪ Sat, May 2, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Usha Rani ===LINK=== https://www.jobtwine.com/meeting/copilot?id=%2Bf8RwUZUhy6L1tLc9uyAHJVjn5lFE3PhT%2BLeCkqa28ll9rWTVCENStbQRzewl2QD&type=H
+✪ Sat, May 2, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Geethanjali Guntuku ===LINK=== https://www.jobtwine.com/meeting/copilot?id=3aJoDL0ZPrYbPnsKcConDNrE%2FILlwIBLzhwmfDCe2HHzOYhnzRhtFSX506YRiW1K&type=H
+✪ Sat, May 2, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== QE Manager(CIBCMAB004 ) (18589) ===CANDIDATE=== Rajani Sistu ===LINK=== https://www.jobtwine.com/meeting/copilot?id=n1C%2FkUAmLoTZGspNXcodSPmsVDJwoCP0EFUNyY%2Bi8OKcKkPkfNQGEH9vFMVDQ9cX&type=H
+**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
+§TODAY§
+✪ Fri, May 1, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Naga Kumtsam ===LINK=== https://www.jobtwine.com/meeting/copilot?id=lyhy9FfCtV7c1PixYoSN3Mdlk4sk3%2F8sOufgyDiYgZUIhE6HtToE6jMAT4dW2dnh&type=H
+✪ Fri, May 1, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== Varun Kaitha ===LINK=== https://www.jobtwine.com/meeting/copilot?id=sB3OXfZM5gD54buJDnuojlN0xkJSQn%2Bz7MMruV5W05sMAh9ysNgIasHNk1V7y1w8&type=H
+✪ Fri, May 1, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Ravina Shigwan ===LINK=== https://www.jobtwine.com/meeting/copilot?id=9JPCG8XtHlIqEBAwQ%2BFNUyKQy2KI2Y8XbmzlitGqQCxm%2BfgXPaMzXMII7ttqqwVg&type=H
+✪ Fri, May 1, 2026, 7:30 PM IST ==> Cancelled by candidate ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== Ravina Shigwan ===LINK=== NA
+✪ Fri, May 1, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Srinivas Srinivas ===LINK=== https://www.jobtwine.com/meeting/copilot?id=c0MxRa4X2ki0K6wiUvk7tC%2BFxAJngM%2FnKMdNR2LEx0JgfJ9pGI7ZWRfYe522WAxs&type=H
+✪ Fri, May 1, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant CIBCVS001 (14071) ===CANDIDATE=== Rahul Kumar ===LINK=== https://www.jobtwine.com/meeting/copilot?id=cqKGUGYl5ci9YL5tVpsEzs%2FUww%2ByHJrltxHoQx7D8QMjQFC%2FloQXIQhsJItDZKxF&type=H
+✪ Fri, May 1, 2026, 12:30 AM IST ==> Not Recommended ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== ANNAPURNA BURAGAPU ===LINK=== NA
+§TOMORROW§
+✪ Sat, May 2, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Vikram Jamparathi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=YX6vN1kXygSfSUSC9X90n8gHSODM0AkAtPSCoiZHNJQlxQCvUqQ7TfWZfvhP2J5a&type=H
+✪ Sat, May 2, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Navya Vakkanthula ===LINK=== https://www.jobtwine.com/meeting/copilot?id=9%2BrkRNSkFBqmyk5Q4pfzhkxVEtP1fsVkiMtqcgLQSslq7snPAD4ogi64kGheEglM&type=H
+✪ Sat, May 2, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Padmavadana Kotamraju ===LINK=== https://www.jobtwine.com/meeting/copilot?id=L5CtFJmsZBnuWn7NYENF3JmeMkQeJjXnqXzZpYUpmu2DOxpqpl6S0DNMwqy0SSFw&type=H
+✪ Sat, May 2, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant CIBCVS001 (14071) ===CANDIDATE=== Haritha Guda ===LINK=== https://www.jobtwine.com/meeting/copilot?id=aYeP8wYY1GSiEq7DrGw%2BGxhQlA6wabg4%2BMsFLcmD8nflod4HtPFWxsrc0ZnpsYaI&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 01-May-2026 12:54:05 PM
+Updated at (IST): 01-May-2026 01:07:09 PM
