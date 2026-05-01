@@ -19,7 +19,7 @@ Today's date: May 1
 §TODAY§
 ✪ Fri, May 1, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Naga Kumtsam ===LINK=== https://www.jobtwine.com/meeting/copilot?id=lyhy9FfCtV7c1PixYoSN3Mdlk4sk3%2F8sOufgyDiYgZUIhE6HtToE6jMAT4dW2dnh&type=H
 ✪ Fri, May 1, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== Varun Kaitha ===LINK=== https://www.jobtwine.com/meeting/copilot?id=sB3OXfZM5gD54buJDnuojlN0xkJSQn%2Bz7MMruV5W05sMAh9ysNgIasHNk1V7y1w8&type=H
-✪ Fri, May 1, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Ravina Shigwan ===LINK=== https://www.jobtwine.com/meeting/copilot?id=9JPCG8XtHlIqEBAwQ%2BFNUyKQy2KI2Y8XbmzlitGqQCxm%2BfgXPaMzXMII7ttqqwVg&type=H
+✪ Fri, May 1, 2026, 7:30 PM IST ==> Generating Feedback ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Ravina Shigwan ===LINK=== NA
 ✪ Fri, May 1, 2026, 7:30 PM IST ==> Cancelled by candidate ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== Ravina Shigwan ===LINK=== NA
 ✪ Fri, May 1, 2026, 5:00 PM IST ==> Not Recommended ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Srinivas Srinivas ===LINK=== NA
 ✪ Fri, May 1, 2026, 3:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Consultant CIBCVS001 (14071) ===CANDIDATE=== Rahul Kumar ===LINK=== NA
@@ -33,4 +33,4 @@ Today's date: May 1
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 01-May-2026 08:25:36 PM
+Updated at (IST): 01-May-2026 08:35:47 PM
