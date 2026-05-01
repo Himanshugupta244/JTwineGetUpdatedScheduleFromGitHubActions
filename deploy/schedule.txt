@@ -8,7 +8,7 @@ Today's date: May 1
 ✪ Fri, May 1, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Dilleswari Budda ===LINK=== https://www.jobtwine.com/meeting/copilot?id=qPVASk3wpWda7jIbNFUXrKXp5KkI8OVvY0MUJRb6iiFqziK6%2FXcOG%2Fxnt7Jr45Ba&type=H
 ✪ Fri, May 1, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Bhavani Gadi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=u5TQUubXn1xfSVUixG9tT%2FINYpP8aeYfIYS%2FLEDdARhfPKmAT86bTq0tbnIvg2q2&type=H
 ✪ Fri, May 1, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Dibyanshu Bhardwaj ===LINK=== https://www.jobtwine.com/meeting/copilot?id=FV36AiZof04api7YEf5vbAeLB2Gs0hQEqHYIkPeQ2hISCB8AeFQzkagOjGjfEnHe&type=H
-✪ Fri, May 1, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== CIBCMC001 Quality Engineering Consultant (17786) ===CANDIDATE=== MANINDRA PRADHAN ===LINK=== https://www.jobtwine.com/meeting/copilot?id=ubkMM8m5KKzrc8UZyHefsKmN8ei5ceMbqioo2j%2Bm8BiExMrzdx0c8OjYG%2BGuyZXB&type=H
+✪ Fri, May 1, 2026, 11:00 AM IST ==> Pending Feedback Review ===PROFILE=== CIBCMC001 Quality Engineering Consultant (17786) ===CANDIDATE=== MANINDRA PRADHAN ===LINK=== NA
 §TOMORROW§
 ✪ Sat, May 2, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Yogesh Hedau ===LINK=== https://www.jobtwine.com/meeting/copilot?id=a2SL9nUk%2F5N7pDSgt0VRXzfzdRBWB2nWIULMQy8%2FfYrdmLBeO71nG%2BYxRrBBpmp8&type=H
 ✪ Sat, May 2, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Senior QE Manager(CIBCMP002) (18395) ===CANDIDATE=== Srinivas Pentam ===LINK=== https://www.jobtwine.com/meeting/copilot?id=X%2BzsZN2KzwHYJYEoDwN5hbVVUh9HYx9GGMXFKR6jdZbjbOhRJpfjoxKJWXLnH5%2Bb&type=H
@@ -33,4 +33,4 @@ Today's date: May 1
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 01-May-2026 11:47:20 AM
+Updated at (IST): 01-May-2026 11:56:58 AM
