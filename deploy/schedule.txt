@@ -16,21 +16,17 @@ Today's date: May 1
 ✪ Sat, May 2, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Geethanjali Guntuku ===LINK=== https://www.jobtwine.com/meeting/copilot?id=3aJoDL0ZPrYbPnsKcConDNrE%2FILlwIBLzhwmfDCe2HHzOYhnzRhtFSX506YRiW1K&type=H
 ✪ Sat, May 2, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== QE Manager(CIBCMAB004 ) (18589) ===CANDIDATE=== Rajani Sistu ===LINK=== https://www.jobtwine.com/meeting/copilot?id=n1C%2FkUAmLoTZGspNXcodSPmsVDJwoCP0EFUNyY%2Bi8OKcKkPkfNQGEH9vFMVDQ9cX&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
-§TODAY§
-✪ Fri, May 1, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Naga Kumtsam ===LINK=== https://www.jobtwine.com/meeting/copilot?id=lyhy9FfCtV7c1PixYoSN3Mdlk4sk3%2F8sOufgyDiYgZUIhE6HtToE6jMAT4dW2dnh&type=H
-✪ Fri, May 1, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== Varun Kaitha ===LINK=== https://www.jobtwine.com/meeting/copilot?id=sB3OXfZM5gD54buJDnuojlN0xkJSQn%2Bz7MMruV5W05sMAh9ysNgIasHNk1V7y1w8&type=H
-✪ Fri, May 1, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Ravina Shigwan ===LINK=== https://www.jobtwine.com/meeting/copilot?id=9JPCG8XtHlIqEBAwQ%2BFNUyKQy2KI2Y8XbmzlitGqQCxm%2BfgXPaMzXMII7ttqqwVg&type=H
-✪ Fri, May 1, 2026, 7:30 PM IST ==> Cancelled by candidate ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== Ravina Shigwan ===LINK=== NA
-✪ Fri, May 1, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCCL001 (18079) ===CANDIDATE=== Srinivas Srinivas ===LINK=== https://www.jobtwine.com/meeting/copilot?id=c0MxRa4X2ki0K6wiUvk7tC%2BFxAJngM%2FnKMdNR2LEx0JgfJ9pGI7ZWRfYe522WAxs&type=H
-✪ Fri, May 1, 2026, 3:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Consultant CIBCVS001 (14071) ===CANDIDATE=== Rahul Kumar ===LINK=== NA
-✪ Fri, May 1, 2026, 12:30 AM IST ==> Not Recommended ===PROFILE=== QA Engineer (18417) ===CANDIDATE=== ANNAPURNA BURAGAPU ===LINK=== NA
-§TOMORROW§
-✪ Sat, May 2, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Vikram Jamparathi ===LINK=== https://www.jobtwine.com/meeting/copilot?id=YX6vN1kXygSfSUSC9X90n8gHSODM0AkAtPSCoiZHNJQlxQCvUqQ7TfWZfvhP2J5a&type=H
-✪ Sat, May 2, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Navya Vakkanthula ===LINK=== https://www.jobtwine.com/meeting/copilot?id=9%2BrkRNSkFBqmyk5Q4pfzhkxVEtP1fsVkiMtqcgLQSslq7snPAD4ogi64kGheEglM&type=H
-✪ Sat, May 2, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Padmavadana Kotamraju ===LINK=== https://www.jobtwine.com/meeting/copilot?id=L5CtFJmsZBnuWn7NYENF3JmeMkQeJjXnqXzZpYUpmu2DOxpqpl6S0DNMwqy0SSFw&type=H
-✪ Sat, May 2, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant CIBCVS001 (14071) ===CANDIDATE=== Haritha Guda ===LINK=== https://www.jobtwine.com/meeting/copilot?id=aYeP8wYY1GSiEq7DrGw%2BGxhQlA6wabg4%2BMsFLcmD8nflod4HtPFWxsrc0ZnpsYaI&type=H
+Exception: element click intercepted: Element <span>...</span> is not clickable at point (541, 137). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
+  (Session info: chrome=147.0.7727.55)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7f58b190b25607634e764a22b6522c2d, clickElement {id=f.C9070C80394745A7460E958F8CC2C04D.d.4EF622A5689005E42FF277D39D8F5FB0.e.378}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33333}, goog:processID: 3096, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33333/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (7f58b190b25607634e764a22b6522c2d)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[3]]
+Session ID: 7f58b190b25607634e764a22b6522c2d
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 01-May-2026 05:26:16 PM
+Updated at (IST): 01-May-2026 05:36:10 PM
