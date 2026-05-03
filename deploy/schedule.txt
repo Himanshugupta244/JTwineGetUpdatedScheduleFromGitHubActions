@@ -4,10 +4,10 @@ Exception: Expected condition failed: waiting for visibility of element located 
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45777}, goog:processID: 2519, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45777/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1986d39b2211eed325c2910f32cc335c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44687}, goog:processID: 2506, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44687/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cbaebfe25dd8135ed24914d9dafb0dbd
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 03-May-2026 04:02:17 PM
+Updated at (IST): 03-May-2026 04:11:58 PM
