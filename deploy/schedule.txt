@@ -12,7 +12,7 @@ Today's date: May 4
 ✪ Tue, May 5, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Yogesh Hedau ===LINK=== https://app.jobtwine.com/meeting/copilot?id=yxDkI8ogwN3%2Bdn8gKC8YhhryEajQTeQwyEq8A%2BJlZmd6Yx%2BivLD0%2Fre1m3YfKhho&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
-✪ Mon, May 4, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Vamsi Geddavalasa ===LINK=== https://app.jobtwine.com/meeting/copilot?id=I16IgH45Vokq%2BT4hVPu1DMmqaQHIipJH8jMogfCEsnfZjYDiRznIsKeaZC09mTNV&type=H ===FEEDBACK=== NA
+✪ Mon, May 4, 2026, 7:30 PM IST ==> Generating Feedback ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Vamsi Geddavalasa ===LINK=== NA ===FEEDBACK=== NA
 ✪ Mon, May 4, 2026, 4:00 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer(CIBCNME001) (18854) ===CANDIDATE=== Swetha Chalamalla ===LINK=== NA ===FEEDBACK=== NA
 ✪ Mon, May 4, 2026, 3:00 PM IST ==> Not Recommended ===PROFILE=== Quality Engineering Manager - CIBCAL001 (16818) ===CANDIDATE=== Hamzah Ansari ===LINK=== NA ===FEEDBACK=== NA
 ✪ Mon, May 4, 2026, 2:00 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Dilleswari Budda ===LINK=== NA ===FEEDBACK=== NA
@@ -27,4 +27,4 @@ Today's date: May 4
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 04-May-2026 08:05:23 PM
+Updated at (IST): 04-May-2026 08:15:02 PM
