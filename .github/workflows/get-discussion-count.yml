@@ -2,7 +2,6 @@ name: Get Count of Discussions
 
 on:
   workflow_dispatch:
-  
 
 jobs:
   get-count:
@@ -35,16 +34,30 @@ jobs:
         JTWINE_PASSWORD_SUD: ${{ secrets.JTWINE_PASSWORD_SUD }}
       run: mvn exec:java -Dexec.mainClass="GmailProjectForGitHubActions.DiscussionCount"
 
-    - name: Move and Commit schedule.txt
+    - name: Commit and Push index.html
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
-        git reset --hard
-        git clean -fd
-        git pull --rebase --autostash origin main
+
+        # Stash any changes (including generated files)
+        git stash --include-untracked
+
+        # Pull latest changes safely
+        git pull origin main --rebase
+
+        # Restore changes
+        git stash pop || true
+
+        # Add the updated file
         git add deploy/discussionCount/index.html
-        git commit -m "Update discussionCount/index.html [ci skip]" || echo "No changes"
-        git push
+
+        # Commit only if there are changes
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update discussionCount/index.html"
+          git push origin main
+        fi
 
     - name: Upload discussionCount/index.html via FTP to Hostinger
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
