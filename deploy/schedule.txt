@@ -6,8 +6,8 @@ Today's date: May 4
 ✪ Mon, May 4, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Bhaskara Santhosh Sanyasi Naidu Thota Thota ===LINK=== https://app.jobtwine.com/meeting/copilot?id=%2BYCTYwkUy4knb6OivFrPGB3pzq7vNPK%2BMiXGv%2BCnCHFpIRA7Mm%2F4MOiVXaEydMGf&type=H ===FEEDBACK=== NA
 ✪ Mon, May 4, 2026, 4:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Nalla Sree Teja ===LINK=== https://app.jobtwine.com/meeting/copilot?id=JVDhuKxeCNwI90ZvhdsEwK%2B0SfS21OsHfn12t1vmPFrK052t6alj6T2g3Wm%2BA2rs&type=H ===FEEDBACK=== NA
 ✪ Mon, May 4, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCNME001) (18854) ===CANDIDATE=== N V Q E S A ===LINK=== https://app.jobtwine.com/meeting/copilot?id=f7Vbc7YMOX9QASdLePUfDBBTQlZx%2Fb8e3l0HRWqDVLa%2B8KLF6Ka7XVhDfP2rO9VI&type=H ===FEEDBACK=== NA
-✪ Mon, May 4, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer (CIBCEP001) (18853) ===CANDIDATE=== Tharuni Godugu ===LINK=== https://app.jobtwine.com/meeting/copilot?id=tj9FR2cvOBAltgn6u9MLloBLYI3g6itBDk9R71%2B99vfAp0%2FH3X3m%2FX6V7XLst73F&type=H ===FEEDBACK=== NA
-✪ Mon, May 4, 2026, 1:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Ayushi Pathak ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=18472
+✪ Mon, May 4, 2026, 2:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer (CIBCEP001) (18853) ===CANDIDATE=== Tharuni Godugu ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=18853
+✪ Mon, May 4, 2026, 1:00 PM IST ==> Not Recommended ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Ayushi Pathak ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
 ✪ Tue, May 5, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Ramu M V ===LINK=== https://app.jobtwine.com/meeting/copilot?id=IXzSOIUkPU4YvcqreVgHqy0n3o5BBlpCIdeooA%2FVxBcKDqXT2UVAhrVKTevyJXhu&type=H
 ✪ Tue, May 5, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Yogesh Hedau ===LINK=== https://app.jobtwine.com/meeting/copilot?id=yxDkI8ogwN3%2Bdn8gKC8YhhryEajQTeQwyEq8A%2BJlZmd6Yx%2BivLD0%2Fre1m3YfKhho&type=H
@@ -27,4 +27,4 @@ Today's date: May 4
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 04-May-2026 02:36:26 PM
+Updated at (IST): 04-May-2026 02:45:45 PM
