@@ -17,7 +17,7 @@ Today's date: May 4
 ✪ Mon, May 4, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCNME001) (18854) ===CANDIDATE=== Swetha Chalamalla ===LINK=== https://app.jobtwine.com/meeting/copilot?id=dATGdFoCMZm3mxuiv54%2BwSrkpcb%2Bi5%2BUuwLgvKQThMkPTy5AKk8bJmFeskDUT0GM&type=H ===FEEDBACK=== NA
 ✪ Mon, May 4, 2026, 3:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Manager - CIBCAL001 (16818) ===CANDIDATE=== Hamzah Ansari ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=0&jobId=16818
 ✪ Mon, May 4, 2026, 2:00 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Dilleswari Budda ===LINK=== NA ===FEEDBACK=== NA
-✪ Mon, May 4, 2026, 10:00 AM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Aravind Bolabathula ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=18603
+✪ Mon, May 4, 2026, 10:00 AM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Aravind Bolabathula ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
 ✪ Tue, May 5, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Vasundhara Surapally ===LINK=== https://app.jobtwine.com/meeting/copilot?id=99TEgUq%2BikpJ3wx2jGV91JS%2BWcVLZN%2Fmz%2F%2Fz4Uo7WrUs2YK0SWPlEb1f8UNhP0EP&type=H
 ✪ Tue, May 5, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCPP006) (18339) ===CANDIDATE=== Ashish Kowlekari ===LINK=== https://app.jobtwine.com/meeting/copilot?id=1xB458fh7hbejh4oI%2BT74OpxVfjxyOPjgu4tGk1nVvczsECKzDDHVhbVga51W41z&type=H
@@ -27,4 +27,4 @@ Today's date: May 4
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 04-May-2026 03:45:59 PM
+Updated at (IST): 04-May-2026 03:55:45 PM
