@@ -16,7 +16,7 @@ Today's date: May 4
 ✪ Mon, May 4, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Vamsi Geddavalasa ===LINK=== https://app.jobtwine.com/meeting/copilot?id=I16IgH45Vokq%2BT4hVPu1DMmqaQHIipJH8jMogfCEsnfZjYDiRznIsKeaZC09mTNV&type=H ===FEEDBACK=== NA
 ✪ Mon, May 4, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCNME001) (18854) ===CANDIDATE=== Swetha Chalamalla ===LINK=== https://app.jobtwine.com/meeting/copilot?id=dATGdFoCMZm3mxuiv54%2BwSrkpcb%2Bi5%2BUuwLgvKQThMkPTy5AKk8bJmFeskDUT0GM&type=H ===FEEDBACK=== NA
 ✪ Mon, May 4, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager - CIBCAL001 (16818) ===CANDIDATE=== Hamzah Ansari ===LINK=== https://app.jobtwine.com/meeting/copilot?id=uWJpn%2BWt5EzxHfA6o%2BXwjMhvhLm%2FdNbdshWm7EJ3WUka3WRhkZDY7%2BVQmB1yVlDf&type=H ===FEEDBACK=== NA
-✪ Mon, May 4, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Dilleswari Budda ===LINK=== https://app.jobtwine.com/meeting/copilot?id=ptoranmBAnpbDxIR3dDBboJ0RPTSgAA4pqL4rfxqqOVPs9FgZyR0Ww7IVdEG%2BQtE&type=H ===FEEDBACK=== NA
+✪ Mon, May 4, 2026, 2:00 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer CIBCCL002 (18071) ===CANDIDATE=== Dilleswari Budda ===LINK=== NA ===FEEDBACK=== NA
 ✪ Mon, May 4, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Coordinator CIBCAP002 (17756) ===CANDIDATE=== Sahithi Manchala ===LINK=== NA ===FEEDBACK=== NA
 ✪ Mon, May 4, 2026, 10:00 AM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Aravind Bolabathula ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=18603
 §TOMORROW§
@@ -27,4 +27,4 @@ Today's date: May 4
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 04-May-2026 02:16:18 PM
+Updated at (IST): 04-May-2026 02:25:55 PM
