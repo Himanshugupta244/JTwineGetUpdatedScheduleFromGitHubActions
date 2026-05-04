@@ -72,7 +72,14 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			sessionBase64Sud = captureSessionData("Sudhanshu");
 
 		} catch(Exception ex) {
+			System.out.println("Exception occurred: " + ex.getMessage());
 			ex.printStackTrace();
+			if (driver != null) {
+				System.out.println("Current URL: " + driver.getCurrentUrl());
+				System.out.println("Page title: " + driver.getTitle());
+				System.out.println("Keeping browser open for 15 seconds to inspect...");
+				waitForFixTime(15000);
+			}
 			outputLines.add("Exception: " + ex.getMessage());
 		} finally {
 			if (driver != null) {
@@ -100,38 +107,51 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		System.out.println("Logging into JTwine");
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless=new");
+		// options.addArguments("--headless=new");  // Commenting for debugging
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--window-size=1920,1080");
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		setTimezoneToIST(driver);
-		driver.get("https://www.jobtwine.com/signin");
-		waitForFixTime(2000);
+		driver.get("https://app.jobtwine.com/signin");
+		waitForFixTime(5000); // Increased wait to see the page load
 		if (username == null || username.isEmpty() || password == null || password.isEmpty()) {
 			throw new IllegalArgumentException("JTWINE_USERNAME and/or JTWINE_PASSWORD environment variables are not set or empty.");
 		}
+		
+		System.out.println("Looking for username field...");
 		waitTillElementVisible(By.xpath(".//input[@formcontrolname='userName']"), 30);
 		waitForFixTime(1000);
+		System.out.println("Username field found, entering username...");
 		driver.findElement(By.xpath(".//input[@formcontrolname='userName']")).sendKeys(username);
 		waitForFixTime(1000);
+		System.out.println("Looking for Next button...");
 		waitTillElementVisible(By.xpath(".//button[contains(text(),'Next')]"), 30);
 		waitForFixTime(1000);
+		System.out.println("Next button found, clicking...");
 		driver.findElement(By.xpath(".//button[contains(text(),'Next')]")).click();
 		waitForFixTime(1000);
+		System.out.println("Looking for password field...");
 		waitTillElementVisible(By.xpath(".//input[@formcontrolname='password']"), 30);
 		waitForFixTime(1000);
+		System.out.println("Password field found, entering password...");
 		driver.findElement(By.xpath(".//input[@formcontrolname='password']")).sendKeys(password);
 		waitForFixTime(1000);
+		System.out.println("Looking for Sign In button...");
 		waitTillElementVisible(By.xpath(".//button[contains(text(),'Sign In')]"), 30);
 		waitForFixTime(1000);
+		System.out.println("Sign In button found, clicking...");
 		driver.findElement(By.xpath(".//button[contains(text(),'Sign In')]")).click();
 		waitTillElementVisible(By.xpath(".//div[contains(text(),'Candidates For Interview')]"), 30);
 		waitForFixTime(1000);
 		if(driver.findElements(By.xpath(".//div[contains(text(),'Candidates For Interview')]")).size() > 0) {
 			System.out.println("Login to Jtwin is successful");
 		} else {
+			System.out.println("Login verification failed - keeping browser open for inspection...");
+			System.out.println("Page title: " + driver.getTitle());
+			System.out.println("Current URL: " + driver.getCurrentUrl());
+			waitForFixTime(10000); // Keep browser open for 10 seconds to inspect
 			throw new RuntimeException("Login to Jtwin failed - 'Candidates For Interview' text not found after login.");
 		}
 	}
@@ -244,6 +264,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			String profileName = todayData.get(index)[2];
 			String candidateName = todayData.get(index).length > 3 ? todayData.get(index)[3] : "";
 			String meetingLink = "";
+			String feedbackLink = "";
 			if ("Scheduled".equals(statusText)) {
 				try {
 					String cardBtnXpath = "(" + todayCardXpath + ")[" + (index + 1) + "]//button[.//*[text()='Start Meeting']]";
@@ -258,13 +279,33 @@ public class JTwineScheduleForTodayFromGitHubActions {
 					meetingLink = "NA";
 					System.out.println("Failed to capture meeting link for today card " + index + ": " + e.getMessage());
 				}
+			} else if ("Pending Feedback Review".equals(statusText)) {
+				try {
+					String feedbackXpath = "(" + todayCardXpath + ")[" + (index + 1) + "]//*[@id='addFeedbackCtaId']";
+					List<WebElement> feedbackBtns = driver.findElements(By.xpath(feedbackXpath));
+					if (!feedbackBtns.isEmpty() && feedbackBtns.get(0).isDisplayed()) {
+						feedbackLink = captureFeedbackLink(feedbackBtns.get(0));
+						System.out.println("feedbackLink returned: '" + feedbackLink + "'");
+					} else {
+						feedbackLink = "NA";
+						System.out.println("Add Feedback element not found/hidden for today card " + index);
+					}
+				} catch (Exception e) {
+					feedbackLink = "NA";
+					System.out.println("Failed to capture feedback link for today card " + index + ": " + e.getMessage());
+				}
 			}
 			if (meetingLink.isEmpty()) meetingLink = "NA";
+			if (feedbackLink.isEmpty()) feedbackLink = "NA";
 			String linkPart = " ===LINK=== " + meetingLink;
+			String feedbackPart = " ===FEEDBACK=== " + feedbackLink;
 			String profilePart = " ===PROFILE=== " + profileName;
 			String candidatePart = " ===CANDIDATE=== " + candidateName;
-			System.out.println(discText + " ==> " + statusText + profilePart + candidatePart + linkPart);
-			todayLines.add("✪ " + discText + " ==> " + statusText + profilePart + candidatePart + linkPart);
+			System.out.println(discText + " ==> " + statusText + profilePart + candidatePart + linkPart + feedbackPart);
+			if (!feedbackLink.isEmpty() && !"NA".equals(feedbackLink)) {
+				System.out.println("DEBUG: Feedback link included in output: " + feedbackLink);
+			}
+			todayLines.add("✪ " + discText + " ==> " + statusText + profilePart + candidatePart + linkPart + feedbackPart);
 		}
 
 		// Per-card approach for tomorrow
@@ -481,6 +522,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".nr { color: #374151; }\n");
 			html.append(".ns { color: #374151; }\n");
 			html.append(".pd { color: #991b1b; }\n");
+			html.append(".pd-feedback-btn { background: none; border: none; padding: 0; margin: 0; color: inherit; font: inherit; font-weight: inherit; cursor: pointer; text-decoration: underline dotted; letter-spacing: inherit; text-align: left; }\n");
+			html.append(".pd-feedback-btn:hover { text-decoration: underline; }\n");
 			html.append(".empty { padding: 12px 14px; font-size: 14px; font-weight: 700; color: #9ca3af; font-style: italic; letter-spacing: 0.5px; }\n");
 			// Past interview styling
 			html.append(".past-interview { opacity: 0.5; background: #f3f4f6; }\n");
@@ -693,30 +736,28 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	}
 
 	private static String buildInterviewRow(String line, String account) {
-		String content = line.startsWith("\u272a ") ? line.substring(2).trim() : line.trim();
+		String originalLine = line.startsWith("\u272a ") ? line.substring(2).trim() : line.trim();
 
-		// Extract meeting link if present
+		// Extract all tagged values before trimming the visible content.
 		String meetingLink = "";
-		if (content.contains("===LINK===")) {
-			String[] linkParts = content.split("===LINK===", 2);
-			content = linkParts[0].trim();
-			meetingLink = linkParts[1].trim();
-		}
-		// Extract candidate name if present
 		String candidateName = "";
-		if (content.contains("===CANDIDATE===")) {
-			String[] candParts = content.split("===CANDIDATE===", 2);
-			content = candParts[0].trim();
-			candidateName = candParts[1].trim();
-		}
-		// Extract profile name if present
 		String profileName = "";
-		if (content.contains("===PROFILE===")) {
-			String[] profileParts = content.split("===PROFILE===", 2);
-			content = profileParts[0].trim();
-			profileName = profileParts[1].trim();
-		}
+		String feedbackLink = "";
 
+		meetingLink = extractTaggedValue(originalLine, "===LINK===");
+		feedbackLink = extractTaggedValue(originalLine, "===FEEDBACK===");
+		candidateName = extractTaggedValue(originalLine, "===CANDIDATE===");
+		profileName = extractTaggedValue(originalLine, "===PROFILE===");
+
+		String content = originalLine;
+		String[] markers = {"===PROFILE===", "===CANDIDATE===", "===LINK===", "===FEEDBACK==="};
+		for (String marker : markers) {
+			int markerIndex = content.indexOf(marker);
+			if (markerIndex >= 0) {
+				content = content.substring(0, markerIndex).trim();
+			}
+		}
+		
 		String[] parts = content.split("==>");
 		if (parts.length == 2) {
 			String disc = parts[0].trim();
@@ -762,9 +803,31 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				candHtml = "<div class=\"col-cand\"><span style='font-size:8px;color:#e5e7eb'>&#8212;</span></div>";
 			}
 
-			return "<div class=\"row\"><div class=\"col-time\">" + sdetPrefix + escapeHtml(time) + "</div>" + candHtml + linkHtml + "<div class=\"col-status " + bc + "\">" + escapeHtml(stat) + "</div></div>\n";
+			String statHtml;
+			if ("pd".equals(bc) && !feedbackLink.isEmpty() && !"NA".equals(feedbackLink)) {
+				String safeFbUrl = escapeHtml(feedbackLink).replace("'", "\\'");
+				statHtml = "<button onclick=\"copyAndJoin('" + account + "','" + safeFbUrl + "')\" class=\"pd-feedback-btn\">" + escapeHtml(stat) + "</button>";
+			} else {
+				statHtml = escapeHtml(stat);
+			}
+			return "<div class=\"row\"><div class=\"col-time\">" + sdetPrefix + escapeHtml(time) + "</div>" + candHtml + linkHtml + "<div class=\"col-status " + bc + "\">" + statHtml + "</div></div>\n";
 		}
 		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-cand\"><span style='font-size:8px;color:#e5e7eb'>&#8212;</span></div><div class=\"col-link\"><span class=\"join-na\">&mdash;</span></div><div class=\"col-status\"></div></div>\n";
+	}
+
+	private static String extractTaggedValue(String line, String marker) {
+		int markerIndex = line.indexOf(marker);
+		if (markerIndex < 0) {
+			return "";
+		}
+
+		int valueStart = markerIndex + marker.length();
+		int nextMarker = line.indexOf("===", valueStart);
+		if (nextMarker < 0) {
+			return line.substring(valueStart).trim();
+		}
+
+		return line.substring(valueStart, nextMarker).trim();
 	}
 
 	private static boolean isSdetProfile(String profileName) {
@@ -958,6 +1021,41 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		} catch (Exception ignored) {}
 		// Wait briefly for DOM to settle before interacting with next card
 		waitForFixTime(1500);
+	}
+
+	/**
+	 * Clicks the "Add Feedback" element on a JTwine interview card (same-tab navigation),
+	 * captures the resulting URL, then navigates back to the candidates page.
+	 */
+	private static String captureFeedbackLink(WebElement addFeedbackEl) {
+		try {
+			String originalUrl = driver.getCurrentUrl();
+			System.out.println("Clicking Add Feedback element to capture link...");
+			addFeedbackEl.click();
+			waitForFixTime(3000);
+			String feedbackUrl = driver.getCurrentUrl();
+			System.out.println("Captured feedback URL: " + feedbackUrl);
+			if (feedbackUrl.equals(originalUrl) || "about:blank".equals(feedbackUrl)) {
+				System.out.println("WARNING: URL did not change after clicking Add Feedback");
+				driver.navigate().back();
+				waitForFixTime(3000);
+				return "NA";
+			}
+			driver.navigate().back();
+			waitForFixTime(3000);
+			try { waitTillElementVisible(By.xpath(".//*[@id='addFeedbackCtaId']"), 15); } catch (Exception ignored) {}
+			return feedbackUrl;
+		} catch (Exception e) {
+			System.out.println("Exception in captureFeedbackLink: " + e.getMessage());
+			e.printStackTrace();
+			try {
+				driver.navigate().back();
+				waitForFixTime(3000);
+			} catch (Exception ex) {
+				System.out.println("Recovery navigate back also failed: " + ex.getMessage());
+			}
+			return "NA";
+		}
 	}
 
 	// Separate Code for VProp
