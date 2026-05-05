@@ -13,7 +13,7 @@ Today's date: May 5
 ✪ Wed, May 6, 2026, 9:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCNME001) (18854) ===CANDIDATE=== Nithish Thada ===LINK=== https://app.jobtwine.com/meeting/copilot?id=Nt%2BnCc4BzwPTFQIleLyFqKR6pVzd%2Fe9RnBNck0%2B43C1jm%2F75uzo%2Fgmlgzs4tkGU7&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
-✪ Tue, May 5, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Senior QE Manager(CIBCMP002) (18395) ===CANDIDATE=== Gaurav Guha ===LINK=== https://app.jobtwine.com/meeting/copilot?id=sRL78T4Kh4BQFlyVk68JCPR%2FnVRxsmIonCW9KftjmZNE2FZHLsEMzJq12Bd87BAg&type=H ===FEEDBACK=== NA
+✪ Tue, May 5, 2026, 8:00 PM IST ==> Pending Feedback Review ===PROFILE=== Senior QE Manager(CIBCMP002) (18395) ===CANDIDATE=== Gaurav Guha ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=18395
 ✪ Tue, May 5, 2026, 5:00 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Vasundhara Surapally ===LINK=== NA ===FEEDBACK=== NA
 ✪ Tue, May 5, 2026, 3:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Manager(CIBCPP006) (18339) ===CANDIDATE=== Ashish Kowlekari ===LINK=== NA ===FEEDBACK=== NA
 ✪ Tue, May 5, 2026, 2:00 PM IST ==> Not Recommended ===PROFILE=== Quality Engineering Coordinator CIBCAP002 (17756) ===CANDIDATE=== Sahithi Manchala ===LINK=== NA ===FEEDBACK=== NA
@@ -27,4 +27,4 @@ Today's date: May 5
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 05-May-2026 08:36:00 PM
+Updated at (IST): 05-May-2026 08:45:22 PM
