@@ -15,7 +15,7 @@ Today's date: May 6
 §TODAY§
 ✪ Wed, May 6, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== SRI SAI PRAKASH MARELLA ===LINK=== https://app.jobtwine.com/meeting/copilot?id=KFzgL5AR7Oz8kBNndiMzahtGIICvAN26dK0ZjJkNwNQqNvMF9QKqB3%2FFAbHwR6fN&type=H ===FEEDBACK=== NA
 ✪ Wed, May 6, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Anjali Muppalla ===LINK=== https://app.jobtwine.com/meeting/copilot?id=gkCiNFC7Q09x3%2Fngw6OBV41Fq%2BheUChvl60HaczXEJ64gr2anQ8JjFmbh8JJTijH&type=H ===FEEDBACK=== NA
-✪ Wed, May 6, 2026, 3:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Venkatesh Katta ===LINK=== https://app.jobtwine.com/meeting/copilot?id=36j9kKuMxoicvGrFVewoLlfv0ZO0OwvhduWLzjnQrwARKF6d8SnT11xFzPxpvXRf&type=H ===FEEDBACK=== NA
+✪ Wed, May 6, 2026, 3:30 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Venkatesh Katta ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=17480
 ✪ Wed, May 6, 2026, 2:30 PM IST ==> Not Recommended ===PROFILE=== Quality Engineer CIBCAP010 (18988) ===CANDIDATE=== Suraj Holkunde ===LINK=== NA ===FEEDBACK=== NA
 ✪ Wed, May 6, 2026, 1:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Kusum Kumari ===LINK=== NA ===FEEDBACK=== NA
 ✪ Wed, May 6, 2026, 9:00 AM IST ==> Is a Good Fit ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Gaurav Modanwal ===LINK=== NA ===FEEDBACK=== NA
@@ -28,4 +28,4 @@ Today's date: May 6
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 06-May-2026 04:15:37 PM
+Updated at (IST): 06-May-2026 04:25:36 PM
