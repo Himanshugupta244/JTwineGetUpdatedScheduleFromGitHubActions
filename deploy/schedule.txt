@@ -1,26 +1,13 @@
 Today's date: May 6
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
-§TODAY§
-✪ Wed, May 6, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== ADARSH PANDITA ===LINK=== https://app.jobtwine.com/meeting/copilot?id=E4kUYOs8yAizoOikIg3jVtAx91qwZz0EzKFZJyb3wORV7xvpbcMQHoyhVZ%2FM3haS&type=H ===FEEDBACK=== NA
-✪ Wed, May 6, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCAP002 (17756) ===CANDIDATE=== Ravi Rapolu ===LINK=== https://app.jobtwine.com/meeting/copilot?id=VfyaDsgLyYbDbtY6a%2FMTNttTJQWGgclNcLktGuN4quQVxCVdhhMsMr2ocUa5X%2Bjc&type=H ===FEEDBACK=== NA
-✪ Wed, May 6, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QE Manager CIBCRA002 (17935) ===CANDIDATE=== Vinnakota Pothuraju ===LINK=== https://app.jobtwine.com/meeting/copilot?id=e%2FskYZvRNrk4NdqoUcVpWXKM4hCGOud1XTKsGVWhwI2gUAORBS%2BRdAerCaX9DbSv&type=H ===FEEDBACK=== NA
-✪ Wed, May 6, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Vijay Pagidimarry ===LINK=== https://app.jobtwine.com/meeting/copilot?id=sgl5XQpg9bl%2Bv7vhTxNrmxBljV6J%2FzYCpyKiOEjVwVieolHMkITSuPj0Tn5E1Ig0&type=H ===FEEDBACK=== NA
-✪ Wed, May 6, 2026, 11:00 AM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Coordinator CIBCAP002 (17756) ===CANDIDATE=== Prudhvi Gonti ===LINK=== NA ===FEEDBACK=== NA
-✪ Wed, May 6, 2026, 9:00 AM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer(CIBCNME001) (18854) ===CANDIDATE=== Nithish Thada ===LINK=== NA ===FEEDBACK=== NA
-§TOMORROW§
-✪ Thu, May 7, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCPP006) (18339) ===CANDIDATE=== Venkata Siva Prasad Kosuri ===LINK=== https://app.jobtwine.com/meeting/copilot?id=ZKdkFCgJ4qAKKjE9vy9ovdKJMZxUPy7ukMf0SZUpBj4ka0Tc9tw2OEJge0KYFLju&type=H
-**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
-§TODAY§
-✪ Wed, May 6, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Anjali Muppalla ===LINK=== https://app.jobtwine.com/meeting/copilot?id=gkCiNFC7Q09x3%2Fngw6OBV41Fq%2BheUChvl60HaczXEJ64gr2anQ8JjFmbh8JJTijH&type=H ===FEEDBACK=== NA
-✪ Wed, May 6, 2026, 3:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Venkatesh Katta ===LINK=== https://app.jobtwine.com/meeting/copilot?id=36j9kKuMxoicvGrFVewoLlfv0ZO0OwvhduWLzjnQrwARKF6d8SnT11xFzPxpvXRf&type=H ===FEEDBACK=== NA
-✪ Wed, May 6, 2026, 2:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCAP010 (18988) ===CANDIDATE=== Suraj Holkunde ===LINK=== https://app.jobtwine.com/meeting/copilot?id=FuKdOAE6O6Zf2Ozq85ZOijpkFM1Amj1jfM%2BwkmRoi15oNGjP5Z06fFfvvVNyWhMD&type=H ===FEEDBACK=== NA
-✪ Wed, May 6, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCAL003 (17480) ===CANDIDATE=== Kusum Kumari ===LINK=== https://app.jobtwine.com/meeting/copilot?id=aOVQvm%2BrkKL1tsXeJUlyOeqJO4GYK1SfIrTKFifOFL9FTXSuCkrTNVm3e9ukusia&type=H ===FEEDBACK=== NA
-✪ Wed, May 6, 2026, 9:00 AM IST ==> Not Recommended ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Gaurav Modanwal ===LINK=== NA ===FEEDBACK=== NA
-§TOMORROW§
-✪ Thu, May 7, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== SRIJAN SAREEN ===LINK=== https://app.jobtwine.com/meeting/copilot?id=9%2B2ccYiyRB2J%2FBLXZB%2FbZqUz1IL83z5g9SyGEe1fJeD2xlae5VAi%2BD%2Bkv3DphiZA&type=H
-✪ Thu, May 7, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Babji Yandrathi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=BpLRckllKZpsZmrSsc9DLQGnk0FXSi8Xka0HYhtvuRPq0Vty7lF5EDLeJJhcPfRI&type=H
+Exception: Expected condition failed: waiting for visibility of element located by By.xpath: .//input[@formcontrolname='userName'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36573}, goog:processID: 2527, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36573/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 153f0f5d3193df044ca88c52274d4097
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 06-May-2026 12:45:13 PM
+Updated at (IST): 06-May-2026 12:52:11 PM
