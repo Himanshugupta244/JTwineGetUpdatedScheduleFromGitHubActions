@@ -3,7 +3,7 @@ Today's date: May 6
 §TODAY§
 ✪ Wed, May 6, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== ADARSH PANDITA ===LINK=== https://app.jobtwine.com/meeting/copilot?id=E4kUYOs8yAizoOikIg3jVtAx91qwZz0EzKFZJyb3wORV7xvpbcMQHoyhVZ%2FM3haS&type=H ===FEEDBACK=== NA
 ✪ Wed, May 6, 2026, 6:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Coordinator CIBCAP002 (17756) ===CANDIDATE=== Ravi Rapolu ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=17756
-✪ Wed, May 6, 2026, 5:00 PM IST ==> Pending Feedback Review ===PROFILE=== QE Manager CIBCRA002 (17935) ===CANDIDATE=== Vinnakota Pothuraju ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=17935
+✪ Wed, May 6, 2026, 5:00 PM IST ==> Not Recommended ===PROFILE=== QE Manager CIBCRA002 (17935) ===CANDIDATE=== Vinnakota Pothuraju ===LINK=== NA ===FEEDBACK=== NA
 ✪ Wed, May 6, 2026, 3:00 PM IST ==> Candidate No Show ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Vijay Pagidimarry ===LINK=== NA ===FEEDBACK=== NA
 ✪ Wed, May 6, 2026, 11:00 AM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Coordinator CIBCAP002 (17756) ===CANDIDATE=== Prudhvi Gonti ===LINK=== NA ===FEEDBACK=== NA
 ✪ Wed, May 6, 2026, 9:00 AM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer(CIBCNME001) (18854) ===CANDIDATE=== Nithish Thada ===LINK=== NA ===FEEDBACK=== NA
@@ -29,4 +29,4 @@ Today's date: May 6
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 06-May-2026 06:45:40 PM
+Updated at (IST): 06-May-2026 06:55:24 PM
