@@ -26,7 +26,7 @@ Today's date: May 7
 ✪ Thu, May 7, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== SRIJAN SAREEN ===LINK=== https://app.jobtwine.com/meeting/copilot?id=9%2B2ccYiyRB2J%2FBLXZB%2FbZqUz1IL83z5g9SyGEe1fJeD2xlae5VAi%2BD%2Bkv3DphiZA&type=H ===FEEDBACK=== NA
 ✪ Thu, May 7, 2026, 6:30 PM IST ==> Scheduled ===PROFILE=== Senior QE CIBCJK002 (18370) ===CANDIDATE=== Ranadheer Rampelli ===LINK=== https://app.jobtwine.com/meeting/copilot?id=NtblEuDnb1gU9JQa%2FPI8UU00pPzn4EVUDcWdhryU9YkRpPyc4rXsLxiq7rcTBWN6&type=H ===FEEDBACK=== NA
 ✪ Thu, May 7, 2026, 4:00 PM IST ==> Pending Feedback Review ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Aastha Gulati ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=11783
-✪ Thu, May 7, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Babji Yandrathi ===LINK=== NA ===FEEDBACK=== NA
+✪ Thu, May 7, 2026, 2:00 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Babji Yandrathi ===LINK=== NA ===FEEDBACK=== NA
 ✪ Thu, May 7, 2026, 1:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCPP008 Intermediate Quality Engineer (17961) ===CANDIDATE=== HANISHA K ===LINK=== NA ===FEEDBACK=== NA
 ✪ Thu, May 7, 2026, 12:00 PM IST ==> Not Recommended ===PROFILE=== CIBCPP008 Intermediate Quality Engineer (17961) ===CANDIDATE=== Abhishikta Kakarla ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
@@ -48,4 +48,4 @@ Today's date: May 7
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 07-May-2026 04:58:55 PM
+Updated at (IST): 07-May-2026 05:09:02 PM
