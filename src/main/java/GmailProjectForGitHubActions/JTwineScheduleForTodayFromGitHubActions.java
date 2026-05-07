@@ -410,13 +410,13 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 	public static String getTodayDateFormattedForDisplay() {
 		java.time.LocalDate today = java.time.LocalDate.now();
-		java.time.format.DateTimeFormatter formatter = java.time.format.DateTimeFormatter.ofPattern("d MMM '['EEEE']'");
+		java.time.format.DateTimeFormatter formatter = java.time.format.DateTimeFormatter.ofPattern("d MMMM yyyy");
 		return today.format(formatter);
 	}
 
 	public static String getTomorrowDateFormattedForDisplay() {
 		java.time.LocalDate tomorrow = java.time.LocalDate.now().plusDays(1);
-		java.time.format.DateTimeFormatter formatter = java.time.format.DateTimeFormatter.ofPattern("d MMM '['EEEE']'");
+		java.time.format.DateTimeFormatter formatter = java.time.format.DateTimeFormatter.ofPattern("d MMMM yyyy");
 		return tomorrow.format(formatter);
 	}
 
@@ -481,8 +481,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				}
 			}
 
-			String dateUpper     = todayDateDisplay != null ? todayDateDisplay.toUpperCase() : dateDisplay.toUpperCase();
-			String tomorrowUpper = tomorrowDateDisplay != null ? tomorrowDateDisplay.toUpperCase() : (tomorrowDate != null ? tomorrowDate.toUpperCase() : "");
+			String dateFormatted     = todayDateDisplay != null ? todayDateDisplay : dateDisplay;
+			String tomorrowFormatted = tomorrowDateDisplay != null ? tomorrowDateDisplay : (tomorrowDate != null ? tomorrowDate : "");
 			String todayISO = java.time.LocalDate.now(java.time.ZoneId.of("Asia/Kolkata")).toString();
 			String tomorrowISO = java.time.LocalDate.now(java.time.ZoneId.of("Asia/Kolkata")).plusDays(1).toString();
 
@@ -497,17 +497,19 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("body { background:#eef2ff; padding:20px; color:#1e293b; }\n");
 			html.append(".container { max-width:600px; margin:auto; }\n");
 			// Topbar
-			html.append(".topbar { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:20px; flex-wrap:wrap; }\n");
-			html.append(".title { font-size:32px; font-weight:800; letter-spacing:1px; }\n");
-			html.append(".login-btn { background:#4f46e5; color:white; padding:10px 16px; border:none; border-radius:10px; font-size:13px; font-weight:600; cursor:pointer; box-shadow:0 4px 10px rgba(79,70,229,0.2); }\n");
+			html.append(".topbar { display:flex; justify-content:center; align-items:center; gap:12px; margin-bottom:20px; flex-wrap:wrap; }\n");
+			html.append(".title { font-size:32px; font-weight:800; letter-spacing:1px; cursor:default; }\n");
 			// Day strip
-			html.append(".day-strip { background:linear-gradient(135deg,#4f46e5,#6366f1); color:white; padding:12px 16px; border-radius:12px; font-size:16px; font-weight:700; margin-bottom:14px; box-shadow:0 4px 12px rgba(79,70,229,0.15); }\n");
+			html.append(".day-strip { display:inline-flex; align-items:center; gap:6px; background:white; color:#3730a3; padding:10px 18px; border-radius:20px; font-size:15px; font-weight:700; margin-bottom:14px; border:2px solid #c7d2fe; box-shadow:0 2px 8px rgba(79,70,229,0.08); }\n");
 			// Section
-			html.append(".section { margin-bottom:16px; }\n");
-			html.append(".section-title { margin-bottom:8px; font-size:16px; font-weight:700; padding-left:4px; }\n");
+			html.append(".section { margin-bottom:16px; border:3px solid #6366f1; border-radius:14px; padding:12px; overflow:hidden; }\n");
+			html.append(".section-title { margin-bottom:10px; font-size:16px; font-weight:700; padding:10px 14px; display:flex; justify-content:space-between; align-items:center; background:linear-gradient(135deg,#4f46e5,#6366f1); color:white; border-radius:10px; }\n");
+			html.append(".section-vprop .section-title { background:linear-gradient(135deg,#059669,#10b981); }\n");
+			html.append(".section-vprop { border-color:#10b981; }\n");
+			html.append(".count-badge { font-size:12px; font-weight:800; color:#fff; background:#16a34a; padding:4px 12px; border-radius:8px; }\n");
 			// Cards
 			html.append(".schedule-grid { display:grid; gap:8px; }\n");
-			html.append(".card { background:white; border-radius:14px; padding:10px 16px; display:grid; grid-template-columns:130px 32px 66px 1fr 120px; align-items:center; column-gap:10px; box-shadow:0 2px 8px rgba(15,23,42,0.06); }\n");
+			html.append(".card { background:white; border-radius:14px; padding:10px 14px; display:grid; grid-template-columns:120px 28px 60px 1fr 105px; align-items:center; column-gap:8px; box-shadow:0 2px 8px rgba(15,23,42,0.06); }\n");
 			html.append(".card:hover { transform:translateY(-1px); }\n");
 			html.append(".card-left { display:contents; }\n");
 			html.append(".time { font-size:14px; font-weight:800; white-space:nowrap; grid-column:1; }\n");
@@ -534,9 +536,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".collapsible-body { display:none; }\n");
 			html.append(".collapsible-body.open { display:block; }\n");
 			// Tomorrow toggle
-			html.append(".day-strip.clickable { cursor:pointer; display:flex; justify-content:space-between; align-items:center; user-select:none; }\n");
-			html.append(".toggle-btn { display:inline-flex; align-items:center; gap:5px; padding:4px 14px; font-size:11px; font-weight:900; letter-spacing:1px; color:#fff; background:rgba(255,255,255,0.2); border:none; border-radius:20px; white-space:nowrap; }\n");
-			html.append(".toggle-btn .arrow { font-size:13px; line-height:1; }\n");
+			html.append(".day-strip.clickable { cursor:pointer; display:inline-flex; justify-content:center; align-items:center; gap:10px; user-select:none; }\n");
+			html.append(".toggle-btn { display:inline-flex; align-items:center; gap:4px; padding:3px 10px; font-size:10px; font-weight:900; letter-spacing:1px; color:#4f46e5; background:#e0e7ff; border:none; border-radius:12px; white-space:nowrap; }\n");
+			html.append(".toggle-btn .arrow { font-size:11px; line-height:1; }\n");
 			// Session bar
 			html.append(".session-bar { display:flex; gap:8px; margin-bottom:18px; align-items:stretch; }\n");
 			html.append(".session-bar .bm-drag { flex:0 0 auto; display:flex; align-items:center; padding:8px 14px; font-size:11px; font-weight:900; color:#fff; background:linear-gradient(135deg,#7c3aed,#6d28d9); border-radius:10px; text-decoration:none; cursor:grab; letter-spacing:0.5px; white-space:nowrap; box-shadow:0 2px 8px rgba(124,58,237,0.3); transition:transform 0.15s; }\n");
@@ -560,10 +562,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  body { padding:8px; }\n");
 			html.append("  .title { font-size:20px; }\n");
 			html.append("  .topbar { flex-direction:column; align-items:stretch; gap:8px; }\n");
-			html.append("  .login-btn { width:100%; text-align:center; padding:8px 12px; font-size:12px; }\n");
-			html.append("  .day-strip { padding:10px 12px; font-size:14px; border-radius:10px; margin-bottom:10px; }\n");
-			html.append("  .section { margin-bottom:12px; }\n");
-			html.append("  .section-title { font-size:14px; margin-bottom:6px; }\n");
+			html.append("  .day-strip { padding:8px 14px; font-size:13px; border-radius:16px; margin-bottom:10px; }\n");
+			html.append("  .section { margin-bottom:12px; border-width:2px; padding:8px; border-radius:10px; }\n");
+			html.append("  .section-title { font-size:14px; margin-bottom:6px; padding:8px 10px; border-radius:8px; }\n");
+			html.append("  .count-badge { font-size:10px; padding:2px 8px; }\n");
 			html.append("  .schedule-grid { gap:6px; }\n");
 			html.append("  .card { display:flex; align-items:center; padding:8px 10px; border-radius:10px; gap:6px; }\n");
 			html.append("  .card-left { display:flex; align-items:center; gap:6px; }\n");
@@ -580,14 +582,13 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("<div class=\"container\">\n");
 			// Topbar
 			html.append("<div class=\"topbar\">\n");
-			html.append("<div class=\"title\">&#128197; Schedule</div>\n");
+			String bookmarklet = "javascript:void((function(){navigator.clipboard.readText().then(function(d){if(!d){alert('Clipboard empty!');return;}try{var obj=JSON.parse(atob(d));obj.cookies.forEach(function(c){document.cookie=c.n+'='+c.v+';domain='+c.d+';path='+c.p+(c.s?';secure':'');});var ls=obj.ls;for(var k in ls){localStorage.setItem(k,ls[k]);}var ss=obj.ss;for(var k in ss){sessionStorage.setItem(k,ss[k]);}location.reload();}catch(e){alert('Error: '+e.message);}}).catch(function(e){alert('Clipboard access denied: '+e.message);});})())";
+			html.append("<div class=\"title\" onclick=\"" + bookmarklet.replace("javascript:", "").replace("\"", "&quot;") + "\">&#128197; Schedule</div>\n");
 
 			// --- Session Bar (Bookmarklet + Copy for both accounts) ---
-			String bookmarklet = "javascript:void((function(){navigator.clipboard.readText().then(function(d){if(!d){alert('Clipboard empty!');return;}try{var obj=JSON.parse(atob(d));obj.cookies.forEach(function(c){document.cookie=c.n+'='+c.v+';domain='+c.d+';path='+c.p+(c.s?';secure':'');});var ls=obj.ls;for(var k in ls){localStorage.setItem(k,ls[k]);}var ss=obj.ss;for(var k in ss){sessionStorage.setItem(k,ss[k]);}location.reload();}catch(e){alert('Error: '+e.message);}}).catch(function(e){alert('Clipboard access denied: '+e.message);});})())";
 			boolean hasHim = sessionBase64Him != null && !sessionBase64Him.isEmpty();
 			boolean hasSud = sessionBase64Sud != null && !sessionBase64Sud.isEmpty();
 			if (hasHim || hasSud) {
-				html.append("<a class=\"login-btn\" href=\"").append(bookmarklet.replace("&", "&amp;").replace("\"", "&quot;")).append("\">&#9757; JTwine Login</a>\n");
 				if (hasHim) {
 					html.append("<textarea id=\"sessionBlobHim\" style=\"display:none\">").append(sessionBase64Him).append("</textarea>\n");
 				}
@@ -598,10 +599,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("</div>\n"); // end topbar
 
 			// --- TODAY block ---
-			html.append("<div class=\"day-strip\">&#128074; Today &mdash; ").append(dateUpper).append("</div>\n");
+			html.append("<div class=\"day-strip\">&#128197; Today &mdash; ").append(dateFormatted).append("</div>\n");
 			// Himanshu section
 			html.append("<div class=\"section\" data-date=\"").append(todayISO).append("\">\n");
-			html.append("<div class=\"section-title\">&#128100; Himanshu &mdash; JTwine</div>\n");
+			html.append("<div class=\"section-title\">&#128100; Himanshu &mdash; JTwine <span class=\"count-badge\">Count: ").append(himToday.size()).append("</span></div>\n");
 			html.append("<div class=\"schedule-grid\">\n");
 			if (himToday.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews today</div>\n");
@@ -613,7 +614,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 			// Sudhanshu section
 			html.append("<div class=\"section\" data-date=\"").append(todayISO).append("\">\n");
-			html.append("<div class=\"section-title\">&#128101; Sudhanshu &mdash; JTwine</div>\n");
+			html.append("<div class=\"section-title\">&#128101; Sudhanshu &mdash; JTwine <span class=\"count-badge\">Count: ").append(sudToday.size()).append("</span></div>\n");
 			html.append("<div class=\"schedule-grid\">\n");
 			if (sudToday.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews today</div>\n");
@@ -625,8 +626,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 			// --- VProp block ---
 			if (!vpropLines.isEmpty()) {
-				html.append("<div class=\"section\" data-date=\"").append(todayISO).append("\">\n");
-				html.append("<div class=\"section-title\">&#11088; Himanshu &mdash; VProp</div>\n");
+				html.append("<div class=\"section section-vprop\" data-date=\"").append(todayISO).append("\">\n");
+				html.append("<div class=\"section-title\">&#11088; Himanshu &mdash; VProp <span class=\"count-badge\">Count: ").append(vpropLines.size()).append("</span></div>\n");
 				html.append("<div class=\"schedule-grid\">\n");
 				for (String l : vpropLines) {
 					if (l.startsWith("No discussions")) {
@@ -640,14 +641,14 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 			// --- TOMORROW block — collapsible ---
 			html.append("<div class=\"day-strip clickable\" onclick=\"toggleSection('tomorrow-body')\">\n");
-			html.append("  <span>&#127769; Tomorrow &mdash; ").append(tomorrowUpper).append("</span>\n");
+			html.append("  <span>&#128197; Tomorrow &mdash; ").append(tomorrowFormatted).append("</span>\n");
 			html.append("  <span class=\"toggle-btn\" id=\"tomorrow-body-icon\"><span class=\"arrow\">&#9660;</span> EXPAND</span>\n");
 			html.append("</div>\n");
 			html.append("<div id=\"tomorrow-body\" class=\"collapsible-body\">\n");
 
 			// Tomorrow Him
 			html.append("<div class=\"section\" data-date=\"").append(tomorrowISO).append("\">\n");
-			html.append("<div class=\"section-title\">&#128100; Himanshu &mdash; JTwine</div>\n");
+			html.append("<div class=\"section-title\">&#128100; Himanshu &mdash; JTwine <span class=\"count-badge\">Count: ").append(himTomorrow.size()).append("</span></div>\n");
 			html.append("<div class=\"schedule-grid\">\n");
 			if (himTomorrow.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews tomorrow</div>\n");
@@ -658,7 +659,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 			// Tomorrow Sud
 			html.append("<div class=\"section\" data-date=\"").append(tomorrowISO).append("\">\n");
-			html.append("<div class=\"section-title\">&#128101; Sudhanshu &mdash; JTwine</div>\n");
+			html.append("<div class=\"section-title\">&#128101; Sudhanshu &mdash; JTwine <span class=\"count-badge\">Count: ").append(sudTomorrow.size()).append("</span></div>\n");
 			html.append("<div class=\"schedule-grid\">\n");
 			if (sudTomorrow.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews tomorrow</div>\n");
