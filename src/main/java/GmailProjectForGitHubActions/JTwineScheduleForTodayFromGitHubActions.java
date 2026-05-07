@@ -36,7 +36,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 	public static String sessionBase64Sud = "";
 
 	public static void main(String[] args) {
-
 		username = System.getenv("JTWINE_USERNAME_HIM");
 		password = System.getenv("JTWINE_PASSWORD_HIM");
 		usernameVprop = System.getenv("VPROP_USERNAME_HIM");
@@ -574,6 +573,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".session-bar .bm-drag:hover { transform:scale(1.04); }\n");
 			html.append(".session-bar .bm-drag:active { cursor:grabbing; }\n");
 			html.append(".session-bar .session-hint { display:none; }\n");
+			// Per-row dropdown styles
+			html.append(".col-dd { flex: 0 0 110px; width: 110px; max-width: 110px; padding: 4px 4px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; }\n");
+			html.append(".col-dd select { width: 100%; padding: 5px 2px; font-size: 11px; font-weight: 700; border: 2px solid #0ea5e9; border-radius: 4px; background: #f0f9ff; color: #0c4a6e; cursor: pointer; }\n");
+			html.append("@media (max-width: 480px) { .col-dd { flex: 0 0 90px; width: 90px; max-width: 90px; } .col-dd select { font-size: 10px; padding: 4px 1px; } }\n");
 			html.append("</style>\n</head>\n<body>\n");
 			html.append("<div class=\"container\">\n");
 			html.append("<div class=\"header\"><h1>&#128197; SCHEDULE</h1></div>\n");
@@ -721,6 +724,22 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  document.getElementById('candOverlay').classList.remove('active');\n");
 			html.append("}\n");
 			html.append("document.getElementById('candOverlay').addEventListener('click',function(e){if(e.target===this)closeCandidatePopup();});\n");
+			// Per-row Dropdown API JS
+			html.append("var DD_API='https://cloud.codifixsolutions.com/dropdown-api.php';\n");
+			html.append("function loadAllDropdowns(){\n");
+			html.append("  fetch(DD_API).then(function(r){return r.json();}).then(function(d){\n");
+			html.append("    var vals=d.values||{};\n");
+			html.append("    var selects=document.querySelectorAll('.row-dd');\n");
+			html.append("    selects.forEach(function(sel){var k=sel.getAttribute('data-key');if(vals[k])sel.value=vals[k];});\n");
+			html.append("  }).catch(function(e){console.log('DD load error:'+e.message);});\n");
+			html.append("}\n");
+			html.append("function saveRowDD(sel){\n");
+			html.append("  var key=sel.getAttribute('data-key');var val=sel.value;\n");
+			html.append("  fetch(DD_API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({key:key,value:val})})\n");
+			html.append("    .then(function(r){return r.json();})\n");
+			html.append("    .catch(function(e){console.log('DD save error:'+e.message);});\n");
+			html.append("}\n");
+			html.append("loadAllDropdowns();\n");
 			html.append("</script>\n");
 			// Candidate popup overlay (single shared instance)
 			html.append("<div class='cand-overlay' id='candOverlay'><div class='cand-popup'><button class='cand-close' onclick='closeCandidatePopup()'>&#10005;</button><div class='cand-popup-title'>&#128100; Candidate</div><div class='cand-popup-name' id='candPopupName'></div><div class='cand-popup-profile-label' id='candPopupProfileLabel'>&#128188; Profile</div><div class='cand-popup-profile' id='candPopupProfile'></div></div></div>\n");
@@ -810,9 +829,19 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			} else {
 				statHtml = escapeHtml(stat);
 			}
-			return "<div class=\"row\"><div class=\"col-time\">" + sdetPrefix + escapeHtml(time) + "</div>" + candHtml + linkHtml + "<div class=\"col-status " + bc + "\">" + statHtml + "</div></div>\n";
+			// Build per-row dropdown column
+			String ddKey = escapeHtml((account + "_" + time).replaceAll("[^a-zA-Z0-9:_]", "_"));
+			String ddHtml = "<div class=\"col-dd\"><select class=\"row-dd\" data-key=\"" + ddKey + "\" onchange=\"saveRowDD(this)\">" +
+				"<option value=\"\">Select</option>" +
+				"<option value=\"Him\">Him</option>" +
+				"<option value=\"Sud\">Sud</option>" +
+				"<option value=\"Both\">Both</option>" +
+				"<option value=\"Skip\">Skip</option>" +
+				"</select></div>";
+
+			return "<div class=\"row\"><div class=\"col-time\">" + sdetPrefix + escapeHtml(time) + "</div>" + candHtml + linkHtml + ddHtml + "<div class=\"col-status " + bc + "\">" + statHtml + "</div></div>\n";
 		}
-		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-cand\"><span style='font-size:8px;color:#e5e7eb'>&#8212;</span></div><div class=\"col-link\"><span class=\"join-na\">&mdash;</span></div><div class=\"col-status\"></div></div>\n";
+		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-cand\"><span style='font-size:8px;color:#e5e7eb'>&#8212;</span></div><div class=\"col-link\"><span class=\"join-na\">&mdash;</span></div><div class=\"col-dd\"></div><div class=\"col-status\"></div></div>\n";
 	}
 
 	private static String extractTaggedValue(String line, String marker) {
