@@ -516,18 +516,18 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".join-btn { background:#16a34a; color:white; border:none; padding:6px 0; border-radius:8px; font-weight:700; cursor:pointer; font-size:12px; white-space:nowrap; width:62px; text-align:center; grid-column:3; }\n");
 			html.append(".join-btn:hover { background:#15803d; }\n");
 			html.append(".status { font-size:13px; font-weight:700; color:#16a34a; white-space:nowrap; grid-column:4; }\n");
-			html.append(".status.pd { color:#d97706; }\n");
+			html.append(".status.pd { color:#dc2626; }\n");
 			html.append(".status.nr { color:#64748b; }\n");
 			html.append(".status.ns { color:#64748b; }\n");
 			html.append(".status.gf { color:#16a34a; }\n");
 			html.append(".status.sc { color:#16a34a; }\n");
 			html.append(".sdet-badge { display:inline-flex; align-items:center; background:#0369a1; color:#fff; font-size:9px; font-weight:900; padding:2px 6px; border-radius:5px; margin-right:4px; vertical-align:middle; letter-spacing:0.5px; white-space:nowrap; }\n");
-			html.append(".pd-feedback-btn { background:none; border:none; padding:0; margin:0; color:inherit; font:inherit; font-weight:inherit; cursor:pointer; text-decoration:underline dotted; }\n");
+			html.append(".pd-feedback-btn { background:none; border:none; padding:0; margin:0; color:#dc2626; font:inherit; font-weight:inherit; cursor:pointer; text-decoration:underline dotted; }\n");
 			html.append(".pd-feedback-btn:hover { text-decoration:underline; }\n");
 			html.append(".card-dd { text-align:right; grid-column:5; }\n");
 			html.append(".card-dd select { padding:6px 8px; border-radius:8px; border:1px solid #d4d4d8; background:white; width:100%; font-size:12px; font-weight:600; cursor:pointer; }\n");
 			// Past interview
-			html.append(".past-interview { opacity:0.45; filter:grayscale(1); }\n");
+			html.append(".past-interview { opacity:0.45; }\n");
 			// Empty
 			html.append(".empty { padding:16px; font-size:14px; font-weight:700; color:#9ca3af; font-style:italic; background:white; border-radius:18px; box-shadow:0 4px 12px rgba(15,23,42,0.06); }\n");
 			// Collapsible
