@@ -574,9 +574,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".session-bar .bm-drag:active { cursor:grabbing; }\n");
 			html.append(".session-bar .session-hint { display:none; }\n");
 			// Per-row dropdown styles
-			html.append(".col-dd { flex: 0 0 110px; width: 110px; max-width: 110px; padding: 4px 4px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; }\n");
+			html.append(".col-dd { flex: 0 0 95px; width: 95px; max-width: 95px; padding: 4px 4px; display: flex; align-items: center; justify-content: center; border-left: 1px solid #e5e7eb; }\n");
 			html.append(".col-dd select { width: 100%; padding: 5px 2px; font-size: 11px; font-weight: 700; border: 2px solid #0ea5e9; border-radius: 4px; background: #f0f9ff; color: #0c4a6e; cursor: pointer; }\n");
-			html.append("@media (max-width: 480px) { .col-dd { flex: 0 0 90px; width: 90px; max-width: 90px; } .col-dd select { font-size: 10px; padding: 4px 1px; } }\n");
+			html.append("@media (max-width: 480px) { .col-dd { flex: 0 0 80px; width: 80px; max-width: 80px; } .col-dd select { font-size: 10px; padding: 4px 1px; } }\n");
 			html.append("</style>\n</head>\n<body>\n");
 			html.append("<div class=\"container\">\n");
 			html.append("<div class=\"header\"><h1>&#128197; SCHEDULE</h1></div>\n");
@@ -726,21 +726,58 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("document.addEventListener('DOMContentLoaded',function(){var co=document.getElementById('candOverlay');if(co)co.addEventListener('click',function(e){if(e.target===this)closeCandidatePopup();});});\n");
 			// Per-row Dropdown API JS
 			html.append("var DD_API='https://cloud.codifixsolutions.com/dropdown-api.php';\n");
+			html.append("var _ddPrev={};\n");
 			html.append("function loadAllDropdowns(){\n");
 			html.append("  fetch(DD_API).then(function(r){return r.json();}).then(function(d){\n");
 			html.append("    var vals=d.values||{};\n");
 			html.append("    var selects=document.querySelectorAll('.row-dd');\n");
-			html.append("    selects.forEach(function(sel){var k=sel.getAttribute('data-key');if(vals[k])sel.value=vals[k];});\n");
+			html.append("    selects.forEach(function(sel){var k=sel.getAttribute('data-key');if(vals[k]){sel.value=vals[k];}_ddPrev[k]=sel.value;});\n");
 			html.append("  }).catch(function(e){console.log('DD load error:'+e.message);});\n");
 			html.append("}\n");
-			html.append("function saveRowDD(sel){\n");
+			html.append("function onDDChange(sel){\n");
 			html.append("  var key=sel.getAttribute('data-key');var val=sel.value;\n");
+			html.append("  if(!val){saveRowDD(key,'');_ddPrev[key]='';return;}\n");
+			html.append("  document.getElementById('ddConfirmVal').textContent=val;\n");
+			html.append("  document.getElementById('ddConfirmOverlay').classList.add('active');\n");
+			html.append("  document.getElementById('ddConfirmOverlay').setAttribute('data-key',key);\n");
+			html.append("  document.getElementById('ddConfirmOverlay').setAttribute('data-val',val);\n");
+			html.append("}\n");
+			html.append("function ddConfirmYes(){\n");
+			html.append("  var ov=document.getElementById('ddConfirmOverlay');\n");
+			html.append("  var key=ov.getAttribute('data-key');var val=ov.getAttribute('data-val');\n");
+			html.append("  ov.classList.remove('active');\n");
+			html.append("  saveRowDD(key,val);_ddPrev[key]=val;\n");
+			html.append("}\n");
+			html.append("function ddConfirmNo(){\n");
+			html.append("  var ov=document.getElementById('ddConfirmOverlay');\n");
+			html.append("  var key=ov.getAttribute('data-key');\n");
+			html.append("  ov.classList.remove('active');\n");
+			html.append("  var sel=document.querySelector('.row-dd[data-key=\"'+key+'\"]');\n");
+			html.append("  if(sel)sel.value=_ddPrev[key]||'';\n");
+			html.append("}\n");
+			html.append("function saveRowDD(key,val){\n");
 			html.append("  fetch(DD_API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({key:key,value:val})})\n");
 			html.append("    .then(function(r){return r.json();})\n");
 			html.append("    .catch(function(e){console.log('DD save error:'+e.message);});\n");
 			html.append("}\n");
 			html.append("loadAllDropdowns();\n");
 			html.append("</script>\n");
+			// Confirmation popup overlay
+			html.append("<div class='cand-overlay' id='ddConfirmOverlay'><div class='cand-popup' style='text-align:center;padding:24px 20px 18px'>");
+			html.append("<div style='font-size:16px;font-weight:900;color:#111827;margin-bottom:6px'>Are you sure?</div>");
+			html.append("<div style='font-size:14px;font-weight:700;color:#6b7280;margin-bottom:18px'>Selection: <span id='ddConfirmVal' style='color:#0c4a6e;font-weight:900'></span></div>");
+			html.append("<div style='display:flex;gap:12px;justify-content:center'>");
+			html.append("<button onclick='ddConfirmYes()' style='padding:8px 24px;font-size:13px;font-weight:900;color:#fff;background:#2563eb;border:none;border-radius:6px;cursor:pointer;letter-spacing:0.5px'>Yes</button>");
+			html.append("<button onclick='ddConfirmNo()' style='padding:8px 24px;font-size:13px;font-weight:900;color:#374151;background:#e5e7eb;border:none;border-radius:6px;cursor:pointer;letter-spacing:0.5px'>No</button>");
+			html.append("</div></div></div>\n");
+			// Final submit popup overlay
+			html.append("<div class='cand-overlay' id='ddFinalOverlay'><div class='cand-popup' style='text-align:center;padding:24px 20px 18px'>");
+			html.append("<div style='font-size:16px;font-weight:900;color:#111827;margin-bottom:6px'>Confirm Submission</div>");
+			html.append("<div style='font-size:14px;font-weight:700;color:#6b7280;margin-bottom:18px'>Submitting: <span id='ddFinalVal' style='color:#0c4a6e;font-weight:900'></span></div>");
+			html.append("<div style='display:flex;gap:12px;justify-content:center'>");
+			html.append("<button onclick='ddFinalSubmit()' style='padding:8px 24px;font-size:13px;font-weight:900;color:#fff;background:#059669;border:none;border-radius:6px;cursor:pointer;letter-spacing:0.5px'>Submit</button>");
+			html.append("<button onclick='ddFinalCancel()' style='padding:8px 24px;font-size:13px;font-weight:900;color:#374151;background:#e5e7eb;border:none;border-radius:6px;cursor:pointer;letter-spacing:0.5px'>Cancel</button>");
+			html.append("</div></div></div>\n");
 			// Candidate popup overlay (single shared instance)
 			html.append("<div class='cand-overlay' id='candOverlay'><div class='cand-popup'><button class='cand-close' onclick='closeCandidatePopup()'>&#10005;</button><div class='cand-popup-title'>&#128100; Candidate</div><div class='cand-popup-name' id='candPopupName'></div><div class='cand-popup-profile-label' id='candPopupProfileLabel'>&#128188; Profile</div><div class='cand-popup-profile' id='candPopupProfile'></div></div></div>\n");
 			html.append("</div>\n</body>\n</html>");
@@ -831,17 +868,21 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			}
 			// Build per-row dropdown column
 			String ddKey = escapeHtml((account + "_" + time).replaceAll("[^a-zA-Z0-9:_]", "_"));
-			String ddHtml = "<div class=\"col-dd\"><select class=\"row-dd\" data-key=\"" + ddKey + "\" onchange=\"saveRowDD(this)\">" +
+			String ddHtml = "<div class=\"col-dd\"><select class=\"row-dd\" data-key=\"" + ddKey + "\" onchange=\"onDDChange(this)\">" +
 				"<option value=\"\">Select</option>" +
-				"<option value=\"Him\">Him</option>" +
-				"<option value=\"Sud\">Sud</option>" +
-				"<option value=\"Both\">Both</option>" +
-				"<option value=\"Skip\">Skip</option>" +
+				"<option value=\"Dhruv\">Dhruv</option>" +
+				"<option value=\"Himanshu\">Himanshu</option>" +
+				"<option value=\"Pallvit\">Pallvit</option>" +
+				"<option value=\"Sudhanshu\">Sudhanshu</option>" +
+				"<option value=\"Amit\">Amit</option>" +
+				"<option value=\"Vansh\">Vansh</option>" +
+				"<option value=\"Abhinav\">Abhinav</option>" +
+				"<option value=\"Dhananjay\">Dhananjay</option>" +
 				"</select></div>";
 
-			return "<div class=\"row\"><div class=\"col-time\">" + sdetPrefix + escapeHtml(time) + "</div>" + candHtml + linkHtml + ddHtml + "<div class=\"col-status " + bc + "\">" + statHtml + "</div></div>\n";
+			return "<div class=\"row\"><div class=\"col-time\">" + sdetPrefix + escapeHtml(time) + "</div>" + candHtml + linkHtml + "<div class=\"col-status " + bc + "\">" + statHtml + "</div>" + ddHtml + "</div>\n";
 		}
-		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-cand\"><span style='font-size:8px;color:#e5e7eb'>&#8212;</span></div><div class=\"col-link\"><span class=\"join-na\">&mdash;</span></div><div class=\"col-dd\"></div><div class=\"col-status\"></div></div>\n";
+		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-cand\"><span style='font-size:8px;color:#e5e7eb'>&#8212;</span></div><div class=\"col-link\"><span class=\"join-na\">&mdash;</span></div><div class=\"col-status\"></div><div class=\"col-dd\"></div></div>\n";
 	}
 
 	private static String extractTaggedValue(String line, String marker) {
