@@ -193,6 +193,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			}
 		}
 
+		// Deduplicate — same card can appear on multiple pages
+		todayLines = new ArrayList<>(new java.util.LinkedHashSet<>(todayLines));
+		tomorrowLines = new ArrayList<>(new java.util.LinkedHashSet<>(tomorrowLines));
+
 		// Today's data first, then tomorrow's data
 		List<String> lines = new ArrayList<>();
 		if (!todayLines.isEmpty()) {
@@ -488,140 +492,142 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
 			html.append("<title>Interview Schedule</title>\n");
 			html.append("<style>\n");
-			html.append("@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;800;900&display=swap');\n");
-			html.append("* { box-sizing: border-box; font-family: 'Barlow', 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }\n");
-			html.append("body { background: #f0f0f0; padding: 12px; color: #1a1a1a; }\n");
-			html.append(".container { max-width: 480px; margin: auto; width: 100%; }\n");
-			// Header
-			html.append(".header { border: 3px solid #1a1a1a; background: #fff; text-align: center; padding: 16px 10px; margin-bottom: 18px; }\n");
-			html.append(".header h1 { font-size: 26px; font-weight: 900; letter-spacing: 5px; text-transform: uppercase; }\n");
+			html.append("@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap');\n");
+			html.append("* { margin:0; padding:0; box-sizing:border-box; font-family:Inter, Arial, sans-serif; }\n");
+			html.append("body { background:#eef2ff; padding:20px; color:#1e293b; }\n");
+			html.append(".container { max-width:600px; margin:auto; }\n");
+			// Topbar
+			html.append(".topbar { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:20px; flex-wrap:wrap; }\n");
+			html.append(".title { font-size:32px; font-weight:800; letter-spacing:1px; }\n");
+			html.append(".login-btn { background:#4f46e5; color:white; padding:10px 16px; border:none; border-radius:10px; font-size:13px; font-weight:600; cursor:pointer; box-shadow:0 4px 10px rgba(79,70,229,0.2); }\n");
+			// Day strip
+			html.append(".day-strip { background:linear-gradient(135deg,#4f46e5,#6366f1); color:white; padding:12px 16px; border-radius:12px; font-size:16px; font-weight:700; margin-bottom:14px; box-shadow:0 4px 12px rgba(79,70,229,0.15); }\n");
 			// Section
-			html.append(".section { margin-bottom: 18px; }\n");
-			html.append(".tab-label { display: inline-block; padding: 8px 20px; font-size: 15px; font-weight: 900; border-bottom: none; margin-left: 0; letter-spacing: 2px; text-transform: uppercase; }\n");
-			html.append(".tab-today { background: #1d4ed8; color: #fff; }\n");
-			html.append(".tab-tomorrow { background: #b45309; color: #fff; }\n");
-			html.append(".tab-vprop { background: #6d28d9; color: #fff; }\n");
-			html.append(".section-box-today { border: 3px solid #1d4ed8; background: #fff; }\n");
-			html.append(".section-box-tomorrow { border: 3px solid #b45309; background: #fff; }\n");
-			html.append(".section-box-vprop { border: 3px solid #6d28d9; background: #fff; }\n");
-			// Account label row
-			html.append(".acc-label { padding: 10px 14px; font-size: 14px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; border-bottom: 2px solid #e5e7eb; display: flex; align-items: center; gap: 7px; }\n");
-			html.append(".acc-him { background: #ede9fe; color: #4c1d95; }\n");
-			html.append(".acc-sud { background: #d1fae5; color: #064e3b; }\n");
-			html.append(".acc-vp  { background: #fef3c7; color: #78350f; }\n");
-			// Rows - two columns with vertical divider
-			html.append(".row { display: flex; align-items: stretch; border-bottom: 1px solid #e5e7eb; }\n");
-			html.append(".row:last-child { border-bottom: none; }\n");
-			html.append(".col-time { flex: 0 0 155px; width: 155px; max-width: 155px; overflow: hidden; white-space: nowrap; padding: 12px 10px; font-weight: 800; font-size: 15px; color: #111827; border-right: 1px solid #e5e7eb; letter-spacing: 0.5px; line-height: 1.4; }\n");
-			html.append(".col-status { flex: 1; min-width: 0; padding: 12px 10px; font-weight: 900; font-size: 14px; text-align: right; letter-spacing: 0.3px; line-height: 1.4; white-space: normal; word-break: break-word; }\n");
-			html.append(".sdet-badge { display: inline-flex; align-items: center; background: #0369a1; color: #fff; font-size: 9px; font-weight: 900; padding: 2px 6px; border-radius: 4px; margin-right: 4px; vertical-align: middle; letter-spacing: 0.5px; white-space: nowrap; }\n");
-			// Status colors (dark)
-			html.append(".sc { color: #14532d; }\n");
-			html.append(".gf { color: #374151; }\n");
-			html.append(".nr { color: #374151; }\n");
-			html.append(".ns { color: #374151; }\n");
-			html.append(".pd { color: #991b1b; }\n");
-			html.append(".pd-feedback-btn { background: none; border: none; padding: 0; margin: 0; color: inherit; font: inherit; font-weight: inherit; cursor: pointer; text-decoration: underline dotted; letter-spacing: inherit; text-align: left; }\n");
-			html.append(".pd-feedback-btn:hover { text-decoration: underline; }\n");
-			html.append(".empty { padding: 12px 14px; font-size: 14px; font-weight: 700; color: #9ca3af; font-style: italic; letter-spacing: 0.5px; }\n");
-			// Past interview styling
-			html.append(".past-interview { opacity: 0.5; background: #f3f4f6; }\n");
-			html.append(".past-interview .col-time, .past-interview .col-status { text-decoration: line-through; }\n");
-			// Meeting JOIN link button
-			html.append(".col-link { flex: 0 0 46px; width: 46px; max-width: 46px; padding: 4px 2px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; text-align: center; }\n");
-			html.append(".join-btn { display: inline-flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 900; color: #fff; background: #059669; padding: 4px 6px; border-radius: 4px; text-decoration: none; letter-spacing: 0.3px; white-space: nowrap; transition: background 0.2s, transform 0.15s; border: none; cursor: pointer; width: 42px; box-sizing: border-box; }\n");
-			html.append(".join-btn:hover { background: #047857; transform: scale(1.06); }\n");
-			html.append(".join-na { font-size: 9px; font-weight: 700; color: #d1d5db; }\n");
-			// Candidate name popup
-			html.append(".col-cand { flex: 0 0 38px; width: 38px; max-width: 38px; padding: 4px 0; display: flex; align-items: center; justify-content: center; border-right: 1px solid #e5e7eb; }\n");
-			html.append(".cand-btn { width: 24px; height: 24px; border-radius: 50%; border: 2px solid #6366f1; background: #fff; color: #6366f1; font-size: 14px; font-weight: 900; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0; transition: background 0.15s, color 0.15s; }\n");
-			html.append(".cand-btn:hover { background: #6366f1; color: #fff; }\n");
-			html.append(".cand-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 9999; align-items: center; justify-content: center; }\n");
-			html.append(".cand-overlay.active { display: flex; }\n");
-			html.append(".cand-popup { background: #fff; border-radius: 10px; padding: 20px 22px 16px; max-width: 320px; width: 90vw; box-shadow: 0 8px 32px rgba(0,0,0,0.22); position: relative; }\n");
-			html.append(".cand-popup-title { font-size: 10px; font-weight: 900; color: #6366f1; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px; }\n");
-			html.append(".cand-popup-name { font-size: 18px; font-weight: 900; color: #111827; letter-spacing: 0.3px; word-break: break-word; margin-bottom: 12px; }\n");
-			html.append(".cand-popup-profile-label { font-size: 10px; font-weight: 900; color: #059669; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px; }\n");
-			html.append(".cand-popup-profile { font-size: 14px; font-weight: 700; color: #374151; word-break: break-word; }\n");
-			html.append(".cand-close { position: absolute; top: 10px; right: 12px; background: none; border: none; font-size: 20px; color: #6b7280; cursor: pointer; font-weight: 700; line-height: 1; padding: 0 4px; }\n");
-			html.append(".cand-close:hover { color: #111; }\n");
-			html.append(".footer { border: 3px solid #1a1a1a; padding: 12px; font-size: 13px; font-weight: 800; letter-spacing: 1px; background: #fff; text-align: center; margin-top: 4px; }\n");
-			html.append("@media (max-width: 480px) {\n");
-			html.append("  body { padding: 10px; }\n");
-			html.append("  .header h1 { font-size: 22px; letter-spacing: 4px; }\n");
-			html.append("  .tab-label { font-size: 14px; padding: 8px 16px; letter-spacing: 1.5px; }\n");
-			html.append("  .acc-label { font-size: 13px; padding: 9px 12px; }\n");
-			html.append("  .col-time { font-size: 13px; padding: 10px 8px; flex: 0 0 140px; width: 140px; max-width: 140px; }\n");
-			html.append("  .col-status { font-size: 13px; padding: 10px 8px; }\n");
-			html.append("  .col-link { flex: 0 0 42px; width: 42px; max-width: 42px; }\n");
-			html.append("  .join-btn { font-size: 8px; padding: 3px 4px; width: 38px; }\n");
-			html.append("  .col-cand { flex: 0 0 32px; width: 32px; max-width: 32px; }\n");
-			html.append("  .sdet-badge { font-size: 8px; padding: 2px 4px; }\n");
-			html.append("  .col-status.pd { font-size: 11px; white-space: normal; word-break: break-word; }\n");
-			html.append("  .col-status.ns { font-size: 11px; white-space: normal; word-break: break-word; }\n");
-			html.append("  .footer { font-size: 12px; }\n");
-			html.append("}\n");
-			html.append(".collapsible-body { display: none; }\n");
-			html.append(".collapsible-body.open { display: block; }\n");
-			html.append(".tab-label.clickable { cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }\n");
-			html.append(".toggle-btn { display: inline-flex; align-items: center; gap: 5px; padding: 4px 14px; font-size: 11px; font-weight: 900; letter-spacing: 1px; color: #b45309; background: #fff; border: 2px solid #fff; border-radius: 20px; white-space: nowrap; transition: background 0.2s, transform 0.15s; box-shadow: 0 1px 3px rgba(0,0,0,0.15); }\n");
-			html.append(".toggle-btn:hover { background: #fef3c7; transform: scale(1.05); }\n");
-			html.append(".toggle-btn .arrow { font-size: 13px; line-height: 1; }\n");
-			// Session bar styles
+			html.append(".section { margin-bottom:16px; }\n");
+			html.append(".section-title { margin-bottom:8px; font-size:16px; font-weight:700; padding-left:4px; }\n");
+			// Cards
+			html.append(".schedule-grid { display:grid; gap:8px; }\n");
+			html.append(".card { background:white; border-radius:14px; padding:10px 16px; display:grid; grid-template-columns:130px 32px 66px 1fr 120px; align-items:center; column-gap:10px; box-shadow:0 2px 8px rgba(15,23,42,0.06); }\n");
+			html.append(".card:hover { transform:translateY(-1px); }\n");
+			html.append(".card-left { display:contents; }\n");
+			html.append(".time { font-size:14px; font-weight:800; white-space:nowrap; grid-column:1; }\n");
+			html.append(".plus-btn { width:28px; height:28px; border-radius:50%; border:none; background:#eef2ff; color:#4f46e5; font-size:15px; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; grid-column:2; justify-self:center; }\n");
+			html.append(".plus-btn:hover { background:#4f46e5; color:#fff; }\n");
+			html.append(".join-btn { background:#16a34a; color:white; border:none; padding:6px 0; border-radius:8px; font-weight:700; cursor:pointer; font-size:12px; white-space:nowrap; width:62px; text-align:center; grid-column:3; }\n");
+			html.append(".join-btn:hover { background:#15803d; }\n");
+			html.append(".status { font-size:13px; font-weight:700; color:#16a34a; white-space:nowrap; grid-column:4; }\n");
+			html.append(".status.pd { color:#d97706; }\n");
+			html.append(".status.nr { color:#64748b; }\n");
+			html.append(".status.ns { color:#64748b; }\n");
+			html.append(".status.gf { color:#16a34a; }\n");
+			html.append(".status.sc { color:#16a34a; }\n");
+			html.append(".sdet-badge { display:inline-flex; align-items:center; background:#0369a1; color:#fff; font-size:9px; font-weight:900; padding:2px 6px; border-radius:5px; margin-right:4px; vertical-align:middle; letter-spacing:0.5px; white-space:nowrap; }\n");
+			html.append(".pd-feedback-btn { background:none; border:none; padding:0; margin:0; color:inherit; font:inherit; font-weight:inherit; cursor:pointer; text-decoration:underline dotted; }\n");
+			html.append(".pd-feedback-btn:hover { text-decoration:underline; }\n");
+			html.append(".card-dd { text-align:right; grid-column:5; }\n");
+			html.append(".card-dd select { padding:6px 8px; border-radius:8px; border:1px solid #d4d4d8; background:white; width:100%; font-size:12px; font-weight:600; cursor:pointer; }\n");
+			// Past interview
+			html.append(".past-interview { opacity:0.45; filter:grayscale(1); }\n");
+			// Empty
+			html.append(".empty { padding:16px; font-size:14px; font-weight:700; color:#9ca3af; font-style:italic; background:white; border-radius:18px; box-shadow:0 4px 12px rgba(15,23,42,0.06); }\n");
+			// Collapsible
+			html.append(".collapsible-body { display:none; }\n");
+			html.append(".collapsible-body.open { display:block; }\n");
+			// Tomorrow toggle
+			html.append(".day-strip.clickable { cursor:pointer; display:flex; justify-content:space-between; align-items:center; user-select:none; }\n");
+			html.append(".toggle-btn { display:inline-flex; align-items:center; gap:5px; padding:4px 14px; font-size:11px; font-weight:900; letter-spacing:1px; color:#fff; background:rgba(255,255,255,0.2); border:none; border-radius:20px; white-space:nowrap; }\n");
+			html.append(".toggle-btn .arrow { font-size:13px; line-height:1; }\n");
+			// Session bar
 			html.append(".session-bar { display:flex; gap:8px; margin-bottom:18px; align-items:stretch; }\n");
-			html.append(".session-bar .bm-drag { flex:0 0 auto; display:flex; align-items:center; padding:8px 14px; font-size:11px; font-weight:900; color:#fff; background:linear-gradient(135deg,#7c3aed,#6d28d9); border-radius:8px; text-decoration:none; cursor:grab; letter-spacing:0.5px; white-space:nowrap; box-shadow:0 2px 8px rgba(124,58,237,0.3); transition:transform 0.15s; }\n");
+			html.append(".session-bar .bm-drag { flex:0 0 auto; display:flex; align-items:center; padding:8px 14px; font-size:11px; font-weight:900; color:#fff; background:linear-gradient(135deg,#7c3aed,#6d28d9); border-radius:10px; text-decoration:none; cursor:grab; letter-spacing:0.5px; white-space:nowrap; box-shadow:0 2px 8px rgba(124,58,237,0.3); transition:transform 0.15s; }\n");
 			html.append(".session-bar .bm-drag:hover { transform:scale(1.04); }\n");
 			html.append(".session-bar .bm-drag:active { cursor:grabbing; }\n");
 			html.append(".session-bar .session-hint { display:none; }\n");
-			// Per-row dropdown styles
-			html.append(".col-dd { flex: 0 0 95px; width: 95px; max-width: 95px; padding: 4px 4px; display: flex; align-items: center; justify-content: center; border-left: 1px solid #e5e7eb; }\n");
-			html.append(".col-dd select { width: 100%; padding: 5px 2px; font-size: 11px; font-weight: 700; border: 2px solid #0ea5e9; border-radius: 4px; background: #f0f9ff; color: #0c4a6e; cursor: pointer; }\n");
-			html.append("@media (max-width: 480px) { .col-dd { flex: 0 0 80px; width: 80px; max-width: 80px; } .col-dd select { font-size: 10px; padding: 4px 1px; } }\n");
+			// Overlay popups
+			html.append(".cand-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.45); z-index:9999; align-items:center; justify-content:center; }\n");
+			html.append(".cand-overlay.active { display:flex; }\n");
+			html.append(".cand-popup { background:#fff; border-radius:16px; padding:24px 22px 18px; max-width:340px; width:90vw; box-shadow:0 8px 32px rgba(0,0,0,0.22); position:relative; }\n");
+			html.append(".cand-popup-title { font-size:10px; font-weight:900; color:#6366f1; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:6px; }\n");
+			html.append(".cand-popup-name { font-size:18px; font-weight:900; color:#111827; letter-spacing:0.3px; word-break:break-word; margin-bottom:12px; }\n");
+			html.append(".cand-popup-profile-label { font-size:10px; font-weight:900; color:#059669; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:4px; }\n");
+			html.append(".cand-popup-profile { font-size:14px; font-weight:700; color:#374151; word-break:break-word; }\n");
+			html.append(".cand-close { position:absolute; top:10px; right:12px; background:none; border:none; font-size:20px; color:#6b7280; cursor:pointer; font-weight:700; line-height:1; padding:0 4px; }\n");
+			html.append(".cand-close:hover { color:#111; }\n");
+			// Footer
+			html.append(".footer { background:white; border-radius:16px; padding:14px; font-size:13px; font-weight:800; letter-spacing:1px; text-align:center; margin-top:18px; box-shadow:0 4px 12px rgba(15,23,42,0.06); }\n");
+			// Mobile
+			html.append("@media (max-width:768px) {\n");
+			html.append("  body { padding:8px; }\n");
+			html.append("  .title { font-size:20px; }\n");
+			html.append("  .topbar { flex-direction:column; align-items:stretch; gap:8px; }\n");
+			html.append("  .login-btn { width:100%; text-align:center; padding:8px 12px; font-size:12px; }\n");
+			html.append("  .day-strip { padding:10px 12px; font-size:14px; border-radius:10px; margin-bottom:10px; }\n");
+			html.append("  .section { margin-bottom:12px; }\n");
+			html.append("  .section-title { font-size:14px; margin-bottom:6px; }\n");
+			html.append("  .schedule-grid { gap:6px; }\n");
+			html.append("  .card { display:flex; align-items:center; padding:8px 10px; border-radius:10px; gap:6px; }\n");
+			html.append("  .card-left { display:flex; align-items:center; gap:6px; }\n");
+			html.append("  .time { font-size:12px; }\n");
+			html.append("  .plus-btn { width:22px; height:22px; font-size:12px; }\n");
+			html.append("  .join-btn { padding:5px 0; font-size:10px; border-radius:6px; width:48px; }\n");
+			html.append("  .status { font-size:10px; }\n");
+			html.append("  .card-dd { margin-left:auto; }\n");
+			html.append("  .card-dd select { width:90px; padding:5px 6px; font-size:10px; border-radius:6px; }\n");
+			html.append("  .sdet-badge { font-size:7px; padding:1px 4px; margin-right:2px; }\n");
+			html.append("  .footer { padding:8px; font-size:10px; border-radius:10px; }\n");
+			html.append("}\n");
 			html.append("</style>\n</head>\n<body>\n");
 			html.append("<div class=\"container\">\n");
-			html.append("<div class=\"header\"><h1>&#128197; SCHEDULE</h1></div>\n");
+			// Topbar
+			html.append("<div class=\"topbar\">\n");
+			html.append("<div class=\"title\">&#128197; Schedule</div>\n");
 
 			// --- Session Bar (Bookmarklet + Copy for both accounts) ---
 			String bookmarklet = "javascript:void((function(){navigator.clipboard.readText().then(function(d){if(!d){alert('Clipboard empty!');return;}try{var obj=JSON.parse(atob(d));obj.cookies.forEach(function(c){document.cookie=c.n+'='+c.v+';domain='+c.d+';path='+c.p+(c.s?';secure':'');});var ls=obj.ls;for(var k in ls){localStorage.setItem(k,ls[k]);}var ss=obj.ss;for(var k in ss){sessionStorage.setItem(k,ss[k]);}location.reload();}catch(e){alert('Error: '+e.message);}}).catch(function(e){alert('Clipboard access denied: '+e.message);});})())";
 			boolean hasHim = sessionBase64Him != null && !sessionBase64Him.isEmpty();
 			boolean hasSud = sessionBase64Sud != null && !sessionBase64Sud.isEmpty();
 			if (hasHim || hasSud) {
-				html.append("<div class=\"session-bar\">\n");
-				html.append("<a class=\"bm-drag\" href=\"").append(bookmarklet.replace("&", "&amp;").replace("\"", "&quot;")).append("\">&#128275; JTwine Login<br><span style='font-size:8px;opacity:0.7'>DRAG TO BOOKMARKS</span></a>\n");
+				html.append("<a class=\"login-btn\" href=\"").append(bookmarklet.replace("&", "&amp;").replace("\"", "&quot;")).append("\">&#9757; JTwine Login</a>\n");
 				if (hasHim) {
 					html.append("<textarea id=\"sessionBlobHim\" style=\"display:none\">").append(sessionBase64Him).append("</textarea>\n");
 				}
 				if (hasSud) {
 					html.append("<textarea id=\"sessionBlobSud\" style=\"display:none\">").append(sessionBase64Sud).append("</textarea>\n");
 				}
-				html.append("</div>\n");
 			}
+			html.append("</div>\n"); // end topbar
 
-			// --- TODAY block (Blue) ---
-			html.append("<div class=\"section\">\n");
-			html.append("<div class=\"tab-label tab-today\">&#9728;&#65039; TODAY &mdash; ").append(dateUpper).append("</div>\n");
-			html.append("<div class=\"section-box-today\" data-date=\"").append(todayISO).append("\">\n");
-			html.append("<div class=\"acc-label acc-him\">&#128100; HIMANSHU &mdash; JTwine</div>\n");
+			// --- TODAY block ---
+			html.append("<div class=\"day-strip\">&#128074; Today &mdash; ").append(dateUpper).append("</div>\n");
+			// Himanshu section
+			html.append("<div class=\"section\" data-date=\"").append(todayISO).append("\">\n");
+			html.append("<div class=\"section-title\">&#128100; Himanshu &mdash; JTwine</div>\n");
+			html.append("<div class=\"schedule-grid\">\n");
 			if (himToday.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews today</div>\n");
 			} else {
 				for (String l : himToday) html.append(buildInterviewRow(l, "him"));
 			}
-			html.append("<div class=\"acc-label acc-sud\">&#128101; SUDHANSHU &mdash; JTwine</div>\n");
+			html.append("</div>\n"); // end schedule-grid
+			html.append("</div>\n"); // end him section
+
+			// Sudhanshu section
+			html.append("<div class=\"section\" data-date=\"").append(todayISO).append("\">\n");
+			html.append("<div class=\"section-title\">&#128101; Sudhanshu &mdash; JTwine</div>\n");
+			html.append("<div class=\"schedule-grid\">\n");
 			if (sudToday.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews today</div>\n");
 			} else {
 				for (String l : sudToday) html.append(buildInterviewRow(l, "sud"));
 			}
-			html.append("</div>\n"); // end section-box-today
-			html.append("</div>\n"); // end TODAY section
+			html.append("</div>\n"); // end schedule-grid
+			html.append("</div>\n"); // end sud section
 
-			// --- VProp block (between Today and Tomorrow) ---
+			// --- VProp block ---
 			if (!vpropLines.isEmpty()) {
-				html.append("<div class=\"section\">\n");
-				html.append("<div class=\"tab-label tab-vprop\">&#11088; VPROP</div>\n");
-				html.append("<div class=\"section-box-vprop\" data-date=\"").append(todayISO).append("\">\n");
-				html.append("<div class=\"acc-label acc-vp\">&#128100; Himanshu &mdash; VProp</div>\n");
+				html.append("<div class=\"section\" data-date=\"").append(todayISO).append("\">\n");
+				html.append("<div class=\"section-title\">&#11088; Himanshu &mdash; VProp</div>\n");
+				html.append("<div class=\"schedule-grid\">\n");
 				for (String l : vpropLines) {
 					if (l.startsWith("No discussions")) {
 						html.append("<div class=\"empty\">" + escapeHtml(l) + "</div>\n");
@@ -632,29 +638,35 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				html.append("</div>\n</div>\n");
 			}
 
-			// --- TOMORROW block (Amber) — collapsible ---
-			html.append("<div class=\"section\">\n");
-			html.append("<div class=\"tab-label tab-tomorrow clickable\" onclick=\"toggleSection('tomorrow-body')\">\n");
-			html.append("  <span>&#127769; TOMORROW &mdash; ").append(tomorrowUpper).append("</span>\n");
-			html.append("  <span class=\"toggle-btn\" id=\"tomorrow-body-icon\"><span class=\"arrow\">&#9660;</span> TAP TO EXPAND</span>\n");
+			// --- TOMORROW block — collapsible ---
+			html.append("<div class=\"day-strip clickable\" onclick=\"toggleSection('tomorrow-body')\">\n");
+			html.append("  <span>&#127769; Tomorrow &mdash; ").append(tomorrowUpper).append("</span>\n");
+			html.append("  <span class=\"toggle-btn\" id=\"tomorrow-body-icon\"><span class=\"arrow\">&#9660;</span> EXPAND</span>\n");
 			html.append("</div>\n");
 			html.append("<div id=\"tomorrow-body\" class=\"collapsible-body\">\n");
-			html.append("<div class=\"section-box-tomorrow\" data-date=\"").append(tomorrowISO).append("\">\n");
-			html.append("<div class=\"acc-label acc-him\">&#128100; HIMANSHU &mdash; JTwine</div>\n");
+
+			// Tomorrow Him
+			html.append("<div class=\"section\" data-date=\"").append(tomorrowISO).append("\">\n");
+			html.append("<div class=\"section-title\">&#128100; Himanshu &mdash; JTwine</div>\n");
+			html.append("<div class=\"schedule-grid\">\n");
 			if (himTomorrow.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews tomorrow</div>\n");
 			} else {
 				for (String l : himTomorrow) html.append(buildInterviewRow(l, "him"));
 			}
-			html.append("<div class=\"acc-label acc-sud\">&#128101; SUDHANSHU &mdash; JTwine</div>\n");
+			html.append("</div>\n</div>\n");
+
+			// Tomorrow Sud
+			html.append("<div class=\"section\" data-date=\"").append(tomorrowISO).append("\">\n");
+			html.append("<div class=\"section-title\">&#128101; Sudhanshu &mdash; JTwine</div>\n");
+			html.append("<div class=\"schedule-grid\">\n");
 			if (sudTomorrow.isEmpty()) {
 				html.append("<div class=\"empty\">No interviews tomorrow</div>\n");
 			} else {
 				for (String l : sudTomorrow) html.append(buildInterviewRow(l, "sud"));
 			}
-			html.append("</div>\n"); // end section-box-tomorrow
+			html.append("</div>\n</div>\n");
 			html.append("</div>\n"); // end collapsible-body
-			html.append("</div>\n"); // end TOMORROW section
 
 			// --- Footer ---
 			if (!updatedAt.isEmpty()) {
@@ -667,10 +679,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  var icon = document.getElementById(id + '-icon');\n");
 			html.append("  if (body.classList.contains('open')) {\n");
 			html.append("    body.classList.remove('open');\n");
-			html.append("    icon.innerHTML = \"<span class='arrow'>&#9660;</span> TAP TO EXPAND\";\n");
+			html.append("    icon.innerHTML = \"<span class='arrow'>&#9660;</span> EXPAND\";\n");
 			html.append("  } else {\n");
 			html.append("    body.classList.add('open');\n");
-			html.append("    icon.innerHTML = \"<span class='arrow'>&#9650;</span> TAP TO COLLAPSE\";\n");
+			html.append("    icon.innerHTML = \"<span class='arrow'>&#9650;</span> COLLAPSE\";\n");
 			html.append("  }\n");
 			html.append("}\n");
 
@@ -684,11 +696,11 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  var sections = document.querySelectorAll('[data-date]');\n");
 			html.append("  sections.forEach(function(sec) {\n");
 			html.append("    var secDate = sec.getAttribute('data-date');\n");
-			html.append("    var rows = sec.querySelectorAll('.row');\n");
-			html.append("    rows.forEach(function(row) {\n");
-			html.append("      var timeEl = row.querySelector('.col-time');\n");
+			html.append("    var cards = sec.querySelectorAll('.card');\n");
+			html.append("    cards.forEach(function(card) {\n");
+			html.append("      var timeEl = card.querySelector('.time');\n");
 			html.append("      if (!timeEl) return;\n");
-			html.append("      if (secDate < istDate) { row.classList.add('past-interview'); return; }\n");
+			html.append("      if (secDate < istDate) { card.classList.add('past-interview'); return; }\n");
 			html.append("      if (secDate > istDate) return;\n");
 			html.append("      var text = timeEl.textContent.trim();\n");
 			html.append("      var match = text.match(/(\\d{1,2}):(\\d{2})\\s*(AM|PM)/i);\n");
@@ -698,7 +710,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("      if (ampm === 'AM' && h === 12) h = 0;\n");
 			html.append("      else if (ampm === 'PM' && h !== 12) h += 12;\n");
 			html.append("      var interviewMin = h * 60 + m;\n");
-			html.append("      if (istMinutes > interviewMin) { row.classList.add('past-interview'); }\n");
+			html.append("      if (istMinutes > interviewMin) { card.classList.add('past-interview'); }\n");
 			html.append("    });\n");
 			html.append("  });\n");
 			html.append("}\n");
@@ -744,14 +756,30 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("}\n");
 			html.append("function ddConfirmYes(){\n");
 			html.append("  var ov=document.getElementById('ddConfirmOverlay');\n");
-			html.append("  var key=ov.getAttribute('data-key');var val=ov.getAttribute('data-val');\n");
 			html.append("  ov.classList.remove('active');\n");
-			html.append("  saveRowDD(key,val);_ddPrev[key]=val;\n");
+			html.append("  var key=ov.getAttribute('data-key');var val=ov.getAttribute('data-val');\n");
+			html.append("  document.getElementById('ddFinalVal').textContent=val;\n");
+			html.append("  var fo=document.getElementById('ddFinalOverlay');\n");
+			html.append("  fo.setAttribute('data-key',key);fo.setAttribute('data-val',val);\n");
+			html.append("  fo.classList.add('active');\n");
 			html.append("}\n");
 			html.append("function ddConfirmNo(){\n");
 			html.append("  var ov=document.getElementById('ddConfirmOverlay');\n");
 			html.append("  var key=ov.getAttribute('data-key');\n");
 			html.append("  ov.classList.remove('active');\n");
+			html.append("  var sel=document.querySelector('.row-dd[data-key=\"'+key+'\"]');\n");
+			html.append("  if(sel)sel.value=_ddPrev[key]||'';\n");
+			html.append("}\n");
+			html.append("function ddFinalSubmit(){\n");
+			html.append("  var fo=document.getElementById('ddFinalOverlay');\n");
+			html.append("  var key=fo.getAttribute('data-key');var val=fo.getAttribute('data-val');\n");
+			html.append("  fo.classList.remove('active');\n");
+			html.append("  saveRowDD(key,val);_ddPrev[key]=val;\n");
+			html.append("}\n");
+			html.append("function ddFinalCancel(){\n");
+			html.append("  var fo=document.getElementById('ddFinalOverlay');\n");
+			html.append("  var key=fo.getAttribute('data-key');\n");
+			html.append("  fo.classList.remove('active');\n");
 			html.append("  var sel=document.querySelector('.row-dd[data-key=\"'+key+'\"]');\n");
 			html.append("  if(sel)sel.value=_ddPrev[key]||'';\n");
 			html.append("}\n");
@@ -836,27 +864,23 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				sdetPrefix = "<span class=\"sdet-badge\">SDET</span>";
 			}
 
-			// Build link column — JOIN auto-copies correct session
-			String linkHtml;
+			// Build JOIN button
+			String joinHtml;
 			if (!meetingLink.isEmpty() && !"NA".equals(meetingLink)) {
 				String safeUrl = escapeHtml(meetingLink).replace("'", "\\'");
-				linkHtml = "<div class=\"col-link\"><button onclick=\"copyAndJoin('" + account + "','" + safeUrl + "')\" class=\"join-btn\">JOIN &#9654;</button></div>";
-			} else if ("NA".equals(meetingLink)) {
-				linkHtml = "<div class=\"col-link\"><span class=\"join-na\">NA</span></div>";
+				joinHtml = "<button onclick=\"copyAndJoin('" + account + "','" + safeUrl + "')\" class=\"join-btn\">JOIN</button>";
 			} else {
-				linkHtml = "<div class=\"col-link\"><span class=\"join-na\">&mdash;</span></div>";
+				joinHtml = "";
 			}
 
-			// Build candidate name column
+			// Build candidate + button
 			String candHtml;
 			if (!candidateName.isEmpty() && !"NA".equals(candidateName)) {
 				String safeName = escapeHtml(candidateName).replace("'", "\\'");
 				String safeProfile = escapeHtml(profileName).replace("'", "\\'");
-				candHtml = "<div class=\"col-cand\"><button class=\"cand-btn\" onclick=\"showCandidatePopup('" + safeName + "','" + safeProfile + "')\">+</button></div>";
-			} else if ("NA".equals(candidateName)) {
-				candHtml = "<div class=\"col-cand\"><span class=\"join-na\">NA</span></div>";
+				candHtml = "<button class=\"plus-btn\" onclick=\"showCandidatePopup('" + safeName + "','" + safeProfile + "')\">+</button>";
 			} else {
-				candHtml = "<div class=\"col-cand\"><span style='font-size:8px;color:#e5e7eb'>&#8212;</span></div>";
+				candHtml = "";
 			}
 
 			String statHtml;
@@ -866,9 +890,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			} else {
 				statHtml = escapeHtml(stat);
 			}
-			// Build per-row dropdown column
+			// Build per-row dropdown
 			String ddKey = escapeHtml((account + "_" + time).replaceAll("[^a-zA-Z0-9:_]", "_"));
-			String ddHtml = "<div class=\"col-dd\"><select class=\"row-dd\" data-key=\"" + ddKey + "\" onchange=\"onDDChange(this)\">" +
+			String ddHtml = "<div class=\"card-dd\"><select class=\"row-dd\" data-key=\"" + ddKey + "\" onchange=\"onDDChange(this)\">" +
 				"<option value=\"\">Select</option>" +
 				"<option value=\"Dhruv\">Dhruv</option>" +
 				"<option value=\"Himanshu\">Himanshu</option>" +
@@ -880,9 +904,9 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				"<option value=\"Dhananjay\">Dhananjay</option>" +
 				"</select></div>";
 
-			return "<div class=\"row\"><div class=\"col-time\">" + sdetPrefix + escapeHtml(time) + "</div>" + candHtml + linkHtml + "<div class=\"col-status " + bc + "\">" + statHtml + "</div>" + ddHtml + "</div>\n";
+			return "<div class=\"card\"><div class=\"card-left\"><div class=\"time\">" + sdetPrefix + escapeHtml(time) + "</div>" + candHtml + joinHtml + "</div><div class=\"status " + bc + "\">" + statHtml + "</div>" + ddHtml + "</div>\n";
 		}
-		return "<div class=\"row\"><div class=\"col-time\">" + escapeHtml(content) + "</div><div class=\"col-cand\"><span style='font-size:8px;color:#e5e7eb'>&#8212;</span></div><div class=\"col-link\"><span class=\"join-na\">&mdash;</span></div><div class=\"col-status\"></div><div class=\"col-dd\"></div></div>\n";
+		return "<div class=\"card\"><div class=\"card-left\"><div class=\"time\">" + escapeHtml(content) + "</div></div><div class=\"status\"></div><div class=\"card-dd\"></div></div>\n";
 	}
 
 	private static String extractTaggedValue(String line, String marker) {
