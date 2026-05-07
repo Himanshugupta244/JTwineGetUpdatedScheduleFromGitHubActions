@@ -723,7 +723,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("function closeCandidatePopup(){\n");
 			html.append("  document.getElementById('candOverlay').classList.remove('active');\n");
 			html.append("}\n");
-			html.append("document.getElementById('candOverlay').addEventListener('click',function(e){if(e.target===this)closeCandidatePopup();});\n");
+			html.append("document.addEventListener('DOMContentLoaded',function(){var co=document.getElementById('candOverlay');if(co)co.addEventListener('click',function(e){if(e.target===this)closeCandidatePopup();});});\n");
 			// Per-row Dropdown API JS
 			html.append("var DD_API='https://cloud.codifixsolutions.com/dropdown-api.php';\n");
 			html.append("function loadAllDropdowns(){\n");
