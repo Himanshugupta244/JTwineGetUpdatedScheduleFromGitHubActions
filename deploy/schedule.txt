@@ -7,7 +7,7 @@ Today's date: May 7
 ✪ Thu, May 7, 2026, 3:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer(CIBCNME001) (18854) ===CANDIDATE=== Ravi Kumar P ===LINK=== NA ===FEEDBACK=== NA
 ✪ Thu, May 7, 2026, 2:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCPP008 Intermediate Quality Engineer (17961) ===CANDIDATE=== JOEL VENTRAPATI ===LINK=== NA ===FEEDBACK=== NA
 ✪ Thu, May 7, 2026, 1:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Manager(CIBCPP006) (18339) ===CANDIDATE=== Venkata Siva Prasad Kosuri ===LINK=== NA ===FEEDBACK=== NA
-✪ Thu, May 7, 2026, 11:00 AM IST ==> Pending Feedback Review ===PROFILE=== Quality Analyst (11829) ===CANDIDATE=== K. Poojita ===LINK=== NA ===FEEDBACK=== NA
+✪ Thu, May 7, 2026, 11:00 AM IST ==> Not Recommended ===PROFILE=== Quality Analyst (11829) ===CANDIDATE=== K. Poojita ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
 ✪ Fri, May 8, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Swapna Rajulapati ===LINK=== https://app.jobtwine.com/meeting/copilot?id=BBJ%2BNiYa5RqPzVoY41mvgvTiPbdF6iCXa8KdSkZVpDT%2BI9j%2F2d8vFBqoUKNqrIz1&type=H
 ✪ Fri, May 8, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== DEVENDER SINGH ===LINK=== https://app.jobtwine.com/meeting/copilot?id=N55tnOTu9VyMhB9gLhUS2xcWrSpIS7ODcvunFzoeGwBuzz2A3PRgJsvqnF6UOmzo&type=H
@@ -35,4 +35,4 @@ Today's date: May 7
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 07-May-2026 05:58:56 PM
+Updated at (IST): 07-May-2026 06:08:48 PM
