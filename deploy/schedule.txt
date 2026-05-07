@@ -23,8 +23,13 @@ Today's date: May 7
 ✪ Thu, May 7, 2026, 6:30 PM IST ==> Scheduled ===PROFILE=== Senior QE CIBCJK002 (18370) ===CANDIDATE=== Ranadheer Rampelli ===LINK=== https://app.jobtwine.com/meeting/copilot?id=NtblEuDnb1gU9JQa%2FPI8UU00pPzn4EVUDcWdhryU9YkRpPyc4rXsLxiq7rcTBWN6&type=H ===FEEDBACK=== NA
 ✪ Thu, May 7, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Babji Yandrathi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=BpLRckllKZpsZmrSsc9DLQGnk0FXSi8Xka0HYhtvuRPq0Vty7lF5EDLeJJhcPfRI&type=H ===FEEDBACK=== NA
 ✪ Thu, May 7, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP008 Intermediate Quality Engineer (17961) ===CANDIDATE=== HANISHA K ===LINK=== https://app.jobtwine.com/meeting/copilot?id=JuKe9Pi8w8%2F0NYSr34JzCzwFGGfwL1vaA0wlv17UKS%2BMqP2w5taFFJE6WaV0RLt1&type=H ===FEEDBACK=== NA
-✪ Thu, May 7, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP008 Intermediate Quality Engineer (17961) ===CANDIDATE=== Abhishikta Kakarla ===LINK=== https://app.jobtwine.com/meeting/copilot?id=WCTE%2FPk%2BjEX00mifbTyCjUn6%2FUeE4Sy3NLqH09uAfhLX%2BXsdJ1p4CL5bl%2BK0NmK6&type=H ===FEEDBACK=== NA
+✪ Thu, May 7, 2026, 12:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCPP008 Intermediate Quality Engineer (17961) ===CANDIDATE=== Abhishikta Kakarla ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=17961
 §TOMORROW§
+✪ Fri, May 8, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Hrudai Singareddy ===LINK=== https://app.jobtwine.com/meeting/copilot?id=eIDCcxsTJjWtrk9rIYhp4wsMuu6KYNFPO8wed%2Fo5dgAxp%2BKM3GTm8IYmLRXWh70b&type=H
+✪ Fri, May 8, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Jyothi Rangala ===LINK=== https://app.jobtwine.com/meeting/copilot?id=8BmDO%2BD%2FVjLoS0MTVkXsH%2FsRjQreVCqbCEQkb8p5rdeTubYeTQmHq7FvAPuJVQgo&type=H
+✪ Fri, May 8, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Saisree Budda ===LINK=== https://app.jobtwine.com/meeting/copilot?id=bprGtXUcbvmUfrW%2B77dSdjrA%2FJyBreBmGgF%2FE7b251ywOec3%2FERYua9SHIS8DFfC&type=H
+✪ Fri, May 8, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCKB008 (17527) ===CANDIDATE=== Kranthi Konduru ===LINK=== https://app.jobtwine.com/meeting/copilot?id=bveEirddroWGyuwyej2W9McVXU%2FSh5z7bZly4sXV1Hnt94wl1PJ61wsZNIoZDm6w&type=H
+✪ Fri, May 8, 2026, 9:30 AM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Vijay Roda ===LINK=== https://app.jobtwine.com/meeting/copilot?id=xlg5gnMSMsd%2B8%2BmkWWPwjwCAxhXR%2FBVtnPx8XdsP5xgVBN1G9InzMGjYwsuXce3V&type=H
 ✪ Fri, May 8, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Hrudai Singareddy ===LINK=== https://app.jobtwine.com/meeting/copilot?id=eIDCcxsTJjWtrk9rIYhp4wsMuu6KYNFPO8wed%2Fo5dgAxp%2BKM3GTm8IYmLRXWh70b&type=H
 ✪ Fri, May 8, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Jyothi Rangala ===LINK=== https://app.jobtwine.com/meeting/copilot?id=8BmDO%2BD%2FVjLoS0MTVkXsH%2FsRjQreVCqbCEQkb8p5rdeTubYeTQmHq7FvAPuJVQgo&type=H
 ✪ Fri, May 8, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Saisree Budda ===LINK=== https://app.jobtwine.com/meeting/copilot?id=bprGtXUcbvmUfrW%2B77dSdjrA%2FJyBreBmGgF%2FE7b251ywOec3%2FERYua9SHIS8DFfC&type=H
@@ -34,4 +39,4 @@ Today's date: May 7
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 07-May-2026 12:32:19 PM
+Updated at (IST): 07-May-2026 12:38:57 PM
