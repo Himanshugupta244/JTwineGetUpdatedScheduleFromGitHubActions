@@ -17,7 +17,7 @@ Today's date: May 8
 §TODAY§
 ✪ Fri, May 8, 2026, 9:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Hrudai Singareddy ===LINK=== https://app.jobtwine.com/meeting/copilot?id=eIDCcxsTJjWtrk9rIYhp4wsMuu6KYNFPO8wed%2Fo5dgAxp%2BKM3GTm8IYmLRXWh70b&type=H ===FEEDBACK=== NA
 ✪ Fri, May 8, 2026, 8:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Jyothi Rangala ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=17962
-✪ Fri, May 8, 2026, 7:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer(CIBCAP004) (18454) ===CANDIDATE=== Himaja Rentala ===LINK=== NA ===FEEDBACK=== NA
+✪ Fri, May 8, 2026, 7:00 PM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer(CIBCAP004) (18454) ===CANDIDATE=== Himaja Rentala ===LINK=== NA ===FEEDBACK=== NA
 ✪ Fri, May 8, 2026, 3:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Saisree Budda ===LINK=== NA ===FEEDBACK=== NA
 ✪ Fri, May 8, 2026, 2:00 PM IST ==> Candidate No Show ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Renu Saharan ===LINK=== NA ===FEEDBACK=== NA
 ✪ Fri, May 8, 2026, 9:30 AM IST ==> Not Recommended ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Vijay Roda ===LINK=== NA ===FEEDBACK=== NA
@@ -30,4 +30,4 @@ Today's date: May 8
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 08-May-2026 09:26:53 PM
+Updated at (IST): 08-May-2026 09:37:23 PM
