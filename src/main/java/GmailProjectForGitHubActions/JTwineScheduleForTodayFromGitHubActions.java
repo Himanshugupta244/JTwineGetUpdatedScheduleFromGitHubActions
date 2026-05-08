@@ -197,6 +197,10 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		todayLines = new ArrayList<>(new java.util.LinkedHashSet<>(todayLines));
 		tomorrowLines = new ArrayList<>(new java.util.LinkedHashSet<>(tomorrowLines));
 
+		// Remove cancelled interviews
+		todayLines.removeIf(line -> line.toLowerCase().contains("cancelled"));
+		tomorrowLines.removeIf(line -> line.toLowerCase().contains("cancelled"));
+
 		// Today's data first, then tomorrow's data
 		List<String> lines = new ArrayList<>();
 		if (!todayLines.isEmpty()) {
@@ -501,6 +505,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".title { font-size:32px; font-weight:800; letter-spacing:1px; cursor:default; }\n");
 			// Day strip
 			html.append(".day-strip { display:inline-flex; align-items:center; gap:6px; background:white; color:#3730a3; padding:10px 18px; border-radius:20px; font-size:15px; font-weight:700; margin-bottom:14px; border:2px solid #c7d2fe; box-shadow:0 2px 8px rgba(79,70,229,0.08); }\n");
+			html.append(".day-strip-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; }\n");
+			html.append(".day-strip-row .day-strip { margin-bottom:0; }\n");
 			// Section
 			html.append(".section { margin-bottom:16px; border:3px solid #6366f1; border-radius:14px; padding:12px; overflow:hidden; }\n");
 			html.append(".section-title { margin-bottom:10px; font-size:16px; font-weight:700; padding:10px 14px; display:flex; justify-content:space-between; align-items:center; background:linear-gradient(135deg,#4f46e5,#6366f1); color:white; border-radius:10px; }\n");
@@ -510,7 +516,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			// Cards
 			html.append(".schedule-grid { display:grid; gap:8px; }\n");
 			html.append(".card { background:white; border-radius:14px; padding:10px 14px; display:grid; grid-template-columns:120px 28px 60px 1fr 105px; align-items:center; column-gap:8px; box-shadow:0 2px 8px rgba(15,23,42,0.06); }\n");
-			html.append(".card:hover { transform:translateY(-1px); }\n");
+			html.append(".card:hover { transform:translateY(-3px); }\n");
 			html.append(".card-left { display:contents; }\n");
 			html.append(".time { font-size:14px; font-weight:800; white-space:nowrap; grid-column:1; }\n");
 			html.append(".plus-btn { width:28px; height:28px; border-radius:50%; border:none; background:#eef2ff; color:#4f46e5; font-size:15px; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; grid-column:2; justify-self:center; }\n");
@@ -556,6 +562,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".cand-close { position:absolute; top:10px; right:12px; background:none; border:none; font-size:20px; color:#6b7280; cursor:pointer; font-weight:700; line-height:1; padding:0 4px; }\n");
 			html.append(".cand-close:hover { color:#111; }\n");
 			// Footer
+			html.append(".download-btn { display:inline-flex; align-items:center; gap:6px; background:white; color:#3730a3; padding:10px 18px; border:2px solid #c7d2fe; border-radius:20px; font-size:15px; font-weight:700; cursor:pointer; box-shadow:0 2px 8px rgba(79,70,229,0.08); }\n");
+			html.append(".download-btn:active { transform:scale(0.97); }\n");
 			html.append(".footer { background:white; border-radius:16px; padding:14px; font-size:13px; font-weight:800; letter-spacing:1px; text-align:center; margin-top:18px; box-shadow:0 4px 12px rgba(15,23,42,0.06); }\n");
 			// Mobile
 			html.append("@media (max-width:768px) {\n");
@@ -599,7 +607,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("</div>\n"); // end topbar
 
 			// --- TODAY block ---
-			html.append("<div class=\"day-strip\">&#128197; Today &mdash; ").append(dateFormatted).append("</div>\n");
+			html.append("<div class=\"day-strip-row\"><div class=\"day-strip\">&#128197; Today &mdash; ").append(dateFormatted).append("</div><button class=\"download-btn\" onclick=\"downloadPNG()\"><span style=\"display:inline-block;transform:translateY(-3px)\">&#128247;</span> Download PNG</button></div>\n");
 			// Himanshu section
 			html.append("<div class=\"section\" data-date=\"").append(todayISO).append("\">\n");
 			html.append("<div class=\"section-title\">&#128100; Himanshu &mdash; JTwine <span class=\"count-badge\">Count: ").append(himToday.size()).append("</span></div>\n");
@@ -627,7 +635,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			// --- VProp block ---
 			if (!vpropLines.isEmpty()) {
 				html.append("<div class=\"section section-vprop\" data-date=\"").append(todayISO).append("\">\n");
-				html.append("<div class=\"section-title\">&#11088; Himanshu &mdash; VProp <span class=\"count-badge\">Count: ").append(vpropLines.size()).append("</span></div>\n");
+				html.append("<div class=\"section-title\">&#11088; Himanshu &mdash; VProp</div>\n");
 				html.append("<div class=\"schedule-grid\">\n");
 				for (String l : vpropLines) {
 					if (l.startsWith("No discussions")) {
@@ -749,8 +757,8 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("}\n");
 			html.append("function onDDChange(sel){\n");
 			html.append("  var key=sel.getAttribute('data-key');var val=sel.value;\n");
-			html.append("  if(!val){saveRowDD(key,'');_ddPrev[key]='';return;}\n");
-			html.append("  document.getElementById('ddConfirmVal').textContent=val;\n");
+			html.append("  var displayVal=val||'Select';\n");
+			html.append("  document.getElementById('ddConfirmVal').textContent=displayVal;\n");
 			html.append("  document.getElementById('ddConfirmOverlay').classList.add('active');\n");
 			html.append("  document.getElementById('ddConfirmOverlay').setAttribute('data-key',key);\n");
 			html.append("  document.getElementById('ddConfirmOverlay').setAttribute('data-val',val);\n");
@@ -790,6 +798,26 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("    .catch(function(e){console.log('DD save error:'+e.message);});\n");
 			html.append("}\n");
 			html.append("loadAllDropdowns();\n");
+			html.append("function downloadPNG(){\n");
+			html.append("  var btn=document.querySelector('.download-btn');\n");
+			html.append("  btn.textContent='Generating...';\n");
+			html.append("  var container=document.querySelector('.container');\n");
+			html.append("  var s=document.createElement('script');\n");
+			html.append("  s.src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';\n");
+			html.append("  s.onload=function(){\n");
+			html.append("    html2canvas(container,{backgroundColor:'#eef2ff',scale:2,useCORS:true}).then(function(canvas){\n");
+			html.append("      var link=document.createElement('a');\n");
+			html.append("      link.download='schedule.png';\n");
+			html.append("      link.href=canvas.toDataURL('image/png');\n");
+			html.append("      link.click();\n");
+			html.append("      btn.innerHTML='<span style=\"display:inline-block;transform:translateY(-3px)\">&#128247;</span> Download PNG';\n");
+			html.append("    }).catch(function(e){\n");
+			html.append("      alert('PNG generation failed: '+e.message);\n");
+			html.append("      btn.innerHTML='<span style=\"display:inline-block;transform:translateY(-3px)\">&#128247;</span> Download PNG';\n");
+			html.append("    });\n");
+			html.append("  };\n");
+			html.append("  document.head.appendChild(s);\n");
+			html.append("}\n");
 			html.append("</script>\n");
 			// Confirmation popup overlay
 			html.append("<div class='cand-overlay' id='ddConfirmOverlay'><div class='cand-popup' style='text-align:center;padding:24px 20px 18px'>");
@@ -892,7 +920,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				statHtml = escapeHtml(stat);
 			}
 			// Build per-row dropdown
-			String ddKey = escapeHtml((account + "_" + time).replaceAll("[^a-zA-Z0-9:_]", "_"));
+			String ddKey = escapeHtml((account + "_" + time + "_" + candidateName).replaceAll("[^a-zA-Z0-9:_]", "_"));
 			String ddHtml = "<div class=\"card-dd\"><select class=\"row-dd\" data-key=\"" + ddKey + "\" onchange=\"onDDChange(this)\">" +
 				"<option value=\"\">Select</option>" +
 				"<option value=\"Dhruv\">Dhruv</option>" +
