@@ -20,7 +20,7 @@ Today's date: May 8
 ✪ Fri, May 8, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Saisree Budda ===LINK=== https://app.jobtwine.com/meeting/copilot?id=bprGtXUcbvmUfrW%2B77dSdjrA%2FJyBreBmGgF%2FE7b251ywOec3%2FERYua9SHIS8DFfC&type=H ===FEEDBACK=== NA
 ✪ Fri, May 8, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Renu Saharan ===LINK=== https://app.jobtwine.com/meeting/copilot?id=KOso%2B5i833QcGFkHpTY3O16156hlwpEyVemQTPIEOBoPIbaiqIepJALft%2FIwkUQw&type=H ===FEEDBACK=== NA
 ✪ Fri, May 8, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCKB008 (17527) ===CANDIDATE=== Kranthi Konduru ===LINK=== https://app.jobtwine.com/meeting/copilot?id=bveEirddroWGyuwyej2W9McVXU%2FSh5z7bZly4sXV1Hnt94wl1PJ61wsZNIoZDm6w&type=H ===FEEDBACK=== NA
-✪ Fri, May 8, 2026, 9:30 AM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Vijay Roda ===LINK=== https://app.jobtwine.com/meeting/copilot?id=xlg5gnMSMsd%2B8%2BmkWWPwjwCAxhXR%2FBVtnPx8XdsP5xgVBN1G9InzMGjYwsuXce3V&type=H ===FEEDBACK=== NA
+✪ Fri, May 8, 2026, 9:30 AM IST ==> Pending Feedback Review ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Vijay Roda ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=17962
 §TOMORROW§
 ✪ Sat, May 9, 2026, 6:30 PM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== BHAVYA SRI BITRA ===LINK=== https://app.jobtwine.com/meeting/copilot?id=klFniSfjY2XFEX4hbX3UBgiEmpGUFXXHdKMOz73OT%2BXt2%2F0HL93W%2BrhLRG7gmrwt&type=H
 ✪ Sat, May 9, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCAP004) (18454) ===CANDIDATE=== Anappindi Nagamani ===LINK=== https://app.jobtwine.com/meeting/copilot?id=LxR33sCeOeIIpa1cCrMnm6qxoIoLv1D4HOownfDdTMkdUAcLQ8%2FzHzjYFBgX8SPu&type=H
@@ -29,4 +29,4 @@ Today's date: May 8
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 08-May-2026 09:37:25 AM
+Updated at (IST): 08-May-2026 09:47:19 AM
