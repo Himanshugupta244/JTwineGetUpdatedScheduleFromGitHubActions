@@ -6,7 +6,7 @@ Today's date: May 8
 ✪ Fri, May 8, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Senior QE CIBCJK002 (18370) ===CANDIDATE=== Ravi Teja Dharmishetty ===LINK=== https://app.jobtwine.com/meeting/copilot?id=4P0oNBVGd6syJ8LeauaFIylcE1KVOGVoFLYyhXGjsEOLdUtu3PuyKkIAghDm6aCb&type=H ===FEEDBACK=== NA
 ✪ Fri, May 8, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Mohd Kamran ===LINK=== https://app.jobtwine.com/meeting/copilot?id=rOUhPRBXvdMTBB%2F%2BawxyNdlWbTXl60wpbv3I7H3CI9RO%2BD%2BhqSNsjxcjjvOOUmOh&type=H ===FEEDBACK=== NA
 ✪ Fri, May 8, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality engineer(CIBCNME002) (18852) ===CANDIDATE=== Chaitra Salian ===LINK=== https://app.jobtwine.com/meeting/copilot?id=KnSPC55t557zaAEq%2FSyzphUU5AorrTz%2FGuDiHNS0Z7j9zNEpAz6jsg4xbH49LL82&type=H ===FEEDBACK=== NA
-✪ Fri, May 8, 2026, 12:00 PM IST ==> Pending Feedback Review ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Shobhit Tripathi ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=11783
+✪ Fri, May 8, 2026, 12:00 PM IST ==> Not Recommended ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Shobhit Tripathi ===LINK=== NA ===FEEDBACK=== NA
 ✪ Fri, May 8, 2026, 11:00 AM IST ==> Is a Good Fit ===PROFILE=== Quality Engineer CIBCKB007 (17524) ===CANDIDATE=== Sivapoornima Nadiminti ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
 ✪ Sat, May 9, 2026, 3:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Sandeep Gajula ===LINK=== https://app.jobtwine.com/meeting/copilot?id=QRP5erAHcaaN88hmj6LcINqnhoPWCxLPNqeYjKLhygoHoU3ququlXkcvwct23Opo&type=H
@@ -31,4 +31,4 @@ Today's date: May 8
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 08-May-2026 02:08:36 PM
+Updated at (IST): 08-May-2026 02:17:29 PM
