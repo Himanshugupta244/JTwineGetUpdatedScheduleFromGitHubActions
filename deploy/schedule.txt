@@ -2,7 +2,7 @@ Today's date: May 9
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
 ✪ Sat, May 9, 2026, 3:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Sandeep Gajula ===LINK=== https://app.jobtwine.com/meeting/copilot?id=QRP5erAHcaaN88hmj6LcINqnhoPWCxLPNqeYjKLhygoHoU3ququlXkcvwct23Opo&type=H ===FEEDBACK=== NA
-✪ Sat, May 9, 2026, 2:00 PM IST ==> Pending Feedback Review ===PROFILE=== QA Lead Manager - CIBCPB002 (16893) ===CANDIDATE=== Satish Polisetty ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=16893
+✪ Sat, May 9, 2026, 2:00 PM IST ==> Not Recommended ===PROFILE=== QA Lead Manager - CIBCPB002 (16893) ===CANDIDATE=== Satish Polisetty ===LINK=== NA ===FEEDBACK=== NA
 ✪ Sat, May 9, 2026, 11:00 AM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer(CIBCAP004) (18454) ===CANDIDATE=== Kusuma Olet ===LINK=== NA ===FEEDBACK=== NA
 ✪ Sat, May 9, 2026, 9:00 AM IST ==> Is a Good Fit ===PROFILE=== Quality engineer(CIBCAS004) (18645) ===CANDIDATE=== Kishore Kona ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
@@ -13,7 +13,7 @@ Today's date: May 9
 §TODAY§
 ✪ Sat, May 9, 2026, 3:00 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Bhavani Gadi ===LINK=== NA ===FEEDBACK=== NA
 ✪ Sat, May 9, 2026, 2:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer(CIBCAP004) (18454) ===CANDIDATE=== Anappindi Nagamani ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=18454
-✪ Sat, May 9, 2026, 1:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality engineer(CIBCNME002) (18852) ===CANDIDATE=== Leena Jayasri ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=18852
+✪ Sat, May 9, 2026, 1:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality engineer(CIBCNME002) (18852) ===CANDIDATE=== Leena Jayasri ===LINK=== NA ===FEEDBACK=== NA
 ✪ Sat, May 9, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== SRI SAI PRAKASH MARELLA ===LINK=== NA ===FEEDBACK=== NA
 ✪ Sat, May 9, 2026, 11:00 AM IST ==> Not Recommended ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== NAVIN V ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
@@ -22,4 +22,4 @@ Today's date: May 9
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 09-May-2026 03:24:58 PM
+Updated at (IST): 09-May-2026 03:34:28 PM
