@@ -14,7 +14,7 @@ Today's date: May 9
 ✪ Sat, May 9, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Bhavani Gadi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=A6GXgx8CtudiiC1iY5YxjUDidhwJWi%2FXKV9qcJJCSBEvpclFdWaCx2s2oZaw1FUp&type=H ===FEEDBACK=== NA
 ✪ Sat, May 9, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCAP004) (18454) ===CANDIDATE=== Anappindi Nagamani ===LINK=== https://app.jobtwine.com/meeting/copilot?id=LxR33sCeOeIIpa1cCrMnm6qxoIoLv1D4HOownfDdTMkdUAcLQ8%2FzHzjYFBgX8SPu&type=H ===FEEDBACK=== NA
 ✪ Sat, May 9, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality engineer(CIBCNME002) (18852) ===CANDIDATE=== Leena Jayasri ===LINK=== https://app.jobtwine.com/meeting/copilot?id=anh%2BR1eU3XPGLcnfOSvF3fbgY6UW9Kbqeub97GJTSa5Qu5efeupoxz6Cur7qLm9P&type=H ===FEEDBACK=== NA
-✪ Sat, May 9, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== SRI SAI PRAKASH MARELLA ===LINK=== https://app.jobtwine.com/meeting/copilot?id=UH4Fpkm2OuswZrGcSt%2F%2F9ElS4gVVtWceo%2Bc6zTuzAFB0KxV7B5s3PmDfa5cafRuI&type=H ===FEEDBACK=== NA
+✪ Sat, May 9, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== SRI SAI PRAKASH MARELLA ===LINK=== NA ===FEEDBACK=== NA
 ✪ Sat, May 9, 2026, 11:00 AM IST ==> Pending Feedback Review ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== NAVIN V ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=10026
 §TOMORROW§
 ✪ Sun, May 10, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer(CIBCAP003) (18451) ===CANDIDATE=== SRINIVAS NAKKALA ===LINK=== https://app.jobtwine.com/meeting/copilot?id=1mPDfCfhg2NM3EJD8iKoKNs0ehKT0It0Q%2B3m2xvG2buQaOGqe5iuAdAnBrXXr3vA&type=H
@@ -22,4 +22,4 @@ Today's date: May 9
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 09-May-2026 12:15:56 PM
+Updated at (IST): 09-May-2026 12:25:40 PM
