@@ -4,7 +4,7 @@ Today's date: May 9
 ✪ Sat, May 9, 2026, 3:30 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Sandeep Gajula ===LINK=== https://app.jobtwine.com/meeting/copilot?id=QRP5erAHcaaN88hmj6LcINqnhoPWCxLPNqeYjKLhygoHoU3ququlXkcvwct23Opo&type=H ===FEEDBACK=== NA
 ✪ Sat, May 9, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== QA Lead Manager - CIBCPB002 (16893) ===CANDIDATE=== Satish Polisetty ===LINK=== https://app.jobtwine.com/meeting/copilot?id=UID4MYameDH6F3OJE%2BnfgAD4XKQOWtfcEQcibWbC%2B6aGzUgfjQ%2FdFWqwcUs7FUjm&type=H ===FEEDBACK=== NA
 ✪ Sat, May 9, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCAP004) (18454) ===CANDIDATE=== Kusuma Olet ===LINK=== https://app.jobtwine.com/meeting/copilot?id=gJ2BPoovDB97OIG0aW5sBlm7nuAxt2F7CL%2B0L9ZhLOCYIQxQrEMEfj5mVmwK2hwG&type=H ===FEEDBACK=== NA
-✪ Sat, May 9, 2026, 9:00 AM IST ==> Pending Feedback Review ===PROFILE=== Quality engineer(CIBCAS004) (18645) ===CANDIDATE=== Kishore Kona ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=18645
+✪ Sat, May 9, 2026, 9:00 AM IST ==> Is a Good Fit ===PROFILE=== Quality engineer(CIBCAS004) (18645) ===CANDIDATE=== Kishore Kona ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
 ✪ Sun, May 10, 2026, 3:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCPP006) (18339) ===CANDIDATE=== Ashish Kowlekari ===LINK=== https://app.jobtwine.com/meeting/copilot?id=rWjMAECmNYhpwCuUtV2cRb4swz9zLkjiU189%2Fv7CuOfX5UZUiA7o%2FgmUqMo%2FYWL3&type=H
 ✪ Sun, May 10, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer(CIBCAP003) (18451) ===CANDIDATE=== Chanchala Gupta ===LINK=== https://app.jobtwine.com/meeting/copilot?id=q5rKUYesETFLPr5pAzWpOKW8Us9WNHD4nnz5rx8PsVQaqhCkvTsz3GCSMzjWQbBx&type=H
@@ -13,6 +13,7 @@ Today's date: May 9
 §TODAY§
 ✪ Sat, May 9, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Bhavani Gadi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=A6GXgx8CtudiiC1iY5YxjUDidhwJWi%2FXKV9qcJJCSBEvpclFdWaCx2s2oZaw1FUp&type=H ===FEEDBACK=== NA
 ✪ Sat, May 9, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCAP004) (18454) ===CANDIDATE=== Anappindi Nagamani ===LINK=== https://app.jobtwine.com/meeting/copilot?id=LxR33sCeOeIIpa1cCrMnm6qxoIoLv1D4HOownfDdTMkdUAcLQ8%2FzHzjYFBgX8SPu&type=H ===FEEDBACK=== NA
+✪ Sat, May 9, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality engineer(CIBCNME002) (18852) ===CANDIDATE=== Leena Jayasri ===LINK=== https://app.jobtwine.com/meeting/copilot?id=anh%2BR1eU3XPGLcnfOSvF3fbgY6UW9Kbqeub97GJTSa5Qu5efeupoxz6Cur7qLm9P&type=H ===FEEDBACK=== NA
 ✪ Sat, May 9, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== SRI SAI PRAKASH MARELLA ===LINK=== https://app.jobtwine.com/meeting/copilot?id=UH4Fpkm2OuswZrGcSt%2F%2F9ElS4gVVtWceo%2Bc6zTuzAFB0KxV7B5s3PmDfa5cafRuI&type=H ===FEEDBACK=== NA
 ✪ Sat, May 9, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== NAVIN V ===LINK=== https://app.jobtwine.com/meeting/copilot?id=bELAihWIvijCtzK9BD2BhADHI5K1FozCPGHIntVjXtSo60v3EG%2FlLgL6znOgu3YT&type=H ===FEEDBACK=== NA
 §TOMORROW§
@@ -21,4 +22,4 @@ Today's date: May 9
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 09-May-2026 10:36:21 AM
+Updated at (IST): 09-May-2026 10:45:25 AM
