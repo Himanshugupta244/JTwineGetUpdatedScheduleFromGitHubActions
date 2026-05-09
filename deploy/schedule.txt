@@ -10,16 +10,17 @@ Today's date: May 9
 ✪ Sun, May 10, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer(CIBCAP003) (18451) ===CANDIDATE=== Chanchala Gupta ===LINK=== https://app.jobtwine.com/meeting/copilot?id=q5rKUYesETFLPr5pAzWpOKW8Us9WNHD4nnz5rx8PsVQaqhCkvTsz3GCSMzjWQbBx&type=H
 ✪ Sun, May 10, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Sravan Annam ===LINK=== https://app.jobtwine.com/meeting/copilot?id=oszBkGNiYhNzI8%2BA8NIe%2Fq8Qj7Rmm5N5F8fgzjpWk3TMgYIDqBUAuzT2p2H%2Fz%2Fvw&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
-§TODAY§
-✪ Sat, May 9, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Bhavani Gadi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=A6GXgx8CtudiiC1iY5YxjUDidhwJWi%2FXKV9qcJJCSBEvpclFdWaCx2s2oZaw1FUp&type=H ===FEEDBACK=== NA
-✪ Sat, May 9, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCAP004) (18454) ===CANDIDATE=== Anappindi Nagamani ===LINK=== https://app.jobtwine.com/meeting/copilot?id=LxR33sCeOeIIpa1cCrMnm6qxoIoLv1D4HOownfDdTMkdUAcLQ8%2FzHzjYFBgX8SPu&type=H ===FEEDBACK=== NA
-✪ Sat, May 9, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality engineer(CIBCNME002) (18852) ===CANDIDATE=== Leena Jayasri ===LINK=== https://app.jobtwine.com/meeting/copilot?id=anh%2BR1eU3XPGLcnfOSvF3fbgY6UW9Kbqeub97GJTSa5Qu5efeupoxz6Cur7qLm9P&type=H ===FEEDBACK=== NA
-✪ Sat, May 9, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== SRI SAI PRAKASH MARELLA ===LINK=== NA ===FEEDBACK=== NA
-✪ Sat, May 9, 2026, 11:00 AM IST ==> Pending Feedback Review ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== NAVIN V ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=10026
-§TOMORROW§
-✪ Sun, May 10, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer(CIBCAP003) (18451) ===CANDIDATE=== SRINIVAS NAKKALA ===LINK=== https://app.jobtwine.com/meeting/copilot?id=1mPDfCfhg2NM3EJD8iKoKNs0ehKT0It0Q%2B3m2xvG2buQaOGqe5iuAdAnBrXXr3vA&type=H
+Exception: element click intercepted: Element <span>...</span> is not clickable at point (511, 137). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
+  (Session info: chrome=147.0.7727.55)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [570c8b80989153d4ad7e31822c86905e, clickElement {id=f.E6D7D6D151924923EFAA0F5495492BE1.d.4E4D4D25F09ECAF08F0B2D0688B3BA41.e.237}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39695}, goog:processID: 2946, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39695/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (570c8b80989153d4ad7e31822c86905e)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[2]]
+Session ID: 570c8b80989153d4ad7e31822c86905e
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 09-May-2026 02:15:50 PM
+Updated at (IST): 09-May-2026 02:25:05 PM
