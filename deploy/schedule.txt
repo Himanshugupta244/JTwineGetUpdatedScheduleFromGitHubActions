@@ -3,7 +3,7 @@ Today's date: May 10
 §TODAY§
 ✪ Sun, May 10, 2026, 3:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCPP006) (18339) ===CANDIDATE=== Ashish Kowlekari ===LINK=== https://app.jobtwine.com/meeting/copilot?id=rWjMAECmNYhpwCuUtV2cRb4swz9zLkjiU189%2Fv7CuOfX5UZUiA7o%2FgmUqMo%2FYWL3&type=H ===FEEDBACK=== NA
 ✪ Sun, May 10, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer(CIBCAP003) (18451) ===CANDIDATE=== Chanchala Gupta ===LINK=== https://app.jobtwine.com/meeting/copilot?id=q5rKUYesETFLPr5pAzWpOKW8Us9WNHD4nnz5rx8PsVQaqhCkvTsz3GCSMzjWQbBx&type=H ===FEEDBACK=== NA
-✪ Sun, May 10, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Sravan Annam ===LINK=== https://app.jobtwine.com/meeting/copilot?id=oszBkGNiYhNzI8%2BA8NIe%2Fq8Qj7Rmm5N5F8fgzjpWk3TMgYIDqBUAuzT2p2H%2Fz%2Fvw&type=H ===FEEDBACK=== NA
+✪ Sun, May 10, 2026, 1:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Sravan Annam ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
 ✪ Mon, May 11, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Mugdha Joshi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=ZEzjgURc3jmZRGTxlav4VIJ4T9TIJVljmZJzRygixShgEtHlUhT3OtM8%2FNC5XHF5&type=H
 ✪ Mon, May 11, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Rahul Perumandla ===LINK=== https://app.jobtwine.com/meeting/copilot?id=6KOtkKpn8zcZAJVPE%2BgnZYZTM9EhPzlR17%2F3vrmGq8hBG%2FhJYc6mdxUrsKAoOXAY&type=H
@@ -19,4 +19,4 @@ Today's date: May 10
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 10-May-2026 02:05:19 PM
+Updated at (IST): 10-May-2026 02:14:48 PM
