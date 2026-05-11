@@ -3,7 +3,7 @@ Today's date: May 11
 §TODAY§
 ✪ Mon, May 11, 2026, 10:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Mugdha Joshi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=ZEzjgURc3jmZRGTxlav4VIJ4T9TIJVljmZJzRygixShgEtHlUhT3OtM8%2FNC5XHF5&type=H ===FEEDBACK=== NA
 ✪ Mon, May 11, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Rahul Perumandla ===LINK=== https://app.jobtwine.com/meeting/copilot?id=6KOtkKpn8zcZAJVPE%2BgnZYZTM9EhPzlR17%2F3vrmGq8hBG%2FhJYc6mdxUrsKAoOXAY&type=H ===FEEDBACK=== NA
-✪ Mon, May 11, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Reshma Borra ===LINK=== https://app.jobtwine.com/ ===FEEDBACK=== NA
+✪ Mon, May 11, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Reshma Borra ===LINK=== https://app.jobtwine.com/meeting/copilot?id=SiLvgSwGGSyNX54QI3vkBK3k2Aw2eqyqH0kZSzxIFT2Cu1fS3C7qfmhchd0CAMXC&type=H ===FEEDBACK=== NA
 ✪ Mon, May 11, 2026, 10:00 AM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Nagaramya Kandregula ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
 ✪ Tue, May 12, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCVS004) (19147) ===CANDIDATE=== Jyothi Bandu ===LINK=== https://app.jobtwine.com/meeting/copilot?id=oj9iuVeIYco8mAhkgkgZgEZg3ym6f8sREyT3DkraFJLNslCLnA0ZGbf82h48CLOB&type=H
@@ -26,4 +26,4 @@ Today's date: May 11
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 11-May-2026 04:05:58 PM
+Updated at (IST): 11-May-2026 04:15:51 PM
