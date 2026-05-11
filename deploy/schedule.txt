@@ -6,11 +6,11 @@ Today's date: May 11
 ✪ Mon, May 11, 2026, 7:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Reshma Borra ===LINK=== https://app.jobtwine.com/meeting/copilot?id=SiLvgSwGGSyNX54QI3vkBK3k2Aw2eqyqH0kZSzxIFT2Cu1fS3C7qfmhchd0CAMXC&type=H ===FEEDBACK=== NA
 ✪ Mon, May 11, 2026, 10:00 AM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Nagaramya Kandregula ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
-✪ Tue, May 12, 2026, 6:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Pravallika Manyam ===LINK=== https://app.jobtwine.com/meeting/copilot?id=ccLrjDv52lMB3m6E0c9KGlm3YLEAc4QrQivNp1N8GGYSfIEks%2BIQlJJRXCCAsW2S&type=H
-✪ Tue, May 12, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCVS004) (19147) ===CANDIDATE=== Jyothi Bandu ===LINK=== https://app.jobtwine.com/meeting/copilot?id=oj9iuVeIYco8mAhkgkgZgEZg3ym6f8sREyT3DkraFJLNslCLnA0ZGbf82h48CLOB&type=H
+✪ Tue, May 12, 2026, 6:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Pravallika Manyam ===LINK=== https://app.jobtwine.com/
+✪ Tue, May 12, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCVS004) (19147) ===CANDIDATE=== Jyothi Bandu ===LINK=== https://app.jobtwine.com/
 ✪ Tue, May 12, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCPP006) (18339) ===CANDIDATE=== Soumyashree Choudhury ===LINK=== https://app.jobtwine.com/meeting/copilot?id=qr0N0%2FUMARgbMg5ccELuJSVu3w8b3q%2FPhWbq4qYuylY%2Fb%2FPLyZqbJ68eTilD2o5o&type=H
-✪ Tue, May 12, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Mohan Vallabhaneni ===LINK=== https://app.jobtwine.com/meeting/copilot?id=gnKggcrcm%2Fp9lVvSDHGuVao1Tk0TrPCljuMk9fHkSOIf5eM6Nq%2F0vNZYuBJS8Ln1&type=H
-✪ Tue, May 12, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Sandhya Basavaraju ===LINK=== https://app.jobtwine.com/meeting/copilot?id=SOGE6B1pjOR%2FHW1E09IuNXclFQVdiR4GF991UCxXj3ykUpXbjGw8aiEjNiHhZ0A3&type=H
+✪ Tue, May 12, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Mohan Vallabhaneni ===LINK=== https://app.jobtwine.com/
+✪ Tue, May 12, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Sandhya Basavaraju ===LINK=== https://app.jobtwine.com/
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
 ✪ Mon, May 11, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Supraja Gode ===LINK=== https://app.jobtwine.com/meeting/copilot?id=fkPHoNwdRNR0Zp%2BxPimkHysjf0QYrlgBbHsUII1M4QodHTzloSOCPKMSdfVPw9yD&type=H ===FEEDBACK=== NA
@@ -27,4 +27,4 @@ Today's date: May 11
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 11-May-2026 05:26:04 PM
+Updated at (IST): 11-May-2026 05:36:28 PM
