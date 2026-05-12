@@ -15,14 +15,20 @@ Today's date: May 12
 ✪ Wed, May 13, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Arun Reddy ===LINK=== https://app.jobtwine.com/meeting/copilot?id=fv4yaPrBWhCgDS6ANG3Av4c%2Fjc2NSFZKwbXLIGg2gTynCpecONaBwwXkDwC4E9v3&type=H
 ✪ Wed, May 13, 2026, 9:30 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Poorna Chandra Sekhar ===LINK=== https://app.jobtwine.com/meeting/copilot?id=hyAsJ3bnJgJnRC7pNy%2FWE2gKWOS6eQWnTk2awU%2B8hKsTrtzmLYu8nWJNi0Co1EIa&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
-Exception: Expected condition failed: waiting for visibility of element located by By.xpath: .//input[@formcontrolname='userName'] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45215}, goog:processID: 3049, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45215/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fdffd185a4ef11cf806804cfe85511b7
+§TODAY§
+✪ Tue, May 12, 2026, 8:30 PM IST ==> Not Recommended ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Hassan Yousufi ===LINK=== NA ===FEEDBACK=== NA
+✪ Tue, May 12, 2026, 7:00 PM IST ==> Not Recommended ===PROFILE=== QA (8804) ===CANDIDATE=== Shreya Sinha ===LINK=== NA ===FEEDBACK=== NA
+✪ Tue, May 12, 2026, 6:00 PM IST ==> Is a Good Fit ===PROFILE=== CIBCSB003 Quality Engineering Manager (18891) ===CANDIDATE=== Sushma Kanithi ===LINK=== NA ===FEEDBACK=== NA
+✪ Tue, May 12, 2026, 2:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Kusuma Saikrishna ===LINK=== NA ===FEEDBACK=== NA
+✪ Tue, May 12, 2026, 11:00 AM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Pokala Santhosh Kumar ===LINK=== NA ===FEEDBACK=== NA
+§TOMORROW§
+✪ Wed, May 13, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== SHAIK SIDDIQUE ===LINK=== https://app.jobtwine.com/meeting/copilot?id=9Y7FxfhZgpAPMDJdopOAGMDrfaKPDzNMqLKwNiHQ3w9%2BgxBsP0OC3ZgnygBSyERF&type=H
+✪ Wed, May 13, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== DASARI RAJU ===LINK=== https://app.jobtwine.com/meeting/copilot?id=zQLtXCK8rQkx40JKzgQAe6uHUowwDEzOCmLOn8Y2KgnOmgSGKMUoZ3ilIhDr2mLc&type=H
+✪ Wed, May 13, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Sukhbir Deshwal ===LINK=== https://app.jobtwine.com/meeting/copilot?id=ZZCBasWjCjU6htr44h%2FxZbT%2B0OWdTi7%2F5uinwMTw46Wh9mBpA5hEmOEq7PY%2BYKvV&type=H
+✪ Wed, May 13, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Lead Quality Engineering Manager(CIBCKB003) (18495) ===CANDIDATE=== Bhavani Srinivasan ===LINK=== https://app.jobtwine.com/meeting/copilot?id=iFIA5xmJJ7v6BOTUUdYyAAhrNTDAC3Gp0RouiZvzZykO2idkDdf%2FodLXzqSHUnV1&type=H
+✪ Wed, May 13, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Saichethan Kodam ===LINK=== https://app.jobtwine.com/meeting/copilot?id=3qzS8eImkyOYLTk0loYLPwvp7P3dxefy3e5O%2FMqvKoofbRrCn8Ma2FgiKetxMjoT&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 12-May-2026 11:34:56 PM
+Updated at (IST): 12-May-2026 11:45:27 PM
