@@ -4,7 +4,7 @@ Today's date: May 12
 ✪ Tue, May 12, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Ramkrishna Keer ===LINK=== https://app.jobtwine.com/meeting/copilot?id=y2ZfB2lUkFiamzz2PCVF0yvhQsDjbNj33unCE134yxa2QeH%2BzS0SRwhW9rZ9KFva&type=H ===FEEDBACK=== NA
 ✪ Tue, May 12, 2026, 6:30 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Pravallika Manyam ===LINK=== https://app.jobtwine.com/meeting/copilot?id=ccLrjDv52lMB3m6E0c9KGlm3YLEAc4QrQivNp1N8GGYSfIEks%2BIQlJJRXCCAsW2S&type=H ===FEEDBACK=== NA
 ✪ Tue, May 12, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCVS004) (19147) ===CANDIDATE=== Jyothi Bandu ===LINK=== https://app.jobtwine.com/meeting/copilot?id=oj9iuVeIYco8mAhkgkgZgEZg3ym6f8sREyT3DkraFJLNslCLnA0ZGbf82h48CLOB&type=H ===FEEDBACK=== NA
-✪ Tue, May 12, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCPP006) (18339) ===CANDIDATE=== Soumyashree Choudhury ===LINK=== https://app.jobtwine.com/meeting/copilot?id=qr0N0%2FUMARgbMg5ccELuJSVu3w8b3q%2FPhWbq4qYuylY%2Fb%2FPLyZqbJ68eTilD2o5o&type=H ===FEEDBACK=== NA
+✪ Tue, May 12, 2026, 4:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Manager(CIBCPP006) (18339) ===CANDIDATE=== Soumyashree Choudhury ===LINK=== NA ===FEEDBACK=== NA
 ✪ Tue, May 12, 2026, 2:00 PM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Mohan Vallabhaneni ===LINK=== NA ===FEEDBACK=== NA
 ✪ Tue, May 12, 2026, 11:00 AM IST ==> Candidate No Show ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Sandhya Basavaraju ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
@@ -29,4 +29,4 @@ Today's date: May 12
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 12-May-2026 04:56:09 PM
+Updated at (IST): 12-May-2026 05:06:15 PM
