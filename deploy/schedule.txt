@@ -2,7 +2,7 @@ Today's date: May 12
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
 ✪ Tue, May 12, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Ramkrishna Keer ===LINK=== https://app.jobtwine.com/meeting/copilot?id=y2ZfB2lUkFiamzz2PCVF0yvhQsDjbNj33unCE134yxa2QeH%2BzS0SRwhW9rZ9KFva&type=H ===FEEDBACK=== NA
-✪ Tue, May 12, 2026, 5:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer(CIBCVS004) (19147) ===CANDIDATE=== Jyothi Bandu ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=19147
+✪ Tue, May 12, 2026, 5:00 PM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer(CIBCVS004) (19147) ===CANDIDATE=== Jyothi Bandu ===LINK=== NA ===FEEDBACK=== NA
 ✪ Tue, May 12, 2026, 4:00 PM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Manager(CIBCPP006) (18339) ===CANDIDATE=== Soumyashree Choudhury ===LINK=== NA ===FEEDBACK=== NA
 ✪ Tue, May 12, 2026, 2:00 PM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer(CIBCSBS04) (18603) ===CANDIDATE=== Mohan Vallabhaneni ===LINK=== NA ===FEEDBACK=== NA
 ✪ Tue, May 12, 2026, 11:00 AM IST ==> Candidate No Show ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Sandhya Basavaraju ===LINK=== NA ===FEEDBACK=== NA
@@ -15,8 +15,8 @@ Today's date: May 12
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
 ✪ Tue, May 12, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Hassan Yousufi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=HE0iMQYJr5gnIMD8CSeh6EogDbqMJA9gQEv0GbZjRnx9m3QmI3Lb8uoxVdVon5Qa&type=H ===FEEDBACK=== NA
-✪ Tue, May 12, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Shreya Sinha ===LINK=== https://app.jobtwine.com/meeting/copilot?id=V6GWO811HW6MeLXJZ4NYaI6GqjTVfs7hHjs56TPPRRxHJXaLQEUnA9PtJSB5vHNI&type=H ===FEEDBACK=== NA
-✪ Tue, May 12, 2026, 6:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCSB003 Quality Engineering Manager (18891) ===CANDIDATE=== Sushma Kanithi ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=18891
+✪ Tue, May 12, 2026, 7:00 PM IST ==> Pending Feedback Review ===PROFILE=== QA (8804) ===CANDIDATE=== Shreya Sinha ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=8804
+✪ Tue, May 12, 2026, 6:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCSB003 Quality Engineering Manager (18891) ===CANDIDATE=== Sushma Kanithi ===LINK=== NA ===FEEDBACK=== NA
 ✪ Tue, May 12, 2026, 2:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Kusuma Saikrishna ===LINK=== NA ===FEEDBACK=== NA
 ✪ Tue, May 12, 2026, 11:00 AM IST ==> Is a Good Fit ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Pokala Santhosh Kumar ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
@@ -29,4 +29,4 @@ Today's date: May 12
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 12-May-2026 07:38:50 PM
+Updated at (IST): 12-May-2026 07:46:36 PM
