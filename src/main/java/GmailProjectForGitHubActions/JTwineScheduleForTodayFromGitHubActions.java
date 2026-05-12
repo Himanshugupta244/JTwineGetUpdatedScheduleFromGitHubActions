@@ -499,7 +499,27 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap');\n");
 			html.append("* { margin:0; padding:0; box-sizing:border-box; font-family:Inter, Arial, sans-serif; }\n");
 			html.append("body { background:#eef2ff; padding:20px; color:#1e293b; }\n");
-			html.append(".container { max-width:600px; margin:auto; }\n");
+			html.append(".container { max-width:600px; margin:auto; display:none; }\n");
+			html.append(".login-overlay { position:fixed; top:0; left:0; width:100%; height:100%; display:flex; align-items:center; justify-content:center; z-index:9999; background:linear-gradient(160deg,#0f172a,#1e293b,#334155); overflow:hidden; perspective:600px; }\n");
+			html.append(".login-stars-wrapper{position:absolute;inset:-40%;transform-style:preserve-3d;animation:starsDrift 10s ease-in-out infinite;}\n");
+			html.append("@keyframes starsDrift{0%{transform:rotateX(0deg) rotateY(0deg) scale(1);}25%{transform:rotateX(4deg) rotateY(-6deg) scale(1.05);}50%{transform:rotateX(-3deg) rotateY(5deg) scale(1.02);}75%{transform:rotateX(5deg) rotateY(-3deg) scale(1.06);}100%{transform:rotateX(0deg) rotateY(0deg) scale(1);}}\n");
+			html.append(".login-stars{width:100%;height:100%;transform-style:preserve-3d;}\n");
+			html.append(".login-star{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;animation:twinkle var(--d) ease-in-out infinite;}\n");
+			html.append("@keyframes twinkle{0%,100%{opacity:0.2;}50%{opacity:1;}}\n");
+			html.append("@keyframes cardFloat{0%,100%{transform:perspective(800px) rotateX(1deg) rotateY(-1deg) translateY(0);}50%{transform:perspective(800px) rotateX(-2deg) rotateY(2deg) translateY(-12px);}}\n");
+			html.append(".login-card{position:relative;z-index:10;background:linear-gradient(145deg,rgba(30,41,59,0.9),rgba(15,23,42,0.95));border-radius:24px;border:1px solid rgba(99,102,241,0.3);padding:48px 40px;width:400px;max-width:90vw;box-shadow:0 30px 60px rgba(0,0,0,0.4),0 0 40px rgba(99,102,241,0.1);animation:cardFloat 10s ease-in-out infinite;}\n");
+			html.append(".login-card .logo{font-size:36px;font-weight:900;color:#00cfff;text-align:center;margin-bottom:8px;text-shadow:0 0 6px rgba(0,207,255,0.4),0 0 15px rgba(0,127,255,0.2);}\n");
+			html.append(".login-card .tagline{text-align:center;color:#64748b;font-size:13px;font-weight:600;margin-bottom:32px;}\n");
+			html.append(".login-card .form-group{margin-bottom:20px;}\n");
+			html.append(".login-card .form-group label{display:block;color:#94a3b8;font-size:12px;font-weight:700;margin-bottom:6px;letter-spacing:0.5px;text-transform:uppercase;}\n");
+			html.append(".login-card .form-group input{width:100%;padding:14px 16px;background:rgba(30,41,59,0.6);border:1.5px solid rgba(99,102,241,0.2);border-radius:12px;font-size:14px;font-weight:600;color:#e2e8f0;outline:none;transition:all 0.3s;}\n");
+			html.append(".login-card .form-group input::placeholder{color:#475569;}\n");
+			html.append(".login-card .form-group input:focus{border-color:#6366f1;box-shadow:0 0 20px rgba(99,102,241,0.15);}\n");
+			html.append(".login-btn{width:100%;padding:14px;background:linear-gradient(135deg,#4f46e5,#6366f1);border:none;border-radius:12px;color:#fff;font-size:15px;font-weight:800;cursor:pointer;letter-spacing:0.5px;transition:all 0.3s;margin-top:8px;}\n");
+			html.append(".login-btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(99,102,241,0.35);}\n");
+			html.append(".login-btn:active{transform:translateY(0);}\n");
+			html.append(".login-error{color:#fca5a5;font-size:12px;font-weight:700;text-align:center;margin-top:12px;display:none;}\n");
+			html.append(".login-footer{text-align:center;margin-top:24px;color:#475569;font-size:11px;font-weight:600;}\n");
 			// Topbar
 			html.append(".topbar { display:flex; justify-content:center; align-items:center; gap:12px; margin-bottom:20px; flex-wrap:wrap; }\n");
 			html.append(".title { font-size:32px; font-weight:800; letter-spacing:1px; cursor:default; }\n");
@@ -564,6 +584,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			// Footer
 			html.append(".download-btn { display:inline-flex; align-items:center; gap:6px; background:white; color:#3730a3; padding:10px 18px; border:2px solid #c7d2fe; border-radius:20px; font-size:15px; font-weight:700; cursor:pointer; box-shadow:0 2px 8px rgba(79,70,229,0.08); }\n");
 			html.append(".download-btn:active { transform:scale(0.97); }\n");
+			html.append(".card.no-select { background:#fef9c3; border:2px solid #facc15; }\n");
 			html.append(".footer { background:white; border-radius:16px; padding:14px; font-size:13px; font-weight:800; letter-spacing:1px; text-align:center; margin-top:18px; box-shadow:0 4px 12px rgba(15,23,42,0.06); }\n");
 			// Mobile
 			html.append("@media (max-width:768px) {\n");
@@ -587,6 +608,17 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  .footer { padding:8px; font-size:10px; border-radius:10px; }\n");
 			html.append("}\n");
 			html.append("</style>\n</head>\n<body>\n");
+			html.append("<div class=\"login-overlay\" id=\"loginOverlay\">\n");
+			html.append("<div class=\"login-stars-wrapper\"><div class=\"login-stars\" id=\"loginStars\"></div></div>\n");
+			html.append("<div class=\"login-card\">\n");
+			html.append("  <div class=\"logo\">Codifix Solutions</div>\n");
+			html.append("  <div class=\"tagline\">Floating in the cosmos</div>\n");
+			html.append("  <div class=\"form-group\"><label>Username</label><input type=\"text\" id=\"loginUser\" placeholder=\"Enter username\" autocomplete=\"off\"></div>\n");
+			html.append("  <div class=\"form-group\"><label>Password</label><input type=\"password\" id=\"loginPass\" placeholder=\"Enter password\"></div>\n");
+			html.append("  <button class=\"login-btn\" onclick=\"doLogin()\">Login</button>\n");
+			html.append("  <div class=\"login-error\" id=\"loginError\">Invalid credentials</div>\n");
+			html.append("  <div class=\"login-footer\">&copy; 2026 Codifix Solutions</div>\n");
+			html.append("</div>\n</div>\n");
 			html.append("<div class=\"container\">\n");
 			// Topbar
 			html.append("<div class=\"topbar\">\n");
@@ -679,7 +711,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 			// --- Footer ---
 			if (!updatedAt.isEmpty()) {
-				html.append("<div class=\"footer\">&#9201; Updated at (IST): ").append(updatedAt).append("</div>\n");
+				html.append("<div class=\"footer\">&#9201; Updated at (IST): ").append(updatedAt).append(" &nbsp;|&nbsp; <a href=\"#\" onclick=\"sessionStorage.removeItem('scheduleAuth');location.reload();return false;\" style=\"color:#6366f1;font-weight:800;text-decoration:none;\">Logout&#128682;</a></div>\n");
 			}
 
 			html.append("<script>\n");
@@ -753,7 +785,14 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("    var vals=d.values||{};\n");
 			html.append("    var selects=document.querySelectorAll('.row-dd');\n");
 			html.append("    selects.forEach(function(sel){var k=sel.getAttribute('data-key');if(vals[k]){sel.value=vals[k];}_ddPrev[k]=sel.value;});\n");
+			html.append("    highlightNoSelect();\n");
 			html.append("  }).catch(function(e){console.log('DD load error:'+e.message);});\n");
+			html.append("}\n");
+			html.append("function highlightNoSelect(){\n");
+			html.append("  document.querySelectorAll('.row-dd').forEach(function(sel){\n");
+			html.append("    var card=sel.closest('.card');\n");
+			html.append("    if(card){if(!sel.value){card.classList.add('no-select');}else{card.classList.remove('no-select');}}\n");
+			html.append("  });\n");
 			html.append("}\n");
 			html.append("function onDDChange(sel){\n");
 			html.append("  var key=sel.getAttribute('data-key');var val=sel.value;\n");
@@ -784,6 +823,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  var key=fo.getAttribute('data-key');var val=fo.getAttribute('data-val');\n");
 			html.append("  fo.classList.remove('active');\n");
 			html.append("  saveRowDD(key,val);_ddPrev[key]=val;\n");
+			html.append("  highlightNoSelect();\n");
 			html.append("}\n");
 			html.append("function ddFinalCancel(){\n");
 			html.append("  var fo=document.getElementById('ddFinalOverlay');\n");
@@ -791,6 +831,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  fo.classList.remove('active');\n");
 			html.append("  var sel=document.querySelector('.row-dd[data-key=\"'+key+'\"]');\n");
 			html.append("  if(sel)sel.value=_ddPrev[key]||'';\n");
+			html.append("  highlightNoSelect();\n");
 			html.append("}\n");
 			html.append("function saveRowDD(key,val){\n");
 			html.append("  fetch(DD_API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({key:key,value:val})})\n");
@@ -832,6 +873,36 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  };\n");
 			html.append("  document.head.appendChild(s);\n");
 			html.append("}\n");
+			// Auth JS
+			html.append("var NO_AUTH_HOSTS=['cloud.codifixsolutions.com'];\n");
+			html.append("var VALID_HASHES=['d6150e9178a7fe0b417e7ccb485a097a15c8b9e8884333b764e4cb126fc1cd61','c1675c6f85ced4bee315b534e3e84327c231381d0a77b8360a3a098363f995a5','7789775398504fc2a6b417889e8a7b58b0d0275e58efda6b88bf2ba104fa4670'];\n");
+			html.append("async function sha256(str){var buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(str));return Array.from(new Uint8Array(buf)).map(function(b){return b.toString(16).padStart(2,'0');}).join('');}\n");
+			html.append("async function doLogin(){\n");
+			html.append("  var user=document.getElementById('loginUser').value.trim().toLowerCase();\n");
+			html.append("  var pass=document.getElementById('loginPass').value;\n");
+			html.append("  var errEl=document.getElementById('loginError');\n");
+			html.append("  errEl.style.display='none';\n");
+			html.append("  if(!user||!pass){errEl.textContent='Please enter both fields';errEl.style.display='block';return;}\n");
+			html.append("  var hash=await sha256(user+':'+pass);\n");
+			html.append("  if(VALID_HASHES.indexOf(hash)!==-1){\n");
+			html.append("    sessionStorage.setItem('scheduleAuth','1');\n");
+			html.append("    document.getElementById('loginOverlay').style.display='none';\n");
+			html.append("    document.querySelector('.container').style.display='block';\n");
+			html.append("  } else {\n");
+			html.append("    errEl.textContent='Invalid username or password';\n");
+			html.append("    errEl.style.display='block';\n");
+			html.append("  }\n");
+			html.append("}\n");
+			html.append("function checkAuth(){\n");
+			html.append("  if(NO_AUTH_HOSTS.indexOf(window.location.hostname)!==-1||sessionStorage.getItem('scheduleAuth')){\n");
+			html.append("    document.getElementById('loginOverlay').style.display='none';\n");
+			html.append("    document.querySelector('.container').style.display='block';\n");
+			html.append("  }\n");
+			html.append("}\n");
+			html.append("checkAuth();\n");
+			html.append("document.getElementById('loginPass').addEventListener('keydown',function(e){if(e.key==='Enter')doLogin();});\n");
+			html.append("(function(){var s=document.getElementById('loginStars');for(var i=0;i<80;i++){var d=document.createElement('div');d.className='login-star';d.style.left=Math.random()*100+'%';d.style.top=Math.random()*100+'%';d.style.setProperty('--d',(2+Math.random()*4)+'s');d.style.animationDelay=Math.random()*3+'s';s.appendChild(d);}})();\n");
+			html.append("(function(){var stars=document.getElementById('loginStars'),angle=0,lastX=0;document.addEventListener('mousemove',function(e){var dx=e.clientX-lastX;lastX=e.clientX;angle+=dx*0.05;});function animate(){stars.style.transform='rotate('+angle+'deg)';requestAnimationFrame(animate);}animate();})();\n");
 			html.append("</script>\n");
 			// Confirmation popup overlay
 			html.append("<div class='cand-overlay' id='ddConfirmOverlay'><div class='cand-popup' style='text-align:center;padding:24px 20px 18px'>");
