@@ -15,7 +15,7 @@ Today's date: May 12
 §TODAY§
 ✪ Tue, May 12, 2026, 8:30 PM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Hassan Yousufi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=HE0iMQYJr5gnIMD8CSeh6EogDbqMJA9gQEv0GbZjRnx9m3QmI3Lb8uoxVdVon5Qa&type=H ===FEEDBACK=== NA
 ✪ Tue, May 12, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Kusuma Saikrishna ===LINK=== https://app.jobtwine.com/meeting/copilot?id=yKKCvfF4B0m2xsKnwNQnW7l1f19x1IGJoCvSftqoD8N4A0lOWIs1sh97uuP5cYG%2F&type=H ===FEEDBACK=== NA
-✪ Tue, May 12, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Pokala Santhosh Kumar ===LINK=== https://app.jobtwine.com/meeting/copilot?id=lI4NyUs4MtgzE9SvD6uFS1xyQYTybP0pMLM9a8UWPrLAILyKqHS8awaGgObY%2FLbL&type=H ===FEEDBACK=== NA
+✪ Tue, May 12, 2026, 11:00 AM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer QA/SDET CIBCKB006 (17120) ===CANDIDATE=== Pokala Santhosh Kumar ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=17120
 §TOMORROW§
 ✪ Wed, May 13, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== DASARI RAJU ===LINK=== https://app.jobtwine.com/meeting/copilot?id=zQLtXCK8rQkx40JKzgQAe6uHUowwDEzOCmLOn8Y2KgnOmgSGKMUoZ3ilIhDr2mLc&type=H
 ✪ Wed, May 13, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Lead Quality Engineering Manager(CIBCKB003) (18495) ===CANDIDATE=== Bhavani Srinivasan ===LINK=== https://app.jobtwine.com/meeting/copilot?id=iFIA5xmJJ7v6BOTUUdYyAAhrNTDAC3Gp0RouiZvzZykO2idkDdf%2FodLXzqSHUnV1&type=H
@@ -23,4 +23,4 @@ Today's date: May 12
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 12-May-2026 11:35:53 AM
+Updated at (IST): 12-May-2026 11:45:39 AM
