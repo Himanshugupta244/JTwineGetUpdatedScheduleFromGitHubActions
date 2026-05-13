@@ -15,17 +15,17 @@ Today's date: May 13
 ✪ Thu, May 14, 2026, 11:30 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Sai Pavan Kumar Achanta ===LINK=== https://app.jobtwine.com/meeting/copilot?id=DN2UWJLmDH7bcd1vuETeYEJ3s4X6lYakaojuObS010Jfsr2W%2FjBdSZqFePUPXQc5&type=H
 ✪ Thu, May 14, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Hitesh Jaiswal ===LINK=== https://app.jobtwine.com/meeting/copilot?id=QKNEKgOS3rc%2B8StQqfYa9Y6aO4CAQ2AyRYhVFq7wk5nFeF%2Bo0JOFBMMXitRkn04I&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
-Exception: element click intercepted: Element <span>...</span> is not clickable at point (542, 137). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
-  (Session info: chrome=147.0.7727.55)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f625580da4bd10029781592e92590d0f, clickElement {id=f.A8E1933B0D1E4655CCBC5DD0C6BB8F7E.d.7BA17BC5DFE1401926B474AF4624DCDB.e.291}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42227}, goog:processID: 2961, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42227/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (f625580da4bd10029781592e92590d0f)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[3]]
-Session ID: f625580da4bd10029781592e92590d0f
+§TODAY§
+✪ Wed, May 13, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== SHAIK SIDDIQUE ===LINK=== https://app.jobtwine.com/meeting/copilot?id=9Y7FxfhZgpAPMDJdopOAGMDrfaKPDzNMqLKwNiHQ3w9%2BgxBsP0OC3ZgnygBSyERF&type=H ===FEEDBACK=== NA
+✪ Wed, May 13, 2026, 7:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== DASARI RAJU ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=17962
+✪ Wed, May 13, 2026, 3:00 PM IST ==> Is a Good Fit ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Sukhbir Deshwal ===LINK=== NA ===FEEDBACK=== NA
+✪ Wed, May 13, 2026, 2:00 PM IST ==> Candidate No Show ===PROFILE=== Lead Quality Engineering Manager(CIBCKB003) (18495) ===CANDIDATE=== Bhavani Srinivasan ===LINK=== NA ===FEEDBACK=== NA
+✪ Wed, May 13, 2026, 1:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Saichethan Kodam ===LINK=== NA ===FEEDBACK=== NA
+§TOMORROW§
+✪ Thu, May 14, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCAP010 (18988) ===CANDIDATE=== PAVAN POLIMERA ===LINK=== https://app.jobtwine.com/meeting/copilot?id=jk2CiFvlUXfMWwTRVHbNmKZs2RcBcA3HtWTVMc6ZSo0J5y4DRLqY61JU09SxWzyc&type=H
+✪ Thu, May 14, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Swastika Kumar ===LINK=== https://app.jobtwine.com/meeting/copilot?id=1TkSfD1T%2FAhG4gnYFdEa2Y7WO0WsIXmUbQaPGTQ5bmfQm7MFUcwFYVCVJCuQPCIN&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 13-May-2026 07:56:12 PM
+Updated at (IST): 13-May-2026 08:06:30 PM
