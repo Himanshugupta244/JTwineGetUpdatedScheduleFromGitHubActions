@@ -781,7 +781,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("var DD_API='https://cloud.codifixsolutions.com/dropdown-api.php';\n");
 			html.append("var _ddPrev={};\n");
 			html.append("var DOMAIN_PREFIX=(function(){var h=window.location.hostname;if(h==='cloud.codifixsolutions.com')return 'cloud_';if(h==='confidential.codifixsolutions.com')return 'conf_';return 'local_';})();\n");
-			html.append("var DD_OPTIONS_URL=(function(){var h=window.location.hostname;if(h==='confidential.codifixsolutions.com')return 'https://cloud.codifixsolutions.com/dropdown-options-confidential.json';return 'https://cloud.codifixsolutions.com/dropdown-options-cloud.json';})();\n");
+			html.append("var DD_OPTIONS_URL=(function(){var h=window.location.hostname;if(h==='confidential.codifixsolutions.com')return 'https://cloud.codifixsolutions.com/dropdown-options.php?domain=confidential';return 'https://cloud.codifixsolutions.com/dropdown-options.php?domain=cloud';})();\n");
 			html.append("function loadDropdownOptions(){\n");
 			html.append("  fetch(DD_OPTIONS_URL).then(function(r){return r.json();}).then(function(names){\n");
 			html.append("    document.querySelectorAll('.row-dd').forEach(function(sel){\n");
