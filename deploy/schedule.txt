@@ -20,7 +20,7 @@ Today's date: May 13
 ✪ Wed, May 13, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== SHAIK SIDDIQUE ===LINK=== https://app.jobtwine.com/meeting/copilot?id=9Y7FxfhZgpAPMDJdopOAGMDrfaKPDzNMqLKwNiHQ3w9%2BgxBsP0OC3ZgnygBSyERF&type=H ===FEEDBACK=== NA
 ✪ Wed, May 13, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== DASARI RAJU ===LINK=== https://app.jobtwine.com/meeting/copilot?id=zQLtXCK8rQkx40JKzgQAe6uHUowwDEzOCmLOn8Y2KgnOmgSGKMUoZ3ilIhDr2mLc&type=H ===FEEDBACK=== NA
 ✪ Wed, May 13, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Sukhbir Deshwal ===LINK=== https://app.jobtwine.com/meeting/copilot?id=ZZCBasWjCjU6htr44h%2FxZbT%2B0OWdTi7%2F5uinwMTw46Wh9mBpA5hEmOEq7PY%2BYKvV&type=H ===FEEDBACK=== NA
-✪ Wed, May 13, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Lead Quality Engineering Manager(CIBCKB003) (18495) ===CANDIDATE=== Bhavani Srinivasan ===LINK=== https://app.jobtwine.com/meeting/copilot?id=iFIA5xmJJ7v6BOTUUdYyAAhrNTDAC3Gp0RouiZvzZykO2idkDdf%2FodLXzqSHUnV1&type=H ===FEEDBACK=== NA
+✪ Wed, May 13, 2026, 2:00 PM IST ==> Candidate No Show ===PROFILE=== Lead Quality Engineering Manager(CIBCKB003) (18495) ===CANDIDATE=== Bhavani Srinivasan ===LINK=== NA ===FEEDBACK=== NA
 ✪ Wed, May 13, 2026, 1:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Saichethan Kodam ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
 ✪ Thu, May 14, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCAP010 (18988) ===CANDIDATE=== PAVAN POLIMERA ===LINK=== https://app.jobtwine.com/meeting/copilot?id=jk2CiFvlUXfMWwTRVHbNmKZs2RcBcA3HtWTVMc6ZSo0J5y4DRLqY61JU09SxWzyc&type=H
@@ -31,4 +31,4 @@ Today's date: May 13
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 13-May-2026 02:17:10 PM
+Updated at (IST): 13-May-2026 02:26:29 PM
