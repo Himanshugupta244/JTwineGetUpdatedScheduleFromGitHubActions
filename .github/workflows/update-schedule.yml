@@ -7,6 +7,17 @@ jobs:
   update-schedule:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        ftp:
+          - server: FTP_SERVER
+            username: FTP_USERNAME
+            password: FTP_PASSWORD
+
+          - server: FTP_SERVER_FORDISCUSSIONCOUNT
+            username: FTP_USERNAME_FORDISCUSSIONCOUNT
+            password: FTP_PASSWORD_FORDISCUSSIONCOUNT
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -54,8 +65,8 @@ jobs:
     - name: Upload schedule.txt via FTP to Hostinger
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        server: ${{ secrets[matrix.ftp.server] }}
+        username: ${{ secrets[matrix.ftp.username] }}
+        password: ${{ secrets[matrix.ftp.password] }}
         local-dir: ./deploy/
         server-dir: ./
