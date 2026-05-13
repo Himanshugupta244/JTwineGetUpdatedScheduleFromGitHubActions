@@ -711,7 +711,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 
 			// --- Footer ---
 			if (!updatedAt.isEmpty()) {
-				html.append("<div class=\"footer\">&#9201; Updated at (IST): ").append(updatedAt).append(" &nbsp;|&nbsp; <a id=\"logoutBtn\" href=\"#\" onclick=\"sessionStorage.removeItem('scheduleAuth');location.reload();return false;\" style=\"color:#6366f1;font-weight:800;text-decoration:none;\">Logout&#128682;</a></div>\n");
+				html.append("<div class=\"footer\">&#9201; Updated at (IST): ").append(updatedAt).append(" <span id=\"logoutWrap\">&nbsp;|&nbsp; <a href=\"#\" onclick=\"sessionStorage.removeItem('scheduleAuth');location.reload();return false;\" style=\"color:#6366f1;font-weight:800;text-decoration:none;\">Logout&#128682;</a></span></div>\n");
 			}
 
 			html.append("<script>\n");
@@ -911,7 +911,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("    document.getElementById('loginOverlay').style.display='none';\n");
 			html.append("    document.querySelector('.container').style.display='block';\n");
 			html.append("  }\n");
-			html.append("  if(NO_AUTH_HOSTS.indexOf(window.location.hostname)!==-1){var lb=document.getElementById('logoutBtn');if(lb)lb.style.display='none';}\n");
+			html.append("  if(NO_AUTH_HOSTS.indexOf(window.location.hostname)!==-1){var lb=document.getElementById('logoutWrap');if(lb)lb.style.display='none';}\n");
 			html.append("}\n");
 			html.append("checkAuth();\n");
 			html.append("document.getElementById('loginPass').addEventListener('keydown',function(e){if(e.key==='Enter')doLogin();});\n");
