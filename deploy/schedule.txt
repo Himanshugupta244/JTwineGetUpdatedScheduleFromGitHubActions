@@ -7,7 +7,7 @@ Today's date: May 13
 ✪ Wed, May 13, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Darshita Priyadarshi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=VUogV3wkJ5SnMOI3kyxXqipA1LsuNYyqaHWe3YkjWkIIT2Y0pTOmYiuUdhx6Pl04&type=H ===FEEDBACK=== NA
 ✪ Wed, May 13, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Pravallika Manyam ===LINK=== https://app.jobtwine.com/meeting/copilot?id=V9KffA%2BpUk6pWvLIDsuvBthO4rrRn3LKpi8heaYiKDSsUXiKOpo2NqDRH%2BHF9dts&type=H ===FEEDBACK=== NA
 ✪ Wed, May 13, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Arun Reddy ===LINK=== https://app.jobtwine.com/meeting/copilot?id=fv4yaPrBWhCgDS6ANG3Av4c%2Fjc2NSFZKwbXLIGg2gTynCpecONaBwwXkDwC4E9v3&type=H ===FEEDBACK=== NA
-✪ Wed, May 13, 2026, 9:30 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Poorna Chandra Sekhar ===LINK=== https://app.jobtwine.com/meeting/copilot?id=hyAsJ3bnJgJnRC7pNy%2FWE2gKWOS6eQWnTk2awU%2B8hKsTrtzmLYu8nWJNi0Co1EIa&type=H ===FEEDBACK=== NA
+✪ Wed, May 13, 2026, 9:30 AM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Poorna Chandra Sekhar ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
 ✪ Thu, May 14, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Shobhit Tripathi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=OewTA6RlmK%2FpK8iMbVwQ6QRrkyA1xIHmHSOHUl4rDSJ5f8%2BhFN51VM%2BwzbuwJhoa&type=H
 ✪ Thu, May 14, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== SHUBHAM CHAND ===LINK=== https://app.jobtwine.com/meeting/copilot?id=o4gSFC0Z3ih%2BzKrWL5HQXGA2m7yON09qcQ9FDO9Wq5uHte0KsK17zAtBxwVrpjwL&type=H
@@ -27,4 +27,4 @@ Today's date: May 13
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 13-May-2026 09:56:39 AM
+Updated at (IST): 13-May-2026 10:06:29 AM
