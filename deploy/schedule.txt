@@ -16,17 +16,19 @@ Today's date: May 13
 ✪ Thu, May 14, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Hitesh Jaiswal ===LINK=== https://app.jobtwine.com/meeting/copilot?id=QKNEKgOS3rc%2B8StQqfYa9Y6aO4CAQ2AyRYhVFq7wk5nFeF%2Bo0JOFBMMXitRkn04I&type=H
 ✪ Thu, May 14, 2026, 9:00 AM IST ==> Scheduled ===PROFILE=== CIBCSB003 Quality Engineering Manager (18891) ===CANDIDATE=== HIMA BINDU ===LINK=== https://app.jobtwine.com/meeting/copilot?id=DqBJJTdQ7G7jmIWIbi447UUsM%2Bs0665rdHfDb8VEn%2FLBlhQejQ1%2FTZp2YZvGsWgE&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
-Exception: element click intercepted: Element <span>...</span> is not clickable at point (544, 137). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
-  (Session info: chrome=147.0.7727.55)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cddfa6ea4705d5509538ec8d80056b79, clickElement {id=f.19C76FC1B39098984719992F76306882.d.7DAA721EE0C680E4439C466E682DA045.e.418}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34201}, goog:processID: 3154, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34201/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (cddfa6ea4705d5509538ec8d80056b79)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[3]]
-Session ID: cddfa6ea4705d5509538ec8d80056b79
+§TODAY§
+✪ Wed, May 13, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== SHAIK SIDDIQUE ===LINK=== https://app.jobtwine.com/meeting/copilot?id=9Y7FxfhZgpAPMDJdopOAGMDrfaKPDzNMqLKwNiHQ3w9%2BgxBsP0OC3ZgnygBSyERF&type=H ===FEEDBACK=== NA
+✪ Wed, May 13, 2026, 7:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== DASARI RAJU ===LINK=== https://app.jobtwine.com/meeting/copilot?id=zQLtXCK8rQkx40JKzgQAe6uHUowwDEzOCmLOn8Y2KgnOmgSGKMUoZ3ilIhDr2mLc&type=H ===FEEDBACK=== NA
+✪ Wed, May 13, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Sukhbir Deshwal ===LINK=== https://app.jobtwine.com/meeting/copilot?id=ZZCBasWjCjU6htr44h%2FxZbT%2B0OWdTi7%2F5uinwMTw46Wh9mBpA5hEmOEq7PY%2BYKvV&type=H ===FEEDBACK=== NA
+✪ Wed, May 13, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Lead Quality Engineering Manager(CIBCKB003) (18495) ===CANDIDATE=== Bhavani Srinivasan ===LINK=== https://app.jobtwine.com/meeting/copilot?id=iFIA5xmJJ7v6BOTUUdYyAAhrNTDAC3Gp0RouiZvzZykO2idkDdf%2FodLXzqSHUnV1&type=H ===FEEDBACK=== NA
+✪ Wed, May 13, 2026, 1:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Saichethan Kodam ===LINK=== NA ===FEEDBACK=== NA
+§TOMORROW§
+✪ Thu, May 14, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCAP010 (18988) ===CANDIDATE=== PAVAN POLIMERA ===LINK=== https://app.jobtwine.com/meeting/copilot?id=jk2CiFvlUXfMWwTRVHbNmKZs2RcBcA3HtWTVMc6ZSo0J5y4DRLqY61JU09SxWzyc&type=H
+✪ Thu, May 14, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Swastika Kumar ===LINK=== https://app.jobtwine.com/meeting/copilot?id=1TkSfD1T%2FAhG4gnYFdEa2Y7WO0WsIXmUbQaPGTQ5bmfQm7MFUcwFYVCVJCuQPCIN&type=H
+✪ Thu, May 14, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Sushmitha Jami ===LINK=== https://app.jobtwine.com/meeting/copilot?id=CF8%2BaHm6dcXxsHl4kMi4gbK95ywr4Wv%2B9xtIAThqHICoEmyq6PM0p6C2c8vLg01%2F&type=H
+✪ Thu, May 14, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== CIBCMAB002 Quality Engineering Consultant (17853) ===CANDIDATE=== Kiran V ===LINK=== https://app.jobtwine.com/meeting/copilot?id=ek1qqnohGAzcVyNzxhuGrMfZMz2Ev%2FY9Z2X9QGukKiZBnTXpTKfI7mxRVnP9l1x5&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 13-May-2026 01:16:54 PM
+Updated at (IST): 13-May-2026 01:26:45 PM
