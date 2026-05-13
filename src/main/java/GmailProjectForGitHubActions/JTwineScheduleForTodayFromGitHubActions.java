@@ -780,11 +780,24 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			// Per-row Dropdown API JS
 			html.append("var DD_API='https://cloud.codifixsolutions.com/dropdown-api.php';\n");
 			html.append("var _ddPrev={};\n");
+			html.append("var DOMAIN_PREFIX=(function(){var h=window.location.hostname;if(h==='cloud.codifixsolutions.com')return 'cloud_';if(h==='confidential.codifixsolutions.com')return 'conf_';return 'local_';})();\n");
+			html.append("var DD_OPTIONS_URL=(function(){var h=window.location.hostname;if(h==='confidential.codifixsolutions.com')return 'https://cloud.codifixsolutions.com/dropdown-options-confidential.json';return 'https://cloud.codifixsolutions.com/dropdown-options-cloud.json';})();\n");
+			html.append("function loadDropdownOptions(){\n");
+			html.append("  fetch(DD_OPTIONS_URL).then(function(r){return r.json();}).then(function(names){\n");
+			html.append("    document.querySelectorAll('.row-dd').forEach(function(sel){\n");
+			html.append("      var key=sel.getAttribute('data-key');var prev=sel.value;\n");
+			html.append("      while(sel.options.length>1)sel.remove(1);\n");
+			html.append("      names.forEach(function(n){var o=document.createElement('option');o.value=n;o.textContent=n;sel.appendChild(o);});\n");
+			html.append("      if(prev)sel.value=prev;\n");
+			html.append("    });\n");
+			html.append("    loadAllDropdowns();\n");
+			html.append("  }).catch(function(e){console.log('Options load error:'+e.message);loadAllDropdowns();});\n");
+			html.append("}\n");
 			html.append("function loadAllDropdowns(){\n");
 			html.append("  fetch(DD_API).then(function(r){return r.json();}).then(function(d){\n");
 			html.append("    var vals=d.values||{};\n");
 			html.append("    var selects=document.querySelectorAll('.row-dd');\n");
-			html.append("    selects.forEach(function(sel){var k=sel.getAttribute('data-key');if(vals[k]){sel.value=vals[k];}_ddPrev[k]=sel.value;});\n");
+			html.append("    selects.forEach(function(sel){var k=DOMAIN_PREFIX+sel.getAttribute('data-key');if(vals[k]){sel.value=vals[k];}_ddPrev[sel.getAttribute('data-key')]=sel.value;});\n");
 			html.append("    highlightNoSelect();\n");
 			html.append("  }).catch(function(e){console.log('DD load error:'+e.message);});\n");
 			html.append("}\n");
@@ -834,11 +847,11 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("  highlightNoSelect();\n");
 			html.append("}\n");
 			html.append("function saveRowDD(key,val){\n");
-			html.append("  fetch(DD_API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({key:key,value:val})})\n");
+			html.append("  fetch(DD_API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({key:DOMAIN_PREFIX+key,value:val})})\n");
 			html.append("    .then(function(r){return r.json();})\n");
 			html.append("    .catch(function(e){console.log('DD save error:'+e.message);});\n");
 			html.append("}\n");
-			html.append("loadAllDropdowns();\n");
+			html.append("loadDropdownOptions();\n");
 			html.append("function downloadPNG(){\n");
 			html.append("  var btn=document.querySelector('.download-btn');\n");
 			html.append("  btn.textContent='Generating...';\n");
@@ -1008,14 +1021,6 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			String ddKey = escapeHtml((account + "_" + time + "_" + candidateName).replaceAll("[^a-zA-Z0-9:_]", "_"));
 			String ddHtml = "<div class=\"card-dd\"><select class=\"row-dd\" data-key=\"" + ddKey + "\" onchange=\"onDDChange(this)\">" +
 				"<option value=\"\">Select</option>" +
-				"<option value=\"Dhruv\">Dhruv</option>" +
-				"<option value=\"Himanshu\">Himanshu</option>" +
-				"<option value=\"Pallvit\">Pallvit</option>" +
-				"<option value=\"Sudhanshu\">Sudhanshu</option>" +
-				"<option value=\"Amit\">Amit</option>" +
-				"<option value=\"Vansh\">Vansh</option>" +
-				"<option value=\"Abhinav\">Abhinav</option>" +
-				"<option value=\"Dhananjay\">Dhananjay</option>" +
 				"</select></div>";
 
 			return "<div class=\"card\"><div class=\"card-left\"><div class=\"time\">" + sdetPrefix + escapeHtml(time) + "</div>" + candHtml + joinHtml + "</div><div class=\"status " + bc + "\">" + statHtml + "</div>" + ddHtml + "</div>\n";
