@@ -5,16 +5,18 @@ Today's date: May 13
 ✪ Wed, May 13, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Venkata Raviteja ===LINK=== https://app.jobtwine.com/meeting/copilot?id=3a7N62BKg%2F4XMd44%2BEUw3FL%2BA31jM2SosClSGMDlxpZwtPgvY14h0NLvdCCNehv7&type=H ===FEEDBACK=== NA
 ✪ Wed, May 13, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QE Manager(CIBCMAB004 ) (18589) ===CANDIDATE=== Jahangir Baig ===LINK=== https://app.jobtwine.com/meeting/copilot?id=Fdxlhxm3zRzWyds8briUhOMKqGARQ%2Bbnm5nk54l0gqifXCo6YSwCvZnVRn%2FmqhTO&type=H ===FEEDBACK=== NA
 ✪ Wed, May 13, 2026, 3:00 PM IST ==> Pending Feedback Review ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Darshita Priyadarshi ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=17666
-✪ Wed, May 13, 2026, 2:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Pravallika Manyam ===LINK=== NA ===FEEDBACK=== NA
+✪ Wed, May 13, 2026, 2:00 PM IST ==> Is a Good Fit ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Pravallika Manyam ===LINK=== NA ===FEEDBACK=== NA
 ✪ Wed, May 13, 2026, 11:00 AM IST ==> Is a Good Fit ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Arun Reddy ===LINK=== NA ===FEEDBACK=== NA
 ✪ Wed, May 13, 2026, 9:30 AM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Poorna Chandra Sekhar ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
 ✪ Thu, May 14, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer (CIBCEP001) (18853) ===CANDIDATE=== Mirja Asha ===LINK=== https://app.jobtwine.com/meeting/copilot?id=yZf8395vZ2cUXIo9R%2FNHW2VGGZLZrcDCGtdbv8%2BhS3KmPmIilpvyqUORbT4BVWIM&type=H
 ✪ Thu, May 14, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Shobhit Tripathi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=OewTA6RlmK%2FpK8iMbVwQ6QRrkyA1xIHmHSOHUl4rDSJ5f8%2BhFN51VM%2BwzbuwJhoa&type=H
-✪ Thu, May 14, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== SHUBHAM CHAND ===LINK=== https://app.jobtwine.com/meeting/copilot?id=o4gSFC0Z3ih%2BzKrWL5HQXGA2m7yON09qcQ9FDO9Wq5uHte0KsK17zAtBxwVrpjwL&type=H
-✪ Thu, May 14, 2026, 11:30 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Sai Pavan Kumar Achanta ===LINK=== https://app.jobtwine.com/meeting/copilot?id=DN2UWJLmDH7bcd1vuETeYEJ3s4X6lYakaojuObS010Jfsr2W%2FjBdSZqFePUPXQc5&type=H
+✪ Thu, May 14, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== SHUBHAM CHAND ===LINK=== https://app.jobtwine.com/
+✪ Thu, May 14, 2026, 11:30 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Sai Pavan Kumar Achanta ===LINK=== https://app.jobtwine.com/
 ✪ Thu, May 14, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Hitesh Jaiswal ===LINK=== https://app.jobtwine.com/meeting/copilot?id=QKNEKgOS3rc%2B8StQqfYa9Y6aO4CAQ2AyRYhVFq7wk5nFeF%2Bo0JOFBMMXitRkn04I&type=H
 ✪ Thu, May 14, 2026, 9:00 AM IST ==> Scheduled ===PROFILE=== CIBCSB003 Quality Engineering Manager (18891) ===CANDIDATE=== HIMA BINDU ===LINK=== https://app.jobtwine.com/meeting/copilot?id=DqBJJTdQ7G7jmIWIbi447UUsM%2Bs0665rdHfDb8VEn%2FLBlhQejQ1%2FTZp2YZvGsWgE&type=H
+✪ Thu, May 14, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== SHUBHAM CHAND ===LINK=== https://app.jobtwine.com/meeting/copilot?id=o4gSFC0Z3ih%2BzKrWL5HQXGA2m7yON09qcQ9FDO9Wq5uHte0KsK17zAtBxwVrpjwL&type=H
+✪ Thu, May 14, 2026, 11:30 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Sai Pavan Kumar Achanta ===LINK=== https://app.jobtwine.com/meeting/copilot?id=DN2UWJLmDH7bcd1vuETeYEJ3s4X6lYakaojuObS010Jfsr2W%2FjBdSZqFePUPXQc5&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
 ✪ Wed, May 13, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== SHAIK SIDDIQUE ===LINK=== https://app.jobtwine.com/meeting/copilot?id=9Y7FxfhZgpAPMDJdopOAGMDrfaKPDzNMqLKwNiHQ3w9%2BgxBsP0OC3ZgnygBSyERF&type=H ===FEEDBACK=== NA
@@ -31,4 +33,4 @@ Today's date: May 13
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 13-May-2026 05:28:02 PM
+Updated at (IST): 13-May-2026 05:38:34 PM
