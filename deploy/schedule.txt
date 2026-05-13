@@ -5,7 +5,7 @@ Today's date: May 13
 ✪ Wed, May 13, 2026, 6:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Coordinator CIBCSS004 (17901) ===CANDIDATE=== Venkata Raviteja ===LINK=== https://app.jobtwine.com/meeting/copilot?id=3a7N62BKg%2F4XMd44%2BEUw3FL%2BA31jM2SosClSGMDlxpZwtPgvY14h0NLvdCCNehv7&type=H ===FEEDBACK=== NA
 ✪ Wed, May 13, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QE Manager(CIBCMAB004 ) (18589) ===CANDIDATE=== Jahangir Baig ===LINK=== https://app.jobtwine.com/meeting/copilot?id=Fdxlhxm3zRzWyds8briUhOMKqGARQ%2Bbnm5nk54l0gqifXCo6YSwCvZnVRn%2FmqhTO&type=H ===FEEDBACK=== NA
 ✪ Wed, May 13, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== QE Coordinator CIBCLK006 (17666) ===CANDIDATE=== Darshita Priyadarshi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=VUogV3wkJ5SnMOI3kyxXqipA1LsuNYyqaHWe3YkjWkIIT2Y0pTOmYiuUdhx6Pl04&type=H ===FEEDBACK=== NA
-✪ Wed, May 13, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Pravallika Manyam ===LINK=== https://app.jobtwine.com/meeting/copilot?id=V9KffA%2BpUk6pWvLIDsuvBthO4rrRn3LKpi8heaYiKDSsUXiKOpo2NqDRH%2BHF9dts&type=H ===FEEDBACK=== NA
+✪ Wed, May 13, 2026, 2:00 PM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Pravallika Manyam ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=19117
 ✪ Wed, May 13, 2026, 11:00 AM IST ==> Is a Good Fit ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Arun Reddy ===LINK=== NA ===FEEDBACK=== NA
 ✪ Wed, May 13, 2026, 9:30 AM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Poorna Chandra Sekhar ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
@@ -31,4 +31,4 @@ Today's date: May 13
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 13-May-2026 02:37:08 PM
+Updated at (IST): 13-May-2026 02:47:59 PM
