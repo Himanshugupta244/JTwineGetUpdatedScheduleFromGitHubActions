@@ -16,8 +16,8 @@ Today's date: May 13
 ✪ Thu, May 14, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Hitesh Jaiswal ===LINK=== https://app.jobtwine.com/meeting/copilot?id=QKNEKgOS3rc%2B8StQqfYa9Y6aO4CAQ2AyRYhVFq7wk5nFeF%2Bo0JOFBMMXitRkn04I&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
-✪ Wed, May 13, 2026, 8:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== SHAIK SIDDIQUE ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=17962
-✪ Wed, May 13, 2026, 7:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== DASARI RAJU ===LINK=== NA ===FEEDBACK=== NA
+✪ Wed, May 13, 2026, 8:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== SHAIK SIDDIQUE ===LINK=== NA ===FEEDBACK=== NA
+✪ Wed, May 13, 2026, 7:00 PM IST ==> Pending Feedback Review ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== DASARI RAJU ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=17962
 ✪ Wed, May 13, 2026, 3:00 PM IST ==> Is a Good Fit ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Sukhbir Deshwal ===LINK=== NA ===FEEDBACK=== NA
 ✪ Wed, May 13, 2026, 2:00 PM IST ==> Candidate No Show ===PROFILE=== Lead Quality Engineering Manager(CIBCKB003) (18495) ===CANDIDATE=== Bhavani Srinivasan ===LINK=== NA ===FEEDBACK=== NA
 ✪ Wed, May 13, 2026, 1:00 PM IST ==> Candidate No Show ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== Saichethan Kodam ===LINK=== NA ===FEEDBACK=== NA
@@ -28,4 +28,4 @@ Today's date: May 13
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 13-May-2026 08:16:14 PM
+Updated at (IST): 13-May-2026 08:26:05 PM
