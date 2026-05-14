@@ -27,9 +27,9 @@ Today's date: May 14
 ✪ Fri, May 15, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Anshu Ram ===LINK=== https://app.jobtwine.com/meeting/copilot?id=13IBZjylO24Ty6vcsF8kYQpnE0aR3z51ebrI2L3C%2FgyLHuaFzTzzMW6BywNnNT%2Bq&type=H
 ✪ Fri, May 15, 2026, 11:30 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCTA002 (17933) ===CANDIDATE=== Praveena N ===LINK=== https://app.jobtwine.com/meeting/copilot?id=%2BM0YBtLh7GnjVnj6UQYoSDLdAv%2BdfVbOYSLhs2Zqk6SMnn%2F45xPnXvUsPLw5gGXW&type=H
 ✪ Fri, May 15, 2026, 9:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCAS005) (19568) ===CANDIDATE=== Shashank Gautam ===LINK=== https://app.jobtwine.com/meeting/copilot?id=Gy%2Bxn%2F5DBFYKANfjlq%2BMfIkU72%2FsUl8qSzThhBQmn4fCUNu9sEsmojGMTnhbqxOy&type=H
-✪ Fri, May 15, 2026, 12:30 AM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Kavya Dinasarapu ===LINK=== https://app.jobtwine.com/meeting/copilot?id=ufx138ocMXofmCeMgF5J%2BkLYzei3GpM0JMnOuRaFZZWUa21D6RFVqsrzeMHhQpRn&type=H
+✪ Fri, May 15, 2026, 12:30 AM IST ==> Generating Feedback ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Kavya Dinasarapu ===LINK=== NA
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 15-May-2026 01:15:51 AM
+Updated at (IST): 15-May-2026 01:25:14 AM
