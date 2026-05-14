@@ -495,6 +495,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("<meta charset=\"UTF-8\">\n");
 			html.append("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
 			html.append("<title>Interview Schedule</title>\n");
+			html.append("<link rel=\"icon\" type=\"image/png\" href=\"https://cloud.codifixsolutions.com/logo.png\">\n");
 			html.append("<style>\n");
 			html.append("@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap');\n");
 			html.append("* { margin:0; padding:0; box-sizing:border-box; font-family:Inter, Arial, sans-serif; }\n");
