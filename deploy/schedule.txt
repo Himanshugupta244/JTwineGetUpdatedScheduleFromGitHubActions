@@ -1,8 +1,8 @@
 Today's date: May 14
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
 §TODAY§
-✪ Thu, May 14, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Ashish Kumar ===LINK=== https://app.jobtwine.com/meeting/copilot?id=HLlXU9LBa3HPIIhLmIV6%2B4VsXJWwzv0kJO64gsHBh81ASKs%2BPuGCXaL%2BoF9UjXNH&type=H ===FEEDBACK=== NA
-✪ Thu, May 14, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer (CIBCEP001) (18853) ===CANDIDATE=== Mirja Asha ===LINK=== https://app.jobtwine.com/meeting/copilot?id=yZf8395vZ2cUXIo9R%2FNHW2VGGZLZrcDCGtdbv8%2BhS3KmPmIilpvyqUORbT4BVWIM&type=H ===FEEDBACK=== NA
+✪ Thu, May 14, 2026, 5:00 PM IST ==> Candidate No Show ===PROFILE=== QA (8804) ===CANDIDATE=== Ashish Kumar ===LINK=== NA ===FEEDBACK=== NA
+✪ Thu, May 14, 2026, 4:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer (CIBCEP001) (18853) ===CANDIDATE=== Mirja Asha ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=18853
 ✪ Thu, May 14, 2026, 3:00 PM IST ==> Pending Feedback Review ===PROFILE=== QA (8804) ===CANDIDATE=== Shobhit Tripathi ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=8804
 ✪ Thu, May 14, 2026, 11:30 AM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Sai Pavan Kumar Achanta ===LINK=== NA ===FEEDBACK=== NA
 ✪ Thu, May 14, 2026, 10:00 AM IST ==> Is a Good Fit ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Hitesh Jaiswal ===LINK=== NA ===FEEDBACK=== NA
@@ -27,4 +27,4 @@ Today's date: May 14
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 14-May-2026 05:15:56 PM
+Updated at (IST): 14-May-2026 05:25:41 PM
