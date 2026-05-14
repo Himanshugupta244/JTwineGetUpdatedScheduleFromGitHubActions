@@ -5,7 +5,7 @@ Today's date: May 14
 ✪ Thu, May 14, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Shobhit Tripathi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=OewTA6RlmK%2FpK8iMbVwQ6QRrkyA1xIHmHSOHUl4rDSJ5f8%2BhFN51VM%2BwzbuwJhoa&type=H ===FEEDBACK=== NA
 ✪ Thu, May 14, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== SHUBHAM CHAND ===LINK=== https://app.jobtwine.com/meeting/copilot?id=o4gSFC0Z3ih%2BzKrWL5HQXGA2m7yON09qcQ9FDO9Wq5uHte0KsK17zAtBxwVrpjwL&type=H ===FEEDBACK=== NA
 ✪ Thu, May 14, 2026, 11:30 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Sai Pavan Kumar Achanta ===LINK=== https://app.jobtwine.com/meeting/copilot?id=DN2UWJLmDH7bcd1vuETeYEJ3s4X6lYakaojuObS010Jfsr2W%2FjBdSZqFePUPXQc5&type=H ===FEEDBACK=== NA
-✪ Thu, May 14, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Hitesh Jaiswal ===LINK=== https://app.jobtwine.com/meeting/copilot?id=QKNEKgOS3rc%2B8StQqfYa9Y6aO4CAQ2AyRYhVFq7wk5nFeF%2Bo0JOFBMMXitRkn04I&type=H ===FEEDBACK=== NA
+✪ Thu, May 14, 2026, 10:00 AM IST ==> Pending Feedback Review ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Hitesh Jaiswal ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=10026
 ✪ Thu, May 14, 2026, 9:00 AM IST ==> Candidate No Show ===PROFILE=== CIBCSB003 Quality Engineering Manager (18891) ===CANDIDATE=== HIMA BINDU ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
 ✪ Fri, May 15, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Rajesh Lanka ===LINK=== https://app.jobtwine.com/meeting/copilot?id=yYbVhpWBOPPfqiFvaoTWxKUrdSpYZyJVfIczq0ktOd7WHLShwXhC0OIUyQdik0g7&type=H
@@ -28,4 +28,4 @@ Today's date: May 14
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 14-May-2026 10:56:38 AM
+Updated at (IST): 14-May-2026 11:06:35 AM
