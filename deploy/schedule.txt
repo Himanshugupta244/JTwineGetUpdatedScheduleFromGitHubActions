@@ -16,8 +16,8 @@ Today's date: May 14
 §TODAY§
 ✪ Thu, May 14, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== Quality Engineer CIBCAP010 (18988) ===CANDIDATE=== PAVAN POLIMERA ===LINK=== https://app.jobtwine.com/meeting/copilot?id=jk2CiFvlUXfMWwTRVHbNmKZs2RcBcA3HtWTVMc6ZSo0J5y4DRLqY61JU09SxWzyc&type=H ===FEEDBACK=== NA
 ✪ Thu, May 14, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Swastika Kumar ===LINK=== https://app.jobtwine.com/meeting/copilot?id=1TkSfD1T%2FAhG4gnYFdEa2Y7WO0WsIXmUbQaPGTQ5bmfQm7MFUcwFYVCVJCuQPCIN&type=H ===FEEDBACK=== NA
-✪ Thu, May 14, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Sushmitha Jami ===LINK=== https://app.jobtwine.com/meeting/copilot?id=CF8%2BaHm6dcXxsHl4kMi4gbK95ywr4Wv%2B9xtIAThqHICoEmyq6PM0p6C2c8vLg01%2F&type=H ===FEEDBACK=== NA
-✪ Thu, May 14, 2026, 10:00 AM IST ==> Pending Feedback Review ===PROFILE=== CIBCMAB002 Quality Engineering Consultant (17853) ===CANDIDATE=== Kiran V ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=17853
+✪ Thu, May 14, 2026, 11:00 AM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Sushmitha Jami ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=18472
+✪ Thu, May 14, 2026, 10:00 AM IST ==> Pending Feedback Review ===PROFILE=== CIBCMAB002 Quality Engineering Consultant (17853) ===CANDIDATE=== Kiran V ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
 ✪ Fri, May 15, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Anubhav Sharma ===LINK=== https://app.jobtwine.com/meeting/copilot?id=VZuLy8vfBXZuXPR4ol2bU%2BbdiZng%2BrmSx0c2yma%2FOZAgIJd8ypAq1irAQD77QCb6&type=H
 ✪ Fri, May 15, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer (CIBCEP001) (18853) ===CANDIDATE=== Akhila Chakilam ===LINK=== https://app.jobtwine.com/meeting/copilot?id=HFNdqMXoTKDu%2BBTF0MFX0e04%2F%2FLAi3zjeZFekxxXElM7Z0AZgHgNX9h55Abg4AZ0&type=H
@@ -28,4 +28,4 @@ Today's date: May 14
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 14-May-2026 12:07:33 PM
+Updated at (IST): 14-May-2026 12:17:14 PM
