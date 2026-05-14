@@ -4,7 +4,7 @@ Today's date: May 14
 ✪ Thu, May 14, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer (CIBCEP001) (18853) ===CANDIDATE=== Mirja Asha ===LINK=== https://app.jobtwine.com/meeting/copilot?id=yZf8395vZ2cUXIo9R%2FNHW2VGGZLZrcDCGtdbv8%2BhS3KmPmIilpvyqUORbT4BVWIM&type=H ===FEEDBACK=== NA
 ✪ Thu, May 14, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Shobhit Tripathi ===LINK=== https://app.jobtwine.com/meeting/copilot?id=OewTA6RlmK%2FpK8iMbVwQ6QRrkyA1xIHmHSOHUl4rDSJ5f8%2BhFN51VM%2BwzbuwJhoa&type=H ===FEEDBACK=== NA
 ✪ Thu, May 14, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== SHUBHAM CHAND ===LINK=== https://app.jobtwine.com/meeting/copilot?id=o4gSFC0Z3ih%2BzKrWL5HQXGA2m7yON09qcQ9FDO9Wq5uHte0KsK17zAtBxwVrpjwL&type=H ===FEEDBACK=== NA
-✪ Thu, May 14, 2026, 11:30 AM IST ==> Scheduled ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Sai Pavan Kumar Achanta ===LINK=== https://app.jobtwine.com/meeting/copilot?id=DN2UWJLmDH7bcd1vuETeYEJ3s4X6lYakaojuObS010Jfsr2W%2FjBdSZqFePUPXQc5&type=H ===FEEDBACK=== NA
+✪ Thu, May 14, 2026, 11:30 AM IST ==> Candidate No Show ===PROFILE=== Quality Engineering Consultant(CIBCSG01) (19117) ===CANDIDATE=== Sai Pavan Kumar Achanta ===LINK=== NA ===FEEDBACK=== NA
 ✪ Thu, May 14, 2026, 10:00 AM IST ==> Pending Feedback Review ===PROFILE=== SDET - 2 (10026) ===CANDIDATE=== Hitesh Jaiswal ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=10026
 ✪ Thu, May 14, 2026, 9:00 AM IST ==> Candidate No Show ===PROFILE=== CIBCSB003 Quality Engineering Manager (18891) ===CANDIDATE=== HIMA BINDU ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
@@ -19,14 +19,14 @@ Today's date: May 14
 ✪ Thu, May 14, 2026, 11:00 AM IST ==> Pending Feedback Review ===PROFILE=== Quality Engineering Manager(CIBCSBS01) (18472) ===CANDIDATE=== Sushmitha Jami ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=18472
 ✪ Thu, May 14, 2026, 10:00 AM IST ==> Pending Feedback Review ===PROFILE=== CIBCMAB002 Quality Engineering Consultant (17853) ===CANDIDATE=== Kiran V ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
+✪ Fri, May 15, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== SHAIK SIDDIQUE ===LINK=== https://app.jobtwine.com/meeting/copilot?id=6VOwYtyroOj96I5%2FX01c%2Fgo9EqcHEDmcMzgeP6A8BzzVljmb70z7biK53YJVzMoa&type=H
 ✪ Fri, May 15, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Anubhav Sharma ===LINK=== https://app.jobtwine.com/meeting/copilot?id=VZuLy8vfBXZuXPR4ol2bU%2BbdiZng%2BrmSx0c2yma%2FOZAgIJd8ypAq1irAQD77QCb6&type=H
 ✪ Fri, May 15, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer (CIBCEP001) (18853) ===CANDIDATE=== Akhila Chakilam ===LINK=== https://app.jobtwine.com/meeting/copilot?id=HFNdqMXoTKDu%2BBTF0MFX0e04%2F%2FLAi3zjeZFekxxXElM7Z0AZgHgNX9h55Abg4AZ0&type=H
 ✪ Fri, May 15, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Anshu Ram ===LINK=== https://app.jobtwine.com/meeting/copilot?id=13IBZjylO24Ty6vcsF8kYQpnE0aR3z51ebrI2L3C%2FgyLHuaFzTzzMW6BywNnNT%2Bq&type=H
 ✪ Fri, May 15, 2026, 9:00 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCAS005) (19568) ===CANDIDATE=== Shashank Gautam ===LINK=== https://app.jobtwine.com/meeting/copilot?id=Gy%2Bxn%2F5DBFYKANfjlq%2BMfIkU72%2FsUl8qSzThhBQmn4fCUNu9sEsmojGMTnhbqxOy&type=H
 ✪ Fri, May 15, 2026, 12:30 AM IST ==> Scheduled ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Kavya Dinasarapu ===LINK=== https://app.jobtwine.com/meeting/copilot?id=ufx138ocMXofmCeMgF5J%2BkLYzei3GpM0JMnOuRaFZZWUa21D6RFVqsrzeMHhQpRn&type=H
-✪ Fri, May 15, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== SHAIK SIDDIQUE ===LINK=== https://app.jobtwine.com/meeting/copilot?id=6VOwYtyroOj96I5%2FX01c%2Fgo9EqcHEDmcMzgeP6A8BzzVljmb70z7biK53YJVzMoa&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 14-May-2026 12:27:45 PM
+Updated at (IST): 14-May-2026 12:37:41 PM
