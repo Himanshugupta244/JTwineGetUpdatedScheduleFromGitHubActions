@@ -3,7 +3,6 @@ Today's date: May 15
 §TODAY§
 ✪ Fri, May 15, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Rajesh Lanka ===LINK=== https://app.jobtwine.com/meeting/copilot?id=yYbVhpWBOPPfqiFvaoTWxKUrdSpYZyJVfIczq0ktOd7WHLShwXhC0OIUyQdik0g7&type=H ===FEEDBACK=== NA
 ✪ Fri, May 15, 2026, 3:30 PM IST ==> Scheduled ===PROFILE=== CIBCEZ001 Quality Engineering Manager (18890) ===CANDIDATE=== Nabanita Karmakar ===LINK=== https://app.jobtwine.com/meeting/copilot?id=Lkm1HWZPrGMfmPcpncTQFmVy5UW%2BkL3PGtXsBbahfKaG9M5O1W7UOR8DSsZWUj0l&type=H ===FEEDBACK=== NA
-✪ Fri, May 15, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Priyanka Agarwal ===LINK=== https://app.jobtwine.com/meeting/copilot?id=%2BsKI0ZX9mhgbB9nvaaoWfVPjqh2JqFLi5jRE6fSbet5oqlt%2BPLDLZ27p6ZZsZUpP&type=H ===FEEDBACK=== NA
 ✪ Fri, May 15, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Sameer Nakhate ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
 ✪ Sat, May 16, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== QUALITY ENGINEER(CIBCMB004) (19970) ===CANDIDATE=== Kanukuntla Navaneetha ===LINK=== https://app.jobtwine.com/meeting/copilot?id=EE8PU6U7MjDXcG8hjEvANL%2F1rUUzGaS2m9Lbo1419vCfxdXpB3K%2FOP%2BW5Wpcam4w&type=H
@@ -16,7 +15,7 @@ Today's date: May 15
 ✪ Fri, May 15, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Hiresh Kaushik ===LINK=== https://app.jobtwine.com/meeting/copilot?id=hL4PHtssLmiWg%2FFstnZ1W89W9vskjObX1Yx9u5nhfaWUDiSKd%2Bx%2FMfVbRmjgkrgk&type=H ===FEEDBACK=== NA
 ✪ Fri, May 15, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCAM004) (19570) ===CANDIDATE=== GOPALAKRISHNAN PALANISAMY ===LINK=== https://app.jobtwine.com/meeting/copilot?id=a7zIIl7jAGJSYR4Oev7q8HOAAYVdipBC%2FhMhV5vmU65veIDfbh6DNwKvbz1cL%2F1l&type=H ===FEEDBACK=== NA
 ✪ Fri, May 15, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer (CIBCEP001) (18853) ===CANDIDATE=== Akhila Chakilam ===LINK=== https://app.jobtwine.com/meeting/copilot?id=HFNdqMXoTKDu%2BBTF0MFX0e04%2F%2FLAi3zjeZFekxxXElM7Z0AZgHgNX9h55Abg4AZ0&type=H ===FEEDBACK=== NA
-✪ Fri, May 15, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Anshu Ram ===LINK=== https://app.jobtwine.com/meeting/copilot?id=13IBZjylO24Ty6vcsF8kYQpnE0aR3z51ebrI2L3C%2FgyLHuaFzTzzMW6BywNnNT%2Bq&type=H ===FEEDBACK=== NA
+✪ Fri, May 15, 2026, 1:00 PM IST ==> Pending Feedback Review ===PROFILE=== QA (8804) ===CANDIDATE=== Anshu Ram ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=8804
 ✪ Fri, May 15, 2026, 11:30 AM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer CIBCTA002 (17933) ===CANDIDATE=== Praveena N ===LINK=== NA ===FEEDBACK=== NA
 ✪ Fri, May 15, 2026, 9:00 AM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer(CIBCAS005) (19568) ===CANDIDATE=== Shashank Gautam ===LINK=== NA ===FEEDBACK=== NA
 ✪ Fri, May 15, 2026, 12:30 AM IST ==> Not Recommended ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Kavya Dinasarapu ===LINK=== NA ===FEEDBACK=== NA
@@ -24,9 +23,8 @@ Today's date: May 15
 ✪ Sat, May 16, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer Performer CIBCMB003 (18449) ===CANDIDATE=== Gopichand Varma ===LINK=== https://app.jobtwine.com/meeting/copilot?id=hcnmxUdlAXixt5Dzs%2BNwvXSNOLDOM5CelKP4GAa5oXSyVWr8dXmb99d20wGPfQ7N&type=H
 ✪ Sat, May 16, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Gazal Gupta ===LINK=== https://app.jobtwine.com/meeting/copilot?id=JUqAGN30aJnIyAlpBcW9ZiJ2FLK2WeqHTTMMwpTLqjzKmX9ssR9tJ6L990YnlRyC&type=H
 ✪ Sat, May 16, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Prashant Chaurasia ===LINK=== https://app.jobtwine.com/meeting/copilot?id=O952wKAnetbAx4XbhqD7EzrTHOcTo%2BI5YR0n%2F4lMx7Xxk%2F8IvwVEiWYexM6xJFtC&type=H
-✪ Sat, May 16, 2026, 10:00 AM IST ==> Scheduled ===PROFILE=== CIBCAP001 Quality Engineering Manager (17774) ===CANDIDATE=== Tripurna Durishetty ===LINK=== https://app.jobtwine.com/meeting/copilot?id=Th5O%2FNhDA1Tgqm193IEX23%2FuRfTPKl5rm35aqgRRjYwxRfluCuLZPER0UHJgwtVh&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 15-May-2026 01:26:02 PM
+Updated at (IST): 15-May-2026 01:46:25 PM
