@@ -4,7 +4,7 @@ Today's date: May 15
 ✪ Fri, May 15, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Rajesh Lanka ===LINK=== https://app.jobtwine.com/meeting/copilot?id=yYbVhpWBOPPfqiFvaoTWxKUrdSpYZyJVfIczq0ktOd7WHLShwXhC0OIUyQdik0g7&type=H ===FEEDBACK=== NA
 ✪ Fri, May 15, 2026, 3:30 PM IST ==> Scheduled ===PROFILE=== CIBCEZ001 Quality Engineering Manager (18890) ===CANDIDATE=== Nabanita Karmakar ===LINK=== https://app.jobtwine.com/meeting/copilot?id=Lkm1HWZPrGMfmPcpncTQFmVy5UW%2BkL3PGtXsBbahfKaG9M5O1W7UOR8DSsZWUj0l&type=H ===FEEDBACK=== NA
 ✪ Fri, May 15, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Priyanka Agarwal ===LINK=== https://app.jobtwine.com/meeting/copilot?id=%2BsKI0ZX9mhgbB9nvaaoWfVPjqh2JqFLi5jRE6fSbet5oqlt%2BPLDLZ27p6ZZsZUpP&type=H ===FEEDBACK=== NA
-✪ Fri, May 15, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Sameer Nakhate ===LINK=== https://app.jobtwine.com/meeting/copilot?id=t49DA1fF%2FVMXWorBvQ1WV1Q53yePSZSp4WG9ArSxud7wLhFqEvzWFdmrVgnI2Mkt&type=H ===FEEDBACK=== NA
+✪ Fri, May 15, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Sameer Nakhate ===LINK=== NA ===FEEDBACK=== NA
 §TOMORROW§
 ✪ Sat, May 16, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== QUALITY ENGINEER(CIBCMB004) (19970) ===CANDIDATE=== Kanukuntla Navaneetha ===LINK=== https://app.jobtwine.com/meeting/copilot?id=EE8PU6U7MjDXcG8hjEvANL%2F1rUUzGaS2m9Lbo1419vCfxdXpB3K%2FOP%2BW5Wpcam4w&type=H
 ✪ Sat, May 16, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Vaishali Saini ===LINK=== https://app.jobtwine.com/meeting/copilot?id=PCdkCiwQ5oPikp2vc5MijQLMq7cP3yddUjNgMrzlb3gB9IB2JaRIZnQ7Sv5zFVwo&type=H
@@ -29,4 +29,4 @@ Today's date: May 15
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 15-May-2026 12:16:25 PM
+Updated at (IST): 15-May-2026 12:26:16 PM
