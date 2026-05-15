@@ -1,23 +1,13 @@
 Today's date: May 15
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
-§TODAY§
-✪ Fri, May 15, 2026, 5:00 PM IST ==> Scheduled ===PROFILE=== QE Consultant CIBCVT001 (18147) ===CANDIDATE=== Rajesh Lanka ===LINK=== https://app.jobtwine.com/meeting/copilot?id=yYbVhpWBOPPfqiFvaoTWxKUrdSpYZyJVfIczq0ktOd7WHLShwXhC0OIUyQdik0g7&type=H ===FEEDBACK=== NA
-✪ Fri, May 15, 2026, 12:00 PM IST ==> Candidate No Show ===PROFILE=== Technical QA Engineer / Lead (11783) ===CANDIDATE=== Sameer Nakhate ===LINK=== NA ===FEEDBACK=== NA
-§TOMORROW§
-✪ Sat, May 16, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== QUALITY ENGINEER(CIBCMB004) (19970) ===CANDIDATE=== Kanukuntla Navaneetha ===LINK=== https://app.jobtwine.com/meeting/copilot?id=EE8PU6U7MjDXcG8hjEvANL%2F1rUUzGaS2m9Lbo1419vCfxdXpB3K%2FOP%2BW5Wpcam4w&type=H
-✪ Sat, May 16, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Vaishali Saini ===LINK=== https://app.jobtwine.com/meeting/copilot?id=PCdkCiwQ5oPikp2vc5MijQLMq7cP3yddUjNgMrzlb3gB9IB2JaRIZnQ7Sv5zFVwo&type=H
-✪ Sat, May 16, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Vipul Prakash ===LINK=== https://app.jobtwine.com/meeting/copilot?id=I57Y5N36ZHEmYqJXUJx4evCNWSZW4c%2BEWMCR1woexI79ggg7AJOxeVVenNK1Um7J&type=H
-✪ Sat, May 16, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== CIBCAP001 Quality Engineering Manager (17774) ===CANDIDATE=== Saikumar Vaidya ===LINK=== https://app.jobtwine.com/meeting/copilot?id=YoMt7nSQ1p83twkewB3MDEpfBZi%2FWZrW616MwJxnjHh9V%2FyCphqH0TBKQdl7ubSJ&type=H
-**************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
-§TOMORROW§
-✪ Sat, May 16, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer Performer CIBCMB003 (18449) ===CANDIDATE=== Gopichand Varma ===LINK=== https://app.jobtwine.com/meeting/copilot?id=hcnmxUdlAXixt5Dzs%2BNwvXSNOLDOM5CelKP4GAa5oXSyVWr8dXmb99d20wGPfQ7N&type=H
-✪ Sat, May 16, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Gazal Gupta ===LINK=== https://app.jobtwine.com/meeting/copilot?id=JUqAGN30aJnIyAlpBcW9ZiJ2FLK2WeqHTTMMwpTLqjzKmX9ssR9tJ6L990YnlRyC&type=H
-✪ Sat, May 16, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Prashant Chaurasia ===LINK=== https://app.jobtwine.com/meeting/copilot?id=O952wKAnetbAx4XbhqD7EzrTHOcTo%2BI5YR0n%2F4lMx7Xxk%2F8IvwVEiWYexM6xJFtC&type=H
-✪ Sat, May 16, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Gazal Gupta ===LINK=== NA
-✪ Sat, May 16, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Prashant Chaurasia ===LINK=== https://app.jobtwine.com/meeting/copilot?id=JUqAGN30aJnIyAlpBcW9ZiJ2FLK2WeqHTTMMwpTLqjzKmX9ssR9tJ6L990YnlRyC&type=H
-✪ Sat, May 16, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Prashant Chaurasia ===LINK=== NA
+Exception: Expected condition failed: waiting for visibility of element located by By.xpath: .//button[contains(text(),'Sign In')] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1013-azure', java.version: '17.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35215}, goog:processID: 2507, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35215/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 233e973f1eaecfccb9961d826566d9fb
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 15-May-2026 04:16:42 PM
+Updated at (IST): 15-May-2026 04:22:55 PM
