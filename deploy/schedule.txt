@@ -16,12 +16,12 @@ Exception: element click intercepted: Element <span>...</span> is not clickable 
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f334aa11b6a116310b32e7db0a194b4a, clickElement {id=f.BFF137899A57E731C66871A73E286449.d.14589CAADB4EC3E61F920FE6E666F324.e.430}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41727}, goog:processID: 3129, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41727/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (f334aa11b6a116310b32e7db0a194b4a)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[3]]
-Session ID: f334aa11b6a116310b32e7db0a194b4a
+Command: [777f4fc47aa63b58b763d147e87ca233, clickElement {id=f.7DE2DF248DE875973A84BACFB6A834BD.d.C092AF2946D64B5729FE716E2B1452C4.e.429}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37609}, goog:processID: 2879, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37609/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (777f4fc47aa63b58b763d147e87ca233)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[3]]
+Session ID: 777f4fc47aa63b58b763d147e87ca233
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 15-May-2026 11:56:25 AM
+Updated at (IST): 15-May-2026 11:56:27 AM
