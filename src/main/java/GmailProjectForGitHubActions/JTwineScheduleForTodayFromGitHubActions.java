@@ -510,6 +510,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("@keyframes cardFloat{0%,100%{transform:perspective(800px) rotateX(1deg) rotateY(-1deg) translateY(0);}50%{transform:perspective(800px) rotateX(-2deg) rotateY(2deg) translateY(-12px);}}\n");
 			html.append(".login-card{position:relative;z-index:10;background:linear-gradient(145deg,rgba(30,41,59,0.9),rgba(15,23,42,0.95));border-radius:24px;border:1px solid rgba(99,102,241,0.3);padding:48px 40px;width:400px;max-width:90vw;box-shadow:0 30px 60px rgba(0,0,0,0.4),0 0 40px rgba(99,102,241,0.1);animation:cardFloat 10s ease-in-out infinite;}\n");
 			html.append(".login-card .logo{font-size:36px;font-weight:900;color:#00cfff;text-align:center;margin-bottom:8px;text-shadow:0 0 6px rgba(0,207,255,0.4),0 0 15px rgba(0,127,255,0.2);}\n");
+			html.append(".login-card .logo-img{display:block;margin:0 auto 16px;width:90px;height:90px;border-radius:50%;border:3px solid rgba(0,207,255,0.4);box-shadow:0 0 20px rgba(0,207,255,0.2);}\n");
 			html.append(".login-card .tagline{text-align:center;color:#64748b;font-size:13px;font-weight:600;margin-bottom:32px;}\n");
 			html.append(".login-card .form-group{margin-bottom:20px;}\n");
 			html.append(".login-card .form-group label{display:block;color:#94a3b8;font-size:12px;font-weight:700;margin-bottom:6px;letter-spacing:0.5px;text-transform:uppercase;}\n");
@@ -612,6 +613,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("<div class=\"login-overlay\" id=\"loginOverlay\">\n");
 			html.append("<div class=\"login-stars-wrapper\"><div class=\"login-stars\" id=\"loginStars\"></div></div>\n");
 			html.append("<div class=\"login-card\">\n");
+			html.append("  <img class=\"logo-img\" src=\"https://cloud.codifixsolutions.com/logo%20png.png\" alt=\"Codifix\">\n");
 			html.append("  <div class=\"logo\">Codifix Solutions</div>\n");
 			html.append("  <div class=\"tagline\">Floating in the cosmos</div>\n");
 			html.append("  <div class=\"form-group\"><label>Username</label><input type=\"text\" id=\"loginUser\" placeholder=\"Enter username\" autocomplete=\"off\"></div>\n");
