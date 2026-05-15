@@ -1,16 +1,16 @@
 Today's date: May 15
 **************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************
-Exception: element click intercepted: Element <span>...</span> is not clickable at point (570, 157). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
+Exception: element click intercepted: Element <span>...</span> is not clickable at point (512, 157). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
   (Session info: chrome=148.0.7778.167)
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1013-azure', java.version: '17.0.19'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b25c6c2cf2bb05c581f7f18a0147a33e, clickElement {id=f.E42F9DC103D19DBB6F9F88836E63D9E3.d.FF05D76087AD02CC148E44365B8EFC03.e.274}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35409}, goog:processID: 2498, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35409/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (b25c6c2cf2bb05c581f7f18a0147a33e)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[4]]
-Session ID: b25c6c2cf2bb05c581f7f18a0147a33e
+Command: [69f464e485cc43263a77efed5ccde85d, clickElement {id=f.5F0C8453070CCE2956C928A1EEEC6C9F.d.C0C16A312B4042BA0CD0DE3EB465E3D2.e.216}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42927}, goog:processID: 2535, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42927/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (69f464e485cc43263a77efed5ccde85d)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[2]]
+Session ID: 69f464e485cc43263a77efed5ccde85d
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 15-May-2026 05:23:27 PM
+Updated at (IST): 15-May-2026 05:32:51 PM
