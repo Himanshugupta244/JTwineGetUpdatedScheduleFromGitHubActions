@@ -508,7 +508,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append(".login-star{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;animation:twinkle var(--d) ease-in-out infinite;}\n");
 			html.append("@keyframes twinkle{0%,100%{opacity:0.2;}50%{opacity:1;}}\n");
 			html.append("@keyframes cardFloat{0%,100%{transform:perspective(800px) rotateX(1deg) rotateY(-1deg) translateY(0);}50%{transform:perspective(800px) rotateX(-2deg) rotateY(2deg) translateY(-12px);}}\n");
-			html.append(".login-card{position:relative;z-index:10;background:linear-gradient(145deg,rgba(30,41,59,0.9),rgba(15,23,42,0.95));border-radius:24px;border:1px solid rgba(99,102,241,0.3);padding:48px 40px;width:400px;max-width:90vw;box-shadow:0 30px 60px rgba(0,0,0,0.4),0 0 40px rgba(99,102,241,0.1);animation:cardFloat 10s ease-in-out infinite;}\n");
+			html.append(".login-card{position:relative;z-index:10;background:linear-gradient(145deg,rgba(30,41,59,0.9),rgba(15,23,42,0.95));border-radius:24px;border:1px solid rgba(99,102,241,0.3);padding:48px 40px;width:400px;max-width:90vw;box-shadow:0 30px 60px rgba(0,0,0,0.4),0 0 40px rgba(99,102,241,0.1);animation:cardFloat 20s ease-in-out infinite;}\n");
 			html.append(".login-card .logo{font-size:36px;font-weight:900;color:#00cfff;text-align:center;margin-bottom:8px;text-shadow:0 0 6px rgba(0,207,255,0.4),0 0 15px rgba(0,127,255,0.2);}\n");
 			html.append(".login-card .logo-img{display:block;margin:0 auto 16px;width:90px;height:90px;border-radius:50%;border:3px solid rgba(0,207,255,0.4);box-shadow:0 0 20px rgba(0,207,255,0.2);}\n");
 			html.append(".login-card .tagline{text-align:center;color:#64748b;font-size:13px;font-weight:600;margin-bottom:32px;}\n");
