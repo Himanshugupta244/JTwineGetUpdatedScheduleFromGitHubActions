@@ -14,8 +14,8 @@ Today's date: May 15
 ✪ Fri, May 15, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== SHAIK SIDDIQUE ===LINK=== https://app.jobtwine.com/meeting/copilot?id=6VOwYtyroOj96I5%2FX01c%2Fgo9EqcHEDmcMzgeP6A8BzzVljmb70z7biK53YJVzMoa&type=H ===FEEDBACK=== NA
 ✪ Fri, May 15, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Hiresh Kaushik ===LINK=== https://app.jobtwine.com/meeting/copilot?id=hL4PHtssLmiWg%2FFstnZ1W89W9vskjObX1Yx9u5nhfaWUDiSKd%2Bx%2FMfVbRmjgkrgk&type=H ===FEEDBACK=== NA
 ✪ Fri, May 15, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCAM004) (19570) ===CANDIDATE=== GOPALAKRISHNAN PALANISAMY ===LINK=== https://app.jobtwine.com/meeting/copilot?id=a7zIIl7jAGJSYR4Oev7q8HOAAYVdipBC%2FhMhV5vmU65veIDfbh6DNwKvbz1cL%2F1l&type=H ===FEEDBACK=== NA
-✪ Fri, May 15, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer (CIBCEP001) (18853) ===CANDIDATE=== Akhila Chakilam ===LINK=== https://app.jobtwine.com/meeting/copilot?id=HFNdqMXoTKDu%2BBTF0MFX0e04%2F%2FLAi3zjeZFekxxXElM7Z0AZgHgNX9h55Abg4AZ0&type=H ===FEEDBACK=== NA
-✪ Fri, May 15, 2026, 1:00 PM IST ==> Pending Feedback Review ===PROFILE=== QA (8804) ===CANDIDATE=== Anshu Ram ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=8804
+✪ Fri, May 15, 2026, 2:00 PM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer (CIBCEP001) (18853) ===CANDIDATE=== Akhila Chakilam ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=18853
+✪ Fri, May 15, 2026, 1:00 PM IST ==> Pending Feedback Review ===PROFILE=== QA (8804) ===CANDIDATE=== Anshu Ram ===LINK=== NA ===FEEDBACK=== NA
 ✪ Fri, May 15, 2026, 11:30 AM IST ==> Candidate No Show ===PROFILE=== Intermediate Quality Engineer CIBCTA002 (17933) ===CANDIDATE=== Praveena N ===LINK=== NA ===FEEDBACK=== NA
 ✪ Fri, May 15, 2026, 9:00 AM IST ==> Not Recommended ===PROFILE=== Intermediate Quality Engineer(CIBCAS005) (19568) ===CANDIDATE=== Shashank Gautam ===LINK=== NA ===FEEDBACK=== NA
 ✪ Fri, May 15, 2026, 12:30 AM IST ==> Not Recommended ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Kavya Dinasarapu ===LINK=== NA ===FEEDBACK=== NA
@@ -27,4 +27,4 @@ Today's date: May 15
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 15-May-2026 02:36:43 PM
+Updated at (IST): 15-May-2026 02:45:59 PM
