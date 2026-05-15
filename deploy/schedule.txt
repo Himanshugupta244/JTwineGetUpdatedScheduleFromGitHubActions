@@ -11,17 +11,21 @@ Today's date: May 15
 ✪ Sat, May 16, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Vipul Prakash ===LINK=== https://app.jobtwine.com/meeting/copilot?id=I57Y5N36ZHEmYqJXUJx4evCNWSZW4c%2BEWMCR1woexI79ggg7AJOxeVVenNK1Um7J&type=H
 ✪ Sat, May 16, 2026, 11:00 AM IST ==> Scheduled ===PROFILE=== CIBCAP001 Quality Engineering Manager (17774) ===CANDIDATE=== Saikumar Vaidya ===LINK=== https://app.jobtwine.com/meeting/copilot?id=YoMt7nSQ1p83twkewB3MDEpfBZi%2FWZrW616MwJxnjHh9V%2FyCphqH0TBKQdl7ubSJ&type=H
 **************** SCHEDULE FOR SUDHANSHU JTWINE ACCOUNT :- ****************
-Exception: element click intercepted: Element <span>...</span> is not clickable at point (542, 157). Other element would receive the click: <div style="text-align: center; position: relative;">...</div>
-  (Session info: chrome=148.0.7778.167)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1013-azure', java.version: '17.0.19'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [72b1ade0510ade4c11638c621e7b1646, clickElement {id=f.046B676A234DD9F0A817BBAA4BB2F57C.d.8D3F77FCE9D169024235E876BFE077FD.e.444}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33189}, goog:processID: 3106, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33189/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (72b1ade0510ade4c11638c621e7b1646)] -> xpath: (.//span[contains(text(),'page ')]/following-sibling::span)[3]]
-Session ID: 72b1ade0510ade4c11638c621e7b1646
+§TODAY§
+✪ Fri, May 15, 2026, 8:00 PM IST ==> Scheduled ===PROFILE=== CIBCPP007 Intermediate Quality Engineer (17962) ===CANDIDATE=== SHAIK SIDDIQUE ===LINK=== https://app.jobtwine.com/meeting/copilot?id=6VOwYtyroOj96I5%2FX01c%2Fgo9EqcHEDmcMzgeP6A8BzzVljmb70z7biK53YJVzMoa&type=H ===FEEDBACK=== NA
+✪ Fri, May 15, 2026, 4:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Anubhav Sharma ===LINK=== https://app.jobtwine.com/meeting/copilot?id=VZuLy8vfBXZuXPR4ol2bU%2BbdiZng%2BrmSx0c2yma%2FOZAgIJd8ypAq1irAQD77QCb6&type=H ===FEEDBACK=== NA
+✪ Fri, May 15, 2026, 3:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer(CIBCAM004) (19570) ===CANDIDATE=== GOPALAKRISHNAN PALANISAMY ===LINK=== https://app.jobtwine.com/meeting/copilot?id=a7zIIl7jAGJSYR4Oev7q8HOAAYVdipBC%2FhMhV5vmU65veIDfbh6DNwKvbz1cL%2F1l&type=H ===FEEDBACK=== NA
+✪ Fri, May 15, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer (CIBCEP001) (18853) ===CANDIDATE=== Akhila Chakilam ===LINK=== https://app.jobtwine.com/meeting/copilot?id=HFNdqMXoTKDu%2BBTF0MFX0e04%2F%2FLAi3zjeZFekxxXElM7Z0AZgHgNX9h55Abg4AZ0&type=H ===FEEDBACK=== NA
+✪ Fri, May 15, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Anshu Ram ===LINK=== https://app.jobtwine.com/meeting/copilot?id=13IBZjylO24Ty6vcsF8kYQpnE0aR3z51ebrI2L3C%2FgyLHuaFzTzzMW6BywNnNT%2Bq&type=H ===FEEDBACK=== NA
+✪ Fri, May 15, 2026, 11:30 AM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer CIBCTA002 (17933) ===CANDIDATE=== Praveena N ===LINK=== https://app.jobtwine.com/meeting/copilot?id=%2BM0YBtLh7GnjVnj6UQYoSDLdAv%2BdfVbOYSLhs2Zqk6SMnn%2F45xPnXvUsPLw5gGXW&type=H ===FEEDBACK=== NA
+✪ Fri, May 15, 2026, 9:00 AM IST ==> Pending Feedback Review ===PROFILE=== Intermediate Quality Engineer(CIBCAS005) (19568) ===CANDIDATE=== Shashank Gautam ===LINK=== NA ===FEEDBACK=== https://app.jobtwine.com/interviewer/feedback?order=1&jobId=19568
+✪ Fri, May 15, 2026, 12:30 AM IST ==> Not Recommended ===PROFILE=== Associate Software Development Engineer in Test (17859) ===CANDIDATE=== Kavya Dinasarapu ===LINK=== NA ===FEEDBACK=== NA
+§TOMORROW§
+✪ Sat, May 16, 2026, 2:00 PM IST ==> Scheduled ===PROFILE=== Intermediate Quality Engineer Performer CIBCMB003 (18449) ===CANDIDATE=== Gopichand Varma ===LINK=== https://app.jobtwine.com/meeting/copilot?id=hcnmxUdlAXixt5Dzs%2BNwvXSNOLDOM5CelKP4GAa5oXSyVWr8dXmb99d20wGPfQ7N&type=H
+✪ Sat, May 16, 2026, 1:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Gazal Gupta ===LINK=== https://app.jobtwine.com/meeting/copilot?id=JUqAGN30aJnIyAlpBcW9ZiJ2FLK2WeqHTTMMwpTLqjzKmX9ssR9tJ6L990YnlRyC&type=H
+✪ Sat, May 16, 2026, 12:00 PM IST ==> Scheduled ===PROFILE=== QA (8804) ===CANDIDATE=== Prashant Chaurasia ===LINK=== https://app.jobtwine.com/meeting/copilot?id=O952wKAnetbAx4XbhqD7EzrTHOcTo%2BI5YR0n%2F4lMx7Xxk%2F8IvwVEiWYexM6xJFtC&type=H
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
 No discussions scheduled for today in Vprop.
 No discussions scheduled for tomorrow in Vprop.
 -----------------------------------
-Updated at (IST): 15-May-2026 09:56:46 AM
+Updated at (IST): 15-May-2026 10:07:05 AM
