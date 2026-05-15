@@ -613,7 +613,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("<div class=\"login-overlay\" id=\"loginOverlay\">\n");
 			html.append("<div class=\"login-stars-wrapper\"><div class=\"login-stars\" id=\"loginStars\"></div></div>\n");
 			html.append("<div class=\"login-card\">\n");
-			html.append("  <img class=\"logo-img\" src=\"https://cloud.codifixsolutions.com/logo%20png.png\" alt=\"Codifix\">\n");
+			html.append("  <img class=\"logo-img\" src=\"https://cloud.codifixsolutions.com/logo.png\" alt=\"Codifix\">\n");
 			html.append("  <div class=\"logo\">Codifix Solutions</div>\n");
 			html.append("  <div class=\"tagline\">Floating in the cosmos</div>\n");
 			html.append("  <div class=\"form-group\"><label>Username</label><input type=\"text\" id=\"loginUser\" placeholder=\"Enter username\" autocomplete=\"off\"></div>\n");
