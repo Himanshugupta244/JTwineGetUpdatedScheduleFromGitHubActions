@@ -47,6 +47,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 		System.out.println("Today's date: " + todayDate);
 		outputLines.add("Today's date: " + todayDate);
 
+		/* --- JTwine execution commented out ---
 		try {
 			System.out.println("**************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT ****************");
 			outputLines.add("**************** SCHEDULE FOR HIMANSHU JTWINE ACCOUNT :- ****************");
@@ -85,6 +86,7 @@ public class JTwineScheduleForTodayFromGitHubActions {
 				driver.quit();
 			}
 		}
+		--- end JTwine comment --- */
 
 		// Separate Call for Vprop
 		System.out.println("======================================================================");
@@ -744,9 +746,15 @@ public class JTwineScheduleForTodayFromGitHubActions {
 			html.append("    cards.forEach(function(card) {\n");
 			html.append("      var timeEl = card.querySelector('.time');\n");
 			html.append("      if (!timeEl) return;\n");
-			html.append("      if (secDate < istDate) { card.classList.add('past-interview'); return; }\n");
-			html.append("      if (secDate > istDate) return;\n");
 			html.append("      var text = timeEl.textContent.trim();\n");
+			html.append("      var cardDate = secDate;\n");
+			html.append("      var dateMatch = text.match(/(\\d{1,2})\\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+(\\d{4})/i);\n");
+			html.append("      if (dateMatch) {\n");
+			html.append("        var months = {jan:'01',feb:'02',mar:'03',apr:'04',may:'05',jun:'06',jul:'07',aug:'08',sep:'09',oct:'10',nov:'11',dec:'12'};\n");
+			html.append("        cardDate = dateMatch[3] + '-' + months[dateMatch[2].toLowerCase()] + '-' + String(parseInt(dateMatch[1])).padStart(2,'0');\n");
+			html.append("      }\n");
+			html.append("      if (cardDate < istDate) { card.classList.add('past-interview'); return; }\n");
+			html.append("      if (cardDate > istDate) return;\n");
 			html.append("      var match = text.match(/(\\d{1,2}):(\\d{2})\\s*(AM|PM)/i);\n");
 			html.append("      if (!match) return;\n");
 			html.append("      var h = parseInt(match[1]); var m = parseInt(match[2]);\n");
