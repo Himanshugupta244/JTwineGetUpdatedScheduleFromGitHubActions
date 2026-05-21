@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login — Interview Schedule Manager</title>
+<link rel="icon" type="image/png" href="https://cloud.codifixsolutions.com/logo.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial,sans-serif;}
+body{background:linear-gradient(160deg,#0f172a,#1e293b,#334155);min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;perspective:600px;}
+.stars-wrapper{position:fixed;inset:-40%;transform-style:preserve-3d;animation:starsDrift 10s ease-in-out infinite;z-index:0;}
+@keyframes starsDrift{0%{transform:rotateX(0deg) rotateY(0deg) scale(1);}25%{transform:rotateX(4deg) rotateY(-6deg) scale(1.05);}50%{transform:rotateX(-3deg) rotateY(5deg) scale(1.02);}75%{transform:rotateX(5deg) rotateY(-3deg) scale(1.06);}100%{transform:rotateX(0deg) rotateY(0deg) scale(1);}}
+.stars{width:100%;height:100%;transform-style:preserve-3d;}
+.star{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;animation:twinkle var(--d) ease-in-out infinite;}
+@keyframes twinkle{0%,100%{opacity:0.2;}50%{opacity:1;}}
+@keyframes cardFloat{0%,100%{transform:perspective(800px) rotateX(1deg) rotateY(-1deg) translateY(0);}50%{transform:perspective(800px) rotateX(-2deg) rotateY(2deg) translateY(-12px);}}
+.login-card{position:relative;z-index:10;background:linear-gradient(145deg,rgba(30,41,59,0.9),rgba(15,23,42,0.95));border-radius:24px;border:1px solid rgba(99,102,241,0.3);padding:48px 40px;width:420px;max-width:90vw;box-shadow:0 30px 60px rgba(0,0,0,0.4),0 0 40px rgba(99,102,241,0.1);animation:cardFloat 20s ease-in-out infinite;}
+.logo-img{display:block;margin:0 auto 16px;width:90px;height:90px;border-radius:50%;border:3px solid rgba(0,207,255,0.4);box-shadow:0 0 20px rgba(0,207,255,0.2);}
+.logo{font-size:32px;font-weight:900;color:#00cfff;text-align:center;margin-bottom:8px;text-shadow:0 0 6px rgba(0,207,255,0.4),0 0 15px rgba(0,127,255,0.2);}
+.tagline{text-align:center;color:#64748b;font-size:13px;font-weight:600;margin-bottom:32px;}
+.form-group{margin-bottom:20px;}
+.form-group label{display:block;color:#94a3b8;font-size:12px;font-weight:700;margin-bottom:6px;letter-spacing:0.5px;text-transform:uppercase;}
+.form-group input{width:100%;padding:14px 16px;background:rgba(30,41,59,0.6);border:1.5px solid rgba(99,102,241,0.2);border-radius:12px;font-size:14px;font-weight:600;color:#e2e8f0;outline:none;transition:all 0.3s;}
+.form-group input::placeholder{color:#475569;}
+.form-group input:focus{border-color:#6366f1;box-shadow:0 0 20px rgba(99,102,241,0.15);}
+.login-btn{width:100%;padding:14px;background:linear-gradient(135deg,#4f46e5,#6366f1);border:none;border-radius:12px;color:#fff;font-size:15px;font-weight:800;cursor:pointer;letter-spacing:0.5px;transition:all 0.3s;margin-top:8px;}
+.login-btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(99,102,241,0.35);}
+.login-btn:active{transform:translateY(0);}
+.login-error{color:#fca5a5;font-size:12px;font-weight:700;text-align:center;margin-top:12px;display:none;}
+.login-footer{text-align:center;margin-top:24px;color:#475569;font-size:11px;font-weight:600;}
+.signup-link{text-align:center;margin-top:20px;color:#94a3b8;font-size:13px;font-weight:600;}
+.signup-link a{color:#6366f1;text-decoration:none;font-weight:700;transition:color 0.3s;}
+.signup-link a:hover{color:#00cfff;}
+@media(max-width:768px){
+  .login-card{padding:36px 24px;}
+  .logo{font-size:26px;}
+  .logo-img{width:70px;height:70px;}
+}
+</style>
+</head>
+<body>
+<div class="stars-wrapper"><div class="stars" id="starsContainer"></div></div>
+<div class="login-card">
+  <img class="logo-img" src="https://cloud.codifixsolutions.com/logo.png" alt="Codifix">
+  <div class="logo">Codifix Solutions</div>
+  <div class="tagline">Interview Schedule Manager</div>
+  <div class="form-group"><label>Username</label><input type="text" id="loginUser" placeholder="Enter username" autocomplete="off"></div>
+  <div class="form-group"><label>Password</label><input type="password" id="loginPass" placeholder="Enter password"></div>
+  <button class="login-btn" onclick="doLogin()">Login</button>
+  <div class="login-error" id="loginError">Invalid credentials</div>
+  <div class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></div>
+  <div class="login-footer">&copy; 2026 Codifix Solutions</div>
+</div>
+<script>
+(function(){
+  var container = document.getElementById('starsContainer');
+  for(var i = 0; i < 200; i++){
+    var s = document.createElement('div');
+    s.className = 'star';
+    s.style.left = Math.random()*100 + '%';
+    s.style.top = Math.random()*100 + '%';
+    s.style.setProperty('--d', (2 + Math.random()*4).toFixed(1) + 's');
+    s.style.width = (1 + Math.random()*2) + 'px';
+    s.style.height = s.style.width;
+    container.appendChild(s);
+  }
+})();
+
+function sha256(str){
+  var buf = new TextEncoder().encode(str);
+  return crypto.subtle.digest('SHA-256', buf).then(function(hash){
+    var arr = Array.from(new Uint8Array(hash));
+    return arr.map(function(b){ return b.toString(16).padStart(2,'0'); }).join('');
+  });
+}
+
+function doLogin(){
+  var user = document.getElementById('loginUser').value.trim();
+  var pass = document.getElementById('loginPass').value;
+  var errEl = document.getElementById('loginError');
+  if(!user || !pass){
+    errEl.textContent = 'Please enter username and password';
+    errEl.style.display = 'block';
+    return;
+  }
+  Promise.all([sha256(user), sha256(pass)]).then(function(hashes){
+    var userHash = hashes[0];
+    var passHash = hashes[1];
+    if(userHash === '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918' &&
+       passHash === '240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9'){
+      var session = {
+        user: user,
+        loginTime: new Date().getTime(),
+        expiry: new Date().getTime() + 3600000
+      };
+      sessionStorage.setItem('siteAuth', JSON.stringify(session));
+      window.location.href = 'dashboard.html';
+    } else {
+      errEl.textContent = 'Invalid credentials';
+      errEl.style.display = 'block';
+    }
+  });
+}
+
+document.getElementById('loginPass').addEventListener('keydown', function(e){
+  if(e.key === 'Enter') doLogin();
+});
+document.getElementById('loginUser').addEventListener('keydown', function(e){
+  if(e.key === 'Enter') document.getElementById('loginPass').focus();
+});
+
+(function(){
+  var auth = sessionStorage.getItem('siteAuth');
+  if(auth){
+    try{
+      var s = JSON.parse(auth);
+      if(s.expiry && new Date().getTime() < s.expiry){
+        window.location.href = 'dashboard.html';
+      }
+    }catch(e){}
+  }
+})();
+</script>
+</body>
+</html>

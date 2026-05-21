@@ -152,15 +152,14 @@ public class DiscussionStatusCountReport {
         boolean hasRelevantData = scrapePageCounts(driver, currentMonthPrefix, lastMonthPrefix, currentCounts, lastCounts);
 
         for (int page = 2; page <= 20; page++) {
-            // Look for the Nth page button: the pattern used in the main file
-            List<WebElement> pageBtn = driver.findElements(
-                By.xpath("(.//span[contains(text(),'page ')]/following-sibling::span)[" + (page - 1) + "]"));
-            if (pageBtn.isEmpty()) {
-                System.out.println("No page " + page + " button found. Stopping pagination.");
+            List<WebElement> nextBtn = driver.findElements(
+                By.xpath(".//a[@aria-label='Next page']"));
+            if (nextBtn.isEmpty() || !nextBtn.get(0).isEnabled()) {
+                System.out.println("No next page button found. Stopping pagination.");
                 break;
             }
-            System.out.println("Clicking page " + page + "...");
-            pageBtn.get(0).click();
+            System.out.println("Clicking next page (page " + page + ")...");
+            nextBtn.get(0).click();
             waitForFixTime(10000);
 
             System.out.println("Scraping page " + page + "...");

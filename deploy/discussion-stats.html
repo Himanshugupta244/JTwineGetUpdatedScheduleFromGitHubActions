@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discussion Status Report</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;800;900&display=swap');
+* { box-sizing: border-box; font-family: 'Barlow', 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }
+body { background: #f0f0f0; padding: 12px; color: #1a1a1a; }
+.container { max-width: 480px; margin: auto; width: 100%; }
+.header { border: 3px solid #1a1a1a; background: #fff; text-align: center; padding: 16px 10px; margin-bottom: 18px; }
+.header h1 { font-size: 22px; font-weight: 900; letter-spacing: 4px; text-transform: uppercase; }
+.person-widget { margin-bottom: 22px; }
+.person-bar { padding: 12px 16px; font-size: 16px; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; display: flex; align-items: center; gap: 8px; }
+.person-him { background: #4c1d95; color: #fff; border: 3px solid #4c1d95; }
+.person-sud { background: #064e3b; color: #fff; border: 3px solid #064e3b; }
+.month-section { border-left: 3px solid; border-right: 3px solid; border-bottom: 3px solid; }
+.month-section-him { border-color: #4c1d95; }
+.month-section-sud { border-color: #064e3b; }
+.month-label { padding: 8px 14px; font-size: 12px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; display: flex; align-items: center; gap: 6px; border-bottom: 2px solid; }
+.month-current-him { background: #ede9fe; color: #4c1d95; border-color: #c4b5fd; }
+.month-last-him    { background: #ddd6fe; color: #3b0764; border-color: #a78bfa; }
+.month-current-sud { background: #d1fae5; color: #064e3b; border-color: #6ee7b7; }
+.month-last-sud    { background: #a7f3d0; color: #022c22; border-color: #34d399; }
+.row { display: flex; align-items: stretch; border-bottom: 1px solid #e5e7eb; }
+.row:last-child { border-bottom: none; }
+.col-status { flex: 1; padding: 10px 14px; font-weight: 800; font-size: 14px; color: #374151; line-height: 1.4; display: flex; align-items: center; }
+.col-count  { flex: 0 0 64px; padding: 10px 6px; font-weight: 900; font-size: 22px; text-align: center; border-left: 2px solid #e5e7eb; display: flex; align-items: center; justify-content: center; }
+.cnt-gf { color: #15803d; }
+.cnt-sr { color: #1d4ed8; }
+.cnt-nr { color: #b91c1c; }
+.cnt-ns { color: #d97706; }
+.cnt-cc { color: #7c3aed; }
+.cnt-dr { color: #6b7280; }
+.cnt-sc { color: #0369a1; }
+.cnt-pf { color: #ea580c; }
+.cnt-in { color: #9f1239; }
+.zero   { color: #d1d5db; }
+.row-summary { display: flex; align-items: stretch; border-top: 2px solid #e5e7eb; background: #f9fafb; }
+.row-summary:last-child { border-bottom: none; }
+.col-summary-label { flex: 1; padding: 10px 14px; font-weight: 900; font-size: 13px; color: #111827; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 6px; }
+.cnt-total   { color: #1a1a1a; }
+.cnt-success { color: #059669; }
+.footer { border: 3px solid #1a1a1a; padding: 12px; font-size: 13px; font-weight: 800; letter-spacing: 1px; background: #fff; text-align: center; margin-top: 4px; }
+@media (max-width: 480px) {
+  body { padding: 8px; }
+  .header h1 { font-size: 18px; letter-spacing: 3px; }
+  .person-bar { font-size: 14px; letter-spacing: 2px; }
+  .col-status { font-size: 13px; padding: 9px 10px; }
+  .col-count  { font-size: 19px; flex: 0 0 54px; }
+}
+.collapsible-body { display: none; }
+.collapsible-body.open { display: block; }
+.month-label.clickable { cursor: pointer; justify-content: space-between; user-select: none; }
+.toggle-icon { font-size: 11px; font-weight: 900; opacity: 0.75; white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header"><h1>&#128202; INTERVIEW STATUS REPORT</h1></div>
+<div class="person-widget">
+  <div class="person-bar person-him">&#128100; HIMANSHU &mdash; JTwine</div>
+  <div class="month-section month-section-him">
+    <div class="month-label month-current-him">&#128197; APRIL 2026</div>
+    <div class="row">
+      <div class="col-status">Is a Good Fit</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Strongly Recommended</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Not Recommended</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Candidate No Show</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Cancelled by candidate</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Dropped</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Scheduled</div>
+      <div class="col-count cnt-sc">10</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Pending Feedback Review</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Interviewer No Show</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label">&#128203; Total Interviews</div>
+      <div class="col-count cnt-total">10</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label">&#9989; Successfully Conducted</div>
+      <div class="col-count cnt-success">0</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label" style="padding-left:24px; font-size:12px;">&#127482;&#127480; US Interviews</div>
+      <div class="col-count cnt-success" style="font-size:18px;">0</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label" style="padding-left:24px; font-size:12px;">&#127470;&#127475; India Interviews</div>
+      <div class="col-count cnt-success" style="font-size:18px;">0</div>
+    </div>
+  </div>
+  <div class="month-section month-section-him" style="margin-top:6px; border-top: 3px solid #4c1d95;">
+    <div class="month-label month-last-him clickable" onclick="toggleSection('him-last')">
+      <span>&#128197; MARCH 2026</span>
+      <span class="toggle-icon" id="him-last-icon">&#9660; SHOW</span>
+    </div>
+    <div id="him-last" class="collapsible-body">
+    <div class="row">
+      <div class="col-status">Is a Good Fit</div>
+      <div class="col-count cnt-gf">52</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Strongly Recommended</div>
+      <div class="col-count cnt-sr">3</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Not Recommended</div>
+      <div class="col-count cnt-nr">35</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Candidate No Show</div>
+      <div class="col-count cnt-ns">15</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Cancelled by candidate</div>
+      <div class="col-count cnt-cc">3</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Dropped</div>
+      <div class="col-count cnt-dr">4</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Scheduled</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Pending Feedback Review</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Interviewer No Show</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label">&#128203; Total Interviews</div>
+      <div class="col-count cnt-total">112</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label">&#9989; Successfully Conducted</div>
+      <div class="col-count cnt-success">90</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label" style="padding-left:24px; font-size:12px;">&#127482;&#127480; US Interviews</div>
+      <div class="col-count cnt-success" style="font-size:18px;">24</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label" style="padding-left:24px; font-size:12px;">&#127470;&#127475; India Interviews</div>
+      <div class="col-count cnt-success" style="font-size:18px;">66</div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="person-widget">
+  <div class="person-bar person-sud">&#128101; SUDHANSHU &mdash; JTwine</div>
+  <div class="month-section month-section-sud">
+    <div class="month-label month-current-sud">&#128197; APRIL 2026</div>
+    <div class="row">
+      <div class="col-status">Is a Good Fit</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Strongly Recommended</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Not Recommended</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Candidate No Show</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Cancelled by candidate</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Dropped</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Scheduled</div>
+      <div class="col-count cnt-sc">7</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Pending Feedback Review</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Interviewer No Show</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label">&#128203; Total Interviews</div>
+      <div class="col-count cnt-total">7</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label">&#9989; Successfully Conducted</div>
+      <div class="col-count cnt-success">0</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label" style="padding-left:24px; font-size:12px;">&#127482;&#127480; US Interviews</div>
+      <div class="col-count cnt-success" style="font-size:18px;">0</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label" style="padding-left:24px; font-size:12px;">&#127470;&#127475; India Interviews</div>
+      <div class="col-count cnt-success" style="font-size:18px;">0</div>
+    </div>
+  </div>
+  <div class="month-section month-section-sud" style="margin-top:6px; border-top: 3px solid #064e3b;">
+    <div class="month-label month-last-sud clickable" onclick="toggleSection('sud-last')">
+      <span>&#128197; MARCH 2026</span>
+      <span class="toggle-icon" id="sud-last-icon">&#9660; SHOW</span>
+    </div>
+    <div id="sud-last" class="collapsible-body">
+    <div class="row">
+      <div class="col-status">Is a Good Fit</div>
+      <div class="col-count cnt-gf">49</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Strongly Recommended</div>
+      <div class="col-count cnt-sr">1</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Not Recommended</div>
+      <div class="col-count cnt-nr">21</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Candidate No Show</div>
+      <div class="col-count cnt-ns">9</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Cancelled by candidate</div>
+      <div class="col-count cnt-cc">1</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Dropped</div>
+      <div class="col-count cnt-dr">1</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Scheduled</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Pending Feedback Review</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row">
+      <div class="col-status">Interviewer No Show</div>
+      <div class="col-count zero">0</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label">&#128203; Total Interviews</div>
+      <div class="col-count cnt-total">82</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label">&#9989; Successfully Conducted</div>
+      <div class="col-count cnt-success">71</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label" style="padding-left:24px; font-size:12px;">&#127482;&#127480; US Interviews</div>
+      <div class="col-count cnt-success" style="font-size:18px;">21</div>
+    </div>
+    <div class="row row-summary">
+      <div class="col-status col-summary-label" style="padding-left:24px; font-size:12px;">&#127470;&#127475; India Interviews</div>
+      <div class="col-count cnt-success" style="font-size:18px;">50</div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="footer">&#9201; Updated at (IST): 01-Apr-2026 10:02:45 AM</div>
+<script>
+function toggleSection(id) {
+  var body = document.getElementById(id);
+  var icon = document.getElementById(id + '-icon');
+  if (body.classList.contains('open')) {
+    body.classList.remove('open');
+    icon.innerHTML = '&#9660; SHOW';
+  } else {
+    body.classList.add('open');
+    icon.innerHTML = '&#9650; HIDE';
+  }
+}
+</script>
+</div>
+</body>
+</html>

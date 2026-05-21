@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Interview Schedule Manager</title>
+<link rel="icon" type="image/png" href="https://cloud.codifixsolutions.com/logo.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial,sans-serif;}
+body{background:#0f172a;min-height:100vh;color:#e2e8f0;}
+.stars-wrapper{position:fixed;inset:-40%;transform-style:preserve-3d;animation:starsDrift 10s ease-in-out infinite;z-index:0;pointer-events:none;}
+@keyframes starsDrift{0%{transform:rotateX(0deg) rotateY(0deg) scale(1);}25%{transform:rotateX(4deg) rotateY(-6deg) scale(1.05);}50%{transform:rotateX(-3deg) rotateY(5deg) scale(1.02);}75%{transform:rotateX(5deg) rotateY(-3deg) scale(1.06);}100%{transform:rotateX(0deg) rotateY(0deg) scale(1);}}
+.stars{width:100%;height:100%;transform-style:preserve-3d;}
+.star{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;animation:twinkle var(--d) ease-in-out infinite;}
+@keyframes twinkle{0%,100%{opacity:0.2;}50%{opacity:1;}}
+
+/* Navbar */
+.navbar{position:sticky;top:0;z-index:100;background:rgba(15,23,42,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,0.2);padding:0 24px;}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px;}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-brand img{width:36px;height:36px;border-radius:50%;border:2px solid rgba(0,207,255,0.4);}
+.nav-brand span{font-size:18px;font-weight:900;color:#00cfff;text-shadow:0 0 6px rgba(0,207,255,0.3);}
+.nav-links{display:flex;align-items:center;gap:8px;}
+.nav-links a{color:#94a3b8;text-decoration:none;font-size:13px;font-weight:700;padding:8px 16px;border-radius:10px;transition:all 0.3s;letter-spacing:0.3px;}
+.nav-links a:hover{color:#e2e8f0;background:rgba(99,102,241,0.15);}
+.nav-links a.active{color:#fff;background:linear-gradient(135deg,#4f46e5,#6366f1);}
+.nav-links .logout-btn{color:#fca5a5;border:1.5px solid rgba(252,165,165,0.3);background:transparent;cursor:pointer;font-size:13px;font-weight:700;padding:8px 16px;border-radius:10px;transition:all 0.3s;}
+.nav-links .logout-btn:hover{background:rgba(252,165,165,0.1);color:#ff7b7b;}
+.mobile-menu-btn{display:none;background:none;border:none;color:#e2e8f0;font-size:24px;cursor:pointer;}
+
+/* Content */
+.page-content{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:32px 24px;}
+
+/* Page title */
+.page-title{text-align:center;margin-bottom:40px;}
+.page-title h1{font-size:32px;font-weight:900;margin-bottom:8px;background:linear-gradient(135deg,#e2e8f0,#00cfff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.page-title p{color:#94a3b8;font-size:15px;font-weight:600;}
+
+/* Contact layout */
+.contact-grid{display:grid;grid-template-columns:1fr 380px;gap:28px;margin-bottom:36px;}
+
+/* Form */
+.contact-form-card{background:rgba(30,41,59,0.9);border:1px solid rgba(99,102,241,0.3);border-radius:24px;padding:36px 32px;backdrop-filter:blur(8px);}
+.contact-form-card h2{font-size:20px;font-weight:800;margin-bottom:24px;display:flex;align-items:center;gap:8px;}
+.contact-form-card h2 span{color:#00cfff;}
+.form-group{margin-bottom:18px;}
+.form-group label{display:block;color:#94a3b8;font-size:12px;font-weight:700;margin-bottom:6px;letter-spacing:0.5px;text-transform:uppercase;}
+.form-group input,.form-group textarea{width:100%;padding:13px 16px;background:rgba(15,23,42,0.6);border:1.5px solid rgba(99,102,241,0.2);border-radius:12px;font-size:14px;font-weight:600;color:#e2e8f0;outline:none;transition:all 0.3s;font-family:Inter,Arial,sans-serif;}
+.form-group input::placeholder,.form-group textarea::placeholder{color:#475569;}
+.form-group input:focus,.form-group textarea:focus{border-color:#6366f1;box-shadow:0 0 20px rgba(99,102,241,0.15);}
+.form-group textarea{resize:vertical;min-height:120px;}
+.form-group .field-error{color:#fca5a5;font-size:11px;font-weight:600;margin-top:4px;display:none;}
+.submit-btn{width:100%;padding:14px;background:linear-gradient(135deg,#4f46e5,#6366f1);border:none;border-radius:12px;color:#fff;font-size:15px;font-weight:800;cursor:pointer;letter-spacing:0.5px;transition:all 0.3s;margin-top:4px;}
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(99,102,241,0.35);}
+.submit-btn:active{transform:translateY(0);}
+
+/* Sidebar */
+.contact-sidebar{display:flex;flex-direction:column;gap:20px;}
+.info-card{background:rgba(30,41,59,0.9);border:1px solid rgba(99,102,241,0.3);border-radius:24px;padding:28px 24px;backdrop-filter:blur(8px);}
+.info-card h3{font-size:16px;font-weight:800;margin-bottom:20px;display:flex;align-items:center;gap:8px;}
+.info-card h3 span{color:#00cfff;}
+.info-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;}
+.info-item:last-child{margin-bottom:0;}
+.info-icon{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.info-icon.indigo{background:rgba(99,102,241,0.15);color:#6366f1;}
+.info-icon.cyan{background:rgba(0,207,255,0.15);color:#00cfff;}
+.info-icon.green{background:rgba(16,185,129,0.15);color:#10b981;}
+.info-detail .info-label{font-size:12px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:2px;}
+.info-detail .info-value{font-size:14px;font-weight:700;color:#e2e8f0;}
+
+/* Map placeholder */
+.map-placeholder{background:rgba(30,41,59,0.9);border:1px solid rgba(99,102,241,0.3);border-radius:24px;height:200px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;backdrop-filter:blur(8px);}
+.map-placeholder .map-icon{font-size:40px;opacity:0.5;}
+.map-placeholder .map-text{color:#64748b;font-size:14px;font-weight:700;}
+
+/* Toast */
+.toast{position:fixed;top:30px;right:30px;z-index:9999;background:linear-gradient(135deg,#059669,#10b981);color:#fff;padding:16px 28px;border-radius:14px;font-size:14px;font-weight:700;box-shadow:0 10px 30px rgba(16,185,129,0.3);transform:translateX(120%);transition:transform 0.4s ease;}
+.toast.show{transform:translateX(0);}
+
+/* Footer */
+.footer{background:rgba(30,41,59,0.9);border:1px solid rgba(99,102,241,0.15);border-radius:16px;padding:20px;text-align:center;font-size:13px;font-weight:700;color:#64748b;letter-spacing:0.5px;}
+
+@media(max-width:768px){
+  .contact-grid{grid-template-columns:1fr;gap:20px;}
+  .contact-form-card{padding:24px 20px;}
+  .page-title h1{font-size:24px;}
+  .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:rgba(15,23,42,0.98);flex-direction:column;padding:16px;gap:4px;border-bottom:1px solid rgba(99,102,241,0.2);}
+  .nav-links.open{display:flex;}
+  .mobile-menu-btn{display:block;}
+  .page-content{padding:20px 12px;}
+}
+</style>
+</head>
+<body>
+<div class="stars-wrapper"><div class="stars" id="starsContainer"></div></div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="nav-brand" href="dashboard.html">
+      <img src="https://cloud.codifixsolutions.com/logo.png" alt="Logo">
+      <span>Codifix</span>
+    </a>
+    <button class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</button>
+    <div class="nav-links" id="navLinks">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact Us</a>
+      <button class="logout-btn" onclick="doLogout()">Logout &#128682;</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-content">
+  <div class="page-title">
+    <h1>Get in Touch</h1>
+    <p>Have questions or feedback? We'd love to hear from you.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-form-card">
+      <h2><span>&#9993;</span> Send us a Message</h2>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" id="contactName" placeholder="Your full name" autocomplete="off">
+        <div class="field-error" id="nameErr">Name is required</div>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="contactEmail" placeholder="Your email address" autocomplete="off">
+        <div class="field-error" id="emailErr">Please enter a valid email</div>
+      </div>
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" id="contactSubject" placeholder="What is this about?" autocomplete="off">
+        <div class="field-error" id="subjectErr">Subject is required</div>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea id="contactMessage" placeholder="Write your message here..."></textarea>
+        <div class="field-error" id="messageErr">Message is required</div>
+      </div>
+      <button class="submit-btn" onclick="submitContact()">Send Message</button>
+    </div>
+
+    <div class="contact-sidebar">
+      <div class="info-card">
+        <h3><span>&#128205;</span> Contact Information</h3>
+        <div class="info-item">
+          <div class="info-icon indigo">&#9993;</div>
+          <div class="info-detail">
+            <div class="info-label">Email</div>
+            <div class="info-value">contact@codifixsolutions.com</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon cyan">&#128222;</div>
+          <div class="info-detail">
+            <div class="info-label">Phone</div>
+            <div class="info-value">+91 98765 43210</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon green">&#127968;</div>
+          <div class="info-detail">
+            <div class="info-label">Address</div>
+            <div class="info-value">Codifix Solutions, Pune, Maharashtra, India</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-placeholder">
+        <div class="map-icon">&#127759;</div>
+        <div class="map-text">Map Coming Soon</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">&copy; 2026 Codifix Solutions &mdash; Interview Schedule Manager</div>
+</div>
+
+<div class="toast" id="toast">Message sent successfully! We'll get back to you soon.</div>
+
+<script>
+(function(){
+  var container = document.getElementById('starsContainer');
+  for(var i = 0; i < 150; i++){
+    var s = document.createElement('div');
+    s.className = 'star';
+    s.style.left = Math.random()*100 + '%';
+    s.style.top = Math.random()*100 + '%';
+    s.style.setProperty('--d', (2 + Math.random()*4).toFixed(1) + 's');
+    s.style.width = (1 + Math.random()*2) + 'px';
+    s.style.height = s.style.width;
+    container.appendChild(s);
+  }
+})();
+
+function checkAuth(){
+  var auth = sessionStorage.getItem('siteAuth');
+  if(!auth){
+    window.location.href = 'login.html';
+    return null;
+  }
+  try{
+    var s = JSON.parse(auth);
+    if(!s.expiry || new Date().getTime() >= s.expiry){
+      sessionStorage.removeItem('siteAuth');
+      window.location.href = 'login.html';
+      return null;
+    }
+    return s;
+  }catch(e){
+    sessionStorage.removeItem('siteAuth');
+    window.location.href = 'login.html';
+    return null;
+  }
+}
+checkAuth();
+
+function doLogout(){
+  sessionStorage.removeItem('siteAuth');
+  window.location.href = 'login.html';
+}
+
+function toggleMenu(){
+  var nav = document.getElementById('navLinks');
+  if(nav.classList.contains('open')){
+    nav.classList.remove('open');
+  } else {
+    nav.classList.add('open');
+  }
+}
+
+function escapeHtml(str){
+  var div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
+
+function hideAllErrors(){
+  var errs = document.querySelectorAll('.field-error');
+  for(var i = 0; i < errs.length; i++){
+    errs[i].style.display = 'none';
+  }
+}
+
+function showError(id, msg){
+  var el = document.getElementById(id);
+  if(msg) el.textContent = msg;
+  el.style.display = 'block';
+}
+
+function isValidEmail(email){
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function submitContact(){
+  hideAllErrors();
+  var name = document.getElementById('contactName').value.trim();
+  var email = document.getElementById('contactEmail').value.trim();
+  var subject = document.getElementById('contactSubject').value.trim();
+  var message = document.getElementById('contactMessage').value.trim();
+  var valid = true;
+
+  if(!name){
+    showError('nameErr');
+    valid = false;
+  }
+  if(!email || !isValidEmail(email)){
+    showError('emailErr');
+    valid = false;
+  }
+  if(!subject){
+    showError('subjectErr');
+    valid = false;
+  }
+  if(!message){
+    showError('messageErr');
+    valid = false;
+  }
+  if(!valid) return;
+
+  // Clear form
+  document.getElementById('contactName').value = '';
+  document.getElementById('contactEmail').value = '';
+  document.getElementById('contactSubject').value = '';
+  document.getElementById('contactMessage').value = '';
+
+  // Show toast
+  var toast = document.getElementById('toast');
+  toast.classList.add('show');
+  setTimeout(function(){
+    toast.classList.remove('show');
+  }, 3000);
+}
+</script>
+</body>
+</html>
