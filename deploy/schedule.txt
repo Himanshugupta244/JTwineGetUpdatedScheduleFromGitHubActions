@@ -1,11 +1,6 @@
 Today's date: Jun 1
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
-Exception while fetching Vprop schedule: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 148.0.7778.178 with binary path /usr/bin/google-chrome 
-Host info: host: 'runnervm3jyl0', ip: '10.1.0.209'
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1015-azure', java.version: '17.0.19'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --headless=new, --no-sandbox, --disable-dev-shm-usage, --window-size=1920,1080], extensions: []}}]}]
+No discussions scheduled for today in Vprop.
+02 Jun 2026 03:30 PM ==> Scheduled
 -----------------------------------
-Updated at (IST): 02-Jun-2026 05:01:20 AM
+Updated at (IST): 02-Jun-2026 05:01:50 AM
