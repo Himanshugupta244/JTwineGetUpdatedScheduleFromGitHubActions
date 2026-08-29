@@ -1,6 +1,11 @@
 Today's date: Aug 29
 **************** SCHEDULE FOR Vprop ACCOUNT :- ****************
-No discussions scheduled for today in Vprop.
-No discussions scheduled for tomorrow in Vprop.
+Exception while fetching Vprop schedule: java.util.concurrent.TimeoutException
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '17.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [781271e69df4cc55a0c5d20f8a9f45c6, get {url=https://expert.vprople.com/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.173, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45195}, goog:processID: 2401, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45195/devtoo..., se:cdpVersion: 151.0.7922.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 781271e69df4cc55a0c5d20f8a9f45c6
 -----------------------------------
-Updated at (IST): 29-Aug-2026 01:01:41 PM
+Updated at (IST): 29-Aug-2026 01:04:46 PM
